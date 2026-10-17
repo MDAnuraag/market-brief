@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Brief</title>
+<meta name="description" content="Daily and weekly briefing on markets, world resources, regions, and climate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #ECEFEC;
+  --panel: #F6F8F6;
+  --ink: #13232A;
+  --muted: #586A70;
+  --line: #CAD3D1;
+  --up: #0A7566;
+  --down: #B5472A;
+  --alert-bg: #13232A;
+  --alert-ink: #ECEFEC;
+  --alert-mark: #E9B84A;
+  --display: "Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+  --body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0E1A1F;
+    --panel: #14242B;
+    --ink: #E4ECEA;
+    --muted: #8FA2A6;
+    --line: #26393F;
+    --up: #3CC4AD;
+    --down: #F08A68;
+    --alert-bg: #E4ECEA;
+    --alert-ink: #13232A;
+    --alert-mark: #8A5B00;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.5 var(--body);
+}
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px 64px; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+header { padding: 28px 0 20px; }
+h1 { font: 700 clamp(30px, 6vw, 46px)/1.05 var(--display); margin: 0 0 6px; letter-spacing: -0.01em; }
+.stamp { color: var(--muted); font-size: 14px; margin: 0; }
+
+.alert {
+  background: var(--alert-bg);
+  color: var(--alert-ink);
+  padding: 20px 20px 8px;
+  margin: 0 0 28px;
+  border-radius: 4px;
+}
+.alert h2 { font: 700 22px/1.2 var(--display); margin: 0 0 4px; }
+.alert .sub { font-size: 14px; opacity: .75; margin: 0 0 14px; }
+.alert ul { list-style: none; margin: 0; padding: 0; }
+.alert li { display: grid; grid-template-columns: 112px 1fr; gap: 12px; padding: 10px 0; border-top: 1px solid color-mix(in srgb, var(--alert-ink) 22%, transparent); }
+.alert .sym { font-weight: 600; font-variant-numeric: tabular-nums; border-left: 4px solid var(--alert-mark); padding-left: 8px; overflow-wrap: anywhere; }
+.alert.quiet { background: var(--panel); color: var(--ink); border: 1px solid var(--line); padding-bottom: 20px; }
+
+.summary { font-size: 17px; max-width: 68ch; margin: 0 0 32px; }
+
+section { margin: 0 0 36px; }
+section > h2 { font: 700 22px/1.2 var(--display); margin: 0 0 4px; }
+section > .sub { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+h3 { font: 600 15px/1.3 var(--body); margin: 20px 0 2px; color: var(--muted); }
+
+.rows { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; }
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) 84px 92px minmax(170px, 1.2fr) 84px;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--line);
+}
+.row:first-child { border-top: 0; }
+.row.head { color: var(--muted); font-size: 13px; padding-top: 8px; padding-bottom: 8px; }
+.name { min-width: 0; }
+.name b { font-weight: 600; font-variant-numeric: tabular-nums; }
+.name span { color: var(--muted); font-size: 14px; margin-left: 6px; }
+.note { grid-column: 1 / -1; color: var(--muted); font-size: 14px; margin: -4px 0 0; max-width: 78ch; }
+.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.up { color: var(--up); }
+.down { color: var(--down); }
+.flat, .na { color: var(--muted); }
+.bar { position: relative; height: 18px; display: flex; align-items: center; gap: 8px; }
+.track { position: relative; flex: 1; height: 8px; }
+.track::before { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--line); }
+.fill { position: absolute; top: 0; bottom: 0; border-radius: 1px; }
+.fill.up { background: var(--up); left: 50%; }
+.fill.down { background: var(--down); right: 50%; }
+.bar .num { width: 84px; flex: none; }
+
+.climate { display: grid; gap: 12px; }
+.climate article { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 14px 16px; }
+.climate h3 { margin: 0 0 4px; color: var(--ink); font-size: 16px; }
+.climate p { margin: 0; max-width: 72ch; }
+.climate .src { color: var(--muted); font-size: 13px; margin-top: 6px; }
+
+.alloc { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 14px 16px; }
+.alloc p { margin: 0 0 6px; }
+
+.empty { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 24px 20px; }
+.empty h2 { margin-top: 0; }
+
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; max-width: 78ch; }
+footer details { margin-top: 10px; }
+footer ul { margin: 6px 0 0; padding-left: 18px; }
+
+@media (max-width: 640px) {
+  .row { grid-template-columns: minmax(0, 1fr) auto; }
+  .row .col-1d, .row .col-1m, .row.head { display: none; }
+  .row .bar { grid-column: 1 / -1; }
+  .alert li { grid-template-columns: 1fr; gap: 2px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .alert { animation: settle .5s ease-out both; }
+  @keyframes settle { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Market Brief</h1>
+    <p class="stamp" id="stamp">Loading latest brief</p>
+  </header>
+  <main id="app" aria-live="polite"></main>
+  <footer id="foot"></footer>
+</div>
+<script>
+(function () {
+  var app = document.getElementById("app");
+  var stamp = document.getElementById("stamp");
+  var foot = document.getElementById("foot");
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function isNum(v) { return typeof v === "number" && isFinite(v); }
+  function pct(v) {
+    if (!isNum(v)) return "—";
+    var s = Math.abs(v).toFixed(Math.abs(v) >= 10 ? 1 : 2) + "%";
+    return (v > 0 ? "+" : v < 0 ? "−" : "") + s;
+  }
+  function price(v) {
+    if (!isNum(v)) return "—";
+    var d = Math.abs(v) >= 1000 ? 0 : Math.abs(v) >= 10 ? 2 : 3;
+    return v.toLocaleString("en-US", { minimumFractionDigits: Math.min(d, 2), maximumFractionDigits: d });
+  }
+  function dir(v) { return !isNum(v) ? "na" : v > 0 ? "up" : v < 0 ? "down" : "flat"; }
+  function arrow(v) { return !isNum(v) ? "" : v > 0 ? "▲ " : v < 0 ? "▼ " : ""; }
+
+  function when(iso) {
+    if (!iso) return null;
+    var d = new Date(iso);
+    if (isNaN(d)) return String(iso);
+    return d.toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+  }
+
+  function addRow(parent, item, scale) {
+    var row = el("div", "row");
+    var name = el("div", "name");
+    name.appendChild(el("b", null, item.symbol || ""));
+    var label = item.name || "";
+    if (item.unit) label += (label ? ", " : "") + item.unit;
+    name.appendChild(el("span", null, label));
+    row.appendChild(name);
+
+    row.appendChild(el("div", "num", price(item.last)));
+    row.appendChild(el("div", "num col-1d " + dir(item.chg_1d), arrow(item.chg_1d) + pct(item.chg_1d)));
+
+    var bar = el("div", "bar");
+    var track = el("div", "track");
+    if (isNum(item.chg_1w) && item.chg_1w !== 0) {
+      var w = Math.min(50, (Math.abs(item.chg_1w) / scale) * 50);
+      var f = el("div", "fill " + dir(item.chg_1w));
+      f.style.width = w + "%";
+      track.appendChild(f);
+    }
+    bar.appendChild(track);
+    bar.appendChild(el("div", "num " + dir(item.chg_1w), arrow(item.chg_1w) + pct(item.chg_1w)));
+    row.appendChild(bar);
+
+    row.appendChild(el("div", "num col-1m " + dir(item.chg_1m), pct(item.chg_1m)));
+
+    var notes = [];
+    if (item.note) notes.push(item.note);
+    if (item.esg) notes.push("ESG: " + item.esg);
+    if (item.next_earnings) notes.push("Next earnings: " + item.next_earnings);
+    if (item.as_of) notes.push("As of " + item.as_of);
+    if (notes.length) row.appendChild(el("p", "note", notes.join(" · ")));
+    parent.appendChild(row);
+  }
+
+  function table(items) {
+    var scale = 1;
+    items.forEach(function (i) { if (isNum(i.chg_1w)) scale = Math.max(scale, Math.abs(i.chg_1w)); });
+    var box = el("div", "rows");
+    var head = el("div", "row head");
+    ["Name", "Last", "1 day", "1 week", "1 month"].forEach(function (t, k) {
+      var c = el("div", k === 0 ? "" : k === 3 ? "" : "num", t);
+      head.appendChild(c);
+    });
+    box.appendChild(head);
+    items.forEach(function (i) { addRow(box, i, scale); });
+    return box;
+  }
+
+  function renderGroup(g) {
+    var s = el("section");
+    s.id = g.id || "";
+    s.appendChild(el("h2", null, g.title || g.id));
+    if (g.sub) s.appendChild(el("p", "sub", g.sub));
+    var items = g.items || [];
+    if (g.group_by === "region") {
+      var map = {};
+      items.forEach(function (i) { var r = i.region || "Other"; (map[r] = map[r] || []).push(i); });
+      Object.keys(map).sort(function (a, b) { return a.localeCompare(b); }).forEach(function (r) {
+        s.appendChild(el("h3", null, r));
+        s.appendChild(table(map[r]));
+      });
+    } else {
+      s.appendChild(table(items));
+    }
+    return s;
+  }
+
+  function render(d) {
+    app.textContent = "";
+    var hasData = d && d.generated_at && d.groups && d.groups.length;
+    if (!hasData) {
+      stamp.textContent = "No brief published yet";
+      var e = el("div", "empty");
+      e.appendChild(el("h2", null, "The first brief has not run yet"));
+      e.appendChild(el("p", null, "The weekday brief runs at about 7 a.m. Central and the Saturday review runs on Saturday morning. This page fills in after the first run."));
+      app.appendChild(e);
+      return;
+    }
+    stamp.textContent = (d.edition === "saturday" ? "Saturday review" : "Daily brief") +
+      " · market data as of " + (d.data_date || "unknown") + " · published " + when(d.generated_at);
+
+    var flags = d.flags || [];
+    var a = el("div", "alert" + (flags.length ? "" : " quiet"));
+    a.appendChild(el("h2", null, flags.length ? "Worth a look" : "Nothing crossed your triggers"));
+    a.appendChild(el("p", "sub", flags.length ? "These crossed a rule in your watchlist." : "No instrument hit a trigger since the last brief."));
+    if (flags.length) {
+      var ul = el("ul");
+      flags.forEach(function (f) {
+        var li = el("li");
+        li.appendChild(el("div", "sym", f.symbol || ""));
+        li.appendChild(el("div", null, f.reason || ""));
+        ul.appendChild(li);
+      });
+      a.appendChild(ul);
+    }
+    app.appendChild(a);
+
+    if (d.summary) app.appendChild(el("p", "summary", d.summary));
+
+    (d.groups || []).forEach(function (g) { app.appendChild(renderGroup(g)); });
+
+    if (d.allocation) {
+      var s = el("section");
+      s.appendChild(el("h2", null, "Allocation check"));
+      var box = el("div", "alloc");
+      box.appendChild(el("p", null, d.allocation.summary || ""));
+      if (d.allocation.note) box.appendChild(el("p", "sub", d.allocation.note));
+      s.appendChild(box);
+      app.appendChild(s);
+    }
+
+    if (d.climate && d.climate.length) {
+      var c = el("section");
+      c.appendChild(el("h2", null, "Climate and environment"));
+      c.appendChild(el("p", "sub", "Conditions that move resource markets."));
+      var grid = el("div", "climate");
+      d.climate.forEach(function (x) {
+        var art = el("article");
+        art.appendChild(el("h3", null, (x.region ? x.region + ": " : "") + (x.headline || "")));
+        if (x.detail) art.appendChild(el("p", null, x.detail));
+        if (x.source) art.appendChild(el("p", "src", "Source: " + x.source));
+        grid.appendChild(art);
+      });
+      c.appendChild(grid);
+      app.appendChild(c);
+    }
+
+    foot.textContent = "";
+    foot.appendChild(el("p", null, "Prices come from web search and can lag or be missing. This page reports data and does not recommend trades."));
+    if (d.gaps && d.gaps.length) {
+      var det = el("details");
+      det.appendChild(el("summary", null, d.gaps.length === 1 ? "1 item could not be retrieved" : d.gaps.length + " items could not be retrieved"));
+      var gl = el("ul");
+      d.gaps.forEach(function (g) { gl.appendChild(el("li", null, g)); });
+      det.appendChild(gl);
+      foot.appendChild(det);
+    }
+    if (d.sources && d.sources.length) {
+      var sd = el("details");
+      sd.appendChild(el("summary", null, "Sources used"));
+      var sl = el("ul");
+      d.sources.forEach(function (s) { sl.appendChild(el("li", null, s)); });
+      sd.appendChild(sl);
+      foot.appendChild(sd);
+    }
+  }
+
+  fetch("data/latest.json?ts=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(function () {
+      stamp.textContent = "Could not load the latest brief";
+      app.textContent = "";
+      var e = el("div", "empty");
+      e.appendChild(el("h2", null, "The brief did not load"));
+      e.appendChild(el("p", null, "Refresh the page. If this persists, check that data/latest.json exists in the repository."));
+      app.appendChild(e);
+    });
+})();
+</script>
+</body>
+</html>

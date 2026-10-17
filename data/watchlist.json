@@ -1,0 +1,210 @@
+{
+  "_note": "Edit this file to change what the briefs cover. Symbols use Yahoo-style tickers where one exists; 'hint' says where to look when there is no clean ticker. Anything that cannot be resolved is reported under 'gaps' in latest.json, never guessed.",
+  "triggers": {
+    "stock_week_move_pct": 8,
+    "etf_week_move_pct": 5,
+    "commodity_week_move_pct": 6,
+    "index_day_move_pct": 2,
+    "vix_above": 25,
+    "earnings_within_days": 10,
+    "below_target_price": "uses target_price on an item when set"
+  },
+  "allocation_targets": {
+    "us_pct": 80,
+    "international_pct": 20,
+    "drift_alert_points": 5,
+    "funds_401k": { "FXAIX": 74, "FSMDX": 4, "FSSNX": 2, "FTIHX": 20 }
+  },
+  "groups": [
+    {
+      "id": "macros", "title": "Macros", "cadence": "daily",
+      "items": [
+        { "symbol": "^GSPC", "name": "S&P 500" },
+        { "symbol": "^IXIC", "name": "Nasdaq Composite" },
+        { "symbol": "^DJI", "name": "Dow Jones" },
+        { "symbol": "^RUT", "name": "Russell 2000" },
+        { "symbol": "^VIX", "name": "CBOE Volatility Index" },
+        { "symbol": "^TNX", "name": "10-year Treasury yield" }
+      ]
+    },
+    {
+      "id": "core_passive", "title": "Core passive", "cadence": "daily",
+      "items": [
+        { "symbol": "SWTSX", "name": "Schwab Total Stock Market" },
+        { "symbol": "SWISX", "name": "Schwab International Index" },
+        { "symbol": "VOO", "name": "Vanguard S&P 500" },
+        { "symbol": "VTI", "name": "Vanguard Total Stock Market" },
+        { "symbol": "VXUS", "name": "Vanguard Total International" }
+      ]
+    },
+    {
+      "id": "funds_401k", "title": "401(k) funds", "cadence": "saturday",
+      "items": [
+        { "symbol": "FXAIX", "name": "Fidelity 500 Index" },
+        { "symbol": "FSMDX", "name": "Fidelity Mid Cap Index" },
+        { "symbol": "FSSNX", "name": "Fidelity Small Cap Index" },
+        { "symbol": "FTIHX", "name": "Fidelity Total International Index" }
+      ]
+    },
+    {
+      "id": "semis", "title": "Semiconductors", "cadence": "daily",
+      "items": [
+        { "symbol": "TSM", "name": "TSMC" },
+        { "symbol": "NVDA", "name": "NVIDIA" },
+        { "symbol": "AVGO", "name": "Broadcom" },
+        { "symbol": "AMD", "name": "AMD" },
+        { "symbol": "QCOM", "name": "Qualcomm" },
+        { "symbol": "ASML", "name": "ASML" },
+        { "symbol": "KLAC", "name": "KLA" },
+        { "symbol": "AMAT", "name": "Applied Materials" },
+        { "symbol": "LRCX", "name": "Lam Research" },
+        { "symbol": "ONTO", "name": "Onto Innovation" },
+        { "symbol": "INTC", "name": "Intel" },
+        { "symbol": "005930.KS", "name": "Samsung Electronics", "region": "East Asia" },
+        { "symbol": "000660.KS", "name": "SK Hynix", "region": "East Asia" },
+        { "symbol": "8035.T", "name": "Tokyo Electron", "region": "East Asia" },
+        { "symbol": "ASM.AS", "name": "ASM International", "region": "Europe" },
+        { "symbol": "2454.TW", "name": "MediaTek", "region": "East Asia" },
+        { "symbol": "0981.HK", "name": "SMIC", "region": "East Asia" }
+      ]
+    },
+    {
+      "id": "mega_tech", "title": "Mega tech", "cadence": "daily",
+      "items": [
+        { "symbol": "AAPL", "name": "Apple" },
+        { "symbol": "MSFT", "name": "Microsoft" },
+        { "symbol": "GOOGL", "name": "Alphabet" },
+        { "symbol": "AMZN", "name": "Amazon" },
+        { "symbol": "META", "name": "Meta" }
+      ]
+    },
+    {
+      "id": "energy", "title": "Energy", "cadence": "daily",
+      "items": [
+        { "symbol": "BZ=F", "name": "Brent crude", "unit": "USD/bbl" },
+        { "symbol": "CL=F", "name": "WTI crude", "unit": "USD/bbl" },
+        { "symbol": "NG=F", "name": "Henry Hub gas", "unit": "USD/MMBtu" },
+        { "symbol": "TTF=F", "name": "TTF gas (Europe)", "unit": "EUR/MWh" },
+        { "symbol": "JKM", "name": "JKM LNG (Asia)", "unit": "USD/MMBtu", "hint": "no free ticker; search for the latest assessment" },
+        { "symbol": "MTF=F", "name": "Newcastle coal", "unit": "USD/t" },
+        { "symbol": "U3O8", "name": "Uranium spot", "unit": "USD/lb", "hint": "search for the latest spot price" },
+        { "symbol": "EUA", "name": "EU carbon allowance", "unit": "EUR/t", "hint": "EU ETS benchmark futures" }
+      ]
+    },
+    {
+      "id": "metals", "title": "Metals and minerals", "cadence": "daily",
+      "items": [
+        { "symbol": "HG=F", "name": "Copper", "unit": "USD/lb" },
+        { "symbol": "ALI=F", "name": "Aluminum", "unit": "USD/t" },
+        { "symbol": "NICKEL", "name": "Nickel", "unit": "USD/t", "hint": "LME price" },
+        { "symbol": "IRONORE", "name": "Iron ore", "unit": "USD/t", "hint": "62% Fe benchmark" },
+        { "symbol": "LITHIUM", "name": "Lithium carbonate", "unit": "CNY/t", "hint": "China spot" },
+        { "symbol": "COBALT", "name": "Cobalt", "unit": "USD/t", "hint": "LME or Fastmarkets" },
+        { "symbol": "NDPR", "name": "NdPr oxide", "unit": "CNY/t", "hint": "rare earth benchmark" },
+        { "symbol": "GC=F", "name": "Gold", "unit": "USD/oz" },
+        { "symbol": "SI=F", "name": "Silver", "unit": "USD/oz" }
+      ]
+    },
+    {
+      "id": "agriculture", "title": "Food and farm inputs", "cadence": "daily",
+      "items": [
+        { "symbol": "ZW=F", "name": "Wheat", "unit": "USc/bu" },
+        { "symbol": "RICE", "name": "Rice", "unit": "USD/cwt", "hint": "rough rice futures or Thai 5% benchmark" },
+        { "symbol": "PALM", "name": "Palm oil", "unit": "MYR/t", "hint": "Bursa Malaysia" },
+        { "symbol": "UREA", "name": "Urea", "unit": "USD/t", "hint": "granular, Middle East or Egypt" }
+      ]
+    },
+    {
+      "id": "shipping", "title": "Shipping and logistics", "cadence": "daily",
+      "items": [
+        { "symbol": "BDI", "name": "Baltic Dry Index", "hint": "Baltic Exchange" },
+        { "symbol": "SCFI", "name": "Shanghai Containerized Freight Index", "hint": "Shanghai Shipping Exchange" },
+        { "symbol": "DCI", "name": "Drewry World Container Index", "hint": "weekly, Drewry" },
+        { "symbol": "TANKER", "name": "Crude tanker rates", "hint": "VLCC benchmark, e.g. TD3C" },
+        { "symbol": "BDRY", "name": "Dry bulk freight futures ETF" },
+        { "symbol": "IYT", "name": "Transportation ETF" }
+      ]
+    },
+    {
+      "id": "regions", "title": "Regional equity gauges", "cadence": "daily", "group_by": "region",
+      "items": [
+        { "symbol": "EWZ", "name": "Brazil", "region": "Americas ex-US" },
+        { "symbol": "EWW", "name": "Mexico", "region": "Americas ex-US" },
+        { "symbol": "ECH", "name": "Chile", "region": "Americas ex-US" },
+        { "symbol": "ARGT", "name": "Argentina", "region": "Americas ex-US" },
+        { "symbol": "VGK", "name": "Europe", "region": "Europe" },
+        { "symbol": "EPOL", "name": "Poland", "region": "Europe" },
+        { "symbol": "TUR", "name": "Turkey", "region": "Europe" },
+        { "symbol": "KSA", "name": "Saudi Arabia", "region": "Middle East and Africa" },
+        { "symbol": "UAE", "name": "United Arab Emirates", "region": "Middle East and Africa" },
+        { "symbol": "EZA", "name": "South Africa", "region": "Middle East and Africa" },
+        { "symbol": "AFK", "name": "Africa", "region": "Middle East and Africa" },
+        { "symbol": "FM", "name": "Frontier markets", "region": "Middle East and Africa" },
+        { "symbol": "INDA", "name": "India", "region": "South Asia" },
+        { "symbol": "EWJ", "name": "Japan", "region": "East Asia" },
+        { "symbol": "EWY", "name": "South Korea", "region": "East Asia" },
+        { "symbol": "EWT", "name": "Taiwan", "region": "East Asia" },
+        { "symbol": "MCHI", "name": "China", "region": "East Asia" },
+        { "symbol": "EIDO", "name": "Indonesia", "region": "Southeast Asia" },
+        { "symbol": "VNM", "name": "Vietnam", "region": "Southeast Asia" },
+        { "symbol": "THD", "name": "Thailand", "region": "Southeast Asia" },
+        { "symbol": "EPHE", "name": "Philippines", "region": "Southeast Asia" },
+        { "symbol": "EWA", "name": "Australia", "region": "Oceania" },
+        { "symbol": "VWO", "name": "Emerging markets, broad", "region": "Broad emerging" }
+      ]
+    },
+    {
+      "id": "esg_funds", "title": "ESG and sustainability funds", "cadence": "daily",
+      "items": [
+        { "symbol": "ESGU", "name": "ESG US equity" },
+        { "symbol": "ESGD", "name": "ESG developed ex-US" },
+        { "symbol": "ESGE", "name": "ESG emerging markets" },
+        { "symbol": "CRBN", "name": "Low-carbon global equity" },
+        { "symbol": "DSI", "name": "Social index" },
+        { "symbol": "GRNB", "name": "Green bonds (USD)" },
+        { "symbol": "BGRN", "name": "Green bonds (global)" }
+      ]
+    },
+    {
+      "id": "themes", "title": "Resource and infrastructure themes", "cadence": "daily",
+      "items": [
+        { "symbol": "ICLN", "name": "Clean energy, global" },
+        { "symbol": "TAN", "name": "Solar" },
+        { "symbol": "FAN", "name": "Wind" },
+        { "symbol": "PBW", "name": "Clean energy, small cap" },
+        { "symbol": "PHO", "name": "Water, US" },
+        { "symbol": "CGW", "name": "Water, global" },
+        { "symbol": "LIT", "name": "Lithium and batteries" },
+        { "symbol": "REMX", "name": "Rare earths and strategic metals" },
+        { "symbol": "COPX", "name": "Copper miners" },
+        { "symbol": "PICK", "name": "Metals and mining, global" },
+        { "symbol": "IGF", "name": "Infrastructure, global" },
+        { "symbol": "PAVE", "name": "Infrastructure, US" }
+      ]
+    },
+    {
+      "id": "positive_impact", "title": "Companies in energy, grid, and water", "cadence": "daily",
+      "items": [
+        { "symbol": "NEE", "name": "NextEra Energy", "region": "Americas ex-US" },
+        { "symbol": "BEP", "name": "Brookfield Renewable", "region": "Americas ex-US" },
+        { "symbol": "ORSTED.CO", "name": "Orsted", "region": "Europe" },
+        { "symbol": "VWS.CO", "name": "Vestas", "region": "Europe" },
+        { "symbol": "SU.PA", "name": "Schneider Electric", "region": "Europe" },
+        { "symbol": "VIE.PA", "name": "Veolia", "region": "Europe" },
+        { "symbol": "XYL", "name": "Xylem", "region": "Americas ex-US" }
+      ]
+    }
+  ],
+  "climate_watch": [
+    "ENSO status (El Nino or La Nina) and the official outlook",
+    "Drought and heat in major farming and hydropower regions",
+    "River and canal levels that limit shipping: Panama Canal, Rhine, Mekong",
+    "Monsoon, typhoon, and hurricane outlook",
+    "European gas storage level",
+    "Policy events that move resource markets: carbon market rules, climate summit outcomes"
+  ],
+  "sources_by_region": {
+    "note": "Use a mix of regional sources so no country's agency or press is the default.",
+    "weather_climate": ["NOAA", "Copernicus", "WMO", "India Meteorological Department", "Japan Meteorological Agency", "Bureau of Meteorology (Australia)", "INPE (Brazil)", "ICPAC (East Africa)"]
+  }
+}
