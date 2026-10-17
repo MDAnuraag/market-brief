@@ -1,12 +1,1320 @@
 {
-  "generated_at": null,
-  "data_date": null,
-  "edition": "none",
-  "summary": "",
-  "flags": [],
-  "groups": [],
-  "climate": [],
-  "allocation": null,
-  "sources": [],
-  "gaps": []
+  "generated_at": "2026-10-17T20:14:50Z",
+  "data_date": "2026-10-16",
+  "edition": "saturday",
+  "summary": "US stocks had a rough week: the Nasdaq fell 4.5% and the S&P 500 1.9%, with the VIX up to 20 as AI-spending doubts, hot inflation data and a 10-year yield near 5.1% weighed. A global chip rout hit Korea (SK Hynix -24%, Samsung -18%; the Korea ETF EWY -15%), Taiwan, Japan and Europe's ASM International, and US equipment makers such as KLA, Lam and Onto. Oil rose on Middle East supply risk (Brent 109.86, WTI +10%) and Asian LNG jumped, while silver and lithium carbonate fell sharply and dry bulk freight kept sliding. A strengthening El Nino and EU gas storage at its lowest for the date since 2011 are the main weather and energy backdrops; clean-energy funds fell while water funds held up.",
+  "flags": [
+    {
+      "symbol": "^IXIC",
+      "reason": "Down 2.1% on Friday, beyond the 2% daily trigger."
+    },
+    {
+      "symbol": "TSM",
+      "reason": "Down 9.0% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "AVGO",
+      "reason": "Down 9.1% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "AMD",
+      "reason": "Down 13.0% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "KLAC",
+      "reason": "Down 15.2% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "LRCX",
+      "reason": "Down 17.2% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "ONTO",
+      "reason": "Down 25.1% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "INTC",
+      "reason": "Down 14.2% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "005930.KS",
+      "reason": "Down 17.8% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "000660.KS",
+      "reason": "Down 24.3% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "8035.T",
+      "reason": "Down 14.6% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "ASM.AS",
+      "reason": "Down 14.8% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "2454.TW",
+      "reason": "Down 9.4% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "0981.HK",
+      "reason": "Down 9.1% this week, above the 8% stock trigger."
+    },
+    {
+      "symbol": "META",
+      "reason": "Earnings due 2026-10-21, within 10 days."
+    },
+    {
+      "symbol": "CL=F",
+      "reason": "Up 10.4% this week, above the 6% commodity trigger."
+    },
+    {
+      "symbol": "TTF=F",
+      "reason": "Up 7.5% this week, above the 6% commodity trigger."
+    },
+    {
+      "symbol": "JKM",
+      "reason": "Up 15.2% this week, above the 6% commodity trigger."
+    },
+    {
+      "symbol": "LITHIUM",
+      "reason": "Down 16.5% this week, above the 6% commodity trigger."
+    },
+    {
+      "symbol": "SI=F",
+      "reason": "Down 6.3% this week, above the 6% commodity trigger."
+    },
+    {
+      "symbol": "BDI",
+      "reason": "Down 14.0% this week, above the 6% commodity trigger."
+    },
+    {
+      "symbol": "BDRY",
+      "reason": "Down 9.7% this week, above the 5% fund trigger."
+    },
+    {
+      "symbol": "EWY",
+      "reason": "Down 15.1% this week, above the 5% fund trigger."
+    },
+    {
+      "symbol": "EWT",
+      "reason": "Down 7.0% this week, above the 5% fund trigger."
+    },
+    {
+      "symbol": "EIDO",
+      "reason": "Down 16.4% this week, above the 5% fund trigger."
+    },
+    {
+      "symbol": "ESGE",
+      "reason": "Down 5.9% this week, above the 5% fund trigger."
+    },
+    {
+      "symbol": "ICLN",
+      "reason": "Down 5.5% this week, above the 5% fund trigger."
+    },
+    {
+      "symbol": "PBW",
+      "reason": "Down 11.2% this week, above the 5% fund trigger."
+    },
+    {
+      "symbol": "LIT",
+      "reason": "Down 8.2% this week, above the 5% fund trigger."
+    },
+    {
+      "symbol": "COPX",
+      "reason": "Down 6.7% this week, above the 5% fund trigger."
+    }
+  ],
+  "groups": [
+    {
+      "id": "macros",
+      "title": "Macros",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "^GSPC",
+          "name": "S&P 500",
+          "last": 7659.44,
+          "chg_1d": -1.09,
+          "chg_1w": -1.95,
+          "chg_1m": 1.43
+        },
+        {
+          "symbol": "^IXIC",
+          "name": "Nasdaq Composite",
+          "last": 26140.03,
+          "chg_1d": -2.15,
+          "chg_1w": -4.48,
+          "chg_1m": 0.62,
+          "note": "Worst week since June as chip and AI stocks fell; Micron -5.6%, Intel -5.8% on Friday."
+        },
+        {
+          "symbol": "^DJI",
+          "name": "Dow Jones",
+          "last": 52002.41,
+          "chg_1d": -0.34,
+          "chg_1w": 0.67,
+          "chg_1m": 1.05
+        },
+        {
+          "symbol": "^RUT",
+          "name": "Russell 2000",
+          "last": 2721.37,
+          "chg_1d": -1.66,
+          "chg_1w": -3.05,
+          "chg_1m": -4.81,
+          "note": "Fell 3.1% on the week and sits 4.8% below its mid-September level."
+        },
+        {
+          "symbol": "^VIX",
+          "name": "CBOE Volatility Index",
+          "last": 19.99,
+          "chg_1d": 21.45,
+          "chg_1w": 34.7,
+          "chg_1m": 12.87,
+          "note": "Jumped to 19.99 as AI-linked stocks sold off and hot CPI/PPI lifted rate-hike odds."
+        },
+        {
+          "symbol": "^TNX",
+          "name": "10-year Treasury yield",
+          "last": 5.09,
+          "chg_1d": -0.01,
+          "chg_1w": -0.15,
+          "chg_1m": 0.08,
+          "note": "Yield in percent, changes in percentage points; US Treasury par yield (Yahoo quote showed 5.10)."
+        }
+      ]
+    },
+    {
+      "id": "core_passive",
+      "title": "Core passive",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "SWTSX",
+          "name": "Schwab Total Stock Market",
+          "last": 18.43,
+          "chg_1d": -1.18,
+          "chg_1w": -2.12,
+          "chg_1m": 0.99
+        },
+        {
+          "symbol": "SWISX",
+          "name": "Schwab International Index",
+          "last": 31.51,
+          "chg_1d": -0.13,
+          "chg_1w": 0.32,
+          "chg_1m": -1.16
+        },
+        {
+          "symbol": "VOO",
+          "name": "Vanguard S&P 500",
+          "last": 701.61,
+          "chg_1d": -1.1,
+          "chg_1w": -1.95,
+          "chg_1m": 1.21
+        },
+        {
+          "symbol": "VTI",
+          "name": "Vanguard Total Stock Market",
+          "last": 374.07,
+          "chg_1d": -1.15,
+          "chg_1w": -2.06,
+          "chg_1m": 0.76
+        },
+        {
+          "symbol": "VXUS",
+          "name": "Vanguard Total International",
+          "last": 83.43,
+          "chg_1d": -0.49,
+          "chg_1w": -1.64,
+          "chg_1m": -2.32
+        }
+      ]
+    },
+    {
+      "id": "funds_401k",
+      "title": "401(k) funds",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "FXAIX",
+          "name": "Fidelity 500 Index",
+          "last": 266.21,
+          "chg_1d": -1.09,
+          "chg_1w": -1.94,
+          "chg_1m": 1.22
+        },
+        {
+          "symbol": "FSMDX",
+          "name": "Fidelity Mid Cap Index",
+          "last": 42.01,
+          "chg_1d": -0.94,
+          "chg_1w": -1.2,
+          "chg_1m": 0.62
+        },
+        {
+          "symbol": "FSSNX",
+          "name": "Fidelity Small Cap Index",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        },
+        {
+          "symbol": "FTIHX",
+          "name": "Fidelity Total International Index",
+          "last": 19.3,
+          "chg_1d": -0.57,
+          "chg_1w": -1.78,
+          "chg_1m": -2.13
+        }
+      ]
+    },
+    {
+      "id": "semis",
+      "title": "Semiconductors",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "TSM",
+          "name": "TSMC",
+          "last": 412.61,
+          "chg_1d": -2.28,
+          "chg_1w": -9.0,
+          "chg_1m": null,
+          "note": "Q3 results Oct 15: revenue NT$1,494bn, up 50.9% y/y; net income up 68.7%. ADR still fell about 9% on the week."
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA",
+          "last": 214.13,
+          "chg_1d": -1.43,
+          "chg_1w": -6.61,
+          "chg_1m": 0.11
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom",
+          "last": 328.75,
+          "chg_1d": -4.52,
+          "chg_1w": -9.07,
+          "chg_1m": -3.17
+        },
+        {
+          "symbol": "AMD",
+          "name": "AMD",
+          "last": 528.75,
+          "chg_1d": -5.95,
+          "chg_1w": -13,
+          "chg_1m": null,
+          "note": "Down 5.95% on Friday; weekly and monthly history unavailable."
+        },
+        {
+          "symbol": "QCOM",
+          "name": "Qualcomm",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML",
+          "last": 1641.52,
+          "chg_1d": -0.96,
+          "chg_1w": -7.8,
+          "chg_1m": 2.45,
+          "note": "Q3 results Oct 14; shares rose 2.2% in early trading that day."
+        },
+        {
+          "symbol": "KLAC",
+          "name": "KLA",
+          "last": 165.74,
+          "chg_1d": -5.0,
+          "chg_1w": -15.25,
+          "chg_1m": -0.97,
+          "note": "Down 15.3% on the week; 165.74 close confirmed on Yahoo daily history."
+        },
+        {
+          "symbol": "AMAT",
+          "name": "Applied Materials",
+          "last": 409.29,
+          "chg_1d": -4.82,
+          "chg_1w": null,
+          "chg_1m": null,
+          "note": "Down 4.82% on Friday; weekly and monthly history unavailable."
+        },
+        {
+          "symbol": "LRCX",
+          "name": "Lam Research",
+          "last": 263.94,
+          "chg_1d": -4.87,
+          "chg_1w": -17.22,
+          "chg_1m": -1.96,
+          "note": "Down 17.2% on the week; fell every session Oct 12-16."
+        },
+        {
+          "symbol": "ONTO",
+          "name": "Onto Innovation",
+          "last": 220.7,
+          "chg_1d": -4.85,
+          "chg_1w": -25.07,
+          "chg_1m": -9.42,
+          "note": "Down 25.1% on the week, the steepest US decline in the group."
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel",
+          "last": 89.85,
+          "chg_1d": -5.79,
+          "chg_1w": -14.18,
+          "chg_1m": -11.08,
+          "note": "Down 14.2% on the week and 11.1% over the month."
+        },
+        {
+          "symbol": "005930.KS",
+          "name": "Samsung Electronics",
+          "region": "East Asia",
+          "last": 215500,
+          "chg_1d": 2.62,
+          "chg_1w": -17.75,
+          "chg_1m": -14.99,
+          "note": "Down 17.8% on the week (base Oct 8; Oct 9 market closed)."
+        },
+        {
+          "symbol": "000660.KS",
+          "name": "SK Hynix",
+          "region": "East Asia",
+          "last": 1272000,
+          "chg_1d": 0.79,
+          "chg_1w": -24.33,
+          "chg_1m": -27.69,
+          "note": "Down 24.3% on the week and 27.7% on the month (base Oct 8)."
+        },
+        {
+          "symbol": "8035.T",
+          "name": "Tokyo Electron",
+          "region": "East Asia",
+          "last": 10630,
+          "chg_1d": 2.56,
+          "chg_1w": -14.58,
+          "chg_1m": 2.82,
+          "note": "Down 14.6% on the week. Yahoo shows a 5:1 split on Sep 29; series looks split-adjusted."
+        },
+        {
+          "symbol": "ASM.AS",
+          "name": "ASM International",
+          "region": "Europe",
+          "last": 753.0,
+          "chg_1d": -1.65,
+          "chg_1w": -14.78,
+          "chg_1m": -2.41,
+          "note": "Down 14.8% on the week."
+        },
+        {
+          "symbol": "2454.TW",
+          "name": "MediaTek",
+          "region": "East Asia",
+          "last": 4250,
+          "chg_1d": 2.04,
+          "chg_1w": -9.38,
+          "chg_1m": -6.18
+        },
+        {
+          "symbol": "0981.HK",
+          "name": "SMIC",
+          "region": "East Asia",
+          "last": 52.4,
+          "chg_1d": 0.48,
+          "chg_1w": -9.11,
+          "chg_1m": -17.67,
+          "note": "Down 17.7% over the month."
+        }
+      ]
+    },
+    {
+      "id": "mega_tech",
+      "title": "Mega tech",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "AAPL",
+          "name": "Apple",
+          "last": 343.46,
+          "chg_1d": 0.43,
+          "chg_1w": 2.03,
+          "chg_1m": 3.32,
+          "next_earnings": "2026-11-02"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "last": 529.05,
+          "chg_1d": -1.93,
+          "chg_1w": -1.13,
+          "chg_1m": 7.9,
+          "note": "Up 7.9% over one month despite Friday's 1.9% drop; earnings Oct 28.",
+          "next_earnings": "2026-10-28"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "last": 340.59,
+          "chg_1d": -2.47,
+          "chg_1w": -3.15,
+          "chg_1m": -0.66,
+          "next_earnings": "2026-10-28"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "last": 250.0,
+          "chg_1d": -1.87,
+          "chg_1w": -4.74,
+          "chg_1m": 1.64,
+          "note": "Down 4.7% on the week, giving back the prior week's gains.",
+          "next_earnings": "2026-10-29"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "last": 709.33,
+          "chg_1d": -3.72,
+          "chg_1w": -1.3,
+          "chg_1m": 5.35,
+          "note": "Fell 3.7% Friday amid AI-spending worries; earnings due Oct 21.",
+          "next_earnings": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "title": "Energy",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "BZ=F",
+          "name": "Brent crude",
+          "unit": "USD/bbl",
+          "last": 109.86,
+          "chg_1d": 3.72,
+          "chg_1w": 4.91,
+          "chg_1m": 4.81,
+          "note": "Highest since May on Red Sea export port missile attempt, Ukrainian strike on Ryazan refinery and a large US crude draw."
+        },
+        {
+          "symbol": "CL=F",
+          "name": "WTI crude",
+          "unit": "USD/bbl",
+          "last": 101.41,
+          "chg_1d": 3.51,
+          "chg_1w": 10.41,
+          "chg_1m": -0.49,
+          "note": "Up over 10% on the week (November contract) on Middle East supply fears and an 8.6M-barrel US crude draw."
+        },
+        {
+          "symbol": "NG=F",
+          "name": "Henry Hub gas",
+          "unit": "USD/MMBtu",
+          "last": 3.116,
+          "chg_1d": -3.71,
+          "chg_1w": -3.23,
+          "chg_1m": 7.41
+        },
+        {
+          "symbol": "TTF=F",
+          "name": "TTF gas (Europe)",
+          "unit": "EUR/MWh",
+          "last": 87.55,
+          "chg_1d": 1.28,
+          "chg_1w": 7.5,
+          "chg_1m": 14.66,
+          "note": "Trading Economics \"EU Gas\" series, assumed to track TTF."
+        },
+        {
+          "symbol": "JKM",
+          "name": "JKM LNG (Asia)",
+          "unit": "USD/MMBtu",
+          "last": 29.93,
+          "chg_1d": 12.79,
+          "chg_1w": 15.18,
+          "chg_1m": 11.87,
+          "note": "Sharp one-day jump amid Middle East supply risk; single aggregator source."
+        },
+        {
+          "symbol": "MTF=F",
+          "name": "Newcastle coal",
+          "unit": "USD/t",
+          "last": 150.4,
+          "chg_1d": 0.5,
+          "chg_1w": 1.04,
+          "chg_1m": 3.98
+        },
+        {
+          "symbol": "U3O8",
+          "name": "Uranium spot",
+          "unit": "USD/lb",
+          "last": 90.1,
+          "chg_1d": 0.11,
+          "chg_1w": 0.11,
+          "chg_1m": 0.45
+        },
+        {
+          "symbol": "EUA",
+          "name": "EU carbon allowance",
+          "unit": "EUR/t",
+          "last": 85.41,
+          "chg_1d": -0.5,
+          "chg_1w": -1.76,
+          "chg_1m": -0.72
+        }
+      ]
+    },
+    {
+      "id": "metals",
+      "title": "Metals and minerals",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "HG=F",
+          "name": "Copper",
+          "unit": "USD/lb",
+          "last": 6.531,
+          "chg_1d": 0.3,
+          "chg_1w": -1.68,
+          "chg_1m": -0.84
+        },
+        {
+          "symbol": "ALI=F",
+          "name": "Aluminum",
+          "unit": "USD/t",
+          "last": 3008.5,
+          "chg_1d": 0.79,
+          "chg_1w": -1.54,
+          "chg_1m": -8.77
+        },
+        {
+          "symbol": "NICKEL",
+          "name": "Nickel",
+          "unit": "USD/t",
+          "last": 15326,
+          "chg_1d": -0.29,
+          "chg_1w": -2.38,
+          "chg_1m": -5.77
+        },
+        {
+          "symbol": "IRONORE",
+          "name": "Iron ore",
+          "unit": "USD/t",
+          "last": 90.9,
+          "chg_1d": 0.36,
+          "chg_1w": 0.24,
+          "chg_1m": -6.69
+        },
+        {
+          "symbol": "LITHIUM",
+          "name": "Lithium carbonate",
+          "unit": "CNY/t",
+          "last": 102150,
+          "chg_1d": -2.16,
+          "chg_1w": -16.51,
+          "chg_1m": -23.31,
+          "note": "Down about 17% on the week and 23% on the month."
+        },
+        {
+          "symbol": "COBALT",
+          "name": "Cobalt",
+          "unit": "USD/t",
+          "last": 39345,
+          "chg_1d": 0,
+          "chg_1w": 0.25,
+          "chg_1m": -3.27,
+          "as_of": "2026-10-15"
+        },
+        {
+          "symbol": "NDPR",
+          "name": "NdPr oxide",
+          "unit": "CNY/t",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        },
+        {
+          "symbol": "GC=F",
+          "name": "Gold",
+          "unit": "USD/oz",
+          "last": 4166.39,
+          "chg_1d": -0.11,
+          "chg_1w": -0.66,
+          "chg_1m": -4.03
+        },
+        {
+          "symbol": "SI=F",
+          "name": "Silver",
+          "unit": "USD/oz",
+          "last": 56.989,
+          "chg_1d": -0.73,
+          "chg_1w": -6.27,
+          "chg_1m": -12.58,
+          "note": "Down 6.3% on the week and 12.6% on the month."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Food and farm inputs",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "ZW=F",
+          "name": "Wheat",
+          "unit": "USc/bu",
+          "last": 660.5,
+          "chg_1d": -1.42,
+          "chg_1w": -1.56,
+          "chg_1m": -9.15
+        },
+        {
+          "symbol": "RICE",
+          "name": "Rice",
+          "unit": "USD/cwt",
+          "last": 17.32,
+          "chg_1d": 0.38,
+          "chg_1w": 2.24,
+          "chg_1m": 9.69
+        },
+        {
+          "symbol": "PALM",
+          "name": "Palm oil",
+          "unit": "MYR/t",
+          "last": 4676,
+          "chg_1d": 1.74,
+          "chg_1w": 1.83,
+          "chg_1m": -2.91
+        },
+        {
+          "symbol": "UREA",
+          "name": "Urea",
+          "unit": "USD/t",
+          "last": 457.5,
+          "chg_1d": -0.87,
+          "chg_1w": 4.33,
+          "chg_1m": -0.6,
+          "note": "Trading Economics urea series; benchmark location not stated."
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "title": "Shipping and logistics",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "BDI",
+          "name": "Baltic Dry Index",
+          "last": 2511,
+          "chg_1d": -1.34,
+          "chg_1w": -14,
+          "chg_1m": -24.73,
+          "note": "Third straight weekly loss; 1-week change as reported by Trading Economics, about -14% (levels imply about -16%)."
+        },
+        {
+          "symbol": "SCFI",
+          "name": "Shanghai Containerized Freight Index",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        },
+        {
+          "symbol": "DCI",
+          "name": "Drewry World Container Index",
+          "last": 4485,
+          "chg_1d": null,
+          "chg_1w": 3,
+          "chg_1m": null,
+          "note": "Weekly index (as of Oct 15); first rise after three weekly declines, led by Asia-Europe lanes.",
+          "as_of": "2026-10-15"
+        },
+        {
+          "symbol": "TANKER",
+          "name": "Crude tanker rates",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        },
+        {
+          "symbol": "BDRY",
+          "name": "Dry bulk freight futures ETF",
+          "last": 12.55,
+          "chg_1d": 2.45,
+          "chg_1w": -9.65,
+          "chg_1m": -17.97,
+          "note": "Down 9.7% on the week and 18.0% on the month on dry bulk freight futures."
+        },
+        {
+          "symbol": "IYT",
+          "name": "Transportation ETF",
+          "last": 80.03,
+          "chg_1d": -1.09,
+          "chg_1w": -0.15,
+          "chg_1m": -0.16
+        }
+      ]
+    },
+    {
+      "id": "regions",
+      "title": "Regional equity gauges",
+      "group_by": "region",
+      "items": [
+        {
+          "symbol": "EWZ",
+          "name": "Brazil",
+          "region": "Americas ex-US",
+          "last": 41.83,
+          "chg_1d": 0.6,
+          "chg_1w": -3.93,
+          "chg_1m": 11.61,
+          "note": "Up 11.6% over the month, but 3.9% below the Oct 9 close."
+        },
+        {
+          "symbol": "EWW",
+          "name": "Mexico",
+          "region": "Americas ex-US",
+          "last": 74.94,
+          "chg_1d": 1.43,
+          "chg_1w": 4.16,
+          "chg_1m": 2.81
+        },
+        {
+          "symbol": "ECH",
+          "name": "Chile",
+          "region": "Americas ex-US",
+          "last": 37.08,
+          "chg_1d": -0.59,
+          "chg_1w": -1.72,
+          "chg_1m": -4.8
+        },
+        {
+          "symbol": "ARGT",
+          "name": "Argentina",
+          "region": "Americas ex-US",
+          "last": 88.0,
+          "chg_1d": 0.11,
+          "chg_1w": -0.63,
+          "chg_1m": -5.76
+        },
+        {
+          "symbol": "VGK",
+          "name": "Europe",
+          "region": "Europe",
+          "last": 87.29,
+          "chg_1d": 0.09,
+          "chg_1w": 1.46,
+          "chg_1m": -1.51
+        },
+        {
+          "symbol": "EPOL",
+          "name": "Poland",
+          "region": "Europe",
+          "last": 44.56,
+          "chg_1d": 0.25,
+          "chg_1w": 1.69,
+          "chg_1m": 0.88
+        },
+        {
+          "symbol": "TUR",
+          "name": "Turkey",
+          "region": "Europe",
+          "last": 32.47,
+          "chg_1d": -3.25,
+          "chg_1w": -4.86,
+          "chg_1m": -10.25,
+          "note": "Down 3.3% on Friday and 10.3% over the month."
+        },
+        {
+          "symbol": "KSA",
+          "name": "Saudi Arabia",
+          "region": "Middle East and Africa",
+          "last": 35.1,
+          "chg_1d": -0.17,
+          "chg_1w": -2.66,
+          "chg_1m": -5.72
+        },
+        {
+          "symbol": "UAE",
+          "name": "United Arab Emirates",
+          "region": "Middle East and Africa",
+          "last": 19.52,
+          "chg_1d": -0.2,
+          "chg_1w": 1.04,
+          "chg_1m": -2.74
+        },
+        {
+          "symbol": "EZA",
+          "name": "South Africa",
+          "region": "Middle East and Africa",
+          "last": 65.28,
+          "chg_1d": 0.42,
+          "chg_1w": 2.32,
+          "chg_1m": -3.36
+        },
+        {
+          "symbol": "AFK",
+          "name": "Africa",
+          "region": "Middle East and Africa",
+          "last": 26.79,
+          "chg_1d": 0.71,
+          "chg_1w": -0.33,
+          "chg_1m": -5.67
+        },
+        {
+          "symbol": "FM",
+          "name": "Frontier markets",
+          "region": "Middle East and Africa",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        },
+        {
+          "symbol": "INDA",
+          "name": "India",
+          "region": "South Asia",
+          "last": 47.66,
+          "chg_1d": -0.6,
+          "chg_1w": 3.54,
+          "chg_1m": 0.42
+        },
+        {
+          "symbol": "EWJ",
+          "name": "Japan",
+          "region": "East Asia",
+          "last": 94.88,
+          "chg_1d": -0.58,
+          "chg_1w": -3.05,
+          "chg_1m": -2.2
+        },
+        {
+          "symbol": "EWY",
+          "name": "South Korea",
+          "region": "East Asia",
+          "last": 150.44,
+          "chg_1d": -3.7,
+          "chg_1w": -15.12,
+          "chg_1m": -14.3,
+          "note": "Down 15.1% on the week, falling every session since Oct 9."
+        },
+        {
+          "symbol": "EWT",
+          "name": "Taiwan",
+          "region": "East Asia",
+          "last": 106.26,
+          "chg_1d": -2.64,
+          "chg_1w": -7.04,
+          "chg_1m": -1.97,
+          "note": "Down 7.0% on the week; fell 2.6% on Friday."
+        },
+        {
+          "symbol": "MCHI",
+          "name": "China",
+          "region": "East Asia",
+          "last": 51.2,
+          "chg_1d": -0.95,
+          "chg_1w": -2.57,
+          "chg_1m": -2.12
+        },
+        {
+          "symbol": "EIDO",
+          "name": "Indonesia",
+          "region": "Southeast Asia",
+          "last": 9.94,
+          "chg_1d": -14.9,
+          "chg_1w": -16.4,
+          "chg_1m": -21.17,
+          "note": "Yahoo shows a 14.9% one-day fall to 9.94; single source, not cross-checked."
+        },
+        {
+          "symbol": "VNM",
+          "name": "Vietnam",
+          "region": "Southeast Asia",
+          "last": 16.45,
+          "chg_1d": -0.18,
+          "chg_1w": -1.61,
+          "chg_1m": -5.3
+        },
+        {
+          "symbol": "THD",
+          "name": "Thailand",
+          "region": "Southeast Asia",
+          "last": 71.85,
+          "chg_1d": 0.18,
+          "chg_1w": 0.34,
+          "chg_1m": 1.08
+        },
+        {
+          "symbol": "EPHE",
+          "name": "Philippines",
+          "region": "Southeast Asia",
+          "last": 22.9,
+          "chg_1d": 1.01,
+          "chg_1w": 0.48,
+          "chg_1m": -2.43
+        },
+        {
+          "symbol": "EWA",
+          "name": "Australia",
+          "region": "Oceania",
+          "last": 28.73,
+          "chg_1d": -0.28,
+          "chg_1w": 0.38,
+          "chg_1m": 0.84
+        },
+        {
+          "symbol": "VWO",
+          "name": "Emerging markets, broad",
+          "region": "Broad emerging",
+          "last": 58.03,
+          "chg_1d": -1.29,
+          "chg_1w": -2.89,
+          "chg_1m": -1.94
+        }
+      ]
+    },
+    {
+      "id": "esg_funds",
+      "title": "ESG and sustainability funds",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "ESGU",
+          "name": "ESG US equity",
+          "last": 166.85,
+          "chg_1d": -1.11,
+          "chg_1w": -2.15,
+          "chg_1m": 1.42
+        },
+        {
+          "symbol": "ESGD",
+          "name": "ESG developed ex-US",
+          "last": 102.74,
+          "chg_1d": -0.06,
+          "chg_1w": 0.27,
+          "chg_1m": -1.22
+        },
+        {
+          "symbol": "ESGE",
+          "name": "ESG emerging markets",
+          "last": 50.99,
+          "chg_1d": -1.81,
+          "chg_1w": -5.89,
+          "chg_1m": -4.35
+        },
+        {
+          "symbol": "CRBN",
+          "name": "Low-carbon global equity",
+          "last": 253.67,
+          "chg_1d": -1.04,
+          "chg_1w": -1.94,
+          "chg_1m": -0.01
+        },
+        {
+          "symbol": "DSI",
+          "name": "Social index",
+          "last": 145.48,
+          "chg_1d": -1.39,
+          "chg_1w": -2.53,
+          "chg_1m": 1.48
+        },
+        {
+          "symbol": "GRNB",
+          "name": "Green bonds (USD)",
+          "last": 23.38,
+          "chg_1d": -0.09,
+          "chg_1w": 0.47,
+          "chg_1m": -0.6
+        },
+        {
+          "symbol": "BGRN",
+          "name": "Green bonds (global)",
+          "last": 45.92,
+          "chg_1d": -0.02,
+          "chg_1w": 0.61,
+          "chg_1m": -0.5
+        }
+      ]
+    },
+    {
+      "id": "themes",
+      "title": "Resource and infrastructure themes",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "ICLN",
+          "name": "Clean energy, global",
+          "last": 16.33,
+          "chg_1d": -1.33,
+          "chg_1w": -5.5,
+          "chg_1m": -5.72
+        },
+        {
+          "symbol": "TAN",
+          "name": "Solar",
+          "last": 41.85,
+          "chg_1d": -2.11,
+          "chg_1w": -4.34,
+          "chg_1m": -6.21,
+          "note": "Solar down 2.1% on the day, 4.3% on the week, 6.2% on the month."
+        },
+        {
+          "symbol": "FAN",
+          "name": "Wind",
+          "last": 22.08,
+          "chg_1d": 0.96,
+          "chg_1w": -0.67,
+          "chg_1m": -4.13
+        },
+        {
+          "symbol": "PBW",
+          "name": "Clean energy, small cap",
+          "last": 25.17,
+          "chg_1d": -3.86,
+          "chg_1w": -11.15,
+          "chg_1m": -15.85,
+          "note": "Down 11.2% on the week; small-cap clean energy led losses."
+        },
+        {
+          "symbol": "PHO",
+          "name": "Water, US",
+          "last": 70.06,
+          "chg_1d": -0.17,
+          "chg_1w": 2.14,
+          "chg_1m": 2.47
+        },
+        {
+          "symbol": "CGW",
+          "name": "Water, global",
+          "last": 64.1,
+          "chg_1d": 0.12,
+          "chg_1w": 0.17,
+          "chg_1m": 1.26
+        },
+        {
+          "symbol": "LIT",
+          "name": "Lithium and batteries",
+          "last": 64.05,
+          "chg_1d": -2.32,
+          "chg_1w": -8.15,
+          "chg_1m": -8.3,
+          "note": "Down 8.2% on the week, lithium and battery names weak."
+        },
+        {
+          "symbol": "REMX",
+          "name": "Rare earths and strategic metals",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        },
+        {
+          "symbol": "COPX",
+          "name": "Copper miners",
+          "last": 79.98,
+          "chg_1d": -1.05,
+          "chg_1w": -6.73,
+          "chg_1m": -5.0,
+          "note": "Copper miners down 6.7% on the week."
+        },
+        {
+          "symbol": "PICK",
+          "name": "Metals and mining, global",
+          "last": 58.19,
+          "chg_1d": -0.36,
+          "chg_1w": -4.06,
+          "chg_1m": -4.53
+        },
+        {
+          "symbol": "IGF",
+          "name": "Infrastructure, global",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        },
+        {
+          "symbol": "PAVE",
+          "name": "Infrastructure, US",
+          "last": null,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null
+        }
+      ]
+    },
+    {
+      "id": "positive_impact",
+      "title": "Companies in energy, grid, and water",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "NEE",
+          "name": "NextEra Energy",
+          "region": "Americas ex-US",
+          "last": 79.8,
+          "chg_1d": 1.06,
+          "chg_1w": 3.13,
+          "chg_1m": -0.71
+        },
+        {
+          "symbol": "BEP",
+          "name": "Brookfield Renewable",
+          "region": "Americas ex-US",
+          "last": 28.4,
+          "chg_1d": -0.87,
+          "chg_1w": -3.83,
+          "chg_1m": -2.37
+        },
+        {
+          "symbol": "ORSTED.CO",
+          "name": "Orsted",
+          "region": "Europe",
+          "last": 128.55,
+          "chg_1d": 2.39,
+          "chg_1w": -2.94,
+          "chg_1m": -3.96
+        },
+        {
+          "symbol": "VWS.CO",
+          "name": "Vestas",
+          "region": "Europe",
+          "last": 189.95,
+          "chg_1d": 3.23,
+          "chg_1w": 0.13,
+          "chg_1m": -7.93,
+          "note": "Down 7.9% over the month."
+        },
+        {
+          "symbol": "SU.PA",
+          "name": "Schneider Electric",
+          "region": "Europe",
+          "last": 253.3,
+          "chg_1d": -1.82,
+          "chg_1w": -4.92,
+          "chg_1m": -9.34,
+          "note": "Down 9.3% over the month."
+        },
+        {
+          "symbol": "VIE.PA",
+          "name": "Veolia",
+          "region": "Europe",
+          "last": 32.4,
+          "chg_1d": 0.06,
+          "chg_1w": 4.21,
+          "chg_1m": 1.69
+        },
+        {
+          "symbol": "XYL",
+          "name": "Xylem",
+          "region": "Americas ex-US",
+          "last": 104.05,
+          "chg_1d": 0.66,
+          "chg_1w": 1.3,
+          "chg_1m": -3.0
+        }
+      ]
+    }
+  ],
+  "climate": [
+    {
+      "region": "Central America",
+      "headline": "Panama Canal holds 48-foot Neopanamax draft; planned October cut postponed",
+      "detail": "The canal kept the Neopanamax draft at 14.63 m (48.0 ft) and postponed a cut to 14.48 m planned for Oct 1, after reviewing Gatun Lake levels (Shipping Telegraph, reported 8 Sep 2026). No newer transit-count or lake-level figure was found.",
+      "source": "Shipping Telegraph (8 Sep 2026)"
+    },
+    {
+      "region": "East Africa",
+      "headline": "ICPAC forecasts wetter October-December season as El Nino strengthens",
+      "detail": "ICPAC (18 Aug 2026) gave a 90% chance of enhanced rain over southern Ethiopia, central-southern Somalia and north-eastern Kenya, with a positive Indian Ocean Dipole expected. Flood risk is the main concern; the outlook named no drier zones.",
+      "source": "ICPAC (18 Aug 2026)"
+    },
+    {
+      "region": "Europe",
+      "headline": "EU gas storage 73.9% full, lowest for the date since 2011",
+      "detail": "On Oct 12 EU storage was about 73.94% full versus 83.2% a year earlier and 14.9 points below the 5-year average (TASS, citing GIE data). The Rhine at Kaub read about 0 cm on Sep 30 after a record low near 6 cm in August (ShipUniverse); EU ETS auction cleared at EUR 86.28 on Oct 12, with CBAM phase-in debate ongoing (cbamguide.com).",
+      "source": "TASS/GIE AGSI; ShipUniverse (30 Sep 2026); cbamguide.com (13 Oct 2026)"
+    },
+    {
+      "region": "Pacific/Oceania",
+      "headline": "NOAA: strong El Nino, over 83% chance of very strong event by Jan-Mar",
+      "detail": "NOAA CPC (8 Oct 2026) has an El Nino Advisory with Nino-3.4 at +2.1C and 54% odds of a historic event in Sep-Nov. ABARES forecasts Australia's 2026-27 wheat crop at 29.9 Mt, down 17% (S&P Global, 8 Oct).",
+      "source": "NOAA CPC (8 Oct 2026); S&P Global Platts (9 Oct 2026)"
+    },
+    {
+      "region": "South America",
+      "headline": "Brazil record September rain eases hydro worries, power forwards fall",
+      "detail": "Sao Paulo had its wettest September on record; ONS saw central-south reservoirs at about 55.8% at end-September. Southeast-central October power forwards fell to 146 reais/MWh on Sep 15 from 217 on Sep 1.",
+      "source": "S&P Global Platts (16 Sep 2026)"
+    },
+    {
+      "region": "South Asia",
+      "headline": "India monsoon ended 12.6% below normal; October rain forecast under 85%",
+      "detail": "IMD put the season at 759.4 mm against a 868.6 mm average (87%) and expects October rainfall below 85% of normal as El Nino strengthens (report dated 1 Oct 2026). The withdrawal is still in progress and the northeast monsoon is due to start.",
+      "source": "IMD via Superkalam (1 Oct 2026)"
+    }
+  ],
+  "allocation": {
+    "summary": "Balances not provided, so drift was not calculated.",
+    "note": "Add current balances to data/holdings.json."
+  },
+  "sources": [
+    "CBS12",
+    "ICPAC",
+    "NOAA CPC",
+    "S&P Global Platts",
+    "ShipUniverse",
+    "Shipping Telegraph",
+    "Superkalam (IMD)",
+    "TASS (GIE data)",
+    "WMO",
+    "Weathernews",
+    "Wikipedia (COP31)",
+    "abcnews.com (AP)",
+    "advisorperspectives.com",
+    "cbamguide.com",
+    "digrin.com",
+    "drewry.co.uk",
+    "energynow.com",
+    "finance.yahoo.com",
+    "globallnghub.com",
+    "google.com/finance",
+    "home.treasury.gov",
+    "lanacion.com.ar (AP)",
+    "tradingeconomics.com"
+  ],
+  "gaps": [
+    "FSSNX: no verified price found this run",
+    "TSM: 1m change not found",
+    "AMD: 1m change not found",
+    "QCOM: no verified price found this run",
+    "AMAT: 1w/1m change not found",
+    "NDPR: no verified price found this run",
+    "SCFI: no verified price found this run",
+    "DCI: 1d/1m change not found",
+    "TANKER: no verified price found this run",
+    "FM: no verified price found this run",
+    "REMX: no verified price found this run",
+    "IGF: no verified price found this run",
+    "PAVE: no verified price found this run",
+    "next_earnings: dates only confirmed for AAPL, MSFT, GOOGL, AMZN, META; not looked up for other stocks, so the earnings-within-10-days trigger is incomplete.",
+    "NDPR: no NdPr oxide price found (Trading Economics neodymium series is a different product).",
+    "Most commodity values come from one aggregator (Trading Economics); Brent and WTI cross-checked against energynow.com. COBALT is as of 2026-10-15; UREA benchmark location unstated.",
+    "Changes for ETFs, funds and stocks are price or NAV only, excluding distributions; most come from Yahoo Finance daily closes.",
+    "Korea and Taiwan 1-week base is the Oct 8 close because Oct 9 was a market holiday; Tokyo Electron series appears split-adjusted (5:1 on Sep 29).",
+    "AMD and TSM 1-week changes come from a secondary news source (openingbelldailynews); 1-month not found.",
+    "Index Sep 16 base levels came from a page naming a different Fed chair than October reports; cross-checked against year-to-date figures.",
+    "Climate: BoM, JMA, Mekong, Copernicus/China/INPE drought data not verified; Panama Canal info dated 8 Sep; Rhine reading from trade sites; typhoon and Atlantic updates dated Sep 24 and Oct 7; COP31 dates from Wikipedia only."
+  ]
 }
