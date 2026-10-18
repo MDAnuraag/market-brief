@@ -5,156 +5,72 @@
   "summary": "US stocks had a rough week: the Nasdaq fell 4.5% and the S&P 500 1.9%, with the VIX up to 20 as AI-spending doubts, hot inflation data and a 10-year yield near 5.1% weighed. A global chip rout hit Korea (SK Hynix -24%, Samsung -18%; the Korea ETF EWY -15%), Taiwan, Japan and Europe's ASM International, and US equipment makers such as KLA, Lam and Onto. Oil rose on Middle East supply risk (Brent 109.86, WTI +10%) and Asian LNG jumped, while silver and lithium carbonate fell sharply and dry bulk freight kept sliding. A strengthening El Nino and EU gas storage at its lowest for the date since 2011 are the main weather and energy backdrops; clean-energy funds fell while water funds held up.",
   "flags": [
     {
-      "symbol": "SEMIS",
-      "reason": "14 of 17 semiconductor names fell more than 8% this week; the median move among them was -14.7%."
-    },
-    {
-      "symbol": "THEMES",
-      "reason": "5 of 12 theme funds fell more than 5% this week; the median move among them was -8.2%."
-    },
-    {
-      "symbol": "ONTO",
-      "reason": "Down 25.1% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "000660.KS",
-      "reason": "Down 24.3% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "AMAT",
-      "reason": "Down 19.3% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "005930.KS",
-      "reason": "Down 17.8% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "LRCX",
-      "reason": "Down 17.2% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "LITHIUM",
-      "reason": "Down 16.5% this week, above the 6% commodity trigger."
+      "symbol": "SEMIS EQUIPMENT",
+      "tier": "look_into",
+      "reason": "chip equipment: median move -15.2% this week across 7 names, 3.0 times the group's usual weekly swing.",
+      "z_group": -3.04,
+      "news": [
+        {
+          "kind": "reading",
+          "title": "ASML Is Building a Hybrid Bonding Tool!",
+          "url": "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding",
+          "strength": "direct"
+        },
+        {
+          "kind": "reading",
+          "title": "The Case for DUV Controls",
+          "url": "https://www.chinatalk.media/p/saif-khan-the-case-for-duv-controls",
+          "strength": "loose"
+        }
+      ]
     },
     {
       "symbol": "EIDO",
-      "reason": "Down 16.4% this week, above the 5% fund trigger."
-    },
-    {
-      "symbol": "KLAC",
-      "reason": "Down 15.2% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "JKM",
-      "reason": "Up 15.2% this week, above the 6% commodity trigger."
+      "tier": "look_into",
+      "reason": "Down 16.4% this week, 5.6 times its usual weekly swing (about ±2.9%); 14.8 points below the emerging Asia median.",
+      "z_own": -5.64,
+      "z_peer": -6.78
     },
     {
       "symbol": "EWY",
-      "reason": "Down 15.1% this week, above the 5% fund trigger."
+      "tier": "look_into",
+      "reason": "Down 15.1% this week, 5.2 times its usual weekly swing (about ±2.9%); 13.5 points below the emerging Asia median.",
+      "z_own": -5.2,
+      "z_peer": -6.2
     },
     {
-      "symbol": "ASM.AS",
-      "reason": "Down 14.8% this week, above the 8% stock trigger."
+      "symbol": "LITHIUM",
+      "tier": "look_into",
+      "reason": "Down 16.5% this week, 4.6 times its usual weekly swing (about ±3.6%); 15.0 points below the industrial metals median.",
+      "z_own": -4.61,
+      "z_peer": -5.58
     },
     {
-      "symbol": "8035.T",
-      "reason": "Down 14.6% this week, above the 8% stock trigger."
+      "symbol": "000660.KS",
+      "tier": "look_into",
+      "reason": "Down 24.3% this week, 3.9 times its usual weekly swing (about ±6.3%).",
+      "z_own": -3.89
     },
     {
-      "symbol": "INTC",
-      "reason": "Down 14.2% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "BDI",
-      "reason": "Down 14.0% this week, above the 6% commodity trigger."
-    },
-    {
-      "symbol": "AMD",
-      "reason": "Down 13.0% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "PBW",
-      "reason": "Down 11.2% this week, above the 5% fund trigger."
-    },
-    {
-      "symbol": "REMX",
-      "reason": "Down 11.1% this week, above the 5% fund trigger."
-    },
-    {
-      "symbol": "CL=F",
-      "reason": "Up 10.4% this week, above the 6% commodity trigger."
-    },
-    {
-      "symbol": "BDRY",
-      "reason": "Down 9.7% this week, above the 5% fund trigger."
-    },
-    {
-      "symbol": "TANKER",
-      "reason": "Up 9.6% this week, above the 6% commodity trigger."
-    },
-    {
-      "symbol": "2454.TW",
-      "reason": "Down 9.4% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "0981.HK",
-      "reason": "Down 9.1% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "AVGO",
-      "reason": "Down 9.1% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "TSM",
-      "reason": "Down 9.0% this week, above the 8% stock trigger."
-    },
-    {
-      "symbol": "LIT",
-      "reason": "Down 8.2% this week, above the 5% fund trigger."
-    },
-    {
-      "symbol": "TTF=F",
-      "reason": "Up 7.5% this week, above the 6% commodity trigger."
-    },
-    {
-      "symbol": "EWT",
-      "reason": "Down 7.0% this week, above the 5% fund trigger."
-    },
-    {
-      "symbol": "COPX",
-      "reason": "Down 6.7% this week, above the 5% fund trigger."
-    },
-    {
-      "symbol": "SI=F",
-      "reason": "Down 6.3% this week, above the 6% commodity trigger."
+      "symbol": "JKM",
+      "tier": "keep_an_eye",
+      "reason": "Up 12.8% in one day, 4.3 times its usual daily swing (about ±3.0%); 10.3 points above the fuels and gas median.",
+      "z_own": 2.26,
+      "z_peer": 2.04
     },
     {
       "symbol": "ESGE",
-      "reason": "Down 5.9% this week, above the 5% fund trigger."
+      "tier": "keep_an_eye",
+      "reason": "Down 5.9% this week, 2.9 times its usual weekly swing (about ±2.0%); 5.1 points below the ESG and sustainability funds median.",
+      "z_own": -2.93,
+      "z_peer": -3.35
     },
     {
-      "symbol": "ICLN",
-      "reason": "Down 5.5% this week, above the 5% fund trigger."
-    },
-    {
-      "symbol": "^IXIC",
-      "reason": "Down 2.1% on Friday, beyond the 2% daily trigger."
-    },
-    {
-      "symbol": "LRCX",
-      "reason": "Earnings due 2026-10-21, within 10 days."
-    },
-    {
-      "symbol": "META",
-      "reason": "Earnings due 2026-10-21, within 10 days."
-    },
-    {
-      "symbol": "ASM.AS",
-      "reason": "Earnings due 2026-10-27, within 10 days."
-    },
-    {
-      "symbol": "MSFT",
-      "reason": "Earnings due 2026-10-28, within 10 days."
+      "symbol": "CL=F",
+      "tier": "keep_an_eye",
+      "reason": "Up 10.4% this week, 2.9 times its usual weekly swing (about ±3.6%); 5.5 points above the fuels and gas median.",
+      "z_own": 2.91,
+      "z_peer": 2.05
     }
   ],
   "groups": [
@@ -1444,5 +1360,11 @@
     "The Chip Letter",
     "Caixin Global China Watch",
     "Carbon Removal Updates"
-  ]
+  ],
+  "flag_basis": {
+    "sessions": 0,
+    "mode": "starting estimates",
+    "note": "No earlier sessions on record, so normal ranges are starting estimates for each type of instrument.",
+    "below_the_bar": 5
+  }
 }

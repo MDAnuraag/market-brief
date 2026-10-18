@@ -72,6 +72,14 @@ if isinstance(d.get("data_date"), str) and not DATE.match(d["data_date"]):
 for f in d.get("flags", []):
     if not (isinstance(f, dict) and f.get("symbol") and f.get("reason")):
         err(f"flag needs symbol and reason: {f}")
+        continue
+    if f.get("tier", "keep_an_eye") not in ("look_into", "keep_an_eye"):
+        err(f"flag {f['symbol']}: tier must be look_into or keep_an_eye")
+    for n in f.get("news", []):
+        if not (n.get("title") and str(n.get("url", "")).startswith(("https://", "http://"))):
+            err(f"flag {f['symbol']}: news entries need a title and an http(s) url")
+if "flag_basis" in d and not isinstance(d["flag_basis"], dict):
+    err("flag_basis must be an object")
 
 for g in d.get("groups", []):
     if not g.get("id") or not isinstance(g.get("items"), list):
@@ -171,16 +179,21 @@ if errors:
 
 # ---- price history --------------------------------------------------------
 last = {}
+chg = {}
 for g in d["groups"]:
     for i in g["items"]:
         if is_num(i.get("last")):
             last[i["symbol"]] = i["last"]
+        moves = [i.get(k) if is_num(i.get(k)) else None for k in ("chg_1d", "chg_1w", "chg_1m")]
+        if any(m is not None for m in moves):
+            chg[i["symbol"]] = moves  # [1d, 1w, 1m], read by compute_flags.py
 
 line = {
     "data_date": d["data_date"],
     "edition": d["edition"],
     "generated_at": d["generated_at"],
     "last": last,
+    "chg": chg,
     "flagged": [f["symbol"] for f in d["flags"]],
 }
 key = (line["data_date"], line["edition"])

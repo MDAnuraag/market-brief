@@ -89,6 +89,12 @@ h1 .p { color: var(--muted); font-weight: 400; }
 .flags { margin: 0; padding: 0; list-style: none; }
 .flags li { display: grid; grid-template-columns: 14ch 1fr; gap: 0 16px; padding: 3px 0; }
 .flags .sym { font-weight: 700; overflow-wrap: anywhere; }
+.flags .fb { display: block; }
+.flags .fn { display: block; color: var(--muted); font-size: 12.5px; }
+.flags .fn a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.flags .fn a:hover { text-decoration-color: var(--ink); }
+h3.tier { font: 400 12.5px/1.4 var(--mono); color: var(--muted); margin: 10px 0 2px; text-transform: none; }
+.basis { color: var(--muted); font-size: 12.5px; margin: 8px 0 0; max-width: 80ch; }
 .flags-none { margin: 28px 0 0; color: var(--muted); }
 section#flags { margin-top: 28px; }
 h2.flag-h { font: 700 14px/1.4 var(--mono); margin: 0 0 4px; }
@@ -215,7 +221,6 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
   var skipNow = reduce;
   var playing = false;
   var userScrolled = false;
-  var FLAG_LIMIT = 10;
 
   /* ---------- helpers ---------- */
   function el(tag, cls, text) {
@@ -499,8 +504,16 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
     var li = el("li");
     if (typeIt) reveal([li], 0);
     li.appendChild(el("span", "sym", f.symbol || ""));
-    var r = el("span", null, f.reason || "");
-    li.appendChild(typeIt ? typed(r, 6) : r);
+    var body = el("span", "fb");
+    var r = el("span", "fr", f.reason || "");
+    body.appendChild(typeIt ? typed(r, 6) : r);
+    (f.news || []).slice(0, 2).forEach(function (n) {
+      var p = el("span", "fn", (n.kind === "headline" ? "in the news: " : "reading: "));
+      p.appendChild(linkOrText(n.title || n.url, n.url));
+      if (n.strength === "loose") p.appendChild(document.createTextNode(" (loose link)"));
+      body.appendChild(p);
+    });
+    li.appendChild(body);
     return li;
   }
 
@@ -594,28 +607,33 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
     typed(stampEl, 12);
 
     var flags = d.flags || [];
+    var basis = d.flag_basis || null;
     if (flags.length) {
-      var fs = section("flags", "triggers");
+      var fs = section("flags", "flags");
       var fh = el("h2", "flag-h");
       fh.appendChild(el("span", "p", "! "));
-      fh.appendChild(typed(el("span", "t", "worth a look: " + flags.length + " crossed your triggers"), 16));
+      fh.appendChild(typed(el("span", "t", "worth a look: " + flags.length + (flags.length === 1 ? " move" : " moves") + " stood out"), 16));
       fs.appendChild(fh);
-      var ul = el("ul", "flags");
-      flags.slice(0, FLAG_LIMIT).forEach(function (f) { ul.appendChild(flagItem(f, true)); });
-      fs.appendChild(ul);
-      if (flags.length > FLAG_LIMIT) {
-        var det = el("details", "more");
-        det.appendChild(el("summary", null, (flags.length - FLAG_LIMIT) + " more triggers"));
-        var ul2 = el("ul", "flags");
-        flags.slice(FLAG_LIMIT).forEach(function (f) { ul2.appendChild(flagItem(f, false)); });
-        det.appendChild(ul2);
-        fs.appendChild(det);
-        reveal([det], 0);
-      }
+      var TIERS = [["look_into", "look into"], ["keep_an_eye", "keep an eye on"]];
+      var hasTier = flags.some(function (f) { return f.tier; });
+      TIERS.forEach(function (tr) {
+        var list = flags.filter(function (f) { return hasTier ? (f.tier || "keep_an_eye") === tr[0] : tr[0] === "keep_an_eye"; });
+        if (!list.length) return;
+        if (hasTier) { var th = el("h3", "tier", tr[1]); fs.appendChild(th); reveal([th], 0); }
+        var ul = el("ul", "flags");
+        list.forEach(function (f) { ul.appendChild(flagItem(f, true)); });
+        fs.appendChild(ul);
+      });
     } else {
       var none = el("p", "flags-none");
-      none.appendChild(typed(el("span", null, "Nothing crossed your triggers since the last brief."), 14));
+      none.appendChild(typed(el("span", null, "No move was unusual for its own range or its group since the last brief."), 14));
       app.appendChild(none);
+    }
+    if (basis && basis.note) {
+      var bn = basis.note + (basis.below_the_bar ? " " + basis.below_the_bar + " other unusual moves fell under the bar." : "");
+      var bp = el("p", "basis", bn);
+      app.appendChild(bp);
+      reveal([bp], 0);
     }
 
     if (d.summary) {

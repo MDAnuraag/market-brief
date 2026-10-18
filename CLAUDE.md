@@ -3,7 +3,7 @@
 This repo publishes a market briefing page (`index.html`) that reads `data/latest.json`. A scheduled run updates that file and the logs, then pushes. These are the rules for a run.
 
 ## Inputs
-- `data/watchlist.json`: instruments, triggers, group keywords, reading feeds, headline outlets, climate checklist.
+- `data/watchlist.json`: instruments, flagging settings and comparison cohorts, group keywords, reading feeds, headline outlets, climate checklist.
 - `data/reading_log.jsonl`: articles already shown in earlier briefs (one JSON object per line, use the `url`).
 
 ## Editions
@@ -20,14 +20,13 @@ This repo publishes a market briefing page (`index.html`) that reads `data/lates
 7. Report data, not recommendations. Do not say to buy or sell.
 
 ## Flags
-Add an entry to `flags` ({symbol, reason}) when an item crosses a trigger in `watchlist.json`:
-- stock or fund moved more than its weekly threshold, or an index moved more than its daily threshold
-- VIX above its limit
-- earnings within the configured number of days (note the date in `next_earnings`)
+Flags are computed, not hand-written. Once every item, headline and reading entry is in `data/latest.json`, run `python3 scripts/compute_flags.py --write`. It replaces `flags` and adds `flag_basis`.
 
-Keep each reason to one plain sentence with the number in it.
-
-**When more than 8 items trigger**, lead with up to 3 cluster flags, then list individual flags ordered by size of move, largest first. A cluster flag uses the group id in capitals as the symbol, for example `{ "symbol": "SEMIS", "reason": "13 of 17 semiconductor names fell more than 8% this week; the median move was -14%." }`. The page shows the first 10 and folds the rest away, so the order matters. If nothing triggers, leave `flags` empty.
+- It measures each move against what this page has already sampled for that item (its own history in `data/history.jsonl`) and against a comparison cohort (`flagging.peer_cohorts` in `watchlist.json`). Cohorts are comparison groups, not competitors.
+- Tier `look_into`: unusual against both the item's own range and its cohort, or the whole cohort moved unusually together. Tier `keep_an_eye`: a milder version, a one-day shock, or the VIX at or above its limit.
+- When a flag's name matches a headline or reading entry through `overlap`, the script attaches that piece as `news`. Do not force a link where no overlap exists.
+- If a flagged move looks like a data error (a stale quote, a wrong unit, a split), re-check the source, correct the item, and run the script again. Do not edit `flags` by hand and do not change thresholds in a run.
+- Do not add flags for earnings dates. `next_earnings` is shown on each row, and the script mentions an upcoming date inside a flag's reason when it applies.
 
 ## Earnings calendar
 On the Saturday run, look up the next earnings date for every stock in `semis` and `mega_tech` and set `next_earnings` (YYYY-MM-DD). If a date cannot be confirmed, leave it null and add one `gaps` line that lists those symbols. Weekday runs only update dates that changed.
@@ -63,7 +62,8 @@ Build the `reading` list from the enabled feeds in `watchlist.json` under `readi
   "data_date": "2026-10-16",
   "edition": "weekday",
   "summary": "...",
-  "flags": [{ "symbol": "NVDA", "reason": "Up 9.1% this week, above the 8% trigger." }],
+  "flags": [{ "symbol": "NVDA", "tier": "look_into", "reason": "Up 9.1% this week, 3.2 times its usual weekly swing (about ±2.8%).", "z_own": 3.2, "z_peer": 2.4, "news": [{ "kind": "headline", "title": "...", "url": "https://...", "strength": "direct" }] }],
+  "flag_basis": { "sessions": 12, "mode": "learning", "note": "...", "below_the_bar": 3 },
   "groups": [{ "id": "macros", "title": "Macros", "group_by": null, "items": [] }],
   "headlines": [{
     "story": "Short neutral label", "date": "2026-10-15",
@@ -90,6 +90,6 @@ Build the `reading` list from the enabled feeds in `watchlist.json` under `readi
 Carry `group_by` over from the watchlist. Write the real timestamp in UTC.
 
 ## Finish
-1. Run `python3 scripts/update_logs.py`. It checks `data/latest.json` and appends to `data/history.jsonl` and `data/reading_log.jsonl`. If it reports problems, fix `latest.json` and run it again. Never push a file that fails the check. In `sources`, give a plain string, or `{name, url}` when a stable page is known; the page links the second kind.
+1. Run `python3 scripts/compute_flags.py --write`, then `python3 scripts/update_logs.py`. It checks `data/latest.json` and appends to `data/history.jsonl` and `data/reading_log.jsonl`. If either reports problems, fix `latest.json` and run both again. Never push a file that fails the check. In `sources`, give a plain string, or `{name, url}` when a stable page is known; the page links the second kind.
 2. Commit exactly these files: `data/latest.json`, `data/history.jsonl`, `data/reading_log.jsonl` (the last one only if it exists). Use a message like `Brief 2026-10-19 (weekday)`. Push to `main`.
 3. If the push fails, retry once. If it still fails, stop and report the error. Do not force-push.
