@@ -6,14 +6,7 @@
     "commodity_week_move_pct": 6,
     "index_day_move_pct": 2,
     "vix_above": 25,
-    "earnings_within_days": 10,
-    "below_target_price": "uses target_price on an item when set"
-  },
-  "allocation_targets": {
-    "us_pct": 80,
-    "international_pct": 20,
-    "drift_alert_points": 5,
-    "funds_401k": { "FXAIX": 74, "FSMDX": 4, "FSSNX": 2, "FTIHX": 20 }
+    "earnings_within_days": 10
   },
   "groups": [
     {
@@ -219,18 +212,48 @@
     "overlap_rule": "direct = the piece is mainly about that company, fund, commodity, or region. loose = a thematic read-through. Every overlap needs a one-line reason. Use only symbols that exist in this file. If the link is a stretch, leave the overlap out.",
     "paywall_rule": "Summarize only what the feed itself exposes. Never fetch around a paywall, and never use a cache or mirror. Set access to full, partial, or teaser.",
     "feeds": [
-      { "id": "semianalysis", "name": "SemiAnalysis", "url": "https://newsletter.semianalysis.com/feed", "topic": "semis and AI hardware", "access": "partial", "enabled": true, "note": "www.semianalysis.com/feed is stale; use the newsletter address." },
-      { "id": "chipstrat", "name": "Chipstrat", "url": "https://newsletter.chipstrat.com/feed", "topic": "semis and AI hardware", "access": "full", "enabled": true, "note": "chipstrat.com redirects to newsletter.chipstrat.com." },
-      { "id": "irrational", "name": "Irrational Analysis", "url": "https://irrationalanalysis.substack.com/feed", "topic": "semis and AI hardware", "access": "full", "enabled": true, "note": "Posts irregularly." },
-      { "id": "chipletter", "name": "The Chip Letter", "url": "https://thechipletter.substack.com/feed", "topic": "semis history and architecture", "access": "full", "enabled": true, "note": "Slow cadence; mostly history." },
-      { "id": "culpium", "name": "Culpium (Tim Culpan)", "url": "https://www.culpium.com/feed", "topic": "semis and Asia tech", "access": "teaser", "enabled": true, "note": "Feed shows intros only; members-only beyond that." },
-      { "id": "chinatalk", "name": "ChinaTalk", "url": "https://www.chinatalk.media/feed", "topic": "China tech and policy", "access": "full", "enabled": true, "note": "" },
-      { "id": "hellochinatech", "name": "Hello China Tech", "url": "https://hellochinatech.com/feed", "topic": "China tech", "access": "full", "enabled": true, "note": "Occasional paid-report sales pages; skip those." },
-      { "id": "caixin", "name": "Caixin Global China Watch", "url": "https://caixinchinawatch.substack.com/feed", "topic": "China economy", "access": "teaser", "enabled": true, "note": "Teasers only. Newest item seen on 2026-10-17 was dated Aug 12; may be stale. Caixin has no official RSS feed." },
-      { "id": "dialogueearth", "name": "Dialogue Earth", "url": "https://dialogue.earth/en/feed/", "topic": "climate, energy, resources", "access": "full", "enabled": true, "note": "Items carry category tags (Energy, Mining, Business); useful for matching." },
-      { "id": "carbonremoval", "name": "Carbon Removal Updates", "url": "https://carbonremovalupdates.substack.com/feed", "topic": "carbon removal", "access": "full", "enabled": true, "note": "Weekly summary." },
-      { "id": "asianometry", "name": "Asianometry", "url": "https://www.asianometry.com/feed", "topic": "semis history", "access": "full", "enabled": false, "note": "Feed stops at Jan 2025; the newsletter moved to a Stratechery Plus subscription." },
+      { "id": "semianalysis", "name": "SemiAnalysis", "site": "https://newsletter.semianalysis.com", "url": "https://newsletter.semianalysis.com/feed", "topic": "semis and AI hardware", "access": "partial", "enabled": true, "note": "www.semianalysis.com/feed is stale; use the newsletter address." },
+      { "id": "chipstrat", "name": "Chipstrat", "site": "https://newsletter.chipstrat.com", "url": "https://newsletter.chipstrat.com/feed", "topic": "semis and AI hardware", "access": "full", "enabled": true, "note": "chipstrat.com redirects to newsletter.chipstrat.com." },
+      { "id": "irrational", "name": "Irrational Analysis", "site": "https://irrationalanalysis.substack.com", "url": "https://irrationalanalysis.substack.com/feed", "topic": "semis and AI hardware", "access": "full", "enabled": true, "note": "Posts irregularly." },
+      { "id": "chipletter", "name": "The Chip Letter", "site": "https://thechipletter.substack.com", "url": "https://thechipletter.substack.com/feed", "topic": "semis history and architecture", "access": "full", "enabled": true, "note": "Slow cadence; mostly history." },
+      { "id": "culpium", "name": "Culpium (Tim Culpan)", "site": "https://www.culpium.com", "url": "https://www.culpium.com/feed", "topic": "semis and Asia tech", "access": "teaser", "enabled": true, "note": "Feed shows intros only; members-only beyond that." },
+      { "id": "chinatalk", "name": "ChinaTalk", "site": "https://www.chinatalk.media", "url": "https://www.chinatalk.media/feed", "topic": "China tech and policy", "access": "full", "enabled": true, "note": "" },
+      { "id": "hellochinatech", "name": "Hello China Tech", "site": "https://hellochinatech.com", "url": "https://hellochinatech.com/feed", "topic": "China tech", "access": "full", "enabled": true, "note": "Occasional paid-report sales pages; skip those." },
+      { "id": "caixin", "name": "Caixin Global China Watch", "site": "https://caixinchinawatch.substack.com", "url": "https://caixinchinawatch.substack.com/feed", "topic": "China economy", "access": "teaser", "enabled": true, "note": "Teasers only. Newest item seen on 2026-10-17 was dated Aug 12; may be stale. Caixin has no official RSS feed." },
+      { "id": "dialogueearth", "name": "Dialogue Earth", "site": "https://dialogue.earth/en/", "url": "https://dialogue.earth/en/feed/", "topic": "climate, energy, resources", "access": "full", "enabled": true, "note": "Items carry category tags (Energy, Mining, Business); useful for matching." },
+      { "id": "carbonremoval", "name": "Carbon Removal Updates", "site": "https://carbonremovalupdates.substack.com", "url": "https://carbonremovalupdates.substack.com/feed", "topic": "carbon removal", "access": "full", "enabled": true, "note": "Weekly summary." },
+      { "id": "asianometry", "name": "Asianometry", "site": "https://www.asianometry.com", "url": "https://www.asianometry.com/feed", "topic": "semis history", "access": "full", "enabled": false, "note": "Feed stops at Jan 2025; the newsletter moved to a Stratechery Plus subscription." },
       { "id": "semicosystem", "name": "Semicosystem", "url": null, "topic": "semis", "access": null, "enabled": false, "note": "No feed address found. Send the link and set enabled to true." }
+    ]
+  },
+  "headlines": {
+    "max_stories_weekday": 6,
+    "max_stories_saturday": 10,
+    "outlets_per_story": "2 to 4",
+    "rule": "Pick the biggest announcements of the period: policy and trade decisions, export controls, central bank decisions, major production or capacity moves, large company news, and disruptions to supply. For each story cite 2 to 4 outlets from at least 2 different regions when the story is covered that way, and always include one outlet from the region the story concerns. Add one official or primary source (agency, exchange, company release) with kind set to primary when it exists. Use the outlet's own headline wording. Fill framing only when headlines or emphasis visibly differ, describe the difference neutrally in under 25 words, and never judge which outlet is right. Do not let one wire service count as several outlets. Paywalled outlets: use only the visible headline and snippet.",
+    "outlet_pool_note": "A starting pool, not a limit. Runs may use any reputable outlet. Spread across regions so no country's press is the default.",
+    "outlet_pool": [
+      { "name": "BBC News", "region": "Europe", "site": "https://www.bbc.com/news/business" },
+      { "name": "DW", "region": "Europe", "site": "https://www.dw.com/en/business/s-1431" },
+      { "name": "France 24", "region": "Europe", "site": "https://www.france24.com/en/business" },
+      { "name": "Financial Times", "region": "Europe", "site": "https://www.ft.com", "access": "headline only" },
+      { "name": "The Economist", "region": "Europe", "site": "https://www.economist.com", "access": "headline only" },
+      { "name": "Al Jazeera", "region": "Middle East and Africa", "site": "https://www.aljazeera.com/economy/" },
+      { "name": "Arab News", "region": "Middle East and Africa", "site": "https://www.arabnews.com" },
+      { "name": "The Africa Report", "region": "Middle East and Africa", "site": "https://www.theafricareport.com" },
+      { "name": "Business Daily Africa", "region": "Middle East and Africa", "site": "https://www.businessdailyafrica.com" },
+      { "name": "The Hindu BusinessLine", "region": "South Asia", "site": "https://www.thehindubusinessline.com" },
+      { "name": "South China Morning Post", "region": "East Asia", "site": "https://www.scmp.com/business" },
+      { "name": "Nikkei Asia", "region": "East Asia", "site": "https://asia.nikkei.com", "access": "mostly headline only" },
+      { "name": "Focus Taiwan", "region": "East Asia", "site": "https://focustaiwan.tw/business" },
+      { "name": "The Korea Herald", "region": "East Asia", "site": "https://www.koreaherald.com/business" },
+      { "name": "Korea JoongAng Daily", "region": "East Asia", "site": "https://koreajoongangdaily.joins.com" },
+      { "name": "The Straits Times", "region": "Southeast Asia", "site": "https://www.straitstimes.com/business" },
+      { "name": "Lowy Interpreter", "region": "Oceania", "site": "https://www.lowyinstitute.org/the-interpreter" },
+      { "name": "Rest of World", "region": "Global", "site": "https://restofworld.org" },
+      { "name": "Mongabay", "region": "Global", "site": "https://news.mongabay.com" },
+      { "name": "BNamericas", "region": "Americas", "site": "https://www.bnamericas.com" },
+      { "name": "Buenos Aires Times", "region": "Americas", "site": "https://www.batimes.com.ar" }
     ]
   },
   "climate_watch": [

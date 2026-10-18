@@ -110,6 +110,59 @@ for r in d.get("reading", []):
         if not o.get("reason"):
             err(f"reading '{t}': overlap {o.get('symbol')} needs a reason")
 
+def web_url(u):
+    return isinstance(u, str) and u.startswith(("https://", "http://"))
+
+
+REGIONS = {"Americas", "Europe", "Middle East and Africa", "South Asia", "East Asia",
+           "Southeast Asia", "Oceania", "Global"}
+
+for s in d.get("headlines", []):
+    t = s.get("story", "(untitled)")
+    for k in ("story", "summary"):
+        if not s.get(k):
+            err(f"headline '{t}': missing {k}")
+    cov = s.get("coverage")
+    if not isinstance(cov, list) or not cov:
+        err(f"headline '{t}': needs at least one coverage link")
+        cov = []
+    if len(cov) > 4:
+        err(f"headline '{t}': more than 4 coverage links")
+    for c in cov:
+        if not (c.get("outlet") and c.get("title")):
+            err(f"headline '{t}': coverage entry needs outlet and title")
+        if not web_url(c.get("url")):
+            err(f"headline '{t}': coverage url must start with http:// or https://")
+        if c.get("region") not in REGIONS:
+            err(f"headline '{t}': coverage region must be one of {sorted(REGIONS)}")
+        if c.get("kind", "press") not in ("primary", "press"):
+            err(f"headline '{t}': coverage kind must be primary or press")
+    if len(str(s.get("summary", "")).split()) > 45:
+        err(f"headline '{t}': summary is over 45 words")
+    if len(str(s.get("framing", "")).split()) > 35:
+        err(f"headline '{t}': framing is over 35 words")
+    ov = s.get("overlap", [])
+    if len(ov) > 3:
+        err(f"headline '{t}': more than 3 overlaps")
+    for o in ov:
+        if o.get("symbol") not in symbols:
+            err(f"headline '{t}': overlap symbol {o.get('symbol')} is not in watchlist.json")
+        if o.get("strength") not in ("direct", "loose") or not o.get("reason"):
+            err(f"headline '{t}': overlap needs strength direct or loose and a reason")
+
+for x in d.get("climate", []):
+    if x.get("source_url") and not web_url(x["source_url"]):
+        err(f"climate '{x.get('headline')}': source_url must start with http:// or https://")
+for r in d.get("reading", []):
+    if r.get("source_url") and not web_url(r["source_url"]):
+        err(f"reading '{r.get('title')}': source_url must start with http:// or https://")
+for s in d.get("sources", []):
+    if isinstance(s, dict):
+        if not (s.get("name") and web_url(s.get("url"))):
+            err(f"sources: object entries need a name and an http(s) url: {s}")
+    elif not isinstance(s, str):
+        err(f"sources: entries must be strings or {{name, url}} objects: {s}")
+
 if errors:
     print("latest.json has problems:")
     for e in errors:
@@ -156,4 +209,5 @@ if added:
     write_lines(READING_LOG, rlog)
 
 print(f"ok: {sum(len(g['items']) for g in d['groups'])} items, {len(last)} priced, "
+      f"{len(d.get('headlines', []))} headline stories, "
       f"{len(d.get('reading', []))} reading items ({added} new), history has {len(rows)} runs")

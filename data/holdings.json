@@ -1,6 +1,0 @@
-{
-  "_note": "Optional. Fill in current balances (USD) from Fidelity so the Saturday brief can compute allocation drift. Claude cannot see your accounts, so drift is only reported when these are filled in. Leave null to skip.",
-  "funds_401k": { "FXAIX": null, "FSMDX": null, "FSSNX": null, "FTIHX": null },
-  "roth_ira": { "SWTSX": null, "SWISX": null },
-  "target_prices": {}
-}

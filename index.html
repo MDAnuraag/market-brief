@@ -167,9 +167,15 @@ h3 .p { opacity: .7; }
 .read ul.touch b { color: var(--ink); font-weight: 700; }
 .read ul.touch li.loose b { color: var(--muted); font-weight: 500; }
 
-.alloc { max-width: 80ch; border-left: 2px solid var(--line); padding-left: 14px; }
-.alloc p { margin: 0 0 4px; }
-.alloc .sub { color: var(--muted); }
+.read .meta a, .grid2 .src a, footer details a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.read .meta a:hover, .grid2 .src a:hover, footer details a:hover { text-decoration-color: var(--ink); }
+.hl ul.cov { list-style: none; margin: 4px 0 6px; padding: 0; font-size: 13px; }
+.hl ul.cov li { margin: 0 0 3px; }
+.hl ul.cov .o { display: block; color: var(--muted); font-size: 12px; }
+.hl ul.cov li.primary .o { color: var(--ink); }
+.hl ul.cov a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.hl ul.cov a:hover { text-decoration-color: var(--ink); }
+.hl .frame { color: var(--muted); font-size: 12.5px; margin: 0 0 4px; }
 
 .empty { margin-top: 40px; max-width: 70ch; }
 
@@ -258,6 +264,14 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
       var x = new URL(String(u));
       return (x.protocol === "https:" || x.protocol === "http:") ? x.href : null;
     } catch (e) { return null; }
+  }
+
+  function linkOrText(text, url) {
+    var u = safeUrl(url);
+    if (!u) return document.createTextNode(text || "");
+    var a = document.createElement("a");
+    a.textContent = text || u; a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer";
+    return a;
   }
 
   /* ---------- typing engine ---------- */
@@ -494,8 +508,11 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
 
   function readItem(x) {
     var a = el("article", "read");
-    var meta = [x.source || "", shortDate(x.published), ACCESS[x.access] || ""].filter(Boolean).join(" · ");
-    a.appendChild(el("p", "meta", meta));
+    var rest = [shortDate(x.published), ACCESS[x.access] || ""].filter(Boolean).join(" · ");
+    var m = el("p", "meta");
+    m.appendChild(linkOrText(x.source || "", x.source_url));
+    if (rest) m.appendChild(document.createTextNode((x.source ? " · " : "") + rest));
+    a.appendChild(m);
     var h = el("h3");
     var u = safeUrl(x.url);
     if (u) {
@@ -507,18 +524,41 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
     }
     a.appendChild(h);
     if (x.summary) a.appendChild(el("p", "sum", x.summary));
-    var ov = (x.overlap || []).slice(0, 3);
-    if (ov.length) {
-      var ul = el("ul", "touch");
-      ov.forEach(function (o) {
-        var loose = o.strength === "loose";
-        var li = el("li", loose ? "loose" : "direct");
-        li.appendChild(el("b", null, (loose ? "~" : "") + (o.symbol || "")));
-        li.appendChild(document.createTextNode(" " + (o.reason || "")));
-        ul.appendChild(li);
-      });
-      a.appendChild(ul);
-    }
+    var tl = touchList(x.overlap);
+    if (tl) a.appendChild(tl);
+    return a;
+  }
+
+  function touchList(overlap) {
+    var ov = (overlap || []).slice(0, 3);
+    if (!ov.length) return null;
+    var ul = el("ul", "touch");
+    ov.forEach(function (o) {
+      var loose = o.strength === "loose";
+      var li = el("li", loose ? "loose" : "direct");
+      li.appendChild(el("b", null, (loose ? "~" : "") + (o.symbol || "")));
+      li.appendChild(document.createTextNode(" " + (o.reason || "")));
+      ul.appendChild(li);
+    });
+    return ul;
+  }
+
+  function headlineItem(x) {
+    var a = el("article", "read hl");
+    a.appendChild(el("p", "meta", shortDate(x.date)));
+    a.appendChild(el("h3", null, x.story || ""));
+    if (x.summary) a.appendChild(el("p", "sum", x.summary));
+    var ul = el("ul", "cov");
+    (x.coverage || []).forEach(function (c) {
+      var li = el("li", c.kind === "primary" ? "primary" : "press");
+      li.appendChild(el("span", "o", [c.outlet || "", c.region || "", c.kind === "primary" ? "official" : ""].filter(Boolean).join(" · ")));
+      li.appendChild(linkOrText(c.title || "", c.url));
+      ul.appendChild(li);
+    });
+    a.appendChild(ul);
+    if (x.framing) a.appendChild(el("p", "frame", "how the wording differs: " + x.framing));
+    var tl = touchList(x.overlap);
+    if (tl) a.appendChild(tl);
     return a;
   }
 
@@ -584,21 +624,20 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
       app.appendChild(sp);
     }
 
+    if (d.headlines && d.headlines.length) {
+      var hs = section("headlines", "headlines");
+      hs.appendChild(heading("h2", "grp", "## ", "Headlines"));
+      var hg = el("div", "grid2");
+      var harts = d.headlines.map(function (x) { var a = headlineItem(x); hg.appendChild(a); return a; });
+      hs.appendChild(hg);
+      reveal(harts, 120);
+    }
+
     var lg = legend();
     app.appendChild(lg);
     reveal([lg], 0);
 
     (d.groups || []).forEach(renderGroup);
-
-    if (d.allocation) {
-      var as = section("allocation", "allocation");
-      as.appendChild(heading("h2", "grp", "## ", "Allocation check"));
-      var box = el("div", "alloc");
-      box.appendChild(el("p", null, d.allocation.summary || ""));
-      if (d.allocation.note) box.appendChild(el("p", "sub", d.allocation.note));
-      as.appendChild(box);
-      reveal([box], 0);
-    }
 
     if (d.reading && d.reading.length) {
       var rs = section("reading", "reading");
@@ -619,7 +658,11 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
         var art = el("article");
         art.appendChild(el("h3", null, (x.region ? x.region + ": " : "") + (x.headline || "")));
         if (x.detail) art.appendChild(el("p", null, x.detail));
-        if (x.source) art.appendChild(el("p", "src", "source: " + x.source));
+        if (x.source) {
+          var sp2 = el("p", "src", "source: ");
+          sp2.appendChild(linkOrText(x.source, x.source_url));
+          art.appendChild(sp2);
+        }
         cg.appendChild(art);
         return art;
       });
@@ -634,7 +677,12 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
       var dd = el("details");
       dd.appendChild(el("summary", null, title));
       var u = el("ul");
-      list.forEach(function (g) { u.appendChild(el("li", null, g)); });
+      list.forEach(function (g) {
+        var li = el("li");
+        if (g && typeof g === "object") li.appendChild(linkOrText(g.name || g.url, g.url));
+        else li.textContent = String(g);
+        u.appendChild(li);
+      });
       dd.appendChild(u);
       foot.appendChild(dd);
     }
@@ -642,6 +690,17 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
     if (d.reading_quiet && d.reading_quiet.length) fold(d.reading_quiet.length + " newsletters had nothing new", d.reading_quiet);
     fold("sources used", d.sources);
     reveal([foot], 0);
+
+    /* the feeds and outlets this brief draws on, linked from the watchlist */
+    fetch("data/watchlist.json?ts=" + Date.now()).then(function (r) { return r.ok ? r.json() : null; }).then(function (w) {
+      if (!w) return;
+      var feeds = ((w.reading || {}).feeds || []).filter(function (f) { return f.enabled && safeUrl(f.site); })
+        .map(function (f) { return { name: f.name + (f.topic ? " · " + f.topic : ""), url: f.site }; });
+      var pool = ((w.headlines || {}).outlet_pool || []).filter(function (o) { return safeUrl(o.site); })
+        .map(function (o) { return { name: o.name + (o.region ? " · " + o.region : ""), url: o.site }; });
+      fold(feeds.length + " newsletters followed", feeds);
+      fold(pool.length + " outlets used for headlines", pool);
+    }).catch(function () {});
   }
 
   function start(d) {
