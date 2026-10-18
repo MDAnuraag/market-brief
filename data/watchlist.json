@@ -195,6 +195,44 @@
       ]
     }
   ],
+  "group_keywords": {
+    "macros": ["Federal Reserve", "inflation", "CPI", "Treasury yields", "recession", "tariffs"],
+    "core_passive": ["index funds", "passive investing", "market breadth"],
+    "funds_401k": ["index funds", "retirement", "target allocation"],
+    "semis": ["semiconductor", "foundry", "EUV", "DUV", "lithography", "metrology", "HBM", "TSMC", "Samsung", "SK Hynix", "Intel", "export controls", "advanced packaging", "hybrid bonding"],
+    "mega_tech": ["AI capex", "cloud", "datacenter", "antitrust", "AI models"],
+    "energy": ["oil", "LNG", "natural gas", "coal", "uranium", "nuclear", "OPEC", "carbon price", "EU ETS", "power market"],
+    "metals": ["copper", "lithium", "cobalt", "nickel", "rare earths", "iron ore", "gold", "silver", "mining", "critical minerals"],
+    "agriculture": ["wheat", "rice", "palm oil", "fertilizer", "food prices", "El Nino", "monsoon"],
+    "shipping": ["freight", "container rates", "dry bulk", "tankers", "Panama Canal", "Suez", "ports"],
+    "regions": ["Brazil", "India", "Korea", "Taiwan", "Japan", "Indonesia", "Vietnam", "Philippines", "Africa", "Gulf", "frontier markets", "emerging markets"],
+    "esg_funds": ["ESG", "sustainability", "green bonds", "emissions disclosure"],
+    "themes": ["clean energy", "solar", "wind", "water", "grid", "batteries", "infrastructure", "carbon removal"],
+    "positive_impact": ["renewables", "offshore wind", "grid", "water utilities", "electrification"]
+  },
+  "reading": {
+    "max_items_per_feed": 2,
+    "max_items_total": 12,
+    "lookback_days": 7,
+    "summary_max_words": 30,
+    "max_overlaps_per_item": 3,
+    "overlap_rule": "direct = the piece is mainly about that company, fund, commodity, or region. loose = a thematic read-through. Every overlap needs a one-line reason. Use only symbols that exist in this file. If the link is a stretch, leave the overlap out.",
+    "paywall_rule": "Summarize only what the feed itself exposes. Never fetch around a paywall, and never use a cache or mirror. Set access to full, partial, or teaser.",
+    "feeds": [
+      { "id": "semianalysis", "name": "SemiAnalysis", "url": "https://newsletter.semianalysis.com/feed", "topic": "semis and AI hardware", "access": "partial", "enabled": true, "note": "www.semianalysis.com/feed is stale; use the newsletter address." },
+      { "id": "chipstrat", "name": "Chipstrat", "url": "https://newsletter.chipstrat.com/feed", "topic": "semis and AI hardware", "access": "full", "enabled": true, "note": "chipstrat.com redirects to newsletter.chipstrat.com." },
+      { "id": "irrational", "name": "Irrational Analysis", "url": "https://irrationalanalysis.substack.com/feed", "topic": "semis and AI hardware", "access": "full", "enabled": true, "note": "Posts irregularly." },
+      { "id": "chipletter", "name": "The Chip Letter", "url": "https://thechipletter.substack.com/feed", "topic": "semis history and architecture", "access": "full", "enabled": true, "note": "Slow cadence; mostly history." },
+      { "id": "culpium", "name": "Culpium (Tim Culpan)", "url": "https://www.culpium.com/feed", "topic": "semis and Asia tech", "access": "teaser", "enabled": true, "note": "Feed shows intros only; members-only beyond that." },
+      { "id": "chinatalk", "name": "ChinaTalk", "url": "https://www.chinatalk.media/feed", "topic": "China tech and policy", "access": "full", "enabled": true, "note": "" },
+      { "id": "hellochinatech", "name": "Hello China Tech", "url": "https://hellochinatech.com/feed", "topic": "China tech", "access": "full", "enabled": true, "note": "Occasional paid-report sales pages; skip those." },
+      { "id": "caixin", "name": "Caixin Global China Watch", "url": "https://caixinchinawatch.substack.com/feed", "topic": "China economy", "access": "teaser", "enabled": true, "note": "Teasers only. Newest item seen on 2026-10-17 was dated Aug 12; may be stale. Caixin has no official RSS feed." },
+      { "id": "dialogueearth", "name": "Dialogue Earth", "url": "https://dialogue.earth/en/feed/", "topic": "climate, energy, resources", "access": "full", "enabled": true, "note": "Items carry category tags (Energy, Mining, Business); useful for matching." },
+      { "id": "carbonremoval", "name": "Carbon Removal Updates", "url": "https://carbonremovalupdates.substack.com/feed", "topic": "carbon removal", "access": "full", "enabled": true, "note": "Weekly summary." },
+      { "id": "asianometry", "name": "Asianometry", "url": "https://www.asianometry.com/feed", "topic": "semis history", "access": "full", "enabled": false, "note": "Feed stops at Jan 2025; the newsletter moved to a Stratechery Plus subscription." },
+      { "id": "semicosystem", "name": "Semicosystem", "url": null, "topic": "semis", "access": null, "enabled": false, "note": "No feed address found. Send the link and set enabled to true." }
+    ]
+  },
   "climate_watch": [
     "ENSO status (El Nino or La Nina) and the official outlook",
     "Drought and heat in major farming and hydropower regions",
