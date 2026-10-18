@@ -81,6 +81,31 @@ for f in d.get("flags", []):
 if "flag_basis" in d and not isinstance(d["flag_basis"], dict):
     err("flag_basis must be an object")
 
+TIERS = ("official", "reported", "aggregator")
+for ind in d.get("indicators", []):
+    n = ind.get("id", "?")
+    for k in ("id", "name", "period", "source_url"):
+        if not ind.get(k) and ind.get("status") != "no data":
+            err(f"indicator {n}: missing {k}")
+    if ind.get("tier") not in TIERS:
+        err(f"indicator {n}: tier must be one of {TIERS}")
+    if ind.get("source_url") and not str(ind["source_url"]).startswith(("https://", "http://")):
+        err(f"indicator {n}: source_url must be http(s)")
+    for c in ind.get("checks", []):
+        if c.get("bad") and c.get("name", "").startswith("year-to-date"):
+            err(f"indicator {n}: year-to-date does not reconcile; re-check the monthly values")
+if "indicator_observations" in d:
+    err("indicator_observations is still in latest.json; run python3 scripts/indicators.py add")
+if "quality" in d and not isinstance(d["quality"], dict):
+    err("quality must be an object")
+for g in d.get("groups", []):
+    for i in g.get("items", []):
+        if i.get("tier") is not None and i["tier"] not in TIERS:
+            err(f"{i.get('symbol')}: tier must be one of {TIERS}")
+        x = i.get("xcheck")
+        if x is not None and not (isinstance(x, dict) and x.get("src") and is_num(x.get("last"))):
+            err(f"{i.get('symbol')}: xcheck needs src and a numeric last")
+
 for g in d.get("groups", []):
     if not g.get("id") or not isinstance(g.get("items"), list):
         err(f"group needs id and items: {g.get('id')}")
@@ -196,6 +221,9 @@ line = {
     "chg": chg,
     "flagged": [f["symbol"] for f in d["flags"]],
 }
+if isinstance(d.get("quality"), dict):
+    q = d["quality"]
+    line["quality"] = {k: q.get(k) for k in ("tiers", "cross_checked", "agreed", "differed", "flags_confirmed")}
 key = (line["data_date"], line["edition"])
 rows = [r for r in read_lines(HISTORY) if (r.get("data_date"), r.get("edition")) != key]
 rows.append(line)

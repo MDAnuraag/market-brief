@@ -22,6 +22,32 @@
           "url": "https://www.chinatalk.media/p/saif-khan-the-case-for-duv-controls",
           "strength": "loose"
         }
+      ],
+      "context": [
+        {
+          "id": "tsmc_revenue",
+          "name": "TSMC monthly revenue",
+          "period": "2026-09",
+          "yoy": 54.6,
+          "unit": "NT$ billion",
+          "status": "building history (7 of 12 year-on-year readings)"
+        },
+        {
+          "id": "seaj_billings",
+          "name": "Japan-made chip equipment billings",
+          "period": "2026-07",
+          "yoy": 35.4,
+          "unit": "JPY million",
+          "status": "building history (11 of 12 year-on-year readings)"
+        },
+        {
+          "id": "semi_equipment",
+          "name": "Global chip equipment billings",
+          "period": "2026-Q2",
+          "yoy": 23.0,
+          "unit": "US$ billion",
+          "status": "building history (2 of 12 year-on-year readings)"
+        }
       ]
     },
     {
@@ -49,7 +75,25 @@
       "symbol": "000660.KS",
       "tier": "look_into",
       "reason": "Down 24.3% this week, 3.9 times its usual weekly swing (about ±6.3%).",
-      "z_own": -3.89
+      "z_own": -3.89,
+      "context": [
+        {
+          "id": "korea_chip_exports",
+          "name": "Korea semiconductor exports",
+          "period": "2026-09",
+          "yoy": 263.0,
+          "unit": "US$ billion",
+          "status": "building history (4 of 12 year-on-year readings)"
+        },
+        {
+          "id": "sia_sales",
+          "name": "Global semiconductor sales",
+          "period": "2026-08",
+          "yoy": 144.3,
+          "unit": "US$ billion",
+          "status": "building history (2 of 12 year-on-year readings)"
+        }
+      ]
     },
     {
       "symbol": "JKM",
@@ -1366,5 +1410,379 @@
     "mode": "starting estimates",
     "note": "No earlier sessions on record, so normal ranges are starting estimates for each type of instrument.",
     "below_the_bar": 5
-  }
+  },
+  "indicators": [
+    {
+      "id": "tsmc_revenue",
+      "name": "TSMC monthly revenue",
+      "group": "Foundry demand",
+      "unit": "NT$ billion",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "TSMC",
+      "tier": "official",
+      "site": null,
+      "period": "2026-09",
+      "value": 511.86,
+      "row_status": "final",
+      "released": "2026-10-08",
+      "source_name": "TSMC September 2026 Revenue Report",
+      "source_url": "https://pr.tsmc.com/english/news/3343",
+      "yoy": 54.6,
+      "yoy_source": "reported",
+      "yoy_prev": 53.3,
+      "yoy_change": 1.3,
+      "mom": -0.6,
+      "mom_source": "reported",
+      "z": null,
+      "status": "building history (7 of 12 year-on-year readings)",
+      "history_n": 7,
+      "revision": null,
+      "checks": [
+        {
+          "name": "year-to-date reconciles",
+          "ok": 6,
+          "bad": 0
+        },
+        {
+          "name": "stated change matches values on file",
+          "ok": 6,
+          "bad": 0
+        }
+      ],
+      "gaps": [],
+      "next_expected": "2026-11-10",
+      "late": false,
+      "touches": [
+        "TSM",
+        "NVDA",
+        "AVGO",
+        "AMD",
+        "ASML"
+      ],
+      "note": "Consolidated revenue, issued about the 10th. Year-to-date is recorded so months can be reconciled against it.",
+      "spark": [
+        {
+          "p": "2026-03",
+          "v": 415.19
+        },
+        {
+          "p": "2026-04",
+          "v": 410.73
+        },
+        {
+          "p": "2026-05",
+          "v": 416.98
+        },
+        {
+          "p": "2026-06",
+          "v": 442.68
+        },
+        {
+          "p": "2026-07",
+          "v": 467.58
+        },
+        {
+          "p": "2026-08",
+          "v": 514.81
+        },
+        {
+          "p": "2026-09",
+          "v": 511.86
+        }
+      ]
+    },
+    {
+      "id": "korea_chip_exports",
+      "name": "Korea semiconductor exports",
+      "group": "Memory and chip exports",
+      "unit": "US$ billion",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "Korea trade ministry",
+      "tier": "reported",
+      "site": null,
+      "period": "2026-09",
+      "value": 60.3,
+      "row_status": "final",
+      "released": "2026-10-01",
+      "source_name": "Korea Times and Korea JoongAng Daily, quoting the ministry release",
+      "source_url": "https://www.koreatimes.co.kr/economy/20261001/koreas-sept-exports-hit-record-1209-bil-on-robust-chip-sales",
+      "yoy": 263.0,
+      "yoy_source": "reported",
+      "yoy_prev": 209.0,
+      "yoy_change": 54.0,
+      "mom": 29.3,
+      "mom_source": "computed",
+      "z": null,
+      "status": "building history (4 of 12 year-on-year readings)",
+      "history_n": 4,
+      "revision": null,
+      "checks": [],
+      "gaps": [
+        "2026-06"
+      ],
+      "next_expected": "2026-11-01",
+      "late": false,
+      "touches": [
+        "000660.KS",
+        "005930.KS"
+      ],
+      "note": "Released on the 1st. Mostly read from news reports of the ministry release unless the release itself is found; the ministry's English name changes between outlets.",
+      "spark": [
+        {
+          "p": "2026-05",
+          "v": 37.2
+        },
+        {
+          "p": "2026-07",
+          "v": 41.01
+        },
+        {
+          "p": "2026-08",
+          "v": 46.65
+        },
+        {
+          "p": "2026-09",
+          "v": 60.3
+        }
+      ]
+    },
+    {
+      "id": "seaj_billings",
+      "name": "Japan-made chip equipment billings",
+      "group": "Equipment demand",
+      "unit": "JPY million",
+      "freq": "monthly",
+      "smoothing": "3-month average",
+      "source": "SEAJ",
+      "tier": "official",
+      "site": null,
+      "period": "2026-07",
+      "value": 556220.0,
+      "row_status": "preliminary",
+      "released": "2026-08-21",
+      "source_name": "SEAJ semiconductor equipment billings report",
+      "source_url": "https://www.seaj.or.jp/statistics/709771113451.pdf",
+      "yoy": 35.4,
+      "yoy_source": "reported",
+      "yoy_prev": 26.9,
+      "yoy_change": 8.5,
+      "mom": 8.3,
+      "mom_source": "reported",
+      "z": null,
+      "status": "building history (11 of 12 year-on-year readings)",
+      "history_n": 11,
+      "revision": null,
+      "checks": [
+        {
+          "name": "stated change matches values on file",
+          "ok": 9,
+          "bad": 0
+        }
+      ],
+      "gaps": [],
+      "next_expected": "2026-09-21",
+      "late": true,
+      "touches": [
+        "8035.T",
+        "ASML",
+        "AMAT",
+        "LRCX",
+        "KLAC",
+        "ASM.AS",
+        "ONTO"
+      ],
+      "note": "Semiconductor equipment only. SEAJ also publishes flat panel display equipment with a near-identical title; do not use that report. Figures are 3-month averages, and the first release of a month is preliminary.",
+      "spark": [
+        {
+          "p": "2025-09",
+          "v": 424590.0
+        },
+        {
+          "p": "2025-10",
+          "v": 413876.0
+        },
+        {
+          "p": "2025-11",
+          "v": 420670.0
+        },
+        {
+          "p": "2025-12",
+          "v": 423487.0
+        },
+        {
+          "p": "2026-01",
+          "v": 427508.0
+        },
+        {
+          "p": "2026-02",
+          "v": 423103.0
+        },
+        {
+          "p": "2026-03",
+          "v": 480182.0
+        },
+        {
+          "p": "2026-04",
+          "v": 510155.0
+        },
+        {
+          "p": "2026-05",
+          "v": 526352.0
+        },
+        {
+          "p": "2026-06",
+          "v": 513610.0
+        },
+        {
+          "p": "2026-07",
+          "v": 556220.0
+        }
+      ]
+    },
+    {
+      "id": "semi_equipment",
+      "name": "Global chip equipment billings",
+      "group": "Equipment demand",
+      "unit": "US$ billion",
+      "freq": "quarterly",
+      "smoothing": "none",
+      "source": "SEMI",
+      "tier": "official",
+      "site": "https://www.semi.org/en/products-services/market-data/equipment-article-archive",
+      "period": "2026-Q2",
+      "value": 40.53,
+      "row_status": "final",
+      "released": "2026-09-03",
+      "source_name": "SEMI press release",
+      "source_url": "https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-billings-increased-23-percent-year-over-year-in-q2-2026-semi-reports",
+      "yoy": 23.0,
+      "yoy_source": "reported",
+      "yoy_prev": 14.0,
+      "yoy_change": 9.0,
+      "mom": 11.0,
+      "mom_source": "reported",
+      "z": null,
+      "status": "building history (2 of 12 year-on-year readings)",
+      "history_n": 2,
+      "revision": null,
+      "checks": [
+        {
+          "name": "stated change matches values on file",
+          "ok": 1,
+          "bad": 0
+        }
+      ],
+      "gaps": [],
+      "next_expected": "2026-12-04",
+      "late": false,
+      "touches": [
+        "ASML",
+        "AMAT",
+        "LRCX",
+        "KLAC",
+        "8035.T",
+        "ASM.AS",
+        "ONTO"
+      ],
+      "note": "Quarterly, released about three months after the quarter ends. Regional tables are images, so only the global total is recorded.",
+      "spark": [
+        {
+          "p": "2026-Q1",
+          "v": 36.55
+        },
+        {
+          "p": "2026-Q2",
+          "v": 40.53
+        }
+      ]
+    },
+    {
+      "id": "sia_sales",
+      "name": "Global semiconductor sales",
+      "group": "Industry sales",
+      "unit": "US$ billion",
+      "freq": "monthly",
+      "smoothing": "3-month average",
+      "source": "SIA (WSTS data)",
+      "tier": "official",
+      "site": "https://www.semiconductors.org/policies/tax/market-data",
+      "period": "2026-08",
+      "value": 159.7,
+      "row_status": "final",
+      "released": "2026-10-05",
+      "source_name": "SIA press release",
+      "source_url": "https://www.semiconductors.org/year-to-date-global-semiconductor-sales-top-1-trillion-through-august/",
+      "yoy": 144.3,
+      "yoy_source": "reported",
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": 8.0,
+      "mom_source": "reported",
+      "z": null,
+      "status": "building history (2 of 12 year-on-year readings)",
+      "history_n": 4,
+      "revision": {
+        "period": "2026-07",
+        "from": 146.8,
+        "to": 147.9,
+        "pct": 0.75
+      },
+      "checks": [
+        {
+          "name": "stated change matches values on file",
+          "ok": 1,
+          "bad": 2,
+          "detail": [
+            {
+              "period": "2026-06",
+              "stated": 9.7,
+              "on_file": 11.5,
+              "implied_prior": 122.61,
+              "prior_on_file": 120.6
+            },
+            {
+              "period": "2026-07",
+              "stated": 6.4,
+              "on_file": 9.1,
+              "implied_prior": 137.97,
+              "prior_on_file": 134.5
+            }
+          ]
+        }
+      ],
+      "gaps": [],
+      "next_expected": "2026-11-05",
+      "late": false,
+      "touches": [
+        "NVDA",
+        "AVGO",
+        "AMD",
+        "QCOM",
+        "TSM",
+        "000660.KS",
+        "005930.KS"
+      ],
+      "note": "3-month moving average of monthly sales. Earlier months are revised in later releases, so revisions are stored as new rows.",
+      "spark": [
+        {
+          "p": "2026-05",
+          "v": 120.6
+        },
+        {
+          "p": "2026-06",
+          "v": 134.5
+        },
+        {
+          "p": "2026-07",
+          "v": 147.9
+        },
+        {
+          "p": "2026-08",
+          "v": 159.7
+        }
+      ]
+    }
+  ]
 }

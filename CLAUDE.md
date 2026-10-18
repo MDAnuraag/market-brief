@@ -5,6 +5,7 @@ This repo publishes a market briefing page (`index.html`) that reads `data/lates
 ## Inputs
 - `data/watchlist.json`: instruments, flagging settings and comparison cohorts, group keywords, reading feeds, headline outlets, climate checklist.
 - `data/reading_log.jsonl`: articles already shown in earlier briefs (one JSON object per line, use the `url`).
+- `data/series/*.csv`: running records of operational indicators (see Indicators). Append-only; never rewrite old rows by hand.
 
 ## Editions
 - **weekday** (about 7 a.m. Central, Monday to Friday): cover every group whose `cadence` is `daily`. Show what moved overnight in Asia and Europe and where US futures point, plus up to `max_stories_weekday` headline stories.
@@ -18,6 +19,20 @@ This repo publishes a market briefing page (`index.html`) that reads `data/lates
 5. Changes are percentages as plain numbers (3.2 means +3.2%). For yields, `last` is the yield in percent and the change is in percentage points, noted in `note`.
 6. Name the original agency or exchange in `source` and `sources`, not the aggregator that quoted it. If only a secondary source was available, say so in `gaps`.
 7. Report data, not recommendations. Do not say to buy or sell.
+
+## Source tiers and second sources
+Every priced item gets `src` (the issuing body, e.g. "CME Group", "Tokyo Stock Exchange") and `tier`: `official` (the issuer's own page), `reported` (a news report quoting the release), or `aggregator` (a compiled quote site). Use the lowest tier honestly; do not label an aggregator page `official`.
+1. After `compute_flags.py --write`, run `python3 scripts/check_quality.py --plan`. It lists flagged items and a rotating audit sample.
+2. For each listed item, fetch one independent second source (a different issuer, not a mirror, same trading date) and record `xcheck: {src, tier, last, chg_1w, as_of}` on the item. If none can be found, add one `gaps` line naming the symbols; do not invent a value.
+3. Run `python3 scripts/check_quality.py --write`. It marks each flag with `verified` (agree / differ / one source), writes `quality` and lists differences. If a flagged move shows `differ`, re-check both sources, correct the item, and run `compute_flags.py --write` and `check_quality.py --write` again. Do not edit tolerances in a run.
+
+## Indicators
+Operational series (chip equipment orders, foundry revenue, memory exports) live in `data/series/<id>.csv` and are defined in `watchlist.json` under `indicators`. They are context, not trade signals.
+1. Run `python3 scripts/indicators.py due`. For each line, use WebSearch with the `search` hint, then WebFetch only URLs the search returned. Use the issuer's release when it exists; otherwise a news report quoting it (tier `reported`). A series with no new release is left alone.
+2. Put new values in `latest.json` as `indicator_observations`: `[{id, period, value, yoy_reported, mom_reported, ytd_reported, status, released, source, source_url, note}]`. `status` is `final` or `preliminary`; a restated value is simply entered again with the new `released` date and the script records it as a revision. Use the units named in the series definition.
+3. Run `python3 scripts/indicators.py add`, then `python3 scripts/indicators.py compute --write`. A rejected value usually means wrong units, the wrong report, or a typo: re-read the source. Never fill a missing month from memory.
+4. SEAJ publishes both a semiconductor equipment report and a flat panel display (FPD) report. Use only the semiconductor one.
+5. Range tests (`z`) stay off until a series has 12 year-on-year readings; the card says how many it has.
 
 ## Flags
 Flags are computed, not hand-written. Once every item, headline and reading entry is in `data/latest.json`, run `python3 scripts/compute_flags.py --write`. It replaces `flags` and adds `flag_basis`.
@@ -63,6 +78,8 @@ Build the `reading` list from the enabled feeds in `watchlist.json` under `readi
   "edition": "weekday",
   "summary": "...",
   "flags": [{ "symbol": "NVDA", "tier": "look_into", "reason": "Up 9.1% this week, 3.2 times its usual weekly swing (about ±2.8%).", "z_own": 3.2, "z_peer": 2.4, "news": [{ "kind": "headline", "title": "...", "url": "https://...", "strength": "direct" }] }],
+  "quality": { "tiers": {"official": 100, "reported": 8, "aggregator": 2}, "cross_checked": 12, "agreed": 11, "differed": 1, "flags_confirmed": 5, "flags_total": 8 },
+  "indicators": [ "written by scripts/indicators.py compute --write; do not hand-edit" ],
   "flag_basis": { "sessions": 12, "mode": "learning", "note": "...", "below_the_bar": 3 },
   "groups": [{ "id": "macros", "title": "Macros", "group_by": null, "items": [] }],
   "headlines": [{
@@ -90,6 +107,6 @@ Build the `reading` list from the enabled feeds in `watchlist.json` under `readi
 Carry `group_by` over from the watchlist. Write the real timestamp in UTC.
 
 ## Finish
-1. Run `python3 scripts/compute_flags.py --write`, then `python3 scripts/update_logs.py`. It checks `data/latest.json` and appends to `data/history.jsonl` and `data/reading_log.jsonl`. If either reports problems, fix `latest.json` and run both again. Never push a file that fails the check. In `sources`, give a plain string, or `{name, url}` when a stable page is known; the page links the second kind.
-2. Commit exactly these files: `data/latest.json`, `data/history.jsonl`, `data/reading_log.jsonl` (the last one only if it exists). Use a message like `Brief 2026-10-19 (weekday)`. Push to `main`.
+1. Run in this order: `python3 scripts/indicators.py due` (fetch and `add` new values if any), `python3 scripts/indicators.py compute --write`, `python3 scripts/compute_flags.py --write`, `python3 scripts/check_quality.py --plan` (fetch second sources), `python3 scripts/check_quality.py --write`, then `python3 scripts/update_logs.py`. It checks `data/latest.json` and appends to `data/history.jsonl` and `data/reading_log.jsonl`. If any step reports problems, fix `latest.json` and rerun from the failing step. Never push a file that fails the check. In `sources`, give a plain string, or `{name, url}` when a stable page is known; the page links the second kind.
+2. Commit exactly these files: `data/latest.json`, `data/history.jsonl`, `data/reading_log.jsonl` (only if it exists), and `data/series/*.csv`. Use a message like `Brief 2026-10-19 (weekday)`. Push to `main`.
 3. If the push fails, retry once. If it still fails, stop and report the error. Do not force-push.

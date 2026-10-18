@@ -1,0 +1,3 @@
+period,value,yoy_reported,mom_reported,ytd_reported,status,released,source,source_url,note
+2026-Q1,36.55,14,1,,final,2026-06-04,SEMI press release,https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026,mom_reported holds the quarter-over-quarter change.
+2026-Q2,40.53,23,11,,final,2026-09-03,SEMI press release,https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-billings-increased-23-percent-year-over-year-in-q2-2026-semi-reports,mom_reported holds the quarter-over-quarter change. Release calls it a second consecutive record quarter.

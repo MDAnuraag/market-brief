@@ -1,0 +1,6 @@
+period,value,yoy_reported,mom_reported,ytd_reported,status,released,source,source_url,note
+2026-05,120.6,,9.2,,final,2026-07-06,SIA press release,https://www.semiconductors.org/global-semiconductor-sales-increase-9-2-month-to-month-in-may/,"3-month moving average. Value read from the SIA's own news listing, not the release page."
+2026-06,134.5,123.6,9.7,,final,2026-08-06,SIA press release,https://www.semiconductors.org/global-semiconductor-sales-increase-35-1-from-q1-2026-to-q2-2026/,"3-month moving average. Q2 total was 403.3, up 35.1% on Q1."
+2026-07,146.8,135.1,6.4,,final,2026-09-04,SIA press release,https://www.semiconductors.org/global-semiconductor-sales-increase-6-4-month-to-month-in-july/,"3-month moving average. Read from the SIA listing. The 6.4% month-over-month implies June was restated to about 138.0 (derived, not stated)."
+2026-07,147.9,,,,revised,2026-10-05,SIA press release,https://www.semiconductors.org/year-to-date-global-semiconductor-sales-top-1-trillion-through-august/,"Revision of July (146.8 to 147.9, +0.7%). Read from the SIA listing."
+2026-08,159.7,144.3,8.0,,final,2026-10-05,SIA press release,https://www.semiconductors.org/year-to-date-global-semiconductor-sales-top-1-trillion-through-august/,"3-month moving average. 159.7 / 147.9 = +8.0%, matching the stated month-over-month."

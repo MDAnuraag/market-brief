@@ -16,6 +16,9 @@ A personal market briefing page, updated by scheduled Claude runs.
 - `data/history.jsonl`: one line per run with closing levels. This is the base for volatility and correlation work once enough runs pile up.
 - `data/reading_log.jsonl`: articles already shown, so weekday briefs do not repeat them.
 - `scripts/compute_flags.py`: decides which moves get flagged, from each item's own history and its comparison group.
+- `data/series/*.csv`: running records of operational indicators.
+- `scripts/indicators.py`: due list, ingest and summaries for those series.
+- `scripts/check_quality.py`: second-source comparison and the data-checks summary.
 - `scripts/update_logs.py`: checks `latest.json` and appends to the logs.
 
 ## How flags decide
@@ -32,6 +35,14 @@ A flat rule such as "8% in a week" treats a steady fund and a volatile chip stoc
 9. **News.** A flag links to a headline or reading piece only when that piece's overlap tags name the same symbol.
 
 Limits: moves in markets are fatter-tailed than this math assumes, so extreme moves happen more often than a bell curve says. Weekly-published series (some freight and price indices) have no daily history, so they rely on the starting guess for now. The thresholds are in `data/watchlist.json` under `flagging` and can be changed there.
+
+## Source tiers and second-source checks
+
+Every price carries the body that issued it (`src`) and a tier: **official** (the issuer's own page), **reported** (a news report quoting the release), or **aggregator** (a compiled quote site). Flagged items, plus a rotating sample of eight other items per run, are checked against one independent second source. `scripts/check_quality.py` compares them: the last price may differ by at most 0.6% (wider for commodities, gas, freight and rates) and the weekly change by at most 1 point (also wider where those markets are noisier). Each flag then shows "second source agrees", "sources disagree" or "one source so far", and the footer keeps a "data checks" summary. The script never fetches anything and never changes a number; it only compares what the run recorded.
+
+## Indicators
+
+Slow operational numbers (TSMC monthly revenue, Korean chip exports, Japanese and global chip equipment billings, global chip sales) are kept in `data/series/*.csv`, one row per period. A restated number is added as a new row, so revisions stay visible. For each series the page shows the latest value, year-on-year change (reported by the source, or computed here when it is not), a sparkline, whether the reported figures reconcile (TSMC's monthly figures must add up to its year-to-date total), and when the next release is due. Once a series has 12 year-on-year readings, today's reading is also compared with its own median and typical spread (median absolute deviation, which a single odd month cannot distort); before that the card shows how much history it has instead of pretending to a range. When an indicator touches a flagged name, it appears under the flag as context. Indicators are not signals and are never combined into a score.
 
 ## Add a newsletter
 Add an entry under `reading.feeds` in `data/watchlist.json` with its feed address (a Substack feed is `https://<name>.substack.com/feed`) and set `enabled` to `true`.

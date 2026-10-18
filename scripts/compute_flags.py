@@ -304,6 +304,13 @@ def main():
         news.sort(key=lambda n: n["strength"] != "direct")
         if news:
             f["news"] = news[:2]
+        ctx = []
+        for ind in d.get("indicators", []):
+            if syms & set(ind.get("touches", [])) and ind.get("yoy") is not None:
+                ctx.append({"id": ind["id"], "name": ind["name"], "period": ind["period"], "yoy": ind["yoy"],
+                            "unit": ind["unit"], "status": ind["status"]})
+        if ctx:
+            f["context"] = ctx[:3]
     for f in final:
         f.pop("_score", None)
         f.pop("_cohort", None)

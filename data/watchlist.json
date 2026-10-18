@@ -292,6 +292,30 @@
       { "name": "Buenos Aires Times", "region": "Americas", "site": "https://www.batimes.com.ar" }
     ]
   },
+  "quality": {
+    "_note": "Every priced item carries a source tier. Flagged items and a rotating audit sample get a second, independent source. See scripts/check_quality.py and README.md.",
+    "tiers": {
+      "official": "the issuing body's own page: an exchange, central bank, agency, company investor page, or trade association",
+      "reported": "a news report quoting an official release, not the release itself",
+      "aggregator": "a quote or data site that compiles numbers from elsewhere"
+    },
+    "audit_sample_per_run": 8,
+    "tolerance_last_pct": { "default": 0.6, "commodity": 1.5, "gas": 2.0, "freight": 2.0, "rate": 1.0 },
+    "tolerance_week_points": { "default": 1.0, "commodity": 2.0, "gas": 3.0, "freight": 3.0, "rate": 0.1 },
+    "rule": "A second source must be independent of the first (a different issuer, not a mirror) and show the same trading date. If the dates differ, record as_of on the second source and leave status to the script."
+  },
+  "indicators": {
+    "_note": "Operational series for the chip equipment and memory chain. Each lives in data/series/<id>.csv, append-only, with revisions kept as new rows. Release timing: lag_months counts from the period's end month, release_day is the usual day of that month. Backfills were read from official releases.",
+    "min_periods_for_range": 12,
+    "grace_days": 3,
+    "series": [
+      { "id": "tsmc_revenue", "name": "TSMC monthly revenue", "group": "Foundry demand", "unit": "NT$ billion", "freq": "monthly", "lag_months": 1, "release_day": 10, "smoothing": "none", "ytd_check": true, "source": "TSMC", "tier": "official", "site": null, "find": "TSMC <Month> <Year> Revenue Report pr.tsmc.com", "reports_yoy": true, "touches": ["TSM", "NVDA", "AVGO", "AMD", "ASML"], "note": "Consolidated revenue, issued about the 10th. Year-to-date is recorded so months can be reconciled against it." },
+      { "id": "korea_chip_exports", "name": "Korea semiconductor exports", "group": "Memory and chip exports", "unit": "US$ billion", "freq": "monthly", "lag_months": 1, "release_day": 1, "smoothing": "none", "source": "Korea trade ministry", "tier": "reported", "site": null, "find": "Korea <Month> <Year> exports semiconductor exports billion year-on-year ministry release", "reports_yoy": true, "touches": ["000660.KS", "005930.KS"], "note": "Released on the 1st. Mostly read from news reports of the ministry release unless the release itself is found; the ministry's English name changes between outlets." },
+      { "id": "seaj_billings", "name": "Japan-made chip equipment billings", "group": "Equipment demand", "unit": "JPY million", "freq": "monthly", "lag_months": 1, "release_day": 21, "smoothing": "3-month average", "source": "SEAJ", "tier": "official", "site": null, "find": "SEAJ Japan semiconductor equipment billings <Month> <Year>", "reports_yoy": true, "touches": ["8035.T", "ASML", "AMAT", "LRCX", "KLAC", "ASM.AS", "ONTO"], "note": "Semiconductor equipment only. SEAJ also publishes flat panel display equipment with a near-identical title; do not use that report. Figures are 3-month averages, and the first release of a month is preliminary." },
+      { "id": "semi_equipment", "name": "Global chip equipment billings", "group": "Equipment demand", "unit": "US$ billion", "freq": "quarterly", "lag_months": 3, "release_day": 4, "smoothing": "none", "source": "SEMI", "tier": "official", "site": "https://www.semi.org/en/products-services/market-data/equipment-article-archive", "find": "SEMI Reports Global Semiconductor Equipment Billings <Quarter> <Year>", "reports_yoy": true, "touches": ["ASML", "AMAT", "LRCX", "KLAC", "8035.T", "ASM.AS", "ONTO"], "note": "Quarterly, released about three months after the quarter ends. Regional tables are images, so only the global total is recorded." },
+      { "id": "sia_sales", "name": "Global semiconductor sales", "group": "Industry sales", "unit": "US$ billion", "freq": "monthly", "lag_months": 2, "release_day": 5, "smoothing": "3-month average", "source": "SIA (WSTS data)", "tier": "official", "site": "https://www.semiconductors.org/policies/tax/market-data", "find": "SIA global semiconductor sales <Month> <Year> three-month moving average", "reports_yoy": true, "touches": ["NVDA", "AVGO", "AMD", "QCOM", "TSM", "000660.KS", "005930.KS"], "note": "3-month moving average of monthly sales. Earlier months are revised in later releases, so revisions are stored as new rows." }
+    ]
+  },
   "climate_watch": [
     "ENSO status (El Nino or La Nina) and the official outlook",
     "Drought and heat in major farming and hydropower regions",

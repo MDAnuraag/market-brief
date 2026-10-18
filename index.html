@@ -183,6 +183,20 @@ h3 .p { opacity: .7; }
 .hl ul.cov a:hover { text-decoration-color: var(--ink); }
 .hl .frame { color: var(--muted); font-size: 12.5px; margin: 0 0 4px; }
 
+.fv, .fc { display: block; color: var(--muted); font-size: 12.5px; }
+.fv.differ { color: var(--dn2); }
+.ind { border-top: 1px solid var(--line); padding-top: 8px; }
+.ind h3 { margin: 0 0 2px; }
+.ind .meta { color: var(--muted); font-size: 12px; margin: 0 0 4px; }
+.ind .big { font-size: 15px; margin: 0 0 2px; }
+.ind .big b { font-weight: 700; }
+.ind svg { display: block; margin: 4px 0; }
+.ind svg polyline { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.ind svg circle { fill: var(--ink); }
+.ind ul.touch, .ind ul.chk { list-style: none; margin: 0; padding: 0; font-size: 12.5px; color: var(--muted); }
+.ind a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.ind a:hover { text-decoration-color: var(--ink); }
+.ind .late { color: var(--dn2); }
 .empty { margin-top: 40px; max-width: 70ch; }
 
 footer { color: var(--muted); font-size: 12.5px; margin-top: 56px; padding-top: 14px; border-top: 1px solid var(--line); max-width: 80ch; }
@@ -513,8 +527,68 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
       if (n.strength === "loose") p.appendChild(document.createTextNode(" (loose link)"));
       body.appendChild(p);
     });
+    if (f.verified && f.verified.text) body.appendChild(el("span", "fv " + (f.verified.status || ""), "check: " + f.verified.text));
+    (f.context || []).forEach(function (c) {
+      body.appendChild(el("span", "fc", c.name + " (" + c.period + "): " + (c.yoy >= 0 ? "+" : "") + c.yoy + "% year on year"));
+    });
     li.appendChild(body);
     return li;
+  }
+
+  function spark(pts) {
+    var ns = "http://www.w3.org/2000/svg";
+    var w = 160, h = 34, v = pts.map(function (p) { return p.v; });
+    var lo = Math.min.apply(null, v), hi = Math.max.apply(null, v), span = (hi - lo) || 1;
+    var svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("width", w); svg.setAttribute("height", h); svg.setAttribute("viewBox", "0 0 " + w + " " + h);
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "trend over the last " + pts.length + " periods");
+    var xy = pts.map(function (p, i) { return [pts.length === 1 ? w / 2 : 3 + i * (w - 6) / (pts.length - 1), h - 3 - (p.v - lo) / span * (h - 6)]; });
+    var pl = document.createElementNS(ns, "polyline");
+    pl.setAttribute("points", xy.map(function (q) { return q[0].toFixed(1) + "," + q[1].toFixed(1); }).join(" "));
+    svg.appendChild(pl);
+    var last = xy[xy.length - 1], c = document.createElementNS(ns, "circle");
+    c.setAttribute("cx", last[0].toFixed(1)); c.setAttribute("cy", last[1].toFixed(1)); c.setAttribute("r", 2.4);
+    svg.appendChild(c);
+    return svg;
+  }
+
+  function fmtNum(v) {
+    if (v == null) return "n/a";
+    return Math.abs(v) >= 1000 ? Math.round(v).toLocaleString("en-US") : String(Math.round(v * 100) / 100);
+  }
+
+  function indicatorItem(x) {
+    var a = el("article", "ind");
+    a.appendChild(el("p", "meta", x.group + " · " + x.freq + " · " + x.tier + " source"));
+    a.appendChild(el("h3", null, x.name));
+    var sgn = function (n) { return (n >= 0 ? "+" : "") + n + "%"; };
+    var big = el("p", "big");
+    big.appendChild(el("b", null, fmtNum(x.value) + " " + x.unit));
+    big.appendChild(document.createTextNode(" · " + x.period + (x.row_status === "preliminary" ? " (preliminary)" : "")));
+    a.appendChild(big);
+    var bits = [];
+    if (x.yoy != null) bits.push(sgn(x.yoy) + " year on year" + (x.yoy_source === "computed" ? " (computed here)" : ""));
+    if (x.mom != null) bits.push(sgn(x.mom) + " vs prior period");
+    if (x.yoy_change != null) bits.push("year-on-year was " + sgn(x.yoy_prev) + " before");
+    if (bits.length) a.appendChild(el("p", "meta", bits.join(" · ")));
+    if (x.spark && x.spark.length > 1) a.appendChild(spark(x.spark));
+    var st = x.z != null ? "range test: " + (x.z >= 0 ? "+" : "") + x.z + " typical swings from its own median year-on-year" : x.status;
+    a.appendChild(el("p", "meta", st));
+    var ul = el("ul", "chk");
+    if (x.revision) ul.appendChild(el("li", null, "revised: " + x.revision.period + " went from " + fmtNum(x.revision.from) + " to " + fmtNum(x.revision.to) + " (" + sgn(x.revision.pct) + ")"));
+    (x.checks || []).forEach(function (c) {
+      ul.appendChild(el("li", null, c.name + ": " + c.ok + " ok" + (c.bad ? ", " + c.bad + " off" : "")));
+    });
+    if (x.gaps && x.gaps.length) ul.appendChild(el("li", null, "not on file: " + x.gaps.join(", ")));
+    a.appendChild(ul);
+    var nx = el("p", "meta" + (x.late ? " late" : ""), (x.late ? "next release overdue (expected " : "next release expected about ") + x.next_expected + (x.late ? ")" : ""));
+    a.appendChild(nx);
+    if (x.touches && x.touches.length) a.appendChild(el("p", "meta", "relates to: " + x.touches.join(", ")));
+    var sp = el("p", "meta", "source: ");
+    sp.appendChild(linkOrText(x.source_name || x.source, x.source_url));
+    a.appendChild(sp);
+    return a;
   }
 
   var ACCESS = { partial: "partly paywalled", teaser: "teaser only" };
@@ -657,6 +731,17 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
 
     (d.groups || []).forEach(renderGroup);
 
+    if (d.indicators && d.indicators.length) {
+      var is = section("indicators", "indicators");
+      is.appendChild(heading("h2", "grp", "## ", "Indicators"));
+      var ip = el("p", "tally", "Operational numbers from the chip supply chain, kept as a running record. Range tests switch on once a series has " + ((d.indicators[0] && d.indicators[0].min_periods) || 12) + " year-on-year readings; until then each card says how much history it has.");
+      is.appendChild(ip); reveal([ip], 0);
+      var ig = el("div", "grid2");
+      var iarts = d.indicators.filter(function (x) { return x.value != null; }).map(function (x) { var a = indicatorItem(x); ig.appendChild(a); return a; });
+      is.appendChild(ig);
+      reveal(iarts, 120);
+    }
+
     if (d.reading && d.reading.length) {
       var rs = section("reading", "reading");
       rs.appendChild(heading("h2", "grp", "## ", "Reading"));
@@ -703,6 +788,14 @@ footer ul { margin: 6px 0 0; padding-left: 18px; }
       });
       dd.appendChild(u);
       foot.appendChild(dd);
+    }
+    if (d.quality) {
+      var q = d.quality, tc = q.tiers || {};
+      var qs = (tc.official || 0) + " official, " + (tc.reported || 0) + " reported, " + (tc.aggregator || 0) + " aggregator prices; " +
+        (q.cross_checked || 0) + " checked against a second source (" + (q.agreed || 0) + " agree, " + (q.differed || 0) + " differ); " +
+        (q.flags_confirmed || 0) + " of " + (q.flags_total || 0) + " flags confirmed";
+      var qlist = [qs].concat((q.differences || []).map(function (x) { return x.symbol + ": " + x.detail; }));
+      fold("data checks", qlist);
     }
     if (d.gaps && d.gaps.length) fold(d.gaps.length === 1 ? "1 item could not be retrieved" : d.gaps.length + " notes on missing or weak data", d.gaps);
     if (d.reading_quiet && d.reading_quiet.length) fold(d.reading_quiet.length + " newsletters had nothing new", d.reading_quiet);
