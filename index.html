@@ -36,8 +36,9 @@
   --edge: #2a2a2e;
   --white: #f5f4ef;
   --dim: #8d8d93;
-  --amber: #ffb000;
-  --amber-dim: #8a6200;
+  --amber: #ffd400;
+  --amber-dim: #8f7700;
+  --ok: #46d17f;
   --paper: #f6f3ec;
   --ink: #1b1a17;
   --ink-dim: #6a665c;
@@ -134,7 +135,8 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
 .det .k { color: var(--amber); text-transform: uppercase; letter-spacing: .08em; font-size: 11px; margin-right: 8px; }
 .det a { text-decoration: underline; text-decoration-color: var(--amber-dim); text-underline-offset: 3px; }
 .det a:hover { text-decoration-color: var(--amber); }
-.det .bad { color: var(--amber); }
+.det .bad { color: var(--amber); font-weight: 700; }
+.det .good { color: var(--ok); }
 
 /* indicators board */
 .icols, .irow { display: grid; grid-template-columns: minmax(0, 1.5fr) 128px 84px 112px 112px 126px; column-gap: 10px; align-items: center; padding: 0 10px; }
@@ -149,7 +151,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
 .irow .when { font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--dim); }
 .irow .stat { justify-self: end; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; color: var(--dim); }
 .irow .stat.late { color: #000; background: var(--amber); font-weight: 700; padding: 2px 6px; }
-.irow .stat.ok { color: var(--white); border: 1px solid var(--edge); padding: 1px 5px; }
+.irow .stat.ok { color: var(--ok); border: 1px solid #1f5a3a; padding: 1px 5px; }
 
 /* ---------- paper section: prose ---------- */
 .paper { background: var(--paper); color: var(--ink); margin-top: 40px; padding: 8px 0 80px; }
@@ -301,7 +303,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     var det = el("div", "det");
     if (f) {
       var p = el("p"); p.appendChild(el("span", "k", f.tier === "look_into" ? "look into" : "keep an eye on")); p.appendChild(document.createTextNode(f.reason || "")); det.appendChild(p);
-      if (f.verified && f.verified.text) { var v = el("p"); v.appendChild(el("span", "k", "check")); v.appendChild(el("span", f.verified.status === "differ" ? "bad" : null, f.verified.text)); det.appendChild(v); }
+      if (f.verified && f.verified.text) { var v = el("p"); v.appendChild(el("span", "k", "check")); v.appendChild(el("span", f.verified.status === "differ" ? "bad" : (f.verified.status === "agree" ? "good" : null), f.verified.text)); det.appendChild(v); }
       (f.news || []).forEach(function (n) { var q = el("p"); q.appendChild(el("span", "k", n.kind === "headline" ? "news" : "reading")); q.appendChild(link(n.title || n.url, n.url)); if (n.strength === "loose") q.appendChild(document.createTextNode(" (loose link)")); det.appendChild(q); });
       (f.context || []).forEach(function (c) { var q = el("p"); q.appendChild(el("span", "k", "indicator")); q.appendChild(document.createTextNode(c.name + " (" + c.period + "): " + (c.yoy >= 0 ? "+" : "") + c.yoy + "% year on year")); det.appendChild(q); });
     }
@@ -701,7 +703,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
       Array.prototype.forEach.call(bar.querySelectorAll("button"), function (b) { b.setAttribute("aria-pressed", b.dataset.k === k ? "true" : "false"); });
       try { history.replaceState(null, "", "?fonts&font=" + k); } catch (e) {}
     }
-    var bar = el("div"); bar.style.cssText = "position:fixed;left:0;right:0;bottom:0;z-index:20;background:#000;border-top:1px solid #ffb000;padding:8px 12px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font:12px/1 system-ui,sans-serif;color:#ffb000";
+    var bar = el("div"); bar.style.cssText = "position:fixed;left:0;right:0;bottom:0;z-index:20;background:#000;border-top:1px solid #ffd400;padding:8px 12px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font:12px/1 system-ui,sans-serif;color:#ffd400";
     bar.appendChild(document.createTextNode("typeface: "));
     Object.keys(fp.F).forEach(function (k) {
       var b = el("button", null, fp.F[k][0]); b.type = "button"; b.dataset.k = k;
@@ -710,7 +712,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
       bar.appendChild(b);
     });
     document.body.appendChild(bar);
-    var st = document.createElement("style"); st.textContent = 'button[aria-pressed="true"]{background:#ffb000!important;color:#000!important}'; document.head.appendChild(st);
+    var st = document.createElement("style"); st.textContent = 'button[aria-pressed="true"]{background:#ffd400!important;color:#000!important}'; document.head.appendChild(st);
     apply(fp.pick);
   }
 
