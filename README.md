@@ -51,6 +51,9 @@ Three relationships are computed from prices already on the page: Brent minus WT
 ## Route line (region filter)
 Above the Regions board, the eight stops (Oceania, East Asia, Southeast Asia, South Asia, Middle East and Africa, Europe, Americas, Global) sit on a dotted line in follow-the-sun order. Each stop shows the median one-day move of that region's gauges and how many flagged instruments are tagged to it. Picking a stop filters every board whose rows all carry a region (Regions, Positive impact), shows only that region's climate entry, and marks that region's coverage links under Headlines (the rest are dimmed, not hidden). Reading, the other boards and paging keep working as before. The tag comes from `region` on each item in `data/watchlist.json`; `Broad emerging` shows under Global.
 
+## Phones
+At 760 px wide or less (phones), the page is shortened without removing anything: each board starts as a header with one preview line (biggest move, flagged count, number listed) and opens with a tap; Alerts starts open. Boards you open stay open on that device. "Open all boards" and the tabs also open boards. Rows are two lines instead of four, pages hold eight rows, swiping a board changes its page, and automatic page flipping starts paused. Reading becomes a compact list of links; "+" shows the summary and tags. Desktop layout, paging and timing are unchanged.
+
 ## Add a newsletter
 Add an entry under `reading.feeds` in `data/watchlist.json` with its feed address (a Substack feed is `https://<name>.substack.com/feed`) a `group` (Chips, Energy, Metals and minerals, Food and farm, Shipping and logistics, Climate and policy, or China and Asia) and set `enabled` to `true`. The Reading section lists everything the feeds returned, with topic chips to narrow it; nothing is filtered out. Feeds that mix free and paywalled items are included, and the page shows only what the feed itself exposes.
 
