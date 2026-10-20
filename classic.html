@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>market-brief</title>
+<meta name="description" content="Daily and weekly briefing on markets, world resources, regions, and climate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #ffffff;
+  --ink: #181818;
+  --muted: #6b7280;
+  --line: #ececec;
+
+  /* change scale: seven steps, each also carries an arrow or bar so color is never the only signal */
+  --up3: #0e7490;   /* surge */
+  --up2: #15803d;   /* strong gain */
+  --up1: #4d7c0f;   /* gain */
+  --flat: #6b7280;  /* flat or no data */
+  --dn1: #b45309;   /* slip */
+  --dn2: #dc2626;   /* drop */
+  --dn3: #9d174d;   /* sharp drop */
+
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 13.5px/1.65 var(--mono);
+  font-feature-settings: "calt" 0;
+}
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+/* ---------- page frame: one column, plus a sticky index on wide screens ---------- */
+.shell { max-width: 1160px; margin: 0 auto; padding: 0 16px; }
+.wrap { max-width: 900px; padding: 28px 0 80px; }
+.index { display: none; }
+@media (min-width: 1100px) {
+  .shell { display: grid; grid-template-columns: 176px minmax(0, 900px); column-gap: 44px; justify-content: center; padding: 0 20px; }
+  .wrap { padding-top: 36px; }
+  .index {
+    display: block; position: sticky; top: 0; align-self: start;
+    max-height: 100vh; overflow-y: auto; padding: 40px 0 24px;
+    font-size: 12px; line-height: 1.55;
+  }
+  .index .ih { color: var(--muted); margin: 0 0 8px; }
+  .index a {
+    display: block; color: var(--muted); text-decoration: none;
+    padding: 2px 0 2px 10px; border-left: 2px solid transparent; overflow-wrap: anywhere;
+  }
+  .index a:hover { color: var(--ink); }
+  .index a.on { color: var(--ink); border-left-color: var(--ink); }
+}
+
+h1 { font: 700 20px/1.3 var(--mono); margin: 0; letter-spacing: -0.01em; }
+h1 .p { color: var(--muted); font-weight: 400; }
+.stamp { color: var(--muted); margin: 2px 0 0; min-height: 1.65em; }
+.skip {
+  position: fixed; top: 12px; right: 16px; z-index: 5;
+  font: 400 12px var(--mono); color: var(--muted);
+  background: var(--paper); border: 1px solid var(--line); border-radius: 3px;
+  padding: 3px 9px; cursor: pointer;
+}
+.skip:hover { color: var(--ink); border-color: var(--muted); }
+.skip[hidden] { display: none; }
+
+.cursor { display: inline-block; width: .55em; height: 1.05em; background: var(--ink); vertical-align: -0.15em; margin-left: 1px; }
+.cursor.blink { animation: blink 1.05s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.pre { visibility: hidden; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 2px 14px; margin: 16px 0 0; color: var(--muted); font-size: 12px; }
+.legend span::before { content: "■ "; }
+.legend .l-up3::before { color: var(--up3); } .legend .l-up2::before { color: var(--up2); }
+.legend .l-up1::before { color: var(--up1); } .legend .l-flat::before { color: var(--flat); }
+.legend .l-dn1::before { color: var(--dn1); } .legend .l-dn2::before { color: var(--dn2); }
+.legend .l-dn3::before { color: var(--dn3); }
+
+/* ---------- flags ---------- */
+.flags { margin: 0; padding: 0; list-style: none; }
+.flags li { display: grid; grid-template-columns: 14ch 1fr; gap: 0 16px; padding: 3px 0; }
+.flags .sym { font-weight: 700; overflow-wrap: anywhere; }
+.flags .fb { display: block; }
+.flags .fn { display: block; color: var(--muted); font-size: 12.5px; }
+.flags .fn a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.flags .fn a:hover { text-decoration-color: var(--ink); }
+h3.tier { font: 400 12.5px/1.4 var(--mono); color: var(--muted); margin: 10px 0 2px; text-transform: none; }
+.basis { color: var(--muted); font-size: 12.5px; margin: 8px 0 0; max-width: 80ch; }
+.flags-none { margin: 28px 0 0; color: var(--muted); }
+section#flags { margin-top: 28px; }
+h2.flag-h { font: 700 14px/1.4 var(--mono); margin: 0 0 4px; }
+h2.flag-h .p, h2.grp .p { color: var(--muted); font-weight: 400; }
+details.more { margin-top: 6px; }
+details.more summary, footer summary { cursor: pointer; color: var(--muted); }
+details.more[open] summary { margin-bottom: 4px; }
+
+.summary { margin: 24px 0 0; max-width: 78ch; }
+
+section { margin: 40px 0 0; scroll-margin-top: 16px; }
+h2.grp { font: 700 14px/1.4 var(--mono); margin: 0 0 6px; }
+h3 { font: 500 13px/1.4 var(--mono); color: var(--muted); margin: 18px 0 2px; }
+h3 .p { opacity: .7; }
+
+/* ---------- two-up grid for small blocks ---------- */
+.grid2 {
+  display: grid; gap: 14px 36px; align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 410px), 1fr));
+}
+.grid2 > .block > h3 { margin: 10px 0 2px; }
+.grid2 > article { border-left: 2px solid var(--line); padding: 0 0 0 14px; max-width: 80ch; }
+.grid2 > article h3 { color: var(--ink); margin: 0 0 3px; font-weight: 700; font-size: 13.5px; line-height: 1.45; }
+.grid2 > article p { margin: 0; }
+.grid2 > article .src { color: var(--muted); font-size: 12.5px; }
+
+/* ---------- tables ---------- */
+.rows { border-top: 1px solid var(--line); container-type: inline-size; }
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) 88px 96px minmax(170px, 1.1fr) 84px;
+  align-items: center;
+  gap: 0 14px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--line);
+}
+.row.head { color: var(--muted); font-size: 12px; padding: 4px 0; }
+.name { min-width: 0; overflow-wrap: anywhere; }
+.name b { font-weight: 700; }
+.name span { color: var(--muted); margin-left: 8px; }
+.note { grid-column: 1 / -1; color: var(--muted); margin: 0 0 3px; font-size: 12.5px; max-width: 80ch; }
+.num { text-align: right; white-space: nowrap; }
+.bar { display: flex; align-items: center; gap: 10px; }
+.track { position: relative; flex: 1; height: 6px; min-width: 20px; }
+.track::before { content: ""; position: absolute; left: 50%; top: -4px; bottom: -4px; width: 1px; background: #d4d4d4; }
+.fill { position: absolute; top: 0; bottom: 0; background: currentColor; }
+.fill.pos { left: 50%; }
+.fill.neg { right: 50%; }
+.bar .num { width: 84px; flex: none; }
+
+/* a table adapts to the width it is given, not to the screen */
+@container (max-width: 540px) {
+  .row { grid-template-columns: minmax(0, 1fr) 70px 148px; gap: 0 10px; }
+  .row .col-1d, .row .col-1m { display: none; }
+  .bar { gap: 8px; }
+  .bar .num { width: 76px; }
+  .name span { display: block; margin: 0; font-size: 12px; }
+}
+@container (max-width: 380px) {
+  .row { grid-template-columns: minmax(0, 1fr) auto; row-gap: 3px; padding: 7px 0; }
+  .row.head { display: none; }
+  .row .bar { grid-column: 1 / -1; }
+}
+
+.t-up3 { color: var(--up3); } .t-up2 { color: var(--up2); } .t-up1 { color: var(--up1); }
+.t-flat, .t-na { color: var(--flat); }
+.t-dn1 { color: var(--dn1); } .t-dn2 { color: var(--dn2); } .t-dn3 { color: var(--dn3); }
+
+/* ---------- reading ---------- */
+.tally { color: var(--muted); font-size: 12.5px; margin: 0 0 14px; max-width: 80ch; }
+.read .meta { color: var(--muted); font-size: 12px; margin: 0 0 2px; }
+.read h3 a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.read h3 a:hover { text-decoration-color: var(--ink); }
+.read .sum { margin: 0 0 4px; }
+.read ul.touch { list-style: none; margin: 0; padding: 0; font-size: 12.5px; color: var(--muted); }
+.read ul.touch b { color: var(--ink); font-weight: 700; }
+.read ul.touch li.loose b { color: var(--muted); font-weight: 500; }
+
+.read .meta a, .grid2 .src a, footer details a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.read .meta a:hover, .grid2 .src a:hover, footer details a:hover { text-decoration-color: var(--ink); }
+.hl ul.cov { list-style: none; margin: 4px 0 6px; padding: 0; font-size: 13px; }
+.hl ul.cov li { margin: 0 0 3px; }
+.hl ul.cov .o { display: block; color: var(--muted); font-size: 12px; }
+.hl ul.cov li.primary .o { color: var(--ink); }
+.hl ul.cov a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.hl ul.cov a:hover { text-decoration-color: var(--ink); }
+.hl .frame { color: var(--muted); font-size: 12.5px; margin: 0 0 4px; }
+
+.fv, .fc { display: block; color: var(--muted); font-size: 12.5px; }
+.fv.differ { color: var(--dn2); }
+.ind { border-top: 1px solid var(--line); padding-top: 8px; }
+.ind h3 { margin: 0 0 2px; }
+.ind .meta { color: var(--muted); font-size: 12px; margin: 0 0 4px; }
+.ind .big { font-size: 15px; margin: 0 0 2px; }
+.ind .big b { font-weight: 700; }
+.ind svg { display: block; margin: 4px 0; }
+.ind svg polyline { fill: none; stroke: var(--ink); stroke-width: 1.4; }
+.ind svg circle { fill: var(--ink); }
+.ind ul.touch, .ind ul.chk { list-style: none; margin: 0; padding: 0; font-size: 12.5px; color: var(--muted); }
+.ind a { color: inherit; text-decoration: underline; text-decoration-color: #cfcfcf; text-underline-offset: 3px; }
+.ind a:hover { text-decoration-color: var(--ink); }
+.ind .late { color: var(--dn2); }
+.empty { margin-top: 40px; max-width: 70ch; }
+
+footer { color: var(--muted); font-size: 12.5px; margin-top: 56px; padding-top: 14px; border-top: 1px solid var(--line); max-width: 80ch; }
+footer details { margin-top: 8px; }
+footer ul { margin: 6px 0 0; padding-left: 18px; }
+
+@media (max-width: 680px) {
+  .flags li { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav class="index" id="index" aria-label="Sections"></nav>
+  <div class="wrap">
+    <header>
+      <h1 id="title"><span class="p">$ </span><span class="t">market-brief</span></h1>
+      <p class="stamp" id="stamp"></p>
+    </header>
+    <main id="app"></main>
+    <footer id="foot"></footer>
+  </div>
+</div>
+<button class="skip" id="skip" type="button" hidden>skip typing</button>
+<script>
+(function () {
+  "use strict";
+  var app = document.getElementById("app");
+  var foot = document.getElementById("foot");
+  var stampEl = document.getElementById("stamp");
+  var titleEl = document.getElementById("title");
+  var skipBtn = document.getElementById("skip");
+  var indexEl = document.getElementById("index");
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var skipNow = reduce;
+  var playing = false;
+  var userScrolled = false;
+
+  /* ---------- helpers ---------- */
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function isNum(v) { return typeof v === "number" && isFinite(v); }
+  function pct(v) {
+    if (!isNum(v)) return "—";
+    var s = Math.abs(v).toFixed(Math.abs(v) >= 10 ? 1 : 2) + "%";
+    return (v > 0 ? "+" : v < 0 ? "−" : "") + s;
+  }
+  function price(v) {
+    if (!isNum(v)) return "—";
+    var d = Math.abs(v) >= 1000 ? 0 : Math.abs(v) >= 10 ? 2 : 3;
+    return v.toLocaleString("en-US", { minimumFractionDigits: Math.min(d, 2), maximumFractionDigits: d });
+  }
+  function arrow(v) { return !isNum(v) ? "" : v > 0 ? "▲ " : v < 0 ? "▼ " : ""; }
+
+  var TH = { d: [0.1, 1.2, 3], w: [0.25, 2, 5], m: [0.5, 4, 10] };
+  function tier(v, th) {
+    if (!isNum(v)) return "t-na";
+    var a = Math.abs(v);
+    if (a < th[0]) return "t-flat";
+    var lvl = a >= th[2] ? 3 : a >= th[1] ? 2 : 1;
+    return (v > 0 ? "t-up" : "t-dn") + lvl;
+  }
+
+  function when(iso) {
+    if (!iso) return null;
+    var d = new Date(iso);
+    if (isNaN(d)) return String(iso);
+    return d.toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+  }
+  function shortDate(s) {
+    if (!s) return "";
+    var d = new Date(/^\d{4}-\d{2}-\d{2}$/.test(s) ? s + "T12:00:00" : s);
+    if (isNaN(d)) return String(s);
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  }
+  /* article links come from feeds, so only plain web addresses become links */
+  function safeUrl(u) {
+    try {
+      var x = new URL(String(u));
+      return (x.protocol === "https:" || x.protocol === "http:") ? x.href : null;
+    } catch (e) { return null; }
+  }
+
+  function linkOrText(text, url) {
+    var u = safeUrl(url);
+    if (!u) return document.createTextNode(text || "");
+    var a = document.createElement("a");
+    a.textContent = text || u; a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer";
+    return a;
+  }
+
+  /* ---------- typing engine ---------- */
+  var steps = [];
+  var indexLinks = {};
+  var sections = [];
+
+  function sleep(ms) {
+    return new Promise(function (r) { if (skipNow) r(); else setTimeout(r, ms); });
+  }
+
+  function follow(node) {
+    if (userScrolled || skipNow) return;
+    var r = node.getBoundingClientRect();
+    var margin = 90;
+    /* tall blocks (whole sections): follow their top edge, not their bottom */
+    var edge = r.height > window.innerHeight * 0.5 ? r.top + 60 : r.bottom;
+    if (edge > window.innerHeight - margin) {
+      window.scrollBy({ top: edge - window.innerHeight + margin });
+    }
+  }
+
+  /* mark a span as typed text: remember its text, empty it, keep its height */
+  function typed(target, perChar) {
+    var full = target.textContent;
+    var host = target.closest("p, h1, h2, h3, li, div") || target;
+    steps.push({ kind: "type", target: target, full: full, perChar: perChar || 14, host: host });
+    return target;
+  }
+  function reveal(nodes, delay) {
+    steps.push({ kind: "show", nodes: [].concat(nodes), delay: delay == null ? 24 : delay });
+  }
+
+  function prepare() {
+    steps.forEach(function (s) {
+      if (s.kind === "type") {
+        s.host.style.minHeight = s.host.offsetHeight + "px";
+        s.target.textContent = "";
+      } else {
+        s.nodes.forEach(function (n) { n.classList.add("pre"); });
+      }
+    });
+  }
+
+  var cursor = el("span", "cursor");
+
+  async function run() {
+    playing = true;
+    app.setAttribute("aria-busy", "true");
+    skipBtn.hidden = skipNow;
+    for (var i = 0; i < steps.length; i++) {
+      var s = steps[i];
+      if (s.kind === "type") {
+        var node = document.createTextNode("");
+        s.target.textContent = "";
+        s.target.appendChild(node);
+        s.target.appendChild(cursor);
+        var n = s.full.length, k = 0;
+        while (k < n && !skipNow) {
+          k = Math.min(n, k + (n > 200 ? 3 : n > 80 ? 2 : 1));
+          node.data = s.full.slice(0, k);
+          follow(s.host);
+          await sleep(s.perChar);
+        }
+        node.data = s.full;
+        if (cursor.parentNode) cursor.parentNode.removeChild(cursor);
+        await sleep(90);
+      } else {
+        for (var j = 0; j < s.nodes.length; j++) {
+          s.nodes[j].classList.remove("pre");
+          follow(s.nodes[j]);
+          await sleep(s.delay);
+        }
+      }
+    }
+    /* finish: every node visible, cursor rests after the title */
+    steps.forEach(function (s) {
+      if (s.kind === "type") { s.target.textContent = s.full; s.host.style.minHeight = ""; }
+      else s.nodes.forEach(function (n) { n.classList.remove("pre"); });
+    });
+    cursor.classList.toggle("blink", !reduce);
+    titleEl.appendChild(cursor);
+    skipBtn.hidden = true;
+    app.removeAttribute("aria-busy");
+    playing = false;
+  }
+
+  function skipTyping() { skipNow = true; skipBtn.hidden = true; }
+  skipBtn.addEventListener("click", skipTyping);
+  document.addEventListener("keydown", function (e) {
+    if (playing && (e.key === "Escape" || e.key === "Enter")) skipTyping();
+  });
+  indexEl.addEventListener("click", function () { if (playing) skipTyping(); });
+  ["wheel", "touchmove"].forEach(function (ev) {
+    window.addEventListener(ev, function () { if (playing) userScrolled = true; }, { passive: true });
+  });
+
+  /* highlight the section being read in the index */
+  var ticking = false;
+  function updateActive() {
+    ticking = false;
+    var cur = null;
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].node.getBoundingClientRect().top <= 140) cur = sections[i].id;
+    }
+    Object.keys(indexLinks).forEach(function (id) {
+      var on = id === cur;
+      indexLinks[id].classList.toggle("on", on);
+      if (on) indexLinks[id].setAttribute("aria-current", "location");
+      else indexLinks[id].removeAttribute("aria-current");
+    });
+  }
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(updateActive); }
+  }, { passive: true });
+
+  /* ---------- rendering ---------- */
+  function section(id, label) {
+    var s = el("section");
+    s.id = id;
+    var link = null;
+    if (label) {
+      link = el("a", null, label);
+      link.href = "#" + id;
+      indexLinks[id] = link;
+      indexEl.appendChild(link);
+      sections.push({ id: id, node: s });
+    }
+    app.appendChild(s);
+    reveal(link ? [s, link] : [s], 0);
+    return s;
+  }
+
+  function addRow(parent, item, scale, rowsOut) {
+    var row = el("div", "row");
+    var name = el("div", "name");
+    name.appendChild(el("b", null, item.symbol || ""));
+    var label = item.name || "";
+    if (item.unit) label += (label ? ", " : "") + item.unit;
+    name.appendChild(el("span", null, label));
+    row.appendChild(name);
+
+    row.appendChild(el("div", "num", price(item.last)));
+    row.appendChild(el("div", "num col-1d " + tier(item.chg_1d, TH.d), arrow(item.chg_1d) + pct(item.chg_1d)));
+
+    var wcls = tier(item.chg_1w, TH.w);
+    var bar = el("div", "bar " + wcls);
+    var track = el("div", "track");
+    if (isNum(item.chg_1w) && item.chg_1w !== 0) {
+      var w = Math.min(50, (Math.abs(item.chg_1w) / scale) * 50);
+      var f = el("div", "fill " + (item.chg_1w > 0 ? "pos" : "neg"));
+      f.style.width = w + "%";
+      track.appendChild(f);
+    }
+    bar.appendChild(track);
+    bar.appendChild(el("div", "num", arrow(item.chg_1w) + pct(item.chg_1w)));
+    row.appendChild(bar);
+
+    row.appendChild(el("div", "num col-1m " + tier(item.chg_1m, TH.m), pct(item.chg_1m)));
+
+    var notes = [];
+    if (item.note) notes.push(item.note);
+    if (item.esg) notes.push("ESG: " + item.esg);
+    if (item.next_earnings) notes.push("next earnings " + item.next_earnings);
+    if (item.as_of) notes.push("as of " + item.as_of);
+    if (notes.length) row.appendChild(el("p", "note", notes.join(" · ")));
+    parent.appendChild(row);
+    rowsOut.push(row);
+  }
+
+  function table(items, rowsOut) {
+    var scale = 1;
+    items.forEach(function (i) { if (isNum(i.chg_1w)) scale = Math.max(scale, Math.abs(i.chg_1w)); });
+    var box = el("div", "rows");
+    var head = el("div", "row head");
+    var cls = ["", "num", "num col-1d", "", "num col-1m"];
+    ["name", "last", "1d", "1w", "1m"].forEach(function (t, k) { head.appendChild(el("div", cls[k], t)); });
+    box.appendChild(head);
+    items.forEach(function (i) { addRow(box, i, scale, rowsOut); });
+    return box;
+  }
+
+  function heading(tag, cls, prefix, text) {
+    var h = el(tag, cls);
+    h.appendChild(el("span", "p", prefix));
+    h.appendChild(typed(el("span", "t", text), 16));
+    return h;
+  }
+
+  function renderGroup(g) {
+    var s = section(g.id || "group", g.title || g.id);
+    s.appendChild(heading("h2", "grp", "## ", g.title || g.id));
+    var rows = [];
+    var items = g.items || [];
+    if (g.group_by === "region") {
+      var map = {};
+      items.forEach(function (i) { var r = i.region || "Other"; (map[r] = map[r] || []).push(i); });
+      var grid = el("div", "grid2");
+      Object.keys(map).sort(function (a, b) { return a.localeCompare(b); }).forEach(function (r) {
+        var blk = el("div", "block");
+        var h3 = el("h3"); h3.appendChild(el("span", "p", "### ")); h3.appendChild(document.createTextNode(r));
+        blk.appendChild(h3);
+        blk.appendChild(table(map[r], rows));
+        grid.appendChild(blk);
+      });
+      s.appendChild(grid);
+    } else {
+      s.appendChild(table(items, rows));
+    }
+    /* rows print line by line; large groups print faster */
+    reveal(rows, rows.length > 14 ? 12 : 26);
+  }
+
+  function legend() {
+    var l = el("div", "legend");
+    l.setAttribute("aria-label", "Color scale for 1-week change");
+    [["l-up3", "+5% or more"], ["l-up2", "+2%"], ["l-up1", "+0.25%"], ["l-flat", "flat"],
+     ["l-dn1", "−0.25%"], ["l-dn2", "−2%"], ["l-dn3", "−5% or less"]].forEach(function (x) {
+      l.appendChild(el("span", x[0], x[1]));
+    });
+    return l;
+  }
+
+  function flagItem(f, typeIt) {
+    var li = el("li");
+    if (typeIt) reveal([li], 0);
+    li.appendChild(el("span", "sym", f.symbol || ""));
+    var body = el("span", "fb");
+    var r = el("span", "fr", f.reason || "");
+    body.appendChild(typeIt ? typed(r, 6) : r);
+    (f.news || []).slice(0, 2).forEach(function (n) {
+      var p = el("span", "fn", (n.kind === "headline" ? "in the news: " : "reading: "));
+      p.appendChild(linkOrText(n.title || n.url, n.url));
+      if (n.strength === "loose") p.appendChild(document.createTextNode(" (loose link)"));
+      body.appendChild(p);
+    });
+    if (f.verified && f.verified.text) body.appendChild(el("span", "fv " + (f.verified.status || ""), "check: " + f.verified.text));
+    (f.context || []).forEach(function (c) {
+      body.appendChild(el("span", "fc", c.name + " (" + c.period + "): " + (c.yoy >= 0 ? "+" : "") + c.yoy + "% year on year"));
+    });
+    li.appendChild(body);
+    return li;
+  }
+
+  function spark(pts) {
+    var ns = "http://www.w3.org/2000/svg";
+    var w = 160, h = 34, v = pts.map(function (p) { return p.v; });
+    var lo = Math.min.apply(null, v), hi = Math.max.apply(null, v), span = (hi - lo) || 1;
+    var svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("width", w); svg.setAttribute("height", h); svg.setAttribute("viewBox", "0 0 " + w + " " + h);
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "trend over the last " + pts.length + " periods");
+    var xy = pts.map(function (p, i) { return [pts.length === 1 ? w / 2 : 3 + i * (w - 6) / (pts.length - 1), h - 3 - (p.v - lo) / span * (h - 6)]; });
+    var pl = document.createElementNS(ns, "polyline");
+    pl.setAttribute("points", xy.map(function (q) { return q[0].toFixed(1) + "," + q[1].toFixed(1); }).join(" "));
+    svg.appendChild(pl);
+    var last = xy[xy.length - 1], c = document.createElementNS(ns, "circle");
+    c.setAttribute("cx", last[0].toFixed(1)); c.setAttribute("cy", last[1].toFixed(1)); c.setAttribute("r", 2.4);
+    svg.appendChild(c);
+    return svg;
+  }
+
+  function fmtNum(v) {
+    if (v == null) return "n/a";
+    return Math.abs(v) >= 1000 ? Math.round(v).toLocaleString("en-US") : String(Math.round(v * 100) / 100);
+  }
+
+  function indicatorItem(x) {
+    var a = el("article", "ind");
+    a.appendChild(el("p", "meta", x.group + " · " + x.freq + " · " + x.tier + " source"));
+    a.appendChild(el("h3", null, x.name));
+    var sgn = function (n) { return (n >= 0 ? "+" : "") + n + "%"; };
+    var big = el("p", "big");
+    big.appendChild(el("b", null, fmtNum(x.value) + " " + x.unit));
+    big.appendChild(document.createTextNode(" · " + x.period + (x.row_status === "preliminary" ? " (preliminary)" : "")));
+    a.appendChild(big);
+    var bits = [];
+    if (x.yoy != null) bits.push(sgn(x.yoy) + " year on year" + (x.yoy_source === "computed" ? " (computed here)" : ""));
+    if (x.mom != null) bits.push(sgn(x.mom) + " vs prior period");
+    if (x.yoy_change != null) bits.push("year-on-year was " + sgn(x.yoy_prev) + " before");
+    if (bits.length) a.appendChild(el("p", "meta", bits.join(" · ")));
+    if (x.spark && x.spark.length > 1) a.appendChild(spark(x.spark));
+    var st = x.z != null ? "range test: " + (x.z >= 0 ? "+" : "") + x.z + " typical swings from its own median year-on-year" : x.status;
+    a.appendChild(el("p", "meta", st));
+    var ul = el("ul", "chk");
+    if (x.revision) ul.appendChild(el("li", null, "revised: " + x.revision.period + " went from " + fmtNum(x.revision.from) + " to " + fmtNum(x.revision.to) + " (" + sgn(x.revision.pct) + ")"));
+    (x.checks || []).forEach(function (c) {
+      ul.appendChild(el("li", null, c.name + ": " + c.ok + " ok" + (c.bad ? ", " + c.bad + " off" : "")));
+    });
+    if (x.gaps && x.gaps.length) ul.appendChild(el("li", null, "not on file: " + x.gaps.join(", ")));
+    a.appendChild(ul);
+    var nx = el("p", "meta" + (x.late ? " late" : ""), (x.late ? "next release overdue (expected " : "next release expected about ") + x.next_expected + (x.late ? ")" : ""));
+    a.appendChild(nx);
+    if (x.touches && x.touches.length) a.appendChild(el("p", "meta", "relates to: " + x.touches.join(", ")));
+    var sp = el("p", "meta", "source: ");
+    sp.appendChild(linkOrText(x.source_name || x.source, x.source_url));
+    a.appendChild(sp);
+    return a;
+  }
+
+  var ACCESS = { partial: "partly paywalled", teaser: "teaser only" };
+
+  function readItem(x) {
+    var a = el("article", "read");
+    var rest = [shortDate(x.published), ACCESS[x.access] || ""].filter(Boolean).join(" · ");
+    var m = el("p", "meta");
+    m.appendChild(linkOrText(x.source || "", x.source_url));
+    if (rest) m.appendChild(document.createTextNode((x.source ? " · " : "") + rest));
+    a.appendChild(m);
+    var h = el("h3");
+    var u = safeUrl(x.url);
+    if (u) {
+      var l = el("a", null, x.title || u);
+      l.href = u; l.target = "_blank"; l.rel = "noopener noreferrer";
+      h.appendChild(l);
+    } else {
+      h.textContent = x.title || "";
+    }
+    a.appendChild(h);
+    if (x.summary) a.appendChild(el("p", "sum", x.summary));
+    var tl = touchList(x.overlap);
+    if (tl) a.appendChild(tl);
+    return a;
+  }
+
+  function touchList(overlap) {
+    var ov = (overlap || []).slice(0, 3);
+    if (!ov.length) return null;
+    var ul = el("ul", "touch");
+    ov.forEach(function (o) {
+      var loose = o.strength === "loose";
+      var li = el("li", loose ? "loose" : "direct");
+      li.appendChild(el("b", null, (loose ? "~" : "") + (o.symbol || "")));
+      li.appendChild(document.createTextNode(" " + (o.reason || "")));
+      ul.appendChild(li);
+    });
+    return ul;
+  }
+
+  function headlineItem(x) {
+    var a = el("article", "read hl");
+    a.appendChild(el("p", "meta", shortDate(x.date)));
+    a.appendChild(el("h3", null, x.story || ""));
+    if (x.summary) a.appendChild(el("p", "sum", x.summary));
+    var ul = el("ul", "cov");
+    (x.coverage || []).forEach(function (c) {
+      var li = el("li", c.kind === "primary" ? "primary" : "press");
+      li.appendChild(el("span", "o", [c.outlet || "", c.region || "", c.kind === "primary" ? "official" : ""].filter(Boolean).join(" · ")));
+      li.appendChild(linkOrText(c.title || "", c.url));
+      ul.appendChild(li);
+    });
+    a.appendChild(ul);
+    if (x.framing) a.appendChild(el("p", "frame", "how the wording differs: " + x.framing));
+    var tl = touchList(x.overlap);
+    if (tl) a.appendChild(tl);
+    return a;
+  }
+
+  function tally(list) {
+    var c = {};
+    list.forEach(function (x) { (x.overlap || []).forEach(function (o) { if (o.symbol) c[o.symbol] = (c[o.symbol] || 0) + 1; }); });
+    var keys = Object.keys(c).sort(function (a, b) { return c[b] - c[a] || a.localeCompare(b); }).slice(0, 8);
+    if (!keys.length) return "";
+    return "touching your watchlist: " + keys.map(function (k) { return k + " ×" + c[k]; }).join(" · ") + "   (~ marks a loose link)";
+  }
+
+  function render(d) {
+    app.textContent = "";
+    indexEl.textContent = "";
+    indexLinks = {}; sections = []; steps = [];
+    typed(titleEl.querySelector(".t"), 40);
+
+    var hasData = d && d.generated_at && d.groups && d.groups.length;
+    if (!hasData) {
+      stampEl.textContent = "no brief published yet";
+      typed(stampEl, 18);
+      var e = el("div", "empty");
+      var p1 = el("p"); p1.appendChild(typed(el("span", null, "The first brief has not run yet. The weekday brief runs at about 7 a.m. Central and the Saturday review runs on Saturday morning. This page fills in after the first run."), 12));
+      e.appendChild(p1);
+      app.appendChild(e);
+      return;
+    }
+
+    indexEl.appendChild(el("p", "ih", "index"));
+
+    stampEl.textContent = (d.edition === "saturday" ? "saturday review" : "daily brief") +
+      " · market data as of " + (d.data_date || "unknown") + " · published " + when(d.generated_at);
+    typed(stampEl, 12);
+
+    var flags = d.flags || [];
+    var basis = d.flag_basis || null;
+    if (flags.length) {
+      var fs = section("flags", "flags");
+      var fh = el("h2", "flag-h");
+      fh.appendChild(el("span", "p", "! "));
+      fh.appendChild(typed(el("span", "t", "worth a look: " + flags.length + (flags.length === 1 ? " move" : " moves") + " stood out"), 16));
+      fs.appendChild(fh);
+      var TIERS = [["look_into", "look into"], ["keep_an_eye", "keep an eye on"]];
+      var hasTier = flags.some(function (f) { return f.tier; });
+      TIERS.forEach(function (tr) {
+        var list = flags.filter(function (f) { return hasTier ? (f.tier || "keep_an_eye") === tr[0] : tr[0] === "keep_an_eye"; });
+        if (!list.length) return;
+        if (hasTier) { var th = el("h3", "tier", tr[1]); fs.appendChild(th); reveal([th], 0); }
+        var ul = el("ul", "flags");
+        list.forEach(function (f) { ul.appendChild(flagItem(f, true)); });
+        fs.appendChild(ul);
+      });
+    } else {
+      var none = el("p", "flags-none");
+      none.appendChild(typed(el("span", null, "No move was unusual for its own range or its group since the last brief."), 14));
+      app.appendChild(none);
+    }
+    if (basis && basis.note) {
+      var bn = basis.note + (basis.below_the_bar ? " " + basis.below_the_bar + " other unusual moves fell under the bar." : "");
+      var bp = el("p", "basis", bn);
+      app.appendChild(bp);
+      reveal([bp], 0);
+    }
+
+    if (d.summary) {
+      var sp = el("p", "summary");
+      sp.appendChild(typed(el("span", null, d.summary), Math.max(4, Math.min(11, Math.floor(3200 / d.summary.length)))));
+      app.appendChild(sp);
+    }
+
+    if (d.headlines && d.headlines.length) {
+      var hs = section("headlines", "headlines");
+      hs.appendChild(heading("h2", "grp", "## ", "Headlines"));
+      var hg = el("div", "grid2");
+      var harts = d.headlines.map(function (x) { var a = headlineItem(x); hg.appendChild(a); return a; });
+      hs.appendChild(hg);
+      reveal(harts, 120);
+    }
+
+    var lg = legend();
+    app.appendChild(lg);
+    reveal([lg], 0);
+
+    (d.groups || []).forEach(renderGroup);
+
+    if (d.indicators && d.indicators.length) {
+      var is = section("indicators", "indicators");
+      is.appendChild(heading("h2", "grp", "## ", "Indicators"));
+      var ip = el("p", "tally", "Operational numbers from the chip supply chain, kept as a running record. Range tests switch on once a series has " + ((d.indicators[0] && d.indicators[0].min_periods) || 12) + " year-on-year readings; until then each card says how much history it has.");
+      is.appendChild(ip); reveal([ip], 0);
+      var ig = el("div", "grid2");
+      var iarts = d.indicators.filter(function (x) { return x.value != null; }).map(function (x) { var a = indicatorItem(x); ig.appendChild(a); return a; });
+      is.appendChild(ig);
+      reveal(iarts, 120);
+    }
+
+    if (d.reading && d.reading.length) {
+      var rs = section("reading", "reading");
+      rs.appendChild(heading("h2", "grp", "## ", "Reading"));
+      var t = tally(d.reading);
+      if (t) { var tp = el("p", "tally", t); rs.appendChild(tp); reveal([tp], 0); }
+      var rg = el("div", "grid2");
+      var arts = d.reading.map(function (x) { var a = readItem(x); rg.appendChild(a); return a; });
+      rs.appendChild(rg);
+      reveal(arts, 120);
+    }
+
+    if (d.climate && d.climate.length) {
+      var cs = section("climate", "climate");
+      cs.appendChild(heading("h2", "grp", "## ", "Climate and environment"));
+      var cg = el("div", "grid2");
+      var carts = d.climate.map(function (x) {
+        var art = el("article");
+        art.appendChild(el("h3", null, (x.region ? x.region + ": " : "") + (x.headline || "")));
+        if (x.detail) art.appendChild(el("p", null, x.detail));
+        if (x.source) {
+          var sp2 = el("p", "src", "source: ");
+          sp2.appendChild(linkOrText(x.source, x.source_url));
+          art.appendChild(sp2);
+        }
+        cg.appendChild(art);
+        return art;
+      });
+      cs.appendChild(cg);
+      reveal(carts, 140);
+    }
+
+    foot.textContent = "";
+    foot.appendChild(el("p", null, "Prices come from web search and can lag or be missing. This page reports data and does not recommend trades."));
+    function fold(title, list) {
+      if (!list || !list.length) return;
+      var dd = el("details");
+      dd.appendChild(el("summary", null, title));
+      var u = el("ul");
+      list.forEach(function (g) {
+        var li = el("li");
+        if (g && typeof g === "object") li.appendChild(linkOrText(g.name || g.url, g.url));
+        else li.textContent = String(g);
+        u.appendChild(li);
+      });
+      dd.appendChild(u);
+      foot.appendChild(dd);
+    }
+    if (d.quality) {
+      var q = d.quality, tc = q.tiers || {};
+      var qs = (tc.official || 0) + " official, " + (tc.reported || 0) + " reported, " + (tc.aggregator || 0) + " aggregator prices; " +
+        (q.cross_checked || 0) + " checked against a second source (" + (q.agreed || 0) + " agree, " + (q.differed || 0) + " differ); " +
+        (q.flags_confirmed || 0) + " of " + (q.flags_total || 0) + " flags confirmed";
+      var qlist = [qs].concat((q.differences || []).map(function (x) { return x.symbol + ": " + x.detail; }));
+      fold("data checks", qlist);
+    }
+    if (d.gaps && d.gaps.length) fold(d.gaps.length === 1 ? "1 item could not be retrieved" : d.gaps.length + " notes on missing or weak data", d.gaps);
+    if (d.reading_quiet && d.reading_quiet.length) fold(d.reading_quiet.length + " newsletters had nothing new", d.reading_quiet);
+    fold("sources used", d.sources);
+    reveal([foot], 0);
+
+    /* the feeds and outlets this brief draws on, linked from the watchlist */
+    fetch("data/watchlist.json?ts=" + Date.now()).then(function (r) { return r.ok ? r.json() : null; }).then(function (w) {
+      if (!w) return;
+      var feeds = ((w.reading || {}).feeds || []).filter(function (f) { return f.enabled && safeUrl(f.site); })
+        .map(function (f) { return { name: f.name + (f.topic ? " · " + f.topic : ""), url: f.site }; });
+      var pool = ((w.headlines || {}).outlet_pool || []).filter(function (o) { return safeUrl(o.site); })
+        .map(function (o) { return { name: o.name + (o.region ? " · " + o.region : ""), url: o.site }; });
+      fold(feeds.length + " newsletters followed", feeds);
+      fold(pool.length + " outlets used for headlines", pool);
+    }).catch(function () {});
+  }
+
+  function start(d) {
+    render(d);
+    prepare();
+    run();
+    updateActive();
+  }
+
+  fetch("data/latest.json?ts=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(start)
+    .catch(function () {
+      skipNow = true;
+      app.textContent = "";
+      stampEl.textContent = "could not load the latest brief";
+      var e = el("div", "empty");
+      e.appendChild(el("p", null, "The brief did not load. Refresh the page. If this persists, check that data/latest.json exists in the repository."));
+      app.appendChild(e);
+    });
+})();
+</script>
+</body>
+</html>

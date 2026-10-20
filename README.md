@@ -8,7 +8,7 @@ A personal market briefing page, updated by scheduled Claude runs.
 - **Reading:** recent pieces from the newsletters in `data/watchlist.json`, tagged where they touch something on the watchlist.
 
 ## How it works
-`index.html` reads `data/latest.json`. Each scheduled run follows `CLAUDE.md`, rewrites that file, runs `scripts/update_logs.py`, and pushes. GitHub Pages serves the site.
+`index.html` (the departure-board layout; the earlier layout is kept as `classic.html`) reads `data/latest.json`. Each scheduled run follows `CLAUDE.md`, rewrites that file, runs `scripts/update_logs.py`, and pushes. GitHub Pages serves the site.
 
 ## Files
 - `data/watchlist.json`: instruments, triggers, group keywords, reading feeds, headline outlets. Edit this to change what the briefs cover.
