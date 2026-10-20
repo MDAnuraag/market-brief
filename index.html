@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<script>(function(){try{var m=/[?&]look=(dusk|fog|twilight)\b/.exec(location.search);if(m)document.documentElement.setAttribute("data-look",m[1]);}catch(e){}})();</script>
+<script>(function(){try{var m=/[?&]look=(dusk|fog|twilight|sand|moss|plum)\b/.exec(location.search);if(m)document.documentElement.setAttribute("data-look",m[1]);}catch(e){}})();</script>
 <style>
 :root {
   --bg: #080b0f;
@@ -160,25 +160,12 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; color: var(--white
 .card .frame { font-style: italic; color: var(--ink-dim); }
 .card .touch { font: 500 11.5px/1.5 var(--mono); color: var(--ink-dim); }
 .tally { font: 400 13px/1.5 var(--mono); color: var(--ink-dim); margin: 0 0 14px; }
-.btog, .bpre, .ball { display: none; }
-/* reading as a terminal board, set into the paper section */
-.rdboard { color: var(--white); padding-top: 38px; }
-.rbar { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px; background: var(--panel); border-bottom: 1px solid var(--edge); }
-.rbar button { font: 400 11.5px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--dim); background: transparent; border: 1px solid var(--edge); border-radius: 2px; padding: 6px 9px; cursor: pointer; }
-.rbar button:hover { color: var(--white); border-color: var(--dim); }
-.rbar button.on { color: var(--on-accent); background: var(--accent); border-color: var(--accent); }
-.rrows { background: var(--panel); }
-.rrow { display: grid; grid-template-columns: 48px 200px minmax(0, 1fr) 70px; column-gap: 12px; align-items: baseline; padding: 8px 10px; border-bottom: 1px solid var(--edge); cursor: pointer; }
-.rrow:hover { background: var(--hover); }
-.rd-date { color: var(--dim); font-size: 12px; letter-spacing: .04em; }
-.rd-src { color: var(--accent); font-size: 11px; text-transform: uppercase; letter-spacing: .07em; overflow-wrap: anywhere; }
-.rd-src a { text-decoration: none; }
-.rd-src a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.rd-title { font-weight: 500; font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
-.rd-title a { text-decoration: underline; text-decoration-color: var(--accent-dim); text-underline-offset: 3px; }
-.rd-title a:hover { text-decoration-color: var(--accent); }
-.rd-tag { justify-self: end; font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--dim); white-space: nowrap; }
-.rd-tag:not(:empty) { border: 1px dashed var(--accent-dim); padding: 1px 5px; }
+.btog, .bpre, .ball, .rtog { display: none; }
+.rchips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; }
+.rchips button { font: 400 12px/1 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-dim); background: transparent; border: 1px solid var(--rule); border-radius: 2px; padding: 6px 10px; cursor: pointer; }
+.rchips button:hover { color: var(--ink); border-color: var(--ink-dim); }
+.rchips button.on { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.cards > [hidden] { display: none; }
 .fold { margin: 6px 0 0; font: 400 13px/1.5 var(--mono); }
 .fold summary { cursor: pointer; color: var(--ink-dim); }
 .fold ul { margin: 6px 0 8px; padding-left: 18px; }
@@ -242,7 +229,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; color: var(--white
   .irow .isp { grid-area: sp; } .irow .when { grid-area: w; justify-self: end; } .irow .stat { grid-area: s; justify-self: start; }
   .bh small { display: none; }
 
-  /* phones: boards collapse to a header and one preview line; Reading is a compact board */
+  /* phones: boards collapse to a header and one preview line; Reading becomes a compact list of links */
   section.board { padding-top: 14px; }
   .bh { flex-wrap: wrap; cursor: pointer; gap: 6px 8px; }
   .bh > span:first-child { flex: 1; min-width: 0; }
@@ -256,14 +243,17 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; color: var(--white
   section.board.collapsed > :not(.bh):not(.bpre):not(.rline) { display: none !important; }
   section.board.collapsed .pg { display: none; }
   .ball { display: block; margin: 18px 0 -8px auto; font: 700 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--g-accent); background: transparent; border: 1px solid var(--g-accent-dim); border-radius: 2px; padding: 7px 9px; cursor: pointer; }
-  .rdboard { padding-top: 14px; }
-  .rrow { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "date src tag" "title title title"; row-gap: 3px; padding: 7px 10px; }
-  .rd-date { grid-area: date; } .rd-src { grid-area: src; } .rd-title { grid-area: title; } .rd-tag { grid-area: tag; }
-  .rd-title { font-size: 13.5px; }
-  .rbar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
-  .rbar button { flex: none; white-space: nowrap; }
+  .cards.rdlist { gap: 0; }
+  .card.rd { position: relative; padding: 9px 0 8px; }
+  .card.rd .meta { margin-bottom: 2px; padding-right: 36px; cursor: pointer; }
+  .card.rd h3 { font-size: 15.5px; margin: 0 36px 2px 0; }
+  .card.rd > p:not(.meta) { display: none; }
+  .card.rd.open > p:not(.meta) { display: block; }
+  .rtog { display: block; position: absolute; right: 0; top: 4px; width: 32px; height: 32px; font: 500 18px/1 var(--mono); color: var(--ink-dim); background: transparent; border: 1px solid var(--rule); border-radius: 2px; cursor: pointer; }
+  .rchips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -16px; padding-right: 16px; }
+  .rchips button { flex: none; white-space: nowrap; }
 }
-/* ---------- looks (preview: add ?look=dusk, fog or twilight to the address) ---------- */
+/* ---------- looks (preview: add ?look=dusk, fog, twilight, sand, moss or plum to the address) ---------- */
 :root[data-look="dusk"] {
   --bg: #1d2833; --panel: #121b24; --cell: #1d2935; --edge: #2b3a49; --white: #c8d5e1; --dim: #8a9bad;
   --accent: #8fd6ff; --accent-dim: #4a7690; --paper: #263441; --ink: #d3dfea; --ink-dim: #93a6b8; --rule: #364656;
@@ -282,6 +272,25 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; color: var(--white
   --accent: #8fd6ff; --accent-dim: #4a7690; --paper: #d3dde6; --ink: #1a2733; --ink-dim: #4d5f71; --rule: #b3c1ce;
   --hover: #1a2632; --sunk: #101a23; --detbg: #121c26; --det-text: #bccad7; --why-text: #d6e2ec; --paper-link: #8fa2b4;
   --g-bg: #34465a; --g-text: #e4ecf3; --g-dim: #a8b8c8; --g-edge: #4b5f75; --g-ticker: #2b3b4d;
+}
+:root[data-look="sand"] {
+  --bg: #e2d9c8; --panel: #2a241d; --cell: #3a322a; --edge: #463d33; --white: #eadfcb; --dim: #a39581;
+  --accent: #f0b45a; --accent-dim: #8a6a3a; --paper: #e2d9c8; --ink: #2b241c; --ink-dim: #5a4f41; --rule: #c4b8a3; --on-accent: #1f1608;
+  --hover: #332c24; --sunk: #221d17; --detbg: #241f19; --det-text: #d9ccb5; --why-text: #eadfcb; --paper-link: #9d907b;
+  --g-bg: #e2d9c8; --g-text: #2b241c; --g-dim: #5a4f41; --g-edge: #c4b8a3; --g-ticker: #d6ccb8;
+  --g-accent: #86480a; --g-accent-dim: #b58a55; --on-g-accent: #fbf5e9;
+}
+:root[data-look="moss"] {
+  --bg: #1f2a25; --panel: #141c18; --cell: #202c26; --edge: #2e3d35; --white: #cfdcd3; --dim: #8fa397;
+  --accent: #f0a98a; --accent-dim: #9a6a52; --paper: #283631; --ink: #d3dfd6; --ink-dim: #98ac9f; --rule: #384a41; --on-accent: #2a1408;
+  --hover: #1a2420; --sunk: #0f1512; --detbg: #111915; --det-text: #bccbc1; --why-text: #cfdcd3; --paper-link: #587064;
+  --g-bg: #1f2a25; --g-text: #e3ece6; --g-dim: #8fa397; --g-edge: #2e3d35; --g-ticker: #18211d;
+}
+:root[data-look="plum"] {
+  --bg: #443a4f; --panel: #1a1620; --cell: #272030; --edge: #2d2536; --white: #dcd3e3; --dim: #9d91aa;
+  --accent: #f2b8d2; --accent-dim: #9a6a82; --paper: #ddd5e2; --ink: #261f2d; --ink-dim: #5b4f68; --rule: #bdb1c8; --on-accent: #2a0f1c;
+  --hover: #211b29; --sunk: #130f18; --detbg: #15111b; --det-text: #c6bbd0; --why-text: #dcd3e3; --paper-link: #a396b0;
+  --g-bg: #443a4f; --g-text: #ece6f0; --g-dim: #bdb1c8; --g-edge: #5a4e68; --g-ticker: #3a3144;
 }
 .looks { position: fixed; top: 8px; right: 8px; z-index: 20; display: flex; gap: 4px; background: rgba(0,0,0,.55); padding: 4px; border-radius: 3px; }
 .looks a { font: 700 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; text-decoration: none; color: #eef3f8; border: 1px solid rgba(255,255,255,.35); border-radius: 2px; padding: 5px 7px; }
@@ -823,62 +832,42 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; color: var(--white
     }
 
     if (d.reading && d.reading.length) {
+      p.appendChild(el("h2", null, "Reading")); p.lastChild.id = "reading";
       var topics = [];
       d.reading.forEach(function (x) { if (x.topic && topics.indexOf(x.topic) < 0) topics.push(x.topic); });
       var order = ((w && w.reading && w.reading.group_order) || []);
-      function rank(t) { var i = order.indexOf(t); return i < 0 ? 99 : i; }
-      topics.sort(function (a, b) { return rank(a) - rank(b); });
-      var rs = el("section", "board rdboard"); rs.id = "reading";
-      var rh = el("div", "bh"); rh.appendChild(el("span", null, "Reading: deep cuts and wires"));
-      rh.appendChild(el("small", null, d.reading.length + " pieces"));
-      rs.appendChild(rh);
-      var rrows = el("div", "rrows"), btns = [];
-      function setTopic(t) {
-        btns.forEach(function (b) { b.classList.toggle("on", b.dataset.t === t); });
-        Array.prototype.forEach.call(rrows.children, function (c) { c.hidden = !!t && c.dataset.t !== t; if (c.hidden) c.classList.remove("open"); });
-      }
+      topics.sort(function (a, b) { var i = order.indexOf(a), j = order.indexOf(b); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j); });
+      var g2 = el("div", "cards rdlist");
       if (topics.length > 1) {
-        var bar = el("div", "rbar");
+        var bar = el("div", "rchips");
+        var btns = [];
+        function setTopic(t) {
+          btns.forEach(function (b) { b.classList.toggle("on", b.dataset.t === t); });
+          Array.prototype.forEach.call(g2.children, function (c) { c.hidden = !!t && c.dataset.t !== t; });
+        }
         [""].concat(topics).forEach(function (t) {
           var n = t ? d.reading.filter(function (x) { return x.topic === t; }).length : d.reading.length;
           var b = el("button", t ? "" : "on", (t || "All") + " " + n); b.type = "button"; b.dataset.t = t;
           b.addEventListener("click", function () { setTopic(t); });
           btns.push(b); bar.appendChild(b);
         });
-        rs.appendChild(bar);
+        p.appendChild(bar);
       }
-      var lastTopic = null;
-      d.reading.slice().sort(function (a, b) { return rank(a.topic) - rank(b.topic); }).forEach(function (x) {
-        var t = x.topic || "";
-        if (topics.length > 1 && t !== lastTopic) {
-          lastTopic = t;
-          var sb = el("div", "sub", (t || "Other") + " \u00b7 " + d.reading.filter(function (y) { return (y.topic || "") === t; }).length); sb.dataset.t = t;
-          rrows.appendChild(sb);
-        }
-        var row = el("div", "rrow has"); row.tabIndex = 0; row.setAttribute("role", "button"); row.setAttribute("aria-expanded", "false"); row.dataset.t = t;
-        row.appendChild(el("div", "rd-date", shortDate(x.published)));
-        var src = el("div", "rd-src"); src.appendChild(link(x.source || "", x.source_url)); row.appendChild(src);
-        var ti = el("div", "rd-title"); ti.appendChild(link(x.title || x.url, x.url)); row.appendChild(ti);
-        var tag = el("div", "rd-tag", x.access === "partial" ? "partial" : x.access === "teaser" ? "teaser" : "");
-        if (x.access === "partial") tag.title = "the feed shows part of the piece; the rest is behind a paywall";
-        if (x.access === "teaser") tag.title = "the feed shows only a teaser";
-        row.appendChild(tag);
-        rrows.appendChild(row);
-        var det = el("div", "det"); det.dataset.t = t;
-        var p1 = el("p"); p1.appendChild(el("span", "k", "summary")); p1.appendChild(document.createTextNode(x.summary || "")); det.appendChild(p1);
-        if (x.overlap && x.overlap.length) {
-          var p2 = el("p"); p2.appendChild(el("span", "k", "touches"));
-          p2.appendChild(document.createTextNode(x.overlap.map(function (o) { return o.symbol + (o.strength === "loose" ? " (loose)" : ""); }).join(" \u00b7 ")));
-          det.appendChild(p2);
-        }
-        rrows.appendChild(det);
-        var tg = function () { var o = det.classList.toggle("open"); row.setAttribute("aria-expanded", o ? "true" : "false"); };
-        row.addEventListener("click", function (e) { if (e.target.tagName !== "A") tg(); });
-        row.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); tg(); } });
+      d.reading.slice().sort(function (a, b) { var i = order.indexOf(a.topic), j = order.indexOf(b.topic); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j); }).forEach(function (x) {
+        var c = card(); c.classList.add("rd"); c.dataset.t = x.topic || "";
+        var rt = el("button", "rtog", "+"); rt.type = "button"; rt.setAttribute("aria-expanded", "false"); rt.setAttribute("aria-label", "show summary");
+        function flip() { var o = c.classList.toggle("open"); rt.textContent = o ? "\u2212" : "+"; rt.setAttribute("aria-expanded", o ? "true" : "false"); rt.setAttribute("aria-label", o ? "hide summary" : "show summary"); }
+        rt.addEventListener("click", flip);
+        c.appendChild(rt);
+        var m = el("p", "meta"); m.addEventListener("click", function (e) { if (isPhone() && e.target.tagName !== "A") flip(); }); m.appendChild(link(x.source || "", x.source_url));
+        m.appendChild(document.createTextNode(" · " + shortDate(x.published) + (x.access === "partial" ? " · partly paywalled" : x.access === "teaser" ? " · teaser only" : "")));
+        c.appendChild(m);
+        var h3 = el("h3"); h3.appendChild(link(x.title || x.url, x.url)); c.appendChild(h3);
+        c.appendChild(el("p", null, x.summary || ""));
+        if (x.overlap && x.overlap.length) c.appendChild(el("p", "touch", x.overlap.map(function (o) { return o.symbol + (o.strength === "loose" ? " (loose)" : ""); }).join(" · ")));
+        g2.appendChild(c);
       });
-      rs.appendChild(rrows);
-      p.appendChild(rs);
-      makeCollapsible(rs, rh, d.reading.length + " pieces across " + Math.max(topics.length, 1) + (topics.length === 1 ? " topic" : " topics"), true);
+      p.appendChild(g2);
     }
 
     if (d.climate && d.climate.length) {
@@ -994,7 +983,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; color: var(--white
     var cur = document.documentElement.getAttribute("data-look");
     if (!/[?&]look=/.test(location.search)) return;
     var bar = el("div", "looks");
-    [["current", ""], ["dusk", "dusk"], ["fog", "fog"], ["twilight", "twilight"]].forEach(function (x) {
+    [["current", ""], ["dusk", "dusk"], ["fog", "fog"], ["twilight", "twilight"], ["sand", "sand"], ["moss", "moss"], ["plum", "plum"]].forEach(function (x) {
       var a = el("a", (cur || "") === x[1] ? "on" : "", x[0]); a.href = "?look=" + (x[1] || "current"); bar.appendChild(a);
     });
     document.body.appendChild(bar);
