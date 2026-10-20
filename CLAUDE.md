@@ -20,6 +20,25 @@ This repo publishes a market briefing page (`index.html`) that reads `data/lates
 6. Name the original agency or exchange in `source` and `sources`, not the aggregator that quoted it. If only a secondary source was available, say so in `gaps`.
 7. Report data, not recommendations. Do not say to buy or sell.
 
+## Source playbook (what actually loads)
+Tested 2026-10-20. The shell has no network beyond package registries, so everything goes through WebSearch and WebFetch.
+
+**Price history (1d / 1w / 1m)**
+- stockanalysis.com history tables are the main source: `/etf/<sym>/history/`, `/stocks/<sym>/history/`, `/quote/mutf/<sym>/history/` (Schwab funds), and `/quote/<exch>/<sym>/history/` with `osl`, `cph`, `lon` (pence), `epa`, `tadawul`, `hkg`, `fra`. **Append `?fresh=<today>` to the URL**: without it the fetch tool often returns an old cached copy (GRNB looked stuck at 14 Oct until this was added). Ask for the first 24 rows as `date | close`.
+- Rate limit: about six pages in a row is fine, a longer burst returns HTTP 429. Do not retry a rejected page; wait, or leave that item at its last value and add a gaps line. Run batches of five or six.
+- Some pages are stale at the source even with `?fresh`: `hkg/0981` (SMIC) ends 2026-09-25, `fra/HLAG` was stale before it was refreshed. `cph/MAERSK-B` and `hkg/981` do not load.
+- Base dates: 1w is the close one week before the data date (12 Oct for 19 Oct). 1m is the last close on or before one calendar month earlier (18 Sep for 19 Oct). Check one existing item against the table before filling the rest.
+- Hong Kong: etnet quote pages (`content.etnet.com.hk/content/cpyrevamp/eng/stock_quote.php?code=00981`) are server-rendered, HKEX-sourced and timestamped. Hong Kong and Saudi calendars differ from the US (HK closed 19 Oct 2026 for Chung Yeung; Tadawul trades Sunday to Thursday), so check that a date is a trading day before calling a close missing.
+- finanzen.net `/historische-kurse/<name>` shows German venues (Stuttgart), not Xetra. Use it only as a cross-reference and label the venue.
+
+**Commodities**
+- tradingeconomics.com `/commodity/<name>` (iron-ore, uranium, coal, cobalt, lithium, urea, rice, palm-oil, baltic, nickel and others): the summary sentence gives price, date and 1m change. Use a value only if the sentence date equals the item's date; many pages show the current day's intraday. Tier is `aggregator`. It carries no JKM or NdPr.
+- Weekly releases: US rig count via the SteelOrbis weekly article (quotes Baker Hughes); EIA storage via `eia.gov/dnav/ng/hist/nw2_epg0_swo_r48_bcfw.htm` (the `ir.eia.gov/ngs` page serves an old copy); ICSG release list `icsg.org/press-releases/`; Bank of Japan meeting dates `boj.or.jp/en/mopo/mpmsche_minu/index.htm`.
+
+**Second sources**
+- Google Finance quote pages carry a timestamp: use one only when its date equals the item's date (many are cached days old).
+- Yahoo, Stooq, FT and Naver are refused by the fetch tool; HKEX, GIE AGSI and Cboe pages load their numbers by script and come back empty; the Cboe VIX CSV is cut off before recent rows.
+
 ## Source tiers and second sources
 Every priced item gets `src` (the issuing body, e.g. "CME Group", "Tokyo Stock Exchange") and `tier`: `official` (the issuer's own page), `reported` (a news report quoting the release), or `aggregator` (a compiled quote site). Use the lowest tier honestly; do not label an aggregator page `official`.
 1. After `compute_flags.py --write`, run `python3 scripts/check_quality.py --plan`. It lists flagged items and a rotating audit sample.
