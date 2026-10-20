@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
 <title>market-brief</title>
+<script>
+/* font preview: add ?fonts to the address to compare typefaces; ?font=plex picks one. Normal visits are unaffected. */
+(function () {
+  var q = new URLSearchParams(location.search);
+  if (!q.has("fonts") && !q.has("font")) return;
+  var F = {
+    jetbrains: ["JetBrains Mono", "JetBrains+Mono:wght@400;500;700"],
+    plex: ["IBM Plex Mono", "IBM+Plex+Mono:wght@400;500;700"],
+    space: ["Space Mono", "Space+Mono:wght@400;700"],
+    dm: ["DM Mono", "DM+Mono:wght@400;500"],
+    martian: ["Martian Mono", "Martian+Mono:wght@400;500;700"],
+    redhat: ["Red Hat Mono", "Red+Hat+Mono:wght@400;500;700"]
+  };
+  var l = document.createElement("link"); l.rel = "stylesheet";
+  l.href = "https://fonts.googleapis.com/css2?" + Object.keys(F).map(function (k) { return "family=" + F[k][1]; }).join("&") + "&display=swap";
+  document.head.appendChild(l);
+  window.__fontPreview = { F: F, pick: q.get("font") || "jetbrains" };
+})();
+</script>
 <meta name="description" content="Daily and weekly briefing on markets, world resources, regions, and climate.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -674,10 +693,31 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     try { localStorage.setItem("board-seen", JSON.stringify(nextSeen)); } catch (e) {}
   }
 
+  function fontBar() {
+    var fp = window.__fontPreview; if (!fp) return;
+    function apply(k) {
+      var f = fp.F[k] || fp.F.jetbrains;
+      document.documentElement.style.setProperty("--mono", '"' + f[0] + '", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace');
+      Array.prototype.forEach.call(bar.querySelectorAll("button"), function (b) { b.setAttribute("aria-pressed", b.dataset.k === k ? "true" : "false"); });
+      try { history.replaceState(null, "", "?fonts&font=" + k); } catch (e) {}
+    }
+    var bar = el("div"); bar.style.cssText = "position:fixed;left:0;right:0;bottom:0;z-index:20;background:#000;border-top:1px solid #ffb000;padding:8px 12px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font:12px/1 system-ui,sans-serif;color:#ffb000";
+    bar.appendChild(document.createTextNode("typeface: "));
+    Object.keys(fp.F).forEach(function (k) {
+      var b = el("button", null, fp.F[k][0]); b.type = "button"; b.dataset.k = k;
+      b.style.cssText = "font:inherit;color:#fff;background:transparent;border:1px solid #555;border-radius:3px;padding:5px 8px;cursor:pointer";
+      b.addEventListener("click", function () { apply(k); });
+      bar.appendChild(b);
+    });
+    document.body.appendChild(bar);
+    var st = document.createElement("style"); st.textContent = 'button[aria-pressed="true"]{background:#ffb000!important;color:#000!important}'; document.head.appendChild(st);
+    apply(fp.pick);
+  }
+
   Promise.all([
     fetch("data/latest.json?ts=" + Date.now(), { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }),
     fetch("data/watchlist.json?ts=" + Date.now()).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
-  ]).then(function (res) { init(res[0], res[1]); }).catch(function () {
+  ]).then(function (res) { init(res[0], res[1]); fontBar(); }).catch(function () {
     $("stamp").textContent = "could not load the latest brief";
   });
 })();
