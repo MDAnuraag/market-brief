@@ -866,22 +866,22 @@
         {
           "symbol": "EWZ",
           "name": "Brazil",
-          "region": "Americas ex-US"
+          "region": "Americas"
         },
         {
           "symbol": "EWW",
           "name": "Mexico",
-          "region": "Americas ex-US"
+          "region": "Americas"
         },
         {
           "symbol": "ECH",
           "name": "Chile",
-          "region": "Americas ex-US"
+          "region": "Americas"
         },
         {
           "symbol": "ARGT",
           "name": "Argentina",
-          "region": "Americas ex-US"
+          "region": "Americas"
         },
         {
           "symbol": "VGK",
@@ -1093,12 +1093,12 @@
         {
           "symbol": "NEE",
           "name": "NextEra Energy",
-          "region": "Americas ex-US"
+          "region": "Americas"
         },
         {
           "symbol": "BEP",
           "name": "Brookfield Renewable",
-          "region": "Americas ex-US"
+          "region": "Americas"
         },
         {
           "symbol": "ORSTED.CO",
@@ -1123,7 +1123,7 @@
         {
           "symbol": "XYL",
           "name": "Xylem",
-          "region": "Americas ex-US"
+          "region": "Americas"
         }
       ]
     }

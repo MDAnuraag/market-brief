@@ -106,6 +106,9 @@ for g in d.get("groups", []):
         if x is not None and not (isinstance(x, dict) and x.get("src") and is_num(x.get("last"))):
             err(f"{i.get('symbol')}: xcheck needs src and a numeric last")
 
+ITEM_REGIONS = {"Americas", "Europe", "Middle East and Africa", "South Asia", "East Asia",
+                "Southeast Asia", "Oceania", "Broad emerging"}
+
 for g in d.get("groups", []):
     if not g.get("id") or not isinstance(g.get("items"), list):
         err(f"group needs id and items: {g.get('id')}")
@@ -120,6 +123,8 @@ for g in d.get("groups", []):
         for k in NUMERIC:
             if k in i and i[k] is not None and not is_num(i[k]):
                 err(f"{s}.{k}: must be a number or null")
+        if i.get("region") and i["region"] not in ITEM_REGIONS:
+            err(f"{s}.region: {i['region']!r} is not one of {sorted(ITEM_REGIONS)}")
 
 reading_groups = {f.get("group") for f in w.get("reading", {}).get("feeds", [])}
 for r in d.get("reading", []):

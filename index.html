@@ -166,6 +166,44 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
 .note { font: 400 12.5px/1.5 var(--mono); color: var(--ink-dim); margin: 36px 0 0; max-width: 80ch; }
 .basis { color: var(--dim); font-size: 12px; margin: 12px 0 0; max-width: 90ch; }
 
+/* route line: regions as stops on a dotted line, following the sun */
+.rline { background: var(--panel); border: 1px solid var(--edge); padding: 12px 10px 14px; margin-bottom: 14px; }
+.rl-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; color: var(--accent); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+.rl-head small { color: var(--dim); font-size: 11px; letter-spacing: .03em; text-transform: none; }
+.rl-stops { list-style: none; margin: 0; padding: 0; display: flex; }
+.rl-stops li { flex: 1 1 0; min-width: 0; position: relative; }
+.rl-stops li + li::before { content: ""; position: absolute; top: 6px; left: -50%; right: 50%; border-top: 2px dotted var(--accent-dim); }
+.rl-stops li.off::before { border-top-style: dashed; opacity: .45; }
+.stop { display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%; padding: 0 2px 4px; background: none; border: 0; color: var(--dim); font: 400 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .06em; cursor: pointer; position: relative; z-index: 1; text-align: center; }
+.stop:hover { color: var(--white); }
+.stop .dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--accent); background: var(--panel); }
+.stop:hover .dot { background: var(--accent-dim); }
+.stop.on { color: var(--white); }
+.stop.on .dot { background: var(--accent); box-shadow: 0 0 0 3px var(--panel), 0 0 0 4px var(--accent); }
+.rl-stops li.off .dot { border-style: dashed; border-color: var(--accent-dim); }
+.stop .mv { min-height: 22px; display: flex; align-items: center; }
+.stop .mv .none { color: var(--edge); font-size: 11px; }
+.stop .mv .c { height: 20px; line-height: 20px; font-size: 11px; }
+.stop .fl { min-height: 16px; font-size: 10.5px; color: var(--accent); }
+.stop .fl:not(:empty) { border: 1px dashed var(--accent-dim); padding: 0 5px; }
+.rpill { position: fixed; left: 16px; bottom: 16px; z-index: 8; display: flex; align-items: center; gap: 10px; background: var(--accent); color: #041421; font: 700 11.5px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; padding: 8px 10px; border-radius: 2px; box-shadow: 0 2px 10px rgba(0,0,0,.45); }
+.rpill button { font: 700 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; background: transparent; color: #041421; border: 1px solid #041421; border-radius: 2px; padding: 3px 6px; cursor: pointer; }
+.rpill button:hover { background: #041421; color: var(--accent); }
+.sub.empty { color: var(--dim); text-transform: none; letter-spacing: .02em; }
+.card li.off { opacity: .5; }
+.card li.hit .o { color: var(--ink); font-weight: 700; }
+.card li.hit { border-left: 2px solid var(--ink); padding-left: 8px; margin-left: -10px; }
+@media (max-width: 760px) {
+  .rl-head small { display: none; }
+  .rl-stops { flex-direction: column; padding-left: 2px; }
+  .rl-stops li + li::before { top: -50%; bottom: 50%; left: 8px; right: auto; border-top: 0; border-left: 2px dotted var(--accent-dim); height: auto; }
+  .rl-stops li.off::before { border-left-style: dashed; }
+  .stop { flex-direction: row; align-items: center; justify-content: flex-start; gap: 10px; padding: 7px 0; text-align: left; }
+  .stop .nm { flex: 1; }
+  .stop .mv { min-height: 0; order: 3; }
+  .stop .fl { order: 4; min-height: 0; }
+}
+
 /* ---------- phones ---------- */
 @media (max-width: 760px) {
   .cols { display: none; }
@@ -384,8 +422,20 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
       });
     });
   }
-  function setupPaging(section, head, rows, units) {
-    if (units.length <= pageSize() + 2) return;
+  /* region line hooks: boards and cards register here; setRegion() calls each one */
+  var regionHooks = [];
+  function normRegion(r) {
+    if (r === "Americas ex-US") return "Americas";
+    if (r === "Broad emerging") return "Global";
+    return r || "";
+  }
+  /* meta[i] is the filter key for units[i]; setFilter(fn) keeps only units whose key passes fn. Paging runs over what is left. */
+  function setupPaging(section, head, rows, units, meta) {
+    var filter = null;
+    function pass(i) { return !filter || filter(meta ? meta[i] : null); }
+    if (units.length <= pageSize() + 2) {
+      return { setFilter: function (fn) { filter = fn; units.forEach(function (u, i) { var on = pass(i); u.forEach(function (e) { e.hidden = !on; }); }); } };
+    }
     var pg = el("div", "pg"), page = 0, timer = null, playing = !reduce, showAll = false, visible = true, hover = false;
     var pn = el("span", "pn"), prev = el("button", null, "‹"), next = el("button", null, "›"), pp = el("button", null, "pause"), all = el("button", null, "all");
     prev.type = next.type = pp.type = all.type = "button";
@@ -395,23 +445,25 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     var small = head.querySelector("small"); if (small) small.hidden = true;
     head.appendChild(pg);
     var bar = el("div", "pbar"), fill = el("i"); bar.appendChild(fill); section.insertBefore(bar, rows);
-    function pages() { return Math.ceil(units.length / pageSize()); }
+    function act() { var r = []; units.forEach(function (u, i) { if (pass(i)) r.push(i); }); return r; }
+    function pages() { return Math.max(1, Math.ceil(act().length / pageSize())); }
     function paint(animate) {
-      var size = pageSize(), n = pages();
+      var size = pageSize(), n = pages(), idx = act(), show = {};
       if (page >= n) page = 0;
+      idx.forEach(function (ui, k) { if (showAll || (k >= page * size && k < (page + 1) * size)) show[ui] = true; });
       units.forEach(function (u, i) {
-        var on = showAll || (i >= page * size && i < (page + 1) * size);
+        var on = !!show[i];
         u.forEach(function (e) { e.hidden = !on; if (!on && e.classList && e.classList.contains("det")) e.classList.remove("open"); });
       });
-      pn.textContent = showAll ? units.length + " listed" : "page " + (page + 1) + "/" + n;
-      prev.hidden = next.hidden = pp.hidden = showAll;
-      if (animate && !reduce) retrigger(units.slice(page * size, (page + 1) * size));
+      pn.textContent = showAll ? idx.length + " listed" : "page " + (page + 1) + "/" + n;
+      prev.hidden = next.hidden = pp.hidden = showAll || n < 2;
+      if (animate && !reduce) retrigger(idx.slice(page * size, (page + 1) * size).map(function (i) { return units[i]; }));
       restart();
     }
     function restart() {
       fill.classList.remove("run"); void fill.offsetWidth;
       clearTimeout(timer);
-      if (playing && !showAll && visible && !hover && !reduce) {
+      if (playing && !showAll && pages() > 1 && visible && !hover && !reduce) {
         fill.style.setProperty("--dur", CYCLE_MS + "ms"); fill.classList.add("run");
         timer = setTimeout(function () { page = (page + 1) % pages(); paint(true); }, CYCLE_MS);
       }
@@ -430,6 +482,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     window.addEventListener("resize", function () { paint(false); });
     if (reduce) { showAll = true; all.setAttribute("aria-pressed", "true"); all.textContent = "pages"; }
     paint(false);
+    return { setFilter: function (fn) { filter = fn; page = 0; paint(true); } };
   }
 
   function renderBoard(g, d) {
@@ -442,6 +495,9 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     s.appendChild(cols);
     var rows = el("div", "rows");
     var lastRegion = null, units = [];
+    /* a board takes part in the region filter only when every row carries a region */
+    var aware = g.items.length > 0 && g.items.every(function (it) { return it.region; });
+    var meta = aware ? g.items.map(function (it) { return normRegion(it.region); }) : null;
     g.items.forEach(function (it) {
       var els = [];
       if (g.group_by && it[g.group_by] && it[g.group_by] !== lastRegion) { lastRegion = it[g.group_by]; var sb = el("div", "sub", lastRegion); els.push(sb); rows.appendChild(sb); }
@@ -451,8 +507,70 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
       units.push(els);
     });
     s.appendChild(rows);
-    setupPaging(s, h, rows, units);
+    var api = setupPaging(s, h, rows, units, meta);
+    if (aware && api) {
+      var empty = el("div", "sub empty"); empty.hidden = true; rows.appendChild(empty);
+      regionHooks.push(function (k) {
+        api.setFilter(k ? function (m) { return m === k; } : null);
+        var any = !k || meta.indexOf(k) >= 0;
+        empty.hidden = any; empty.textContent = "No instruments listed here for " + k + ".";
+      });
+    }
     return s;
+  }
+
+  /* ---------- the route line: regions in follow-the-sun order, doubles as the page-wide region filter ---------- */
+  var STOPS = [
+    ["Oceania", "Oceania"], ["East Asia", "East Asia"], ["Southeast Asia", "SE Asia"], ["South Asia", "South Asia"],
+    ["Middle East and Africa", "Mid East & Africa"], ["Europe", "Europe"], ["Americas", "Americas"], ["Global", "Global"]
+  ];
+  function median(a) {
+    if (!a.length) return null;
+    a = a.slice().sort(function (x, y) { return x - y; });
+    var m = a.length >> 1;
+    return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2;
+  }
+  function renderRouteLine(d) {
+    var moves = {}, flagged = {}, seenSym = {};
+    (d.groups || []).forEach(function (g) {
+      g.items.forEach(function (it) {
+        if (!it.region) return;
+        var k = normRegion(it.region);
+        if (g.group_by === "region" && num(it.chg_1d)) (moves[k] = moves[k] || []).push(it.chg_1d);
+        if ((flagBySym[it.symbol] || groupFlagBySym[it.symbol]) && !seenSym[it.symbol]) { seenSym[it.symbol] = 1; flagged[k] = (flagged[k] || 0) + 1; }
+      });
+    });
+    var box = el("div", "rline"); box.setAttribute("role", "group"); box.setAttribute("aria-label", "Filter by region");
+    var hd = el("div", "rl-head"); hd.appendChild(el("span", null, "Route · following the sun"));
+    hd.appendChild(el("small", null, "pick a stop to filter regions, climate and headlines"));
+    box.appendChild(hd);
+    var ol = el("ol", "rl-stops"), btns = {}, current = "";
+    STOPS.forEach(function (st, i) {
+      var k = st[0], li = el("li", k === "Global" ? "off" : "");
+      var b = el("button", "stop"); b.type = "button"; b.setAttribute("aria-pressed", "false"); b.title = k;
+      b.appendChild(el("span", "dot"));
+      b.appendChild(el("span", "nm", st[1]));
+      var mv = el("span", "mv"), med = median(moves[k] || []);
+      if (med != null) { var inner = el("span"); flap(inner, "route:" + k, fmtChg(med), false); mv.appendChild(inner); mv.setAttribute("aria-label", "median one-day move " + med.toFixed(2) + " percent"); }
+      else mv.appendChild(el("span", "none", k === "Global" ? "off the line" : "—"));
+      b.appendChild(mv);
+      var fl = el("span", "fl", flagged[k] ? flagged[k] + " flagged" : ""); if (flagged[k]) fl.title = "flagged instruments tagged to this region, across all boards";
+      b.appendChild(fl);
+      b.addEventListener("click", function () { setRegion(current === k ? "" : k); });
+      btns[k] = b; li.appendChild(b); ol.appendChild(li);
+    });
+    box.appendChild(ol);
+    var pill = el("div", "rpill"); pill.hidden = true;
+    var pt = el("span"), px = el("button", null, "clear"); px.type = "button";
+    px.addEventListener("click", function () { setRegion(""); });
+    pill.appendChild(pt); pill.appendChild(px); document.body.appendChild(pill);
+    function setRegion(k) {
+      current = k;
+      Object.keys(btns).forEach(function (n) { btns[n].classList.toggle("on", n === k); btns[n].setAttribute("aria-pressed", n === k ? "true" : "false"); });
+      pt.textContent = "Region: " + k; pill.hidden = !k;
+      regionHooks.forEach(function (h) { h(k); });
+    }
+    return box;
   }
 
   /* ---------- indicators as a releases board ---------- */
@@ -566,7 +684,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
         if (x.summary) c.appendChild(el("p", null, x.summary));
         var ul = el("ul");
         (x.coverage || []).forEach(function (cv) {
-          var li = el("li", cv.kind === "primary" ? "primary" : "");
+          var li = el("li", cv.kind === "primary" ? "primary" : ""); li.dataset.r = normRegion(cv.region);
           li.appendChild(el("span", "o", (cv.outlet || "") + (cv.region ? " · " + cv.region : "") + (cv.kind === "primary" ? " · primary" : "")));
           li.appendChild(link(cv.title || cv.url, cv.url));
           ul.appendChild(li);
@@ -577,6 +695,13 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
         g.appendChild(c);
       });
       p.appendChild(g);
+      /* region line: coverage from the chosen region is marked, the rest is dimmed, nothing is hidden */
+      regionHooks.push(function (k) {
+        Array.prototype.forEach.call(g.querySelectorAll("li[data-r]"), function (li) {
+          li.classList.toggle("hit", !!k && li.dataset.r === k);
+          li.classList.toggle("off", !!k && li.dataset.r !== k);
+        });
+      });
     }
 
     if (d.reading && d.reading.length) {
@@ -618,7 +743,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
       p.appendChild(el("h2", null, "Climate and environment")); p.lastChild.id = "climate";
       var g3 = el("div", "cards");
       d.climate.forEach(function (x) {
-        var c = card();
+        var c = card(); c.dataset.r = normRegion(x.region);
         c.appendChild(el("p", "meta", x.region || ""));
         c.appendChild(el("h3", null, x.headline || ""));
         if (x.detail) c.appendChild(el("p", null, x.detail));
@@ -626,6 +751,13 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
         g3.appendChild(c);
       });
       p.appendChild(g3);
+      var none = el("p", "tally", ""); none.hidden = true; p.appendChild(none);
+      regionHooks.push(function (k) {
+        var shown = 0;
+        Array.prototype.forEach.call(g3.children, function (c) { c.hidden = !!k && c.dataset.r !== k; if (!c.hidden) shown++; });
+        none.hidden = !(k && !shown);
+        none.textContent = "No climate entry for " + k + " in this brief.";
+      });
     }
 
     p.appendChild(el("p", "note", "Prices come from web search and can lag or be missing. This page reports data and does not recommend trades."));
@@ -680,7 +812,11 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     var al = renderAlerts(d.flags);
     if (al) { boards.appendChild(al); order.push(["alerts", "Alerts"]); }
     if (d.flag_basis && d.flag_basis.note) boards.appendChild(el("p", "basis", d.flag_basis.note + (d.flag_basis.below_the_bar ? " " + d.flag_basis.below_the_bar + " other unusual moves fell under the bar." : "")));
-    (d.groups || []).forEach(function (g) { boards.appendChild(renderBoard(g, d)); order.push([g.id, g.title || g.id]); });
+    (d.groups || []).forEach(function (g) {
+      var sec = renderBoard(g, d);
+      if (g.group_by === "region") sec.insertBefore(renderRouteLine(d), sec.firstChild);
+      boards.appendChild(sec); order.push([g.id, g.title || g.id]);
+    });
     var ind = d.indicators && renderIndicators(d.indicators);
     if (ind) { boards.appendChild(ind); order.push(["indicators", "Indicators"]); }
     var spr = renderSpreads(d.spreads);

@@ -1176,7 +1176,7 @@
     {
      "symbol": "EWZ",
      "name": "Brazil",
-     "region": "Americas ex-US",
+     "region": "Americas",
      "last": 41.93,
      "chg_1d": 0.24,
      "chg_1w": -3.7,
@@ -1188,7 +1188,7 @@
     {
      "symbol": "EWW",
      "name": "Mexico",
-     "region": "Americas ex-US",
+     "region": "Americas",
      "last": 75.36,
      "chg_1d": 0.56,
      "chg_1w": 2.89,
@@ -1200,7 +1200,7 @@
     {
      "symbol": "ECH",
      "name": "Chile",
-     "region": "Americas ex-US",
+     "region": "Americas",
      "last": 37.02,
      "chg_1d": -0.16,
      "chg_1w": null,
@@ -1212,7 +1212,7 @@
     {
      "symbol": "ARGT",
      "name": "Argentina",
-     "region": "Americas ex-US",
+     "region": "Americas",
      "last": 86.97,
      "chg_1d": -1.17,
      "chg_1w": -2.5,
@@ -1730,7 +1730,7 @@
     {
      "symbol": "NEE",
      "name": "NextEra Energy",
-     "region": "Americas ex-US",
+     "region": "Americas",
      "last": 78.17,
      "chg_1d": -2.04,
      "chg_1w": -0.43,
@@ -1742,7 +1742,7 @@
     {
      "symbol": "BEP",
      "name": "Brookfield Renewable",
-     "region": "Americas ex-US",
+     "region": "Americas",
      "last": 28.4,
      "chg_1d": -0.87,
      "chg_1w": -2.37,
@@ -1805,7 +1805,7 @@
     {
      "symbol": "XYL",
      "name": "Xylem",
-     "region": "Americas ex-US",
+     "region": "Americas",
      "last": 103.53,
      "chg_1d": -0.5,
      "chg_1w": 0.92,

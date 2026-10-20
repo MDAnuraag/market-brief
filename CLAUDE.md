@@ -54,7 +54,7 @@ Flags are computed, not hand-written. Once every item, headline and reading entr
 On the Saturday run, look up the next earnings date for every stock in `semis` and `mega_tech` and set `next_earnings` (YYYY-MM-DD). If a date cannot be confirmed, leave it null and add one `gaps` line that lists those symbols. Weekday runs only update dates that changed.
 
 ## Per-item content
-For each item set `symbol`, `name`, `last`, `chg_1d`, `chg_1w`, `chg_1m`, and optionally `unit`, `note`, `esg`, `next_earnings`, `region`, `as_of`. Write a `note` only for the biggest movers and for items with a real catalyst. Keep notes under 25 words. For ESG-themed items, `esg` can carry an MSCI rating or a recent controversy flag when you can verify one; otherwise leave it out. Do not produce a single "ethical score".
+For each item set `symbol`, `name`, `last`, `chg_1d`, `chg_1w`, `chg_1m`, and optionally `unit`, `note`, `esg`, `next_earnings`, `region`, `as_of`. `region` is copied from `watchlist.json` and must be one of the Climate region names, or `Broad emerging` for a multi-region fund; the page's region line depends on it. Write a `note` only for the biggest movers and for items with a real catalyst. Keep notes under 25 words. For ESG-themed items, `esg` can carry an MSCI rating or a recent controversy flag when you can verify one; otherwise leave it out. Do not produce a single "ethical score".
 
 ## Summary and climate
 - `summary`: 3 to 5 sentences on what mattered, spread across regions and resource markets, not only US indices.
