@@ -154,6 +154,11 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
 .card .frame { font-style: italic; color: var(--ink-dim); }
 .card .touch { font: 500 11.5px/1.5 var(--mono); color: var(--ink-dim); }
 .tally { font: 400 13px/1.5 var(--mono); color: var(--ink-dim); margin: 0 0 14px; }
+.rchips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; }
+.rchips button { font: 400 12px/1 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-dim); background: transparent; border: 1px solid var(--rule); border-radius: 2px; padding: 6px 10px; cursor: pointer; }
+.rchips button:hover { color: var(--ink); border-color: var(--ink-dim); }
+.rchips button.on { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.cards > [hidden] { display: none; }
 .fold { margin: 6px 0 0; font: 400 13px/1.5 var(--mono); }
 .fold summary { cursor: pointer; color: var(--ink-dim); }
 .fold ul { margin: 6px 0 8px; padding-left: 18px; }
@@ -576,9 +581,28 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
 
     if (d.reading && d.reading.length) {
       p.appendChild(el("h2", null, "Reading")); p.lastChild.id = "reading";
+      var topics = [];
+      d.reading.forEach(function (x) { if (x.topic && topics.indexOf(x.topic) < 0) topics.push(x.topic); });
+      var order = ((w && w.reading && w.reading.group_order) || []);
+      topics.sort(function (a, b) { var i = order.indexOf(a), j = order.indexOf(b); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j); });
       var g2 = el("div", "cards");
-      d.reading.forEach(function (x) {
-        var c = card();
+      if (topics.length > 1) {
+        var bar = el("div", "rchips");
+        var btns = [];
+        function setTopic(t) {
+          btns.forEach(function (b) { b.classList.toggle("on", b.dataset.t === t); });
+          Array.prototype.forEach.call(g2.children, function (c) { c.hidden = !!t && c.dataset.t !== t; });
+        }
+        [""].concat(topics).forEach(function (t) {
+          var n = t ? d.reading.filter(function (x) { return x.topic === t; }).length : d.reading.length;
+          var b = el("button", t ? "" : "on", (t || "All") + " " + n); b.type = "button"; b.dataset.t = t;
+          b.addEventListener("click", function () { setTopic(t); });
+          btns.push(b); bar.appendChild(b);
+        });
+        p.appendChild(bar);
+      }
+      d.reading.slice().sort(function (a, b) { var i = order.indexOf(a.topic), j = order.indexOf(b.topic); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j); }).forEach(function (x) {
+        var c = card(); c.dataset.t = x.topic || "";
         var m = el("p", "meta"); m.appendChild(link(x.source || "", x.source_url));
         m.appendChild(document.createTextNode(" · " + shortDate(x.published) + (x.access === "partial" ? " · partly paywalled" : x.access === "teaser" ? " · teaser only" : "")));
         c.appendChild(m);

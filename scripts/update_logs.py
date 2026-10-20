@@ -121,6 +121,7 @@ for g in d.get("groups", []):
             if k in i and i[k] is not None and not is_num(i[k]):
                 err(f"{s}.{k}: must be a number or null")
 
+reading_groups = {f.get("group") for f in w.get("reading", {}).get("feeds", [])}
 for r in d.get("reading", []):
     t = r.get("title", "(untitled)")
     for k in ("source", "title", "url", "published", "summary"):
@@ -132,6 +133,8 @@ for r in d.get("reading", []):
         err(f"reading '{t}': access must be full, partial, or teaser")
     if len(str(r.get("summary", "")).split()) > 45:
         err(f"reading '{t}': summary is over 45 words")
+    if r.get("topic") and r["topic"] not in reading_groups:
+        err(f"reading '{t}': topic {r['topic']} is not a feed group in watchlist.json")
     ov = r.get("overlap", [])
     if len(ov) > 3:
         err(f"reading '{t}': more than 3 overlaps")

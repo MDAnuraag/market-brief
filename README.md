@@ -49,7 +49,7 @@ Slow operational numbers (TSMC monthly revenue, Korean chip exports, Japanese an
 Three relationships are computed from prices already on the page: Brent minus WTI, copper to aluminum, and copper to gold. Each is shown against its own recent sessions, so the page learns what is normal for it the same way it does for prices. Indicator series with enough history also show their latest value against the five-year average and range for the same period (the usual way analysts judge whether inventories are tight). That needs about three earlier years on file. Weekly series (rig count, US and EU gas storage) are supported alongside monthly and quarterly ones. A one-off backfill can be done by appending rows to the series CSV.
 
 ## Add a newsletter
-Add an entry under `reading.feeds` in `data/watchlist.json` with its feed address (a Substack feed is `https://<name>.substack.com/feed`) and set `enabled` to `true`.
+Add an entry under `reading.feeds` in `data/watchlist.json` with its feed address (a Substack feed is `https://<name>.substack.com/feed`) a `group` (Chips, Energy, Metals and minerals, Food and farm, Shipping and logistics, Climate and policy, or China and Asia) and set `enabled` to `true`. The Reading section lists everything the feeds returned, with topic chips to narrow it; nothing is filtered out. Feeds that mix free and paywalled items are included, and the page shows only what the feed itself exposes.
 
 ## Limits
 Prices come from web search, not a market data feed. They can lag, and some instruments have no free source. Items that could not be retrieved are listed at the bottom of the page. Paywalled newsletters show only what their feed exposes. The page reports data and does not recommend trades.

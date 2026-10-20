@@ -1251,8 +1251,8 @@
     ]
   },
   "reading": {
-    "max_items_per_feed": 2,
-    "max_items_total": 12,
+    "max_items_per_feed": 3,
+    "max_items_total": 60,
     "lookback_days": 7,
     "summary_max_words": 30,
     "max_overlaps_per_item": 3,
@@ -1267,7 +1267,8 @@
         "topic": "semis and AI hardware",
         "access": "partial",
         "enabled": true,
-        "note": "www.semianalysis.com/feed is stale; use the newsletter address."
+        "note": "www.semianalysis.com/feed is stale; use the newsletter address.",
+        "group": "Chips"
       },
       {
         "id": "chipstrat",
@@ -1277,7 +1278,8 @@
         "topic": "semis and AI hardware",
         "access": "full",
         "enabled": true,
-        "note": "chipstrat.com redirects to newsletter.chipstrat.com."
+        "note": "chipstrat.com redirects to newsletter.chipstrat.com.",
+        "group": "Chips"
       },
       {
         "id": "irrational",
@@ -1287,7 +1289,8 @@
         "topic": "semis and AI hardware",
         "access": "full",
         "enabled": true,
-        "note": "Posts irregularly."
+        "note": "Posts irregularly.",
+        "group": "Chips"
       },
       {
         "id": "chipletter",
@@ -1297,7 +1300,8 @@
         "topic": "semis history and architecture",
         "access": "full",
         "enabled": true,
-        "note": "Slow cadence; mostly history."
+        "note": "Slow cadence; mostly history.",
+        "group": "Chips"
       },
       {
         "id": "culpium",
@@ -1307,7 +1311,8 @@
         "topic": "semis and Asia tech",
         "access": "teaser",
         "enabled": true,
-        "note": "Feed shows intros only; members-only beyond that."
+        "note": "Feed shows intros only; members-only beyond that.",
+        "group": "China and Asia"
       },
       {
         "id": "chinatalk",
@@ -1317,7 +1322,8 @@
         "topic": "China tech and policy",
         "access": "full",
         "enabled": true,
-        "note": ""
+        "note": "",
+        "group": "China and Asia"
       },
       {
         "id": "hellochinatech",
@@ -1327,7 +1333,8 @@
         "topic": "China tech",
         "access": "full",
         "enabled": true,
-        "note": "Occasional paid-report sales pages; skip those."
+        "note": "Occasional paid-report sales pages; skip those.",
+        "group": "China and Asia"
       },
       {
         "id": "caixin",
@@ -1337,7 +1344,8 @@
         "topic": "China economy",
         "access": "teaser",
         "enabled": true,
-        "note": "Teasers only. Newest item seen on 2026-10-17 was dated Aug 12; may be stale. Caixin has no official RSS feed."
+        "note": "Teasers only. Newest item seen on 2026-10-17 was dated Aug 12; may be stale. Caixin has no official RSS feed.",
+        "group": "China and Asia"
       },
       {
         "id": "dialogueearth",
@@ -1347,7 +1355,8 @@
         "topic": "climate, energy, resources",
         "access": "full",
         "enabled": true,
-        "note": "Items carry category tags (Energy, Mining, Business); useful for matching."
+        "note": "Items carry category tags (Energy, Mining, Business); useful for matching.",
+        "group": "Climate and policy"
       },
       {
         "id": "carbonremoval",
@@ -1357,7 +1366,8 @@
         "topic": "carbon removal",
         "access": "full",
         "enabled": true,
-        "note": "Weekly summary."
+        "note": "Weekly summary.",
+        "group": "Climate and policy"
       },
       {
         "id": "asianometry",
@@ -1367,7 +1377,8 @@
         "topic": "semis history",
         "access": "full",
         "enabled": false,
-        "note": "Feed stops at Jan 2025; the newsletter moved to a Stratechery Plus subscription."
+        "note": "Feed stops at Jan 2025; the newsletter moved to a Stratechery Plus subscription.",
+        "group": "Chips"
       },
       {
         "id": "semicosystem",
@@ -1376,9 +1387,240 @@
         "topic": "semis",
         "access": null,
         "enabled": false,
-        "note": "No feed address found. Send the link and set enabled to true."
+        "note": "No feed address found. Send the link and set enabled to true.",
+        "group": "Chips"
+      },
+      {
+        "id": "semiengineering",
+        "name": "Semiconductor Engineering",
+        "site": "https://semiengineering.com",
+        "url": "https://semiengineering.com/feed/",
+        "topic": "process, packaging, memory, design",
+        "group": "Chips",
+        "access": "partial",
+        "enabled": true,
+        "note": "Technical papers and trade coverage; several posts a day."
+      },
+      {
+        "id": "semiwiki",
+        "name": "SemiWiki",
+        "site": "https://semiwiki.com",
+        "url": "https://www.semiwiki.com/feed/",
+        "topic": "EDA, IP, foundry detail",
+        "group": "Chips",
+        "access": "partial",
+        "enabled": true,
+        "note": "Many items are vendor-contributed; label the source as the site and say so in the summary when it is a company post."
+      },
+      {
+        "id": "eetimes",
+        "name": "EE Times",
+        "site": "https://www.eetimes.com",
+        "url": "https://www.eetimes.com/feed/",
+        "topic": "semis industry news and interviews",
+        "group": "Chips",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "fabknowledge",
+        "name": "Fabricated Knowledge",
+        "site": "https://www.fabricatedknowledge.com",
+        "url": "https://www.fabricatedknowledge.com/feed",
+        "topic": "semis and AI hardware",
+        "group": "Chips",
+        "access": "teaser",
+        "enabled": true,
+        "note": "Posts irregularly; most items show only a teaser."
+      },
+      {
+        "id": "eternallyparanoid",
+        "name": "Eternally Paranoid",
+        "site": "https://eternallyparanoid.substack.com",
+        "url": "https://eternallyparanoid.substack.com/feed",
+        "topic": "co-packaged optics",
+        "group": "Chips",
+        "access": "full",
+        "enabled": false,
+        "note": "Two posts so far (Jan 2026); turn on if it resumes."
+      },
+      {
+        "id": "trendforce",
+        "name": "TrendForce News",
+        "site": "https://www.trendforce.com/news",
+        "url": "https://www.trendforce.com/news/feed/",
+        "topic": "DRAM, NAND, foundry, packaging pricing",
+        "group": "Chips",
+        "access": "full",
+        "enabled": false,
+        "note": "The feed address returned items only up to 1 July 2026 when checked on 20 Oct; re-check before enabling."
+      },
+      {
+        "id": "latitude",
+        "name": "Latitude Media",
+        "site": "https://www.latitudemedia.com",
+        "url": "https://www.latitudemedia.com/feed/",
+        "topic": "grid, storage, power demand, gas supply",
+        "group": "Energy",
+        "access": "full",
+        "enabled": true
+      },
+      {
+        "id": "canary",
+        "name": "Canary Media",
+        "site": "https://www.canarymedia.com",
+        "url": "https://www.canarymedia.com/rss.rss",
+        "topic": "power, storage, materials",
+        "group": "Energy",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "utilitydive",
+        "name": "Utility Dive",
+        "site": "https://www.utilitydive.com",
+        "url": "https://www.utilitydive.com/feeds/news/",
+        "topic": "utilities, grid, nuclear",
+        "group": "Energy",
+        "access": "partial",
+        "enabled": true,
+        "note": "Some items are sponsored content; skip those."
+      },
+      {
+        "id": "oilprice",
+        "name": "Oilprice.com",
+        "site": "https://oilprice.com",
+        "url": "https://www.oilprice.com/rss/main",
+        "topic": "oil, gas, LNG, power",
+        "group": "Energy",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "rigzone",
+        "name": "Rigzone",
+        "site": "https://www.rigzone.com",
+        "url": "https://www.rigzone.com/news/rss/rigzone_latest.aspx",
+        "topic": "upstream oil and gas",
+        "group": "Energy",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "miningcom",
+        "name": "MINING.COM",
+        "site": "https://www.mining.com",
+        "url": "https://www.mining.com/feed/",
+        "topic": "mining, critical minerals, metals",
+        "group": "Metals and minerals",
+        "access": "full",
+        "enabled": true
+      },
+      {
+        "id": "farmdoc",
+        "name": "farmdoc daily",
+        "site": "https://farmdocdaily.illinois.edu",
+        "url": "https://farmdocdaily.illinois.edu/feed",
+        "topic": "farm economics, grain and input markets",
+        "group": "Food and farm",
+        "access": "partial",
+        "enabled": true,
+        "note": "University of Illinois; free, feed carries excerpts."
+      },
+      {
+        "id": "fertilizerdaily",
+        "name": "Fertilizer Daily",
+        "site": "https://www.fertilizerdaily.com",
+        "url": "https://www.fertilizerdaily.com/feed/",
+        "topic": "fertilizer markets and policy",
+        "group": "Food and farm",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "agfunder",
+        "name": "AgFunder News",
+        "site": "https://agfundernews.com",
+        "url": "https://www.agfundernews.com/feed",
+        "topic": "agrifood technology and finance",
+        "group": "Food and farm",
+        "access": "full",
+        "enabled": true
+      },
+      {
+        "id": "gcaptain",
+        "name": "gCaptain",
+        "site": "https://gcaptain.com",
+        "url": "https://gcaptain.com/feed/",
+        "topic": "shipping, tankers, offshore",
+        "group": "Shipping and logistics",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "loadstar",
+        "name": "The Loadstar",
+        "site": "https://theloadstar.com",
+        "url": "https://theloadstar.com/feed/",
+        "topic": "container lines, air cargo, forwarding",
+        "group": "Shipping and logistics",
+        "access": "partial",
+        "enabled": true,
+        "note": "Feed shows a teaser cut off with an ellipsis."
+      },
+      {
+        "id": "containernews",
+        "name": "Container News",
+        "site": "https://container-news.com",
+        "url": "https://www.container-news.com/feed/",
+        "topic": "container lines and ports",
+        "group": "Shipping and logistics",
+        "access": "partial",
+        "enabled": true,
+        "note": "Some items are cut off by a Premium paywall; most are full text."
+      },
+      {
+        "id": "splash",
+        "name": "Splash247",
+        "site": "https://splash247.com",
+        "url": "https://splash247.com/feed/",
+        "topic": "shipping, offshore, shipyards",
+        "group": "Shipping and logistics",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "hsn",
+        "name": "Hellenic Shipping News",
+        "site": "https://www.hellenicshippingnews.com",
+        "url": "https://www.hellenicshippingnews.com/feed/",
+        "topic": "tankers, dry bulk, commodities wire",
+        "group": "Shipping and logistics",
+        "access": "partial",
+        "enabled": true,
+        "note": "Mixes original items with wire copy; name the original agency in the summary where the item says so."
+      },
+      {
+        "id": "carbonbrief",
+        "name": "Carbon Brief",
+        "site": "https://www.carbonbrief.org",
+        "url": "https://www.carbonbrief.org/feed/",
+        "topic": "climate science and policy analysis",
+        "group": "Climate and policy",
+        "access": "full",
+        "enabled": true
       }
-    ]
+    ],
+    "group_order": [
+      "Chips",
+      "Energy",
+      "Metals and minerals",
+      "Food and farm",
+      "Shipping and logistics",
+      "Climate and policy",
+      "China and Asia"
+    ],
+    "coverage_rule": "No filtering for quality or fit. Take up to max_items_per_feed from every enabled feed that has items in the window, newest first, then stop at max_items_total. Do not drop an item for being off-theme; set overlap to empty instead."
   },
   "headlines": {
     "max_stories_weekday": 6,

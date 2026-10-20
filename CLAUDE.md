@@ -67,9 +67,10 @@ Build `headlines` from the biggest announcements of the period, following `headl
 Build the `reading` list from the enabled feeds in `watchlist.json` under `reading.feeds`.
 1. Fetch each feed. Keep items published within `lookback_days`. If a feed fails, add a `gaps` line. If a feed has nothing in the window, add its name to `reading_quiet`.
 2. **Weekday:** skip any URL already in `data/reading_log.jsonl`. **Saturday:** include the week's best items even if shown before.
-3. Pick at most `max_items_per_feed` per feed and `max_items_total` overall. Prefer pieces that touch a watchlist item, a resource market, or the climate checklist. Skip sales pages for paid reports.
-4. Each entry: `{source, title, url, published (YYYY-MM-DD), access, summary, overlap}`.
-   - `access` is `full`, `partial`, or `teaser`, as the feed exposes it.
+3. Volume over selection. Follow `reading.coverage_rule`: take up to `max_items_per_feed` from every enabled feed that has items in the window, newest first, then stop at `max_items_total`. Do not drop an item for quality or theme, and do not rank feeds against each other; the reader chooses on the page. If the total would be exceeded, trim the newest-first lists evenly so no group disappears. Skip only sales pages for paid reports and sponsored content. Feeds outside semiconductors (energy, metals and minerals, food and farm, shipping, climate) are held to the same standard as the chip feeds: same fetch, same summary rules, same overlap rules.
+4. Each entry: `{source, title, url, published (YYYY-MM-DD), access, summary, overlap, topic}`.
+   - `topic` is the feed's `group` from `watchlist.json`. The page uses it for the topic chips.
+   - `access` is `full`, `partial`, or `teaser`, as the feed exposes it. Hybrid sources (free items mixed with paywalled ones) are included: use the text the feed gives and mark the item `partial` or `teaser` when the feed cuts off.
    - `summary`: your own words, at most `summary_max_words`, saying what the piece covers. No opinion, no recommendation. For partial or teaser items, use only the text the feed gives. Never fetch around a paywall and never use a cache or mirror.
    - `source_url`: the feed's `site` address from `watchlist.json`, so the page can link the publication.
    - `overlap`: up to `max_overlaps_per_item` of `{symbol, strength, reason}`. Follow `overlap_rule` in the watchlist. Match with `group_keywords` and the feed's own category tags. Leave `overlap` empty when there is no honest link.
@@ -102,7 +103,7 @@ Build the `reading` list from the enabled feeds in `watchlist.json` under `readi
   }],
   "reading": [{
     "source": "SemiAnalysis", "title": "...", "url": "https://...", "published": "2026-10-15",
-    "source_url": "https://newsletter.semianalysis.com", "access": "partial", "summary": "...",
+    "source_url": "https://newsletter.semianalysis.com", "topic": "Chips", "access": "partial", "summary": "...",
     "overlap": [{ "symbol": "ASML", "strength": "direct", "reason": "Covers ASML's work on a hybrid bonding tool." }]
   }],
   "reading_quiet": ["The Chip Letter"],
