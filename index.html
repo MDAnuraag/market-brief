@@ -73,6 +73,18 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
 .row.look { box-shadow: inset 3px 0 0 var(--amber); }
 .row.eye { box-shadow: inset 3px 0 0 var(--amber-dim); }
 
+/* paging controls */
+.pg { display: flex; align-items: center; gap: 6px; font-weight: 500; letter-spacing: .04em; }
+.pg button { font: 700 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: #000; background: transparent; border: 1px solid #000; border-radius: 2px; padding: 4px 7px; cursor: pointer; }
+.pg button:hover { background: #000; color: var(--amber); }
+.pg button[aria-pressed="true"] { background: #000; color: var(--amber); }
+.pg .pn { min-width: 8ch; text-align: right; font-size: 11px; }
+.pbar { height: 2px; background: var(--edge); }
+.pbar i { display: block; height: 100%; width: 0; background: var(--amber); }
+.pbar i.run { animation: fill var(--dur, 8s) linear forwards; }
+@keyframes fill { from { width: 0; } to { width: 100%; } }
+[hidden] { display: none !important; }
+
 /* alerts board and lede */
 .lede { font: 400 16.5px/1.6 var(--serif); color: var(--white); margin: 22px 0 0; max-width: none; }
 @media (min-width: 900px) { .lede { column-count: 2; column-gap: 40px; text-align: left; hyphens: auto; } }
@@ -168,6 +180,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
   .ticker .track { animation: none; }
   .ticker .dup { display: none; }
   .c.flip { animation: none; }
+  .pbar i.run { animation: none; width: 0; }
   html { scroll-behavior: auto; }
 }
 </style>
@@ -346,6 +359,71 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     return s;
   }
 
+  /* ---------- cycling pages, like a departures board with more flights than rows ---------- */
+  var CYCLE_MS = 8000;
+  function pageSize() { return window.innerWidth <= 760 ? 6 : 8; }
+  function retrigger(nodes) {
+    var n = 0;
+    nodes.forEach(function (u) {
+      u.forEach(function (e) {
+        if (!e.querySelectorAll) return;
+        Array.prototype.forEach.call(e.querySelectorAll(".c:not(.sp)"), function (c) {
+          c.classList.remove("flip"); void c.offsetWidth;
+          c.style.setProperty("--d", Math.min(n * 7, 520) + "ms");
+          c.classList.add("flip");
+        });
+        n += 6;
+      });
+    });
+  }
+  function setupPaging(section, head, rows, units) {
+    if (units.length <= pageSize() + 2) return;
+    var pg = el("div", "pg"), page = 0, timer = null, playing = !reduce, showAll = false, visible = true, hover = false;
+    var pn = el("span", "pn"), prev = el("button", null, "‹"), next = el("button", null, "›"), pp = el("button", null, "pause"), all = el("button", null, "all");
+    prev.type = next.type = pp.type = all.type = "button";
+    prev.setAttribute("aria-label", "previous page"); next.setAttribute("aria-label", "next page");
+    pp.setAttribute("aria-pressed", "false"); all.setAttribute("aria-pressed", "false");
+    [pn, prev, next, pp, all].forEach(function (x) { pg.appendChild(x); });
+    var small = head.querySelector("small"); if (small) small.hidden = true;
+    head.appendChild(pg);
+    var bar = el("div", "pbar"), fill = el("i"); bar.appendChild(fill); section.insertBefore(bar, rows);
+    function pages() { return Math.ceil(units.length / pageSize()); }
+    function paint(animate) {
+      var size = pageSize(), n = pages();
+      if (page >= n) page = 0;
+      units.forEach(function (u, i) {
+        var on = showAll || (i >= page * size && i < (page + 1) * size);
+        u.forEach(function (e) { e.hidden = !on; if (!on && e.classList && e.classList.contains("det")) e.classList.remove("open"); });
+      });
+      pn.textContent = showAll ? units.length + " listed" : "page " + (page + 1) + "/" + n;
+      prev.hidden = next.hidden = pp.hidden = showAll;
+      if (animate && !reduce) retrigger(units.slice(page * size, (page + 1) * size));
+      restart();
+    }
+    function restart() {
+      fill.classList.remove("run"); void fill.offsetWidth;
+      clearTimeout(timer);
+      if (playing && !showAll && visible && !hover && !reduce) {
+        fill.style.setProperty("--dur", CYCLE_MS + "ms"); fill.classList.add("run");
+        timer = setTimeout(function () { page = (page + 1) % pages(); paint(true); }, CYCLE_MS);
+      }
+    }
+    prev.addEventListener("click", function () { page = (page + pages() - 1) % pages(); paint(true); });
+    next.addEventListener("click", function () { page = (page + 1) % pages(); paint(true); });
+    pp.addEventListener("click", function () { playing = !playing; pp.textContent = playing ? "pause" : "play"; pp.setAttribute("aria-pressed", playing ? "false" : "true"); restart(); });
+    all.addEventListener("click", function () { showAll = !showAll; all.setAttribute("aria-pressed", showAll ? "true" : "false"); all.textContent = showAll ? "pages" : "all"; paint(false); });
+    rows.addEventListener("mouseenter", function () { hover = true; restart(); });
+    rows.addEventListener("mouseleave", function () { hover = false; restart(); });
+    rows.addEventListener("focusin", function () { hover = true; restart(); });
+    rows.addEventListener("focusout", function () { hover = false; restart(); });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) { visible = es[0].isIntersecting; restart(); }, { threshold: 0.25 }).observe(section);
+    }
+    window.addEventListener("resize", function () { paint(false); });
+    if (reduce) { showAll = true; all.setAttribute("aria-pressed", "true"); all.textContent = "pages"; }
+    paint(false);
+  }
+
   function renderBoard(g, d) {
     var s = el("section", "board"); s.id = g.id;
     var h = el("div", "bh"); h.appendChild(el("span", null, g.title || g.id));
@@ -355,12 +433,17 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     ["symbol", "name", "last", "1 day", "1 week", "1 month", "status"].forEach(function (t, i) { cols.appendChild(el("div", i >= 2 && i <= 5 ? "r" : (i === 6 ? "r" : null), t)); });
     s.appendChild(cols);
     var rows = el("div", "rows");
-    var lastRegion = null;
+    var lastRegion = null, units = [];
     g.items.forEach(function (it) {
-      if (g.group_by && it[g.group_by] && it[g.group_by] !== lastRegion) { lastRegion = it[g.group_by]; rows.appendChild(el("div", "sub", lastRegion)); }
-      rows.appendChild(boardRow(it, d));
+      var els = [];
+      if (g.group_by && it[g.group_by] && it[g.group_by] !== lastRegion) { lastRegion = it[g.group_by]; var sb = el("div", "sub", lastRegion); els.push(sb); rows.appendChild(sb); }
+      var frag = boardRow(it, d);
+      Array.prototype.forEach.call(frag.childNodes, function (n) { els.push(n); });
+      rows.appendChild(frag);
+      units.push(els);
     });
     s.appendChild(rows);
+    setupPaging(s, h, rows, units);
     return s;
   }
 
