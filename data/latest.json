@@ -2,7 +2,7 @@
  "generated_at": "2026-10-20T12:13:41Z",
  "data_date": "2026-10-19",
  "edition": "weekday",
- "summary": "US stocks rebounded Monday as the Nasdaq rose 1.1% and the S&P 500 0.4% (7,691), helped by a 1.6% rise in the Philadelphia Semiconductor Index that ended an eight-session losing run; the Kospi gained 1.8% as institutions bought after seven straight losses. The 10-year US yield edged up to about 5.14% ahead of the Fed's Oct 27-28 meeting, and the VIX eased to 18.4. Oil is the live risk: WTI settled near 103.66 Monday and rose about 5% more on Tuesday after Iran said mines had halted two tankers in the Strait of Hormuz, a claim not independently confirmed. WMO outlooks point to a strong El Nino, with drought concern across Southeast Asia, a failed northern rainy season in the Horn of Africa and a below-normal Indian monsoon, while EU gas storage was reported at 73% full, the lowest for the date since 2011. Tuesday's Asian session reversed part of that: the Kospi fell 3.6% and the Nikkei 1.3% as markets awaited AI-sector earnings, with Brent near 109.8. Prices shown are Monday 2026-10-19 closes; some commodity, shipping and freight items could not be retrieved (see gaps).",
+ "summary": "US stocks rebounded Monday as the Nasdaq rose 1.1% and the S&P 500 0.4% (7,691), helped by a 1.6% rise in the Philadelphia Semiconductor Index that ended an eight-session losing run; the Kospi gained 1.8% as institutions bought after seven straight losses. The 10-year US yield edged up to about 5.14% ahead of the Fed's Oct 27-28 meeting, and the VIX eased to 18.4. Oil is the live risk: WTI settled near 103.66 Monday and rose about 5% more on Tuesday after Iran said mines had halted two tankers in the Strait of Hormuz, a claim not independently confirmed. WMO outlooks point to a strong El Nino, with drought concern across Southeast Asia, a failed northern rainy season in the Horn of Africa and a below-normal Indian monsoon, while EU gas storage was reported at 73% full, the lowest for the date since 2011. Tuesday's Asian session reversed part of that: the Kospi fell 3.6% and the Nikkei 1.3% as markets awaited AI-sector earnings, with Brent near 109.8. Prices shown are Monday 2026-10-19 closes, except Hong Kong listings (closed for a holiday, so Friday's closes); some commodity, shipping and freight items could not be retrieved (see gaps).",
  "groups": [
   {
    "id": "macros",
@@ -83,26 +83,26 @@
     {
      "symbol": "SWTSX",
      "name": "Schwab Total Stock Market",
-     "last": 18.43,
-     "chg_1d": null,
-     "chg_1w": -2.02,
-     "chg_1m": -0.22,
-     "note": "NAV as of 2026-10-16; 1w/1m vs 10-12 and 09-18 NAV (Oct 19 not yet posted).",
-     "as_of": "2026-10-16",
+     "last": 18.5,
+     "chg_1d": 0.38,
+     "chg_1w": -1.65,
+     "chg_1m": 0.16,
+     "note": "NAV as of 2026-10-19; 1w/1m vs 10-12 and 09-18 NAV.",
+     "as_of": "2026-10-19",
      "src": "Charles Schwab Asset Management",
      "tier": "aggregator"
     },
     {
      "symbol": "SWISX",
      "name": "Schwab International Index",
-     "last": 31.51,
-     "chg_1d": null,
-     "chg_1w": 0.57,
-     "chg_1m": -1.5,
-     "note": "NAV as of 2026-10-16; 1w/1m vs 10-12 and 09-18 NAV (Oct 19 not yet posted).",
+     "last": 31.37,
+     "chg_1d": -0.44,
+     "chg_1w": 0.13,
+     "chg_1m": -1.94,
+     "note": "NAV as of 2026-10-19; 1w/1m vs 10-12 and 09-18 NAV.",
      "src": "Charles Schwab Asset Management",
      "tier": "aggregator",
-     "as_of": "2026-10-16"
+     "as_of": "2026-10-19"
     },
     {
      "symbol": "VOO",
@@ -287,7 +287,16 @@
      "src": "Korea Exchange",
      "tier": "aggregator",
      "as_of": "2026-10-19",
-     "note": "Price in KRW."
+     "note": "Price in KRW.",
+     "xcheck": {
+      "src": "Google Finance (Korea Exchange quote)",
+      "tier": "aggregator",
+      "last": 1272000,
+      "chg_1w": null,
+      "as_of": "2026-10-16",
+      "status": "date",
+      "detail": "second source is dated 2026-10-16"
+     }
     },
     {
      "symbol": "8035.T",
@@ -332,12 +341,14 @@
      "symbol": "0981.HK",
      "name": "SMIC",
      "region": "East Asia",
-     "last": null,
-     "chg_1d": null,
+     "last": 52.4,
+     "chg_1d": 0.48,
      "chg_1w": null,
-     "chg_1m": null,
+     "chg_1m": -19.57,
      "src": "Hong Kong Exchanges",
-     "tier": "aggregator"
+     "tier": "aggregator",
+     "as_of": "2026-10-16",
+     "note": "HKD. Hong Kong was closed Mon 19 Oct (Chung Yeung holiday); last close is Fri 16 Oct. 1-month base is the 18 Sep close."
     },
     {
      "symbol": "MU",
@@ -408,7 +419,16 @@
      "chg_1m": 2.03,
      "src": "Nasdaq",
      "tier": "aggregator",
-     "as_of": "2026-10-19"
+     "as_of": "2026-10-19",
+     "xcheck": {
+      "src": "Google Finance (Nasdaq quote)",
+      "tier": "aggregator",
+      "last": 342.94,
+      "chg_1w": null,
+      "as_of": "2026-10-19",
+      "status": "agree",
+      "detail": "last differs by 0.00% (limit 0.6%)"
+     }
     },
     {
      "symbol": "MSFT",
@@ -524,12 +544,12 @@
      "symbol": "MTF=F",
      "name": "Newcastle coal",
      "unit": "USD/t",
-     "last": 149.5,
-     "chg_1d": null,
+     "last": 150.7,
+     "chg_1d": 0.2,
      "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-15",
-     "note": "Latest quote found is dated 15 Oct.",
+     "chg_1m": 4.62,
+     "as_of": "2026-10-19",
+     "note": "Latest quote found is dated 15 Oct. Month change as stated by Trading Economics.",
      "src": "ICE Futures Europe / Newcastle index",
      "tier": "aggregator"
     },
@@ -537,12 +557,14 @@
      "symbol": "U3O8",
      "name": "Uranium spot",
      "unit": "USD/lb",
-     "last": null,
-     "chg_1d": null,
+     "last": 90.15,
+     "chg_1d": 0.06,
      "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "chg_1m": 0.5,
+     "src": "Trading Economics (uranium spot benchmark)",
+     "tier": "aggregator",
+     "as_of": "2026-10-19",
+     "note": "Month change as stated by the source."
     },
     {
      "symbol": "EUA",
@@ -570,19 +592,20 @@
      "name": "Shell",
      "last": 104.82,
      "chg_1d": -1.73,
-     "chg_1w": 3.17,
-     "chg_1m": null,
+     "chg_1w": 3.18,
+     "chg_1m": 10.87,
      "src": "NYSE",
-     "tier": "aggregator"
+     "tier": "aggregator",
+     "as_of": "2026-10-19"
     },
     {
      "symbol": "TTE",
      "name": "TotalEnergies",
-     "last": 91.34,
-     "chg_1d": 3.22,
-     "chg_1w": 6.08,
-     "chg_1m": 0.59,
-     "as_of": "2026-10-16",
+     "last": 89.95,
+     "chg_1d": -1.52,
+     "chg_1w": 1.79,
+     "chg_1m": -0.96,
+     "as_of": "2026-10-19",
      "note": "Latest close found is 16 Oct; changes measured to that date (1w vs 9 Oct).",
      "src": "NYSE",
      "tier": "aggregator"
@@ -600,11 +623,11 @@
     {
      "symbol": "COP",
      "name": "ConocoPhillips",
-     "last": 146.51,
-     "chg_1d": 3.37,
-     "chg_1w": 9.25,
-     "chg_1m": 11.14,
-     "as_of": "2026-10-16",
+     "last": 145.24,
+     "chg_1d": -0.87,
+     "chg_1w": 5.58,
+     "chg_1m": 10.17,
+     "as_of": "2026-10-19",
      "note": "Latest close found is 16 Oct; changes measured to that date (1w vs 9 Oct).",
      "src": "NYSE",
      "tier": "aggregator"
@@ -612,23 +635,23 @@
     {
      "symbol": "2222.SR",
      "name": "Saudi Aramco",
-     "last": 25.28,
-     "chg_1d": -0.39,
-     "chg_1w": null,
-     "chg_1m": null,
+     "last": 25.8,
+     "chg_1d": 0.0,
+     "chg_1w": 0.16,
+     "chg_1m": 0.94,
      "src": "Saudi Exchange (Tadawul)",
      "tier": "aggregator",
-     "as_of": "2026-10-15",
-     "note": "SAR. Investing.com Italy page shows close 15 Oct; Monday close not found."
+     "as_of": "2026-10-19",
+     "note": "SAR. Investing.com Italy page shows close 15 Oct; Monday close not found. SAR. Tadawul trades Sunday to Thursday; 1-month base is the 17 Sep close."
     },
     {
      "symbol": "LNG",
      "name": "Cheniere Energy",
-     "last": 289.43,
-     "chg_1d": 3.68,
-     "chg_1w": 4.05,
-     "chg_1m": 7.86,
-     "as_of": "2026-10-16",
+     "last": 286.6,
+     "chg_1d": -0.98,
+     "chg_1w": 1.45,
+     "chg_1m": 6.8,
+     "as_of": "2026-10-19",
      "note": "Latest close found is 16 Oct; changes measured to that date (1w vs 9 Oct).",
      "src": "NYSE American",
      "tier": "aggregator"
@@ -691,34 +714,40 @@
      "symbol": "IRONORE",
      "name": "Iron ore",
      "unit": "USD/t",
-     "last": null,
-     "chg_1d": null,
+     "last": 90.95,
+     "chg_1d": 0.06,
      "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "chg_1m": -6.73,
+     "src": "Trading Economics (iron ore 62% Fe benchmark)",
+     "tier": "aggregator",
+     "as_of": "2026-10-19",
+     "note": "Month change as stated by the source."
     },
     {
      "symbol": "LITHIUM",
      "name": "Lithium carbonate",
      "unit": "CNY/t",
-     "last": null,
-     "chg_1d": null,
+     "last": 102350,
+     "chg_1d": -0.58,
      "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "chg_1m": -23.85,
+     "src": "Trading Economics (lithium carbonate, China spot)",
+     "tier": "aggregator",
+     "as_of": "2026-10-20",
+     "note": "Tuesday 20 Oct value; a Monday close was not available."
     },
     {
      "symbol": "COBALT",
      "name": "Cobalt",
      "unit": "USD/t",
-     "last": null,
-     "chg_1d": null,
+     "last": 36815,
+     "chg_1d": -6.43,
      "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "chg_1m": -8.24,
+     "src": "Trading Economics (cobalt, LME basis)",
+     "tier": "aggregator",
+     "as_of": "2026-10-16",
+     "note": "Last print 16 Oct; one-day fall as stated by the source, not yet confirmed elsewhere."
     },
     {
      "symbol": "NDPR",
@@ -756,11 +785,11 @@
     {
      "symbol": "FCX",
      "name": "Freeport-McMoRan",
-     "last": 69.54,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-16",
+     "last": 69.75,
+     "chg_1d": 0.3,
+     "chg_1w": -4.83,
+     "chg_1m": -2.5,
+     "as_of": "2026-10-19",
      "note": "Latest close found is 16 Oct; sources disagree on daily change sign.",
      "src": "NYSE",
      "tier": "aggregator"
@@ -790,21 +819,23 @@
     {
      "symbol": "GLEN.L",
      "name": "Glencore",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "last": 563.8,
+     "chg_1d": -3.31,
+     "chg_1w": -3.84,
+     "chg_1m": 1.26,
+     "src": "London Stock Exchange",
+     "tier": "aggregator",
+     "as_of": "2026-10-19",
+     "note": "Quoted in pence (GBX)."
     },
     {
      "symbol": "SCCO",
      "name": "Southern Copper",
-     "last": 200.51,
-     "chg_1d": -0.59,
-     "chg_1w": -4.17,
-     "chg_1m": 2.44,
-     "as_of": "2026-10-16",
+     "last": 201.78,
+     "chg_1d": 0.63,
+     "chg_1w": -3.31,
+     "chg_1m": 3.11,
+     "as_of": "2026-10-19",
      "note": "Latest close found is 16 Oct; changes measured to that date (1w vs 9 Oct).",
      "src": "NYSE",
      "tier": "aggregator"
@@ -822,11 +853,11 @@
     {
      "symbol": "ALB",
      "name": "Albemarle",
-     "last": 95.48,
-     "chg_1d": -2.75,
-     "chg_1w": -5.72,
-     "chg_1m": -13.91,
-     "as_of": "2026-10-16",
+     "last": 94.64,
+     "chg_1d": -0.88,
+     "chg_1w": -3.93,
+     "chg_1m": -14.67,
+     "as_of": "2026-10-19",
      "note": "Latest close found is 16 Oct; changes measured to that date (1w vs 9 Oct).",
      "src": "NYSE",
      "tier": "aggregator"
@@ -844,23 +875,26 @@
     {
      "symbol": "AI.PA",
      "name": "Air Liquide",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "last": 173.4,
+     "chg_1d": 0.14,
+     "chg_1w": 2.79,
+     "chg_1m": 6.28,
+     "src": "Euronext Paris",
+     "tier": "aggregator",
+     "as_of": "2026-10-19",
+     "note": "EUR."
     },
     {
      "symbol": "LIN",
      "name": "Linde",
      "last": 503.44,
      "chg_1d": 1.01,
-     "chg_1w": 3.32,
-     "chg_1m": null,
+     "chg_1w": 3.3,
+     "chg_1m": 9.35,
      "note": "Page header dated 20 Oct; daily table ends 19 Oct. Change taken from table.",
      "src": "Nasdaq",
-     "tier": "aggregator"
+     "tier": "aggregator",
+     "as_of": "2026-10-19"
     },
     {
      "symbol": "APD",
@@ -1012,14 +1046,14 @@
     {
      "symbol": "YAR.OL",
      "name": "Yara",
-     "last": 402.0,
-     "chg_1d": 0.4,
-     "chg_1w": -2.83,
-     "chg_1m": -11.12,
+     "last": 408.0,
+     "chg_1d": -0.99,
+     "chg_1w": 1.9,
+     "chg_1m": -9.45,
      "note": "NOK. Snapshot is from 2026-10-13, not Monday close.",
      "src": "Oslo Bors",
      "tier": "aggregator",
-     "as_of": "2026-10-13"
+     "as_of": "2026-10-19"
     }
    ]
   },
@@ -1127,22 +1161,26 @@
     {
      "symbol": "HLAG.DE",
      "name": "Hapag-Lloyd",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "last": 135.8,
+     "chg_1d": 1.88,
+     "chg_1w": -1.09,
+     "chg_1m": 4.78,
+     "src": "Deutsche Boerse (Frankfurt)",
+     "tier": "aggregator",
+     "as_of": "2026-10-19",
+     "note": "EUR. Frankfurt venue, not Xetra; Stuttgart venue closed 135.40 the same day."
     },
     {
      "symbol": "1919.HK",
      "name": "COSCO Shipping Holdings",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "last": 17.19,
+     "chg_1d": -0.87,
+     "chg_1w": -0.58,
+     "chg_1m": 3.68,
+     "src": "Hong Kong Exchanges",
+     "tier": "aggregator",
+     "as_of": "2026-10-16",
+     "note": "HKD. Hong Kong was closed Mon 19 Oct (Chung Yeung holiday); last close is Fri 16 Oct."
     },
     {
      "symbol": "FDX",
@@ -1203,8 +1241,8 @@
      "region": "Americas",
      "last": 37.02,
      "chg_1d": -0.16,
-     "chg_1w": null,
-     "chg_1m": null,
+     "chg_1w": -2.01,
+     "chg_1m": -6.16,
      "as_of": "2026-10-19",
      "src": "NYSE Arca",
      "tier": "aggregator"
@@ -1237,11 +1275,11 @@
      "symbol": "EPOL",
      "name": "Poland",
      "region": "Europe",
-     "last": 44.56,
-     "chg_1d": 0.25,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-16",
+     "last": 44.09,
+     "chg_1d": -1.05,
+     "chg_1w": 0.39,
+     "chg_1m": -0.72,
+     "as_of": "2026-10-19",
      "src": "NYSE Arca",
      "tier": "aggregator"
     },
@@ -1251,7 +1289,7 @@
      "region": "Europe",
      "last": 31.8,
      "chg_1d": -2.06,
-     "chg_1w": null,
+     "chg_1w": -5.94,
      "chg_1m": -14.7,
      "as_of": "2026-10-19",
      "note": "Down about 2.1% on the day; 1-month change about -14.7%.",
@@ -1274,11 +1312,11 @@
      "symbol": "UAE",
      "name": "United Arab Emirates",
      "region": "Middle East and Africa",
-     "last": 19.52,
-     "chg_1d": -0.2,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-16",
+     "last": 19.61,
+     "chg_1d": 0.46,
+     "chg_1w": 1.55,
+     "chg_1m": -1.61,
+     "as_of": "2026-10-19",
      "note": "Latest available close is 2026-10-16.",
      "src": "Exchange-listed fund/stock quote, compiled by StockAnalysis.com",
      "tier": "aggregator"
@@ -1287,12 +1325,13 @@
      "symbol": "EZA",
      "name": "South Africa",
      "region": "Middle East and Africa",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
+     "last": 64.61,
+     "chg_1d": -1.03,
+     "chg_1w": 1.32,
+     "chg_1m": -5.67,
      "src": "n/a",
-     "tier": "aggregator"
+     "tier": "aggregator",
+     "as_of": "2026-10-19"
     },
     {
      "symbol": "AFK",
@@ -1300,7 +1339,7 @@
      "region": "Middle East and Africa",
      "last": 26.41,
      "chg_1d": -1.42,
-     "chg_1w": null,
+     "chg_1w": -1.05,
      "chg_1m": -8.87,
      "as_of": "2026-10-19",
      "note": "1-week change not available (no 2026-10-12 close found).",
@@ -1417,11 +1456,11 @@
      "symbol": "THD",
      "name": "Thailand",
      "region": "Southeast Asia",
-     "last": 71.85,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-16",
+     "last": 71.41,
+     "chg_1d": -0.61,
+     "chg_1w": 0.07,
+     "chg_1m": -1.18,
+     "as_of": "2026-10-19",
      "note": "Latest available close is 2026-10-16.",
      "src": "Exchange-listed fund/stock quote, compiled by StockAnalysis.com",
      "tier": "aggregator"
@@ -1430,11 +1469,11 @@
      "symbol": "EPHE",
      "name": "Philippines",
      "region": "Southeast Asia",
-     "last": 22.9,
-     "chg_1d": 1.01,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-16",
+     "last": 23.15,
+     "chg_1d": 1.09,
+     "chg_1w": 1.0,
+     "chg_1m": -0.6,
+     "as_of": "2026-10-19",
      "note": "Latest available close is 2026-10-16.",
      "src": "Exchange-listed fund/stock quote, compiled by StockAnalysis.com",
      "tier": "aggregator"
@@ -1473,11 +1512,11 @@
     {
      "symbol": "ESGU",
      "name": "ESG US equity",
-     "last": 170.65,
-     "chg_1d": 0.63,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-06",
+     "last": 167.55,
+     "chg_1d": 0.42,
+     "chg_1w": -1.64,
+     "chg_1m": 0.61,
+     "as_of": "2026-10-19",
      "note": "Stale source; latest close found is 2026-10-06.",
      "src": "Exchange-listed fund/stock quote, compiled by StockAnalysis.com",
      "tier": "aggregator"
@@ -1485,11 +1524,11 @@
     {
      "symbol": "ESGD",
      "name": "ESG developed ex-US",
-     "last": 102.74,
-     "chg_1d": -0.06,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-16",
+     "last": 102.04,
+     "chg_1d": -0.68,
+     "chg_1w": -0.17,
+     "chg_1m": -1.93,
+     "as_of": "2026-10-19",
      "src": "Nasdaq",
      "tier": "aggregator"
     },
@@ -1510,8 +1549,8 @@
      "name": "Low-carbon global equity",
      "last": 254.17,
      "chg_1d": 0.2,
-     "chg_1w": null,
-     "chg_1m": null,
+     "chg_1w": -1.63,
+     "chg_1m": -0.78,
      "as_of": "2026-10-19",
      "src": "Exchange-listed fund/stock quote, compiled by StockAnalysis.com",
      "tier": "aggregator"
@@ -1519,33 +1558,35 @@
     {
      "symbol": "DSI",
      "name": "Social index",
-     "last": 145.48,
-     "chg_1d": -1.39,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-16",
+     "last": 146.15,
+     "chg_1d": 0.46,
+     "chg_1w": -1.93,
+     "chg_1m": 0.58,
+     "as_of": "2026-10-19",
      "src": "NYSE Arca",
      "tier": "aggregator"
     },
     {
      "symbol": "GRNB",
      "name": "Green bonds (USD)",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
+     "last": 23.33,
+     "chg_1d": -0.21,
+     "chg_1w": 0.26,
+     "chg_1m": -0.93,
      "src": "n/a",
-     "tier": "aggregator"
+     "tier": "aggregator",
+     "as_of": "2026-10-19"
     },
     {
      "symbol": "BGRN",
      "name": "Green bonds (global)",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
+     "last": 45.84,
+     "chg_1d": -0.17,
+     "chg_1w": 0.33,
+     "chg_1m": -0.82,
      "src": "n/a",
-     "tier": "aggregator"
+     "tier": "aggregator",
+     "as_of": "2026-10-19"
     }
    ]
   },
@@ -1579,11 +1620,11 @@
     {
      "symbol": "FAN",
      "name": "Wind",
-     "last": 21.87,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "as_of": "2026-10-15",
+     "last": 21.91,
+     "chg_1d": -0.77,
+     "chg_1w": -1.44,
+     "chg_1m": -6.29,
+     "as_of": "2026-10-19",
      "note": "Stale source; latest close found is 2026-10-15.",
      "src": "Exchange-listed fund/stock quote, compiled by StockAnalysis.com",
      "tier": "aggregator"
@@ -1743,11 +1784,11 @@
      "symbol": "BEP",
      "name": "Brookfield Renewable",
      "region": "Americas",
-     "last": 28.4,
-     "chg_1d": -0.87,
-     "chg_1w": -2.37,
-     "chg_1m": -4.79,
-     "as_of": "2026-10-16",
+     "last": 28.15,
+     "chg_1d": -0.88,
+     "chg_1w": -3.23,
+     "chg_1m": -5.63,
+     "as_of": "2026-10-19",
      "src": "NYSE",
      "note": "Oct 16 close; Oct 19 not found.",
      "tier": "aggregator"
@@ -1756,12 +1797,14 @@
      "symbol": "ORSTED.CO",
      "name": "Orsted",
      "region": "Europe",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
+     "last": 124.85,
+     "chg_1d": -2.88,
+     "chg_1w": -6.44,
+     "chg_1m": -8.64,
+     "src": "Nasdaq Copenhagen",
+     "tier": "aggregator",
+     "as_of": "2026-10-19",
+     "note": "DKK."
     },
     {
      "symbol": "VWS.CO",
@@ -1769,7 +1812,7 @@
      "region": "Europe",
      "last": 186.55,
      "chg_1d": -1.79,
-     "chg_1w": null,
+     "chg_1w": -1.66,
      "chg_1m": -9.88,
      "as_of": "2026-10-19",
      "src": "Nasdaq Copenhagen",
@@ -2905,57 +2948,40 @@
    "url": "https://wmo.int/ar/node/39121"
   },
   "Gas Infrastructure Europe via TASS",
-  "Prices: Investing.com, StockAnalysis, Trading Economics and other aggregators naming the exchange in each item's src"
+  "Prices: stockanalysis.com, Trading Economics, etnet, finanzen.net and other aggregators naming the exchange in each item's src",
+  {
+   "name": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/dnav/ng/hist/nw2_epg0_swo_r48_bcfw.htm"
+  },
+  {
+   "name": "Bank of Japan",
+   "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+  }
  ],
  "gaps": [
-  "0981.HK SMIC: no Oct 19 close found (sources stale to Oct 2/Sep 25)",
-  "^VIX 1w: history page fetch failed",
-  "SWTSX/SWISX: Oct 19 NAV not posted; kept 2026-10-16 NAV; SWISX last changed from earlier 31.37 to 31.51 per stockanalysis",
+  "All prices are from aggregator pages (stockanalysis.com history tables, Trading Economics, etnet, finanzen.net); src names the listing venue or issuing body.",
+  "0981.HK SMIC: Hong Kong was closed Mon 19 Oct (holiday), so the last close is Fri 16 Oct (52.40, etnet quoting HKEX data). 1w not found: the Oct 9 close is missing and the stockanalysis table is stale at 2026-09-25. 1m uses the 18 Sep close from that table.",
+  "^VIX 1w: Oct 12 close not found (Cboe CSV and FRED CSV were not readable through the fetch tool).",
+  "JKM, NDPR: no free dated price page found (benchmarks are paywalled; Trading Economics carries neither). Left null.",
+  "IRONORE, U3O8, MTF=F, COBALT, LITHIUM: only Trading Economics (aggregator) was found; 1m is the figure the page states for its own date. COBALT is the 16 Oct print and its -6.43% one-day move is not confirmed elsewhere; LITHIUM is a Tue 20 Oct value, dated as such.",
+  "BZ=F, CL=F, HG=F, GC=F, SI=F, NG=F, TTF=F 1m: no Sep 18 settlement found; Trading Economics 1m changes are measured from 20 Oct, so they were not used. ALI=F measured to 16 Oct; NICKEL to 15 Oct, 1w not found.",
+  "ZW=F, RICE 1w/1m, PALM 1w (1d conflicting), UREA 1w, BDI 1w, SCFI/DCI/TANKER 1m: no dated base found.",
+  "MAERSK-B.CO: stockanalysis page does not load; Oct 16 close kept, Monday not found. BHP, CTVA, ESGE: history pages rate-limited (HTTP 429) and not retried; BHP kept at 16 Oct, CTVA 1m null, ESGE at 14 Oct.",
+  "HLAG.DE: Frankfurt venue (not Xetra); Stuttgart venue closed 135.40 on 19 Oct for comparison.",
+  "FM (iShares Frontier ETF): history ends Jan 2025, so it appears to have stopped trading; consider removing it from the watchlist.",
+  "eu_gas_storage 2026-10-11 and 2026-10-18: GIE AGSI loads by script and could not be read; TASS quoting GIE gives 73.94% for Oct 12 (not a Sunday period), not recorded.",
+  "icsg_copper_balance 2026-08: ICSG's release list (checked 20 Oct) shows a monthly release on 2026-09-24 and the forecast on 2026-10-14, but no August balance yet.",
+  "baker_hughes 2026-10-16 (603) and eia_gas_storage 2026-10-09 (3,567 Bcf) are recorded; the EIA dnav history table confirms 3,567 Bcf. The ir.eia.gov page still serves a March 2026 copy.",
+  "BoJ: the October meeting is 29-30 Oct per the Bank of Japan schedule, so no decision has been made yet.",
   "Overnight Oct 20 context: no usable source found",
-  "All prices from stockanalysis.com (aggregator); src is listing venue",
-  "JKM, U3O8, IRONORE, LITHIUM, COBALT, NDPR, MTF=F: no page found; unchanged.",
-  "SHEL, TTE, COP, LNG, FCX, BHP, SCCO, ALB, GLEN.L, AI.PA, LIN: Investing.com slugs failed or tables ended before Oct 19; no improvement.",
-  "Brent/WTI/HG/GC/SI 1m: Investing.com tables start 2026-09-21, no Sep 18 base; left null.",
-  "ALI=F 1w/1m measured to 16 Oct (no later row); NICKEL to 15 Oct, 1w not found.",
   "NG=F Nov: TradingView NGX2026 showed 2.983 (-1.84%) with undated page; not used.",
-  "ZW=F: 1w/1m not found (aggregator gave only Oct 20 monthly -9.46%, wrong date)",
-  "RICE: 1w/1m not found for Oct 19",
-  "PALM: 1w not found; 1d conflicting",
-  "UREA: 1w not found",
-  "BDI: 1w not re-verified",
-  "SCFI/DCI/TANKER: 1m not found",
-  "CTVA: 1m not found",
-  "HLAG.DE: no quote after 2026-09-28 found",
-  "1919.HK: no quote after 2026-09-18 found",
-  "YAR.OL: Monday close not found, Oct 13 snapshot used",
-  "MAERSK-B.CO: Monday close not found, Oct 16 used",
-  "ORSTED.CO: Yahoo showed intraday only; stockanalysis history ended Sep 25; no Oct 19 close found",
-  "GRNB: latest found close Oct 14 (23.30); no Oct 19/1w/1m",
-  "BGRN: no dated recent quote found",
-  "EZA: only intraday Oct 19 quote (64.53); no close; history stale",
-  "ESGU, ESGE, FAN, TUR, AFK, CRBN: history pages stale (ended Oct 2-15 or earlier); no Oct 19 close found",
-  "UAE, THD, EPHE: only Oct 16 closes found (no prior-day base); not improved",
-  "ECH, EPOL, DSI, ESGD, VWS.CO: 1w/1m null where Oct 9/12 or Sep 18 base closes not found",
-  "BEP: Oct 19 close not found; Oct 16 used",
   "EIDO second source (Yahoo Finance page, NYSE Arca) confirms 9.61 close and 9.94 prior close; 1w change not available there; both sources are aggregators",
   "Hello China Tech: feed items carry paid sections/upgrade prompts; included as free portions only, none were pure sales pages.",
   "Caixin Global China Watch: newest feed item dated 2026-08-12, outside window (feed stale).",
-  "eu_gas_storage 2026-10-11 and 2026-10-18: no GIE Sunday figure found; only TASS 'Europe' figures for Oct 6 (72.97%) and Oct 13 (74.02%), wrong dates, not recorded",
-  "icsg_copper_balance 2026-08: not published/found; latest found were H1 2026 (Jun bulletin, +98kt adjusted, 2026-09-08) and Jan-Jul (-5kt deficit headline, metalradar), not recorded",
   "seaj_billings 2026-08: only secondary report (TechNews Taiwan); SEAJ release date and SEAJ PDF not confirmed",
-  "baker_hughes 2026-10-16: not listed as due; boereport/steelorbis report US rig count unchanged at 603 (not recorded)",
-  "eia_gas_storage 2026-10-09: ir.eia.gov page not found",
   "headlines: only 2 added, each with fewer than 2-4 independent coverage links (Trump Russia waiver has 1 link, Reuters via Investing.com); searches returned mostly stale results; BoJ Oct meeting date and outcome not confirmed (Reuters sources via FXStreet expect hold)",
-  "semis: no price found this run for 0981.HK",
-  "energy: no price found this run for JKM, U3O8",
-  "metals: no price found this run for IRONORE, LITHIUM, COBALT, NDPR, GLEN.L, AI.PA",
-  "shipping: no price found this run for HLAG.DE, 1919.HK",
-  "regions: no price found this run for EZA, FM",
-  "esg_funds: no price found this run for GRNB, BGRN",
-  "positive_impact: no price found this run for ORSTED.CO",
-  "Prices are mostly from aggregator pages (StockAnalysis, Investing.com); issuer named in src.",
   "next_earnings not re-checked this run.",
-  "Second sources not found for flagged 000660.KS and COP (searches returned no usable independent quote page); EIDO second source is Yahoo Finance quoting the same NYSE Arca close, an aggregator, so a weak check. Audit sample also unchecked: COPX, CRBN, CTVA, DCI, DE, DSI, ECH, ENPH."
+  "Second sources: EIDO (Yahoo) and AAPL (Google Finance) agree. 000660.KS: Google Finance gives the 16 Oct close (1,272,000 won, +0.79%), consistent with our 19 Oct value but a different date, so not counted as a match. COBALT: no second source found. Audit sample still unchecked: 005930.KS, 0981.HK, 1919.HK, 2222.SR, 2454.TW, 8035.T, AA (Google Finance pages were cached at 24-25 Sep, so dates did not match)."
  ],
  "indicators": [
   {
@@ -3923,12 +3949,21 @@
   {
    "symbol": "EIDO",
    "tier": "look_into",
-   "reason": "Down 17.6% this week, 4.4 times its usual weekly swing (about ±4.0%); 15.2 points below the emerging Asia median.",
+   "reason": "Down 17.6% this week, 4.4 times its usual weekly swing (about ±4.0%); 17.0 points below the emerging Asia median.",
    "z_own": -4.36,
-   "z_peer": -3.6,
+   "z_peer": -4.04,
    "verified": {
     "status": "agree",
     "text": "second source agrees (1 checked)"
+   }
+  },
+  {
+   "symbol": "COBALT",
+   "tier": "keep_an_eye",
+   "reason": "Down 6.4% in one day, 4.2 times its usual daily swing (about ±1.5%).",
+   "verified": {
+    "status": "single",
+    "text": "one source so far"
    }
   },
   {
@@ -3970,18 +4005,7 @@
    ],
    "verified": {
     "status": "single",
-    "text": "one source so far"
-   }
-  },
-  {
-   "symbol": "COP",
-   "tier": "keep_an_eye",
-   "reason": "Up 9.2% this week, 2.8 times its usual weekly swing (about ±3.4%); 5.5 points above the energy companies median.",
-   "z_own": 2.76,
-   "z_peer": 2.17,
-   "verified": {
-    "status": "single",
-    "text": "one source so far"
+    "text": "second source dated differently; not a match"
    }
   }
  ],
@@ -3995,10 +4019,10 @@
   "tiers": {
    "official": 1,
    "reported": 11,
-   "aggregator": 122
+   "aggregator": 135
   },
-  "cross_checked": 1,
-  "agreed": 1,
+  "cross_checked": 3,
+  "agreed": 2,
   "differed": 0,
   "flags_confirmed": 1,
   "flags_total": 3,
