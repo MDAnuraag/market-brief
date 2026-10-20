@@ -32,7 +32,14 @@ Operational series (chip equipment orders, foundry revenue, memory exports) live
 2. Put new values in `latest.json` as `indicator_observations`: `[{id, period, value, yoy_reported, mom_reported, ytd_reported, status, released, source, source_url, note}]`. `status` is `final` or `preliminary`; a restated value is simply entered again with the new `released` date and the script records it as a revision. Use the units named in the series definition.
 3. Run `python3 scripts/indicators.py add`, then `python3 scripts/indicators.py compute --write`. A rejected value usually means wrong units, the wrong report, or a typo: re-read the source. Never fill a missing month from memory.
 4. SEAJ publishes both a semiconductor equipment report and a flat panel display (FPD) report. Use only the semiconductor one.
-5. Range tests (`z`) stay off until a series has 12 year-on-year readings; the card says how many it has.
+5. Range tests (`z`) stay off until a series has 12 year-on-year readings; the card says how many it has. Once a series has three or more earlier years of the same period, its card also shows the value against the five-year average and range.
+6. Weekly series (rig count, US gas storage, EU gas storage) use the week-ending date as `period` (Friday for Baker Hughes and EIA, Sunday for the GIE figure). Enter only the newest releases; the script asks for at most the last three weeks.
+7. Fetched pages can be stale copies. Before recording a value, check that the report's own date (week ending, month, release date) matches the period you are entering. If it shows an older period, do not record it; add a `gaps` line instead. The EIA gas storage page has returned an old cached copy before.
+8. `tier` follows what you actually read: `official` only when the issuer's own page was read, `reported` when a news report quotes the release.
+9. Spreads (`spreads` in `latest.json`) are computed by `indicators.py compute --write` from prices already on the page. Never hand-edit them.
+
+## Companies and venues
+Stocks sit inside the commodity, shipping and theme groups and carry a `hint` with their listing venue. Use the venue's own quote page or the issuer's investor page first. A foreign listing quotes in its own currency; leave the number as quoted and say the currency in `note` when it is not USD. Flags compare each stock with its own cohort (`flagging.peer_cohorts`), never with a ticker it merely resembles.
 
 ## Flags
 Flags are computed, not hand-written. Once every item, headline and reading entry is in `data/latest.json`, run `python3 scripts/compute_flags.py --write`. It replaces `flags` and adds `flag_basis`.
@@ -80,6 +87,7 @@ Build the `reading` list from the enabled feeds in `watchlist.json` under `readi
   "flags": [{ "symbol": "NVDA", "tier": "look_into", "reason": "Up 9.1% this week, 3.2 times its usual weekly swing (about ±2.8%).", "z_own": 3.2, "z_peer": 2.4, "news": [{ "kind": "headline", "title": "...", "url": "https://...", "strength": "direct" }] }],
   "quality": { "tiers": {"official": 100, "reported": 8, "aggregator": 2}, "cross_checked": 12, "agreed": 11, "differed": 1, "flags_confirmed": 5, "flags_total": 8 },
   "indicators": [ "written by scripts/indicators.py compute --write; do not hand-edit" ],
+  "spreads": [ "written by the same command from prices on the page; do not hand-edit" ],
   "flag_basis": { "sessions": 12, "mode": "learning", "note": "...", "below_the_bar": 3 },
   "groups": [{ "id": "macros", "title": "Macros", "group_by": null, "items": [] }],
   "headlines": [{

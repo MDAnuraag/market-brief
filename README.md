@@ -44,6 +44,10 @@ Every price carries the body that issued it (`src`) and a tier: **official** (th
 
 Slow operational numbers (TSMC monthly revenue, Korean chip exports, Japanese and global chip equipment billings, global chip sales) are kept in `data/series/*.csv`, one row per period. A restated number is added as a new row, so revisions stay visible. For each series the page shows the latest value, year-on-year change (reported by the source, or computed here when it is not), a sparkline, whether the reported figures reconcile (TSMC's monthly figures must add up to its year-to-date total), and when the next release is due. Once a series has 12 year-on-year readings, today's reading is also compared with its own median and typical spread (median absolute deviation, which a single odd month cannot distort); before that the card shows how much history it has instead of pretending to a range. When an indicator touches a flagged name, it appears under the flag as context. Indicators are not signals and are never combined into a score.
 
+## Spreads and seasonal ranges
+
+Three relationships are computed from prices already on the page: Brent minus WTI, copper to aluminum, and copper to gold. Each is shown against its own recent sessions, so the page learns what is normal for it the same way it does for prices. Indicator series with enough history also show their latest value against the five-year average and range for the same period (the usual way analysts judge whether inventories are tight). That needs about three earlier years on file. Weekly series (rig count, US and EU gas storage) are supported alongside monthly and quarterly ones. A one-off backfill can be done by appending rows to the series CSV.
+
 ## Add a newsletter
 Add an entry under `reading.feeds` in `data/watchlist.json` with its feed address (a Substack feed is `https://<name>.substack.com/feed`) and set `enabled` to `true`.
 

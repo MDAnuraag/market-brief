@@ -1,0 +1,3 @@
+period,value,yoy_reported,mom_reported,ytd_reported,status,released,source,source_url,note
+2026-09,1567,,,,final,2026-09-11,USDA WASDE,https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt,September projection as shown in the prior-month column of the October report
+2026-10,1849,,,,final,2026-10-09,USDA WASDE,https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt,October 2026 WASDE text; 2026/27 US ending stocks

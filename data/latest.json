@@ -1549,6 +1549,7 @@
         }
       ],
       "gaps": [],
+      "range5": null,
       "next_expected": "2026-11-10",
       "late": false,
       "touches": [
@@ -1620,6 +1621,7 @@
       "gaps": [
         "2026-06"
       ],
+      "range5": null,
       "next_expected": "2026-11-01",
       "late": false,
       "touches": [
@@ -1680,6 +1682,7 @@
         }
       ],
       "gaps": [],
+      "range5": null,
       "next_expected": "2026-09-21",
       "late": true,
       "touches": [
@@ -1773,6 +1776,7 @@
         }
       ],
       "gaps": [],
+      "range5": null,
       "next_expected": "2026-12-04",
       "late": false,
       "touches": [
@@ -1851,6 +1855,7 @@
         }
       ],
       "gaps": [],
+      "range5": null,
       "next_expected": "2026-11-05",
       "late": false,
       "touches": [
@@ -1879,6 +1884,449 @@
         {
           "p": "2026-08",
           "v": 159.7
+        }
+      ]
+    },
+    {
+      "id": "fao_ffpi",
+      "name": "FAO Food Price Index",
+      "group": "Food prices",
+      "unit": "points (2014-16 = 100)",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "FAO",
+      "tier": "official",
+      "site": "https://www.fao.org/worldfoodsituation/foodpricesindex",
+      "period": "2026-09",
+      "value": 136.0,
+      "row_status": "final",
+      "released": "2026-10-02",
+      "source_name": "FAO",
+      "source_url": "https://fao.org/worldfoodsituation/foodpricesindex",
+      "yoy": 5.8,
+      "yoy_source": "reported",
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": 1.5,
+      "mom_source": "reported",
+      "z": null,
+      "status": "building history (1 of 12 year-on-year readings)",
+      "history_n": 1,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-11-05",
+      "late": false,
+      "touches": [
+        "ZW=F",
+        "RICE",
+        "PALM",
+        "ADM",
+        "BG",
+        "DE",
+        "CTVA"
+      ],
+      "note": "Published the first Friday of the month on fao.org. The previous month is often revised, so enter any restated value again.",
+      "spark": [
+        {
+          "p": "2026-09",
+          "v": 136.0
+        }
+      ]
+    },
+    {
+      "id": "fao_cereals",
+      "name": "FAO cereals sub-index",
+      "group": "Food prices",
+      "unit": "points (2014-16 = 100)",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "FAO",
+      "tier": "official",
+      "site": "https://www.fao.org/worldfoodsituation/foodpricesindex",
+      "period": "2026-09",
+      "value": 122.8,
+      "row_status": "final",
+      "released": "2026-10-02",
+      "source_name": "FAO",
+      "source_url": "https://fao.org/worldfoodsituation/foodpricesindex",
+      "yoy": 17.2,
+      "yoy_source": "reported",
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": 5.1,
+      "mom_source": "reported",
+      "z": null,
+      "status": "building history (1 of 12 year-on-year readings)",
+      "history_n": 1,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-11-05",
+      "late": false,
+      "touches": [
+        "ZW=F",
+        "RICE",
+        "ADM",
+        "BG"
+      ],
+      "note": "Same FAO release as the headline index.",
+      "spark": [
+        {
+          "p": "2026-09",
+          "v": 122.8
+        }
+      ]
+    },
+    {
+      "id": "fao_vegoils",
+      "name": "FAO vegetable oils sub-index",
+      "group": "Food prices",
+      "unit": "points (2014-16 = 100)",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "FAO",
+      "tier": "official",
+      "site": "https://www.fao.org/worldfoodsituation/foodpricesindex",
+      "period": "2026-09",
+      "value": 198.6,
+      "row_status": "final",
+      "released": "2026-10-02",
+      "source_name": "FAO",
+      "source_url": "https://fao.org/worldfoodsituation/foodpricesindex",
+      "yoy": 18.3,
+      "yoy_source": "reported",
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": 0.9,
+      "mom_source": "reported",
+      "z": null,
+      "status": "building history (1 of 12 year-on-year readings)",
+      "history_n": 1,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-11-05",
+      "late": false,
+      "touches": [
+        "PALM",
+        "ADM",
+        "BG"
+      ],
+      "note": "Same FAO release as the headline index.",
+      "spark": [
+        {
+          "p": "2026-09",
+          "v": 198.6
+        }
+      ]
+    },
+    {
+      "id": "fao_sugar",
+      "name": "FAO sugar sub-index",
+      "group": "Food prices",
+      "unit": "points (2014-16 = 100)",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "FAO",
+      "tier": "official",
+      "site": "https://www.fao.org/worldfoodsituation/foodpricesindex",
+      "period": "2026-09",
+      "value": 114.0,
+      "row_status": "final",
+      "released": "2026-10-02",
+      "source_name": "FAO",
+      "source_url": "https://fao.org/worldfoodsituation/foodpricesindex",
+      "yoy": 14.7,
+      "yoy_source": "reported",
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": 6.1,
+      "mom_source": "reported",
+      "z": null,
+      "status": "building history (1 of 12 year-on-year readings)",
+      "history_n": 1,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-11-05",
+      "late": false,
+      "touches": [],
+      "note": "Same FAO release as the headline index.",
+      "spark": [
+        {
+          "p": "2026-09",
+          "v": 114.0
+        }
+      ]
+    },
+    {
+      "id": "wasde_corn_us",
+      "name": "US corn ending stocks, 2026/27 projection",
+      "group": "Grain balance",
+      "unit": "million bushels",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "USDA",
+      "tier": "official",
+      "site": "https://www.usda.gov/oce/commodity/wasde",
+      "period": "2026-10",
+      "value": 1849.0,
+      "row_status": "final",
+      "released": "2026-10-09",
+      "source_name": "USDA WASDE",
+      "source_url": "https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt",
+      "yoy": null,
+      "yoy_source": null,
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": 18.0,
+      "mom_source": "computed",
+      "z": null,
+      "status": "building history (2 readings on file)",
+      "history_n": 2,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-11-10",
+      "late": false,
+      "touches": [
+        "DE",
+        "ADM",
+        "BG",
+        "CTVA",
+        "NTR",
+        "MOS",
+        "CF"
+      ],
+      "note": "World Agricultural Supply and Demand Estimates, about the 10th. The projected marketing year rolls over each September, so month-on-month change compares like with like only within a year.",
+      "spark": [
+        {
+          "p": "2026-09",
+          "v": 1567.0
+        },
+        {
+          "p": "2026-10",
+          "v": 1849.0
+        }
+      ]
+    },
+    {
+      "id": "wasde_wheat_us",
+      "name": "US wheat ending stocks, 2026/27 projection",
+      "group": "Grain balance",
+      "unit": "million bushels",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "USDA",
+      "tier": "official",
+      "site": "https://www.usda.gov/oce/commodity/wasde",
+      "period": "2026-10",
+      "value": 740.0,
+      "row_status": "final",
+      "released": "2026-10-09",
+      "source_name": "USDA WASDE",
+      "source_url": "https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt",
+      "yoy": null,
+      "yoy_source": null,
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": 3.2,
+      "mom_source": "computed",
+      "z": null,
+      "status": "building history (2 readings on file)",
+      "history_n": 2,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-11-10",
+      "late": false,
+      "touches": [
+        "ZW=F",
+        "ADM",
+        "BG"
+      ],
+      "note": "Same WASDE release.",
+      "spark": [
+        {
+          "p": "2026-09",
+          "v": 717.0
+        },
+        {
+          "p": "2026-10",
+          "v": 740.0
+        }
+      ]
+    },
+    {
+      "id": "wasde_soy_us",
+      "name": "US soybean ending stocks, 2026/27 projection",
+      "group": "Grain balance",
+      "unit": "million bushels",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "USDA",
+      "tier": "official",
+      "site": "https://www.usda.gov/oce/commodity/wasde",
+      "period": "2026-10",
+      "value": 315.0,
+      "row_status": "final",
+      "released": "2026-10-09",
+      "source_name": "USDA WASDE",
+      "source_url": "https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt",
+      "yoy": null,
+      "yoy_source": null,
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": 1.6,
+      "mom_source": "computed",
+      "z": null,
+      "status": "building history (2 readings on file)",
+      "history_n": 2,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-11-10",
+      "late": false,
+      "touches": [
+        "ADM",
+        "BG",
+        "DE",
+        "CTVA"
+      ],
+      "note": "Same WASDE release.",
+      "spark": [
+        {
+          "p": "2026-09",
+          "v": 310.0
+        },
+        {
+          "p": "2026-10",
+          "v": 315.0
+        }
+      ]
+    },
+    {
+      "id": "bh_us_rigs",
+      "name": "US rotary rig count (Baker Hughes)",
+      "group": "Oil and gas activity",
+      "unit": "rigs",
+      "freq": "weekly",
+      "smoothing": "none",
+      "source": "Baker Hughes",
+      "tier": "reported",
+      "site": "https://rigcount.bakerhughes.com",
+      "period": "2026-10-16",
+      "value": 603.0,
+      "row_status": "final",
+      "released": "2026-10-16",
+      "source_name": "Baker Hughes, via SteelOrbis",
+      "source_url": "https://www.steelorbis.com/steel-news/latest-news/us-rig-count-unchanged-canada-decreases-week-42-2026-1484398.htm",
+      "yoy": null,
+      "yoy_source": null,
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": null,
+      "mom_source": null,
+      "z": null,
+      "status": "building history (1 reading on file)",
+      "history_n": 1,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-10-23",
+      "late": false,
+      "touches": [
+        "CL=F",
+        "BZ=F",
+        "NG=F",
+        "XOM",
+        "COP"
+      ],
+      "note": "Published Fridays. The release is reached through press reports quoting Baker Hughes, so tier stays reported unless the Baker Hughes page itself is reachable.",
+      "spark": [
+        {
+          "p": "2026-10-16",
+          "v": 603.0
+        }
+      ]
+    },
+    {
+      "id": "eia_gas_storage",
+      "name": "US working gas in storage (EIA)",
+      "group": "Oil and gas activity",
+      "unit": "Bcf",
+      "freq": "weekly",
+      "source": "EIA",
+      "tier": "official",
+      "site": "https://ir.eia.gov/ngs/ngs.html",
+      "status": "no data",
+      "touches": [],
+      "history_n": 0
+    },
+    {
+      "id": "eu_gas_storage",
+      "name": "EU gas storage, percent full (GIE)",
+      "group": "Oil and gas activity",
+      "unit": "% full",
+      "freq": "weekly",
+      "source": "Gas Infrastructure Europe",
+      "tier": "reported",
+      "site": "https://agsi.gie.eu",
+      "status": "no data",
+      "touches": [],
+      "history_n": 0
+    },
+    {
+      "id": "icsg_copper_balance",
+      "name": "Refined copper market balance, year to date (ICSG)",
+      "group": "Metals balance",
+      "unit": "thousand tonnes",
+      "freq": "monthly",
+      "smoothing": "none",
+      "source": "International Copper Study Group",
+      "tier": "reported",
+      "site": "https://icsg.org",
+      "period": "2026-07",
+      "value": 32.0,
+      "row_status": "preliminary",
+      "released": "2026-09-29",
+      "source_name": "ICSG, via Metal Radar",
+      "source_url": "https://metalradar.com/article/theme-of-the-day-global-copper-market-in-5kt-deficit-in-jan-jul-2026-icsg-1790685552",
+      "yoy": null,
+      "yoy_source": null,
+      "yoy_prev": null,
+      "yoy_change": null,
+      "mom": null,
+      "mom_source": null,
+      "z": null,
+      "status": "building history (1 reading on file)",
+      "history_n": 1,
+      "revision": null,
+      "checks": [],
+      "gaps": [],
+      "range5": null,
+      "next_expected": "2026-10-20",
+      "late": false,
+      "touches": [
+        "HG=F",
+        "FCX",
+        "SCCO",
+        "COPX"
+      ],
+      "note": "Positive is surplus, negative is deficit, cumulative within the year. Reached through press reports quoting ICSG.",
+      "spark": [
+        {
+          "p": "2026-07",
+          "v": 32.0
         }
       ]
     }
@@ -2039,11 +2487,7 @@
           "unit": "US$ billion",
           "status": "building history (2 of 12 year-on-year readings)"
         }
-      ],
-      "verified": {
-        "status": "single",
-        "text": "one source so far"
-      }
+      ]
     },
     {
       "symbol": "EIDO",
@@ -2058,33 +2502,21 @@
           "url": "https://thestar.com.my/business/business-news/2026/10/16/jakarta-stocks-plunge-11-as-msci-set-to-drop-indonesia-from-indexes",
           "strength": "direct"
         }
-      ],
-      "verified": {
-        "status": "single",
-        "text": "one source so far"
-      }
+      ]
     },
     {
       "symbol": "EWY",
       "tier": "look_into",
       "reason": "Down 15.1% this week, 5.2 times its usual weekly swing (about ±2.9%); 13.5 points below the emerging Asia median.",
       "z_own": -5.2,
-      "z_peer": -6.2,
-      "verified": {
-        "status": "single",
-        "text": "one source so far"
-      }
+      "z_peer": -6.2
     },
     {
       "symbol": "LITHIUM",
       "tier": "look_into",
       "reason": "Down 16.5% this week, 4.6 times its usual weekly swing (about ±3.6%); 15.0 points below the industrial metals median.",
       "z_own": -4.61,
-      "z_peer": -5.58,
-      "verified": {
-        "status": "single",
-        "text": "one source so far"
-      }
+      "z_peer": -5.58
     },
     {
       "symbol": "000660.KS",
@@ -2116,52 +2548,27 @@
           "unit": "US$ billion",
           "status": "building history (2 of 12 year-on-year readings)"
         }
-      ],
-      "verified": {
-        "status": "agree",
-        "text": "second source agrees (1 checked)"
-      }
+      ]
     },
     {
       "symbol": "JKM",
       "tier": "keep_an_eye",
       "reason": "Up 12.8% in one day, 4.3 times its usual daily swing (about ±3.0%); 10.3 points above the fuels and gas median.",
       "z_own": 2.26,
-      "z_peer": 2.04,
-      "verified": {
-        "status": "single",
-        "text": "one source so far"
-      }
+      "z_peer": 2.04
+    },
+    {
+      "symbol": "REMX",
+      "tier": "keep_an_eye",
+      "reason": "Down 11.1% this week, 3.3 times its usual weekly swing (about ±3.4%).",
+      "z_own": -3.3
     },
     {
       "symbol": "ESGE",
       "tier": "keep_an_eye",
       "reason": "Down 5.9% this week, 2.9 times its usual weekly swing (about ±2.0%); 5.1 points below the ESG and sustainability funds median.",
       "z_own": -2.93,
-      "z_peer": -3.35,
-      "verified": {
-        "status": "single",
-        "text": "one source so far"
-      }
-    },
-    {
-      "symbol": "CL=F",
-      "tier": "keep_an_eye",
-      "reason": "Up 10.4% this week, 2.9 times its usual weekly swing (about ±3.6%); 5.5 points above the fuels and gas median.",
-      "z_own": 2.91,
-      "z_peer": 2.05,
-      "news": [
-        {
-          "kind": "headline",
-          "title": "US puts Russia tariffs and sanctions on hold",
-          "url": "https://www.fxstreet.com/analysis/brent-slips-after-trump-waives-graham-act-tariffs-on-russian-oil-buyers-202610190949",
-          "strength": "direct"
-        }
-      ],
-      "verified": {
-        "status": "agree",
-        "text": "second source agrees (1 checked)"
-      }
+      "z_peer": -3.35
     }
   ],
   "flag_basis": {
@@ -2185,5 +2592,85 @@
     "planned_sample": 8,
     "untiered": [],
     "differences": []
-  }
+  },
+  "spreads": [
+    {
+      "id": "brent_wti",
+      "name": "Brent minus WTI",
+      "unit": "USD/bbl",
+      "kind": "diff",
+      "value": 8.45,
+      "prev": null,
+      "change": null,
+      "spark": [
+        {
+          "p": "2026-10-16",
+          "v": 8.45
+        }
+      ],
+      "touches": [
+        "BZ=F",
+        "CL=F",
+        "XOM",
+        "SHEL",
+        "TTE",
+        "EQNR",
+        "COP"
+      ],
+      "inputs": "BZ=F and CL=F",
+      "note": "Gap between the two main crude benchmarks.",
+      "as_of": "2026-10-16"
+    },
+    {
+      "id": "copper_aluminum",
+      "name": "Copper to aluminum price ratio",
+      "unit": "x",
+      "kind": "ratio",
+      "value": 4.79,
+      "prev": null,
+      "change": null,
+      "spark": [
+        {
+          "p": "2026-10-16",
+          "v": 4.786
+        }
+      ],
+      "touches": [
+        "HG=F",
+        "ALI=F",
+        "FCX",
+        "SCCO",
+        "AA",
+        "COPX"
+      ],
+      "inputs": "HG=F and ALI=F",
+      "note": "Copper in USD per tonne (pounds converted) divided by aluminum in USD per tonne.",
+      "as_of": "2026-10-16"
+    },
+    {
+      "id": "copper_gold",
+      "name": "Copper to gold ratio",
+      "unit": "x 1000",
+      "kind": "ratio",
+      "value": 1.57,
+      "prev": null,
+      "change": null,
+      "spark": [
+        {
+          "p": "2026-10-16",
+          "v": 1.568
+        }
+      ],
+      "touches": [
+        "HG=F",
+        "GC=F",
+        "FCX",
+        "SCCO",
+        "^TNX"
+      ],
+      "inputs": "HG=F and GC=F",
+      "note": "Copper USD per pound divided by gold USD per ounce, times 1000. A familiar growth-versus-safety gauge.",
+      "as_of": "2026-10-16"
+    }
+  ]
 }

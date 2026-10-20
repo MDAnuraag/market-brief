@@ -482,6 +482,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     s.appendChild(cols);
     var box = el("div", "rows");
     s.appendChild(box);
+    var units = [];
     rowsData.forEach(function (x) {
       var r = el("div", "irow"); r.tabIndex = 0; r.setAttribute("role", "button"); r.setAttribute("aria-expanded", "false");
       var n = el("div", "nm2", x.name); n.appendChild(el("small", null, x.group + " · " + x.period + (x.row_status === "preliminary" ? " prelim" : "")));
@@ -494,7 +495,9 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
       r.appendChild(el("div", stat[1], stat[0]));
       box.appendChild(r);
       var det = el("div", "det");
+      units.push([r, det]);
       var p1 = el("p"); p1.appendChild(el("span", "k", "latest")); p1.appendChild(document.createTextNode(fmtVal(x.value) + " " + x.unit + " for " + x.period + (x.mom != null ? "; " + sgn(x.mom) + " vs prior period" : "") + (x.yoy_prev != null ? "; year on year was " + sgn(x.yoy_prev) + " before" : "") + (x.yoy_source === "computed" ? " (year on year computed here)" : ""))); det.appendChild(p1);
+      if (x.range5) { var pr = el("p"); pr.appendChild(el("span", "k", "vs 5 years")); pr.appendChild(document.createTextNode(sgn(x.range5.vs_avg_pct) + " against the " + x.range5.n + "-year average for this period (" + fmtVal(x.range5.min) + " to " + fmtVal(x.range5.max) + "); " + x.range5.position + " the range")); det.appendChild(pr); }
       var p2 = el("p"); p2.appendChild(el("span", "k", "history")); p2.appendChild(document.createTextNode(x.z != null ? "range test " + (x.z >= 0 ? "+" : "") + x.z + " typical swings from its own median" : x.status)); det.appendChild(p2);
       if (x.revision) { var p3 = el("p"); p3.appendChild(el("span", "k", "revised")); p3.appendChild(document.createTextNode(x.revision.period + " went from " + fmtVal(x.revision.from) + " to " + fmtVal(x.revision.to) + " (" + sgn(x.revision.pct) + ")")); det.appendChild(p3); }
       (x.checks || []).forEach(function (c) { var q = el("p"); q.appendChild(el("span", "k", "check")); q.appendChild(el("span", c.bad ? "bad" : null, c.name + ": " + c.ok + " ok" + (c.bad ? ", " + c.bad + " off" : ""))); det.appendChild(q); });
@@ -504,6 +507,37 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
       box.appendChild(det);
       var tg = function () { var o = det.classList.toggle("open"); r.setAttribute("aria-expanded", o ? "true" : "false"); };
       r.addEventListener("click", function (e) { if (e.target.tagName !== "A") tg(); });
+      r.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); tg(); } });
+    });
+    setupPaging(s, h, box, units);
+    return s;
+  }
+
+  function renderSpreads(list) {
+    if (!list || !list.length) return null;
+    var s = el("section", "board"); s.id = "spreads";
+    var h = el("div", "bh"); h.appendChild(el("span", null, "Spreads: how markets relate"));
+    h.appendChild(el("small", null, "computed from the prices above"));
+    s.appendChild(h);
+    var cols = el("div", "icols");
+    ["spread", "now", "change", "recent sessions", "inputs", ""].forEach(function (t) { cols.appendChild(el("div", null, t)); });
+    s.appendChild(cols);
+    var box = el("div", "rows"); s.appendChild(box);
+    list.forEach(function (x) {
+      var r = el("div", "irow"); r.tabIndex = 0; r.setAttribute("role", "button"); r.setAttribute("aria-expanded", "false");
+      var n = el("div", "nm2", x.name); n.appendChild(el("small", null, x.unit)); r.appendChild(n);
+      var iv = el("div", "iv"), ivi = el("span"); flap(ivi, "sp:" + x.id, String(x.value), false); iv.appendChild(ivi); iv.setAttribute("aria-label", x.value + " " + x.unit); r.appendChild(iv);
+      var iy = el("div", "iy"), iyi = el("span"); flap(iyi, "sp:" + x.id + ":c", x.change == null ? "—" : (x.change > 0 ? "▲" : x.change < 0 ? "▼" : "·") + Math.abs(x.change), false); iy.appendChild(iyi); r.appendChild(iy);
+      var isp = el("div", "isp"); if (x.spark && x.spark.length > 1) isp.appendChild(spark(x.spark)); r.appendChild(isp);
+      r.appendChild(el("div", "when", x.inputs));
+      r.appendChild(el("div", "stat", ""));
+      box.appendChild(r);
+      var det = el("div", "det");
+      var p1 = el("p"); p1.appendChild(el("span", "k", "what it is")); p1.appendChild(document.createTextNode(x.note)); det.appendChild(p1);
+      var p2 = el("p"); p2.appendChild(el("span", "k", "as of")); p2.appendChild(document.createTextNode(x.as_of + (x.prev != null ? "; previous session " + x.prev : "; no earlier session on file yet"))); det.appendChild(p2);
+      box.appendChild(det);
+      var tg = function () { var o = det.classList.toggle("open"); r.setAttribute("aria-expanded", o ? "true" : "false"); };
+      r.addEventListener("click", tg);
       r.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); tg(); } });
     });
     return s;
@@ -622,6 +656,8 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; }
     (d.groups || []).forEach(function (g) { boards.appendChild(renderBoard(g, d)); order.push([g.id, g.title || g.id]); });
     var ind = d.indicators && renderIndicators(d.indicators);
     if (ind) { boards.appendChild(ind); order.push(["indicators", "Indicators"]); }
+    var spr = renderSpreads(d.spreads);
+    if (spr) { boards.appendChild(spr); order.push(["spreads", "Spreads"]); }
     if (d.headlines && d.headlines.length) order.push(["headlines", "Headlines"]);
     if (d.reading && d.reading.length) order.push(["reading", "Reading"]);
     if (d.climate && d.climate.length) order.push(["climate", "Climate"]);

@@ -2,8 +2,16 @@
   "_note": "Edit this file to change what the briefs cover. Symbols use Yahoo-style tickers where one exists; 'hint' says where to look when there is no clean ticker. Anything that cannot be resolved is reported under 'gaps' in latest.json, never guessed.",
   "flagging": {
     "_note": "Flags compare each move with what this page has already seen for that item and for its comparison group, so thresholds are multiples of normal range, not fixed percentages. Priors are starting guesses for daily volatility (percent, or percentage points for yields) and fade as real observations accumulate. See scripts/compute_flags.py and README.md.",
-    "look_into": { "min_z_own": 3.0, "min_z_peer": 2.0, "min_z_group": 3.0 },
-    "keep_an_eye": { "min_z_own": 2.5, "min_z_peer": 1.5, "min_z_own_1d": 3.5 },
+    "look_into": {
+      "min_z_own": 3.0,
+      "min_z_peer": 2.0,
+      "min_z_group": 3.0
+    },
+    "keep_an_eye": {
+      "min_z_own": 2.5,
+      "min_z_peer": 1.5,
+      "min_z_own_1d": 3.5
+    },
     "no_peer_extra_z": 0.5,
     "suppress_in_event_unless_z_peer": 2.5,
     "max_flags": 8,
@@ -17,227 +25,1230 @@
     "residual_share": 0.75,
     "vix_above": 25,
     "priors_daily_vol_pct": {
-      "stock_semis": 2.8, "stock_mega": 1.8, "stock_impact": 1.7, "index": 1.0, "etf_broad": 0.9,
-      "etf_theme": 1.5, "etf_country": 1.3, "etf_transport": 1.2, "commodity": 1.6, "gas": 3.0,
-      "freight": 2.5, "rate": 0.06
+      "stock_semis": 2.8,
+      "stock_mega": 1.8,
+      "stock_impact": 1.7,
+      "index": 1.0,
+      "etf_broad": 0.9,
+      "etf_theme": 1.5,
+      "etf_country": 1.3,
+      "etf_transport": 1.2,
+      "commodity": 1.6,
+      "gas": 3.0,
+      "freight": 2.5,
+      "rate": 0.06,
+      "stock_energy": 1.5,
+      "stock_materials": 2.1,
+      "stock_gases": 1.3,
+      "stock_ag": 1.7,
+      "stock_ship": 2.3,
+      "stock_logistics": 1.7,
+      "stock_cleantech": 3.2
     },
     "class_by_group": {
-      "macros": "index", "core_passive": "etf_broad", "funds_401k": "etf_broad", "semis": "stock_semis",
-      "mega_tech": "stock_mega", "energy": "commodity", "metals": "commodity", "agriculture": "commodity",
-      "shipping": "freight", "regions": "etf_country", "esg_funds": "etf_broad", "themes": "etf_theme",
+      "macros": "index",
+      "core_passive": "etf_broad",
+      "funds_401k": "etf_broad",
+      "semis": "stock_semis",
+      "mega_tech": "stock_mega",
+      "energy": "commodity",
+      "metals": "commodity",
+      "agriculture": "commodity",
+      "shipping": "freight",
+      "regions": "etf_country",
+      "esg_funds": "etf_broad",
+      "themes": "etf_theme",
       "positive_impact": "stock_impact"
     },
     "class_by_symbol": {
-      "^VIX": "skip", "^TNX": "rate", "NG=F": "gas", "TTF=F": "gas", "JKM": "gas", "IYT": "etf_transport"
+      "^VIX": "skip",
+      "^TNX": "rate",
+      "NG=F": "gas",
+      "TTF=F": "gas",
+      "JKM": "gas",
+      "IYT": "etf_transport",
+      "XOM": "stock_energy",
+      "SHEL": "stock_energy",
+      "TTE": "stock_energy",
+      "EQNR": "stock_energy",
+      "COP": "stock_energy",
+      "2222.SR": "stock_energy",
+      "LNG": "stock_energy",
+      "CCJ": "stock_energy",
+      "FCX": "stock_materials",
+      "BHP": "stock_materials",
+      "RIO": "stock_materials",
+      "GLEN.L": "stock_materials",
+      "SCCO": "stock_materials",
+      "AA": "stock_materials",
+      "ALB": "stock_materials",
+      "MP": "stock_materials",
+      "AI.PA": "stock_gases",
+      "LIN": "stock_gases",
+      "APD": "stock_gases",
+      "DE": "stock_ag",
+      "NTR": "stock_ag",
+      "MOS": "stock_ag",
+      "ADM": "stock_ag",
+      "BG": "stock_ag",
+      "CTVA": "stock_ag",
+      "CF": "stock_ag",
+      "YAR.OL": "stock_ag",
+      "MAERSK-B.CO": "stock_ship",
+      "ZIM": "stock_ship",
+      "HLAG.DE": "stock_ship",
+      "1919.HK": "stock_ship",
+      "FDX": "stock_logistics",
+      "UPS": "stock_logistics",
+      "MU": "stock_semis",
+      "TXN": "stock_semis",
+      "MCHP": "stock_semis",
+      "GFS": "stock_semis",
+      "ENTG": "stock_semis",
+      "FSLR": "stock_cleantech",
+      "ENPH": "stock_cleantech",
+      "BE": "stock_cleantech"
     },
-    "no_peer_groups": ["core_passive", "funds_401k"],
+    "no_peer_groups": [
+      "core_passive",
+      "funds_401k"
+    ],
     "peer_cohorts": {
-      "semis_design": { "name": "chip design", "symbols": ["NVDA", "AVGO", "AMD", "QCOM", "2454.TW"] },
-      "semis_foundry": { "name": "foundry and manufacturing", "symbols": ["TSM", "INTC", "0981.HK", "005930.KS"] },
-      "semis_equipment": { "name": "chip equipment", "symbols": ["ASML", "KLAC", "AMAT", "LRCX", "ONTO", "8035.T", "ASM.AS"] },
-      "fuels": { "name": "fuels and gas", "symbols": ["BZ=F", "CL=F", "NG=F", "TTF=F", "JKM", "MTF=F"] },
-      "industrial_metals": { "name": "industrial metals", "symbols": ["HG=F", "ALI=F", "NICKEL", "IRONORE", "COBALT", "LITHIUM"] },
-      "freight": { "name": "freight indices", "symbols": ["BDI", "SCFI", "DCI", "TANKER", "BDRY"] },
-      "us_indices": { "name": "US indices", "symbols": ["^GSPC", "^IXIC", "^DJI", "^RUT"] },
-      "latam": { "name": "Latin America", "symbols": ["EWZ", "EWW", "ECH", "ARGT"] },
-      "asia_em": { "name": "emerging Asia", "symbols": ["INDA", "EWY", "EWT", "MCHI", "EIDO", "VNM", "THD", "EPHE"] },
-      "emea_em": { "name": "emerging Europe, Middle East and Africa", "symbols": ["EPOL", "TUR", "KSA", "UAE", "EZA", "AFK", "FM"] }
+      "semis_design": {
+        "name": "chip design",
+        "symbols": [
+          "NVDA",
+          "AVGO",
+          "AMD",
+          "QCOM",
+          "2454.TW",
+          "MU",
+          "TXN",
+          "MCHP"
+        ]
+      },
+      "semis_foundry": {
+        "name": "foundry and manufacturing",
+        "symbols": [
+          "TSM",
+          "INTC",
+          "0981.HK",
+          "005930.KS",
+          "GFS"
+        ]
+      },
+      "semis_equipment": {
+        "name": "chip equipment",
+        "symbols": [
+          "ASML",
+          "KLAC",
+          "AMAT",
+          "LRCX",
+          "ONTO",
+          "8035.T",
+          "ASM.AS"
+        ]
+      },
+      "fuels": {
+        "name": "fuels and gas",
+        "symbols": [
+          "BZ=F",
+          "CL=F",
+          "NG=F",
+          "TTF=F",
+          "JKM",
+          "MTF=F"
+        ]
+      },
+      "industrial_metals": {
+        "name": "industrial metals",
+        "symbols": [
+          "HG=F",
+          "ALI=F",
+          "NICKEL",
+          "IRONORE",
+          "COBALT",
+          "LITHIUM"
+        ]
+      },
+      "freight": {
+        "name": "freight indices",
+        "symbols": [
+          "BDI",
+          "SCFI",
+          "DCI",
+          "TANKER",
+          "BDRY"
+        ]
+      },
+      "us_indices": {
+        "name": "US indices",
+        "symbols": [
+          "^GSPC",
+          "^IXIC",
+          "^DJI",
+          "^RUT"
+        ]
+      },
+      "latam": {
+        "name": "Latin America",
+        "symbols": [
+          "EWZ",
+          "EWW",
+          "ECH",
+          "ARGT"
+        ]
+      },
+      "asia_em": {
+        "name": "emerging Asia",
+        "symbols": [
+          "INDA",
+          "EWY",
+          "EWT",
+          "MCHI",
+          "EIDO",
+          "VNM",
+          "THD",
+          "EPHE"
+        ]
+      },
+      "emea_em": {
+        "name": "emerging Europe, Middle East and Africa",
+        "symbols": [
+          "EPOL",
+          "TUR",
+          "KSA",
+          "UAE",
+          "EZA",
+          "AFK",
+          "FM"
+        ]
+      },
+      "energy_stocks": {
+        "name": "energy companies",
+        "symbols": [
+          "XOM",
+          "SHEL",
+          "TTE",
+          "EQNR",
+          "COP",
+          "2222.SR",
+          "LNG",
+          "CCJ"
+        ]
+      },
+      "base_metal_miners": {
+        "name": "diversified and copper miners",
+        "symbols": [
+          "FCX",
+          "BHP",
+          "RIO",
+          "GLEN.L",
+          "SCCO",
+          "AA"
+        ]
+      },
+      "battery_minerals": {
+        "name": "battery and rare-earth minerals",
+        "symbols": [
+          "ALB",
+          "MP",
+          "LIT",
+          "REMX"
+        ]
+      },
+      "materials_gases": {
+        "name": "industrial gases and chip materials",
+        "symbols": [
+          "AI.PA",
+          "LIN",
+          "APD",
+          "ENTG"
+        ]
+      },
+      "fertilizers": {
+        "name": "fertilizer makers",
+        "symbols": [
+          "NTR",
+          "MOS",
+          "CF",
+          "YAR.OL"
+        ]
+      },
+      "farm_economy": {
+        "name": "farm economy",
+        "symbols": [
+          "DE",
+          "ADM",
+          "BG",
+          "CTVA"
+        ]
+      },
+      "container_lines": {
+        "name": "container shipping lines",
+        "symbols": [
+          "MAERSK-B.CO",
+          "ZIM",
+          "HLAG.DE",
+          "1919.HK"
+        ]
+      },
+      "clean_power_equipment": {
+        "name": "clean power equipment",
+        "symbols": [
+          "FSLR",
+          "ENPH",
+          "BE",
+          "VWS.CO",
+          "ORSTED.CO"
+        ]
+      }
     }
   },
   "groups": [
     {
-      "id": "macros", "title": "Macros", "cadence": "daily",
+      "id": "macros",
+      "title": "Macros",
+      "cadence": "daily",
       "items": [
-        { "symbol": "^GSPC", "name": "S&P 500" },
-        { "symbol": "^IXIC", "name": "Nasdaq Composite" },
-        { "symbol": "^DJI", "name": "Dow Jones" },
-        { "symbol": "^RUT", "name": "Russell 2000" },
-        { "symbol": "^VIX", "name": "CBOE Volatility Index" },
-        { "symbol": "^TNX", "name": "10-year Treasury yield" }
+        {
+          "symbol": "^GSPC",
+          "name": "S&P 500"
+        },
+        {
+          "symbol": "^IXIC",
+          "name": "Nasdaq Composite"
+        },
+        {
+          "symbol": "^DJI",
+          "name": "Dow Jones"
+        },
+        {
+          "symbol": "^RUT",
+          "name": "Russell 2000"
+        },
+        {
+          "symbol": "^VIX",
+          "name": "CBOE Volatility Index"
+        },
+        {
+          "symbol": "^TNX",
+          "name": "10-year Treasury yield"
+        }
       ]
     },
     {
-      "id": "core_passive", "title": "Core passive", "cadence": "daily",
+      "id": "core_passive",
+      "title": "Core passive",
+      "cadence": "daily",
       "items": [
-        { "symbol": "SWTSX", "name": "Schwab Total Stock Market" },
-        { "symbol": "SWISX", "name": "Schwab International Index" },
-        { "symbol": "VOO", "name": "Vanguard S&P 500" },
-        { "symbol": "VTI", "name": "Vanguard Total Stock Market" },
-        { "symbol": "VXUS", "name": "Vanguard Total International" }
+        {
+          "symbol": "SWTSX",
+          "name": "Schwab Total Stock Market"
+        },
+        {
+          "symbol": "SWISX",
+          "name": "Schwab International Index"
+        },
+        {
+          "symbol": "VOO",
+          "name": "Vanguard S&P 500"
+        },
+        {
+          "symbol": "VTI",
+          "name": "Vanguard Total Stock Market"
+        },
+        {
+          "symbol": "VXUS",
+          "name": "Vanguard Total International"
+        }
       ]
     },
     {
-      "id": "funds_401k", "title": "401(k) funds", "cadence": "saturday",
+      "id": "funds_401k",
+      "title": "401(k) funds",
+      "cadence": "saturday",
       "items": [
-        { "symbol": "FXAIX", "name": "Fidelity 500 Index" },
-        { "symbol": "FSMDX", "name": "Fidelity Mid Cap Index" },
-        { "symbol": "FSSNX", "name": "Fidelity Small Cap Index" },
-        { "symbol": "FTIHX", "name": "Fidelity Total International Index" }
+        {
+          "symbol": "FXAIX",
+          "name": "Fidelity 500 Index"
+        },
+        {
+          "symbol": "FSMDX",
+          "name": "Fidelity Mid Cap Index"
+        },
+        {
+          "symbol": "FSSNX",
+          "name": "Fidelity Small Cap Index"
+        },
+        {
+          "symbol": "FTIHX",
+          "name": "Fidelity Total International Index"
+        }
       ]
     },
     {
-      "id": "semis", "title": "Semiconductors", "cadence": "daily",
+      "id": "semis",
+      "title": "Semiconductors",
+      "cadence": "daily",
       "items": [
-        { "symbol": "TSM", "name": "TSMC" },
-        { "symbol": "NVDA", "name": "NVIDIA" },
-        { "symbol": "AVGO", "name": "Broadcom" },
-        { "symbol": "AMD", "name": "AMD" },
-        { "symbol": "QCOM", "name": "Qualcomm" },
-        { "symbol": "ASML", "name": "ASML" },
-        { "symbol": "KLAC", "name": "KLA" },
-        { "symbol": "AMAT", "name": "Applied Materials" },
-        { "symbol": "LRCX", "name": "Lam Research" },
-        { "symbol": "ONTO", "name": "Onto Innovation" },
-        { "symbol": "INTC", "name": "Intel" },
-        { "symbol": "005930.KS", "name": "Samsung Electronics", "region": "East Asia" },
-        { "symbol": "000660.KS", "name": "SK Hynix", "region": "East Asia" },
-        { "symbol": "8035.T", "name": "Tokyo Electron", "region": "East Asia" },
-        { "symbol": "ASM.AS", "name": "ASM International", "region": "Europe" },
-        { "symbol": "2454.TW", "name": "MediaTek", "region": "East Asia" },
-        { "symbol": "0981.HK", "name": "SMIC", "region": "East Asia" }
+        {
+          "symbol": "TSM",
+          "name": "TSMC"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA"
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom"
+        },
+        {
+          "symbol": "AMD",
+          "name": "AMD"
+        },
+        {
+          "symbol": "QCOM",
+          "name": "Qualcomm"
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML"
+        },
+        {
+          "symbol": "KLAC",
+          "name": "KLA"
+        },
+        {
+          "symbol": "AMAT",
+          "name": "Applied Materials"
+        },
+        {
+          "symbol": "LRCX",
+          "name": "Lam Research"
+        },
+        {
+          "symbol": "ONTO",
+          "name": "Onto Innovation"
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel"
+        },
+        {
+          "symbol": "005930.KS",
+          "name": "Samsung Electronics",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "000660.KS",
+          "name": "SK Hynix",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "8035.T",
+          "name": "Tokyo Electron",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "ASM.AS",
+          "name": "ASM International",
+          "region": "Europe"
+        },
+        {
+          "symbol": "2454.TW",
+          "name": "MediaTek",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "0981.HK",
+          "name": "SMIC",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron",
+          "hint": "Nasdaq"
+        },
+        {
+          "symbol": "TXN",
+          "name": "Texas Instruments",
+          "hint": "Nasdaq"
+        },
+        {
+          "symbol": "MCHP",
+          "name": "Microchip Technology",
+          "hint": "Nasdaq"
+        },
+        {
+          "symbol": "GFS",
+          "name": "GlobalFoundries",
+          "hint": "Nasdaq"
+        },
+        {
+          "symbol": "ENTG",
+          "name": "Entegris",
+          "hint": "Nasdaq"
+        }
       ]
     },
     {
-      "id": "mega_tech", "title": "Mega tech", "cadence": "daily",
+      "id": "mega_tech",
+      "title": "Mega tech",
+      "cadence": "daily",
       "items": [
-        { "symbol": "AAPL", "name": "Apple" },
-        { "symbol": "MSFT", "name": "Microsoft" },
-        { "symbol": "GOOGL", "name": "Alphabet" },
-        { "symbol": "AMZN", "name": "Amazon" },
-        { "symbol": "META", "name": "Meta" }
+        {
+          "symbol": "AAPL",
+          "name": "Apple"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta"
+        }
       ]
     },
     {
-      "id": "energy", "title": "Energy", "cadence": "daily",
+      "id": "energy",
+      "title": "Energy",
+      "cadence": "daily",
       "items": [
-        { "symbol": "BZ=F", "name": "Brent crude", "unit": "USD/bbl" },
-        { "symbol": "CL=F", "name": "WTI crude", "unit": "USD/bbl" },
-        { "symbol": "NG=F", "name": "Henry Hub gas", "unit": "USD/MMBtu" },
-        { "symbol": "TTF=F", "name": "TTF gas (Europe)", "unit": "EUR/MWh" },
-        { "symbol": "JKM", "name": "JKM LNG (Asia)", "unit": "USD/MMBtu", "hint": "no free ticker; search for the latest assessment" },
-        { "symbol": "MTF=F", "name": "Newcastle coal", "unit": "USD/t" },
-        { "symbol": "U3O8", "name": "Uranium spot", "unit": "USD/lb", "hint": "search for the latest spot price" },
-        { "symbol": "EUA", "name": "EU carbon allowance", "unit": "EUR/t", "hint": "EU ETS benchmark futures" }
+        {
+          "symbol": "BZ=F",
+          "name": "Brent crude",
+          "unit": "USD/bbl"
+        },
+        {
+          "symbol": "CL=F",
+          "name": "WTI crude",
+          "unit": "USD/bbl"
+        },
+        {
+          "symbol": "NG=F",
+          "name": "Henry Hub gas",
+          "unit": "USD/MMBtu"
+        },
+        {
+          "symbol": "TTF=F",
+          "name": "TTF gas (Europe)",
+          "unit": "EUR/MWh"
+        },
+        {
+          "symbol": "JKM",
+          "name": "JKM LNG (Asia)",
+          "unit": "USD/MMBtu",
+          "hint": "no free ticker; search for the latest assessment"
+        },
+        {
+          "symbol": "MTF=F",
+          "name": "Newcastle coal",
+          "unit": "USD/t"
+        },
+        {
+          "symbol": "U3O8",
+          "name": "Uranium spot",
+          "unit": "USD/lb",
+          "hint": "search for the latest spot price"
+        },
+        {
+          "symbol": "EUA",
+          "name": "EU carbon allowance",
+          "unit": "EUR/t",
+          "hint": "EU ETS benchmark futures"
+        },
+        {
+          "symbol": "XOM",
+          "name": "Exxon Mobil",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "SHEL",
+          "name": "Shell",
+          "hint": "NYSE ADR"
+        },
+        {
+          "symbol": "TTE",
+          "name": "TotalEnergies",
+          "hint": "NYSE ADR"
+        },
+        {
+          "symbol": "EQNR",
+          "name": "Equinor",
+          "hint": "NYSE ADR"
+        },
+        {
+          "symbol": "COP",
+          "name": "ConocoPhillips",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "2222.SR",
+          "name": "Saudi Aramco",
+          "hint": "Tadawul"
+        },
+        {
+          "symbol": "LNG",
+          "name": "Cheniere Energy",
+          "hint": "NYSE American"
+        },
+        {
+          "symbol": "CCJ",
+          "name": "Cameco",
+          "hint": "NYSE"
+        }
       ]
     },
     {
-      "id": "metals", "title": "Metals and minerals", "cadence": "daily",
+      "id": "metals",
+      "title": "Metals and minerals",
+      "cadence": "daily",
       "items": [
-        { "symbol": "HG=F", "name": "Copper", "unit": "USD/lb" },
-        { "symbol": "ALI=F", "name": "Aluminum", "unit": "USD/t" },
-        { "symbol": "NICKEL", "name": "Nickel", "unit": "USD/t", "hint": "LME price" },
-        { "symbol": "IRONORE", "name": "Iron ore", "unit": "USD/t", "hint": "62% Fe benchmark" },
-        { "symbol": "LITHIUM", "name": "Lithium carbonate", "unit": "CNY/t", "hint": "China spot" },
-        { "symbol": "COBALT", "name": "Cobalt", "unit": "USD/t", "hint": "LME or Fastmarkets" },
-        { "symbol": "NDPR", "name": "NdPr oxide", "unit": "CNY/t", "hint": "rare earth benchmark" },
-        { "symbol": "GC=F", "name": "Gold", "unit": "USD/oz" },
-        { "symbol": "SI=F", "name": "Silver", "unit": "USD/oz" }
+        {
+          "symbol": "HG=F",
+          "name": "Copper",
+          "unit": "USD/lb"
+        },
+        {
+          "symbol": "ALI=F",
+          "name": "Aluminum",
+          "unit": "USD/t"
+        },
+        {
+          "symbol": "NICKEL",
+          "name": "Nickel",
+          "unit": "USD/t",
+          "hint": "LME price"
+        },
+        {
+          "symbol": "IRONORE",
+          "name": "Iron ore",
+          "unit": "USD/t",
+          "hint": "62% Fe benchmark"
+        },
+        {
+          "symbol": "LITHIUM",
+          "name": "Lithium carbonate",
+          "unit": "CNY/t",
+          "hint": "China spot"
+        },
+        {
+          "symbol": "COBALT",
+          "name": "Cobalt",
+          "unit": "USD/t",
+          "hint": "LME or Fastmarkets"
+        },
+        {
+          "symbol": "NDPR",
+          "name": "NdPr oxide",
+          "unit": "CNY/t",
+          "hint": "rare earth benchmark"
+        },
+        {
+          "symbol": "GC=F",
+          "name": "Gold",
+          "unit": "USD/oz"
+        },
+        {
+          "symbol": "SI=F",
+          "name": "Silver",
+          "unit": "USD/oz"
+        },
+        {
+          "symbol": "FCX",
+          "name": "Freeport-McMoRan",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "BHP",
+          "name": "BHP Group",
+          "hint": "NYSE ADR"
+        },
+        {
+          "symbol": "RIO",
+          "name": "Rio Tinto",
+          "hint": "NYSE ADR"
+        },
+        {
+          "symbol": "GLEN.L",
+          "name": "Glencore",
+          "hint": "London Stock Exchange"
+        },
+        {
+          "symbol": "SCCO",
+          "name": "Southern Copper",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "AA",
+          "name": "Alcoa",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "ALB",
+          "name": "Albemarle",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "MP",
+          "name": "MP Materials",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "AI.PA",
+          "name": "Air Liquide",
+          "hint": "Euronext Paris"
+        },
+        {
+          "symbol": "LIN",
+          "name": "Linde",
+          "hint": "Nasdaq"
+        },
+        {
+          "symbol": "APD",
+          "name": "Air Products",
+          "hint": "NYSE"
+        }
       ]
     },
     {
-      "id": "agriculture", "title": "Food and farm inputs", "cadence": "daily",
+      "id": "agriculture",
+      "title": "Food and farm inputs",
+      "cadence": "daily",
       "items": [
-        { "symbol": "ZW=F", "name": "Wheat", "unit": "USc/bu" },
-        { "symbol": "RICE", "name": "Rice", "unit": "USD/cwt", "hint": "rough rice futures or Thai 5% benchmark" },
-        { "symbol": "PALM", "name": "Palm oil", "unit": "MYR/t", "hint": "Bursa Malaysia" },
-        { "symbol": "UREA", "name": "Urea", "unit": "USD/t", "hint": "granular, Middle East or Egypt" }
+        {
+          "symbol": "ZW=F",
+          "name": "Wheat",
+          "unit": "USc/bu"
+        },
+        {
+          "symbol": "RICE",
+          "name": "Rice",
+          "unit": "USD/cwt",
+          "hint": "rough rice futures or Thai 5% benchmark"
+        },
+        {
+          "symbol": "PALM",
+          "name": "Palm oil",
+          "unit": "MYR/t",
+          "hint": "Bursa Malaysia"
+        },
+        {
+          "symbol": "UREA",
+          "name": "Urea",
+          "unit": "USD/t",
+          "hint": "granular, Middle East or Egypt"
+        },
+        {
+          "symbol": "DE",
+          "name": "Deere",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "NTR",
+          "name": "Nutrien",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "MOS",
+          "name": "Mosaic",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "ADM",
+          "name": "Archer-Daniels-Midland",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "BG",
+          "name": "Bunge",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "CTVA",
+          "name": "Corteva",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "CF",
+          "name": "CF Industries",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "YAR.OL",
+          "name": "Yara",
+          "hint": "Oslo Bors"
+        }
       ]
     },
     {
-      "id": "shipping", "title": "Shipping and logistics", "cadence": "daily",
+      "id": "shipping",
+      "title": "Shipping and logistics",
+      "cadence": "daily",
       "items": [
-        { "symbol": "BDI", "name": "Baltic Dry Index", "hint": "Baltic Exchange" },
-        { "symbol": "SCFI", "name": "Shanghai Containerized Freight Index", "hint": "Shanghai Shipping Exchange" },
-        { "symbol": "DCI", "name": "Drewry World Container Index", "hint": "weekly, Drewry" },
-        { "symbol": "TANKER", "name": "Crude tanker rates", "hint": "VLCC benchmark, e.g. TD3C" },
-        { "symbol": "BDRY", "name": "Dry bulk freight futures ETF" },
-        { "symbol": "IYT", "name": "Transportation ETF" }
+        {
+          "symbol": "BDI",
+          "name": "Baltic Dry Index",
+          "hint": "Baltic Exchange"
+        },
+        {
+          "symbol": "SCFI",
+          "name": "Shanghai Containerized Freight Index",
+          "hint": "Shanghai Shipping Exchange"
+        },
+        {
+          "symbol": "DCI",
+          "name": "Drewry World Container Index",
+          "hint": "weekly, Drewry"
+        },
+        {
+          "symbol": "TANKER",
+          "name": "Crude tanker rates",
+          "hint": "VLCC benchmark, e.g. TD3C"
+        },
+        {
+          "symbol": "BDRY",
+          "name": "Dry bulk freight futures ETF"
+        },
+        {
+          "symbol": "IYT",
+          "name": "Transportation ETF"
+        },
+        {
+          "symbol": "MAERSK-B.CO",
+          "name": "A.P. Moller-Maersk",
+          "hint": "Nasdaq Copenhagen"
+        },
+        {
+          "symbol": "ZIM",
+          "name": "ZIM Integrated Shipping",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "HLAG.DE",
+          "name": "Hapag-Lloyd",
+          "hint": "Xetra"
+        },
+        {
+          "symbol": "1919.HK",
+          "name": "COSCO Shipping Holdings",
+          "hint": "HKEX"
+        },
+        {
+          "symbol": "FDX",
+          "name": "FedEx",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "UPS",
+          "name": "UPS",
+          "hint": "NYSE"
+        }
       ]
     },
     {
-      "id": "regions", "title": "Regional equity gauges", "cadence": "daily", "group_by": "region",
+      "id": "regions",
+      "title": "Regional equity gauges",
+      "cadence": "daily",
+      "group_by": "region",
       "items": [
-        { "symbol": "EWZ", "name": "Brazil", "region": "Americas ex-US" },
-        { "symbol": "EWW", "name": "Mexico", "region": "Americas ex-US" },
-        { "symbol": "ECH", "name": "Chile", "region": "Americas ex-US" },
-        { "symbol": "ARGT", "name": "Argentina", "region": "Americas ex-US" },
-        { "symbol": "VGK", "name": "Europe", "region": "Europe" },
-        { "symbol": "EPOL", "name": "Poland", "region": "Europe" },
-        { "symbol": "TUR", "name": "Turkey", "region": "Europe" },
-        { "symbol": "KSA", "name": "Saudi Arabia", "region": "Middle East and Africa" },
-        { "symbol": "UAE", "name": "United Arab Emirates", "region": "Middle East and Africa" },
-        { "symbol": "EZA", "name": "South Africa", "region": "Middle East and Africa" },
-        { "symbol": "AFK", "name": "Africa", "region": "Middle East and Africa" },
-        { "symbol": "FM", "name": "Frontier markets", "region": "Middle East and Africa" },
-        { "symbol": "INDA", "name": "India", "region": "South Asia" },
-        { "symbol": "EWJ", "name": "Japan", "region": "East Asia" },
-        { "symbol": "EWY", "name": "South Korea", "region": "East Asia" },
-        { "symbol": "EWT", "name": "Taiwan", "region": "East Asia" },
-        { "symbol": "MCHI", "name": "China", "region": "East Asia" },
-        { "symbol": "EIDO", "name": "Indonesia", "region": "Southeast Asia" },
-        { "symbol": "VNM", "name": "Vietnam", "region": "Southeast Asia" },
-        { "symbol": "THD", "name": "Thailand", "region": "Southeast Asia" },
-        { "symbol": "EPHE", "name": "Philippines", "region": "Southeast Asia" },
-        { "symbol": "EWA", "name": "Australia", "region": "Oceania" },
-        { "symbol": "VWO", "name": "Emerging markets, broad", "region": "Broad emerging" }
+        {
+          "symbol": "EWZ",
+          "name": "Brazil",
+          "region": "Americas ex-US"
+        },
+        {
+          "symbol": "EWW",
+          "name": "Mexico",
+          "region": "Americas ex-US"
+        },
+        {
+          "symbol": "ECH",
+          "name": "Chile",
+          "region": "Americas ex-US"
+        },
+        {
+          "symbol": "ARGT",
+          "name": "Argentina",
+          "region": "Americas ex-US"
+        },
+        {
+          "symbol": "VGK",
+          "name": "Europe",
+          "region": "Europe"
+        },
+        {
+          "symbol": "EPOL",
+          "name": "Poland",
+          "region": "Europe"
+        },
+        {
+          "symbol": "TUR",
+          "name": "Turkey",
+          "region": "Europe"
+        },
+        {
+          "symbol": "KSA",
+          "name": "Saudi Arabia",
+          "region": "Middle East and Africa"
+        },
+        {
+          "symbol": "UAE",
+          "name": "United Arab Emirates",
+          "region": "Middle East and Africa"
+        },
+        {
+          "symbol": "EZA",
+          "name": "South Africa",
+          "region": "Middle East and Africa"
+        },
+        {
+          "symbol": "AFK",
+          "name": "Africa",
+          "region": "Middle East and Africa"
+        },
+        {
+          "symbol": "FM",
+          "name": "Frontier markets",
+          "region": "Middle East and Africa"
+        },
+        {
+          "symbol": "INDA",
+          "name": "India",
+          "region": "South Asia"
+        },
+        {
+          "symbol": "EWJ",
+          "name": "Japan",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "EWY",
+          "name": "South Korea",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "EWT",
+          "name": "Taiwan",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "MCHI",
+          "name": "China",
+          "region": "East Asia"
+        },
+        {
+          "symbol": "EIDO",
+          "name": "Indonesia",
+          "region": "Southeast Asia"
+        },
+        {
+          "symbol": "VNM",
+          "name": "Vietnam",
+          "region": "Southeast Asia"
+        },
+        {
+          "symbol": "THD",
+          "name": "Thailand",
+          "region": "Southeast Asia"
+        },
+        {
+          "symbol": "EPHE",
+          "name": "Philippines",
+          "region": "Southeast Asia"
+        },
+        {
+          "symbol": "EWA",
+          "name": "Australia",
+          "region": "Oceania"
+        },
+        {
+          "symbol": "VWO",
+          "name": "Emerging markets, broad",
+          "region": "Broad emerging"
+        }
       ]
     },
     {
-      "id": "esg_funds", "title": "ESG and sustainability funds", "cadence": "daily",
+      "id": "esg_funds",
+      "title": "ESG and sustainability funds",
+      "cadence": "daily",
       "items": [
-        { "symbol": "ESGU", "name": "ESG US equity" },
-        { "symbol": "ESGD", "name": "ESG developed ex-US" },
-        { "symbol": "ESGE", "name": "ESG emerging markets" },
-        { "symbol": "CRBN", "name": "Low-carbon global equity" },
-        { "symbol": "DSI", "name": "Social index" },
-        { "symbol": "GRNB", "name": "Green bonds (USD)" },
-        { "symbol": "BGRN", "name": "Green bonds (global)" }
+        {
+          "symbol": "ESGU",
+          "name": "ESG US equity"
+        },
+        {
+          "symbol": "ESGD",
+          "name": "ESG developed ex-US"
+        },
+        {
+          "symbol": "ESGE",
+          "name": "ESG emerging markets"
+        },
+        {
+          "symbol": "CRBN",
+          "name": "Low-carbon global equity"
+        },
+        {
+          "symbol": "DSI",
+          "name": "Social index"
+        },
+        {
+          "symbol": "GRNB",
+          "name": "Green bonds (USD)"
+        },
+        {
+          "symbol": "BGRN",
+          "name": "Green bonds (global)"
+        }
       ]
     },
     {
-      "id": "themes", "title": "Resource and infrastructure themes", "cadence": "daily",
+      "id": "themes",
+      "title": "Resource and infrastructure themes",
+      "cadence": "daily",
       "items": [
-        { "symbol": "ICLN", "name": "Clean energy, global" },
-        { "symbol": "TAN", "name": "Solar" },
-        { "symbol": "FAN", "name": "Wind" },
-        { "symbol": "PBW", "name": "Clean energy, small cap" },
-        { "symbol": "PHO", "name": "Water, US" },
-        { "symbol": "CGW", "name": "Water, global" },
-        { "symbol": "LIT", "name": "Lithium and batteries" },
-        { "symbol": "REMX", "name": "Rare earths and strategic metals" },
-        { "symbol": "COPX", "name": "Copper miners" },
-        { "symbol": "PICK", "name": "Metals and mining, global" },
-        { "symbol": "IGF", "name": "Infrastructure, global" },
-        { "symbol": "PAVE", "name": "Infrastructure, US" }
+        {
+          "symbol": "ICLN",
+          "name": "Clean energy, global"
+        },
+        {
+          "symbol": "TAN",
+          "name": "Solar"
+        },
+        {
+          "symbol": "FAN",
+          "name": "Wind"
+        },
+        {
+          "symbol": "PBW",
+          "name": "Clean energy, small cap"
+        },
+        {
+          "symbol": "PHO",
+          "name": "Water, US"
+        },
+        {
+          "symbol": "CGW",
+          "name": "Water, global"
+        },
+        {
+          "symbol": "LIT",
+          "name": "Lithium and batteries"
+        },
+        {
+          "symbol": "REMX",
+          "name": "Rare earths and strategic metals"
+        },
+        {
+          "symbol": "COPX",
+          "name": "Copper miners"
+        },
+        {
+          "symbol": "PICK",
+          "name": "Metals and mining, global"
+        },
+        {
+          "symbol": "IGF",
+          "name": "Infrastructure, global"
+        },
+        {
+          "symbol": "PAVE",
+          "name": "Infrastructure, US"
+        },
+        {
+          "symbol": "FSLR",
+          "name": "First Solar",
+          "hint": "Nasdaq"
+        },
+        {
+          "symbol": "ENPH",
+          "name": "Enphase Energy",
+          "hint": "Nasdaq"
+        },
+        {
+          "symbol": "BE",
+          "name": "Bloom Energy",
+          "hint": "NYSE"
+        }
       ]
     },
     {
-      "id": "positive_impact", "title": "Companies in energy, grid, and water", "cadence": "daily",
+      "id": "positive_impact",
+      "title": "Companies in energy, grid, and water",
+      "cadence": "daily",
       "items": [
-        { "symbol": "NEE", "name": "NextEra Energy", "region": "Americas ex-US" },
-        { "symbol": "BEP", "name": "Brookfield Renewable", "region": "Americas ex-US" },
-        { "symbol": "ORSTED.CO", "name": "Orsted", "region": "Europe" },
-        { "symbol": "VWS.CO", "name": "Vestas", "region": "Europe" },
-        { "symbol": "SU.PA", "name": "Schneider Electric", "region": "Europe" },
-        { "symbol": "VIE.PA", "name": "Veolia", "region": "Europe" },
-        { "symbol": "XYL", "name": "Xylem", "region": "Americas ex-US" }
+        {
+          "symbol": "NEE",
+          "name": "NextEra Energy",
+          "region": "Americas ex-US"
+        },
+        {
+          "symbol": "BEP",
+          "name": "Brookfield Renewable",
+          "region": "Americas ex-US"
+        },
+        {
+          "symbol": "ORSTED.CO",
+          "name": "Orsted",
+          "region": "Europe"
+        },
+        {
+          "symbol": "VWS.CO",
+          "name": "Vestas",
+          "region": "Europe"
+        },
+        {
+          "symbol": "SU.PA",
+          "name": "Schneider Electric",
+          "region": "Europe"
+        },
+        {
+          "symbol": "VIE.PA",
+          "name": "Veolia",
+          "region": "Europe"
+        },
+        {
+          "symbol": "XYL",
+          "name": "Xylem",
+          "region": "Americas ex-US"
+        }
       ]
     }
   ],
   "group_keywords": {
-    "macros": ["Federal Reserve", "inflation", "CPI", "Treasury yields", "recession", "tariffs"],
-    "core_passive": ["index funds", "passive investing", "market breadth"],
-    "funds_401k": ["index funds", "retirement", "target allocation"],
-    "semis": ["semiconductor", "foundry", "EUV", "DUV", "lithography", "metrology", "HBM", "TSMC", "Samsung", "SK Hynix", "Intel", "export controls", "advanced packaging", "hybrid bonding"],
-    "mega_tech": ["AI capex", "cloud", "datacenter", "antitrust", "AI models"],
-    "energy": ["oil", "LNG", "natural gas", "coal", "uranium", "nuclear", "OPEC", "carbon price", "EU ETS", "power market"],
-    "metals": ["copper", "lithium", "cobalt", "nickel", "rare earths", "iron ore", "gold", "silver", "mining", "critical minerals"],
-    "agriculture": ["wheat", "rice", "palm oil", "fertilizer", "food prices", "El Nino", "monsoon"],
-    "shipping": ["freight", "container rates", "dry bulk", "tankers", "Panama Canal", "Suez", "ports"],
-    "regions": ["Brazil", "India", "Korea", "Taiwan", "Japan", "Indonesia", "Vietnam", "Philippines", "Africa", "Gulf", "frontier markets", "emerging markets"],
-    "esg_funds": ["ESG", "sustainability", "green bonds", "emissions disclosure"],
-    "themes": ["clean energy", "solar", "wind", "water", "grid", "batteries", "infrastructure", "carbon removal"],
-    "positive_impact": ["renewables", "offshore wind", "grid", "water utilities", "electrification"]
+    "macros": [
+      "Federal Reserve",
+      "inflation",
+      "CPI",
+      "Treasury yields",
+      "recession",
+      "tariffs"
+    ],
+    "core_passive": [
+      "index funds",
+      "passive investing",
+      "market breadth"
+    ],
+    "funds_401k": [
+      "index funds",
+      "retirement",
+      "target allocation"
+    ],
+    "semis": [
+      "semiconductor",
+      "foundry",
+      "EUV",
+      "DUV",
+      "lithography",
+      "metrology",
+      "HBM",
+      "TSMC",
+      "Samsung",
+      "SK Hynix",
+      "Intel",
+      "export controls",
+      "advanced packaging",
+      "hybrid bonding"
+    ],
+    "mega_tech": [
+      "AI capex",
+      "cloud",
+      "datacenter",
+      "antitrust",
+      "AI models"
+    ],
+    "energy": [
+      "oil",
+      "LNG",
+      "natural gas",
+      "coal",
+      "uranium",
+      "nuclear",
+      "OPEC",
+      "carbon price",
+      "EU ETS",
+      "power market"
+    ],
+    "metals": [
+      "copper",
+      "lithium",
+      "cobalt",
+      "nickel",
+      "rare earths",
+      "iron ore",
+      "gold",
+      "silver",
+      "mining",
+      "critical minerals"
+    ],
+    "agriculture": [
+      "wheat",
+      "rice",
+      "palm oil",
+      "fertilizer",
+      "food prices",
+      "El Nino",
+      "monsoon"
+    ],
+    "shipping": [
+      "freight",
+      "container rates",
+      "dry bulk",
+      "tankers",
+      "Panama Canal",
+      "Suez",
+      "ports"
+    ],
+    "regions": [
+      "Brazil",
+      "India",
+      "Korea",
+      "Taiwan",
+      "Japan",
+      "Indonesia",
+      "Vietnam",
+      "Philippines",
+      "Africa",
+      "Gulf",
+      "frontier markets",
+      "emerging markets"
+    ],
+    "esg_funds": [
+      "ESG",
+      "sustainability",
+      "green bonds",
+      "emissions disclosure"
+    ],
+    "themes": [
+      "clean energy",
+      "solar",
+      "wind",
+      "water",
+      "grid",
+      "batteries",
+      "infrastructure",
+      "carbon removal"
+    ],
+    "positive_impact": [
+      "renewables",
+      "offshore wind",
+      "grid",
+      "water utilities",
+      "electrification"
+    ]
   },
   "reading": {
     "max_items_per_feed": 2,
@@ -248,18 +1259,125 @@
     "overlap_rule": "direct = the piece is mainly about that company, fund, commodity, or region. loose = a thematic read-through. Every overlap needs a one-line reason. Use only symbols that exist in this file. If the link is a stretch, leave the overlap out.",
     "paywall_rule": "Summarize only what the feed itself exposes. Never fetch around a paywall, and never use a cache or mirror. Set access to full, partial, or teaser.",
     "feeds": [
-      { "id": "semianalysis", "name": "SemiAnalysis", "site": "https://newsletter.semianalysis.com", "url": "https://newsletter.semianalysis.com/feed", "topic": "semis and AI hardware", "access": "partial", "enabled": true, "note": "www.semianalysis.com/feed is stale; use the newsletter address." },
-      { "id": "chipstrat", "name": "Chipstrat", "site": "https://newsletter.chipstrat.com", "url": "https://newsletter.chipstrat.com/feed", "topic": "semis and AI hardware", "access": "full", "enabled": true, "note": "chipstrat.com redirects to newsletter.chipstrat.com." },
-      { "id": "irrational", "name": "Irrational Analysis", "site": "https://irrationalanalysis.substack.com", "url": "https://irrationalanalysis.substack.com/feed", "topic": "semis and AI hardware", "access": "full", "enabled": true, "note": "Posts irregularly." },
-      { "id": "chipletter", "name": "The Chip Letter", "site": "https://thechipletter.substack.com", "url": "https://thechipletter.substack.com/feed", "topic": "semis history and architecture", "access": "full", "enabled": true, "note": "Slow cadence; mostly history." },
-      { "id": "culpium", "name": "Culpium (Tim Culpan)", "site": "https://www.culpium.com", "url": "https://www.culpium.com/feed", "topic": "semis and Asia tech", "access": "teaser", "enabled": true, "note": "Feed shows intros only; members-only beyond that." },
-      { "id": "chinatalk", "name": "ChinaTalk", "site": "https://www.chinatalk.media", "url": "https://www.chinatalk.media/feed", "topic": "China tech and policy", "access": "full", "enabled": true, "note": "" },
-      { "id": "hellochinatech", "name": "Hello China Tech", "site": "https://hellochinatech.com", "url": "https://hellochinatech.com/feed", "topic": "China tech", "access": "full", "enabled": true, "note": "Occasional paid-report sales pages; skip those." },
-      { "id": "caixin", "name": "Caixin Global China Watch", "site": "https://caixinchinawatch.substack.com", "url": "https://caixinchinawatch.substack.com/feed", "topic": "China economy", "access": "teaser", "enabled": true, "note": "Teasers only. Newest item seen on 2026-10-17 was dated Aug 12; may be stale. Caixin has no official RSS feed." },
-      { "id": "dialogueearth", "name": "Dialogue Earth", "site": "https://dialogue.earth/en/", "url": "https://dialogue.earth/en/feed/", "topic": "climate, energy, resources", "access": "full", "enabled": true, "note": "Items carry category tags (Energy, Mining, Business); useful for matching." },
-      { "id": "carbonremoval", "name": "Carbon Removal Updates", "site": "https://carbonremovalupdates.substack.com", "url": "https://carbonremovalupdates.substack.com/feed", "topic": "carbon removal", "access": "full", "enabled": true, "note": "Weekly summary." },
-      { "id": "asianometry", "name": "Asianometry", "site": "https://www.asianometry.com", "url": "https://www.asianometry.com/feed", "topic": "semis history", "access": "full", "enabled": false, "note": "Feed stops at Jan 2025; the newsletter moved to a Stratechery Plus subscription." },
-      { "id": "semicosystem", "name": "Semicosystem", "url": null, "topic": "semis", "access": null, "enabled": false, "note": "No feed address found. Send the link and set enabled to true." }
+      {
+        "id": "semianalysis",
+        "name": "SemiAnalysis",
+        "site": "https://newsletter.semianalysis.com",
+        "url": "https://newsletter.semianalysis.com/feed",
+        "topic": "semis and AI hardware",
+        "access": "partial",
+        "enabled": true,
+        "note": "www.semianalysis.com/feed is stale; use the newsletter address."
+      },
+      {
+        "id": "chipstrat",
+        "name": "Chipstrat",
+        "site": "https://newsletter.chipstrat.com",
+        "url": "https://newsletter.chipstrat.com/feed",
+        "topic": "semis and AI hardware",
+        "access": "full",
+        "enabled": true,
+        "note": "chipstrat.com redirects to newsletter.chipstrat.com."
+      },
+      {
+        "id": "irrational",
+        "name": "Irrational Analysis",
+        "site": "https://irrationalanalysis.substack.com",
+        "url": "https://irrationalanalysis.substack.com/feed",
+        "topic": "semis and AI hardware",
+        "access": "full",
+        "enabled": true,
+        "note": "Posts irregularly."
+      },
+      {
+        "id": "chipletter",
+        "name": "The Chip Letter",
+        "site": "https://thechipletter.substack.com",
+        "url": "https://thechipletter.substack.com/feed",
+        "topic": "semis history and architecture",
+        "access": "full",
+        "enabled": true,
+        "note": "Slow cadence; mostly history."
+      },
+      {
+        "id": "culpium",
+        "name": "Culpium (Tim Culpan)",
+        "site": "https://www.culpium.com",
+        "url": "https://www.culpium.com/feed",
+        "topic": "semis and Asia tech",
+        "access": "teaser",
+        "enabled": true,
+        "note": "Feed shows intros only; members-only beyond that."
+      },
+      {
+        "id": "chinatalk",
+        "name": "ChinaTalk",
+        "site": "https://www.chinatalk.media",
+        "url": "https://www.chinatalk.media/feed",
+        "topic": "China tech and policy",
+        "access": "full",
+        "enabled": true,
+        "note": ""
+      },
+      {
+        "id": "hellochinatech",
+        "name": "Hello China Tech",
+        "site": "https://hellochinatech.com",
+        "url": "https://hellochinatech.com/feed",
+        "topic": "China tech",
+        "access": "full",
+        "enabled": true,
+        "note": "Occasional paid-report sales pages; skip those."
+      },
+      {
+        "id": "caixin",
+        "name": "Caixin Global China Watch",
+        "site": "https://caixinchinawatch.substack.com",
+        "url": "https://caixinchinawatch.substack.com/feed",
+        "topic": "China economy",
+        "access": "teaser",
+        "enabled": true,
+        "note": "Teasers only. Newest item seen on 2026-10-17 was dated Aug 12; may be stale. Caixin has no official RSS feed."
+      },
+      {
+        "id": "dialogueearth",
+        "name": "Dialogue Earth",
+        "site": "https://dialogue.earth/en/",
+        "url": "https://dialogue.earth/en/feed/",
+        "topic": "climate, energy, resources",
+        "access": "full",
+        "enabled": true,
+        "note": "Items carry category tags (Energy, Mining, Business); useful for matching."
+      },
+      {
+        "id": "carbonremoval",
+        "name": "Carbon Removal Updates",
+        "site": "https://carbonremovalupdates.substack.com",
+        "url": "https://carbonremovalupdates.substack.com/feed",
+        "topic": "carbon removal",
+        "access": "full",
+        "enabled": true,
+        "note": "Weekly summary."
+      },
+      {
+        "id": "asianometry",
+        "name": "Asianometry",
+        "site": "https://www.asianometry.com",
+        "url": "https://www.asianometry.com/feed",
+        "topic": "semis history",
+        "access": "full",
+        "enabled": false,
+        "note": "Feed stops at Jan 2025; the newsletter moved to a Stratechery Plus subscription."
+      },
+      {
+        "id": "semicosystem",
+        "name": "Semicosystem",
+        "url": null,
+        "topic": "semis",
+        "access": null,
+        "enabled": false,
+        "note": "No feed address found. Send the link and set enabled to true."
+      }
     ]
   },
   "headlines": {
@@ -269,27 +1387,114 @@
     "rule": "Pick the biggest announcements of the period: policy and trade decisions, export controls, central bank decisions, major production or capacity moves, large company news, and disruptions to supply. For each story cite 2 to 4 outlets from at least 2 different regions when the story is covered that way, and always include one outlet from the region the story concerns. Add one official or primary source (agency, exchange, company release) with kind set to primary when it exists. Use the outlet's own headline wording. Fill framing only when headlines or emphasis visibly differ, describe the difference neutrally in under 25 words, and never judge which outlet is right. Do not let one wire service count as several outlets. Paywalled outlets: use only the visible headline and snippet.",
     "outlet_pool_note": "A starting pool, not a limit. Runs may use any reputable outlet. Spread across regions so no country's press is the default.",
     "outlet_pool": [
-      { "name": "BBC News", "region": "Europe", "site": "https://www.bbc.com/news/business" },
-      { "name": "DW", "region": "Europe", "site": "https://www.dw.com/en/business/s-1431" },
-      { "name": "France 24", "region": "Europe", "site": "https://www.france24.com/en/business" },
-      { "name": "Financial Times", "region": "Europe", "site": "https://www.ft.com", "access": "headline only" },
-      { "name": "The Economist", "region": "Europe", "site": "https://www.economist.com", "access": "headline only" },
-      { "name": "Al Jazeera", "region": "Middle East and Africa", "site": "https://www.aljazeera.com/economy/" },
-      { "name": "Arab News", "region": "Middle East and Africa", "site": "https://www.arabnews.com" },
-      { "name": "The Africa Report", "region": "Middle East and Africa", "site": "https://www.theafricareport.com" },
-      { "name": "Business Daily Africa", "region": "Middle East and Africa", "site": "https://www.businessdailyafrica.com" },
-      { "name": "The Hindu BusinessLine", "region": "South Asia", "site": "https://www.thehindubusinessline.com" },
-      { "name": "South China Morning Post", "region": "East Asia", "site": "https://www.scmp.com/business" },
-      { "name": "Nikkei Asia", "region": "East Asia", "site": "https://asia.nikkei.com", "access": "mostly headline only" },
-      { "name": "Focus Taiwan", "region": "East Asia", "site": "https://focustaiwan.tw/business" },
-      { "name": "The Korea Herald", "region": "East Asia", "site": "https://www.koreaherald.com/business" },
-      { "name": "Korea JoongAng Daily", "region": "East Asia", "site": "https://koreajoongangdaily.joins.com" },
-      { "name": "The Straits Times", "region": "Southeast Asia", "site": "https://www.straitstimes.com/business" },
-      { "name": "Lowy Interpreter", "region": "Oceania", "site": "https://www.lowyinstitute.org/the-interpreter" },
-      { "name": "Rest of World", "region": "Global", "site": "https://restofworld.org" },
-      { "name": "Mongabay", "region": "Global", "site": "https://news.mongabay.com" },
-      { "name": "BNamericas", "region": "Americas", "site": "https://www.bnamericas.com" },
-      { "name": "Buenos Aires Times", "region": "Americas", "site": "https://www.batimes.com.ar" }
+      {
+        "name": "BBC News",
+        "region": "Europe",
+        "site": "https://www.bbc.com/news/business"
+      },
+      {
+        "name": "DW",
+        "region": "Europe",
+        "site": "https://www.dw.com/en/business/s-1431"
+      },
+      {
+        "name": "France 24",
+        "region": "Europe",
+        "site": "https://www.france24.com/en/business"
+      },
+      {
+        "name": "Financial Times",
+        "region": "Europe",
+        "site": "https://www.ft.com",
+        "access": "headline only"
+      },
+      {
+        "name": "The Economist",
+        "region": "Europe",
+        "site": "https://www.economist.com",
+        "access": "headline only"
+      },
+      {
+        "name": "Al Jazeera",
+        "region": "Middle East and Africa",
+        "site": "https://www.aljazeera.com/economy/"
+      },
+      {
+        "name": "Arab News",
+        "region": "Middle East and Africa",
+        "site": "https://www.arabnews.com"
+      },
+      {
+        "name": "The Africa Report",
+        "region": "Middle East and Africa",
+        "site": "https://www.theafricareport.com"
+      },
+      {
+        "name": "Business Daily Africa",
+        "region": "Middle East and Africa",
+        "site": "https://www.businessdailyafrica.com"
+      },
+      {
+        "name": "The Hindu BusinessLine",
+        "region": "South Asia",
+        "site": "https://www.thehindubusinessline.com"
+      },
+      {
+        "name": "South China Morning Post",
+        "region": "East Asia",
+        "site": "https://www.scmp.com/business"
+      },
+      {
+        "name": "Nikkei Asia",
+        "region": "East Asia",
+        "site": "https://asia.nikkei.com",
+        "access": "mostly headline only"
+      },
+      {
+        "name": "Focus Taiwan",
+        "region": "East Asia",
+        "site": "https://focustaiwan.tw/business"
+      },
+      {
+        "name": "The Korea Herald",
+        "region": "East Asia",
+        "site": "https://www.koreaherald.com/business"
+      },
+      {
+        "name": "Korea JoongAng Daily",
+        "region": "East Asia",
+        "site": "https://koreajoongangdaily.joins.com"
+      },
+      {
+        "name": "The Straits Times",
+        "region": "Southeast Asia",
+        "site": "https://www.straitstimes.com/business"
+      },
+      {
+        "name": "Lowy Interpreter",
+        "region": "Oceania",
+        "site": "https://www.lowyinstitute.org/the-interpreter"
+      },
+      {
+        "name": "Rest of World",
+        "region": "Global",
+        "site": "https://restofworld.org"
+      },
+      {
+        "name": "Mongabay",
+        "region": "Global",
+        "site": "https://news.mongabay.com"
+      },
+      {
+        "name": "BNamericas",
+        "region": "Americas",
+        "site": "https://www.bnamericas.com"
+      },
+      {
+        "name": "Buenos Aires Times",
+        "region": "Americas",
+        "site": "https://www.batimes.com.ar"
+      }
     ]
   },
   "quality": {
@@ -300,8 +1505,20 @@
       "aggregator": "a quote or data site that compiles numbers from elsewhere"
     },
     "audit_sample_per_run": 8,
-    "tolerance_last_pct": { "default": 0.6, "commodity": 1.5, "gas": 2.0, "freight": 2.0, "rate": 1.0 },
-    "tolerance_week_points": { "default": 1.0, "commodity": 2.0, "gas": 3.0, "freight": 3.0, "rate": 0.1 },
+    "tolerance_last_pct": {
+      "default": 0.6,
+      "commodity": 1.5,
+      "gas": 2.0,
+      "freight": 2.0,
+      "rate": 1.0
+    },
+    "tolerance_week_points": {
+      "default": 1.0,
+      "commodity": 2.0,
+      "gas": 3.0,
+      "freight": 3.0,
+      "rate": 0.1
+    },
     "rule": "A second source must be independent of the first (a different issuer, not a mirror) and show the same trading date. If the dates differ, record as_of on the second source and leave status to the script."
   },
   "indicators": {
@@ -309,11 +1526,371 @@
     "min_periods_for_range": 12,
     "grace_days": 3,
     "series": [
-      { "id": "tsmc_revenue", "name": "TSMC monthly revenue", "group": "Foundry demand", "unit": "NT$ billion", "freq": "monthly", "lag_months": 1, "release_day": 10, "smoothing": "none", "ytd_check": true, "source": "TSMC", "tier": "official", "site": null, "find": "TSMC <Month> <Year> Revenue Report pr.tsmc.com", "reports_yoy": true, "touches": ["TSM", "NVDA", "AVGO", "AMD", "ASML"], "note": "Consolidated revenue, issued about the 10th. Year-to-date is recorded so months can be reconciled against it." },
-      { "id": "korea_chip_exports", "name": "Korea semiconductor exports", "group": "Memory and chip exports", "unit": "US$ billion", "freq": "monthly", "lag_months": 1, "release_day": 1, "smoothing": "none", "source": "Korea trade ministry", "tier": "reported", "site": null, "find": "Korea <Month> <Year> exports semiconductor exports billion year-on-year ministry release", "reports_yoy": true, "touches": ["000660.KS", "005930.KS"], "note": "Released on the 1st. Mostly read from news reports of the ministry release unless the release itself is found; the ministry's English name changes between outlets." },
-      { "id": "seaj_billings", "name": "Japan-made chip equipment billings", "group": "Equipment demand", "unit": "JPY million", "freq": "monthly", "lag_months": 1, "release_day": 21, "smoothing": "3-month average", "source": "SEAJ", "tier": "official", "site": null, "find": "SEAJ Japan semiconductor equipment billings <Month> <Year>", "reports_yoy": true, "touches": ["8035.T", "ASML", "AMAT", "LRCX", "KLAC", "ASM.AS", "ONTO"], "note": "Semiconductor equipment only. SEAJ also publishes flat panel display equipment with a near-identical title; do not use that report. Figures are 3-month averages, and the first release of a month is preliminary." },
-      { "id": "semi_equipment", "name": "Global chip equipment billings", "group": "Equipment demand", "unit": "US$ billion", "freq": "quarterly", "lag_months": 3, "release_day": 4, "smoothing": "none", "source": "SEMI", "tier": "official", "site": "https://www.semi.org/en/products-services/market-data/equipment-article-archive", "find": "SEMI Reports Global Semiconductor Equipment Billings <Quarter> <Year>", "reports_yoy": true, "touches": ["ASML", "AMAT", "LRCX", "KLAC", "8035.T", "ASM.AS", "ONTO"], "note": "Quarterly, released about three months after the quarter ends. Regional tables are images, so only the global total is recorded." },
-      { "id": "sia_sales", "name": "Global semiconductor sales", "group": "Industry sales", "unit": "US$ billion", "freq": "monthly", "lag_months": 2, "release_day": 5, "smoothing": "3-month average", "source": "SIA (WSTS data)", "tier": "official", "site": "https://www.semiconductors.org/policies/tax/market-data", "find": "SIA global semiconductor sales <Month> <Year> three-month moving average", "reports_yoy": true, "touches": ["NVDA", "AVGO", "AMD", "QCOM", "TSM", "000660.KS", "005930.KS"], "note": "3-month moving average of monthly sales. Earlier months are revised in later releases, so revisions are stored as new rows." }
+      {
+        "id": "tsmc_revenue",
+        "name": "TSMC monthly revenue",
+        "group": "Foundry demand",
+        "unit": "NT$ billion",
+        "freq": "monthly",
+        "lag_months": 1,
+        "release_day": 10,
+        "smoothing": "none",
+        "ytd_check": true,
+        "source": "TSMC",
+        "tier": "official",
+        "site": null,
+        "find": "TSMC <Month> <Year> Revenue Report pr.tsmc.com",
+        "reports_yoy": true,
+        "touches": [
+          "TSM",
+          "NVDA",
+          "AVGO",
+          "AMD",
+          "ASML"
+        ],
+        "note": "Consolidated revenue, issued about the 10th. Year-to-date is recorded so months can be reconciled against it."
+      },
+      {
+        "id": "korea_chip_exports",
+        "name": "Korea semiconductor exports",
+        "group": "Memory and chip exports",
+        "unit": "US$ billion",
+        "freq": "monthly",
+        "lag_months": 1,
+        "release_day": 1,
+        "smoothing": "none",
+        "source": "Korea trade ministry",
+        "tier": "reported",
+        "site": null,
+        "find": "Korea <Month> <Year> exports semiconductor exports billion year-on-year ministry release",
+        "reports_yoy": true,
+        "touches": [
+          "000660.KS",
+          "005930.KS"
+        ],
+        "note": "Released on the 1st. Mostly read from news reports of the ministry release unless the release itself is found; the ministry's English name changes between outlets."
+      },
+      {
+        "id": "seaj_billings",
+        "name": "Japan-made chip equipment billings",
+        "group": "Equipment demand",
+        "unit": "JPY million",
+        "freq": "monthly",
+        "lag_months": 1,
+        "release_day": 21,
+        "smoothing": "3-month average",
+        "source": "SEAJ",
+        "tier": "official",
+        "site": null,
+        "find": "SEAJ Japan semiconductor equipment billings <Month> <Year>",
+        "reports_yoy": true,
+        "touches": [
+          "8035.T",
+          "ASML",
+          "AMAT",
+          "LRCX",
+          "KLAC",
+          "ASM.AS",
+          "ONTO"
+        ],
+        "note": "Semiconductor equipment only. SEAJ also publishes flat panel display equipment with a near-identical title; do not use that report. Figures are 3-month averages, and the first release of a month is preliminary."
+      },
+      {
+        "id": "semi_equipment",
+        "name": "Global chip equipment billings",
+        "group": "Equipment demand",
+        "unit": "US$ billion",
+        "freq": "quarterly",
+        "lag_months": 3,
+        "release_day": 4,
+        "smoothing": "none",
+        "source": "SEMI",
+        "tier": "official",
+        "site": "https://www.semi.org/en/products-services/market-data/equipment-article-archive",
+        "find": "SEMI Reports Global Semiconductor Equipment Billings <Quarter> <Year>",
+        "reports_yoy": true,
+        "touches": [
+          "ASML",
+          "AMAT",
+          "LRCX",
+          "KLAC",
+          "8035.T",
+          "ASM.AS",
+          "ONTO"
+        ],
+        "note": "Quarterly, released about three months after the quarter ends. Regional tables are images, so only the global total is recorded."
+      },
+      {
+        "id": "sia_sales",
+        "name": "Global semiconductor sales",
+        "group": "Industry sales",
+        "unit": "US$ billion",
+        "freq": "monthly",
+        "lag_months": 2,
+        "release_day": 5,
+        "smoothing": "3-month average",
+        "source": "SIA (WSTS data)",
+        "tier": "official",
+        "site": "https://www.semiconductors.org/policies/tax/market-data",
+        "find": "SIA global semiconductor sales <Month> <Year> three-month moving average",
+        "reports_yoy": true,
+        "touches": [
+          "NVDA",
+          "AVGO",
+          "AMD",
+          "QCOM",
+          "TSM",
+          "000660.KS",
+          "005930.KS"
+        ],
+        "note": "3-month moving average of monthly sales. Earlier months are revised in later releases, so revisions are stored as new rows."
+      },
+      {
+        "id": "fao_ffpi",
+        "name": "FAO Food Price Index",
+        "group": "Food prices",
+        "unit": "points (2014-16 = 100)",
+        "freq": "monthly",
+        "lag_months": 1,
+        "release_day": 5,
+        "smoothing": "none",
+        "source": "FAO",
+        "tier": "official",
+        "site": "https://www.fao.org/worldfoodsituation/foodpricesindex",
+        "find": "FAO Food Price Index <Month> <Year>",
+        "reports_yoy": true,
+        "touches": [
+          "ZW=F",
+          "RICE",
+          "PALM",
+          "ADM",
+          "BG",
+          "DE",
+          "CTVA"
+        ],
+        "note": "Published the first Friday of the month on fao.org. The previous month is often revised, so enter any restated value again."
+      },
+      {
+        "id": "fao_cereals",
+        "name": "FAO cereals sub-index",
+        "group": "Food prices",
+        "unit": "points (2014-16 = 100)",
+        "freq": "monthly",
+        "lag_months": 1,
+        "release_day": 5,
+        "smoothing": "none",
+        "source": "FAO",
+        "tier": "official",
+        "site": "https://www.fao.org/worldfoodsituation/foodpricesindex",
+        "find": "FAO Food Price Index <Month> <Year> cereals",
+        "reports_yoy": true,
+        "touches": [
+          "ZW=F",
+          "RICE",
+          "ADM",
+          "BG"
+        ],
+        "note": "Same FAO release as the headline index."
+      },
+      {
+        "id": "fao_vegoils",
+        "name": "FAO vegetable oils sub-index",
+        "group": "Food prices",
+        "unit": "points (2014-16 = 100)",
+        "freq": "monthly",
+        "lag_months": 1,
+        "release_day": 5,
+        "smoothing": "none",
+        "source": "FAO",
+        "tier": "official",
+        "site": "https://www.fao.org/worldfoodsituation/foodpricesindex",
+        "find": "FAO Food Price Index <Month> <Year> vegetable oils",
+        "reports_yoy": true,
+        "touches": [
+          "PALM",
+          "ADM",
+          "BG"
+        ],
+        "note": "Same FAO release as the headline index."
+      },
+      {
+        "id": "fao_sugar",
+        "name": "FAO sugar sub-index",
+        "group": "Food prices",
+        "unit": "points (2014-16 = 100)",
+        "freq": "monthly",
+        "lag_months": 1,
+        "release_day": 5,
+        "smoothing": "none",
+        "source": "FAO",
+        "tier": "official",
+        "site": "https://www.fao.org/worldfoodsituation/foodpricesindex",
+        "find": "FAO Food Price Index <Month> <Year> sugar",
+        "reports_yoy": true,
+        "touches": [],
+        "note": "Same FAO release as the headline index."
+      },
+      {
+        "id": "wasde_corn_us",
+        "name": "US corn ending stocks, 2026/27 projection",
+        "group": "Grain balance",
+        "unit": "million bushels",
+        "freq": "monthly",
+        "lag_months": 0,
+        "release_day": 10,
+        "smoothing": "none",
+        "source": "USDA",
+        "tier": "official",
+        "site": "https://www.usda.gov/oce/commodity/wasde",
+        "find": "USDA WASDE <Month> <Year> corn ending stocks",
+        "reports_yoy": false,
+        "touches": [
+          "DE",
+          "ADM",
+          "BG",
+          "CTVA",
+          "NTR",
+          "MOS",
+          "CF"
+        ],
+        "note": "World Agricultural Supply and Demand Estimates, about the 10th. The projected marketing year rolls over each September, so month-on-month change compares like with like only within a year."
+      },
+      {
+        "id": "wasde_wheat_us",
+        "name": "US wheat ending stocks, 2026/27 projection",
+        "group": "Grain balance",
+        "unit": "million bushels",
+        "freq": "monthly",
+        "lag_months": 0,
+        "release_day": 10,
+        "smoothing": "none",
+        "source": "USDA",
+        "tier": "official",
+        "site": "https://www.usda.gov/oce/commodity/wasde",
+        "find": "USDA WASDE <Month> <Year> wheat ending stocks",
+        "reports_yoy": false,
+        "touches": [
+          "ZW=F",
+          "ADM",
+          "BG"
+        ],
+        "note": "Same WASDE release."
+      },
+      {
+        "id": "wasde_soy_us",
+        "name": "US soybean ending stocks, 2026/27 projection",
+        "group": "Grain balance",
+        "unit": "million bushels",
+        "freq": "monthly",
+        "lag_months": 0,
+        "release_day": 10,
+        "smoothing": "none",
+        "source": "USDA",
+        "tier": "official",
+        "site": "https://www.usda.gov/oce/commodity/wasde",
+        "find": "USDA WASDE <Month> <Year> soybeans ending stocks",
+        "reports_yoy": false,
+        "touches": [
+          "ADM",
+          "BG",
+          "DE",
+          "CTVA"
+        ],
+        "note": "Same WASDE release."
+      },
+      {
+        "id": "bh_us_rigs",
+        "name": "US rotary rig count (Baker Hughes)",
+        "group": "Oil and gas activity",
+        "unit": "rigs",
+        "freq": "weekly",
+        "weekday": 4,
+        "release_offset_days": 0,
+        "smoothing": "none",
+        "source": "Baker Hughes",
+        "tier": "reported",
+        "site": "https://rigcount.bakerhughes.com",
+        "first_period": "2026-10-16",
+        "find": "Baker Hughes rig count <Week> US total",
+        "reports_yoy": false,
+        "touches": [
+          "CL=F",
+          "BZ=F",
+          "NG=F",
+          "XOM",
+          "COP"
+        ],
+        "note": "Published Fridays. The release is reached through press reports quoting Baker Hughes, so tier stays reported unless the Baker Hughes page itself is reachable."
+      },
+      {
+        "id": "eia_gas_storage",
+        "name": "US working gas in storage (EIA)",
+        "group": "Oil and gas activity",
+        "unit": "Bcf",
+        "freq": "weekly",
+        "weekday": 4,
+        "release_offset_days": 6,
+        "smoothing": "none",
+        "source": "EIA",
+        "tier": "official",
+        "site": "https://ir.eia.gov/ngs/ngs.html",
+        "first_period": "2026-10-09",
+        "find": "EIA weekly natural gas storage report week ending <Week>",
+        "reports_yoy": true,
+        "touches": [
+          "NG=F",
+          "LNG",
+          "TTF=F",
+          "JKM"
+        ],
+        "note": "Thursday release for the week ending the prior Friday. The EIA page can return an old cached copy: check that its week-ending date matches the period before recording a value."
+      },
+      {
+        "id": "eu_gas_storage",
+        "name": "EU gas storage, percent full (GIE)",
+        "group": "Oil and gas activity",
+        "unit": "% full",
+        "freq": "weekly",
+        "weekday": 6,
+        "release_offset_days": 1,
+        "smoothing": "none",
+        "source": "Gas Infrastructure Europe",
+        "tier": "reported",
+        "site": "https://agsi.gie.eu",
+        "first_period": "2026-10-11",
+        "find": "Gas Infrastructure Europe EU gas storage percent full <Week>",
+        "reports_yoy": false,
+        "touches": [
+          "TTF=F",
+          "JKM",
+          "TTE",
+          "SHEL",
+          "EQNR"
+        ],
+        "note": "Reached through press reports quoting GIE until the AGSI+ page itself is reachable. Use the Sunday figure."
+      },
+      {
+        "id": "icsg_copper_balance",
+        "name": "Refined copper market balance, year to date (ICSG)",
+        "group": "Metals balance",
+        "unit": "thousand tonnes",
+        "freq": "monthly",
+        "lag_months": 2,
+        "release_day": 20,
+        "smoothing": "none",
+        "source": "International Copper Study Group",
+        "tier": "reported",
+        "site": "https://icsg.org",
+        "find": "ICSG refined copper balance <Month> <Year> surplus deficit",
+        "reports_yoy": false,
+        "touches": [
+          "HG=F",
+          "FCX",
+          "SCCO",
+          "COPX"
+        ],
+        "note": "Positive is surplus, negative is deficit, cumulative within the year. Reached through press reports quoting ICSG."
+      }
     ]
   },
   "climate_watch": [
@@ -326,6 +1903,74 @@
   ],
   "sources_by_region": {
     "note": "Use a mix of regional sources so no country's agency or press is the default.",
-    "weather_climate": ["NOAA", "Copernicus", "WMO", "India Meteorological Department", "Japan Meteorological Agency", "Bureau of Meteorology (Australia)", "INPE (Brazil)", "ICPAC (East Africa)"]
+    "weather_climate": [
+      "NOAA",
+      "Copernicus",
+      "WMO",
+      "India Meteorological Department",
+      "Japan Meteorological Agency",
+      "Bureau of Meteorology (Australia)",
+      "INPE (Brazil)",
+      "ICPAC (East Africa)"
+    ]
+  },
+  "spreads": {
+    "_note": "Computed from prices already on the page. Each is a relationship between two markets, shown against its own recent sessions.",
+    "list": [
+      {
+        "id": "brent_wti",
+        "name": "Brent minus WTI",
+        "kind": "diff",
+        "a": "BZ=F",
+        "b": "CL=F",
+        "factor": 1,
+        "unit": "USD/bbl",
+        "touches": [
+          "BZ=F",
+          "CL=F",
+          "XOM",
+          "SHEL",
+          "TTE",
+          "EQNR",
+          "COP"
+        ],
+        "note": "Gap between the two main crude benchmarks."
+      },
+      {
+        "id": "copper_aluminum",
+        "name": "Copper to aluminum price ratio",
+        "kind": "ratio",
+        "a": "HG=F",
+        "b": "ALI=F",
+        "factor": 2204.62,
+        "unit": "x",
+        "touches": [
+          "HG=F",
+          "ALI=F",
+          "FCX",
+          "SCCO",
+          "AA",
+          "COPX"
+        ],
+        "note": "Copper in USD per tonne (pounds converted) divided by aluminum in USD per tonne."
+      },
+      {
+        "id": "copper_gold",
+        "name": "Copper to gold ratio",
+        "kind": "ratio",
+        "a": "HG=F",
+        "b": "GC=F",
+        "factor": 1000,
+        "unit": "x 1000",
+        "touches": [
+          "HG=F",
+          "GC=F",
+          "FCX",
+          "SCCO",
+          "^TNX"
+        ],
+        "note": "Copper USD per pound divided by gold USD per ounce, times 1000. A familiar growth-versus-safety gauge."
+      }
+    ]
   }
 }
