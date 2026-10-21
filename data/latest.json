@@ -2,7 +2,7 @@
  "generated_at": "2026-10-21T12:32:05Z",
  "data_date": "2026-10-20",
  "edition": "weekday",
- "summary": "Oil stayed the main risk: Brent closed at 108.79 and WTI at 97.82 on Oct 20, both down on the day after a week of attacks on shipping near the Strait of Hormuz and an IEA move to speed emergency stock releases. The 20 Oct index closes were not retrievable; the last confirmed US close (Oct 19) had the S&P 500 up 0.4% at 7,690.73 and the Nasdaq up 1.1%, with September US inflation at 3.7% keeping Fed hike odds for Oct 27-28 near a third and the 10-year yield above 5%. In Asia the chip selloff continued, with Samsung down 3.0% on the day and 8.8% on the week, MediaTek and ASM International down 9% and 13% on the week to Oct 19, while TSMC reported record quarterly profit. NOAA and WMO describe a strong El Nino, with Indonesia's ETF down about 18% on the week (unverified, see flags). Several commodity, freight and Hong Kong items could not be retrieved (see gaps).",
+ "summary": "Oil stayed the main risk: Brent closed at 108.79 and WTI at 97.82 on Oct 20, both down on the day after a week of attacks on shipping near the Strait of Hormuz and an IEA move to speed emergency stock releases. On Oct 20 the S&P 500 closed at 7,712.76 (+0.29%), the Nasdaq Composite was flat at 26,424.82 and the Dow rose 1.0%, with the VIX at 17.3 and the 10-year yield at 5.12%; September US inflation at 3.7% keeps Fed hike odds for Oct 27-28 near a third. In Asia the chip selloff continued, with Samsung down 3.0% on the day and 8.8% on the week, MediaTek and ASM International down 9% and 13% on the week to Oct 19, while TSMC reported record quarterly profit. NOAA and WMO describe a strong El Nino, with Indonesia's ETF down about 18% on the week (unverified, see flags). Several commodity, freight and Hong Kong items could not be retrieved (see gaps).",
  "groups": [
   {
    "id": "macros",
@@ -12,62 +12,68 @@
     {
      "symbol": "^GSPC",
      "name": "S&P 500",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 7712.76,
+     "chg_1d": 0.29,
+     "chg_1w": -1.19,
      "chg_1m": null,
-     "src": "stockanalysis.com",
-     "tier": "aggregator"
+     "src": "S&P Dow Jones Indices",
+     "tier": "aggregator",
+     "note": "Index close 20 Oct via Investing.com history table; 1m null (the page starts 21 Sep, so the 18 Sep base is not available)."
     },
     {
      "symbol": "^IXIC",
      "name": "Nasdaq Composite",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 26424.82,
+     "chg_1d": -0.02,
+     "chg_1w": -2.87,
      "chg_1m": null,
-     "src": "stockanalysis.com",
-     "tier": "aggregator"
+     "src": "Nasdaq",
+     "tier": "aggregator",
+     "note": "Index close 20 Oct via Investing.com history table; 1m null (the page starts 21 Sep, so the 18 Sep base is not available)."
     },
     {
      "symbol": "^DJI",
      "name": "Dow Jones",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 52495.88,
+     "chg_1d": 1.02,
+     "chg_1w": 1.6,
      "chg_1m": null,
-     "src": "stockanalysis.com",
-     "tier": "aggregator"
+     "src": "S&P Dow Jones Indices",
+     "tier": "aggregator",
+     "note": "Index close 20 Oct via Investing.com history table; 1m null (the page starts 21 Sep, so the 18 Sep base is not available)."
     },
     {
      "symbol": "^RUT",
      "name": "Russell 2000",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 2773.42,
+     "chg_1d": 1.65,
+     "chg_1w": -0.36,
      "chg_1m": null,
-     "src": "stockanalysis.com",
-     "tier": "aggregator"
+     "src": "FTSE Russell",
+     "tier": "aggregator",
+     "note": "Index close 20 Oct via Investing.com history table; 1m null (the page starts 21 Sep, so the 18 Sep base is not available)."
     },
     {
      "symbol": "^VIX",
      "name": "CBOE Volatility Index",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 17.31,
+     "chg_1d": -6.13,
+     "chg_1w": 13.36,
      "chg_1m": null,
-     "src": "stockanalysis.com",
-     "tier": "aggregator"
+     "src": "Cboe",
+     "tier": "aggregator",
+     "note": "Index close 20 Oct via Investing.com history table; 1m null (the page starts 21 Sep, so the 18 Sep base is not available)."
     },
     {
      "symbol": "^TNX",
      "name": "10-year Treasury yield",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 5.117,
+     "chg_1d": -0.02,
+     "chg_1w": -0.1,
      "chg_1m": null,
-     "src": "stockanalysis.com",
-     "tier": "aggregator"
+     "src": "US Treasury (yield quoted via Investing.com)",
+     "tier": "aggregator",
+     "note": "Yield in percent; changes in percentage points. 1m null (the page starts 21 Sep)."
     }
    ]
   },
@@ -460,24 +466,26 @@
     {
      "symbol": "NG=F",
      "name": "Henry Hub gas",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 2.963,
+     "chg_1d": -3.11,
+     "chg_1w": -9.75,
      "chg_1m": null,
      "src": "NYMEX (CME Group)",
      "tier": "aggregator",
-     "unit": "USD/MMBtu"
+     "unit": "USD/MMBtu",
+     "note": "Front-month Henry Hub close 20 Oct via Investing.com; 1m null (the page starts 21 Sep)."
     },
     {
      "symbol": "TTF=F",
      "name": "TTF gas (Europe)",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 86.445,
+     "chg_1d": -1.87,
+     "chg_1w": -0.89,
      "chg_1m": null,
      "src": "ICE Endex",
      "tier": "aggregator",
-     "unit": "EUR/MWh"
+     "unit": "EUR/MWh",
+     "note": "Front-month TTF (TFAc1, EUR/MWh) close 20 Oct via Investing.com; 1m null (the page starts 21 Sep)."
     },
     {
      "symbol": "JKM",
@@ -607,14 +615,13 @@
     {
      "symbol": "2222.SR",
      "name": "Saudi Aramco",
-     "last": 25.28,
-     "chg_1d": -0.39,
-     "chg_1w": -1.79,
-     "chg_1m": -0.94,
+     "last": 25.48,
+     "chg_1d": -1.24,
+     "chg_1w": -1.16,
+     "chg_1m": -0.31,
      "src": "Saudi Exchange (Tadawul)",
      "tier": "aggregator",
-     "as_of": "2026-10-15",
-     "note": "SAR. Source page stale: last row 15 Oct; 16-20 Oct not found. Bases: 8 Oct (1w), 15 Sep (1m)."
+     "note": "SAR. Bases: 19 Oct (1d), 13 Oct (1w), 17 Sep (1m; 18 Sep was a Saturday-weekend session gap on Tadawul)."
     },
     {
      "symbol": "RELIANCE.NS",
@@ -861,13 +868,14 @@
     {
      "symbol": "HG=F",
      "name": "Copper",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 6.6035,
+     "chg_1d": 0.43,
+     "chg_1w": -1.82,
      "chg_1m": null,
      "unit": "USD/lb",
-     "src": "Trading Economics (market quote)",
-     "tier": "aggregator"
+     "src": "COMEX (CME Group)",
+     "tier": "aggregator",
+     "note": "Close 20 Oct via Investing.com history table; 1m null (the page starts 21 Sep, so the 18 Sep base is not available)."
     },
     {
      "symbol": "ALI=F",
@@ -942,24 +950,26 @@
     {
      "symbol": "GC=F",
      "name": "Gold",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 4142.6,
+     "chg_1d": -0.42,
+     "chg_1w": -0.83,
      "chg_1m": null,
      "unit": "USD/oz",
-     "src": "Trading Economics (market quote)",
-     "tier": "aggregator"
+     "src": "COMEX (CME Group)",
+     "tier": "aggregator",
+     "note": "Close 20 Oct via Investing.com history table; 1m null (the page starts 21 Sep, so the 18 Sep base is not available)."
     },
     {
      "symbol": "SI=F",
      "name": "Silver",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
+     "last": 58.0,
+     "chg_1d": 1.27,
+     "chg_1w": -2.56,
      "chg_1m": null,
      "unit": "USD/oz",
-     "src": "Trading Economics (market quote)",
-     "tier": "aggregator"
+     "src": "COMEX (CME Group)",
+     "tier": "aggregator",
+     "note": "Close 20 Oct via Investing.com history table; 1m null (the page starts 21 Sep, so the 18 Sep base is not available)."
     },
     {
      "symbol": "FCX",
@@ -1914,8 +1924,9 @@
      "tier": "aggregator",
      "last": 5.0235,
      "chg_1d": -0.43,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": 0.14,
+     "chg_1m": -2.19,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDCLP",
@@ -1939,9 +1950,10 @@
      "src": "European Central Bank",
      "tier": "aggregator",
      "last": 18.5215,
-     "chg_1d": 0.2,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1d": 0.21,
+     "chg_1w": 1.02,
+     "chg_1m": 7.82,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "EURUSD",
@@ -1952,8 +1964,9 @@
      "tier": "aggregator",
      "last": 1.1215,
      "chg_1d": -0.09,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": 0.24,
+     "chg_1m": -2.14,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDTRY",
@@ -1964,8 +1977,9 @@
      "tier": "aggregator",
      "last": 49.5773,
      "chg_1d": 0.05,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": 0.43,
+     "chg_1m": 1.62,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDZAR",
@@ -1976,8 +1990,9 @@
      "tier": "aggregator",
      "last": 16.4752,
      "chg_1d": 0.25,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": -0.13,
+     "chg_1m": 1.25,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDNGN",
@@ -2015,9 +2030,10 @@
      "src": "European Central Bank",
      "tier": "aggregator",
      "last": 94.9255,
-     "chg_1d": -0.0,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1d": 0.0,
+     "chg_1w": -0.37,
+     "chg_1m": -0.99,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDJPY",
@@ -2028,8 +2044,9 @@
      "tier": "aggregator",
      "last": 158.13,
      "chg_1d": -0.07,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": 0.01,
+     "chg_1m": 0.15,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDKRW",
@@ -2040,8 +2057,9 @@
      "tier": "aggregator",
      "last": 1327.84,
      "chg_1d": -0.12,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": -1.01,
+     "chg_1m": -4.34,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDCNY",
@@ -2052,8 +2070,9 @@
      "tier": "aggregator",
      "last": 6.678,
      "chg_1d": -0.04,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": -0.24,
+     "chg_1m": -0.29,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDIDR",
@@ -2064,8 +2083,9 @@
      "tier": "aggregator",
      "last": 17985.35,
      "chg_1d": -0.32,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": 0.59,
+     "chg_1m": 0.91,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDPHP",
@@ -2076,8 +2096,9 @@
      "tier": "aggregator",
      "last": 63.1333,
      "chg_1d": 0.21,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": 0.58,
+     "chg_1m": 0.53,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "USDTHB",
@@ -2088,8 +2109,9 @@
      "tier": "aggregator",
      "last": 33.6496,
      "chg_1d": 0.28,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": 0.18,
+     "chg_1m": 0.88,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "AUDUSD",
@@ -2100,8 +2122,9 @@
      "tier": "aggregator",
      "last": 0.6985,
      "chg_1d": -0.02,
-     "chg_1w": null,
-     "chg_1m": null
+     "chg_1w": 0.1,
+     "chg_1m": -1.9,
+     "note": "ECB reference rate via the Frankfurter API; 1w base 13 Oct, 1m base 18 Sep."
     }
    ]
   },
@@ -3563,7 +3586,7 @@
    "source_url": "https://www.climatechangenews.com",
    "topic": "Climate and policy",
    "access": "full",
-   "summary": "COP31 sponsor Ko\u00e7 Holding has slipped on climate targets while its oil refiner runs at full capacity.",
+   "summary": "COP31 sponsor Koç Holding has slipped on climate targets while its oil refiner runs at full capacity.",
    "overlap": []
   },
   {
@@ -3729,18 +3752,17 @@
   "Irrational Analysis: only one post (2026-10-19) in window.",
   "CTVC: only issue #318 (2026-10-19) is in the window and it is already in the reading log; #317 is dated 2026-10-13, outside the window.",
   "Several summaries (Container News, Fertilizer Daily, Hellenic Shipping News, Energy Monitor) rest on headline or listing text only; article bodies were not fetched.",
-  "^GSPC ^IXIC ^DJI ^RUT ^VIX ^TNX: no 10-20 close found (only 10-15 recap, stale)",
   "000660.KS: stockanalysis history page not returned by search",
   "8035.T: no history page; overview only shows 10-19 intraday 10350",
   "0981.HK: stockanalysis history stale at 2026-09-25",
-  "NG=F TTF=F HG=F GC=F SI=F NICKEL RICE: Trading Economics pages dated Oct 21, not Oct 20",
+  "NICKEL RICE: Trading Economics pages dated Oct 21, not Oct 20",
   "NDPR: SMM latest found Oct 19 comment, no value",
   "SU.PA SCFI DCI TANKER UAE: no dated source found",
-  "No 2026-10-20 close found for ^GSPC, ^IXIC, ^DJI, ^RUT, ^VIX, ^TNX; the summary cites the Oct 19 close.",
-  "Still without a price: ^GSPC, ^IXIC, ^DJI, ^RUT, ^VIX, ^TNX, 000660.KS, 8035.T, 0981.HK, NG=F, TTF=F, JKM, HG=F, NICKEL, NDPR, GC=F, SI=F, RICE, SCFI, DCI, TANKER, UAE, SU.PA (no dated 20 Oct source loaded).",
+  "Still without a price: 000660.KS, 8035.T, 0981.HK, JKM, NICKEL, NDPR, RICE, SCFI, DCI, TANKER, UAE, SU.PA (no dated 20 Oct source loaded).",
   "Indicators due but no release found: SEAJ semiconductor billings 2026-09, GIE EU gas storage for Sundays 2026-10-11 and 2026-10-18, ICSG copper balance 2026-08.",
   "Brent and WTI 1m change null (Investing.com table starts 21 Sep). All prices are aggregator tier.",
-  "Second source (Digrin monthly page) matched the last price for flagged LEU and EIDO but gave no weekly change, so the weekly drops and EIDO's 16 Oct gap are not independently confirmed. No audit-sample second sources were fetched (USDCNY, USDIDR, USDINR, USDJPY, USDKRW, USDMXN, USDNGN, USDPHP)."
+  "Second source (Digrin monthly page) matched the last price for flagged LEU and EIDO but gave no weekly change, so the weekly drops and EIDO's 16 Oct gap are not independently confirmed. No audit-sample second sources were fetched (USDCNY, USDIDR, USDINR, USDJPY, USDKRW, USDMXN, USDNGN, USDPHP).",
+  "Filled after the scheduled run: index, VIX, 10-year yield, copper, gold, silver, Henry Hub and TTF closes (Investing.com history tables, aggregator; their window starts 21 Sep, so 1m is null), Aramco's 20 Oct close (stockanalysis Tadawul page with a cache-busting parameter), and 1w/1m changes for the ECB currency pairs (Frankfurter API). TTF is the front-month continuous series in EUR/MWh."
  ],
  "indicators": [
   {
@@ -4794,13 +4816,88 @@
    "inputs": "BZ=F and CL=F",
    "note": "Gap between the two main crude benchmarks.",
    "as_of": "2026-10-20"
+  },
+  {
+   "id": "copper_aluminum",
+   "name": "Copper to aluminum price ratio",
+   "unit": "x",
+   "kind": "ratio",
+   "value": 4.82,
+   "prev": 4.8,
+   "change": 0.02,
+   "spark": [
+    {
+     "p": "2026-10-16",
+     "v": 4.786
+    },
+    {
+     "p": "2026-10-16",
+     "v": 4.786
+    },
+    {
+     "p": "2026-10-19",
+     "v": 4.798
+    },
+    {
+     "p": "2026-10-20",
+     "v": 4.821
+    }
+   ],
+   "touches": [
+    "HG=F",
+    "ALI=F",
+    "FCX",
+    "SCCO",
+    "AA",
+    "COPX"
+   ],
+   "inputs": "HG=F and ALI=F",
+   "note": "Copper in USD per tonne (pounds converted) divided by aluminum in USD per tonne.",
+   "as_of": "2026-10-20"
+  },
+  {
+   "id": "copper_gold",
+   "name": "Copper to gold ratio",
+   "unit": "x 1000",
+   "kind": "ratio",
+   "value": 1.59,
+   "prev": 1.58,
+   "change": 0.01,
+   "spark": [
+    {
+     "p": "2026-10-16",
+     "v": 1.568
+    },
+    {
+     "p": "2026-10-16",
+     "v": 1.568
+    },
+    {
+     "p": "2026-10-19",
+     "v": 1.583
+    },
+    {
+     "p": "2026-10-20",
+     "v": 1.594
+    }
+   ],
+   "touches": [
+    "HG=F",
+    "GC=F",
+    "FCX",
+    "SCCO",
+    "^TNX"
+   ],
+   "inputs": "HG=F and GC=F",
+   "note": "Copper USD per pound divided by gold USD per ounce, times 1000. A familiar growth-versus-safety gauge.",
+   "as_of": "2026-10-20"
   }
  ],
  "flags": [
   {
    "symbol": "EIDO",
    "tier": "look_into",
-   "reason": "Down 17.9% this week, 4.2 times its usual weekly swing (about \u00b14.3%); 18.2 points below the emerging Asia median.",
+   "reason": "Down 17.9% this week, 4.2 times its usual weekly swing (about ±4.3%); 18.2 points below the emerging Asia median.",
    "z_own": -4.16,
    "z_peer": -3.89,
    "verified": {
@@ -4811,7 +4908,7 @@
   {
    "symbol": "LEU",
    "tier": "keep_an_eye",
-   "reason": "Down 18.2% this week, 2.6 times its usual weekly swing (about \u00b16.9%); 12.3 points below the uranium and fuel-cycle names median.",
+   "reason": "Down 18.2% this week, 2.6 times its usual weekly swing (about ±6.9%); 12.3 points below the uranium and fuel-cycle names median.",
    "z_own": -2.63,
    "z_peer": -2.26,
    "verified": {
@@ -4830,7 +4927,7 @@
   "tiers": {
    "official": 1,
    "reported": 0,
-   "aggregator": 181
+   "aggregator": 192
   },
   "cross_checked": 2,
   "agreed": 2,
