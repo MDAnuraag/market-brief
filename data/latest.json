@@ -2,7 +2,7 @@
  "generated_at": "2026-10-21T12:32:05Z",
  "data_date": "2026-10-20",
  "edition": "weekday",
- "summary": "Oil stayed the main risk: Brent closed at 108.79 and WTI at 97.82 on Oct 20, both down on the day after a week of attacks on shipping near the Strait of Hormuz and an IEA move to speed emergency stock releases. On Oct 20 the S&P 500 closed at 7,712.76 (+0.29%), the Nasdaq Composite was flat at 26,424.82 and the Dow rose 1.0%, with the VIX at 17.3 and the 10-year yield at 5.12%; September US inflation at 3.7% keeps Fed hike odds for Oct 27-28 near a third. In Asia the chip selloff continued, with Samsung down 3.0% on the day and 8.8% on the week, MediaTek and ASM International down 9% and 13% on the week to Oct 19, while TSMC reported record quarterly profit. NOAA and WMO describe a strong El Nino, with Indonesia's ETF down about 18% on the week (unverified, see flags). Several commodity, freight and Hong Kong items could not be retrieved (see gaps).",
+ "summary": "Oil stayed the main risk: Brent closed at 108.79 and WTI at 97.82 on Oct 20, both down on the day after a week of attacks on shipping near the Strait of Hormuz and an IEA move to speed emergency stock releases. On Oct 20 the S&P 500 closed at 7,712.76 (+0.29%), the Nasdaq Composite was flat at 26,424.82 and the Dow rose 1.0%, with the VIX at 17.3 and the 10-year yield at 5.12%; September US inflation at 3.7% keeps Fed hike odds for Oct 27-28 near a third. In Asia the chip selloff continued, with Samsung down 3.0% on the day and 8.8% on the week, SK hynix down 4.2% and 15.3%, and MediaTek and ASM International down 8% and 10% on the week to Oct 20, while TSMC reported record quarterly profit. NOAA and WMO describe a strong El Nino, with Indonesia's ETF down about 18% on the week (unverified, see flags). Several commodity, freight and Hong Kong items could not be retrieved (see gaps).",
  "groups": [
   {
    "id": "macros",
@@ -266,61 +266,62 @@
     {
      "symbol": "000660.KS",
      "name": "SK Hynix",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "stockanalysis.com",
+     "last": 1223000,
+     "chg_1d": -4.23,
+     "chg_1w": -15.25,
+     "chg_1m": -34.14,
+     "src": "Korea Exchange",
      "tier": "aggregator",
-     "region": "East Asia"
+     "region": "East Asia",
+     "note": "KRW. Bases 19 Oct, 13 Oct, 18 Sep."
     },
     {
      "symbol": "8035.T",
      "name": "Tokyo Electron",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "stockanalysis.com",
+     "last": 10085,
+     "chg_1d": -2.56,
+     "chg_1w": -12.72,
+     "chg_1m": -5.06,
+     "src": "Tokyo Stock Exchange",
      "tier": "aggregator",
-     "region": "East Asia"
+     "region": "East Asia",
+     "note": "JPY. Bases 19 Oct, 13 Oct, 18 Sep."
     },
     {
      "symbol": "ASM.AS",
      "name": "ASM International",
-     "last": 760.2,
-     "chg_1d": 0.96,
-     "chg_1w": -13.26,
-     "chg_1m": -6.59,
+     "last": 739.8,
+     "chg_1d": -2.68,
+     "chg_1w": -9.91,
+     "chg_1m": -9.09,
      "src": "Euronext Amsterdam",
      "tier": "aggregator",
-     "as_of": "2026-10-19",
-     "note": "EUR. Source table ended 10-19; bases 10-16, 10-12, 09-18.",
+     "note": "EUR. Bases 19 Oct, 13 Oct, 18 Sep.",
      "region": "Europe"
     },
     {
      "symbol": "2454.TW",
      "name": "MediaTek",
-     "last": 4205,
-     "chg_1d": -1.06,
-     "chg_1w": -9.08,
-     "chg_1m": -10.72,
+     "last": 4150,
+     "chg_1d": -1.31,
+     "chg_1w": -8.29,
+     "chg_1m": -11.89,
      "src": "Taiwan Stock Exchange",
      "tier": "aggregator",
-     "as_of": "2026-10-19",
-     "note": "TWD. Source table ended 10-19; bases 10-16, 10-12, 09-18.",
+     "note": "TWD. Bases 19 Oct, 13 Oct, 18 Sep.",
      "region": "East Asia"
     },
     {
      "symbol": "0981.HK",
      "name": "SMIC",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "stockanalysis.com",
+     "last": 51.2,
+     "chg_1d": -2.29,
+     "chg_1w": -7.83,
+     "chg_1m": -21.41,
+     "src": "Hong Kong Exchange",
      "tier": "aggregator",
-     "region": "East Asia"
+     "region": "East Asia",
+     "note": "HKD. Hong Kong was closed 19 Oct (holiday), so 1d is against the 16 Oct close; 1w base 13 Oct, 1m base 18 Sep."
     },
     {
      "symbol": "MU",
@@ -3752,17 +3753,15 @@
   "Irrational Analysis: only one post (2026-10-19) in window.",
   "CTVC: only issue #318 (2026-10-19) is in the window and it is already in the reading log; #317 is dated 2026-10-13, outside the window.",
   "Several summaries (Container News, Fertilizer Daily, Hellenic Shipping News, Energy Monitor) rest on headline or listing text only; article bodies were not fetched.",
-  "000660.KS: stockanalysis history page not returned by search",
-  "8035.T: no history page; overview only shows 10-19 intraday 10350",
-  "0981.HK: stockanalysis history stale at 2026-09-25",
   "NICKEL RICE: Trading Economics pages dated Oct 21, not Oct 20",
   "NDPR: SMM latest found Oct 19 comment, no value",
   "SU.PA SCFI DCI TANKER UAE: no dated source found",
-  "Still without a price: 000660.KS, 8035.T, 0981.HK, JKM, NICKEL, NDPR, RICE, SCFI, DCI, TANKER, UAE, SU.PA (no dated 20 Oct source loaded).",
+  "Still without a price: JKM, NICKEL, NDPR, RICE, SCFI, DCI, TANKER, UAE, SU.PA (no dated 20 Oct source loaded).",
   "Indicators due but no release found: SEAJ semiconductor billings 2026-09, GIE EU gas storage for Sundays 2026-10-11 and 2026-10-18, ICSG copper balance 2026-08.",
   "Brent and WTI 1m change null (Investing.com table starts 21 Sep). All prices are aggregator tier.",
   "Second source (Digrin monthly page) matched the last price for flagged LEU and EIDO but gave no weekly change, so the weekly drops and EIDO's 16 Oct gap are not independently confirmed. No audit-sample second sources were fetched (USDCNY, USDIDR, USDINR, USDJPY, USDKRW, USDMXN, USDNGN, USDPHP).",
-  "Filled after the scheduled run: index, VIX, 10-year yield, copper, gold, silver, Henry Hub and TTF closes (Investing.com history tables, aggregator; their window starts 21 Sep, so 1m is null), Aramco's 20 Oct close (stockanalysis Tadawul page with a cache-busting parameter), and 1w/1m changes for the ECB currency pairs (Frankfurter API). TTF is the front-month continuous series in EUR/MWh."
+  "Filled after the scheduled run: index, VIX, 10-year yield, copper, gold, silver, Henry Hub and TTF closes (Investing.com history tables, aggregator; their window starts 21 Sep, so 1m is null), Aramco's 20 Oct close (stockanalysis Tadawul page with a cache-busting parameter), and 1w/1m changes for the ECB currency pairs (Frankfurter API). TTF is the front-month continuous series in EUR/MWh.",
+  "Semis filled after the scheduled run: SK hynix, Tokyo Electron and SMIC closes, and corrected ASM International and MediaTek (the committed values were 19 Oct closes). Source: stockanalysis.com history tables (aggregator) with the exchange codes krx, tyo, ams, tpe and hkg."
  ],
  "indicators": [
   {
@@ -4927,7 +4926,7 @@
   "tiers": {
    "official": 1,
    "reported": 0,
-   "aggregator": 192
+   "aggregator": 195
   },
   "cross_checked": 2,
   "agreed": 2,
