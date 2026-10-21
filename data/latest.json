@@ -2542,11 +2542,6 @@
      "symbol": "XOM",
      "strength": "loose",
      "reason": "Integrated producers track crude prices."
-    },
-    {
-     "symbol": "SHEL",
-     "strength": "loose",
-     "reason": "Integrated producers track crude prices."
     }
    ]
   },
@@ -2624,11 +2619,6 @@
      "symbol": "MU",
      "strength": "direct",
      "reason": "Micron fell 3.6% on the CXMT reports."
-    },
-    {
-     "symbol": "EWY",
-     "strength": "direct",
-     "reason": "Tracks Korean equities."
     }
    ]
   },
