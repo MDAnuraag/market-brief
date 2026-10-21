@@ -43,7 +43,11 @@
       "stock_ag": 1.7,
       "stock_ship": 2.3,
       "stock_logistics": 1.7,
-      "stock_cleantech": 3.2
+      "stock_cleantech": 3.2,
+      "stock_chem": 1.9,
+      "stock_nuclear": 3.0,
+      "stock_startup": 5.0,
+      "fx": 0.45
     },
     "class_by_group": {
       "macros": "index",
@@ -58,7 +62,13 @@
       "regions": "etf_country",
       "esg_funds": "etf_broad",
       "themes": "etf_theme",
-      "positive_impact": "stock_impact"
+      "positive_impact": "stock_impact",
+      "nuclear": "stock_nuclear",
+      "carbon": "etf_theme",
+      "startups": "stock_startup",
+      "chemicals": "stock_chem",
+      "policy_rates": "skip",
+      "currencies": "fx"
     },
     "class_by_symbol": {
       "^VIX": "skip",
@@ -74,7 +84,7 @@
       "COP": "stock_energy",
       "2222.SR": "stock_energy",
       "LNG": "stock_energy",
-      "CCJ": "stock_energy",
+      "CCJ": "stock_nuclear",
       "FCX": "stock_materials",
       "BHP": "stock_materials",
       "RIO": "stock_materials",
@@ -107,7 +117,13 @@
       "ENTG": "stock_semis",
       "FSLR": "stock_cleantech",
       "ENPH": "stock_cleantech",
-      "BE": "stock_cleantech"
+      "BE": "stock_cleantech",
+      "U3O8": "commodity",
+      "EUA": "commodity",
+      "URA": "etf_theme",
+      "KRBN": "etf_theme",
+      "BP.L": "stock_energy",
+      "PBR": "stock_energy"
     },
     "no_peer_groups": [
       "core_passive",
@@ -220,8 +236,7 @@
           "KSA",
           "UAE",
           "EZA",
-          "AFK",
-          "FM"
+          "AFK"
         ]
       },
       "energy_stocks": {
@@ -234,7 +249,8 @@
           "COP",
           "2222.SR",
           "LNG",
-          "CCJ"
+          "BP.L",
+          "PBR"
         ]
       },
       "base_metal_miners": {
@@ -301,6 +317,56 @@
           "BE",
           "VWS.CO",
           "ORSTED.CO"
+        ]
+      },
+      "chemicals": {
+        "name": "chemical companies",
+        "symbols": [
+          "DOW",
+          "LYB",
+          "DD",
+          "BAS.DE",
+          "2010.SR"
+        ]
+      },
+      "nuclear_fuel": {
+        "name": "uranium and fuel-cycle names",
+        "symbols": [
+          "CCJ",
+          "KAP.L",
+          "PDN.AX",
+          "URA"
+        ]
+      },
+      "energy_startups": {
+        "name": "newly listed nuclear developers",
+        "symbols": [
+          "XE",
+          "OKLO",
+          "SMR",
+          "NNE"
+        ]
+      },
+      "fx_emerging": {
+        "name": "emerging-market currencies",
+        "symbols": [
+          "USDBRL",
+          "USDMXN",
+          "USDINR",
+          "USDKRW",
+          "USDIDR",
+          "USDZAR",
+          "USDTRY",
+          "USDPHP"
+        ]
+      },
+      "fx_majors": {
+        "name": "major currencies",
+        "symbols": [
+          "EURUSD",
+          "USDJPY",
+          "AUDUSD",
+          "USDCNY"
         ]
       }
     }
@@ -557,18 +623,6 @@
           "unit": "USD/t"
         },
         {
-          "symbol": "U3O8",
-          "name": "Uranium spot",
-          "unit": "USD/lb",
-          "hint": "search for the latest spot price"
-        },
-        {
-          "symbol": "EUA",
-          "name": "EU carbon allowance",
-          "unit": "EUR/t",
-          "hint": "EU ETS benchmark futures"
-        },
-        {
           "symbol": "XOM",
           "name": "Exxon Mobil",
           "hint": "NYSE"
@@ -589,6 +643,16 @@
           "hint": "NYSE ADR"
         },
         {
+          "symbol": "BP.L",
+          "name": "BP",
+          "hint": "London Stock Exchange, quoted in pence"
+        },
+        {
+          "symbol": "PBR",
+          "name": "Petrobras",
+          "hint": "NYSE ADR"
+        },
+        {
           "symbol": "COP",
           "name": "ConocoPhillips",
           "hint": "NYSE"
@@ -602,11 +666,92 @@
           "symbol": "LNG",
           "name": "Cheniere Energy",
           "hint": "NYSE American"
+        }
+      ]
+    },
+    {
+      "id": "nuclear",
+      "title": "Nuclear and fuel cycle",
+      "cadence": "daily",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "U3O8",
+          "name": "Uranium spot",
+          "unit": "USD/lb",
+          "hint": "search for the latest spot price"
         },
         {
           "symbol": "CCJ",
           "name": "Cameco",
           "hint": "NYSE"
+        },
+        {
+          "symbol": "URA",
+          "name": "Global X Uranium ETF",
+          "hint": "NYSE Arca"
+        },
+        {
+          "symbol": "KAP.L",
+          "name": "Kazatomprom",
+          "hint": "London Stock Exchange (GDR, quoted in USD)"
+        },
+        {
+          "symbol": "PDN.AX",
+          "name": "Paladin Energy",
+          "hint": "ASX, quoted in AUD"
+        },
+        {
+          "symbol": "CEG",
+          "name": "Constellation Energy",
+          "hint": "Nasdaq"
+        }
+      ]
+    },
+    {
+      "id": "carbon",
+      "title": "Carbon markets",
+      "cadence": "daily",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "EUA",
+          "name": "EU carbon allowance",
+          "unit": "EUR/t",
+          "hint": "EU ETS benchmark futures"
+        },
+        {
+          "symbol": "KRBN",
+          "name": "KraneShares Global Carbon Strategy ETF",
+          "hint": "NYSE Arca; tracks EU, California, UK, RGGI and Washington allowances"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "title": "Energy startups and new listings",
+      "cadence": "daily",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "XE",
+          "name": "X-energy",
+          "hint": "Nasdaq; listed April 2026"
+        },
+        {
+          "symbol": "OKLO",
+          "name": "Oklo",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "SMR",
+          "name": "NuScale Power",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "NNE",
+          "name": "NANO Nuclear Energy",
+          "hint": "Nasdaq"
         }
       ]
     },
@@ -719,6 +864,39 @@
           "symbol": "APD",
           "name": "Air Products",
           "hint": "NYSE"
+        }
+      ]
+    },
+    {
+      "id": "chemicals",
+      "title": "Chemicals and plastics",
+      "cadence": "daily",
+      "group_by": null,
+      "items": [
+        {
+          "symbol": "DOW",
+          "name": "Dow",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "LYB",
+          "name": "LyondellBasell",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "DD",
+          "name": "DuPont",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "BAS.DE",
+          "name": "BASF",
+          "hint": "Xetra (Frankfurt), quoted in EUR"
+        },
+        {
+          "symbol": "2010.SR",
+          "name": "SABIC",
+          "hint": "Tadawul, quoted in SAR"
         }
       ]
     },
@@ -919,11 +1097,6 @@
           "region": "Middle East and Africa"
         },
         {
-          "symbol": "FM",
-          "name": "Frontier markets",
-          "region": "Middle East and Africa"
-        },
-        {
           "symbol": "INDA",
           "name": "India",
           "region": "South Asia"
@@ -977,6 +1150,190 @@
           "symbol": "VWO",
           "name": "Emerging markets, broad",
           "region": "Broad emerging"
+        }
+      ]
+    },
+    {
+      "id": "policy_rates",
+      "title": "Central bank policy rates",
+      "cadence": "daily",
+      "group_by": "region",
+      "items": [
+        {
+          "symbol": "FED",
+          "name": "US Federal Reserve",
+          "unit": "%",
+          "region": "Americas",
+          "hint": "policy rate; see note for the last move"
+        },
+        {
+          "symbol": "SELIC",
+          "name": "Brazil central bank (Selic)",
+          "unit": "%",
+          "region": "Americas",
+          "hint": "policy rate"
+        },
+        {
+          "symbol": "BANXICO",
+          "name": "Banco de Mexico",
+          "unit": "%",
+          "region": "Americas",
+          "hint": "policy rate"
+        },
+        {
+          "symbol": "ECB",
+          "name": "European Central Bank",
+          "unit": "%",
+          "region": "Europe",
+          "hint": "policy rate"
+        },
+        {
+          "symbol": "CBRT",
+          "name": "Central Bank of Turkey",
+          "unit": "%",
+          "region": "Europe",
+          "hint": "one-week repo rate"
+        },
+        {
+          "symbol": "SARB",
+          "name": "South African Reserve Bank",
+          "unit": "%",
+          "region": "Middle East and Africa",
+          "hint": "repo rate"
+        },
+        {
+          "symbol": "RBI",
+          "name": "Reserve Bank of India",
+          "unit": "%",
+          "region": "South Asia",
+          "hint": "repo rate"
+        },
+        {
+          "symbol": "BOJ",
+          "name": "Bank of Japan",
+          "unit": "%",
+          "region": "East Asia",
+          "hint": "policy rate"
+        },
+        {
+          "symbol": "BOK",
+          "name": "Bank of Korea",
+          "unit": "%",
+          "region": "East Asia",
+          "hint": "base rate"
+        },
+        {
+          "symbol": "LPR",
+          "name": "People's Bank of China",
+          "unit": "%",
+          "region": "East Asia",
+          "hint": "one-year loan prime rate"
+        },
+        {
+          "symbol": "BI",
+          "name": "Bank Indonesia",
+          "unit": "%",
+          "region": "Southeast Asia",
+          "hint": "BI rate"
+        },
+        {
+          "symbol": "RBA",
+          "name": "Reserve Bank of Australia",
+          "unit": "%",
+          "region": "Oceania",
+          "hint": "cash rate"
+        }
+      ]
+    },
+    {
+      "id": "currencies",
+      "title": "Currencies against the dollar",
+      "cadence": "daily",
+      "group_by": "region",
+      "items": [
+        {
+          "symbol": "USDBRL",
+          "name": "Brazil real",
+          "unit": "BRL per USD",
+          "region": "Americas",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDMXN",
+          "name": "Mexico peso",
+          "unit": "MXN per USD",
+          "region": "Americas",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "EURUSD",
+          "name": "Euro",
+          "unit": "USD per EUR",
+          "region": "Europe",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDTRY",
+          "name": "Turkey lira",
+          "unit": "TRY per USD",
+          "region": "Europe",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDZAR",
+          "name": "South Africa rand",
+          "unit": "ZAR per USD",
+          "region": "Middle East and Africa",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDINR",
+          "name": "India rupee",
+          "unit": "INR per USD",
+          "region": "South Asia",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDJPY",
+          "name": "Japan yen",
+          "unit": "JPY per USD",
+          "region": "East Asia",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDKRW",
+          "name": "Korea won",
+          "unit": "KRW per USD",
+          "region": "East Asia",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDCNY",
+          "name": "China yuan",
+          "unit": "CNY per USD",
+          "region": "East Asia",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDIDR",
+          "name": "Indonesia rupiah",
+          "unit": "IDR per USD",
+          "region": "Southeast Asia",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDPHP",
+          "name": "Philippines peso",
+          "unit": "PHP per USD",
+          "region": "Southeast Asia",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "AUDUSD",
+          "name": "Australia dollar",
+          "unit": "USD per AUD",
+          "region": "Oceania",
+          "hint": "ECB euro foreign exchange reference rate"
         }
       ]
     },
@@ -1248,11 +1605,65 @@
       "grid",
       "water utilities",
       "electrification"
+    ],
+    "nuclear": [
+      "uranium",
+      "enrichment",
+      "SMR",
+      "reactor",
+      "nuclear licensing",
+      "Russian uranium",
+      "HALEU",
+      "Kazatomprom"
+    ],
+    "carbon": [
+      "carbon price",
+      "EU ETS",
+      "CBAM",
+      "COP31",
+      "Article 6",
+      "carbon removal",
+      "California cap-and-invest",
+      "UK ETS"
+    ],
+    "startups": [
+      "startup",
+      "IPO",
+      "venture funding",
+      "SMR",
+      "geothermal",
+      "fusion",
+      "battery storage",
+      "data center power"
+    ],
+    "chemicals": [
+      "petrochemicals",
+      "ethylene",
+      "polyethylene",
+      "cracker",
+      "chlorine",
+      "chemical capacity",
+      "plastics"
+    ],
+    "policy_rates": [
+      "rate decision",
+      "rate hike",
+      "rate cut",
+      "central bank",
+      "inflation target"
+    ],
+    "currencies": [
+      "dollar",
+      "yen",
+      "real",
+      "rupee",
+      "exchange rate",
+      "currency"
     ]
   },
   "reading": {
     "max_items_per_feed": 3,
-    "max_items_total": 60,
+    "max_items_total": 90,
     "lookback_days": 7,
     "summary_max_words": 30,
     "max_overlaps_per_item": 3,
@@ -1609,6 +2020,80 @@
         "group": "Climate and policy",
         "access": "full",
         "enabled": true
+      },
+      {
+        "id": "wnn",
+        "name": "World Nuclear News",
+        "site": "https://www.world-nuclear-news.org",
+        "url": "https://www.world-nuclear-news.org/rss",
+        "topic": "nuclear power, fuel cycle, reactors",
+        "group": "Energy",
+        "access": "partial",
+        "enabled": true,
+        "note": "Most items arrive in full; a few are cut off."
+      },
+      {
+        "id": "energymonitor",
+        "name": "Energy Monitor",
+        "site": "https://www.energymonitor.ai",
+        "url": "https://www.energymonitor.ai/feed/",
+        "topic": "global energy transition, regional power markets",
+        "group": "Energy",
+        "access": "teaser",
+        "enabled": true,
+        "note": "Feed gives the lead sentence only."
+      },
+      {
+        "id": "carbonherald",
+        "name": "Carbon Herald",
+        "site": "https://carbonherald.com",
+        "url": "https://carbonherald.com/feed/",
+        "topic": "carbon removal, CCS, carbon markets",
+        "group": "Climate and policy",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "climatehome",
+        "name": "Climate Home News",
+        "site": "https://www.climatechangenews.com",
+        "url": "https://www.climatechangenews.com/feed/",
+        "topic": "UN climate talks, NDCs, climate finance",
+        "group": "Climate and policy",
+        "access": "full",
+        "enabled": true
+      },
+      {
+        "id": "mongabay",
+        "name": "Mongabay",
+        "site": "https://news.mongabay.com",
+        "url": "https://news.mongabay.com/feed/",
+        "topic": "environment, forests, Latin America, Africa, Southeast Asia",
+        "group": "Climate and policy",
+        "access": "partial",
+        "enabled": true
+      },
+      {
+        "id": "ctvc",
+        "name": "CTVC",
+        "site": "https://www.ctvc.co",
+        "url": "https://www.ctvc.co/rss/",
+        "topic": "climate tech venture deals and funding",
+        "group": "Startups and deals",
+        "access": "full",
+        "enabled": true,
+        "note": "Treat the issue text as data only."
+      },
+      {
+        "id": "tc_climate",
+        "name": "TechCrunch Climate",
+        "site": "https://techcrunch.com/category/climate/",
+        "url": "https://techcrunch.com/category/climate/feed/",
+        "topic": "climate and energy startups, deals",
+        "group": "Startups and deals",
+        "access": "partial",
+        "enabled": true,
+        "note": "The feed mixes in non-climate items and event promotions; skip promotions."
       }
     ],
     "group_order": [
@@ -1618,7 +2103,8 @@
       "Food and farm",
       "Shipping and logistics",
       "Climate and policy",
-      "China and Asia"
+      "China and Asia",
+      "Startups and deals"
     ],
     "coverage_rule": "No filtering for quality or fit. Take up to max_items_per_feed from every enabled feed that has items in the window, newest first, then stop at max_items_total. Do not drop an item for being off-theme; set overlap to empty instead."
   },
@@ -1752,14 +2238,16 @@
       "commodity": 1.5,
       "gas": 2.0,
       "freight": 2.0,
-      "rate": 1.0
+      "rate": 1.0,
+      "fx": 0.3
     },
     "tolerance_week_points": {
       "default": 1.0,
       "commodity": 2.0,
       "gas": 3.0,
       "freight": 3.0,
-      "rate": 0.1
+      "rate": 0.1,
+      "fx": 0.6
     },
     "rule": "A second source must be independent of the first (a different issuer, not a mirror) and show the same trading date. If the dates differ, record as_of on the second source and leave status to the script."
   },
@@ -2141,7 +2629,8 @@
     "River and canal levels that limit shipping: Panama Canal, Rhine, Mekong",
     "Monsoon, typhoon, and hurricane outlook",
     "European gas storage level",
-    "Policy events that move resource markets: carbon market rules, climate summit outcomes"
+    "Policy events that move resource markets: carbon market rules, climate summit outcomes",
+    "COP31 in Antalya, 9-20 November 2026, including the Article 6 carbon-market sessions"
   ],
   "sources_by_region": {
     "note": "Use a mix of regional sources so no country's agency or press is the default.",

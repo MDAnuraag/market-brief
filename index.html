@@ -661,7 +661,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; color: var(--white
       g.items.forEach(function (it) {
         if (!it.region) return;
         var k = normRegion(it.region);
-        if (g.group_by === "region" && num(it.chg_1d)) (moves[k] = moves[k] || []).push(it.chg_1d);
+        if (g.id === "regions" && num(it.chg_1d)) (moves[k] = moves[k] || []).push(it.chg_1d);
         if ((flagBySym[it.symbol] || groupFlagBySym[it.symbol]) && !seenSym[it.symbol]) { seenSym[it.symbol] = 1; flagged[k] = (flagged[k] || 0) + 1; }
       });
     });
@@ -943,9 +943,10 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 44px; color: var(--white
     var al = renderAlerts(d.flags);
     if (al) { boards.appendChild(al); order.push(["alerts", "Alerts"]); }
     if (d.flag_basis && d.flag_basis.note) boards.appendChild(el("p", "basis", d.flag_basis.note + (d.flag_basis.below_the_bar ? " " + d.flag_basis.below_the_bar + " other unusual moves fell under the bar." : "")));
+    var routed = false;
     (d.groups || []).forEach(function (g) {
       var sec = renderBoard(g, d);
-      if (g.group_by === "region") sec.insertBefore(renderRouteLine(d), sec.firstChild);
+      if (g.group_by === "region" && !routed) { routed = true; sec.insertBefore(renderRouteLine(d), sec.firstChild); }
       boards.appendChild(sec); order.push([g.id, g.title || g.id]);
     });
     var ind = d.indicators && renderIndicators(d.indicators);
