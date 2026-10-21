@@ -1,0 +1,15 @@
+period,value,yoy_reported,mom_reported,ytd_reported,status,released,source,source_url,note
+2025-08,75.13,,,,final,2025-09-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 81.00 USD/lb.
+2025-09,82.63,,,,final,2025-10-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 83.00 USD/lb.
+2025-10,80.0,,,,final,2025-11-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 85.00 USD/lb.
+2025-11,75.8,,,,final,2025-12-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 86.00 USD/lb.
+2025-12,81.55,,,,final,2026-01-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 86.50 USD/lb.
+2026-01,94.28,,,,final,2026-02-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 89.00 USD/lb.
+2026-02,86.95,,,,final,2026-03-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 90.00 USD/lb.
+2026-03,84.25,,,,final,2026-04-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 91.50 USD/lb.
+2026-04,86.35,,,,final,2026-05-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 91.50 USD/lb.
+2026-05,84.18,,,,final,2026-06-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 94.00 USD/lb.
+2026-06,85.0,,,,final,2026-07-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 95.50 USD/lb.
+2026-07,86.38,,,,final,2026-08-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 95.50 USD/lb.
+2026-08,89.68,,,,final,2026-09-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 96.50 USD/lb.
+2026-09,89.63,,,,final,2026-10-01,Cameco,https://www.cameco.com/invest/markets/uranium-price,Month-end spot; long-term price 96.50 USD/lb.

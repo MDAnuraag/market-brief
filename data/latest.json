@@ -587,6 +587,17 @@
      "tier": "aggregator"
     },
     {
+     "symbol": "CVX",
+     "name": "Chevron",
+     "last": 224.37,
+     "chg_1d": -0.28,
+     "chg_1w": 4.36,
+     "chg_1m": 7.09,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
      "symbol": "EQNR",
      "name": "Equinor",
      "last": 46.15,
@@ -632,6 +643,28 @@
      "tier": "aggregator"
     },
     {
+     "symbol": "OXY",
+     "name": "Occidental Petroleum",
+     "last": 62.72,
+     "chg_1d": 0.55,
+     "chg_1w": 2.6,
+     "chg_1m": 6.59,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "SLB",
+     "name": "SLB (Schlumberger)",
+     "last": 49.09,
+     "chg_1d": -0.83,
+     "chg_1w": 0.66,
+     "chg_1m": -3.97,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
      "symbol": "2222.SR",
      "name": "Saudi Aramco",
      "last": 25.8,
@@ -642,6 +675,18 @@
      "tier": "aggregator",
      "as_of": "2026-10-19",
      "note": "SAR. Investing.com Italy page shows close 15 Oct; Monday close not found. SAR. Tadawul trades Sunday to Thursday; 1-month base is the 17 Sep close."
+    },
+    {
+     "symbol": "RELIANCE.NS",
+     "name": "Reliance Industries",
+     "last": 1202.0,
+     "chg_1d": -0.76,
+     "chg_1w": 3.72,
+     "chg_1m": -1.99,
+     "as_of": "2026-10-19",
+     "note": "INR.",
+     "src": "National Stock Exchange of India",
+     "tier": "aggregator"
     },
     {
      "symbol": "LNG",
@@ -697,6 +742,29 @@
      "tier": "aggregator"
     },
     {
+     "symbol": "NXE",
+     "name": "NexGen Energy",
+     "last": 11.99,
+     "chg_1d": 1.44,
+     "chg_1w": -4.16,
+     "chg_1m": -8.33,
+     "as_of": "2026-10-19",
+     "note": "CAD (Toronto line). Canada was closed on 12 Oct, so the 1-week base is the 9 Oct close.",
+     "src": "Toronto Stock Exchange",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "UEC",
+     "name": "Uranium Energy",
+     "last": 7.89,
+     "chg_1d": -0.25,
+     "chg_1w": -10.65,
+     "chg_1m": -19.57,
+     "as_of": "2026-10-19",
+     "src": "NYSE American",
+     "tier": "aggregator"
+    },
+    {
      "symbol": "KAP.L",
      "name": "Kazatomprom",
      "last": 61.6,
@@ -721,6 +789,28 @@
      "tier": "aggregator"
     },
     {
+     "symbol": "LEU",
+     "name": "Centrus Energy",
+     "last": 110.12,
+     "chg_1d": -4.19,
+     "chg_1w": -18.62,
+     "chg_1m": -24.18,
+     "as_of": "2026-10-19",
+     "src": "NYSE American",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "BWXT",
+     "name": "BWX Technologies",
+     "last": 135.83,
+     "chg_1d": -0.86,
+     "chg_1w": -2.92,
+     "chg_1m": -7.92,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
      "symbol": "CEG",
      "name": "Constellation Energy",
      "last": 263.19,
@@ -729,6 +819,17 @@
      "chg_1m": 3.33,
      "as_of": "2026-10-19",
      "src": "Nasdaq",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "VST",
+     "name": "Vistra",
+     "last": 149.7,
+     "chg_1d": -1.53,
+     "chg_1w": -5.33,
+     "chg_1m": 6.42,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
      "tier": "aggregator"
     }
    ]
@@ -959,6 +1060,17 @@
      "chg_1d": -0.91,
      "chg_1w": -5.09,
      "chg_1m": -8.08,
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "VALE",
+     "name": "Vale",
+     "last": 13.11,
+     "chg_1d": 0.38,
+     "chg_1w": -3.03,
+     "chg_1m": -7.74,
+     "as_of": "2026-10-19",
      "src": "NYSE",
      "tier": "aggregator"
     },
@@ -1852,6 +1964,32 @@
      "tier": "aggregator"
     },
     {
+     "symbol": "BSP",
+     "name": "Bangko Sentral ng Pilipinas",
+     "unit": "%",
+     "region": "Southeast Asia",
+     "last": 5.0,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Raised from 4.75 (Aug 2026). Next meeting 22 Oct.",
+     "src": "Bangko Sentral ng Pilipinas",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "BOT",
+     "name": "Bank of Thailand",
+     "unit": "%",
+     "region": "Southeast Asia",
+     "last": 1.0,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Unchanged at 1.00, unanimous (26 Aug 2026). Next meeting 28 Oct.",
+     "src": "Bank of Thailand",
+     "tier": "official"
+    },
+    {
      "symbol": "RBA",
      "name": "Reserve Bank of Australia",
      "unit": "%",
@@ -1883,6 +2021,20 @@
      "as_of": "2026-10-19",
      "src": "European Central Bank",
      "tier": "aggregator"
+    },
+    {
+     "symbol": "USDCLP",
+     "name": "Chile peso",
+     "unit": "CLP per USD",
+     "region": "Americas",
+     "last": 975.0,
+     "chg_1d": -0.62,
+     "chg_1w": -0.76,
+     "chg_1m": 2.83,
+     "as_of": "2026-10-20",
+     "src": "Trading Economics",
+     "tier": "aggregator",
+     "note": "Dated 20 Oct; changes as the page states them."
     },
     {
      "symbol": "USDMXN",
@@ -1936,6 +2088,34 @@
      "src": "European Central Bank",
      "tier": "aggregator",
      "note": "The ECB series shows the same rate on 16 and 19 Oct, so the 1-day change is 0.00."
+    },
+    {
+     "symbol": "USDNGN",
+     "name": "Nigeria naira",
+     "unit": "NGN per USD",
+     "region": "Middle East and Africa",
+     "last": 1331.06,
+     "chg_1d": 0.04,
+     "chg_1w": 0.05,
+     "chg_1m": 0.02,
+     "as_of": "2026-10-20",
+     "src": "Trading Economics",
+     "tier": "aggregator",
+     "note": "Dated 20 Oct; changes as the page states them."
+    },
+    {
+     "symbol": "USDSAR",
+     "name": "Saudi riyal",
+     "unit": "SAR per USD",
+     "region": "Middle East and Africa",
+     "last": 3.751,
+     "chg_1d": -0.11,
+     "chg_1w": -0.15,
+     "chg_1m": -0.13,
+     "as_of": "2026-10-20",
+     "src": "Trading Economics",
+     "tier": "aggregator",
+     "note": "Dated 20 Oct; changes as the page states them. Pegged near 3.75 by the Saudi central bank."
     },
     {
      "symbol": "USDINR",
@@ -2011,6 +2191,19 @@
      "chg_1d": 0.05,
      "chg_1w": 0.38,
      "chg_1m": 0.31,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDTHB",
+     "name": "Thailand baht",
+     "unit": "THB per USD",
+     "region": "Southeast Asia",
+     "last": 33.555,
+     "chg_1d": 0.42,
+     "chg_1w": -0.18,
+     "chg_1m": 0.6,
      "as_of": "2026-10-19",
      "src": "European Central Bank",
      "tier": "aggregator"
@@ -3628,6 +3821,50 @@
    "access": "partial",
    "summary": "The startup plans a factory making batteries that pair with solar for round-the-clock power at off-grid data centers.",
    "overlap": []
+  },
+  {
+   "source": "Utility Dive",
+   "title": "What Google's virtual power plant in PJM says about the race for electricity",
+   "url": "https://www.utilitydive.com/news/what-googles-virtual-power-plant-in-pjm-says-about-the-race-for-electricit/833290/",
+   "published": "2026-10-19",
+   "source_url": "https://www.utilitydive.com",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "Voltus's chief executive compares new 'bring your own new capacity' contracts with the power purchase agreements that drove utility-scale solar and wind.",
+   "overlap": []
+  },
+  {
+   "source": "Utility Dive",
+   "title": "Schneider Electric sees record-high Q3 revenue on global data center boom",
+   "url": "https://www.utilitydive.com/news/schneider-electric-data-center-earnings/833358/",
+   "published": "2026-10-19",
+   "source_url": "https://www.utilitydive.com",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "Schneider reports record third-quarter revenue; North America is the largest source for energy management, while China and East Asia grew faster.",
+   "overlap": []
+  },
+  {
+   "source": "Utility Dive",
+   "title": "AEP signs 960-MW Indiana nuclear pact with Amazon, X-energy",
+   "url": "https://www.utilitydive.com/news/aep-signs-advanced-960-mw-nuclear-amazon-x-energy/833341/",
+   "published": "2026-10-19",
+   "source_url": "https://www.utilitydive.com",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "AEP signed a 960-MW advanced nuclear agreement in Indiana with Amazon and X-energy, with Amazon buying power under a long-term contract.",
+   "overlap": [
+    {
+     "symbol": "SMR",
+     "strength": "loose",
+     "reason": "Small modular reactor deployment deal; NuScale is another SMR developer."
+    },
+    {
+     "symbol": "OKLO",
+     "strength": "loose",
+     "reason": "Another advanced-reactor developer tied to data-center power demand."
+    }
+   ]
   }
  ],
  "climate": [
@@ -3724,14 +3961,17 @@
   "headlines: only 2 added, each with fewer than 2-4 independent coverage links (Trump Russia waiver has 1 link, Reuters via Investing.com); searches returned mostly stale results; BoJ Oct meeting date and outcome not confirmed (Reuters sources via FXStreet expect hold)",
   "next_earnings not re-checked this run.",
   "Second sources: EIDO (Yahoo) and AAPL (Google Finance) agree. 000660.KS: Google Finance gives the 16 Oct close (1,272,000 won, +0.79%), consistent with our 19 Oct value but a different date, so not counted as a match. COBALT: no second source found. Audit sample still unchecked: 005930.KS, 0981.HK, 1919.HK, 2222.SR, 2454.TW, 8035.T, AA (Google Finance pages were cached at 24-25 Sep, so dates did not match).",
-  "New groups (nuclear, carbon, startups, chemicals, policy rates, currencies) are a first pass; stock and ETF closes are from stockanalysis.com history tables (aggregator), 1-week base 12 Oct and 1-month base 18 Sep.",
   "Currencies: ECB euro foreign exchange reference rates via the Frankfurter API (fixings around 14:15 CET, not a closing price); EURUSD and AUDUSD are inverted from the ECB's per-euro and per-AUD-per-USD quotes. ZAR repeats the same fixing on 16 and 19 Oct.",
   "Policy rates: Trading Economics country list (aggregator) quoting each central bank; changes are left null and each note gives the previous level and month. Central-bank pages were not read; Philippines and Thailand are not in that list.",
-  "Not in first pass: CVX, SLB, OXY, VALE, Reliance, NXE, UEC, LEU, BWXT, VST, THB, CLP, NGN, SAR (price pages untested or rate-limited).",
   "Carbon: UKA, California CCA and RGGI allowance prices have no free dated page; KRBN is shown as a proxy for compliance-market carbon.",
   "New reading feeds (World Nuclear News, Energy Monitor, Carbon Herald, Climate Home, Mongabay, CTVC, TechCrunch Climate) are on the list; Heatmap, NucNet and ICIS feeds did not load.",
   "Second sources: Google Finance pages for XE (cached 25 Sep) and XOM (16 Oct) did not match the item date, so the audit-sample items XE, XOM, VTI, VWO, VWS.CO, VXUS, XYL and YAR.OL stay single-source this run.",
-  "Reading feeds: Porsche Macan review in TechCrunch Climate skipped as non-climate; CTVC #317 (13 Oct) not linked from the feed text read, so only #318 is listed. The CTVC feed text contained instruction-like content, which was ignored."
+  "Reading feeds: Porsche Macan review in TechCrunch Climate skipped as non-climate; CTVC #317 (13 Oct) not linked from the feed text read, so only #318 is listed. The CTVC feed text contained instruction-like content, which was ignored.",
+  "Restored items: stock closes are from stockanalysis.com history tables (aggregator), 1-week base 12 Oct and 1-month base 18 Sep. NXE is the Toronto line in CAD because the NYSE page was rate-limited (HTTP 429) and not retried. Reliance has no 20 Oct close (NSE holiday), so 19 Oct is used.",
+  "USDCLP, USDNGN, USDSAR: Trading Economics, dated 20 Oct (not 19 Oct); the changes are the page's own, not computed here. The ECB set has no CLP, NGN or SAR. USDTHB is from the ECB set.",
+  "BSP rate is from Trading Economics quoting the Monetary Board; the BSP page was not read. BOT rate was read on the Bank of Thailand's own decision page.",
+  "Still not available: UK, California and RGGI carbon allowance prices (no free dated page); Heatmap and NucNet feeds (do not load); a chemicals trade feed (Chemistry World page carries no feed items).",
+  "Second sources: LEU (flagged) had no dated second source (Google Finance page not found; search results undated), so it stays single-source. Audit-sample items not cross-checked this run."
  ],
  "indicators": [
   {
@@ -4589,6 +4829,161 @@
      "v": 32.0
     }
    ]
+  },
+  {
+   "id": "nrc_reactors_off",
+   "name": "US reactors at 0% power (NRC daily report)",
+   "group": "Nuclear and power",
+   "unit": "units at 0% of 95 listed",
+   "freq": "weekly",
+   "smoothing": "none",
+   "source": "US Nuclear Regulatory Commission",
+   "tier": "official",
+   "site": "https://www.nrc.gov/reading-rm/doc-collections/event-status/reactor-status/index.html",
+   "period": "2026-10-16",
+   "value": 16.0,
+   "row_status": "final",
+   "released": "2026-10-16",
+   "source_name": "US Nuclear Regulatory Commission",
+   "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/reactor-status/2026/20261016ps.html",
+   "yoy": null,
+   "yoy_source": null,
+   "yoy_prev": null,
+   "yoy_change": null,
+   "mom": 14.3,
+   "mom_source": "computed",
+   "z": null,
+   "status": "building history (3 readings on file)",
+   "history_n": 3,
+   "revision": null,
+   "checks": [],
+   "gaps": [],
+   "range5": null,
+   "next_expected": "2026-10-23",
+   "late": false,
+   "touches": [
+    "CCJ",
+    "CEG",
+    "URA",
+    "UEC",
+    "VST",
+    "LEU"
+   ],
+   "note": "Count of units shown at 0% on the Friday daily report at nrc.gov (URL pattern .../reactor-status/2026/YYYYMMDDps.html). Autumn refuelling pushes the count up. Counted from the page text, so check the count against the page.",
+   "spark": [
+    {
+     "p": "2026-10-02",
+     "v": 11.0
+    },
+    {
+     "p": "2026-10-09",
+     "v": 14.0
+    },
+    {
+     "p": "2026-10-16",
+     "v": 16.0
+    }
+   ]
+  },
+  {
+   "id": "cameco_uranium_spot",
+   "name": "Uranium spot price, month-end (Cameco)",
+   "group": "Nuclear and power",
+   "unit": "USD/lb",
+   "freq": "monthly",
+   "smoothing": "none",
+   "source": "Cameco (month-end UxC/TradeTech prices)",
+   "tier": "reported",
+   "site": "https://www.cameco.com/invest/markets/uranium-price",
+   "period": "2026-09",
+   "value": 89.63,
+   "row_status": "final",
+   "released": "2026-10-01",
+   "source_name": "Cameco",
+   "source_url": "https://www.cameco.com/invest/markets/uranium-price",
+   "yoy": 8.5,
+   "yoy_source": "computed",
+   "yoy_prev": 19.4,
+   "yoy_change": -10.9,
+   "mom": -0.1,
+   "mom_source": "computed",
+   "z": null,
+   "status": "building history (2 of 12 year-on-year readings)",
+   "history_n": 14,
+   "revision": null,
+   "checks": [],
+   "gaps": [],
+   "range5": null,
+   "next_expected": "2026-11-01",
+   "late": false,
+   "touches": [
+    "U3O8",
+    "CCJ",
+    "URA",
+    "KAP.L",
+    "PDN.AX",
+    "NXE",
+    "UEC"
+   ],
+   "note": "Cameco's page lists the month-end spot and long-term price; the long-term price is kept in the note.",
+   "spark": [
+    {
+     "p": "2025-08",
+     "v": 75.13
+    },
+    {
+     "p": "2025-09",
+     "v": 82.63
+    },
+    {
+     "p": "2025-10",
+     "v": 80.0
+    },
+    {
+     "p": "2025-11",
+     "v": 75.8
+    },
+    {
+     "p": "2025-12",
+     "v": 81.55
+    },
+    {
+     "p": "2026-01",
+     "v": 94.28
+    },
+    {
+     "p": "2026-02",
+     "v": 86.95
+    },
+    {
+     "p": "2026-03",
+     "v": 84.25
+    },
+    {
+     "p": "2026-04",
+     "v": 86.35
+    },
+    {
+     "p": "2026-05",
+     "v": 84.18
+    },
+    {
+     "p": "2026-06",
+     "v": 85.0
+    },
+    {
+     "p": "2026-07",
+     "v": 86.38
+    },
+    {
+     "p": "2026-08",
+     "v": 89.68
+    },
+    {
+     "p": "2026-09",
+     "v": 89.63
+    }
+   ]
   }
  ],
  "spreads": [
@@ -4757,6 +5152,17 @@
     "status": "single",
     "text": "second source dated differently; not a match"
    }
+  },
+  {
+   "symbol": "LEU",
+   "tier": "keep_an_eye",
+   "reason": "Down 18.6% this week, 2.8 times its usual weekly swing (about ±6.7%); 12.2 points below the uranium and fuel-cycle names median.",
+   "z_own": -2.78,
+   "z_peer": -2.43,
+   "verified": {
+    "status": "single",
+    "text": "one source so far"
+   }
   }
  ],
  "flag_basis": {
@@ -4767,16 +5173,16 @@
  },
  "quality": {
   "tiers": {
-   "official": 1,
+   "official": 2,
    "reported": 11,
-   "aggregator": 175
+   "aggregator": 190
   },
   "cross_checked": 3,
   "agreed": 2,
   "differed": 0,
   "flags_confirmed": 1,
-  "flags_total": 3,
-  "planned_flagged": 3,
+  "flags_total": 4,
+  "planned_flagged": 4,
   "planned_sample": 8,
   "untiered": [],
   "differences": []
