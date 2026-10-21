@@ -46,6 +46,13 @@ Tested 2026-10-20. The shell has no network beyond package registries, so everyt
 - Cameco `https://www.cameco.com/invest/markets/uranium-price` lists month-end spot and long-term uranium prices; the series stores spot and keeps the long-term price in the note.
 - NexGen's NYSE history page was rate-limited; the Toronto line (`/quote/tsx/NXE/history/`, CAD) loaded. India (`/quote/nse/RELIANCE/history/`) loads; check for NSE holidays before calling a close missing.
 
+**Investing.com history tables (found 2026-10-21)**
+- These load through WebFetch and give dated daily closes for futures, indices and yields: `investing.com/commodities/<name>-historical-data` (natural-gas, brent-oil, crude-oil, copper, gold, silver, dutch-ttf-gas-c1-futures for the TTF front-month in EUR), `/indices/<name>-historical-data` (us-spx-500, nasdaq-composite, us-30, smallcap-2000, volatility-s-p-500) and `/rates-bonds/u.s.-10-year-bond-yield-historical-data`. Ask for rows back to the 1w base date.
+- The table window starts about one month before today, so the 1m base can be missing (a 20 Oct run starts at 21 Sep). Leave `chg_1m` null and say so in `note`; never use a different date as the base.
+- Name the real issuer in `src` (CME Group, S&P Dow Jones Indices, Cboe and so on), tier `aggregator`, and take the 1d, 1w and last from the same table so the series is consistent.
+- The ECB's own page `ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-<cur>.en.html` loads with a dated table; it supports tier `official` for currencies. The Frankfurter mirror stays `aggregator`. EUR per USD comes from `?base=USD&symbols=EUR`.
+- Tadawul: `stockanalysis.com/quote/tadawul/2222/history/?fresh=<unique>` returned current rows after an earlier copy was stale. Tadawul does not trade on Fridays or Saturdays, so the 1m base can be the Thursday before.
+
 ## Source tiers and second sources
 Every priced item gets `src` (the issuing body, e.g. "CME Group", "Tokyo Stock Exchange") and `tier`: `official` (the issuer's own page), `reported` (a news report quoting the release), or `aggregator` (a compiled quote site). Use the lowest tier honestly; do not label an aggregator page `official`.
 1. After `compute_flags.py --write`, run `python3 scripts/check_quality.py --plan`. It lists flagged items and a rotating audit sample.
