@@ -554,30 +554,6 @@
      "tier": "aggregator"
     },
     {
-     "symbol": "U3O8",
-     "name": "Uranium spot",
-     "unit": "USD/lb",
-     "last": 90.15,
-     "chg_1d": 0.06,
-     "chg_1w": null,
-     "chg_1m": 0.5,
-     "src": "Trading Economics (uranium spot benchmark)",
-     "tier": "aggregator",
-     "as_of": "2026-10-19",
-     "note": "Month change as stated by the source."
-    },
-    {
-     "symbol": "EUA",
-     "name": "EU carbon allowance",
-     "unit": "EUR/t",
-     "last": 85.4,
-     "chg_1d": -0.01,
-     "chg_1w": -3.33,
-     "chg_1m": -1.37,
-     "src": "ICE Endex",
-     "tier": "aggregator"
-    },
-    {
      "symbol": "XOM",
      "name": "Exxon Mobil",
      "last": 178.28,
@@ -621,6 +597,29 @@
      "tier": "aggregator"
     },
     {
+     "symbol": "BP.L",
+     "name": "BP",
+     "last": 616.4,
+     "chg_1d": 0.37,
+     "chg_1w": 4.83,
+     "chg_1m": 10.33,
+     "as_of": "2026-10-19",
+     "note": "Pence (GBX).",
+     "src": "London Stock Exchange",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "PBR",
+     "name": "Petrobras",
+     "last": 25.56,
+     "chg_1d": -1.69,
+     "chg_1w": 0.55,
+     "chg_1m": 22.88,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
      "symbol": "COP",
      "name": "ConocoPhillips",
      "last": 145.24,
@@ -655,6 +654,26 @@
      "note": "Latest close found is 16 Oct; changes measured to that date (1w vs 9 Oct).",
      "src": "NYSE American",
      "tier": "aggregator"
+    }
+   ]
+  },
+  {
+   "id": "nuclear",
+   "title": "Nuclear and fuel cycle",
+   "group_by": null,
+   "items": [
+    {
+     "symbol": "U3O8",
+     "name": "Uranium spot",
+     "unit": "USD/lb",
+     "last": 90.15,
+     "chg_1d": 0.06,
+     "chg_1w": null,
+     "chg_1m": 0.5,
+     "src": "Trading Economics (uranium spot benchmark)",
+     "tier": "aggregator",
+     "as_of": "2026-10-19",
+     "note": "Month change as stated by the source."
     },
     {
      "symbol": "CCJ",
@@ -664,6 +683,133 @@
      "chg_1w": -6.3,
      "chg_1m": -11.92,
      "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "URA",
+     "name": "Global X Uranium ETF",
+     "last": 35.27,
+     "chg_1d": -0.45,
+     "chg_1w": -6.5,
+     "chg_1m": -15.32,
+     "as_of": "2026-10-19",
+     "src": "NYSE Arca",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "KAP.L",
+     "name": "Kazatomprom",
+     "last": 61.6,
+     "chg_1d": -4.35,
+     "chg_1w": -2.69,
+     "chg_1m": -4.79,
+     "as_of": "2026-10-19",
+     "note": "USD (GDR line).",
+     "src": "London Stock Exchange",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "PDN.AX",
+     "name": "Paladin Energy",
+     "last": 7.29,
+     "chg_1d": -0.41,
+     "chg_1w": -13.63,
+     "chg_1m": -25.84,
+     "as_of": "2026-10-19",
+     "note": "AUD.",
+     "src": "Australian Securities Exchange",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "CEG",
+     "name": "Constellation Energy",
+     "last": 263.19,
+     "chg_1d": -3.01,
+     "chg_1w": -10.45,
+     "chg_1m": 3.33,
+     "as_of": "2026-10-19",
+     "src": "Nasdaq",
+     "tier": "aggregator"
+    }
+   ]
+  },
+  {
+   "id": "carbon",
+   "title": "Carbon markets",
+   "group_by": null,
+   "items": [
+    {
+     "symbol": "EUA",
+     "name": "EU carbon allowance",
+     "unit": "EUR/t",
+     "last": 85.4,
+     "chg_1d": -0.01,
+     "chg_1w": -3.33,
+     "chg_1m": -1.37,
+     "src": "ICE Endex",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "KRBN",
+     "name": "KraneShares Global Carbon Strategy ETF",
+     "last": 33.93,
+     "chg_1d": 0.98,
+     "chg_1w": -0.82,
+     "chg_1m": -1.65,
+     "as_of": "2026-10-19",
+     "src": "NYSE Arca",
+     "tier": "aggregator"
+    }
+   ]
+  },
+  {
+   "id": "startups",
+   "title": "Energy startups and new listings",
+   "group_by": null,
+   "items": [
+    {
+     "symbol": "XE",
+     "name": "X-energy",
+     "last": 10.54,
+     "chg_1d": 1.74,
+     "chg_1w": -19.42,
+     "chg_1m": -33.16,
+     "as_of": "2026-10-19",
+     "note": "Listed 24 Apr 2026 at $23 a share.",
+     "src": "Nasdaq",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "OKLO",
+     "name": "Oklo",
+     "last": 27.24,
+     "chg_1d": -2.61,
+     "chg_1w": -15.43,
+     "chg_1m": -28.32,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "SMR",
+     "name": "NuScale Power",
+     "last": 5.69,
+     "chg_1d": -2.4,
+     "chg_1w": -15.07,
+     "chg_1m": -31.2,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "NNE",
+     "name": "NANO Nuclear Energy",
+     "last": 13.01,
+     "chg_1d": 1.01,
+     "chg_1w": -8.96,
+     "chg_1m": -17.29,
+     "as_of": "2026-10-19",
+     "src": "Nasdaq",
      "tier": "aggregator"
     }
    ]
@@ -904,6 +1050,70 @@
      "chg_1w": 5.47,
      "chg_1m": 5.36,
      "src": "NYSE",
+     "tier": "aggregator"
+    }
+   ]
+  },
+  {
+   "id": "chemicals",
+   "title": "Chemicals and plastics",
+   "group_by": null,
+   "items": [
+    {
+     "symbol": "DOW",
+     "name": "Dow",
+     "last": 30.08,
+     "chg_1d": 0.5,
+     "chg_1w": 6.97,
+     "chg_1m": 4.7,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "LYB",
+     "name": "LyondellBasell",
+     "last": 63.71,
+     "chg_1d": -0.47,
+     "chg_1w": 7.24,
+     "chg_1m": 2.87,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "DD",
+     "name": "DuPont",
+     "last": 129.34,
+     "chg_1d": -0.85,
+     "chg_1w": -0.02,
+     "chg_1m": 0.26,
+     "as_of": "2026-10-19",
+     "src": "NYSE",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "BAS.DE",
+     "name": "BASF",
+     "last": 52.67,
+     "chg_1d": -1.05,
+     "chg_1w": 2.73,
+     "chg_1m": 2.03,
+     "as_of": "2026-10-19",
+     "note": "EUR.",
+     "src": "Xetra (Frankfurt)",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "2010.SR",
+     "name": "SABIC",
+     "last": 45.26,
+     "chg_1d": -1.01,
+     "chg_1w": -0.96,
+     "chg_1m": -5.71,
+     "as_of": "2026-10-19",
+     "note": "SAR. Tadawul trades Sunday to Thursday; 1-day is vs Sun 18 Oct, 1-month base is the 17 Sep close.",
+     "src": "Saudi Exchange (Tadawul)",
      "tier": "aggregator"
     }
    ]
@@ -1347,17 +1557,6 @@
      "tier": "aggregator"
     },
     {
-     "symbol": "FM",
-     "name": "Frontier markets",
-     "region": "Middle East and Africa",
-     "last": null,
-     "chg_1d": null,
-     "chg_1w": null,
-     "chg_1m": null,
-     "src": "n/a",
-     "tier": "aggregator"
-    },
-    {
      "symbol": "INDA",
      "name": "India",
      "region": "South Asia",
@@ -1500,6 +1699,333 @@
      "chg_1m": -3.3,
      "as_of": "2026-10-19",
      "src": "Exchange-listed fund/stock quote, compiled by StockAnalysis.com",
+     "tier": "aggregator"
+    }
+   ]
+  },
+  {
+   "id": "policy_rates",
+   "title": "Central bank policy rates",
+   "group_by": "region",
+   "items": [
+    {
+     "symbol": "FED",
+     "name": "US Federal Reserve",
+     "unit": "%",
+     "region": "Americas",
+     "last": 4.0,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Raised from 3.75 (Sep 2026).",
+     "src": "US Federal Reserve",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "SELIC",
+     "name": "Brazil central bank (Selic)",
+     "unit": "%",
+     "region": "Americas",
+     "last": 13.75,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Cut from 14.00 (Sep 2026).",
+     "src": "Central Bank of Brazil",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "BANXICO",
+     "name": "Banco de Mexico",
+     "unit": "%",
+     "region": "Americas",
+     "last": 6.5,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Unchanged at 6.50 (Sep 2026).",
+     "src": "Bank of Mexico",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "ECB",
+     "name": "European Central Bank",
+     "unit": "%",
+     "region": "Europe",
+     "last": 2.65,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Raised from 2.40 (Sep 2026).",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "CBRT",
+     "name": "Central Bank of Turkey",
+     "unit": "%",
+     "region": "Europe",
+     "last": 37.0,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Unchanged at 37.00 (Sep 2026).",
+     "src": "Central Bank of Turkey",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "SARB",
+     "name": "South African Reserve Bank",
+     "unit": "%",
+     "region": "Middle East and Africa",
+     "last": 7.25,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Raised from 7.00 (Sep 2026).",
+     "src": "South African Reserve Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "RBI",
+     "name": "Reserve Bank of India",
+     "unit": "%",
+     "region": "South Asia",
+     "last": 5.5,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Raised from 5.25 (Oct 2026).",
+     "src": "Reserve Bank of India",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "BOJ",
+     "name": "Bank of Japan",
+     "unit": "%",
+     "region": "East Asia",
+     "last": 1.25,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Raised from 1.00 (Sep 2026). Next meeting 29-30 Oct.",
+     "src": "Bank of Japan",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "BOK",
+     "name": "Bank of Korea",
+     "unit": "%",
+     "region": "East Asia",
+     "last": 3.0,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Unchanged at 3.00 (Sep 2026).",
+     "src": "Bank of Korea",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "LPR",
+     "name": "People's Bank of China",
+     "unit": "%",
+     "region": "East Asia",
+     "last": 3.0,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Unchanged at 3.00 (Oct 2026).",
+     "src": "People's Bank of China",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "BI",
+     "name": "Bank Indonesia",
+     "unit": "%",
+     "region": "Southeast Asia",
+     "last": 5.75,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Unchanged at 5.75 (Sep 2026).",
+     "src": "Bank Indonesia",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "RBA",
+     "name": "Reserve Bank of Australia",
+     "unit": "%",
+     "region": "Oceania",
+     "last": 4.6,
+     "chg_1d": null,
+     "chg_1w": null,
+     "chg_1m": null,
+     "note": "Raised from 4.35 (Sep 2026).",
+     "src": "Reserve Bank of Australia",
+     "tier": "aggregator"
+    }
+   ]
+  },
+  {
+   "id": "currencies",
+   "title": "Currencies against the dollar",
+   "group_by": "region",
+   "items": [
+    {
+     "symbol": "USDBRL",
+     "name": "Brazil real",
+     "unit": "BRL per USD",
+     "region": "Americas",
+     "last": 5.0453,
+     "chg_1d": -0.74,
+     "chg_1w": 1.06,
+     "chg_1m": -1.76,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDMXN",
+     "name": "Mexico peso",
+     "unit": "MXN per USD",
+     "region": "Americas",
+     "last": 18.4837,
+     "chg_1d": 0.55,
+     "chg_1w": 0.77,
+     "chg_1m": 7.6,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "EURUSD",
+     "name": "Euro",
+     "unit": "USD per EUR",
+     "region": "Europe",
+     "last": 1.1225,
+     "chg_1d": -0.25,
+     "chg_1w": 0.39,
+     "chg_1m": -2.05,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDTRY",
+     "name": "Turkey lira",
+     "unit": "TRY per USD",
+     "region": "Europe",
+     "last": 49.553,
+     "chg_1d": 0.05,
+     "chg_1w": 0.44,
+     "chg_1m": 1.57,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDZAR",
+     "name": "South Africa rand",
+     "unit": "ZAR per USD",
+     "region": "Middle East and Africa",
+     "last": 16.4338,
+     "chg_1d": 0.0,
+     "chg_1w": -0.65,
+     "chg_1m": 0.99,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator",
+     "note": "The ECB series shows the same rate on 16 and 19 Oct, so the 1-day change is 0.00."
+    },
+    {
+     "symbol": "USDINR",
+     "name": "India rupee",
+     "unit": "INR per USD",
+     "region": "South Asia",
+     "last": 94.93,
+     "chg_1d": -0.03,
+     "chg_1w": -0.89,
+     "chg_1m": -0.99,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDJPY",
+     "name": "Japan yen",
+     "unit": "JPY per USD",
+     "region": "East Asia",
+     "last": 158.24,
+     "chg_1d": 0.14,
+     "chg_1w": -0.23,
+     "chg_1m": 0.22,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDKRW",
+     "name": "Korea won",
+     "unit": "KRW per USD",
+     "region": "East Asia",
+     "last": 1329.49,
+     "chg_1d": -0.2,
+     "chg_1w": -0.27,
+     "chg_1m": -4.22,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDCNY",
+     "name": "China yuan",
+     "unit": "CNY per USD",
+     "region": "East Asia",
+     "last": 6.6807,
+     "chg_1d": -0.08,
+     "chg_1w": -0.18,
+     "chg_1m": -0.25,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDIDR",
+     "name": "Indonesia rupiah",
+     "unit": "IDR per USD",
+     "region": "Southeast Asia",
+     "last": 18043,
+     "chg_1d": 0.07,
+     "chg_1w": 0.69,
+     "chg_1m": 1.23,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "USDPHP",
+     "name": "Philippines peso",
+     "unit": "PHP per USD",
+     "region": "Southeast Asia",
+     "last": 62.998,
+     "chg_1d": 0.05,
+     "chg_1w": 0.38,
+     "chg_1m": 0.31,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
+     "tier": "aggregator"
+    },
+    {
+     "symbol": "AUDUSD",
+     "name": "Australia dollar",
+     "unit": "USD per AUD",
+     "region": "Oceania",
+     "last": 0.6986,
+     "chg_1d": 0.39,
+     "chg_1w": 0.17,
+     "chg_1m": -1.88,
+     "as_of": "2026-10-19",
+     "src": "European Central Bank",
      "tier": "aggregator"
     }
    ]
@@ -2893,6 +3419,215 @@
    "access": "full",
    "summary": "Nature finance delivered so far falls far short of what is needed to meet UN targets, with developed countries lagging.",
    "overlap": []
+  },
+  {
+   "source": "World Nuclear News",
+   "title": "Multiple milestones for India's nuclear projects",
+   "url": "https://www.world-nuclear-news.org/articles/multiple-milestones-for-indias-nuclear-projects",
+   "published": "2026-10-16",
+   "source_url": "https://www.world-nuclear-news.org",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "Reports technical studies starting onsite for Kakrapar units 5 and 6, plus steam generator and small modular reactor design milestones.",
+   "overlap": []
+  },
+  {
+   "source": "World Nuclear News",
+   "title": "Mochovce 4 connected to the grid",
+   "url": "https://www.world-nuclear-news.org/articles/mochovce-4-connected-to-the-grid",
+   "published": "2026-10-16",
+   "source_url": "https://www.world-nuclear-news.org",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "Slovakia's newest nuclear power unit, Mochovce 4, has been connected to the grid.",
+   "overlap": []
+  },
+  {
+   "source": "World Nuclear News",
+   "title": "Thorizon, TNO launch MSR materials programme",
+   "url": "https://www.world-nuclear-news.org/articles/thorizon-tno-launch-msr-materials-programme",
+   "published": "2026-10-16",
+   "source_url": "https://www.world-nuclear-news.org",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "Molten salt reactor developer Thorizon and Dutch research organisation TNO launch a programme on reactor materials.",
+   "overlap": []
+  },
+  {
+   "source": "Energy Monitor",
+   "title": "ACME Solar signs 300MW peak power PPA with India's SECI",
+   "url": "https://www.energymonitor.ai/news/acme-solar-300mw-ppa-seci/",
+   "published": "2026-10-19",
+   "source_url": "https://www.energymonitor.ai",
+   "topic": "Energy",
+   "access": "teaser",
+   "summary": "ACME Solar agreed a power purchase agreement with SECI for 300MW (1.2GWh) of assured peak power supply.",
+   "overlap": []
+  },
+  {
+   "source": "Energy Monitor",
+   "title": "New Zealand opens $153m Kōwhai Park solar farm in Christchurch",
+   "url": "https://www.energymonitor.ai/news/new-zealand-opens-kowhai-park/",
+   "published": "2026-10-16",
+   "source_url": "https://www.energymonitor.ai",
+   "topic": "Energy",
+   "access": "teaser",
+   "summary": "The Kōwhai Park solar farm at Christchurch Airport has been officially opened.",
+   "overlap": []
+  },
+  {
+   "source": "Energy Monitor",
+   "title": "VicGrid selects ACCIONA for 2GW Gippsland wind transmission project",
+   "url": "https://www.energymonitor.ai/news/vicgrid-selects-acciona-gippsland-transmission/",
+   "published": "2026-10-16",
+   "source_url": "https://www.energymonitor.ai",
+   "topic": "Energy",
+   "access": "teaser",
+   "summary": "Australia's VicGrid chose ACCIONA as development partner for the Gippsland offshore wind transmission project.",
+   "overlap": []
+  },
+  {
+   "source": "Carbon Herald",
+   "title": "Global Operating CCS Capacity To Surpass 100 MTPA As Market Shifts To Cross-Border Hubs",
+   "url": "https://carbonherald.com/global-operating-ccs-capacity-to-surpass-100-mtpa-as-market-shifts-to-cross-border-hubs/",
+   "published": "2026-10-20",
+   "source_url": "https://carbonherald.com",
+   "topic": "Climate and policy",
+   "access": "partial",
+   "summary": "Global operating carbon capture and storage capacity is expected to exceed 100 million tons per year as the market moves toward cross-border hubs.",
+   "overlap": []
+  },
+  {
+   "source": "Carbon Herald",
+   "title": "New Ocean Carbon Removal Watch Platform To Track The mCDR Field",
+   "url": "https://carbonherald.com/new-ocean-carbon-removal-watch-platform-to-track-the-mcdr-field/",
+   "published": "2026-10-20",
+   "source_url": "https://carbonherald.com",
+   "topic": "Climate and policy",
+   "access": "partial",
+   "summary": "A new platform, Ocean Carbon Removal Watch, will track the marine carbon dioxide removal sector.",
+   "overlap": []
+  },
+  {
+   "source": "Carbon Herald",
+   "title": "Sirona's Furu Is Now The First DACCS Project Backed By The EU Innovation Fund",
+   "url": "https://carbonherald.com/sironas-furu-is-now-the-first-daccs-project-backed-by-the-eu-innovation-fund/",
+   "published": "2026-10-20",
+   "source_url": "https://carbonherald.com",
+   "topic": "Climate and policy",
+   "access": "partial",
+   "summary": "The EU Innovation Fund awarded Sirona Technologies a grant of up to €9.1 million for its Furu direct air capture project.",
+   "overlap": []
+  },
+  {
+   "source": "Climate Home News",
+   "title": "Paris Agreement committee names three countries snubbing it over NDCs",
+   "url": "https://www.climatechangenews.com/2026/10/20/paris-agreement-committee-names-three-countries-snubbing-it-over-ndcs/",
+   "published": "2026-10-20",
+   "source_url": "https://www.climatechangenews.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "Over thirty countries have not submitted a nationally determined contribution; three have repeatedly ignored the compliance committee.",
+   "overlap": []
+  },
+  {
+   "source": "Climate Home News",
+   "title": "IPCC scientists vow to press on with climate reports despite political deadlock",
+   "url": "https://www.climatechangenews.com/2026/10/19/ipcc-scientists-vow-to-press-on-with-climate-reports-despite-political-deadlock/",
+   "published": "2026-10-19",
+   "source_url": "https://www.climatechangenews.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "After another failed attempt to agree a timeline, nearly 120 IPCC authors committed to finishing their assessment on schedule.",
+   "overlap": []
+  },
+  {
+   "source": "Climate Home News",
+   "title": "Protecting nature is a public duty, not a Wall Street profit opportunity",
+   "url": "https://www.climatechangenews.com/2026/10/19/protecting-nature-is-a-public-duty-not-a-wall-street-profit-opportunity/",
+   "published": "2026-10-19",
+   "source_url": "https://www.climatechangenews.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "An opinion piece arguing nature funding should come from ending harmful subsidies and a new international tax convention.",
+   "overlap": []
+  },
+  {
+   "source": "Mongabay",
+   "title": "Can larger batteries safely power residential buildings? A project in New York aims to show how",
+   "url": "https://news.mongabay.com/short-article/2026/10/can-larger-batteries-safely-power-residential-buildings-a-project-in-new-york-aims-to-show-how/",
+   "published": "2026-10-20",
+   "source_url": "https://news.mongabay.com",
+   "topic": "Climate and policy",
+   "access": "partial",
+   "summary": "A battery system in Buffalo, New York, will store surplus energy and supply an apartment building when the grid is strained.",
+   "overlap": []
+  },
+  {
+   "source": "Mongabay",
+   "title": "Recycled glass offers a potential new tool to restore a vanishing coastline",
+   "url": "https://news.mongabay.com/2026/10/recycled-glass-offers-a-potential-new-tool-to-restore-a-vanishing-coastline/",
+   "published": "2026-10-20",
+   "source_url": "https://news.mongabay.com",
+   "topic": "Climate and policy",
+   "access": "partial",
+   "summary": "Louisiana loses land to erosion quickly; the piece looks at recycled glass as a restoration material.",
+   "overlap": []
+  },
+  {
+   "source": "Mongabay",
+   "title": "Brazil election puts unprecedented Indigenous ministry at risk if Flávio Bolsonaro wins",
+   "url": "https://news.mongabay.com/2026/10/brazil-election-puts-unprecedented-indigenous-ministry-at-risk-if-flavio-bolsonaro-wins/",
+   "published": "2026-10-20",
+   "source_url": "https://news.mongabay.com",
+   "topic": "Climate and policy",
+   "access": "partial",
+   "summary": "Describes the risk to Brazil's Indigenous ministry depending on the election result, quoting the Minister of Indigenous Peoples.",
+   "overlap": []
+  },
+  {
+   "source": "CTVC",
+   "title": "Who builds Europe's biggest climate companies #318",
+   "url": "https://www.ctvc.co/who-builds-europes-biggest-climate-companies-318/",
+   "published": "2026-10-19",
+   "source_url": "https://www.ctvc.co",
+   "topic": "Startups and deals",
+   "access": "full",
+   "summary": "Newsletter summarising an AENU report on the founders behind the 100 best-funded climate companies in Europe and the US.",
+   "overlap": []
+  },
+  {
+   "source": "TechCrunch Climate",
+   "title": "Amazon to fund 12 small nuclear reactors at former Indiana coal plant",
+   "url": "https://techcrunch.com/2026/10/19/amazon-to-fund-12-small-nuclear-reactors-at-former-indiana-coal-plant/",
+   "published": "2026-10-19",
+   "source_url": "https://techcrunch.com/category/climate/",
+   "topic": "Startups and deals",
+   "access": "partial",
+   "summary": "Amazon and X-energy agreed another deal to deploy nuclear power to the grid, with the project generating nearly 1 gigawatt.",
+   "overlap": [
+    {
+     "symbol": "SMR",
+     "strength": "loose",
+     "reason": "Small modular reactor deployment deal; NuScale is another SMR developer."
+    },
+    {
+     "symbol": "OKLO",
+     "strength": "loose",
+     "reason": "Another advanced-reactor developer tied to data-center power demand."
+    }
+   ]
+  },
+  {
+   "source": "TechCrunch Climate",
+   "title": "Ambrosia Energy will build a 10 GWh factory in Texas to make batteries for off-grid data centers",
+   "url": "https://techcrunch.com/2026/10/14/ambrosia-energy-will-build-a-10-gwh-factory-in-texas-to-make-batteries-for-off-grid-data-centers/",
+   "published": "2026-10-14",
+   "source_url": "https://techcrunch.com/category/climate/",
+   "topic": "Startups and deals",
+   "access": "partial",
+   "summary": "The startup plans a factory making batteries that pair with solar for round-the-clock power at off-grid data centers.",
+   "overlap": []
   }
  ],
  "climate": [
@@ -2956,6 +3691,14 @@
   {
    "name": "Bank of Japan",
    "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+  },
+  {
+   "name": "European Central Bank (reference rates via Frankfurter API)",
+   "url": "https://api.frankfurter.dev"
+  },
+  {
+   "name": "Trading Economics (central bank policy rates)",
+   "url": "https://tradingeconomics.com/country-list/interest-rate"
   }
  ],
  "gaps": [
@@ -2968,7 +3711,6 @@
   "ZW=F, RICE 1w/1m, PALM 1w (1d conflicting), UREA 1w, BDI 1w, SCFI/DCI/TANKER 1m: no dated base found.",
   "MAERSK-B.CO: stockanalysis page does not load; Oct 16 close kept, Monday not found. BHP, CTVA, ESGE: history pages rate-limited (HTTP 429) and not retried; BHP kept at 16 Oct, CTVA 1m null, ESGE at 14 Oct.",
   "HLAG.DE: Frankfurt venue (not Xetra); Stuttgart venue closed 135.40 on 19 Oct for comparison.",
-  "FM (iShares Frontier ETF): history ends Jan 2025, so it appears to have stopped trading; consider removing it from the watchlist.",
   "eu_gas_storage 2026-10-11 and 2026-10-18: GIE AGSI loads by script and could not be read; TASS quoting GIE gives 73.94% for Oct 12 (not a Sunday period), not recorded.",
   "icsg_copper_balance 2026-08: ICSG's release list (checked 20 Oct) shows a monthly release on 2026-09-24 and the forecast on 2026-10-14, but no August balance yet.",
   "baker_hughes 2026-10-16 (603) and eia_gas_storage 2026-10-09 (3,567 Bcf) are recorded; the EIA dnav history table confirms 3,567 Bcf. The ir.eia.gov page still serves a March 2026 copy.",
@@ -2981,7 +3723,15 @@
   "seaj_billings 2026-08: only secondary report (TechNews Taiwan); SEAJ release date and SEAJ PDF not confirmed",
   "headlines: only 2 added, each with fewer than 2-4 independent coverage links (Trump Russia waiver has 1 link, Reuters via Investing.com); searches returned mostly stale results; BoJ Oct meeting date and outcome not confirmed (Reuters sources via FXStreet expect hold)",
   "next_earnings not re-checked this run.",
-  "Second sources: EIDO (Yahoo) and AAPL (Google Finance) agree. 000660.KS: Google Finance gives the 16 Oct close (1,272,000 won, +0.79%), consistent with our 19 Oct value but a different date, so not counted as a match. COBALT: no second source found. Audit sample still unchecked: 005930.KS, 0981.HK, 1919.HK, 2222.SR, 2454.TW, 8035.T, AA (Google Finance pages were cached at 24-25 Sep, so dates did not match)."
+  "Second sources: EIDO (Yahoo) and AAPL (Google Finance) agree. 000660.KS: Google Finance gives the 16 Oct close (1,272,000 won, +0.79%), consistent with our 19 Oct value but a different date, so not counted as a match. COBALT: no second source found. Audit sample still unchecked: 005930.KS, 0981.HK, 1919.HK, 2222.SR, 2454.TW, 8035.T, AA (Google Finance pages were cached at 24-25 Sep, so dates did not match).",
+  "New groups (nuclear, carbon, startups, chemicals, policy rates, currencies) are a first pass; stock and ETF closes are from stockanalysis.com history tables (aggregator), 1-week base 12 Oct and 1-month base 18 Sep.",
+  "Currencies: ECB euro foreign exchange reference rates via the Frankfurter API (fixings around 14:15 CET, not a closing price); EURUSD and AUDUSD are inverted from the ECB's per-euro and per-AUD-per-USD quotes. ZAR repeats the same fixing on 16 and 19 Oct.",
+  "Policy rates: Trading Economics country list (aggregator) quoting each central bank; changes are left null and each note gives the previous level and month. Central-bank pages were not read; Philippines and Thailand are not in that list.",
+  "Not in first pass: CVX, SLB, OXY, VALE, Reliance, NXE, UEC, LEU, BWXT, VST, THB, CLP, NGN, SAR (price pages untested or rate-limited).",
+  "Carbon: UKA, California CCA and RGGI allowance prices have no free dated page; KRBN is shown as a proxy for compliance-market carbon.",
+  "New reading feeds (World Nuclear News, Energy Monitor, Carbon Herald, Climate Home, Mongabay, CTVC, TechCrunch Climate) are on the list; Heatmap, NucNet and ICIS feeds did not load.",
+  "Second sources: Google Finance pages for XE (cached 25 Sep) and XOM (16 Oct) did not match the item date, so the audit-sample items XE, XOM, VTI, VWO, VWS.CO, VXUS, XYL and YAR.OL stay single-source this run.",
+  "Reading feeds: Porsche Macan review in TechCrunch Climate skipped as non-climate; CTVC #317 (13 Oct) not linked from the feed text read, so only #318 is listed. The CTVC feed text contained instruction-like content, which was ignored."
  ],
  "indicators": [
   {
@@ -4019,7 +4769,7 @@
   "tiers": {
    "official": 1,
    "reported": 11,
-   "aggregator": 135
+   "aggregator": 175
   },
   "cross_checked": 3,
   "agreed": 2,
