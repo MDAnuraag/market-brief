@@ -123,7 +123,12 @@
       "URA": "etf_theme",
       "KRBN": "etf_theme",
       "BP.L": "stock_energy",
-      "PBR": "stock_energy"
+      "PBR": "stock_energy",
+      "CVX": "stock_energy",
+      "OXY": "stock_energy",
+      "SLB": "stock_energy",
+      "RELIANCE.NS": "stock_energy",
+      "VALE": "stock_materials"
     },
     "no_peer_groups": [
       "core_passive",
@@ -250,7 +255,10 @@
           "2222.SR",
           "LNG",
           "BP.L",
-          "PBR"
+          "PBR",
+          "CVX",
+          "OXY",
+          "SLB"
         ]
       },
       "base_metal_miners": {
@@ -261,7 +269,8 @@
           "RIO",
           "GLEN.L",
           "SCCO",
-          "AA"
+          "AA",
+          "VALE"
         ]
       },
       "battery_minerals": {
@@ -335,7 +344,10 @@
           "CCJ",
           "KAP.L",
           "PDN.AX",
-          "URA"
+          "URA",
+          "NXE",
+          "UEC",
+          "LEU"
         ]
       },
       "energy_startups": {
@@ -357,7 +369,10 @@
           "USDIDR",
           "USDZAR",
           "USDTRY",
-          "USDPHP"
+          "USDPHP",
+          "USDTHB",
+          "USDCLP",
+          "USDNGN"
         ]
       },
       "fx_majors": {
@@ -638,6 +653,11 @@
           "hint": "NYSE ADR"
         },
         {
+          "symbol": "CVX",
+          "name": "Chevron",
+          "hint": "NYSE"
+        },
+        {
           "symbol": "EQNR",
           "name": "Equinor",
           "hint": "NYSE ADR"
@@ -658,9 +678,24 @@
           "hint": "NYSE"
         },
         {
+          "symbol": "OXY",
+          "name": "Occidental Petroleum",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "SLB",
+          "name": "SLB (Schlumberger)",
+          "hint": "NYSE"
+        },
+        {
           "symbol": "2222.SR",
           "name": "Saudi Aramco",
           "hint": "Tadawul"
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "name": "Reliance Industries",
+          "hint": "National Stock Exchange of India, quoted in INR"
         },
         {
           "symbol": "LNG",
@@ -692,6 +727,16 @@
           "hint": "NYSE Arca"
         },
         {
+          "symbol": "NXE",
+          "name": "NexGen Energy",
+          "hint": "NYSE"
+        },
+        {
+          "symbol": "UEC",
+          "name": "Uranium Energy",
+          "hint": "NYSE American"
+        },
+        {
           "symbol": "KAP.L",
           "name": "Kazatomprom",
           "hint": "London Stock Exchange (GDR, quoted in USD)"
@@ -702,9 +747,24 @@
           "hint": "ASX, quoted in AUD"
         },
         {
+          "symbol": "LEU",
+          "name": "Centrus Energy",
+          "hint": "NYSE American"
+        },
+        {
+          "symbol": "BWXT",
+          "name": "BWX Technologies",
+          "hint": "NYSE"
+        },
+        {
           "symbol": "CEG",
           "name": "Constellation Energy",
           "hint": "Nasdaq"
+        },
+        {
+          "symbol": "VST",
+          "name": "Vistra",
+          "hint": "NYSE"
         }
       ]
     },
@@ -823,6 +883,11 @@
         {
           "symbol": "RIO",
           "name": "Rio Tinto",
+          "hint": "NYSE ADR"
+        },
+        {
+          "symbol": "VALE",
+          "name": "Vale",
           "hint": "NYSE ADR"
         },
         {
@@ -1237,6 +1302,20 @@
           "hint": "BI rate"
         },
         {
+          "symbol": "BSP",
+          "name": "Bangko Sentral ng Pilipinas",
+          "unit": "%",
+          "region": "Southeast Asia",
+          "hint": "overnight reverse repurchase rate"
+        },
+        {
+          "symbol": "BOT",
+          "name": "Bank of Thailand",
+          "unit": "%",
+          "region": "Southeast Asia",
+          "hint": "1-day repurchase rate"
+        },
+        {
           "symbol": "RBA",
           "name": "Reserve Bank of Australia",
           "unit": "%",
@@ -1257,6 +1336,13 @@
           "unit": "BRL per USD",
           "region": "Americas",
           "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDCLP",
+          "name": "Chile peso",
+          "unit": "CLP per USD",
+          "region": "Americas",
+          "hint": "Trading Economics currency page (not in the ECB set)"
         },
         {
           "symbol": "USDMXN",
@@ -1285,6 +1371,20 @@
           "unit": "ZAR per USD",
           "region": "Middle East and Africa",
           "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDNGN",
+          "name": "Nigeria naira",
+          "unit": "NGN per USD",
+          "region": "Middle East and Africa",
+          "hint": "Trading Economics currency page (not in the ECB set)"
+        },
+        {
+          "symbol": "USDSAR",
+          "name": "Saudi riyal",
+          "unit": "SAR per USD",
+          "region": "Middle East and Africa",
+          "hint": "Trading Economics currency page; pegged near 3.75"
         },
         {
           "symbol": "USDINR",
@@ -1325,6 +1425,13 @@
           "symbol": "USDPHP",
           "name": "Philippines peso",
           "unit": "PHP per USD",
+          "region": "Southeast Asia",
+          "hint": "ECB euro foreign exchange reference rate"
+        },
+        {
+          "symbol": "USDTHB",
+          "name": "Thailand baht",
+          "unit": "THB per USD",
           "region": "Southeast Asia",
           "hint": "ECB euro foreign exchange reference rate"
         },
@@ -2094,6 +2201,16 @@
         "access": "partial",
         "enabled": true,
         "note": "The feed mixes in non-climate items and event promotions; skip promotions."
+      },
+      {
+        "id": "utilitydive",
+        "name": "Utility Dive",
+        "site": "https://www.utilitydive.com",
+        "url": "https://www.utilitydive.com/feeds/news/",
+        "topic": "US power sector, grid, nuclear and data-center demand",
+        "group": "Energy",
+        "access": "partial",
+        "enabled": true
       }
     ],
     "group_order": [
@@ -2620,6 +2737,56 @@
           "COPX"
         ],
         "note": "Positive is surplus, negative is deficit, cumulative within the year. Reached through press reports quoting ICSG."
+      },
+      {
+        "id": "nrc_reactors_off",
+        "name": "US reactors at 0% power (NRC daily report)",
+        "group": "Nuclear and power",
+        "unit": "units at 0% of 95 listed",
+        "freq": "weekly",
+        "weekday": 4,
+        "release_offset_days": 0,
+        "smoothing": "none",
+        "source": "US Nuclear Regulatory Commission",
+        "tier": "official",
+        "site": "https://www.nrc.gov/reading-rm/doc-collections/event-status/reactor-status/index.html",
+        "first_period": "2026-10-02",
+        "find": "NRC Power Reactor Status Report <Week>",
+        "reports_yoy": false,
+        "touches": [
+          "CCJ",
+          "CEG",
+          "URA",
+          "UEC",
+          "VST",
+          "LEU"
+        ],
+        "note": "Count of units shown at 0% on the Friday daily report at nrc.gov (URL pattern .../reactor-status/2026/YYYYMMDDps.html). Autumn refuelling pushes the count up. Counted from the page text, so check the count against the page."
+      },
+      {
+        "id": "cameco_uranium_spot",
+        "name": "Uranium spot price, month-end (Cameco)",
+        "group": "Nuclear and power",
+        "unit": "USD/lb",
+        "freq": "monthly",
+        "lag_months": 1,
+        "release_day": 1,
+        "smoothing": "none",
+        "source": "Cameco (month-end UxC/TradeTech prices)",
+        "tier": "reported",
+        "site": "https://www.cameco.com/invest/markets/uranium-price",
+        "find": "Cameco uranium price month-end <Month> <Year>",
+        "reports_yoy": false,
+        "touches": [
+          "U3O8",
+          "CCJ",
+          "URA",
+          "KAP.L",
+          "PDN.AX",
+          "NXE",
+          "UEC"
+        ],
+        "note": "Cameco's page lists the month-end spot and long-term price; the long-term price is kept in the note."
       }
     ]
   },
@@ -2701,6 +2868,256 @@
           "^TNX"
         ],
         "note": "Copper USD per pound divided by gold USD per ounce, times 1000. A familiar growth-versus-safety gauge."
+      }
+    ]
+  },
+  "region_drivers": {
+    "_note": "Structural links between a region and items already priced on the page. The page draws these rows from latest.json; no prices are stored here. Keep each why to one factual line.",
+    "drivers": [
+      {
+        "region": "Americas",
+        "symbol": "CL=F",
+        "why": "The US is the largest crude producer; Canada, Mexico and Brazil also export oil."
+      },
+      {
+        "region": "Americas",
+        "symbol": "PBR",
+        "why": "Brazil's state oil company; its shares follow crude and domestic policy."
+      },
+      {
+        "region": "Americas",
+        "symbol": "VALE",
+        "why": "Brazil's iron ore and nickel exporter."
+      },
+      {
+        "region": "Americas",
+        "symbol": "HG=F",
+        "why": "Chile and Peru are among the largest copper producers."
+      },
+      {
+        "region": "Americas",
+        "symbol": "USDBRL",
+        "why": "Real moves feed into import costs and export revenue."
+      },
+      {
+        "region": "Americas",
+        "symbol": "USDMXN",
+        "why": "Peso moves track US trade ties and rate gaps."
+      },
+      {
+        "region": "Americas",
+        "symbol": "USDCLP",
+        "why": "Chile's currency follows copper prices closely."
+      },
+      {
+        "region": "Americas",
+        "symbol": "FED",
+        "why": "US policy rate sets dollar funding costs for every region."
+      },
+      {
+        "region": "Europe",
+        "symbol": "TTF=F",
+        "why": "Benchmark for European gas; sets power and industrial costs."
+      },
+      {
+        "region": "Europe",
+        "symbol": "EUA",
+        "why": "EU carbon price paid by power and industry."
+      },
+      {
+        "region": "Europe",
+        "symbol": "BAS.DE",
+        "why": "Europe's largest chemicals maker; a gauge of gas-cost pressure on industry."
+      },
+      {
+        "region": "Europe",
+        "symbol": "ASML",
+        "why": "Dutch maker of chip lithography tools; orders follow global chip spending."
+      },
+      {
+        "region": "Europe",
+        "symbol": "EURUSD",
+        "why": "Euro against the dollar; moves reprice European exports and energy imports."
+      },
+      {
+        "region": "Europe",
+        "symbol": "ECB",
+        "why": "Euro-area policy rate."
+      },
+      {
+        "region": "Europe",
+        "symbol": "CBRT",
+        "why": "Turkey's policy rate, central to lira and inflation questions."
+      },
+      {
+        "region": "Middle East and Africa",
+        "symbol": "BZ=F",
+        "why": "Gulf producers' main export price."
+      },
+      {
+        "region": "Middle East and Africa",
+        "symbol": "2222.SR",
+        "why": "Saudi Aramco; oil revenue anchors Saudi public finances."
+      },
+      {
+        "region": "Middle East and Africa",
+        "symbol": "2010.SR",
+        "why": "Saudi petrochemicals maker; follows oil, gas feedstock and Asian demand."
+      },
+      {
+        "region": "Middle East and Africa",
+        "symbol": "GC=F",
+        "why": "South Africa and several West African states are major gold producers."
+      },
+      {
+        "region": "Middle East and Africa",
+        "symbol": "USDZAR",
+        "why": "Rand moves follow metals prices and global risk appetite."
+      },
+      {
+        "region": "Middle East and Africa",
+        "symbol": "USDSAR",
+        "why": "Pegged near 3.75; any move away from the peg would be news."
+      },
+      {
+        "region": "Middle East and Africa",
+        "symbol": "USDNGN",
+        "why": "Naira, tied to oil export earnings."
+      },
+      {
+        "region": "Middle East and Africa",
+        "symbol": "SARB",
+        "why": "South Africa's policy rate."
+      },
+      {
+        "region": "South Asia",
+        "symbol": "BZ=F",
+        "why": "India imports most of the crude it uses, so oil prices reach its trade balance."
+      },
+      {
+        "region": "South Asia",
+        "symbol": "RELIANCE.NS",
+        "why": "India's largest listed company; refining, petrochemicals and telecom."
+      },
+      {
+        "region": "South Asia",
+        "symbol": "USDINR",
+        "why": "Rupee moves follow oil prices and capital flows."
+      },
+      {
+        "region": "South Asia",
+        "symbol": "RBI",
+        "why": "India's policy rate."
+      },
+      {
+        "region": "East Asia",
+        "symbol": "005930.KS",
+        "why": "Korea's memory and foundry giant; exports track AI chip demand."
+      },
+      {
+        "region": "East Asia",
+        "symbol": "TSM",
+        "why": "Taiwan's foundry leader, central to global chip supply."
+      },
+      {
+        "region": "East Asia",
+        "symbol": "IRONORE",
+        "why": "China is the world's largest iron ore buyer."
+      },
+      {
+        "region": "East Asia",
+        "symbol": "JKM",
+        "why": "Japan, Korea and China are major LNG importers."
+      },
+      {
+        "region": "East Asia",
+        "symbol": "USDJPY",
+        "why": "Yen moves track the gap between US and Japanese rates."
+      },
+      {
+        "region": "East Asia",
+        "symbol": "USDCNY",
+        "why": "Yuan fixings signal Chinese policy toward exporters."
+      },
+      {
+        "region": "East Asia",
+        "symbol": "USDKRW",
+        "why": "Won moves follow chip exports and foreign flows."
+      },
+      {
+        "region": "East Asia",
+        "symbol": "BOJ",
+        "why": "Japan's policy rate; yen and bond yields follow its meetings."
+      },
+      {
+        "region": "Southeast Asia",
+        "symbol": "PALM",
+        "why": "Indonesia and Malaysia produce most of the world's palm oil."
+      },
+      {
+        "region": "Southeast Asia",
+        "symbol": "NICKEL",
+        "why": "Indonesia is the largest nickel producer."
+      },
+      {
+        "region": "Southeast Asia",
+        "symbol": "USDIDR",
+        "why": "Rupiah moves follow commodity exports and rate gaps."
+      },
+      {
+        "region": "Southeast Asia",
+        "symbol": "USDPHP",
+        "why": "Peso moves track remittances and oil import costs."
+      },
+      {
+        "region": "Southeast Asia",
+        "symbol": "USDTHB",
+        "why": "Baht moves track tourism and exports."
+      },
+      {
+        "region": "Southeast Asia",
+        "symbol": "BI",
+        "why": "Bank Indonesia policy rate."
+      },
+      {
+        "region": "Southeast Asia",
+        "symbol": "BSP",
+        "why": "Philippine policy rate."
+      },
+      {
+        "region": "Southeast Asia",
+        "symbol": "BOT",
+        "why": "Thai policy rate."
+      },
+      {
+        "region": "Oceania",
+        "symbol": "IRONORE",
+        "why": "Australia is the largest iron ore exporter."
+      },
+      {
+        "region": "Oceania",
+        "symbol": "LITHIUM",
+        "why": "Australia is a leading lithium producer."
+      },
+      {
+        "region": "Oceania",
+        "symbol": "BHP",
+        "why": "Australia's largest miner; iron ore, copper and coal."
+      },
+      {
+        "region": "Oceania",
+        "symbol": "PDN.AX",
+        "why": "Australian-listed uranium miner (Namibia)."
+      },
+      {
+        "region": "Oceania",
+        "symbol": "AUDUSD",
+        "why": "Australian dollar follows metals prices and Chinese demand."
+      },
+      {
+        "region": "Oceania",
+        "symbol": "RBA",
+        "why": "Australia's policy rate."
       }
     ]
   }

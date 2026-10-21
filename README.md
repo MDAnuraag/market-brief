@@ -65,3 +65,12 @@ Prices come from web search, not a market data feed. They can lag, and some inst
 
 ## Energy and macro groups (added 2026-10-21)
 Nuclear and fuel cycle, Carbon markets, Energy startups and new listings, Chemicals and plastics, Central bank policy rates and Currencies against the dollar run as daily groups. Currencies come from the ECB reference rates (fixings, not closes); policy rates carry no price change and show the previous level in the note. Seven reading feeds were added (World Nuclear News, Energy Monitor, Carbon Herald, Climate Home News, Mongabay, CTVC, TechCrunch Climate).
+
+## Page features (2026-10-21)
+- **Plum** is the fixed colour scheme; the `?look=` preview is gone.
+- **Movers** ranks the biggest moves against what is usual for each kind of instrument (the class priors in `flagging.priors_daily_vol_pct`), with a breadth line (how many up and down). Items dated before the data date are left out.
+- **What moves each region** is built from `region_drivers` in the watchlist and responds to the route line.
+- **Search** filters every board by symbol, name or region. Navigation is grouped, with the boards of the group in view on a second row.
+- A row's detail lists related headlines, reading entries and indicators. Rows whose price is older than the data date say "as of" in the status column.
+- Boards no longer rotate by themselves; "play" turns that on and the choice is remembered on the device.
+- Reading marks items that are new since the last visit (at least six hours earlier) and has a filter for them.

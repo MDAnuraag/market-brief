@@ -39,6 +39,13 @@ Tested 2026-10-20. The shell has no network beyond package registries, so everyt
 - Google Finance quote pages carry a timestamp: use one only when its date equals the item's date (many are cached days old).
 - Yahoo, Stooq, FT and Naver are refused by the fetch tool; HKEX, GIE AGSI and Cboe pages load their numbers by script and come back empty; the Cboe VIX CSV is cut off before recent rows.
 
+**Currencies, rates and nuclear (added 2026-10-21)**
+- ECB reference rates through the Frankfurter API cover BRL, MXN, TRY, ZAR, INR, JPY, KRW, CNY, IDR, PHP, THB and AUD; EURUSD and AUDUSD are inverted from the ECB's per-euro and per-AUD quotes. CLP, NGN and SAR are not in that set: use the Trading Economics `/currencies` page, dated as that page's own date, and set `as_of` to match.
+- Policy rates: Trading Economics country pages (`/<country>/interest-rate`) give the rate, previous rate and next meeting. Use a central bank's own decision page when it loads (the Bank of Thailand's does; tier `official`).
+- NRC reactor status: `https://www.nrc.gov/reading-rm/doc-collections/event-status/reactor-status/YYYY/YYYYMMDDps.html` for the Friday; the series counts units at 0% power.
+- Cameco `https://www.cameco.com/invest/markets/uranium-price` lists month-end spot and long-term uranium prices; the series stores spot and keeps the long-term price in the note.
+- NexGen's NYSE history page was rate-limited; the Toronto line (`/quote/tsx/NXE/history/`, CAD) loaded. India (`/quote/nse/RELIANCE/history/`) loads; check for NSE holidays before calling a close missing.
+
 ## Source tiers and second sources
 Every priced item gets `src` (the issuing body, e.g. "CME Group", "Tokyo Stock Exchange") and `tier`: `official` (the issuer's own page), `reported` (a news report quoting the release), or `aggregator` (a compiled quote site). Use the lowest tier honestly; do not label an aggregator page `official`.
 1. After `compute_flags.py --write`, run `python3 scripts/check_quality.py --plan`. It lists flagged items and a rotating audit sample.
@@ -59,6 +66,9 @@ Operational series (chip equipment orders, foundry revenue, memory exports) live
 
 ## Companies and venues
 Stocks sit inside the commodity, shipping and theme groups and carry a `hint` with their listing venue. Use the venue's own quote page or the issuer's investor page first. A foreign listing quotes in its own currency; leave the number as quoted and say the currency in `note` when it is not USD. Flags compare each stock with its own cohort (`flagging.peer_cohorts`), never with a ticker it merely resembles.
+
+## Region drivers
+`region_drivers` in `data/watchlist.json` lists the structural links between a region and items already priced on the page (`{region, symbol, why}`). The page builds the "What moves each region" board from it and from `latest.json`; no prices are stored there. Keep each `why` to one factual line with no dates, and only use symbols that exist in a group. Add or remove a driver only when the underlying link changes, not for a one-week move.
 
 ## Flags
 Flags are computed, not hand-written. Once every item, headline and reading entry is in `data/latest.json`, run `python3 scripts/compute_flags.py --write`. It replaces `flags` and adds `flag_basis`.
