@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-24T14:10:23Z",
+  "generated_at": "2026-10-26T12:09:36Z",
   "data_date": "2026-10-23",
-  "edition": "saturday",
-  "summary": "Friday 23 Oct closed the week with US stocks slightly lower (S&P 500 -0.5% on the day and -0.5% on the week; Nasdaq -0.2% and -0.7%) and the 10-year Treasury yield at 4.99%, while chip-equipment names fell hardest: Lam Research -12.8%, KLA -12.2% and Tokyo Electron -11.0% on the week. Brent crude rose about 6% on the week to roughly $117 and WTI to $103.27 as Henry Hub gas fell 15.7% on the week to $2.63/MMBtu; gold lost 4.1% and silver 5.8% on the week. In Asia, South Korea's EWY fund is down 18.5% over the month though SK hynix rose 4.4% on Friday; in emerging markets the Mexican peso weakened 2.2% on the week against the dollar. Turkey cut its policy rate 100 bp to 36% and the Philippines raised its rate 50 bp to 5.50% on 22 Oct, and the Fed (28 Oct), ECB (29 Oct) and Bank of Japan (30 Oct) meet next week. A few items (uranium spot, Kazatomprom, Paladin, Glencore, Air Liquide and palm oil) still carry 22 Oct values (see gaps).",
+  "edition": "weekday",
+  "summary": "Overnight in Asia on Monday 26 Oct, Japan's Nikkei 225 slipped about 0.4%, South Korea's Kospi fell about 1.3% on chip and tech weakness, Hong Kong's Hang Seng gained 0.5% and Australia's ASX 200 rose 0.2% (secondary report; not entered as item prices). Brent crude eased about 2% to roughly $110 after nearing $117 on Friday on Middle East supply fears, and gold was near $4,008 after its worst week in over four months. The page's prices are still Friday 23 Oct closes: S&P 500 7,623.68 (-0.5% on the day), the 10-year Treasury yield 4.99%, chip-equipment names down 11-13% on the week, and Henry Hub gas down 15.7% on the week. US gas storage stood at 3,644 Bcf on 16 Oct. The Fed (27-28 Oct, September hike took the rate to 3.75-4.00%), Bank of Canada, ECB and Bank of Japan all decide this week.",
   "groups": [
     {
       "id": "macros",
@@ -130,54 +130,6 @@
           "chg_1w": -1.08,
           "chg_1m": -3.95,
           "src": "Nasdaq",
-          "tier": "aggregator"
-        }
-      ]
-    },
-    {
-      "id": "funds_401k",
-      "title": "401(k) funds",
-      "group_by": null,
-      "items": [
-        {
-          "symbol": "FXAIX",
-          "name": "Fidelity 500 Index",
-          "last": 264.99,
-          "chg_1d": -0.51,
-          "chg_1w": -0.46,
-          "chg_1m": -1.27,
-          "src": "Fidelity Investments (NAV)",
-          "tier": "aggregator"
-        },
-        {
-          "symbol": "FSMDX",
-          "name": "Fidelity Mid Cap Index",
-          "last": 42.39,
-          "chg_1d": -0.45,
-          "chg_1w": 0.9,
-          "chg_1m": 1.12,
-          "src": "Fidelity Investments (NAV)",
-          "tier": "aggregator"
-        },
-        {
-          "symbol": "FSSNX",
-          "name": "Fidelity Small Cap Index",
-          "last": 34.89,
-          "chg_1d": -0.29,
-          "chg_1w": null,
-          "chg_1m": null,
-          "src": "Fidelity Investments (NAV)",
-          "tier": "aggregator",
-          "note": "1w and 1m bases (16 Oct, 23 Sep) not available; source table stale."
-        },
-        {
-          "symbol": "FTIHX",
-          "name": "Fidelity Total International Index",
-          "last": 19.14,
-          "chg_1d": -0.05,
-          "chg_1w": -0.83,
-          "chg_1m": -3.92,
-          "src": "Fidelity Investments (NAV)",
           "tier": "aggregator"
         }
       ]
@@ -2594,6 +2546,35 @@
       ]
     },
     {
+      "story": "Fed meets 27-28 Oct after September hike; Warsh keeps options open",
+      "date": "2026-10-16",
+      "summary": "Chair Warsh declined to signal the October decision after the Fed's first hike since 2023 (to 3.75-4.00%), naming October and December as decision points.",
+      "coverage": [
+        {
+          "outlet": "Trading Economics",
+          "region": "Global",
+          "title": "Warsh Comments Boost Bets on Fed Rate Hold in October",
+          "url": "https://tradingeconomics.com/united-states/interest-rate/news/592678",
+          "kind": "press"
+        },
+        {
+          "outlet": "investingLive",
+          "region": "Global",
+          "title": "Warsh won't prejudge rest of 2026, names October and December as decision points",
+          "url": "https://investinglive.com/central-banks/warsh-won-t-prejudge-rest-of-2026-names-october-and-december-as-decision-points/",
+          "kind": "press"
+        }
+      ],
+      "framing": "One outlet leads with lower odds of an October hike; the other reads the remarks as slightly hawkish.",
+      "overlap": [
+        {
+          "symbol": "^TNX",
+          "strength": "loose",
+          "reason": "Fed path drives Treasury yields."
+        }
+      ]
+    },
+    {
       "story": "China moves on export controls for AI technologies",
       "date": "2026-10-21",
       "summary": "China's commerce ministry set out export-control measures covering AI technologies, which analysts and commentators discussed as a major shift for Chinese AI.",
@@ -2665,42 +2646,6 @@
           "symbol": "ORSTED.CO",
           "strength": "loose",
           "reason": "Offshore wind developer exposed to US policy."
-        }
-      ]
-    },
-    {
-      "story": "Senate permitting deal faces criticism and timing risk",
-      "date": "2026-10-23",
-      "summary": "A bipartisan Senate bill to speed energy and grid projects drew objections from green groups over fossil-fuel provisions, and may clash with administration opposition to offshore wind.",
-      "coverage": [
-        {
-          "outlet": "Latitude Media",
-          "region": "Americas",
-          "title": "Why green groups won't endorse the Senate permitting deal",
-          "url": "https://www.latitudemedia.com/news/why-green-groups-wont-endorse-the-senate-permitting-deal/",
-          "kind": "press"
-        },
-        {
-          "outlet": "Canary Media",
-          "region": "Americas",
-          "title": "The permitting deal collides with Trump's war on offshore wind",
-          "url": "https://www.canarymedia.com/articles/politics/permitting-bill-offshore-wind",
-          "kind": "press"
-        },
-        {
-          "outlet": "Engineering News",
-          "region": "Middle East and Africa",
-          "title": "US senators hit deal on energy project permitting bill, vote after midterm elections",
-          "url": "https://engineeringnews.co.za/article/us-senators-hit-deal-on-energy-project-permitting-bill-vote-after-midterm-elections-2026-10-01",
-          "kind": "press"
-        }
-      ],
-      "framing": "Latitude Media emphasizes environmental groups' concerns; Canary Media emphasizes the clash with offshore wind policy.",
-      "overlap": [
-        {
-          "symbol": "PAVE",
-          "strength": "loose",
-          "reason": "Grid and infrastructure permitting."
         }
       ]
     },
@@ -2778,1036 +2723,632 @@
   ],
   "reading": [
     {
-      "source": "SemiAnalysis",
-      "title": "Amazon's Trainium Takes a Strike at the Training King",
-      "url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
-      "published": "2026-10-23",
-      "source_url": "https://newsletter.semianalysis.com",
-      "topic": "Chips",
+      "source": "Canary Media",
+      "title": "This group-buy campaign makes it easier to switch to induction cooking",
+      "url": "https://www.canarymedia.com/articles/electrification/group-buy-induction-cooking",
+      "published": "2026-10-26",
       "access": "partial",
-      "summary": "Feed teaser says Trainium is strong for inference and is now suited to training too, citing native PyTorch support, CI quality, TorchTitan and a profiling tool.",
-      "overlap": [
-        {
-          "symbol": "AMZN",
-          "strength": "direct",
-          "reason": "Covers Amazon's Trainium accelerator."
-        },
-        {
-          "symbol": "NVDA",
-          "strength": "loose",
-          "reason": "Framed as a challenge to the GPU training incumbent."
-        }
-      ]
-    },
-    {
-      "source": "Chipstrat",
-      "title": "Optics Primer, Part 4: Coherent Optics",
-      "url": "https://newsletter.chipstrat.com/p/optics-primer-part-4-coherent-optics",
-      "published": "2026-10-21",
-      "source_url": "https://newsletter.chipstrat.com",
-      "topic": "Chips",
-      "access": "full",
-      "summary": "Explains how amplitude, phase and polarization carry data over hundreds of kilometers, why coherent optics cost more than data center optics, and where coherent-lite fits.",
-      "overlap": [
-        {
-          "symbol": "AVGO",
-          "strength": "loose",
-          "reason": "Optical networking read-through for AI interconnect suppliers."
-        }
-      ]
-    },
-    {
-      "source": "ChinaTalk",
-      "title": "Where is China's Groq?",
-      "url": "https://www.chinatalk.media/p/where-is-chinas-groq",
-      "published": "2026-10-23",
-      "source_url": "https://www.chinatalk.media",
-      "topic": "China and Asia",
-      "access": "full",
-      "summary": "Asks why China has not built HBM-free inference chips while US firms are making them.",
-      "overlap": [
-        {
-          "symbol": "000660.KS",
-          "strength": "loose",
-          "reason": "HBM supply is the constraint the piece contrasts."
-        }
-      ]
-    },
-    {
-      "source": "ChinaTalk",
-      "title": "Take Ten-Thousand: Egocentric Data Collection for Humanoid Robots",
-      "url": "https://www.chinatalk.media/p/take-ten-thousand-egocentric-data",
-      "published": "2026-10-22",
-      "source_url": "https://www.chinatalk.media",
-      "topic": "China and Asia",
-      "access": "full",
-      "summary": "Looks at why selling robot training data is a hard business, with notes from the CoRL conference.",
-      "overlap": []
-    },
-    {
-      "source": "ChinaTalk",
-      "title": "MOFCOM's New Rules and the Future of Chinese AI",
-      "url": "https://www.chinatalk.media/p/mofcoms-new-ai-rules",
-      "published": "2026-10-21",
-      "source_url": "https://www.chinatalk.media",
-      "topic": "China and Asia",
-      "access": "full",
-      "summary": "Discusses new Chinese commerce ministry rules affecting AI technology, which the feed calls a big deal for the future of Chinese AI.",
-      "overlap": []
-    },
-    {
-      "source": "Hello China Tech",
-      "title": "China's Payment Push Reaches CATL",
-      "url": "https://hellochinatech.com/p/catl-cash-flow-supplier-payments",
-      "published": "2026-10-22",
-      "source_url": "https://hellochinatech.com",
-      "topic": "China and Asia",
-      "access": "full",
-      "summary": "CATL cut accounts payable by Rmb 22.1bn in Q3 under a ministry-backed payment code, and its operating cash flow fell to about Rmb 1.4bn.",
-      "overlap": [
-        {
-          "symbol": "LIT",
-          "strength": "loose",
-          "reason": "Battery supply chain read-through."
-        }
-      ]
-    },
-    {
-      "source": "Hello China Tech",
-      "title": "China's Robot Makers Fund Their Own Supply Chain",
-      "url": "https://hellochinatech.com/p/china-robot-startup-investments",
-      "published": "2026-10-21",
-      "source_url": "https://hellochinatech.com",
-      "topic": "China and Asia",
-      "access": "full",
-      "summary": "Chinese robot startups awaiting listings fund suppliers, data vendors and each other; their fund filings separate commitments from payments actually made.",
-      "overlap": []
-    },
-    {
-      "source": "Hello China Tech",
-      "title": "BYD and the Captive Ceiling",
-      "url": "https://hellochinatech.com/p/byd-battery-market-share",
-      "published": "2026-10-20",
-      "source_url": "https://hellochinatech.com",
-      "topic": "China and Asia",
-      "access": "full",
-      "summary": "BYD's share of China's battery installations fell 4.04 points as CATL gained, because most BYD cells go into BYD cars.",
-      "overlap": [
-        {
-          "symbol": "LIT",
-          "strength": "loose",
-          "reason": "Battery market share shift in China."
-        }
-      ]
-    },
-    {
-      "source": "Dialogue Earth",
-      "title": "New steel plant is early test for Argentina's big investment scheme",
-      "url": "https://dialogue.earth/en/business/new-steel-plant-is-early-test-for-argentinas-big-investment-scheme/",
-      "published": "2026-10-23",
-      "source_url": "https://dialogue.earth/en/",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "A planned lower-carbon steelworks in San Nicolas, Argentina is the first industrial project to use the country's Rigi investment incentive programme. Tags: Business, Steel.",
-      "overlap": [
-        {
-          "symbol": "ARGT",
-          "strength": "loose",
-          "reason": "Argentina investment incentive regime."
-        }
-      ]
-    },
-    {
-      "source": "Dialogue Earth",
-      "title": "Mexico's year of oil spills fuels growing concern",
-      "url": "https://dialogue.earth/en/ocean/mexicos-year-of-oil-spills-fuels-growing-concern/",
-      "published": "2026-10-22",
-      "source_url": "https://dialogue.earth/en/",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Spills from state oil company Pemex are drawing criticism over compensation, oversight and transparency. Tags: Ocean, Pollution, Oil spill.",
-      "overlap": [
-        {
-          "symbol": "EWW",
-          "strength": "loose",
-          "reason": "Mexico energy sector news."
-        }
-      ]
-    },
-    {
-      "source": "Dialogue Earth",
-      "title": "Without USAID, Guatemala's Maya reserve must support itself",
-      "url": "https://dialogue.earth/en/forests/without-usaid-guatemalas-maya-reserve-must-support-itself/",
-      "published": "2026-10-21",
-      "source_url": "https://dialogue.earth/en/",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Halted US aid threatens years of forest protection in the Maya biosphere reserve, pushing local communities to find new ways to fund conservation work.",
-      "overlap": []
-    },
-    {
-      "source": "Semiconductor Engineering",
-      "title": "Chip Industry Week In Review",
-      "url": "https://semiengineering.com/chip-industry-week-in-review-161/",
-      "published": "2026-10-23",
-      "source_url": "https://semiengineering.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Weekly roundup: CHIPS Act R&D awards, Nvidia supply-chain capacity deals, Micron's memory roadmap, Tenstorrent's $1.5B raise, and China-related fab and GPU news.",
-      "overlap": [
-        {
-          "symbol": "MU",
-          "strength": "loose",
-          "reason": "Includes Micron's memory roadmap."
-        },
-        {
-          "symbol": "NVDA",
-          "strength": "loose",
-          "reason": "Covers Nvidia supply-chain capacity deals."
-        }
-      ]
-    },
-    {
-      "source": "Semiconductor Engineering",
-      "title": "Beyond The EPE Budget: Building The Next Generation Of Computational Lithography",
-      "url": "https://semiengineering.com/beyond-the-epe-budget-building-the-next-generation-of-computational-lithography/",
-      "published": "2026-10-22",
-      "source_url": "https://semiengineering.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Post-SPIE panel recap arguing edge placement error is now a system-level problem spanning masks, scanners, resists, metrology, OPC and AI.",
-      "overlap": [
-        {
-          "symbol": "ASML",
-          "strength": "loose",
-          "reason": "Scanner and lithography topic."
-        },
-        {
-          "symbol": "KLAC",
-          "strength": "loose",
-          "reason": "Metrology is part of the discussion."
-        }
-      ]
-    },
-    {
-      "source": "Semiconductor Engineering",
-      "title": "PVTW: Extending Silicon Characterization From PVT To Real-World Workload",
-      "url": "https://semiengineering.com/pvtw-extending-silicon-characterization-from-pvt-to-real-world-workload/",
-      "published": "2026-10-22",
-      "source_url": "https://semiengineering.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Proposes adding workload as a fourth characterization dimension beside process, voltage and temperature, combining ATE and system-level test to find operating margin.",
-      "overlap": []
-    },
-    {
-      "source": "SemiWiki",
-      "title": "Inside the Silicon: Analog Bits N2P2 Test Chip",
-      "url": "https://semiwiki.com/ip/analog-bits/375172-inside-the-silicon-analog-bits-n2p2-test-chip/",
-      "published": "2026-10-23",
-      "source_url": "https://semiwiki.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Company-contributed post on Analog Bits' test chip in TSMC N2P2, covering local power regulation, supply monitoring and precision analog.",
-      "overlap": [
-        {
-          "symbol": "TSM",
-          "strength": "direct",
-          "reason": "Silicon built on the TSMC N2P2 process."
-        }
-      ]
-    },
-    {
-      "source": "SemiWiki",
-      "title": "The Wafer Is the New Battleground: Soitec CPO René Jonker on Building AI from the Substrate Up",
-      "url": "https://semiwiki.com/semiconductor-manufacturers/soitec/375182-the-wafer-is-the-new-battleground-soitec-cpo-rene-jonker-on-building-ai-from-the-substrate-up/",
-      "published": "2026-10-23",
-      "source_url": "https://semiwiki.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Interview from SEMICON West 2026 with Soitec's chief product officer on how wafer substrates support AI hardware.",
-      "overlap": []
-    },
-    {
-      "source": "EE Times",
-      "title": "Two Dollars and a Test Suite",
-      "url": "https://www.eetimes.com/two-dollars-and-a-test-suite/",
-      "published": "2026-10-23",
-      "source_url": "https://www.eetimes.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Argues the Arm-Qualcomm verdict's $2 damages award matters less than who controls the compliance tests custom chips must pass before shipping.",
-      "overlap": [
-        {
-          "symbol": "QCOM",
-          "strength": "direct",
-          "reason": "Qualcomm is a party to the verdict discussed."
-        }
-      ]
-    },
-    {
-      "source": "Carbon Brief",
-      "title": "Chart: A record two-thirds of car sales in China are now electric vehicles",
-      "url": "https://www.carbonbrief.org/chart-a-record-two-thirds-of-car-sales-in-china-are-now-electric-vehicles",
-      "published": "2026-10-23",
-      "source_url": "https://www.carbonbrief.org",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "New-energy vehicles made up a record 67% of China car sales in September per CPCA data, while total sales fell as combustion-engine sales dropped sharply.",
-      "overlap": [
-        {
-          "symbol": "LIT",
-          "strength": "loose",
-          "reason": "EV demand affects battery materials."
-        }
-      ]
-    },
-    {
-      "source": "Carbon Brief",
-      "title": "Experts: How are climate scientists using artificial intelligence?",
-      "url": "https://www.carbonbrief.org/experts-how-are-climate-scientists-using-artificial-intelligence",
-      "published": "2026-10-22",
-      "source_url": "https://www.carbonbrief.org",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Ten experts describe AI use in weather and climate forecasting, satellite monitoring, sea ice research and policy, and risks such as unverified results and high energy use.",
-      "overlap": []
-    },
-    {
-      "source": "Latitude Media",
-      "title": "Why green groups won't endorse the Senate permitting deal",
-      "url": "https://www.latitudemedia.com/news/why-green-groups-wont-endorse-the-senate-permitting-deal/",
-      "published": "2026-10-23",
-      "source_url": "https://www.latitudemedia.com",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Transmission reforms would help clean energy, but environmental groups worry that permit-certainty provisions would favor fossil fuels.",
-      "overlap": [
-        {
-          "symbol": "PAVE",
-          "strength": "loose",
-          "reason": "Permitting reform touches grid and infrastructure build-out."
-        }
-      ]
-    },
-    {
-      "source": "Latitude Media",
-      "title": "The energy industry's post-midterms priority list",
-      "url": "https://www.latitudemedia.com/news/the-energy-industrys-post-midterms-priority-list/",
-      "published": "2026-10-22",
-      "source_url": "https://www.latitudemedia.com",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Jim Kapsis outlines three major decisions policymakers may face in the weeks after the November midterm votes.",
-      "overlap": []
-    },
-    {
-      "source": "Latitude Media",
-      "title": "Data centers' looming methane surge",
-      "url": "https://www.latitudemedia.com/news/catalyst-data-centers-looming-methane-surge/",
-      "published": "2026-10-22",
-      "source_url": "https://www.latitudemedia.com",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Frost Methane CEO Olya Irzak discusses methane emissions from gas-powered data centers and possible solutions.",
-      "overlap": [
-        {
-          "symbol": "NG=F",
-          "strength": "loose",
-          "reason": "Gas-fired data center demand."
-        }
-      ]
+      "summary": "Chefs increasingly say induction ranges cook as well as gas; a group-buy campaign aims to make switching easier.",
+      "overlap": [],
+      "source_url": "https://www.canarymedia.com",
+      "topic": "Energy"
     },
     {
       "source": "Canary Media",
-      "title": "The permitting deal collides with Trump's war on offshore wind",
-      "url": "https://www.canarymedia.com/articles/politics/permitting-bill-offshore-wind",
-      "published": "2026-10-23",
+      "title": "Massachusetts sets big battery goals — and the policies to back them up",
+      "url": "https://www.canarymedia.com/articles/batteries/massachusetts-sets-big-battery-goals",
+      "published": "2026-10-26",
+      "access": "partial",
+      "summary": "A developer plans a 700-megawatt storage facility near Boston, and a nearby 250 MW battery project has closed on $850 million in financing.",
+      "overlap": [],
       "source_url": "https://www.canarymedia.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "A bipartisan Senate permitting bill could speed energy and grid projects but may run into the administration's opposition to offshore wind.",
-      "overlap": [
-        {
-          "symbol": "ORSTED.CO",
-          "strength": "loose",
-          "reason": "Offshore wind developer exposed to US policy."
-        }
-      ]
-    },
-    {
-      "source": "Canary Media",
-      "title": "As US grid batteries surge, risk of fires plummets",
-      "url": "https://www.canarymedia.com/articles/batteries/us-grid-batteries-fire-risk",
-      "published": "2026-10-23",
-      "source_url": "https://www.canarymedia.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "As batteries become the leading choice for new on-demand US grid power, the piece argues fears of battery fires exceed the actual risk.",
-      "overlap": []
-    },
-    {
-      "source": "Canary Media",
-      "title": "What kind of virtual power plant would you choose?",
-      "url": "https://www.canarymedia.com/articles/virtual-power-plants/what-virtual-power-plant-would-you-choose",
-      "published": "2026-10-22",
-      "source_url": "https://www.canarymedia.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "California Wire newsletter returns to virtual power plants, focusing on those not set up by utilities.",
-      "overlap": []
-    },
-    {
-      "source": "Utility Dive",
-      "title": "PG&E needs wildfire policy reform to manage tail risk, CEO says",
-      "url": "https://www.utilitydive.com/news/pge-needs-wildfire-policy-reform-to-manage-tail-risk-ceo-says/833845/",
-      "published": "2026-10-23",
-      "source_url": "https://www.utilitydive.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "CEO Patti Poppe says PG&E's credit rating is a major issue lawmakers must solve, and continued legislative inaction will raise customer costs.",
-      "overlap": []
-    },
-    {
-      "source": "Utility Dive",
-      "title": "Trump eschews tariffs for trade talks on wind turbine imports",
-      "url": "https://www.utilitydive.com/news/trump-eschews-tariffs-for-trade-talks-on-wind-turbine-imports/833862/",
-      "published": "2026-10-23",
-      "source_url": "https://www.utilitydive.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "After a Section 232 probe, the president directed cabinet officials to negotiate and report on progress within 180 days.",
-      "overlap": [
-        {
-          "symbol": "FAN",
-          "strength": "loose",
-          "reason": "Wind sector trade policy."
-        },
-        {
-          "symbol": "VWS.CO",
-          "strength": "loose",
-          "reason": "Turbine maker exposed to import measures."
-        }
-      ]
-    },
-    {
-      "source": "Utility Dive",
-      "title": "NextEra Energy secures $5.7B to support federal energy 'hub' projects",
-      "url": "https://www.utilitydive.com/news/nextera-energy-secures-57b-to-support-federal-energy-hub-projects/833810/",
-      "published": "2026-10-23",
-      "source_url": "https://www.utilitydive.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "NextEra still expects to close its Dominion Energy merger in the second half of 2027 despite political opposition in Virginia.",
-      "overlap": [
-        {
-          "symbol": "NEE",
-          "strength": "direct",
-          "reason": "Piece is about NextEra Energy."
-        }
-      ]
+      "topic": "Energy"
     },
     {
       "source": "Oilprice.com",
-      "title": "Trump Targets $6.2 Billion Offshore Wind Project Nearing Completion",
-      "url": "https://oilprice.com/Alternative-Energy/Wind-Power/Trump-Targets-62-Billion-Offshore-Wind-Project-Nearing-Completion.html",
-      "published": "2026-10-24",
-      "source_url": "https://oilprice.com",
-      "topic": "Energy",
+      "title": "Houthis Claim Attacks on Saudi Arabia's East-West Oil Pipeline",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Houthis-Claim-Attacks-on-Saudi-Arabias-East-West-Oil-Pipeline.html",
+      "published": "2026-10-26",
       "access": "partial",
-      "summary": "The administration seeks to rescind approval for Connecticut's first offshore wind project, Revolution Wind, as part of a broader push against offshore wind.",
-      "overlap": [
-        {
-          "symbol": "ORSTED.CO",
-          "strength": "loose",
-          "reason": "Offshore wind developer in the US."
-        }
-      ]
-    },
-    {
-      "source": "Oilprice.com",
-      "title": "Trump's Reverse Nixon Strategy: Bring Russia In, Shut China Out",
-      "url": "https://oilprice.com/Energy/Energy-General/Trumps-Reverse-Nixon-Strategy-Bring-Russia-In-Shut-China-Out.html",
-      "published": "2026-10-23",
-      "source_url": "https://oilprice.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Opinion piece arguing a six-month Treasury waiver letting Russian diesel reach global markets is part of a wider effort to control energy supply and limit China's access.",
-      "overlap": []
-    },
-    {
-      "source": "Oilprice.com",
-      "title": "U.S. Dips Into Strategic Oil Reserve Again Amid Supply Disruptions",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Dips-Into-Strategic-Oil-Reserve-Again-Amid-Supply-Disruptions.html",
-      "published": "2026-10-23",
-      "source_url": "https://oilprice.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "The Energy Department authorized an emergency exchange of up to 400,000 barrels from the SPR to a Lake Charles refinery; the reserve is at its lowest since 1982.",
-      "overlap": [
-        {
-          "symbol": "CL=F",
-          "strength": "direct",
-          "reason": "Crude supply disruption and SPR draw."
-        },
-        {
-          "symbol": "BZ=F",
-          "strength": "loose",
-          "reason": "Report cites oil above $117 per barrel."
-        }
-      ]
-    },
-    {
-      "source": "Rigzone",
-      "title": "Germany Wants to Stop More Oil Refinery Closures",
-      "url": "https://www.rigzone.com/news/wire/germany_wants_to_stop_more_oil_refinery_closures-24-oct-2026-184919-article/?rss=true",
-      "published": "2026-10-24",
-      "source_url": "https://www.rigzone.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Germany said it will seek to stem the loss of oil refining capacity.",
-      "overlap": [
-        {
-          "symbol": "BAS.DE",
-          "strength": "loose",
-          "reason": "German industrial energy supply context."
-        }
-      ]
-    },
-    {
-      "source": "Rigzone",
-      "title": "Brent Tops $116 as Middle East Risks Grow",
-      "url": "https://www.rigzone.com/news/wire/brent_tops_116_as_middle_east_risks_grow-23-oct-2026-184925-article/?rss=true",
-      "published": "2026-10-23",
-      "source_url": "https://www.rigzone.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Oil prices climbed as escalating attacks on Saudi Arabia heightened fears of Middle East supply disruptions.",
+      "summary": "Houthis claim strikes on pumping stations of Saudi Arabia's East-West pipeline, a route bypassing Hormuz; Saudi Arabia had not confirmed any attack.",
       "overlap": [
         {
           "symbol": "BZ=F",
           "strength": "direct",
-          "reason": "Piece is about Brent prices."
+          "reason": "Supply-disruption risk to crude."
         },
         {
           "symbol": "2222.SR",
           "strength": "loose",
-          "reason": "Attacks involve Saudi Arabia."
+          "reason": "Concerns Saudi oil infrastructure."
         }
-      ]
+      ],
+      "source_url": "https://oilprice.com",
+      "topic": "Energy"
     },
     {
-      "source": "Rigzone",
-      "title": "Physical Oil Prices Drop in Mideast",
-      "url": "https://www.rigzone.com/news/wire/physical_oil_prices_drop_in_mideast-23-oct-2026-184922-article/?rss=true",
-      "published": "2026-10-23",
-      "source_url": "https://www.rigzone.com",
-      "topic": "Energy",
+      "source": "Oilprice.com",
+      "title": "Europe's Natural Gas Prices Soar to Four-Year High as Winter Looms",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Europes-Natural-Gas-Prices-Soar-to-Four-Year-High-as-Winter-Looms.html",
+      "published": "2026-10-26",
       "access": "partial",
-      "summary": "Physical prices of some Middle East crudes sold outside the Persian Gulf have dropped.",
+      "summary": "Dutch TTF rose about 2% at the open to as much as $107.40 per MWh, its highest since 2022, with no sign Qatari LNG flows will return soon.",
       "overlap": [
+        {
+          "symbol": "TTF=F",
+          "strength": "direct",
+          "reason": "Covers the TTF benchmark price."
+        }
+      ],
+      "source_url": "https://oilprice.com",
+      "topic": "Energy"
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "India's Stock Market Feels the Heat From High Oil Prices",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Stock-Market-Feels-the-Heat-From-High-Oil-Prices.html",
+      "published": "2026-10-26",
+      "access": "partial",
+      "summary": "Both major Indian indices opened lower, with 12 of 16 sectors down, as Brent traded above $114 a barrel.",
+      "overlap": [
+        {
+          "symbol": "INDA",
+          "strength": "direct",
+          "reason": "Covers Indian equities falling on oil."
+        },
         {
           "symbol": "BZ=F",
           "strength": "loose",
-          "reason": "Physical crude differentials versus futures."
+          "reason": "Brent price is the driver."
         }
-      ]
+      ],
+      "source_url": "https://oilprice.com",
+      "topic": "Energy"
     },
     {
-      "source": "farmdoc daily",
-      "title": "Conservation Policy: The Baseline Shuffle and Tradeoffs in the Bardo",
-      "url": "https://farmdocdaily.illinois.edu/2026/10/conservation-policy-the-baseline-shuffle-and-tradeoffs-in-the-bardo.html",
-      "published": "2026-10-22",
-      "source_url": "https://farmdocdaily.illinois.edu",
-      "topic": "Food and farm",
-      "access": "partial",
-      "summary": "Notes that October starts the federal fiscal year, when farm policy payments are made; the feed excerpt cuts off before the main points.",
-      "overlap": []
+      "source": "AgFunder News",
+      "title": "Finnish insect ag firm Volare opens 5,000-ton protein factory in Finland, explores 2nd plant",
+      "url": "https://agfundernews.com/finnish-insect-ag-firm-volare-opens-5000-ton-protein-factory-in-finland-explores-2nd-plant",
+      "published": "2026-10-26",
+      "access": "full",
+      "summary": "Volare's CEO discusses its new 5,000-ton insect protein factory and a possible second plant, citing digestibility, palatability and price as quality factors.",
+      "overlap": [],
+      "source_url": "https://agfundernews.com",
+      "topic": "Food and farm"
     },
     {
-      "source": "farmdoc daily",
-      "title": "Mixing Politics and Perceptions of AI and Data Centers: Results from the Gardner Food & Agricultural Policy Survey",
-      "url": "https://farmdocdaily.illinois.edu/2026/10/mixing-politics-and-perceptions-of-ai-and-data-centers-results-from-the-gardner-food-agricultural-policy-survey.html",
-      "published": "2026-10-21",
-      "source_url": "https://farmdocdaily.illinois.edu",
-      "topic": "Food and farm",
-      "access": "partial",
-      "summary": "Authors use survey results to compare how Democrats, Republicans and others view the benefits and challenges of AI and data center development.",
-      "overlap": []
+      "source": "Container News",
+      "title": "WEL Companies integrates Descartes and CARRIER1 to streamline freight operations",
+      "url": "https://container-news.com/wel-companies-integrates-descartes-and-carrier1-to-streamline-freight-operations/",
+      "published": "2026-10-26",
+      "access": "full",
+      "summary": "WEL Companies linked Descartes' transportation management system with CARRIER1 Vault so brokers handle own-fleet and third-party shipments in one system.",
+      "overlap": [],
+      "source_url": "https://container-news.com",
+      "topic": "Shipping and logistics"
     },
     {
-      "source": "farmdoc daily",
-      "title": "Diesel Fuel Price Impact on Fuel & Oil and Per-Acre Machinery Costs",
-      "url": "https://farmdocdaily.illinois.edu/2026/10/diesel-fuel-price-impact-on-fuel-oil-and-per-acre-machinery-costs.html",
-      "published": "2026-10-20",
-      "source_url": "https://farmdocdaily.illinois.edu",
-      "topic": "Food and farm",
-      "access": "partial",
-      "summary": "Illinois agricultural diesel prices hit a record; the article estimates the added fuel and oil costs on Central Illinois grain farms.",
+      "source": "Container News",
+      "title": "MSC's MEDLOG joins consortium to operate Júndiz intermodal terminal",
+      "url": "https://container-news.com/mscs-medlog-joins-consortium-to-operate-jundiz-intermodal-terminal/",
+      "published": "2026-10-26",
+      "access": "full",
+      "summary": "Adif awarded the Vitoria-Júndiz rail terminal contract to a consortium including MEDLOG and the Bilbao and Pasaia port authorities, with a six-year initial term.",
+      "overlap": [],
+      "source_url": "https://container-news.com",
+      "topic": "Shipping and logistics"
+    },
+    {
+      "source": "Container News",
+      "title": "How Sierra Leone's new national carrier turns into a Chinese asset",
+      "url": "https://container-news.com/how-sierra-leones-new-national-carrier-turns-into-a-chinese-asset/",
+      "published": "2026-10-26",
+      "access": "teaser",
+      "summary": "Teaser says Zhejiang Xiehai Group supplies capital and ships while Freetown provides a 40% cargo reservation; premium article is locked.",
+      "overlap": [],
+      "source_url": "https://container-news.com",
+      "topic": "Shipping and logistics"
+    },
+    {
+      "source": "ChinaTalk",
+      "title": "Riding Solo in Santiago",
+      "url": "https://www.chinatalk.media/p/riding-solo-in-santiago",
+      "published": "2026-10-25",
+      "access": "full",
+      "summary": "Travel notes on Chile covering Santiago, Concepcion, Antofagasta and the Atacama.",
       "overlap": [
         {
-          "symbol": "DE",
+          "symbol": "ECH",
           "strength": "loose",
-          "reason": "Farm input costs bear on equipment buyers."
-        }
-      ]
-    },
-    {
-      "source": "AgFunder News",
-      "title": "US aquaculture needs more than VC dollars to grow: report",
-      "url": "https://agfundernews.com/us-aquaculture-needs-more-than-vc-dollars-to-grow-report",
-      "published": "2026-10-23",
-      "source_url": "https://agfundernews.com",
-      "topic": "Food and farm",
-      "access": "full",
-      "summary": "Aquaculture investor Hatch Blue says the sector needs more patient or risk-tolerant capital to help companies reach milestones.",
-      "overlap": []
-    },
-    {
-      "source": "AgFunder News",
-      "title": "'No acceptable offers' for Liberation Bioindustries as firm seeks to plug $25m funding gap",
-      "url": "https://agfundernews.com/no-acceptable-offers-for-liberation-bioindustries-as-firm-seeks-to-plug-25m-funding-gap",
-      "published": "2026-10-22",
-      "source_url": "https://agfundernews.com",
-      "topic": "Food and farm",
-      "access": "full",
-      "summary": "Construction at the Richmond, Indiana biomanufacturing facility is paused while the firm seeks an additional $25 million to finish it.",
-      "overlap": []
-    },
-    {
-      "source": "AgFunder News",
-      "title": "AgriFood Signals: Danone turns yogurt into renewable energy, Bison Ventures lands $160m, biochar projects",
-      "url": "https://agfundernews.com/agrifood-signals-danone-turns-yogurt-into-renewable-energy-bison-ventures-lands-160m-biochar-projects",
-      "published": "2026-10-22",
-      "source_url": "https://agfundernews.com",
-      "topic": "Food and farm",
-      "access": "full",
-      "summary": "Roundup of agrifood funding, M&A and industry news, including Danone, a $160m Bison Ventures raise and biochar projects.",
-      "overlap": []
-    },
-    {
-      "source": "gCaptain",
-      "title": "Trump Administration Unveils Seafood Strategy to Boost U.S. Fishing Fleet and Domestic Production",
-      "url": "https://gcaptain.com/trump-administration-unveils-seafood-strategy-to-boost-u-s-fishing-fleet-and-domestic-production/",
-      "published": "2026-10-23",
-      "source_url": "https://gcaptain.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "The America First Seafood Strategy aims to strengthen commercial fishing through regulatory reform and investment in vessels and shoreside infrastructure.",
-      "overlap": []
-    },
-    {
-      "source": "gCaptain",
-      "title": "MARAD's Training Ship Success Offers a Blueprint for U.S. Shipbuilding",
-      "url": "https://gcaptain.com/marads-training-ship-success-offers-a-blueprint-for-u-s-shipbuilding/",
-      "published": "2026-10-23",
-      "source_url": "https://gcaptain.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "MARAD used vessel construction management for new training ships at five of six state maritime academies; TOTE Services has delivered four so far.",
-      "overlap": []
-    },
-    {
-      "source": "gCaptain",
-      "title": "USTR Proposes Extending China Ship Port Fee Suspension Through January 2027",
-      "url": "https://gcaptain.com/ustr-proposes-extending-china-ship-port-fee-suspension-through-january-2027/",
-      "published": "2026-10-23",
-      "source_url": "https://gcaptain.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "The administration proposes extending its suspension of port fees on China-linked vessels by two months, pushing any return of the fees to January 2027.",
-      "overlap": [
-        {
-          "symbol": "ZIM",
-          "strength": "loose",
-          "reason": "Container carriers are exposed to port fees."
-        }
-      ]
-    },
-    {
-      "source": "Container News",
-      "title": "ABP makes two appointments at Humber container terminals",
-      "url": "https://container-news.com/abp-makes-two-appointments-at-humber-container-terminals/",
-      "published": "2026-10-24",
-      "source_url": "https://container-news.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "ABP named Jamie Pearson head of unitised operations for the Humber and promoted Alex Pickett to Immingham Container Terminal manager.",
-      "overlap": []
-    },
-    {
-      "source": "Container News",
-      "title": "Hiab reports stronger Q3 profitability following EVS acquisition",
-      "url": "https://container-news.com/hiab-reports-stronger-q3-profitability-following-evs-acquisition/",
-      "published": "2026-10-24",
-      "source_url": "https://container-news.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "Hiab's Q3 comparable operating profit rose sharply on higher sales, cost savings and the EVS acquisition; sales reached €481 million, up 39%.",
-      "overlap": []
-    },
-    {
-      "source": "Container News",
-      "title": "Evergreen's HTW service returns to Tacoma",
-      "url": "https://container-news.com/evergreens-htw-service-returns-to-tacoma/",
-      "published": "2026-10-24",
-      "source_url": "https://container-news.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "The Northwest Seaport Alliance welcomed Evergreen's HTW service back, with 13 weekly calls through January starting with the 15,372 TEU EVER MACH.",
-      "overlap": []
-    },
-    {
-      "source": "Splash247",
-      "title": "OEG books three more offshore wind CTVs at Diverse Marine",
-      "url": "https://splash247.com/oeg-books-three-more-offshore-wind-ctvs-at-diverse-marine/",
-      "published": "2026-10-23",
-      "source_url": "https://splash247.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "OEG Marine Services ordered three 26 m crew transfer vessels from Diverse Marine, with deliveries through 2027, to renew its offshore wind fleet.",
-      "overlap": []
-    },
-    {
-      "source": "Splash247",
-      "title": "Rio Tinto targets larger capesizes in $1.9bn Australian bauxite push",
-      "url": "https://splash247.com/rio-tinto-targets-larger-capesizes-in-1-9bn-australian-bauxite-push/",
-      "published": "2026-10-23",
-      "source_url": "https://splash247.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "Rio Tinto approved a $1.9bn Queensland bauxite expansion including terminal upgrades for larger capesizes; Kangwinan adds 20m tonnes a year, first output targeted for 2029.",
-      "overlap": [
-        {
-          "symbol": "RIO",
-          "strength": "direct",
-          "reason": "Rio Tinto project approval."
+          "reason": "Chile-focused notes touching copper and lithium country."
         },
         {
-          "symbol": "BDI",
+          "symbol": "SCCO",
           "strength": "loose",
-          "reason": "Larger capesize loadings affect dry bulk."
+          "reason": "Atacama and Antofagasta are copper-mining regions."
         }
-      ]
+      ],
+      "source_url": "https://www.chinatalk.media",
+      "topic": "China and Asia"
     },
     {
-      "source": "Splash247",
-      "title": "Fatigue, fear and the flaws in shipping's safety data",
-      "url": "https://splash247.com/fatigue-fear-and-the-flaws-in-shippings-safety-data/",
-      "published": "2026-10-23",
-      "source_url": "https://splash247.com",
-      "topic": "Shipping and logistics",
+      "source": "Hello China Tech",
+      "title": "Weekly recap: DeepSeek, two governments, and a $200m Chinese token deal",
+      "url": "https://hellochinatech.com/p/weekly-recap-2026-10-25",
+      "published": "2026-10-25",
       "access": "partial",
-      "summary": "A Sustainable Shipping Initiative report argues seafarer fatigue and under-reporting are commercial risks for insurers, banks and investors; it reviews 68 sources.",
-      "overlap": []
+      "summary": "Weekly roundup of China tech news including DeepSeek, government orders affecting AI models, and a large Chinese token deal; paid section follows the preview.",
+      "overlap": [],
+      "source_url": "https://hellochinatech.com",
+      "topic": "China and Asia"
+    },
+    {
+      "source": "Semiconductor Engineering",
+      "title": "Pt-W Alloy Shows Potential For Thinner High-NA EUV Mask Absorbers",
+      "url": "https://semiengineering.com/pt-w-alloy-shows-potential-for-thinner-high-na-euv-mask-absorbers-chinese-academy-of-sciences-et-al/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Technical paper from Chinese Academy of Sciences and others investigating a Pt-W alloy as a low-n EUV mask absorber for high-NA lithography.",
+      "overlap": [
+        {
+          "symbol": "ASML",
+          "strength": "loose",
+          "reason": "High-NA EUV is ASML's lithography platform."
+        }
+      ],
+      "source_url": "https://semiengineering.com",
+      "topic": "Chips"
+    },
+    {
+      "source": "Semiconductor Engineering",
+      "title": "Dry-Deposited Resist Shows Different Tone Behavior Under EUV And E-Beam Exposure",
+      "url": "https://semiengineering.com/dry-deposited-resist-shows-different-tone-behavior-under-euv-and-e-beam-exposure-ku-leuven-kunsan-vub-imec/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Technical paper from KU Leuven, imec and others on how dry-deposited metal-organic resists behave differently under EUV and e-beam exposure.",
+      "overlap": [
+        {
+          "symbol": "LRCX",
+          "strength": "loose",
+          "reason": "Dry resist deposition is a Lam Research area."
+        },
+        {
+          "symbol": "ASML",
+          "strength": "loose",
+          "reason": "EUV patterning context."
+        }
+      ],
+      "source_url": "https://semiengineering.com",
+      "topic": "Chips"
+    },
+    {
+      "source": "Semiconductor Engineering",
+      "title": "Silicon Photonic Modulator Reaches 200 Gb/s PAM4 With Reduced DSP",
+      "url": "https://semiengineering.com/silicon-photonic-modulator-reaches-200-gb-s-pam4-with-reduced-dsp-science-tokyo-yokohama-aist-petra/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Technical paper from Japanese institutes on a slow-light silicon modulator with built-in equalizer reaching 200 Gb/s PAM4 for AI data center interconnects.",
+      "overlap": [],
+      "source_url": "https://semiengineering.com",
+      "topic": "Chips"
+    },
+    {
+      "source": "SemiWiki",
+      "title": "CEO Interview with Eric Tsai of Mivium",
+      "url": "https://semiwiki.com/ceo-interviews/374522-ceo-interview-with-eric-tsai-of-mivium/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Vendor-contributed CEO interview: Mivium's chief discusses the Fremont company's submicron gallium nitride powder and wide-bandgap materials.",
+      "overlap": [],
+      "source_url": "https://semiwiki.com",
+      "topic": "Chips"
+    },
+    {
+      "source": "SemiWiki",
+      "title": "CEO Interview with Dr. Gleb Tsipursky of Disaster Avoidance Experts",
+      "url": "https://semiwiki.com/ceo-interviews/375036-ceo-interview-with-dr-gleb-tsipursky-of-disaster-avoidance-experts/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Company interview: a behavioral scientist discusses helping organizations adopt AI through employee engagement and workflow redesign.",
+      "overlap": [],
+      "source_url": "https://semiwiki.com",
+      "topic": "Chips"
+    },
+    {
+      "source": "SemiWiki",
+      "title": "AJ Cooper is the Co-Founder and CEO of Itera",
+      "url": "https://semiwiki.com/ceo-interviews/374969-aj-cooper-is-the-co-founder-and-ceo-of-itera/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Company interview: Itera's CEO describes a reconfigurable circuit board that rewires its own interconnects in real time.",
+      "overlap": [],
+      "source_url": "https://semiwiki.com",
+      "topic": "Chips"
+    },
+    {
+      "source": "Rigzone",
+      "title": "UK Seen More Reliant on Gas Imports This Winter",
+      "url": "https://www.rigzone.com/news/wire/uk_seen_more_reliant_on_gas_imports_this_winter-25-oct-2026-184923-article/?rss=true",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Britain is expected to rely even more heavily on natural gas imports this winter.",
+      "overlap": [
+        {
+          "symbol": "TTF=F",
+          "strength": "loose",
+          "reason": "European gas supply tightness."
+        }
+      ],
+      "source_url": "https://www.rigzone.com",
+      "topic": "Energy"
+    },
+    {
+      "source": "Rigzone",
+      "title": "Iberdrola Secures New EIB Loan for Brazil Grid Upgrades",
+      "url": "https://www.rigzone.com/news/iberdrola_secures_new_eib_loan_for_brazil_grid_upgrades-25-oct-2026-184924-article/?rss=true",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Iberdrola's Brazilian subsidiary secured another European Investment Bank loan to modernize electricity infrastructure in Sao Paulo and Mato Grosso do Sul.",
+      "overlap": [
+        {
+          "symbol": "EWZ",
+          "strength": "loose",
+          "reason": "Brazil grid investment."
+        }
+      ],
+      "source_url": "https://www.rigzone.com",
+      "topic": "Energy"
+    },
+    {
+      "source": "MINING.COM",
+      "title": "China's Argentina mining footprint smaller than it looks",
+      "url": "https://www.mining.com/chinas-argentina-mining-footprint-smaller-than-it-looks/",
+      "published": "2026-10-25",
+      "access": "full",
+      "summary": "Equity-based calculations put Beijing's share of approved Argentine mining investment at 9.2%, and new lithium projects could raise it.",
+      "overlap": [
+        {
+          "symbol": "LITHIUM",
+          "strength": "loose",
+          "reason": "Covers lithium project investment in Argentina."
+        },
+        {
+          "symbol": "ARGT",
+          "strength": "loose",
+          "reason": "Argentina mining investment."
+        }
+      ],
+      "source_url": "https://www.mining.com",
+      "topic": "Metals and minerals"
+    },
+    {
+      "source": "gCaptain",
+      "title": "Russia Says It Hit Two Cargo Vessels And Ukrainian Logistics Hubs",
+      "url": "https://gcaptain.com/russia-says-it-hit-two-cargo-vessels-and-ukrainian-logistics-hubs/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Reuters reports Russia's defence ministry said drones struck a cargo vessel bound for Chornomorsk and another ship.",
+      "overlap": [
+        {
+          "symbol": "ZW=F",
+          "strength": "loose",
+          "reason": "Black Sea shipping risk bears on grain flows."
+        }
+      ],
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics"
+    },
+    {
+      "source": "gCaptain",
+      "title": "Sri Lanka Rescues 40 Iranian Sailors",
+      "url": "https://gcaptain.com/sri-lanka-rescues-40-iranian-sailors/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Sri Lanka coordinated the rescue of 40 Iranian sailors from several commercial ships in international waters off its coast.",
+      "overlap": [],
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics"
+    },
+    {
+      "source": "gCaptain",
+      "title": "Borr Drilling Rig Sinks Off Gabon, One Person Dead And Four Missing",
+      "url": "https://gcaptain.com/borr-drilling-rig-sinks-off-gabon-one-person-dead-and-four-missing/",
+      "published": "2026-10-25",
+      "access": "partial",
+      "summary": "Borr Drilling's Prospector 5 rig sank late Saturday off Mayumba, Gabon, killing one worker and leaving four missing.",
+      "overlap": [],
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics"
     },
     {
       "source": "Hellenic Shipping News",
-      "title": "Dual-fuel fleet passes 500 ships on the water as investment exceeds $200 billion",
-      "url": "https://www.hellenicshippingnews.com/dual-fuel-fleet-passes-500-ships-on-the-water-as-investment-exceeds-200-billion/",
-      "published": "2026-10-22",
-      "source_url": "https://www.hellenicshippingnews.com",
-      "topic": "Shipping and logistics",
+      "title": "Tankers: More Complications Ahead for Diesel Cargoes?",
+      "url": "https://www.hellenicshippingnews.com/tankers-more-complications-ahead-for-diesel-cargoes/",
+      "published": "2026-10-25",
       "access": "partial",
-      "summary": "World Shipping Council counts 503 dual-fuel container and vehicle carrier ships in operation as of September 2026, up 41% on a year, with investment above $200 billion.",
-      "overlap": []
-    },
-    {
-      "source": "Hellenic Shipping News",
-      "title": "Product Tankers: Less Cargo, Higher Earnings",
-      "url": "https://www.hellenicshippingnews.com/product-tankers-less-cargo-higher-earnings/",
-      "published": "2026-10-22",
-      "source_url": "https://www.hellenicshippingnews.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "Broker Xclusiv describes an extraordinary product tanker freight rally from early August to mid-October even as refined product trade contracted.",
+      "summary": "Gibson's weekly report says diesel trade is partly reopening as Russian volumes cross the Atlantic, though availability stays tight after US sanctions easing.",
       "overlap": [
         {
           "symbol": "TANKER",
-          "strength": "direct",
-          "reason": "Product tanker freight rates."
+          "strength": "loose",
+          "reason": "Tanker market commentary."
         }
-      ]
+      ],
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics"
     },
     {
       "source": "Hellenic Shipping News",
-      "title": "Global shipyard order book grows 13%, strengthening China's lead",
-      "url": "https://www.hellenicshippingnews.com/global-shipyard-order-book-grows-13-strengthening-chinas-lead/",
-      "published": "2026-10-22",
-      "source_url": "https://www.hellenicshippingnews.com",
-      "topic": "Shipping and logistics",
+      "title": "XENETA: Far East to Europe spot rates rise despite Red Sea return as demand overrides supply",
+      "url": "https://www.hellenicshippingnews.com/xeneta-far-east-to-europe-spot-rates-rise-despite-red-sea-return-as-demand-overrides-supply/",
+      "published": "2026-10-25",
       "access": "partial",
-      "summary": "BIMCO reports the global order book reached about 203.2m CGT on 1 September, up 13% year on year and just below the May record of 210.4m CGT.",
-      "overlap": []
+      "summary": "Xeneta's weekly update says Far East to Europe spot rates rose even as Red Sea services returned, with demand outpacing supply.",
+      "overlap": [
+        {
+          "symbol": "SCFI",
+          "strength": "direct",
+          "reason": "Container spot rate trend."
+        },
+        {
+          "symbol": "HLAG.DE",
+          "strength": "loose",
+          "reason": "Container line earnings exposure."
+        }
+      ],
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics"
     },
     {
-      "source": "World Nuclear News",
-      "title": "Rosatom eyes 2027 for Uzbek large reactor construction",
-      "url": "https://www.world-nuclear-news.org/articles/rosatom-eyes-2027-for-uzbek-reactor-construction",
-      "published": "2026-10-23",
-      "source_url": "https://www.world-nuclear-news.org",
-      "topic": "Energy",
+      "source": "Hellenic Shipping News",
+      "title": "Dry Bulk Market: Capesize Market Recovering Steadily",
+      "url": "https://www.hellenicshippingnews.com/dry-bulk-market-capesize-market-recovering-steadily/",
+      "published": "2026-10-25",
       "access": "partial",
-      "summary": "Rosatom CEO Alexey Likhachev said construction of the large units at the planned Uzbek plant is to start in 2027, remarking during a site visit.",
+      "summary": "Capesize rates recovered through the week, with the BCI 182 5TC rising from $30,518 Monday to $34,380 Friday, led by Pacific demand.",
       "overlap": [
+        {
+          "symbol": "BDI",
+          "strength": "direct",
+          "reason": "Capesize rates feed the dry bulk index."
+        }
+      ],
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics"
+    },
+    {
+      "source": "Chipstrat",
+      "title": "My Conversation with Dylan Patel and Stacy Rasgon",
+      "url": "https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel",
+      "published": "2026-10-24",
+      "access": "full",
+      "summary": "Conversation covering AI financing, bottlenecks, pricing power, Nvidia, GPUs versus custom XPUs, and enterprise AI demand.",
+      "overlap": [
+        {
+          "symbol": "NVDA",
+          "strength": "loose",
+          "reason": "Discusses Nvidia and GPU versus XPU economics."
+        }
+      ],
+      "source_url": "https://newsletter.chipstrat.com",
+      "topic": "Chips"
+    },
+    {
+      "source": "EE Times",
+      "title": "Arm Comments on Jury Decision in Qualcomm Trial",
+      "url": "https://www.eetimes.com/arm-comments-on-jury-decision-in-qualcomm-trial/",
+      "published": "2026-10-24",
+      "access": "partial",
+      "summary": "An Arm executive presents the $2 nominal damages award as validation, while chip design experts point to open architectures like RISC-V for flexible AI workloads.",
+      "overlap": [
+        {
+          "symbol": "QCOM",
+          "strength": "direct",
+          "reason": "Concerns the Arm-Qualcomm licensing trial verdict."
+        }
+      ],
+      "source_url": "https://www.eetimes.com",
+      "topic": "Chips"
+    },
+    {
+      "source": "Mongabay",
+      "title": "International Gibbon Day: Stories of threats and survival",
+      "url": "https://news.mongabay.com/short-article/2026/10/international-gibbon-day-stories-of-threats-and-survival/",
+      "published": "2026-10-24",
+      "access": "partial",
+      "summary": "Marks International Gibbon Day with three stories on deforestation, hunting and pet-trade threats to gibbons in Asian forests.",
+      "overlap": [],
+      "source_url": "https://news.mongabay.com",
+      "topic": "Climate and policy"
+    },
+    {
+      "source": "Mongabay",
+      "title": "Sri Lanka mourns iconic tusker amid renewed calls to address human-elephant conflict",
+      "url": "https://news.mongabay.com/2026/10/sri-lanka-mourns-iconic-tusker-amid-renewed-calls-to-address-human-elephant-conflict/",
+      "published": "2026-10-24",
+      "access": "partial",
+      "summary": "The death of the wild tusker Kavantissa after a gunshot injury drew public grief and criticism of wildlife authorities.",
+      "overlap": [],
+      "source_url": "https://news.mongabay.com",
+      "topic": "Climate and policy"
+    },
+    {
+      "source": "Mongabay",
+      "title": "Can a swamp stop an army?",
+      "url": "https://news.mongabay.com/short-article/2026/10/can-a-swamp-stop-an-army/",
+      "published": "2026-10-24",
+      "access": "partial",
+      "summary": "Scientists argue wetlands and dense forest in Poland's Bialowieza could act as natural military defenses that also benefit the forest.",
+      "overlap": [],
+      "source_url": "https://news.mongabay.com",
+      "topic": "Climate and policy"
+    },
+    {
+      "source": "MINING.COM",
+      "title": "US Department of Energy names helium to critical materials list",
+      "url": "https://www.mining.com/us-department-of-energy-names-helium-to-critical-materials-list/",
+      "published": "2026-10-23",
+      "access": "full",
+      "summary": "DOE adds helium to its critical materials list, saying global demand is growing faster than production and raising supply risks for US manufacturers.",
+      "overlap": [],
+      "source_url": "https://www.mining.com",
+      "topic": "Metals and minerals"
+    },
+    {
+      "source": "MINING.COM",
+      "title": "Bannerman pulls trigger on $353M uranium mine",
+      "url": "https://www.mining.com/bannerman-pulls-trigger-on-353m-uranium-mine/",
+      "published": "2026-10-23",
+      "access": "full",
+      "summary": "Construction approved on the Etango uranium project in Namibia, funded without project debt, with first production targeted for 2028.",
+      "overlap": [
+        {
+          "symbol": "U3O8",
+          "strength": "direct",
+          "reason": "Adds uranium supply."
+        },
         {
           "symbol": "URA",
           "strength": "loose",
-          "reason": "Nuclear build-out read-through."
+          "reason": "Uranium sector development."
         }
-      ]
+      ],
+      "source_url": "https://www.mining.com",
+      "topic": "Metals and minerals"
     },
     {
-      "source": "World Nuclear News",
-      "title": "Radiant microreactor selected for deployment by US Navy",
-      "url": "https://www.world-nuclear-news.org/articles/radiant-microreactor-selected-for-deployment-by-us-navy",
-      "published": "2026-10-22",
-      "source_url": "https://www.world-nuclear-news.org",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "The US Navy chose Radiant's Kaleidos microreactor for deployment at Naval Weapons Station Crane, Indiana.",
-      "overlap": [
-        {
-          "symbol": "OKLO",
-          "strength": "loose",
-          "reason": "Microreactor sector read-through."
-        }
-      ]
-    },
-    {
-      "source": "World Nuclear News",
-      "title": "SMRs could be part of Port of Rotterdam's future, says study",
-      "url": "https://www.world-nuclear-news.org/articles/smrs-could-be-part-of-port-of-rotterdams-future-says-study",
-      "published": "2026-10-22",
-      "source_url": "https://www.world-nuclear-news.org",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "A Tractebel and Technopolis study finds the Dutch port could join the SMR supply chain, mainly through non-nuclear components and services.",
-      "overlap": [
-        {
-          "symbol": "SMR",
-          "strength": "loose",
-          "reason": "Small modular reactor theme."
-        }
-      ]
-    },
-    {
-      "source": "Energy Monitor",
-      "title": "Google and Voltus expand virtual power plant to 1GW in PJM",
-      "url": "https://www.energymonitor.ai/news/google-voltus-expand-vpp-1gw-pjm/",
+      "source": "farmdoc daily",
+      "title": "The US No Loss Crop Sector Safety Net",
+      "url": "https://farmdocdaily.illinois.edu/2026/10/the-us-no-loss-crop-sector-safety-net.html",
       "published": "2026-10-23",
-      "source_url": "https://www.energymonitor.ai",
-      "topic": "Energy",
-      "access": "teaser",
-      "summary": "Google and Voltus agreed to expand their deal to build a virtual power plant totaling 1GW in the PJM region.",
-      "overlap": [
-        {
-          "symbol": "GOOGL",
-          "strength": "direct",
-          "reason": "Google is a party to the deal."
-        }
-      ]
-    },
-    {
-      "source": "Energy Monitor",
-      "title": "Peak Energy secures $108m in Series B for sodium-ion battery scale-up",
-      "url": "https://www.energymonitor.ai/news/peak-energy-secures-108m-series-b/",
-      "published": "2026-10-22",
-      "source_url": "https://www.energymonitor.ai",
-      "topic": "Energy",
-      "access": "teaser",
-      "summary": "Peak Energy raised $108m in a Series B round to scale manufacturing and deploy its sodium-ion storage systems more widely.",
-      "overlap": []
-    },
-    {
-      "source": "Energy Monitor",
-      "title": "Ofgem opens $4.6bn tender for Hornsea 3 offshore transmission assets",
-      "url": "https://www.energymonitor.ai/news/ofgem-tender-hornsea-3-transmission/",
-      "published": "2026-10-22",
-      "source_url": "https://www.energymonitor.ai",
-      "topic": "Energy",
-      "access": "teaser",
-      "summary": "Ofgem launched a tender for the offshore transmission assets linking the 2.9GW Hornsea 3 wind farm to the UK grid.",
-      "overlap": [
-        {
-          "symbol": "ORSTED.CO",
-          "strength": "direct",
-          "reason": "Hornsea 3 is an Orsted wind farm."
-        }
-      ]
+      "access": "partial",
+      "summary": "Examines 2025 harvest-time losses for nine crops, most covered by the safety net; payments offset market losses over 2023-2025 so crops broke even.",
+      "overlap": [],
+      "source_url": "https://farmdocdaily.illinois.edu",
+      "topic": "Food and farm"
     },
     {
       "source": "Carbon Herald",
-      "title": "Petronas, TotalEnergies, And Mitsui Partner On Offshore Malaysian CO2 Storage Hub",
-      "url": "https://carbonherald.com/petronas-totalenergies-and-mitsui-partner-on-offshore-malaysian-co2-storage-hub/",
+      "title": "California Moves Closer To First-in-the-nation Rules for Carbon Capture and Removal",
+      "url": "https://carbonherald.com/california-moves-closer-to-first-in-the-nation-rules-for-carbon-capture-and-removal/",
       "published": "2026-10-23",
-      "source_url": "https://carbonherald.com",
-      "topic": "Climate and policy",
       "access": "partial",
-      "summary": "Petronas, TotalEnergies and Mitsui formally signed a joint venture for an offshore CO2 storage hub in Malaysia; the feed excerpt is truncated.",
-      "overlap": [
-        {
-          "symbol": "TTE",
-          "strength": "direct",
-          "reason": "TotalEnergies is a venture partner."
-        }
-      ]
+      "summary": "The California Air Resources Board is advancing regulations on carbon capture and removal under SB 905.",
+      "overlap": [],
+      "source_url": "https://carbonherald.com",
+      "topic": "Climate and policy"
     },
     {
       "source": "Carbon Herald",
-      "title": "Skytree, Galetech, And Mwahera Partner On Direct Air Capture For E-Fuel Production In Kenya",
-      "url": "https://carbonherald.com/skytree-galetech-and-mwahera-partner-on-direct-air-capture-for-e-fuel-production-in-kenya/",
+      "title": "Microsoft Shares Lessons Learned From Its Carbon Removal Procurement Program",
+      "url": "https://carbonherald.com/microsoft-shares-lessons-learned-from-its-carbon-removal-procurement-program/",
       "published": "2026-10-23",
-      "source_url": "https://carbonherald.com",
-      "topic": "Climate and policy",
       "access": "partial",
-      "summary": "Skytree entered a partnership with Galetech Energy Developments and Mwahera Green Hydrogen on direct air capture for e-fuel production in Kenya.",
-      "overlap": []
-    },
-    {
-      "source": "Carbon Herald",
-      "title": "Singapore Pledges $112M For Industrial Decarbonization Research",
-      "url": "https://carbonherald.com/singapore-pledges-112m-for-industrial-decarbonization-research/",
-      "published": "2026-10-23",
-      "source_url": "https://carbonherald.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Singapore will invest S$143 million (nearly $112 million) in research and development to help manufacturers cut emissions.",
-      "overlap": []
-    },
-    {
-      "source": "Climate Home News",
-      "title": "Early speakers' list suggests few powerful leaders will attend COP31",
-      "url": "https://www.climatechangenews.com/2026/10/23/early-speakers-list-suggests-few-powerful-leaders-will-attend-cop31/",
-      "published": "2026-10-23",
-      "source_url": "https://www.climatechangenews.com",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Only 77 heads of state or government are scheduled to speak at the Antalya summit, roughly a third fewer than at COP28.",
-      "overlap": [
-        {
-          "symbol": "KRBN",
-          "strength": "loose",
-          "reason": "Carbon market policy outcomes depend on COP talks."
-        }
-      ]
-    },
-    {
-      "source": "Climate Home News",
-      "title": "Coal in a green mask: Indonesia's co-firing plan will harm, not help, the climate",
-      "url": "https://www.climatechangenews.com/2026/10/23/coal-in-a-green-mask-indonesias-co-firing-plan-will-harm-not-help-the-climate/",
-      "published": "2026-10-23",
-      "source_url": "https://www.climatechangenews.com",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Opinion arguing Indonesia's plan to mix wood into coal at power plants could keep coal plants running longer and add pressure on forests.",
-      "overlap": [
-        {
-          "symbol": "EIDO",
-          "strength": "loose",
-          "reason": "Indonesia energy policy."
-        }
-      ]
-    },
-    {
-      "source": "Climate Home News",
-      "title": "Loss and damage fund agrees $20m for Nepal but rich nations warn it should not set precedent",
-      "url": "https://www.climatechangenews.com/2026/10/22/loss-and-damage-fund-agrees-20m-for-nepal-but-rich-nations-warn-it-should-not-set-precedent/",
-      "published": "2026-10-22",
-      "source_url": "https://www.climatechangenews.com",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Board members of the UN loss and damage fund split over whether the Nepal decision should become a model for the fund's long-term work.",
-      "overlap": []
-    },
-    {
-      "source": "Mongabay",
-      "title": "Death of iconic elephant in Sri Lanka pushes authorities to fast-track protection efforts",
-      "url": "https://news.mongabay.com/2026/10/death-of-iconic-elephant-in-sri-lanka-pushes-authorities-to-fast-track-protection-efforts/",
-      "published": "2026-10-23",
-      "source_url": "https://news.mongabay.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Residents of Galgamuwa mourn a wild bull elephant known as Kavantissa; authorities are moving to speed up protection efforts.",
-      "overlap": []
-    },
-    {
-      "source": "Mongabay",
-      "title": "Indonesians allege social media posts on wildfires and haze are being censored",
-      "url": "https://news.mongabay.com/2026/10/indonesians-allege-social-media-posts-on-wildfires-and-haze-are-being-censored/",
-      "published": "2026-10-23",
-      "source_url": "https://news.mongabay.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "TikTok removed a Nalar Rawat Institute post on the health effects of Indonesian wildfires; the group says its appeal was rejected.",
-      "overlap": [
-        {
-          "symbol": "EIDO",
-          "strength": "loose",
-          "reason": "Indonesia haze and wildfire coverage."
-        }
-      ]
-    },
-    {
-      "source": "Mongabay",
-      "title": "Two Indigenous Brazilians denied their language interpreter at election voting booth",
-      "url": "https://news.mongabay.com/short-article/2026/10/two-indigenous-brazilians-denied-their-language-interpreter-at-election-voting-booth/",
-      "published": "2026-10-23",
-      "source_url": "https://news.mongabay.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Two Indigenous women who speak only their native language were told only voters with disabilities could get interpreter help in Brazil's Oct. 4 election.",
-      "overlap": []
-    },
-    {
-      "source": "CTVC",
-      "title": "Who builds Europe's biggest climate companies #318",
-      "url": "https://www.ctvc.co/who-builds-europes-biggest-climate-companies-318/",
-      "published": "2026-10-19",
-      "source_url": "https://www.ctvc.co",
-      "topic": "Startups and deals",
-      "access": "full",
-      "summary": "Newsletter issue with the teaser \"Old World, new founders\" on who builds Europe's largest climate companies.",
-      "overlap": []
-    },
-    {
-      "source": "TechCrunch Climate",
-      "title": "Commonwealth Fusion Systems gets $85M to build better fusion-ready semiconductors",
-      "url": "https://techcrunch.com/2026/10/23/commonwealth-fusion-systems-gets-85m-to-build-better-fusion-ready-semiconductors/",
-      "published": "2026-10-23",
-      "source_url": "https://techcrunch.com/category/climate/",
-      "topic": "Startups and deals",
-      "access": "partial",
-      "summary": "The startup received an $85 million federal award to advance conductors for fusion power plants.",
-      "overlap": []
-    },
-    {
-      "source": "TechCrunch Climate",
-      "title": "Fusion startup Helion is developing new semiconductors that could double output of its power plants",
-      "url": "https://techcrunch.com/2026/10/22/fusion-startup-helion-is-developing-new-semiconductors-that-could-double-output-of-its-power-plants/",
-      "published": "2026-10-22",
-      "source_url": "https://techcrunch.com/category/climate/",
-      "topic": "Startups and deals",
-      "access": "partial",
-      "summary": "Helion has another $225 million to speed development of its first fusion power plant, due to supply Microsoft with electricity in 2028.",
+      "summary": "Microsoft, a major buyer of carbon removals, published a paper reflecting on lessons from its procurement program.",
       "overlap": [
         {
           "symbol": "MSFT",
-          "strength": "loose",
-          "reason": "Microsoft is the planned power buyer."
+          "strength": "direct",
+          "reason": "Microsoft is the subject."
         }
-      ]
+      ],
+      "source_url": "https://carbonherald.com",
+      "topic": "Climate and policy"
+    },
+    {
+      "source": "Utility Dive",
+      "title": "DOJ moves to revoke offshore wind permits, potentially threatening Senate permitting bill",
+      "url": "https://www.utilitydive.com/news/trump-administration-asks-courts-to-revoke-permits-for-offshore-wind-farms/833735/",
+      "published": "2026-10-22",
+      "access": "partial",
+      "summary": "The Justice Department asked courts to revoke offshore wind permits; Sen. Whitehouse said the move could derail the permitting deal.",
+      "overlap": [
+        {
+          "symbol": "ORSTED.CO",
+          "strength": "loose",
+          "reason": "Offshore wind permits at stake."
+        }
+      ],
+      "source_url": "https://www.utilitydive.com",
+      "topic": "Energy"
+    },
+    {
+      "source": "AgFunder News",
+      "title": "Unnamed bidder submits letter of intent to acquire Believer Meats' US cultivated meat site",
+      "url": "https://agfundernews.com/unnamed-bidder-submits-letter-of-intent-to-acquire-believer-meats-us-cultivated-meat-site",
+      "published": "2026-10-22",
+      "access": "full",
+      "summary": "The receiver has an unnamed letter of intent and a draft purchase agreement from creditor Gray Construction for the cultivated meat site.",
+      "overlap": [],
+      "source_url": "https://agfundernews.com",
+      "topic": "Food and farm"
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "US Department of Energy allocates $967m to modernise power grid",
+      "url": "https://www.energymonitor.ai/uncategorized/us-doe-allocates-967m-power-grid/",
+      "published": "2026-10-21",
+      "access": "teaser",
+      "summary": "The DOE confirmed roughly $967m in extra funding for projects to upgrade the US power grid and lower electricity costs.",
+      "overlap": [],
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy"
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "EBRD arranges $265m loan for 1.2GW Nefer Minya project in Egypt",
+      "url": "https://www.energymonitor.ai/news/ebrd-265m-loan-nefer-minya/",
+      "published": "2026-10-21",
+      "access": "teaser",
+      "summary": "The EBRD is offering up to $265m in syndicated loans to build the Nefer Minya solar project in Minya, Egypt.",
+      "overlap": [],
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy"
+    },
+    {
+      "source": "Climate Home News",
+      "title": "UK approves gas drilling despite admitting blow to 'climate leadership' status",
+      "url": "https://www.climatechangenews.com/2026/10/21/uk-approves-gas-drilling-despite-admitting-blow-to-climate-leadership-status/",
+      "published": "2026-10-21",
+      "access": "full",
+      "summary": "The UK approved gas extraction at the Jackdaw field while acknowledging it may weaken its climate reputation.",
+      "overlap": [
+        {
+          "symbol": "BP.L",
+          "strength": "loose",
+          "reason": "North Sea gas approvals."
+        }
+      ],
+      "source_url": "https://www.climatechangenews.com",
+      "topic": "Climate and policy"
     },
     {
       "source": "TechCrunch Climate",
-      "title": "GM is betting compute and AI will help it compete with Chinese automakers",
-      "url": "https://techcrunch.com/2026/10/21/gm-is-betting-compute-and-ai-will-help-it-compete-with-chinese-automakers/",
+      "title": "Heat pump tech is 170 years old — Pascal thinks it's time for an update",
+      "url": "https://techcrunch.com/2026/10/21/heat-pump-tech-is-170-years-old-pascal-thinks-its-time-for-an-update/",
       "published": "2026-10-21",
-      "source_url": "https://techcrunch.com/category/climate/",
-      "topic": "Startups and deals",
       "access": "partial",
-      "summary": "GM's fourth-generation EV platform brings a new central computer and electrical architecture, debuting in 2028 in the Cadillac Escalade IQ.",
-      "overlap": []
+      "summary": "Refrigerants startup Pascal developed heat pump and cooling technology using a sponge-like material that it claims is 20% more efficient.",
+      "overlap": [],
+      "source_url": "https://techcrunch.com/category/climate/",
+      "topic": "Startups and deals"
+    },
+    {
+      "source": "Fertilizer Daily",
+      "title": "Green ammonia project in Australia hits key milestone as KAPSOM ships 5,000-ton plant equipment",
+      "url": "https://www.fertilizerdaily.com/20261019-green-ammonia-project-australia-gegha-kapsom/",
+      "published": "2026-10-19",
+      "access": "partial",
+      "summary": "A solar-powered green ammonia plant near Moree, Australia, will supply local cotton growers, with start-up targeted for early 2027.",
+      "overlap": [
+        {
+          "symbol": "AUDUSD",
+          "strength": "loose",
+          "reason": "Australian project."
+        }
+      ],
+      "source_url": "https://www.fertilizerdaily.com",
+      "topic": "Food and farm"
     }
   ],
   "reading_quiet": [
@@ -3918,7 +3459,11 @@
     },
     "Reserve Bank of India",
     "US Federal Reserve",
-    "Bank of Japan"
+    "Bank of Japan",
+    {
+      "name": "NordFX Market Pulse 26 Oct (secondary)",
+      "url": "https://nordfx.com/market-news/market-pulse-october-26-2026"
+    }
   ],
   "gaps": [
     "FSSNX: Fidelity NAV for 23 Oct found (Zacks, 34.89) but 16 Oct and 23 Sep NAVs not found (stockanalysis table stale at Jul 28); 1w and 1m null.",
@@ -3972,23 +3517,22 @@
     "TANKER: no newer TD3C print than 15 Oct found.",
     "MAERSK-B.CO: stockanalysis cph page does not load; Stockopedia/MarketScreener quotes conflicting or intraday; no confirmed 23 Oct close.",
     "CTVA: stockanalysis table has only 16 sessions; chg_1m null.",
-    "Reading: MINING.COM feed returned a server error on two attempts; no items.",
-    "Reading: Fertilizer Daily feed blocked by robots.txt; not fetched.",
-    "Reading: The Loadstar feed returned a client error; no items.",
-    "Reading: EE Times other items in window (BIWIN, Deepx) look like sponsored posts and were skipped; SemiWiki Stratos AI Nitro webinar promotion skipped.",
-    "Headlines: only 6 stories had 2 or more outlets verifiable in window; most coverage links are US-based outlets, and the China AI controls and China EV share coverage dates (SCMP, ITV, Automotive World, CnEVPost) were taken from search listings, not confirmed on the pages.",
     "SEAJ September 2026 semiconductor billings: not found; SEAJ news page still lists August (released 2026-09-18), no September value located.",
-    "EIA gas storage week ending 2026-10-16: no dated release found (searches and ir.eia.gov returned old copies: March 2026 page); not recorded.",
     "EU gas storage (GIE) 2026-10-11 and 2026-10-18: only TASS 73.94% for 2026-10-12 found, not a Sunday week-ending figure; not recorded.",
     "ICSG refined copper balance August 2026: no release found; latest remains Jan-Jul 2026 (Metal Radar, 2026-09-29).",
     "Second sources not found for HLAG.DE (finanzen.net page was gettex 63.50 EUR, apparently a different line, not comparable), ICLN, IGF, INDA, INTC (Google Finance cached to 2026-09-25; digrin monthly only), IYT.",
     "HG=F and IRONORE checks are weak: investing.com table is the playbook's own aggregator of CME; Trading Economics is the primary source for IRONORE (no independent source, chg_1w not available).",
     "Climate: Americas, MEA, Oceania sources are 1-2 months old (PCA 2026-09-29, AFAC 2026-08-19); IMD press release PDFs blocked by robots, used Business Standard instead.",
     "Not refreshed after retry; carry 22 Oct values with as_of and null 1w/1m: U3O8, KAP.L, PDN.AX, GLEN.L, AI.PA, PALM.",
-    "Indicators due with no matching release found: SEAJ Sep 2026, EIA week ending 16 Oct, GIE weeks 11 and 18 Oct, ICSG Aug 2026.",
     "Earnings dates null (only estimates found): META, NVDA, AVGO, MU, 005930.KS, 2454.TW, 0981.HK, TSM, ASML, LRCX, TXN.",
-    "Second sources: only HG=F had a usable independent check; HLAG.DE, ICLN, IGF, INDA, INTC, IYT, IRONORE had no independent dated source.",
-    "EQNR and SLB second source (MarketChameleon) confirms last and 1d only; it gives a two-week return, not a one-week change. Audit-sample items BHP, BP.L, BWXT and policy-rate items had no second source fetched."
+    "EQNR and SLB second source (MarketChameleon) confirms last and 1d only; it gives a two-week return, not a one-week change. Audit-sample items BHP, BP.L, BWXT and policy-rate items had no second source fetched.",
+    "Reading: The Loadstar feed failed to load (client error); no items recorded.",
+    "Reading: Splash247 feed failed to load (client error); no items recorded.",
+    "Overnight: Monday 26 Oct Asian closes came from one secondary report (NordFX Market Pulse); Investing.com tables ended 23 Oct, so no item prices were refreshed and data_date stays 2026-10-23.",
+    "Stale 22 Oct items (U3O8, KAP.L, PDN.AX, GLEN.L, AI.PA, PALM) not refreshed this run.",
+    "Indicators due with no release found: SEAJ Sep 2026, GIE EU storage weeks 11, 18 and 25 Oct, ICSG Aug 2026. Headlines: Fed story has two outlets from one region (Global); other stories carried from 23 Oct run.",
+    "Climate section carried from the 24 Oct run; not refreshed.",
+    "Second sources not fetched this run for audit sample: KLAC, KRBN, KSA, LEU, LIN, LIT, LITHIUM, LNG; flagged EQNR and SLB keep the 23 Oct second-source checks (same trading date)."
   ],
   "indicators": [
     {
@@ -4165,7 +3709,7 @@
       "gaps": [],
       "range5": null,
       "next_expected": "2026-10-21",
-      "late": false,
+      "late": true,
       "touches": [
         "8035.T",
         "ASML",
@@ -4758,26 +4302,26 @@
       "source": "EIA",
       "tier": "official",
       "site": "https://ir.eia.gov/ngs/ngs.html",
-      "period": "2026-10-09",
-      "value": 3567.0,
+      "period": "2026-10-16",
+      "value": 3644.0,
       "row_status": "final",
-      "released": "2026-10-15",
-      "source_name": "EIA, via oilandgas360.com",
-      "source_url": "https://www.oilandgas360.com/?p=1051045",
-      "yoy": -3.9,
-      "yoy_source": "reported",
-      "yoy_prev": null,
+      "released": "2026-10-22",
+      "source_name": "EIA",
+      "source_url": "https://www.eia.gov/dnav/ng/hist/nw2_epg0_swo_r48_bcfw.htm",
+      "yoy": null,
+      "yoy_source": null,
+      "yoy_prev": -3.9,
       "yoy_change": null,
-      "mom": null,
-      "mom_source": null,
+      "mom": 2.2,
+      "mom_source": "computed",
       "z": null,
       "status": "building history (1 of 12 year-on-year readings)",
-      "history_n": 1,
+      "history_n": 2,
       "revision": null,
       "checks": [],
       "gaps": [],
       "range5": null,
-      "next_expected": "2026-10-22",
+      "next_expected": "2026-10-29",
       "late": false,
       "touches": [
         "NG=F",
@@ -4790,6 +4334,10 @@
         {
           "p": "2026-10-09",
           "v": 3567.0
+        },
+        {
+          "p": "2026-10-16",
+          "v": 3644.0
         }
       ]
     },
@@ -5197,7 +4745,7 @@
     "tiers": {
       "official": 15,
       "reported": 1,
-      "aggregator": 190
+      "aggregator": 186
     },
     "cross_checked": 3,
     "agreed": 3,
