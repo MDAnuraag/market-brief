@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-31T18:08:33Z",
+  "generated_at": "2026-11-02T13:42:07Z",
   "data_date": "2026-10-30",
-  "edition": "saturday",
-  "summary": "The Fed held at 3.75%-4% on 28 October in a 10-2 vote with two dissents for a hike, the ECB held its deposit rate at 2.5% on 29 October, and the BOJ held on 30 October after its September hike. Brent futures closed near $113 on 30 October after touching higher levels intraday, after tanker strikes near Hormuz and unconfirmed claims of attacks on Saudi facilities. Alphabet fell on negative free cash flow while Microsoft reported 48% Azure growth, and SK hynix posted record preliminary Q3 profit. EU gas storage was 74.93% full on 26 October, the lowest for the date since 2011, as NOAA kept an El Nino Advisory with a strong event likely.",
+  "edition": "weekday",
+  "summary": "Asia mostly steadied on Monday 2 November after Friday's US tech and AI selloff (S&P 500 -1.8%, Nasdaq -2.9%, Intel -28.6%): the Kospi rose 2.2%, the Shanghai Composite 1.1%, the Hang Seng 0.5% and the Sensex 1.3%, while the Nikkei fell 0.3%, the ASX 200 0.6% and the Taiex 0.7%, and US futures were higher. Brent fell about 2.8% to $110.24 and US crude 3.1% to $100.85 on reports of US-Iran talks in Qatar over reopening the Strait of Hormuz, after Brent's Friday close near $113. South Korea's October exports hit a record $115.3 billion (+93.7%), with semiconductors at $56.4 billion (+259%), while China's October factory activity returned to contraction. EU gas storage was 74.93% full on 26 October, the lowest for the date since 2011; Apple and Palantir report after the US close, with US midterms and the RBA on Tuesday.",
   "groups": [
     {
       "id": "macros",
@@ -127,53 +127,6 @@
           "last": 82.37,
           "chg_1d": -1.53,
           "chg_1w": -0.19,
-          "chg_1m": -3.05
-        }
-      ]
-    },
-    {
-      "id": "funds_401k",
-      "title": "401(k) funds",
-      "group_by": null,
-      "items": [
-        {
-          "symbol": "FXAIX",
-          "name": "Fidelity 500 Index",
-          "src": "Fidelity Investments",
-          "tier": "aggregator",
-          "last": 263.5,
-          "chg_1d": -1.81,
-          "chg_1w": -0.56,
-          "chg_1m": -1.14
-        },
-        {
-          "symbol": "FSMDX",
-          "name": "Fidelity Mid Cap Index",
-          "src": "Fidelity Investments",
-          "tier": "aggregator",
-          "last": 42.63,
-          "chg_1d": -1.32,
-          "chg_1w": 0.57,
-          "chg_1m": 3.2
-        },
-        {
-          "symbol": "FSSNX",
-          "name": "Fidelity Small Cap Index",
-          "src": "Fidelity Investments",
-          "tier": "aggregator",
-          "last": 35.33,
-          "chg_1d": -1.64,
-          "chg_1w": 1.26,
-          "chg_1m": 0.54
-        },
-        {
-          "symbol": "FTIHX",
-          "name": "Fidelity Total International Index",
-          "src": "Fidelity Investments",
-          "tier": "aggregator",
-          "last": 19.08,
-          "chg_1d": -1.5,
-          "chg_1w": -0.31,
           "chg_1m": -3.05
         }
       ]
@@ -2642,1390 +2595,142 @@
   ],
   "headlines": [
     {
-      "story": "Fed holds rates at 3.75%-4% in a 10-2 vote",
-      "date": "2026-10-28",
-      "summary": "The FOMC left its target range unchanged, with Governor Cook and Cleveland Fed President Hammack dissenting in favour of a quarter-point rise.",
+      "story": "South Korea's October exports hit a record on chips",
+      "date": "2026-11-01",
+      "summary": "Exports reached $115.3 billion, up 93.7% on a year earlier, with semiconductor exports of $56.4 billion up 259%.",
       "coverage": [
         {
-          "outlet": "Lynnwood Times",
-          "region": "Americas",
-          "title": "Federal Reserve holds rates steady at 3.75%-4% in 10-2 vote",
-          "url": "https://lynnwoodtimes.com/2026/10/28/rates/",
-          "kind": "press"
-        },
-        {
-          "outlet": "Nation Thailand",
-          "region": "Southeast Asia",
-          "title": "US Fed holds rates at 3.75%–4% after October 28 vote, scales back future meeting schedule",
-          "url": "https://www.nationthailand.com/news/world/40072859",
-          "kind": "press"
-        },
-        {
-          "outlet": "investingLive",
-          "region": "Global",
-          "title": "FOMC decision Oct 28: Rates left unchanged",
-          "url": "https://investinglive.com/central-banks/fomc-decision-oct-28/",
-          "kind": "press"
-        }
-      ],
-      "framing": "One outlet leads with the two dissents for a hike; another leads with the Fed's plan to hold fewer meetings from 2027.",
-      "overlap": [
-        {
-          "symbol": "FED",
-          "strength": "direct",
-          "reason": "Policy rate decision."
-        },
-        {
-          "symbol": "USDJPY",
-          "strength": "loose",
-          "reason": "US rate path feeds the dollar-yen pair."
-        }
-      ]
-    },
-    {
-      "story": "Bank of Japan holds policy rate after September hike",
-      "date": "2026-10-30",
-      "summary": "The BOJ kept its benchmark rate steady at the 29-30 October meeting, with coverage noting underlying inflation now in line with its 2% target.",
-      "coverage": [
-        {
-          "outlet": "The Japan Times",
+          "outlet": "The Korea Times",
           "region": "East Asia",
-          "title": "Bank of Japan holds rates steady even as inflation ticks up",
-          "url": "https://www.japantimes.co.jp/business/2026/10/30/economy/boj-rates-steady-inflation/",
+          "title": "Korea's monthly exports hit $115.3 bil. in Oct. on strong chip sales",
+          "url": "https://www.koreatimes.co.kr/amp/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales",
           "kind": "press"
         },
         {
-          "outlet": "Bloomberg",
-          "region": "Global",
-          "title": "BOJ Holds Benchmark Rate Steady as Expected After September Hike",
-          "url": "https://www.bloomberg.com/news/articles/2026-10-30/boj-holds-benchmark-rate-steady-as-expected-after-september-hike",
+          "outlet": "Seoul Economic Daily",
+          "region": "East Asia",
+          "title": "Korea's October Exports Surge 93.7% as $1 Trillion Year Nears",
+          "url": "https://en.sedaily.com/finance/2026/11/01/koreas-october-exports-surge-937-percent-as-1-trillion-year",
           "kind": "press"
         },
         {
-          "outlet": "Ozarab Media",
+          "outlet": "Times of Saudia",
           "region": "Middle East and Africa",
-          "title": "BOJ Holds Rates, Declares Inflation Target Met",
-          "url": "https://ozarab.media/boj-holds-rates-declares-inflation-target-met/",
+          "title": "South Korea's exports hit record $115.3 billion on chip boom",
+          "url": "https://timesofsaudia.com/south-korea-exports-record-115-3-billion-chips/",
           "kind": "press"
         }
       ],
-      "framing": "Headlines split between the hold itself and the statement that underlying inflation has reached the 2% target.",
       "overlap": [
         {
-          "symbol": "BOJ",
+          "symbol": "000660.KS",
           "strength": "direct",
-          "reason": "Policy rate decision."
+          "reason": "Memory exports drive SK hynix revenue."
         },
         {
-          "symbol": "USDJPY",
+          "symbol": "005930.KS",
           "strength": "direct",
-          "reason": "Yen reacts to BOJ guidance."
+          "reason": "Samsung is the other main chip exporter."
         }
       ]
     },
     {
-      "story": "ECB holds deposit rate at 2.5%; Lagarde to leave in February",
-      "date": "2026-10-29",
-      "summary": "The ECB held its deposit rate at 2.5% while warning that rising energy prices pose upside inflation risks, and President Lagarde said she will step down in February.",
+      "story": "Global stocks steady after Friday's tech selloff",
+      "date": "2026-11-02",
+      "summary": "Asian markets were mixed and US futures rose after Friday's worst US session since June, driven by AI-spending worries and a sharp Intel drop.",
       "coverage": [
         {
-          "outlet": "The Irish Times",
+          "outlet": "Associated Press (via KSAT)",
+          "region": "Americas",
+          "title": "Global shares are mixed and US futures advance, while oil prices fall nearly 4%",
+          "url": "https://www.ksat.com/business/2026/11/02/asian-shares-are-mixed-and-us-futures-advance-while-oil-prices-retreat/",
+          "kind": "press"
+        },
+        {
+          "outlet": "Saxo Bank",
           "region": "Europe",
-          "title": "ECB pauses rate hikes as Lagarde announces early exit",
-          "url": "https://www.irishtimes.com/business/2026/10/29/ecb-holds-rates-steady-as-lagardes-departure-overshadows-decision/",
+          "title": "Market Quick Take - Markets find calm after Friday turmoil - 2 November 2026",
+          "url": "https://www.home.saxo/content/articles/macro/market-quick-take---markets-find-calm-after-friday-turmoil----2-november-2026-02112026",
           "kind": "press"
         },
         {
-          "outlet": "Euronews",
+          "outlet": "SWI swissinfo.ch",
           "region": "Europe",
-          "title": "ECB President Christine Lagarde to step down next February, months before her mandate ends",
-          "url": "https://www.euronews.com/2026/10/29/ecb-president-christine-lagarde-to-step-down-in-february-months-before-her-term-ends",
-          "kind": "press"
-        },
-        {
-          "outlet": "U.S. News (Reuters)",
-          "region": "Americas",
-          "title": "ECB's Lagarde Resigns Early So She Can Speak Freely on Topics Beyond Monetary Policy",
-          "url": "https://www.usnews.com/news/world/articles/2026-10-29/ecbs-lagarde-resigns-early-so-she-can-speak-freely-on-topics-beyond-monetary-policy",
+          "title": "Stock Selloff Eases in Asian Trade, Oil Declines: Markets Wrap",
+          "url": "https://swissinfo.ch/eng/stock-selloff-eases-in-asian-trade,-oil-declines:-markets-wrap/92310840",
           "kind": "press"
         }
       ],
-      "framing": "Outlets lead on different angles: the rate pause, the leadership change, or the oil and French bond-market backdrop.",
-      "overlap": [
-        {
-          "symbol": "ECB",
-          "strength": "direct",
-          "reason": "Policy rate decision."
-        },
-        {
-          "symbol": "EURUSD",
-          "strength": "loose",
-          "reason": "Euro reacts to ECB guidance."
-        }
-      ]
-    },
-    {
-      "story": "Brent near $118 as tankers are hit near Hormuz",
-      "date": "2026-10-30",
-      "summary": "Brent briefly touched $118 and closed a fourth monthly gain after two tankers were struck near the Strait of Hormuz and US strike threats on Iran persisted.",
-      "coverage": [
-        {
-          "outlet": "The National",
-          "region": "Middle East and Africa",
-          "title": "Oil prices set for sharp monthly rise on Hormuz strikes and US threat to hit Iran",
-          "url": "https://thenationalnews.com/business/markets/2026/10/30/oil-prices-set-for-sharp-monthly-rise-on-hormuz-strikes-and-us-threat-to-hit-iran",
-          "kind": "press"
-        },
-        {
-          "outlet": "Nairametrics",
-          "region": "Middle East and Africa",
-          "title": "Brent crude surges 13% in October as Middle East attacks threaten oil supplies",
-          "url": "https://nairametrics.com/2026/10/30/brent-crude-surges-13-in-october-as-middle-east-attacks-threaten-oil-supplies/",
-          "kind": "press"
-        },
-        {
-          "outlet": "Invezz",
-          "region": "Global",
-          "title": "Oil prices surge towards $120 as Trump weighs fresh Iran strikes: what's next?",
-          "url": "https://invezz.com/news/2026/10/30/oil-prices-today-trump-iran-strikes-brent-crude/",
-          "kind": "press"
-        }
-      ],
-      "framing": "One outlet leads with the Hormuz tanker strikes; another leads with unconfirmed Houthi claims on Saudi sites and Nigerian energy inflation.",
-      "overlap": [
-        {
-          "symbol": "BZ=F",
-          "strength": "direct",
-          "reason": "Brent futures are the benchmark quoted."
-        },
-        {
-          "symbol": "2222.SR",
-          "strength": "loose",
-          "reason": "Saudi facilities named in attack claims."
-        }
-      ]
-    },
-    {
-      "story": "Alphabet falls on negative free cash flow as AI capex rises",
-      "date": "2026-10-28",
-      "summary": "Alphabet missed on EPS, posted negative free cash flow and signalled higher 2027 capex, while Microsoft reported Azure growth of 48% and positive free cash flow.",
-      "coverage": [
-        {
-          "outlet": "24/7 Wall St.",
-          "region": "Americas",
-          "title": "Alphabet Sinks 11% as AI Spending Pushes Cash Flow Negative Again; Microsoft and Meta Edge Higher, Amazon Slips",
-          "url": "https://247wallst.com/investing/2026/10/29/alphabet-sinks-11-as-ai-spending-pushes-cash-flow-negative-again-microsoft-and-meta-edge-higher-amazon-slips/",
-          "kind": "press"
-        },
-        {
-          "outlet": "CNBC",
-          "region": "Americas",
-          "title": "AI buildout hits snag as Google and Microsoft put off raising capex forecasts",
-          "url": "https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html",
-          "kind": "press"
-        }
-      ],
-      "overlap": [
-        {
-          "symbol": "GOOGL",
-          "strength": "direct",
-          "reason": "Company results."
-        },
-        {
-          "symbol": "MSFT",
-          "strength": "direct",
-          "reason": "Company results."
-        },
-        {
-          "symbol": "NVDA",
-          "strength": "loose",
-          "reason": "Hyperscaler capex feeds AI chip demand."
-        }
-      ]
-    },
-    {
-      "story": "SK hynix reports record third-quarter profit",
-      "date": "2026-10-28",
-      "summary": "SK hynix preliminary Q3 revenue was 104.6 trillion won and operating profit 83.3 trillion won, with HBM4 expected to overtake HBM3E in Q4.",
-      "coverage": [
-        {
-          "outlet": "Clouds Press",
-          "region": "Global",
-          "title": "SK hynix Q3 2026 revenue hits 104.6T won as operating profit jumps 632%",
-          "url": "https://www.cloudspress.com/sk-hynix-q3-2026-revenue-hits-104-6t-won-as-operating-profit-jumps-632/",
-          "kind": "press"
-        },
-        {
-          "outlet": "Tiger Brokers (Dow Jones)",
-          "region": "Global",
-          "title": "SK Hynix Posts Record Earnings on Robust AI Chip Demand -- Update",
-          "url": "https://www.itiger.com/news/2579946881",
-          "kind": "press"
-        }
-      ],
-      "overlap": [
-        {
-          "symbol": "000660.KS",
-          "strength": "direct",
-          "reason": "Company results."
-        },
-        {
-          "symbol": "MU",
-          "strength": "loose",
-          "reason": "Peer memory maker exposed to HBM demand."
-        }
-      ]
-    },
-    {
-      "story": "US Section 232 proclamation on robotics and industrial machinery",
-      "date": "2026-10-28",
-      "summary": "The White House found robotics and industrial machinery imports a national security threat but set no tariffs for now, ordering negotiations with an update due 26 April 2027.",
-      "coverage": [
-        {
-          "outlet": "The White House",
-          "region": "Americas",
-          "title": "Fact Sheet: President Donald J. Trump Adjusts Imports of Robotics, Industrial Machinery, and their Parts and Components into the United States",
-          "url": "https://whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-adjusts-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states",
-          "kind": "primary"
-        },
-        {
-          "outlet": "DroneXL",
-          "region": "Americas",
-          "title": "Trump Gives Robots Trade Talks After Drones Got Up to 100% Tariffs",
-          "url": "https://dronexl.co/2026/10/28/trump-section-232-robotics-industrial-machinery-talks-drone-tariffs",
-          "kind": "press"
-        },
-        {
-          "outlet": "Crypto Briefing",
-          "region": "Global",
-          "title": "Trump flags imported robotics as a national security risk, holds off on tariffs",
-          "url": "https://cryptobriefing.com/trump-robotics-imports-national-security-section-232",
-          "kind": "press"
-        }
-      ],
-      "overlap": []
-    },
-    {
-      "story": "Super Typhoon Champi passes Taiwan, then heads for Japan",
-      "date": "2026-10-24",
-      "summary": "Champi passed northeast of Taiwan on 23 October, leaving one dead, more than 500 injured and about 56,000 households without power on 24 October.",
-      "coverage": [
-        {
-          "outlet": "Al Jazeera",
-          "region": "Middle East and Africa",
-          "title": "Typhoon Champi hits Taiwan, killing one and injuring hundreds",
-          "url": "https://aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350",
-          "kind": "press"
-        },
-        {
-          "outlet": "The Jakarta Post (Reuters)",
-          "region": "Southeast Asia",
-          "title": "Typhoon Champi sweeps past Taiwan, leaving 1 dead, 500 injured",
-          "url": "https://thejakartapost.com/world/2026/10/24/typhoon-champi-sweeps-past-taiwan-leaving-1-dead-500-injured",
-          "kind": "press"
-        }
-      ],
-      "overlap": [
-        {
-          "symbol": "EWT",
-          "strength": "loose",
-          "reason": "Taiwan shops and offices closed for two days."
-        }
-      ]
-    }
-  ],
-  "reading": [
-    {
-      "source": "Chipstrat",
-      "title": "Right-Sizing Memory",
-      "url": "https://newsletter.chipstrat.com/p/right-sizing-memory",
-      "published": "2026-10-27",
-      "source_url": "https://newsletter.chipstrat.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Author's take on Micron's webinar, covering despecced memory and who captures value in custom high-bandwidth memory.",
-      "overlap": [
-        {
-          "symbol": "MU",
-          "strength": "direct",
-          "reason": "Covers Micron's webinar and custom HBM."
-        },
-        {
-          "symbol": "000660.KS",
-          "strength": "loose",
-          "reason": "HBM value capture bears on SK Hynix."
-        }
-      ]
-    },
-    {
-      "source": "Chipstrat",
-      "title": "My Conversation with Dylan Patel and Stacy Rasgon",
-      "url": "https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel",
-      "published": "2026-10-24",
-      "source_url": "https://newsletter.chipstrat.com",
-      "topic": "Chips",
-      "access": "full",
-      "summary": "Transcript of a CASPA CEO Summit panel on AI financing, bottlenecks, pricing power, Nvidia, GPUs versus custom accelerators, and enterprise AI.",
-      "overlap": [
-        {
-          "symbol": "NVDA",
-          "strength": "loose",
-          "reason": "Panel discusses Nvidia and GPU versus XPU demand."
-        }
-      ]
-    },
-    {
-      "source": "Culpium (Tim Culpan)",
-      "title": "SK Hynix 3Q Revenue, Operating Beat as Margins Hit Record",
-      "url": "https://www.culpium.com/p/sk-hynix-3q-revenue-operating-beat",
-      "published": "2026-10-27",
-      "source_url": "https://www.culpium.com",
-      "topic": "China and Asia",
-      "access": "teaser",
-      "summary": "Teaser notes SK Hynix quarterly revenue passed 100 trillion won for the first time and beat estimates by 6.5%; net income fell almost 60% on one-offs.",
-      "overlap": [
-        {
-          "symbol": "000660.KS",
-          "strength": "direct",
-          "reason": "About SK Hynix third-quarter results."
-        }
-      ]
-    },
-    {
-      "source": "Culpium (Tim Culpan)",
-      "title": "Inside Anthropic's S1. It Owns Almost Nothing",
-      "url": "https://www.culpium.com/p/anthropic-s1-now-live-first-look",
-      "published": "2026-10-26",
-      "source_url": "https://www.culpium.com",
-      "topic": "China and Asia",
-      "access": "teaser",
-      "summary": "Opinion intro on Anthropic's pre-IPO S-1: revenue per employee of $6.6 million, obligations above $780 billion, and little owned.",
-      "overlap": []
-    },
-    {
-      "source": "ChinaTalk",
-      "title": "Is Half of China's AI Making Slop?",
-      "url": "https://www.chinatalk.media/p/is-half-of-chinas-ai-making-slop",
-      "published": "2026-10-30",
-      "source_url": "https://www.chinatalk.media",
-      "topic": "China and Asia",
-      "access": "full",
-      "summary": "Examines a viral claim that 55% of China's AI tokens go to short dramas and video generation, and argues such use needs no usefulness defense.",
-      "overlap": []
-    },
-    {
-      "source": "ChinaTalk",
-      "title": "Xi vs Trump on Corruption",
-      "url": "https://www.chinatalk.media/p/make-corruption-cringe-again",
-      "published": "2026-10-30",
-      "source_url": "https://www.chinatalk.media",
-      "topic": "China and Asia",
-      "access": "full",
-      "summary": "Compares corruption under Xi Jinping's anti-corruption campaign with corruption under the Trump administration and how each system responds.",
-      "overlap": []
-    },
-    {
-      "source": "ChinaTalk",
-      "title": "The Manhattan Project, Take Two",
-      "url": "https://www.chinatalk.media/p/the-manhattan-project-take-two",
-      "published": "2026-10-29",
-      "source_url": "https://www.chinatalk.media",
-      "topic": "China and Asia",
-      "access": "partial",
-      "summary": "Interview with Barnett Koven of Accenture Federal Services on government AI adoption, data quality, and American innovation toward superintelligence.",
-      "overlap": []
-    },
-    {
-      "source": "Hello China Tech",
-      "title": "Pony.ai, Waymo and Paying for the Fleet",
-      "url": "https://hellochinatech.com/p/pony-ai-robotaxi-fleet-funding",
-      "published": "2026-10-30",
-      "source_url": "https://hellochinatech.com",
-      "topic": "China and Asia",
-      "access": "partial",
-      "summary": "Says Pony.ai still funds much of its robotaxi growth from its own capital while partner-funded fleets expand; filings do not show how fleet costs are split.",
-      "overlap": []
-    },
-    {
-      "source": "Hello China Tech",
-      "title": "China's Top Humanoid Stock Is Priced on a Borrowed Clock",
-      "url": "https://hellochinatech.com/p/unitree-jpmorgan-upgrade-openai",
-      "published": "2026-10-29",
-      "source_url": "https://hellochinatech.com",
-      "topic": "China and Asia",
-      "access": "partial",
-      "summary": "JPMorgan sharply raised its Unitree price target using a timeline tied to OpenAI's model, which some venture investors see as a competitive threat.",
-      "overlap": []
-    },
-    {
-      "source": "Hello China Tech",
-      "title": "Anthropic Puts China's AI Labs on the Cheap Curve",
-      "url": "https://hellochinatech.com/p/anthropic-s1-zhipu-minimax-margins",
-      "published": "2026-10-27",
-      "source_url": "https://hellochinatech.com",
-      "topic": "China and Asia",
-      "access": "partial",
-      "summary": "Anthropic's S-1 suggests a cost trap eases at scale; Zhipu and MiniMax price well below its top model but remain far from that scale.",
-      "overlap": []
-    },
-    {
-      "source": "Dialogue Earth",
-      "title": "Lula v congress: Brazil's re-elected leader faces environmental battle",
-      "url": "https://dialogue.earth/en/forests/lula-v-congress-brazils-re-elected-leader-faces-environmental-battle/",
-      "published": "2026-10-30",
-      "source_url": "https://dialogue.earth/en/",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Lula's third term brought Amazon deforestation to record lows, but experts say he must do more on climate change.",
-      "overlap": [
-        {
-          "symbol": "EWZ",
-          "strength": "loose",
-          "reason": "Brazil's election and environmental politics."
-        }
-      ]
-    },
-    {
-      "source": "Dialogue Earth",
-      "title": "Pacific 'Pre-COP' draws attention to islands' plight",
-      "url": "https://dialogue.earth/en/climate/pacific-pre-cop-draws-attention-to-islands-plight/",
-      "published": "2026-10-30",
-      "source_url": "https://dialogue.earth/en/",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "The pre-summit in Fiji focused on Pacific island nations; the harder task is turning attention into ocean commitments at COP31 in Turkiye.",
-      "overlap": []
-    },
-    {
-      "source": "Dialogue Earth",
-      "title": "The Tropical Forest Forever Facility turns one, and is billions short",
-      "url": "https://dialogue.earth/en/forests/the-tropical-forest-forever-facility-turns-one/",
-      "published": "2026-10-29",
-      "source_url": "https://dialogue.earth/en/",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "The fund meant to pay countries for keeping forests standing now has governance in place but has received far less money than its target.",
-      "overlap": []
-    },
-    {
-      "source": "Semiconductor Engineering",
-      "title": "Chip Industry Week In Review",
-      "url": "https://semiengineering.com/chip-industry-week-in-review-162/",
-      "published": "2026-10-30",
-      "source_url": "https://semiengineering.com",
-      "topic": "Chips",
-      "access": "full",
-      "summary": "Weekly roundup covering memory supply tightness, advanced-packaging ramps, fab investments, deals, and quarterly earnings.",
-      "overlap": [
-        {
-          "symbol": "TSM",
-          "strength": "loose",
-          "reason": "Roundup tags TSMC and packaging ramps."
-        },
-        {
-          "symbol": "INTC",
-          "strength": "loose",
-          "reason": "Roundup tags Intel earnings and fab news."
-        },
-        {
-          "symbol": "NVDA",
-          "strength": "loose",
-          "reason": "Roundup tags Nvidia."
-        }
-      ]
-    },
-    {
-      "source": "Semiconductor Engineering",
-      "title": "Auto-Generation Of Properties: Methodology Insertion",
-      "url": "https://semiengineering.com/auto-generation-of-properties-methodology-insertion/",
-      "published": "2026-10-29",
-      "source_url": "https://semiengineering.com",
-      "topic": "Chips",
-      "access": "full",
-      "summary": "Asks whether AI can generate formal verification properties from incomplete specifications, and argues experienced engineers are still needed to validate output.",
-      "overlap": []
-    },
-    {
-      "source": "Semiconductor Engineering",
-      "title": "Rethinking Shift Left In Chip Design",
-      "url": "https://semiengineering.com/rethinking-shift-left-in-chip-design/",
-      "published": "2026-10-29",
-      "source_url": "https://semiengineering.com",
-      "topic": "Chips",
-      "access": "full",
-      "summary": "Roundtable on whether moving design work earlier still works as AI agents and digital twins expand, and whether such models can be trusted.",
-      "overlap": []
-    },
-    {
-      "source": "SemiWiki",
-      "title": "CEO Interview with Dr. Sean Wei of Easy-Logic",
-      "url": "https://semiwiki.com/eda/easy-logic/375390-ceo-interview-with-dr-sean-wei-of-easy-logic/",
-      "published": "2026-10-30",
-      "source_url": "https://semiwiki.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Company-linked interview profiling Easy-Logic's CEO, in the role since 2020, and the firm's EasylogicECO product.",
-      "overlap": []
-    },
-    {
-      "source": "SemiWiki",
-      "title": "TSMC's Patent and the Harsh Realities of 3D DRAM Competition",
-      "url": "https://semiwiki.com/semiconductor-manufacturers/375329-tsmcs-patent-and-the-harsh-realities-of-3d-dram-competition/",
-      "published": "2026-10-30",
-      "source_url": "https://semiwiki.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Analysis of whether TSMC's vertical DRAM patent filings could let the foundry challenge established memory makers.",
-      "overlap": [
-        {
-          "symbol": "TSM",
-          "strength": "direct",
-          "reason": "About TSMC's 3D DRAM patents."
-        },
-        {
-          "symbol": "MU",
-          "strength": "loose",
-          "reason": "Memory incumbents face a possible entrant."
-        },
-        {
-          "symbol": "000660.KS",
-          "strength": "loose",
-          "reason": "Memory incumbents face a possible entrant."
-        }
-      ]
-    },
-    {
-      "source": "SemiWiki",
-      "title": "How AI is Reshaping Semiconductor Design and Manufacturing",
-      "url": "https://semiwiki.com/semiconductor-manufacturers/intel/374862-how-ai-is-reshaping-semiconductor-design-and-manufacturing/",
-      "published": "2026-10-30",
-      "source_url": "https://semiwiki.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Argues AI advances inside chip factories matter to AI system designers, and recaps a recent GSA Global event.",
-      "overlap": []
-    },
-    {
-      "source": "EE Times",
-      "title": "Google: Agentic AI Will Drive New Demands on Data Center CPUs",
-      "url": "https://www.eetimes.com/google-agentic-ai-will-drive-new-demands-on-data-center-cpus/",
-      "published": "2026-10-30",
-      "source_url": "https://www.eetimes.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Google's Mark Lohmeyer says agent workloads arrive in bursts, leaving CPUs idle at times and placing new demands on data center infrastructure.",
-      "overlap": [
-        {
-          "symbol": "GOOGL",
-          "strength": "direct",
-          "reason": "Google executive on data center CPU demand."
-        }
-      ]
-    },
-    {
-      "source": "EE Times",
-      "title": "Intel's Q3 Results Show Supply Chain Disruptions and PC Plunge",
-      "url": "https://www.eetimes.com/intels-q3-results-show-supply-chain-disruptions-and-pc-plunge/",
-      "published": "2026-10-30",
-      "source_url": "https://www.eetimes.com",
-      "topic": "Chips",
-      "access": "full",
-      "summary": "Intel's third-quarter revenue rose 21% to $16.5 billion on data center demand, offsetting fab constraints and a steep PC sales drop.",
       "overlap": [
         {
           "symbol": "INTC",
           "strength": "direct",
-          "reason": "Reports Intel third-quarter results."
-        }
-      ]
-    },
-    {
-      "source": "EE Times",
-      "title": "Why Shrinking Component Geometries Force a Rethink of BGA Rework Heating Methods",
-      "url": "https://www.eetimes.com/why-shrinking-component-geometries-force-a-rethink-of-bga-rework-heating-methods/",
-      "published": "2026-10-30",
-      "source_url": "https://www.eetimes.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "As parts shrink toward 01005 size and boards get denser, ball grid array rework needs tighter heat control.",
-      "overlap": []
-    },
-    {
-      "source": "Latitude Media",
-      "title": "The most pivotal midterm races for energy",
-      "url": "https://www.latitudemedia.com/news/the-most-pivotal-midterm-races-for-energy/",
-      "published": "2026-10-30",
-      "source_url": "https://www.latitudemedia.com",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Previews US midterm races and ballot measures where energy affordability, utility accountability, and data center rules are central issues.",
-      "overlap": []
-    },
-    {
-      "source": "Latitude Media",
-      "title": "The case for state-led power planning",
-      "url": "https://www.latitudemedia.com/news/the-case-for-state-led-power-planning/",
-      "published": "2026-10-30",
-      "source_url": "https://www.latitudemedia.com",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Contributed piece from CATF arguing states should revive long-term resource planning and procurement to fill gaps left by wholesale price signals.",
-      "overlap": []
-    },
-    {
-      "source": "Latitude Media",
-      "title": "Are data centers ready to pay double to unclog the grid?",
-      "url": "https://www.latitudemedia.com/news/are-data-centers-ready-to-pay-double-to-unclog-the-grid/",
-      "published": "2026-10-29",
-      "source_url": "https://www.latitudemedia.com",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Two tech industry groups back the Senate permitting bill, which would make data centers pay both embedded and incremental grid costs.",
-      "overlap": []
-    },
-    {
-      "source": "Canary Media",
-      "title": "Meta strikes deal to help bring a low-carbon cement plant to Missouri",
-      "url": "https://www.canarymedia.com/articles/clean-industry/meta-fortera-deal-cement-plant-missouri",
-      "published": "2026-10-30",
-      "source_url": "https://www.canarymedia.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Tech firms want low-carbon building materials for data centers, but little clean cement is made in the US; Meta's Fortera deal targets that gap.",
-      "overlap": [
-        {
-          "symbol": "META",
-          "strength": "direct",
-          "reason": "Meta is the buyer in the deal."
-        }
-      ]
-    },
-    {
-      "source": "Canary Media",
-      "title": "5 ballot proposals that could drive or derail clean energy",
-      "url": "https://www.canarymedia.com/articles/politics/ballot-proposals-clean-energy",
-      "published": "2026-10-30",
-      "source_url": "https://www.canarymedia.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Weekly analysis of midterm ballot measures that could affect clean energy.",
-      "overlap": []
-    },
-    {
-      "source": "Canary Media",
-      "title": "Here's how much Trump's Iran war has added to Americans' fuel costs",
-      "url": "https://www.canarymedia.com/articles/fossil-fuels/trump-iran-war-american-fuel-costs",
-      "published": "2026-10-30",
-      "source_url": "https://www.canarymedia.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Chart of the Week on how the war with Iran has raised per-person gasoline and diesel costs.",
-      "overlap": [
-        {
-          "symbol": "BZ=F",
-          "strength": "loose",
-          "reason": "Fuel costs track crude prices."
-        }
-      ]
-    },
-    {
-      "source": "Utility Dive",
-      "title": "Hitachi's nuclear revenue rises as SMR delivery date approaches",
-      "url": "https://www.utilitydive.com/news/hitachi-sees-rise-in-nuclear-revenue-as-smr-delivery-date-approaches/873327/",
-      "published": "2026-10-30",
-      "source_url": "https://www.utilitydive.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Most of Hitachi's Energy segment is grid equipment; sales are strong, but executives watch inflation and long delivery timelines.",
-      "overlap": [
-        {
-          "symbol": "SMR",
-          "strength": "loose",
-          "reason": "Small modular reactor delivery timeline."
-        }
-      ]
-    },
-    {
-      "source": "Utility Dive",
-      "title": "Lack of wildfire reform is having 'dire and escalating impacts': SCE",
-      "url": "https://www.utilitydive.com/news/wildfire-reform-sce-edison-international-earnings/873322/",
-      "published": "2026-10-30",
-      "source_url": "https://www.utilitydive.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Edison International's CEO expects California policymakers to act on wildfire reform but warns delay into 2027 would be costly.",
-      "overlap": []
-    },
-    {
-      "source": "Utility Dive",
-      "title": "Xcel Energy rolls out $70B, 5-year capital plan focused on renewables",
-      "url": "https://www.utilitydive.com/news/xcel-energy-renewables-wind-earnings/873273/",
-      "published": "2026-10-30",
-      "source_url": "https://www.utilitydive.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Xcel's plan includes 9.2 GW of renewables and 2.3 GW of storage as it aims to serve growing demand.",
-      "overlap": [
-        {
-          "symbol": "NEE",
-          "strength": "loose",
-          "reason": "Fellow US utility building renewables."
-        }
-      ]
-    },
-    {
-      "source": "Oilprice.com",
-      "title": "DARPA Backs Project to Measure AI Energy Use at Every Stage of the Workflow",
-      "url": "https://oilprice.com/Energy/Energy-General/DARPA-Backs-Project-to-Measure-AI-Energy-Use-at-Every-Stage-of-the-Workflow.html",
-      "published": "2026-10-31",
-      "source_url": "https://oilprice.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Describes AI as an energy monster, with data center demand expected to more than double by 2030 from 2024 levels, straining grids.",
-      "overlap": []
-    },
-    {
-      "source": "Oilprice.com",
-      "title": "Senegal's Ambitious Plan to Slash Electricity Costs and Boost Energy Security",
-      "url": "https://oilprice.com/Energy/Energy-General/Senegals-Ambitious-Plan-to-Slash-Electricity-Costs-and-Boost-Energy-Security.html",
-      "published": "2026-10-31",
-      "source_url": "https://oilprice.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Senegal is developing oil and gas alongside renewables under its Vision 2050 plan to lower energy costs and strengthen energy security.",
-      "overlap": []
-    },
-    {
-      "source": "Oilprice.com",
-      "title": "Europe Is Now Seriously Rethinking Its Oil Refinery Phase Down",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Europe-Is-Now-Seriously-Rethinking-Its-Oil-Refinery-Phase-Down.html",
-      "published": "2026-10-30",
-      "source_url": "https://oilprice.com",
-      "topic": "Energy",
-      "access": "partial",
-      "summary": "Europe is reconsidering its plan to shed some fossil fuel assets during a new energy crisis.",
-      "overlap": [
-        {
-          "symbol": "VGK",
-          "strength": "loose",
-          "reason": "European energy policy shift."
-        }
-      ]
-    },
-    {
-      "source": "Rigzone",
-      "title": "Big Oil Scores $56B Windfall on Spiking Fuel Prices",
-      "url": "https://www.rigzone.com/news/wire/big_oil_scores_56b_windfall_on_spiking_fuel_prices-31-oct-2026-184980-article/?rss=true",
-      "published": "2026-10-31",
-      "source_url": "https://www.rigzone.com",
-      "topic": "Energy",
-      "access": "teaser",
-      "summary": "Major oil companies earned more than $50 billion in windfall profits as fuel prices spiked.",
-      "overlap": [
-        {
-          "symbol": "XOM",
-          "strength": "loose",
-          "reason": "Large oil majors share the windfall."
+          "reason": "Intel fell on a weak outlook."
         },
         {
-          "symbol": "SHEL",
-          "strength": "loose",
-          "reason": "Large oil majors share the windfall."
+          "symbol": "^IXIC",
+          "strength": "direct",
+          "reason": "Nasdaq led Friday's decline."
         }
       ]
     },
     {
-      "source": "Rigzone",
-      "title": "Oil Creeps Higher Amid Uncertainty Over USA Strategy in Iran",
-      "url": "https://www.rigzone.com/news/wire/oil_creeps_higher_amid_uncertainty_over_usa_strategy_in_iran-30-oct-2026-184984-article/?rss=true",
-      "published": "2026-10-30",
-      "source_url": "https://www.rigzone.com",
-      "topic": "Energy",
-      "access": "teaser",
-      "summary": "Oil prices rose as traders weighed how willing Washington might be to resume military escalation against Iran.",
+      "story": "Oil drops on reported US-Iran talks over Hormuz",
+      "date": "2026-11-02",
+      "summary": "Brent fell to about $110 after Iran's foreign minister said negotiators in Qatar were discussing a proposal that could reopen the Strait of Hormuz.",
+      "coverage": [
+        {
+          "outlet": "Associated Press (via KSAT)",
+          "region": "Americas",
+          "title": "Global shares are mixed and US futures advance, while oil prices fall nearly 4%",
+          "url": "https://www.ksat.com/business/2026/11/02/asian-shares-are-mixed-and-us-futures-advance-while-oil-prices-retreat/",
+          "kind": "press"
+        },
+        {
+          "outlet": "HDFC Sky",
+          "region": "South Asia",
+          "title": "Gift Nifty Signals Flat-Positive Open as Asia Mixed, Oil Slides",
+          "url": "https://hdfcsky.com/news/global-markets-today-november-2-2026-us-european-futures-rise-asia-mixed-oil-prices-ease-ahead-of-indian-market-opening",
+          "kind": "press"
+        }
+      ],
       "overlap": [
         {
           "symbol": "BZ=F",
           "strength": "direct",
-          "reason": "Covers crude price moves."
+          "reason": "Brent is the benchmark that fell."
         },
         {
           "symbol": "CL=F",
           "strength": "direct",
-          "reason": "Covers crude price moves."
+          "reason": "US crude fell alongside Brent."
         }
       ]
     },
     {
-      "source": "Rigzone",
-      "title": "Exxon Plans $100B in Capex Through 2030, CEO Tells CNBC",
-      "url": "https://www.rigzone.com/news/wire/exxon_plans_100b_in_capex_through_2030_ceo_tells_cnbc-30-oct-2026-184981-article/?rss=true",
-      "published": "2026-10-30",
-      "source_url": "https://www.rigzone.com",
-      "topic": "Energy",
-      "access": "teaser",
-      "summary": "ExxonMobil plans to invest over $100 billion in the next few years to expand global energy supply, its CEO said.",
+      "story": "EU gas storage at lowest level for the date since 2011",
+      "date": "2026-10-28",
+      "summary": "EU storage was 74.93% full on 26 October versus 82.9% a year earlier, as prices hit a four-year high.",
+      "coverage": [
+        {
+          "outlet": "TASS",
+          "region": "Europe",
+          "title": "Europe struggles to top up gas storage at four-year high prices ahead of winter",
+          "url": "https://tass.com/economy/2209235",
+          "kind": "press"
+        }
+      ],
       "overlap": [
         {
-          "symbol": "XOM",
+          "symbol": "TTF=F",
           "strength": "direct",
-          "reason": "About Exxon capital spending."
+          "reason": "European gas benchmark."
         }
       ]
-    },
-    {
-      "source": "MINING.COM",
-      "title": "Local miner outbids Freeport for Colombia exploration",
-      "url": "https://www.mining.com/local-miner-outbids-freeport-for-colombia-exploration/",
-      "published": "2026-10-26",
-      "source_url": "https://www.mining.com",
-      "topic": "Metals and minerals",
-      "access": "full",
-      "summary": "OP Gold Capital outbid Freeport-McMoRan for a 60 square kilometer exploration block in Cesar, Colombia.",
-      "overlap": [
-        {
-          "symbol": "FCX",
-          "strength": "direct",
-          "reason": "Freeport lost the bid."
-        }
-      ]
-    },
-    {
-      "source": "MINING.COM",
-      "title": "Codelco, BHP launch $40M copper hunt in northern Chile",
-      "url": "https://www.mining.com/codelco-bhp-launch-40m-copper-hunt-in-northern-chile/",
-      "published": "2026-10-26",
-      "source_url": "https://www.mining.com",
-      "topic": "Metals and minerals",
-      "access": "full",
-      "summary": "Codelco and BHP are exploring the Anillo copper project in Antofagasta, with BHP committing up to $40 million.",
-      "overlap": [
-        {
-          "symbol": "BHP",
-          "strength": "direct",
-          "reason": "BHP funds the exploration."
-        },
-        {
-          "symbol": "HG=F",
-          "strength": "loose",
-          "reason": "Copper supply pipeline."
-        }
-      ]
-    },
-    {
-      "source": "MINING.COM",
-      "title": "Strike curbs output at Canada's largest copper mine",
-      "url": "https://www.mining.com/strike-curbs-output-at-canadas-largest-copper-mine/",
-      "published": "2026-10-26",
-      "source_url": "https://www.mining.com",
-      "topic": "Metals and minerals",
-      "access": "full",
-      "summary": "Teck is running Highland Valley Copper at reduced capacity after a workers' strike; the output impact depends on its length.",
-      "overlap": [
-        {
-          "symbol": "HG=F",
-          "strength": "direct",
-          "reason": "Copper mine output disruption."
-        }
-      ]
-    },
-    {
-      "source": "AgFunder News",
-      "title": "Guest article: Executive impersonation threats are everywhere in agriculture. This is how to respond",
-      "url": "https://agfundernews.com/guest-article-executive-impersonation-threats-are-everywhere-in-agriculture-this-is-how-to-respond-to-them",
-      "published": "2026-10-30",
-      "source_url": "https://agfundernews.com",
-      "topic": "Food and farm",
-      "access": "full",
-      "summary": "Guest article giving guidance on responding to executive impersonation and business email compromise in agriculture.",
-      "overlap": []
-    },
-    {
-      "source": "AgFunder News",
-      "title": "AgriFood Signals: DoorDash to buy Instacart, Terradot lands $34m, Biosphere wins Pentagon contract",
-      "url": "https://agfundernews.com/agrifood-signals-doordash-to-buy-instacart-terradot-lands-34m-biosphere-wins-pentagon-contract",
-      "published": "2026-10-29",
-      "source_url": "https://agfundernews.com",
-      "topic": "Food and farm",
-      "access": "full",
-      "summary": "Roundup of agrifood funding, M&A, grants, and people moves, including Oishii's Walmart deal.",
-      "overlap": []
-    },
-    {
-      "source": "AgFunder News",
-      "title": "Agrifood corporates find a new model for financing regenerative agriculture via Soil Capital partnership",
-      "url": "https://agfundernews.com/agrifood-corporates-find-a-new-model-for-financing-regenerative-agriculture-via-soil-capital-partnership",
-      "published": "2026-10-29",
-      "source_url": "https://agfundernews.com",
-      "topic": "Food and farm",
-      "access": "full",
-      "summary": "A pet food maker and an ingredients supplier will jointly fund the French wheat farms that supply them, using a shared farm-level dataset.",
-      "overlap": [
-        {
-          "symbol": "ZW=F",
-          "strength": "loose",
-          "reason": "Concerns wheat farming in France."
-        }
-      ]
-    },
-    {
-      "source": "gCaptain",
-      "title": "Strike Threat at Los Angeles, Long Beach Ports Delayed as Union and Employers Extend Talks",
-      "url": "https://gcaptain.com/strike-threat-at-los-angeles-long-beach-ports-delayed-as-union-and-employers-extend-talks/",
-      "published": "2026-10-30",
-      "source_url": "https://gcaptain.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "A possible strike at major US container terminals is postponed while the Pacific Maritime Association and the longshore union keep negotiating.",
-      "overlap": [
-        {
-          "symbol": "SCFI",
-          "strength": "loose",
-          "reason": "Port disruption can move container rates."
-        }
-      ]
-    },
-    {
-      "source": "gCaptain",
-      "title": "How MARAD Cut Years Off Deepwater Port Reviews Without Changing Environmental Standards",
-      "url": "https://gcaptain.com/how-marad-cut-years-off-deepwater-port-reviews-without-changing-environmental-standards/",
-      "published": "2026-10-30",
-      "source_url": "https://gcaptain.com",
-      "topic": "Shipping and logistics",
-      "access": "full",
-      "summary": "Summarizes MARAD's approval of an $8.2 billion Texas LNG export port, the fastest deepwater port license review in over 20 years.",
-      "overlap": [
-        {
-          "symbol": "LNG",
-          "strength": "loose",
-          "reason": "US LNG export capacity."
-        }
-      ]
-    },
-    {
-      "source": "gCaptain",
-      "title": "Hanwha Philly Shipyard Wins $269 Million U.S. Navy Landing Ship Contract",
-      "url": "https://gcaptain.com/hanwha-philly-shipyard-wins-269-million-u-s-navy-landing-ship-contract/",
-      "published": "2026-10-30",
-      "source_url": "https://gcaptain.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "Hanwha Philly Shipyard won a $269 million contract to build a Medium Landing Ship for the US Navy and Marine Corps.",
-      "overlap": []
-    },
-    {
-      "source": "Container News",
-      "title": "Why the US advisory for Hormuz is traffic management rather than risk mitigation",
-      "url": "https://container-news.com/why-the-us-advisory-for-hormuz-is-traffic-management-rather-than-risk-mitigation/",
-      "published": "2026-10-31",
-      "source_url": "https://container-news.com",
-      "topic": "Shipping and logistics",
-      "access": "teaser",
-      "summary": "Excerpt says US Naval Forces Central Command issued a notice on 28 October advising vessels to stay clear of Hormuz traffic; rest is premium.",
-      "overlap": [
-        {
-          "symbol": "TANKER",
-          "strength": "loose",
-          "reason": "Hormuz shipping affects tanker rates."
-        }
-      ]
-    },
-    {
-      "source": "Container News",
-      "title": "Sea-Intelligence: Unprecedented Capacity Levels in Oct/Nov",
-      "url": "https://container-news.com/sea-intelligence-unprecedented-capacity-levels-in-oct-nov/",
-      "published": "2026-10-31",
-      "source_url": "https://container-news.com",
-      "topic": "Shipping and logistics",
-      "access": "full",
-      "summary": "Sea-Intelligence says deployed container capacity in October and November has risen sharply against the usual late-year pattern.",
-      "overlap": [
-        {
-          "symbol": "SCFI",
-          "strength": "loose",
-          "reason": "Capacity levels bear on container rates."
-        }
-      ]
-    },
-    {
-      "source": "Hellenic Shipping News",
-      "title": "Ramble On: Who Pays the Freight?",
-      "url": "https://www.hellenicshippingnews.com/ramble-on-who-pays-the-freight/",
-      "published": "2026-10-30",
-      "source_url": "https://www.hellenicshippingnews.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "Discusses China's crude stockpile as a buffer against import shortfall from the Hormuz closure and what rebuilding it will cost.",
-      "overlap": [
-        {
-          "symbol": "TANKER",
-          "strength": "loose",
-          "reason": "Crude flows affect tanker demand."
-        }
-      ]
-    },
-    {
-      "source": "Hellenic Shipping News",
-      "title": "Tanker Orders Leading Newbuilding Activity With Prices Expected to Remain High Throughout 2027",
-      "url": "https://www.hellenicshippingnews.com/tanker-orders-leading-newbuilding-activity-with-prices-expected-to-remain-high-throughout-2027/",
-      "published": "2026-10-30",
-      "source_url": "https://www.hellenicshippingnews.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "Banchero Costa reports tanker ordering is leading the latest contracting surge despite high prices.",
-      "overlap": [
-        {
-          "symbol": "TANKER",
-          "strength": "direct",
-          "reason": "About tanker newbuilding market."
-        }
-      ]
-    },
-    {
-      "source": "Hellenic Shipping News",
-      "title": "Baltic Dry Index Up for 3rd Day",
-      "url": "https://www.hellenicshippingnews.com/baltic-dry-index-up-for-3rd-day-5/",
-      "published": "2026-10-30",
-      "source_url": "https://www.hellenicshippingnews.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "The Baltic dry bulk index rose 0.1% to 2,714 points, its highest since October 13, with the capesize index also up a third day.",
-      "overlap": [
-        {
-          "symbol": "BDI",
-          "strength": "direct",
-          "reason": "Reports the Baltic Dry Index."
-        }
-      ]
-    },
-    {
-      "source": "Carbon Brief",
-      "title": "Experts: What China wants from the COP31 climate talks",
-      "url": "https://www.carbonbrief.org/experts-what-china-wants-from-the-cop31-climate-talks",
-      "published": "2026-10-29",
-      "source_url": "https://www.carbonbrief.org",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Six experts describe what China is expected to push for at the COP31 climate summit in Turkey.",
-      "overlap": [
-        {
-          "symbol": "MCHI",
-          "strength": "loose",
-          "reason": "China climate policy stance."
-        }
-      ]
-    },
-    {
-      "source": "Carbon Brief",
-      "title": "Analysis: China's clean-tech exports in 2026 to avoid as much CO2 as Brazil emits in a year",
-      "url": "https://www.carbonbrief.org/analysis-chinas-clean-tech-exports-in-2026-to-avoid-as-much-co2-as-brazil-emits-in-a-year",
-      "published": "2026-10-29",
-      "source_url": "https://www.carbonbrief.org",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "Estimates the emissions avoided by China's 2026 exports of solar panels, batteries and electric vehicles.",
-      "overlap": [
-        {
-          "symbol": "TAN",
-          "strength": "loose",
-          "reason": "Solar export trends."
-        },
-        {
-          "symbol": "MCHI",
-          "strength": "loose",
-          "reason": "China clean-tech exports."
-        }
-      ]
-    },
-    {
-      "source": "World Nuclear News",
-      "title": "Floating nuclear power plant 'has boosted air quality'",
-      "url": "https://www.world-nuclear-news.org/articles/floating-nuclear-power-plant-has-boosted-air-quality",
-      "published": "2026-10-30",
-      "source_url": "https://www.world-nuclear-news.org",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Monitoring report says emissions from Russia's floating nuclear plant in Chukotka have fallen almost 80% since it began supplying heat in 2022.",
-      "overlap": []
-    },
-    {
-      "source": "World Nuclear News",
-      "title": "Westinghouse to conduct key study for AP1000 in Slovakia",
-      "url": "https://www.world-nuclear-news.org/articles/westinghouse-to-conduct-key-study-to-prepare-for-ap1000-in-slovakia",
-      "published": "2026-10-29",
-      "source_url": "https://www.world-nuclear-news.org",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Westinghouse will carry out a six-month front-end engineering and design study for a possible AP1000 at Bohunice.",
-      "overlap": [
-        {
-          "symbol": "CCJ",
-          "strength": "loose",
-          "reason": "Cameco co-owns Westinghouse."
-        }
-      ]
-    },
-    {
-      "source": "World Nuclear News",
-      "title": "Turkish oil refiner to consider SMR deployment",
-      "url": "https://www.world-nuclear-news.org/articles/turkish-oil-refiner-to-consider-smr-deployment",
-      "published": "2026-10-29",
-      "source_url": "https://www.world-nuclear-news.org",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Tupras, Turkey's largest refiner, will assess small modular reactors for power, heat and steam, with US Trade and Development Agency funding.",
-      "overlap": [
-        {
-          "symbol": "SMR",
-          "strength": "loose",
-          "reason": "SMR deployment interest."
-        }
-      ]
-    },
-    {
-      "source": "Energy Monitor",
-      "title": "Group14 Technologies secures $167m for global and European expansion",
-      "url": "https://www.energymonitor.ai/news/group14-technologies-series-d/",
-      "published": "2026-10-30",
-      "source_url": "https://www.energymonitor.ai",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Group14 closed a 150 million euro Series D equity extension to fund international manufacturing growth.",
-      "overlap": []
-    },
-    {
-      "source": "Energy Monitor",
-      "title": "ADS-TEC Energy nears permit for 1GW battery storage facility in Germany",
-      "url": "https://www.energymonitor.ai/news/ads-tec-energy-nears-permit-battery-storage/",
-      "published": "2026-10-29",
-      "source_url": "https://www.energymonitor.ai",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "ADS-TEC Energy reports progress on a large battery storage project at the Pulverdingen substation in Germany.",
-      "overlap": []
-    },
-    {
-      "source": "Energy Monitor",
-      "title": "Elgin to invest $531m in five UK solar and storage projects",
-      "url": "https://www.energymonitor.ai/news/elgin-invest-five-uk-projects/",
-      "published": "2026-10-28",
-      "source_url": "https://www.energymonitor.ai",
-      "topic": "Energy",
-      "access": "full",
-      "summary": "Elgin plans to invest nearly 400 million pounds across five UK projects totalling 230 MW.",
-      "overlap": [
-        {
-          "symbol": "TAN",
-          "strength": "loose",
-          "reason": "Solar project investment."
-        }
-      ]
-    },
-    {
-      "source": "Carbon Herald",
-      "title": "Argentina's Senate Backs Carbon Market Bill In 60-2 Vote, Opening Door To Billions In Potential Exports",
-      "url": "https://carbonherald.com/argentinas-senate-backs-carbon-market-bill-in-60-2-vote-opening-door-to-billions-in-potential-exports/",
-      "published": "2026-10-30",
-      "source_url": "https://carbonherald.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Argentina's Senate overwhelmingly approved legislation moving carbon markets closer to a national regulatory framework.",
-      "overlap": [
-        {
-          "symbol": "KRBN",
-          "strength": "loose",
-          "reason": "Carbon market development."
-        }
-      ]
-    },
-    {
-      "source": "Carbon Herald",
-      "title": "ArcelorMittal, MHI, And BHP Complete Carbon Capture Trial At Gent Steel Plant",
-      "url": "https://carbonherald.com/arcelormittal-mhi-and-bhp-complete-carbon-capture-trial-at-gent-steel-plant/",
-      "published": "2026-10-30",
-      "source_url": "https://carbonherald.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "ArcelorMittal, Mitsubishi Heavy Industries, BHP and Mitsubishi Development completed a carbon capture trial at the Gent steel plant.",
-      "overlap": [
-        {
-          "symbol": "BHP",
-          "strength": "direct",
-          "reason": "BHP is a trial partner."
-        }
-      ]
-    },
-    {
-      "source": "Carbon Herald",
-      "title": "Nasdaq Launches New Carbon Issuance Calendar In Collaboration With Relae",
-      "url": "https://carbonherald.com/nasdaq-launches-new-carbon-issuance-calendar-in-collaboration-with-relae/",
-      "published": "2026-10-30",
-      "source_url": "https://carbonherald.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Nasdaq and Relae released a carbon issuance calendar giving buyers a single platform for upcoming credit issuance.",
-      "overlap": [
-        {
-          "symbol": "KRBN",
-          "strength": "loose",
-          "reason": "Carbon credit market infrastructure."
-        }
-      ]
-    },
-    {
-      "source": "Climate Home News",
-      "title": "Editor's Desk: COP reform is happening quietly, behind the headlines",
-      "url": "https://www.climatechangenews.com/2026/10/29/editors-desk-cop-reform-is-happening-quietly-behind-the-headlines/",
-      "published": "2026-10-29",
-      "source_url": "https://www.climatechangenews.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Argues summits look unchanged but a gradual shift toward implementation is under way alongside negotiation.",
-      "overlap": []
-    },
-    {
-      "source": "Climate Home News",
-      "title": "From Australia to Chile, our cities are driving a green investment boom",
-      "url": "https://www.climatechangenews.com/2026/10/29/from-australia-to-chile-our-cities-are-driving-a-green-investment-boom/",
-      "published": "2026-10-29",
-      "source_url": "https://www.climatechangenews.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "City climate commitments could create trillions of dollars of demand for clean technology and green infrastructure.",
-      "overlap": [
-        {
-          "symbol": "ICLN",
-          "strength": "loose",
-          "reason": "Clean technology demand."
-        }
-      ]
-    },
-    {
-      "source": "Climate Home News",
-      "title": "Africa wants adaptation finance on COP31 agenda, raising risk of a fight",
-      "url": "https://www.climatechangenews.com/2026/10/28/africa-wants-adaptation-finance-on-cop31-agenda-raising-risk-of-a-fight/",
-      "published": "2026-10-28",
-      "source_url": "https://www.climatechangenews.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "The African Group seeks agenda space on tripling adaptation finance, the Green Climate Fund and trade, which could cause a clash.",
-      "overlap": [
-        {
-          "symbol": "AFK",
-          "strength": "loose",
-          "reason": "African climate finance positions."
-        }
-      ]
-    },
-    {
-      "source": "Mongabay",
-      "title": "Given a chance, women-led microenterprises uplift Nepali communities & conservation",
-      "url": "https://news.mongabay.com/2026/10/given-a-chance-women-led-microenterprises-uplift-nepali-communities-conservation/",
-      "published": "2026-10-30",
-      "source_url": "https://news.mongabay.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Profiles a wool-spinning enterprise in Nepal and argues women-led microenterprises give rural families income less dependent on forest products.",
-      "overlap": []
-    },
-    {
-      "source": "Mongabay",
-      "title": "US lawmakers urge Trump administration to oppose Colombia's Amazon aerial spraying plans",
-      "url": "https://news.mongabay.com/short-article/2026/10/us-lawmakers-urge-trump-administration-to-oppose-colombias-amazon-aerial-spraying-plans/",
-      "published": "2026-10-30",
-      "source_url": "https://news.mongabay.com",
-      "topic": "Climate and policy",
-      "access": "full",
-      "summary": "US lawmakers ask the Secretary of State not to back Colombia's plan to resume aerial coca spraying in the Amazon, citing health and environment risks.",
-      "overlap": []
-    },
-    {
-      "source": "Mongabay",
-      "title": "Aztec methods and crocodiles: How biologists are restoring mangroves in Mexico",
-      "url": "https://news.mongabay.com/2026/10/aztec-techniques-and-crocodiles-how-biologists-are-restoring-mangroves-in-mexico/",
-      "published": "2026-10-30",
-      "source_url": "https://news.mongabay.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Describes a REVIVE-led mangrove restoration in Veracruz using Aztec-inspired planting methods and crocodiles; REVIVE reports full recovery.",
-      "overlap": [
-        {
-          "symbol": "EWW",
-          "strength": "loose",
-          "reason": "Mexico-based project."
-        }
-      ]
-    },
-    {
-      "source": "CTVC",
-      "title": "Mid-term, peak demand, high stakes #319",
-      "url": "https://www.ctvc.co/mid-term-peak-demand-high-stakes-319/",
-      "published": "2026-10-26",
-      "source_url": "https://www.ctvc.co",
-      "topic": "Startups and deals",
-      "access": "partial",
-      "summary": "Newsletter on how energy and climate feature in the US midterms, including state data center and utility policy, plus deal roundups.",
-      "overlap": []
-    },
-    {
-      "source": "TechCrunch Climate",
-      "title": "Trump DOE loans $5B to nuclear plants that will power data centers",
-      "url": "https://techcrunch.com/2026/10/28/trump-doe-loans-5b-to-nuclear-plants-that-will-power-data-centers/",
-      "published": "2026-10-28",
-      "source_url": "https://techcrunch.com/category/climate/",
-      "topic": "Startups and deals",
-      "access": "full",
-      "summary": "Constellation Energy will receive $5 billion in federal loans to modernize its nuclear reactors, with most new capacity committed to Google, Amazon and Meta.",
-      "overlap": [
-        {
-          "symbol": "CEG",
-          "strength": "direct",
-          "reason": "Constellation receives the loans."
-        },
-        {
-          "symbol": "GOOGL",
-          "strength": "loose",
-          "reason": "Committed buyer of the capacity."
-        },
-        {
-          "symbol": "AMZN",
-          "strength": "loose",
-          "reason": "Committed buyer of the capacity."
-        }
-      ]
-    },
-    {
-      "source": "TechCrunch Climate",
-      "title": "Ford Fathom will be the cheapest American EV capable of powering a house",
-      "url": "https://techcrunch.com/2026/10/27/ford-fathom-will-be-the-cheapest-american-ev-capable-of-powering-a-house/",
-      "published": "2026-10-27",
-      "source_url": "https://techcrunch.com/category/climate/",
-      "topic": "Startups and deals",
-      "access": "full",
-      "summary": "Ford is releasing two chargers supporting vehicle-to-everything power so its EV can power a home or feed the grid.",
-      "overlap": []
-    },
-    {
-      "source": "TechCrunch Climate",
-      "title": "Fusion startups are giving the government shares in exchange for awards. Is it worth it?",
-      "url": "https://techcrunch.com/2026/10/26/fusion-startups-are-giving-the-government-shares-in-exchange-for-awards-is-it-worth-it/",
-      "published": "2026-10-26",
-      "source_url": "https://techcrunch.com/category/climate/",
-      "topic": "Startups and deals",
-      "access": "full",
-      "summary": "Fusion companies must choose between giving the government equity for funding awards or developing without that support.",
-      "overlap": []
     }
   ],
-  "reading_quiet": [
-    "SemiAnalysis",
-    "Irrational Analysis",
-    "The Chip Letter",
-    "Caixin Global China Watch",
-    "Carbon Removal Updates",
-    "farmdoc daily",
-    "Fabricated Knowledge"
-  ],
+  "reading": [],
+  "reading_quiet": [],
   "climate": [
     {
       "region": "Americas",
@@ -4291,24 +2996,20 @@
     "Policy rates: BOJ 30 Oct decision confirmed via Trading Economics only this run.",
     "Fed, BOJ and ECB official decision pages not linked: federalreserve.gov blocked by fetch permission; BOJ and ECB pages not returned by search.",
     "BOJ October policy rate and vote not read: Japan Times and CNBC pages failed to load; 1.25% rate seen only in a preview article, so it is not stated.",
-    "Alphabet and SK hynix stories: only US-based or non-regional outlets found; fewer than two regions covered.",
-    "Section 232 robotics story: coverage found was US-based only.",
     "Rhine Kaub reading is from Cruise Passenger (26 Oct), not the German WSV gauge page.",
     "EU gas storage figure is from TASS citing GIE; the GIE AGSI page itself does not load.",
-    "Earnings dates for week of 2 Nov come from a compiled calendar (StockTitan), not company releases; names marked expected there were left out; Friday 6 Nov names not listed on the page.",
-    "Amazon Q3 2026 results not found (search returned 2025 coverage); Amazon omitted.",
-    "Typhoon Champi story: no East Asia outlet title could be confirmed (Focus Taiwan page not read), so it is not cited.",
-    "Fertilizer Daily: feed fetch blocked (robots disallowed)",
-    "The Loadstar: feed fetch failed (client error)",
-    "Splash247: feed fetch failed (client error)",
-    "Baker Hughes US rig count week ending 2026-10-30: no report found yet in search (latest found was 2026-10-23, already in series).",
     "EU gas storage (GIE) Sunday figures for 2026-10-11, 10-18, 10-25: no Sunday value found; press reports give only other dates (74.02% on 13 Oct, TASS 15 Oct; 75% on 21 Oct, ACER 27 Oct; 74.93% on 26 Oct, TASS 28 Oct). GIE AGSI+ page not reachable.",
     "SEAJ semiconductor equipment billings September 2026: not listed on SEAJ news page (latest is the August report, 2026-09-18); September report not found.",
     "ICSG refined copper balance Jan-Aug 2026: no press report found; latest remains Jan-Jul (released 2026-09-29).",
-    "Cameco uranium month-end spot for October 2026: not yet published (month-end is 2026-10-31).",
     "Second source not found for: SI=F, 1919.HK, EWZ, ARGT, KRBN, KSA, LEU, LIN, LIT, LITHIUM.",
     "INTC: second source (Trading Economics, 64.83, intraday-range quote) differs from the stockanalysis close of 65.76; not resolved, treat the 30 Oct close as unconfirmed.",
-    "SI=F, EWZ, USDBRL: cause of move per Trading Economics/investinglive (silver below $50 on energy costs and rate expectations; Brazil selloff after Lula's runoff win); no cause verified for INTC, QCOM, PBR, ARGT, 1919.HK."
+    "SI=F, EWZ, USDBRL: cause of move per Trading Economics/investinglive (silver below $50 on energy costs and rate expectations; Brazil selloff after Lula's runoff win); no cause verified for INTC, QCOM, PBR, ARGT, 1919.HK.",
+    "Reading: all feeds not fetched this run; WebFetch permission for feed URLs was not granted (PROVENANCE_REQUIRED), so reading is empty rather than reused.",
+    "Prices: US, Asian and European item values are carried from the 30 Oct close (Saturday edition); Monday 2 Nov overnight moves appear only in the summary, from AP, Saxo and Bloomberg wraps.",
+    "Climate: entries carried unchanged from the 31 Oct edition; no new climate sources fetched.",
+    "Headlines: EU gas storage story has one outlet (TASS citing GIE); Korea exports are press reports of the ministry release, not the release itself.",
+    "Cameco October month-end uranium spot: not checked; page not fetched this run.",
+    "EU gas storage (GIE) 1 Nov figure: no value found; 26 Oct (74.93%) is the latest."
   ],
   "indicators": [
     {
@@ -4402,28 +3103,28 @@
       "source": "Korea trade ministry",
       "tier": "reported",
       "site": null,
-      "period": "2026-09",
-      "value": 60.3,
+      "period": "2026-10",
+      "value": 56.4,
       "row_status": "final",
-      "released": "2026-10-01",
-      "source_name": "Korea Times and Korea JoongAng Daily, quoting the ministry release",
-      "source_url": "https://www.koreatimes.co.kr/economy/20261001/koreas-sept-exports-hit-record-1209-bil-on-robust-chip-sales",
-      "yoy": 263.0,
+      "released": "2026-11-01",
+      "source_name": "The Korea Times, quoting the Ministry of Trade, Industry and Resources release",
+      "source_url": "https://www.koreatimes.co.kr/amp/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales",
+      "yoy": 259.0,
       "yoy_source": "reported",
-      "yoy_prev": 209.0,
-      "yoy_change": 54.0,
-      "mom": 29.3,
+      "yoy_prev": 263.0,
+      "yoy_change": -4.0,
+      "mom": -6.5,
       "mom_source": "computed",
       "z": null,
-      "status": "building history (4 of 12 year-on-year readings)",
-      "history_n": 4,
+      "status": "building history (5 of 12 year-on-year readings)",
+      "history_n": 5,
       "revision": null,
       "checks": [],
       "gaps": [
         "2026-06"
       ],
       "range5": null,
-      "next_expected": "2026-11-01",
+      "next_expected": "2026-12-01",
       "late": false,
       "touches": [
         "000660.KS",
@@ -4446,6 +3147,10 @@
         {
           "p": "2026-09",
           "v": 60.3
+        },
+        {
+          "p": "2026-10",
+          "v": 56.4
         }
       ]
     },
@@ -5028,10 +3733,10 @@
       "source": "Baker Hughes",
       "tier": "reported",
       "site": "https://rigcount.bakerhughes.com",
-      "period": "2026-10-23",
+      "period": "2026-10-30",
       "value": 603.0,
       "row_status": "final",
-      "released": "2026-10-23",
+      "released": "2026-10-30",
       "source_name": "Baker Hughes, via American Oil & Gas Reporter",
       "source_url": "https://www.aogr.com/web-exclusives/us-rig-count/2026",
       "yoy": null,
@@ -5041,13 +3746,13 @@
       "mom": 0.0,
       "mom_source": "computed",
       "z": null,
-      "status": "building history (2 readings on file)",
-      "history_n": 2,
+      "status": "building history (3 readings on file)",
+      "history_n": 3,
       "revision": null,
       "checks": [],
       "gaps": [],
       "range5": null,
-      "next_expected": "2026-10-30",
+      "next_expected": "2026-11-06",
       "late": false,
       "touches": [
         "CL=F",
@@ -5064,6 +3769,10 @@
         },
         {
           "p": "2026-10-23",
+          "v": 603.0
+        },
+        {
+          "p": "2026-10-30",
           "v": 603.0
         }
       ]
@@ -5585,14 +4294,6 @@
       "reason": "Down 23.8% this week, 7.0 times its usual weekly swing (about ±3.4%); 20.2 points below the Latin America median.",
       "z_own": -6.98,
       "z_peer": -6.36,
-      "news": [
-        {
-          "kind": "reading",
-          "title": "Lula v congress: Brazil's re-elected leader faces environmental battle",
-          "url": "https://dialogue.earth/en/forests/lula-v-congress-brazils-re-elected-leader-faces-environmental-battle/",
-          "strength": "loose"
-        }
-      ],
       "verified": {
         "status": "single",
         "text": "one source so far"
@@ -5658,16 +4359,10 @@
       "z_peer": -3.46,
       "news": [
         {
-          "kind": "reading",
-          "title": "Intel's Q3 Results Show Supply Chain Disruptions and PC Plunge",
-          "url": "https://www.eetimes.com/intels-q3-results-show-supply-chain-disruptions-and-pc-plunge/",
+          "kind": "headline",
+          "title": "Global stocks steady after Friday's tech selloff",
+          "url": "https://www.ksat.com/business/2026/11/02/asian-shares-are-mixed-and-us-futures-advance-while-oil-prices-retreat/",
           "strength": "direct"
-        },
-        {
-          "kind": "reading",
-          "title": "Chip Industry Week In Review",
-          "url": "https://semiengineering.com/chip-industry-week-in-review-162/",
-          "strength": "loose"
         }
       ],
       "verified": {
@@ -5697,7 +4392,7 @@
     "tiers": {
       "official": 17,
       "reported": 1,
-      "aggregator": 189
+      "aggregator": 185
     },
     "cross_checked": 6,
     "agreed": 4,
