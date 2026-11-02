@@ -2729,8 +2729,464 @@
       ]
     }
   ],
-  "reading": [],
-  "reading_quiet": [],
+  "reading": [
+    {
+      "source": "SemiAnalysis",
+      "title": "GDPx: Measuring Frontier Model Capabilities Across the Most Valuable Domains",
+      "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+      "published": "2026-11-02",
+      "source_url": "https://newsletter.semianalysis.com",
+      "topic": "Chips",
+      "access": "partial",
+      "summary": "Introduces a benchmark of frontier AI model capabilities across domains including hardware and chip design, cyber, finance, legal, quant trading and software engineering; the feed text ends in the sample-task section.",
+      "overlap": []
+    },
+    {
+      "source": "Irrational Analysis",
+      "title": "Intel Q3 2026: Dead Inside",
+      "url": "https://irrationalanalysis.substack.com/p/intel-q3-2026-dead-inside",
+      "published": "2026-10-30",
+      "source_url": "https://irrationalanalysis.substack.com",
+      "topic": "Chips",
+      "access": "full",
+      "summary": "Commentary on Intel's third-quarter results, arguing its explanation for shifting wafer starts from client to datacenter reflects a planning problem rather than substrate or packaging limits.",
+      "overlap": [
+        {
+          "symbol": "INTC",
+          "strength": "direct",
+          "reason": "Piece is about Intel's Q3 2026 results and wafer-start planning."
+        }
+      ]
+    },
+    {
+      "source": "ChinaTalk",
+      "title": "Korea's Stock Market Crashed $1 Trillion. What Does That Mean for the Global AI Race?",
+      "url": "https://www.chinatalk.media/p/koreas-stock-market-crashed-1-trillion",
+      "published": "2026-11-01",
+      "source_url": "https://www.chinatalk.media",
+      "topic": "China and Asia",
+      "access": "full",
+      "summary": "Examines how Korean market swings track Samsung and SK hynix memory dominance, the Korea discount, and the June-July 2026 crash with spillover into the US-China tech race.",
+      "overlap": [
+        {
+          "symbol": "EWY",
+          "strength": "direct",
+          "reason": "Covers the Korean equity market crash."
+        },
+        {
+          "symbol": "000660.KS",
+          "strength": "direct",
+          "reason": "SK hynix memory dominance is central to the analysis."
+        },
+        {
+          "symbol": "005930.KS",
+          "strength": "direct",
+          "reason": "Samsung memory dominance is central to the analysis."
+        }
+      ]
+    },
+    {
+      "source": "Hello China Tech",
+      "title": "Two Chinese clouds, one IDC report, two first places",
+      "url": "https://hellochinatech.com/p/weekly-recap-2026-11-01",
+      "published": "2026-11-01",
+      "source_url": "https://hellochinatech.com",
+      "topic": "China and Asia",
+      "access": "full",
+      "summary": "Free weekly recap: two Chinese cloud providers each claim first place from the same IDC report, plus a download-count dataset question and state investors on most of 558 company investor lists.",
+      "overlap": []
+    },
+    {
+      "source": "Dialogue Earth",
+      "title": "The Philippines' 'solar surge' leaves many Filipinos behind",
+      "url": "https://dialogue.earth/en/energy/the-philippines-solar-surge-leaves-many-filipinos-behind/",
+      "published": "2026-11-01",
+      "source_url": "https://dialogue.earth/en/",
+      "topic": "Climate and policy",
+      "access": "full",
+      "summary": "Rising electricity prices push Filipinos toward solar, but upfront costs keep it out of reach for the households that would save the most.",
+      "overlap": [
+        {
+          "symbol": "EPHE",
+          "strength": "direct",
+          "reason": "Philippines energy and solar adoption is the subject."
+        },
+        {
+          "symbol": "TAN",
+          "strength": "loose",
+          "reason": "Solar demand read-through."
+        }
+      ]
+    },
+    {
+      "source": "Semiconductor Engineering",
+      "title": "Shift Left Is Becoming A System-Level Problem",
+      "url": "https://semiengineering.com/shift-left-is-becoming-a-system-level-problem/",
+      "published": "2026-11-02",
+      "source_url": "https://semiengineering.com",
+      "topic": "Chips",
+      "access": "full",
+      "summary": "Round table on validating hardware, software and physical constraints earlier in design as complexity rises, and how fragmented workflows make that difficult.",
+      "overlap": []
+    },
+    {
+      "source": "Semiconductor Engineering",
+      "title": "Putting AI To The Test",
+      "url": "https://semiengineering.com/putting-ai-to-the-test/",
+      "published": "2026-11-02",
+      "source_url": "https://semiengineering.com",
+      "topic": "Chips",
+      "access": "full",
+      "summary": "Opinion piece asking who verifies the verifier, on checking AI-assisted chip verification tools and their outputs.",
+      "overlap": []
+    },
+    {
+      "source": "Canary Media",
+      "title": "Boise plans to tap its geothermal network to heat 300 affordable homes",
+      "url": "https://www.canarymedia.com/articles/geothermal/boise-geothermal-network-affordable-homes",
+      "published": "2026-11-02",
+      "source_url": "https://www.canarymedia.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Boise already runs the largest US geothermal heating system, serving about 100 buildings, and plans to extend it to 300 affordable homes with a semiconductor company involved.",
+      "overlap": []
+    },
+    {
+      "source": "Utility Dive",
+      "title": "States must take a critical eye to gas plants proposed over clean energy",
+      "url": "https://www.utilitydive.com/news/utilities-want-fossil-plants-more-expensive-clean-energy-regulators/833301/",
+      "published": "2026-10-30",
+      "source_url": "https://www.utilitydive.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Experts from Environmental Defense Fund and Minnesota's CURE argue regulators should ask whether clean alternatives beat each proposed utility gas turbine, not only whether the gas plant is justified.",
+      "overlap": []
+    },
+    {
+      "source": "Utility Dive",
+      "title": "BAAJA gives federal regulators 'bigger hammer' to break transmission blocks",
+      "url": "https://www.utilitydive.com/news/baaja-permitting-reform-interregional-transmission-harder/873041/",
+      "published": "2026-10-29",
+      "source_url": "https://www.utilitydive.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Rep. Josh Harder says the bill's cost-sharing elements are probably its most important part, meant to encourage collaboration on interregional transmission.",
+      "overlap": []
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "Oil Prices Plunge as Draft Proposal to End U.S.-Iran War is Circulated",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-as-Draft-Proposal-to-End-US-Iran-War-is-Circulated.html",
+      "published": "2026-11-02",
+      "source_url": "https://oilprice.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Oil fell about 3% in Asian trade on hopes for a US-Iran peace deal after Iranian negotiators left Qatar and a draft proposal began circulating.",
+      "overlap": [
+        {
+          "symbol": "BZ=F",
+          "strength": "direct",
+          "reason": "Brent fell on peace-deal hopes."
+        },
+        {
+          "symbol": "CL=F",
+          "strength": "direct",
+          "reason": "WTI crude moved with the same news."
+        }
+      ]
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "ADNOC Chief Says World Has \"Eroded Its Supply Buffers\"",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Chief-Says-World-Has-Eroded-Its-Supply-Buffers.html",
+      "published": "2026-11-02",
+      "source_url": "https://oilprice.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "ADNOC's CEO said about 1 billion barrels have been drawn from global inventories since Hormuz disruptions and called for more resilient storage and refining near consumers.",
+      "overlap": [
+        {
+          "symbol": "BZ=F",
+          "strength": "loose",
+          "reason": "Inventory draws bear on crude prices."
+        },
+        {
+          "symbol": "UAE",
+          "strength": "loose",
+          "reason": "ADNOC is the UAE state oil company."
+        }
+      ]
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "Blackstone-Led Investors Buy into LNG Canada for $3.1 Billion",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Blackstone-Led-Investors-Buy-into-LNG-Canada-for-31-Billion.html",
+      "published": "2026-11-02",
+      "source_url": "https://oilprice.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Blackstone funds and Canadian pension investors agreed to buy a 49.9% stake in a Mitsubishi unit holding Mitsubishi's 15% stake in LNG Canada, for $3.1 billion in total.",
+      "overlap": [
+        {
+          "symbol": "LNG",
+          "strength": "loose",
+          "reason": "LNG export asset deal; read-through for LNG sector."
+        }
+      ]
+    },
+    {
+      "source": "MINING.COM",
+      "title": "Buried sediments prove Romans mined gold in Pyrenees",
+      "url": "https://www.mining.com/buried-sediments-prove-romans-mined-gold-in-pyrenees/",
+      "published": "2026-10-26",
+      "source_url": "https://www.mining.com",
+      "topic": "Metals and minerals",
+      "access": "full",
+      "summary": "Researchers dated a large hydraulic gold mining complex in Catalonia using buried sediments, showing how ancient Romans extracted precious metals in the Pyrenees.",
+      "overlap": []
+    },
+    {
+      "source": "AgFunder News",
+      "title": "Mark Golder: 'Cacao-based chocolate will become increasingly premium, and for everything else, there's Win-Win'",
+      "url": "https://agfundernews.com/mark-golder-cacao-based-chocolate-will-become-increasingly-premium-and-for-everything-else-theres-win-win",
+      "published": "2026-10-29",
+      "source_url": "https://agfundernews.com",
+      "topic": "Food and farm",
+      "access": "full",
+      "summary": "Win-Win's chief executive says cocoa price volatility, more than the price level itself, is what makes planning hard for chocolate buyers.",
+      "overlap": []
+    },
+    {
+      "source": "gCaptain",
+      "title": "Pakistan LNG Cargo Attacked Near Hormuz Had Iranian Approval",
+      "url": "https://gcaptain.com/pakistan-lng-cargo-attacked-near-hormuz-had-iranian-approval/",
+      "published": "2026-11-02",
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Pakistan reportedly negotiated safe passage with Iran for the LNG carrier Al Mayeda before it was attacked near the Strait of Hormuz.",
+      "overlap": [
+        {
+          "symbol": "JKM",
+          "strength": "loose",
+          "reason": "Attack on an LNG carrier near Hormuz bears on Asian LNG supply routes."
+        },
+        {
+          "symbol": "TTF=F",
+          "strength": "loose",
+          "reason": "Gulf LNG disruption feeds into European gas pricing."
+        }
+      ]
+    },
+    {
+      "source": "gCaptain",
+      "title": "EU Retreats From Arctic Oil Ban Language In Strategy Draft",
+      "url": "https://gcaptain.com/eu-retreats-from-arctic-oil-ban-language-in-strategy-draft/",
+      "published": "2026-11-01",
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "The EU appears to be easing its opposition to oil and gas production in polar areas, while still calling for some restrictions, according to a strategy draft.",
+      "overlap": [
+        {
+          "symbol": "EQNR",
+          "strength": "loose",
+          "reason": "Norwegian Barents Sea drilling is among the activity affected by Arctic policy."
+        }
+      ]
+    },
+    {
+      "source": "gCaptain",
+      "title": "Venture Global Begins Supplying Plaquemines Customers Under Long-Term LNG Contracts",
+      "url": "https://gcaptain.com/venture-global-begins-supplying-plaquemines-customers-under-long-term-lng-contracts/",
+      "published": "2026-11-01",
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Shell became the first buyer to receive LNG under a long-term contract from Venture Global's Plaquemines plant in Louisiana after Phase 1 commissioning.",
+      "overlap": [
+        {
+          "symbol": "SHEL",
+          "strength": "direct",
+          "reason": "Shell is named as the first long-term contract buyer."
+        },
+        {
+          "symbol": "LNG",
+          "strength": "loose",
+          "reason": "Read-through on US LNG export capacity."
+        }
+      ]
+    },
+    {
+      "source": "Container News",
+      "title": "ESL expands Far East-Africa network with FAX2 and FAX3 services",
+      "url": "https://container-news.com/esl-expands-far-east-africa-network-with-fax2-and-fax3-services/",
+      "published": "2026-11-02",
+      "source_url": "https://container-news.com",
+      "topic": "Shipping and logistics",
+      "access": "full",
+      "summary": "Emirates Shipping Line will launch two services linking Chinese ports with East and Southeast Africa: FAX2 to Mombasa via Port Klang and FAX3 from Shanghai to Maputo.",
+      "overlap": [
+        {
+          "symbol": "SCFI",
+          "strength": "loose",
+          "reason": "New China-origin capacity on container lanes."
+        }
+      ]
+    },
+    {
+      "source": "Container News",
+      "title": "Maersk revises terminal handling charges in Dili",
+      "url": "https://container-news.com/maersk-revises-terminal-handling-charges-in-dili/",
+      "published": "2026-11-02",
+      "source_url": "https://container-news.com",
+      "topic": "Shipping and logistics",
+      "access": "full",
+      "summary": "Maersk is changing origin and destination terminal handling charges for Dili cargo from 1 December 2026, with a rate table running from US$400 to US$920 per container.",
+      "overlap": [
+        {
+          "symbol": "MAERSK-B.CO",
+          "strength": "direct",
+          "reason": "Maersk surcharge change."
+        }
+      ]
+    },
+    {
+      "source": "Container News",
+      "title": "MSC Hannah III rescues 10 crew from sinking vessel off Cyprus",
+      "url": "https://container-news.com/msc-hannah-iii-rescues-10-crew-from-sinking-vessel-off-cyprus/",
+      "published": "2026-11-02",
+      "source_url": "https://container-news.com",
+      "topic": "Shipping and logistics",
+      "access": "full",
+      "summary": "MSC Hannah III rescued all 10 crew of the Tanzanian-flagged AS Dream after it began sinking about 90 nautical miles west of Cyprus; Cypriot services coordinated the response.",
+      "overlap": []
+    },
+    {
+      "source": "World Nuclear News",
+      "title": "Tilted fuel assembly retrieved from Palisades plant",
+      "url": "https://www.world-nuclear-news.org/articles/tilted-fuel-assembly-retrieved-from-palisades-plant",
+      "published": "2026-10-26",
+      "source_url": "https://www.world-nuclear-news.org",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Holtec recovered a fuel assembly that had tilted during loading at Palisades, using a custom device and canister approved by the NRC. Feed text is cut off.",
+      "overlap": []
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "Building the next generation of sustainable data centres in pharma",
+      "url": "https://www.energymonitor.ai/features/building-the-next-generation-of-sustainable-data-centres-in-pharma/",
+      "published": "2026-10-29",
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy",
+      "access": "teaser",
+      "summary": "Feature on how pharmaceutical companies are building sustainability into their data centre plans as AI demand grows.",
+      "overlap": []
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "Minesto, Morteza Capital sign MoU to develop tidal energy in Maldives",
+      "url": "https://www.energymonitor.ai/news/minesto-morteza-capital-sign-mou/",
+      "published": "2026-10-27",
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy",
+      "access": "teaser",
+      "summary": "Minesto and Morteza Capital agreed to explore commercial tidal power opportunities in the Maldives.",
+      "overlap": []
+    },
+    {
+      "source": "Carbon Herald",
+      "title": "Canada Falling Further Behind On 2030 Climate Target, Auditor General Says",
+      "url": "https://carbonherald.com/canada-falling-further-behind-on-2030-climate-target-auditor-general-says/",
+      "published": "2026-10-30",
+      "source_url": "https://carbonherald.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Canada's Auditor General says the country is drifting further from its 2030 climate commitment as the federal government weakens or rolls back policies.",
+      "overlap": []
+    },
+    {
+      "source": "Carbon Herald",
+      "title": "UK Cuts £200M From Acorn Carbon Capture Hub Funding",
+      "url": "https://carbonherald.com/uk-cuts-200m-from-acorn-carbon-capture-hub-funding/",
+      "published": "2026-10-30",
+      "source_url": "https://carbonherald.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "The UK government has cut capital grant funding for carbon capture, utilisation and storage by £200 million, affecting the Acorn project.",
+      "overlap": []
+    },
+    {
+      "source": "Carbon Herald",
+      "title": "Carbelim To Develop Innovative Microalgae DAC Tech With $1M Funding",
+      "url": "https://carbonherald.com/carbelim-to-develop-innovative-microalgae-dac-tech-with-1m-funding/",
+      "published": "2026-10-30",
+      "source_url": "https://carbonherald.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Kerala-based Carbelim received about $1.05 million from IIT Madras-linked funding to develop microalgae-based direct air capture technology.",
+      "overlap": []
+    },
+    {
+      "source": "Climate Home News",
+      "title": "COP17 delivers fragile deal to boost conservation and funding for nature",
+      "url": "https://www.climatechangenews.com/2026/10/31/cop17-delivers-fragile-deal-scaling-up-biodiversity-conservation-armenia-cbd/",
+      "published": "2026-10-31",
+      "source_url": "https://www.climatechangenews.com",
+      "topic": "Climate and policy",
+      "access": "full",
+      "summary": "After a long impasse, negotiators at the Yerevan nature summit agreed to ask wealthy emerging economies such as China to take on donor roles for biodiversity funding; financing remains insufficient.",
+      "overlap": []
+    },
+    {
+      "source": "Mongabay",
+      "title": "Environmental defenders testify about attacks in Latin America linked to Canadian mining companies",
+      "url": "https://news.mongabay.com/2026/10/environmental-defenders-testify-about-attacks-in-latin-america-linked-to-canadian-mining-companies/",
+      "published": "2026-10-31",
+      "source_url": "https://news.mongabay.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Representatives from six countries told the Inter-American Commission on Human Rights about harm tied to Canadian mining firms, including four alleged attacks on defenders.",
+      "overlap": []
+    },
+    {
+      "source": "Mongabay",
+      "title": "Leaders grapple with finance and harmful subsidies at UN's COP17 biodiversity conference",
+      "url": "https://news.mongabay.com/2026/10/leaders-grapple-with-finance-and-harmful-subsidies-at-uns-cop17-biodiversity-conference/",
+      "published": "2026-10-31",
+      "source_url": "https://news.mongabay.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "At COP17 in Yerevan, advocates cited a UNEP finding that nature protection gets far less funding than nature-harming spending; Target 18 seeks to cut $500 billion a year in harmful subsidies.",
+      "overlap": []
+    },
+    {
+      "source": "Mongabay",
+      "title": "World Lemur Day: How can we save these primates' forest homes?",
+      "url": "https://news.mongabay.com/short-article/2026/10/world-lemur-day-how-can-we-save-these-primates-forest-homes/",
+      "published": "2026-10-30",
+      "source_url": "https://news.mongabay.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Roundup of Mongabay stories on Madagascar's lemurs, covering a forest corridor restoration between two eastern parks and the threat invasive guava poses to reforestation.",
+      "overlap": []
+    }
+  ],
+  "reading_quiet": [
+    "CTVC",
+    "Caixin Global China Watch",
+    "Carbon Removal Updates",
+    "Chipstrat",
+    "Culpium (Tim Culpan)",
+    "EE Times",
+    "Fabricated Knowledge",
+    "Latitude Media",
+    "Rigzone",
+    "TechCrunch Climate",
+    "The Chip Letter",
+    "farmdoc daily"
+  ],
   "climate": [
     {
       "region": "Americas",
@@ -3004,12 +3460,18 @@
     "Second source not found for: SI=F, 1919.HK, EWZ, ARGT, KRBN, KSA, LEU, LIN, LIT, LITHIUM.",
     "INTC: second source (Trading Economics, 64.83, intraday-range quote) differs from the stockanalysis close of 65.76; not resolved, treat the 30 Oct close as unconfirmed.",
     "SI=F, EWZ, USDBRL: cause of move per Trading Economics/investinglive (silver below $50 on energy costs and rate expectations; Brazil selloff after Lula's runoff win); no cause verified for INTC, QCOM, PBR, ARGT, 1919.HK.",
-    "Reading: all feeds not fetched this run; WebFetch permission for feed URLs was not granted (PROVENANCE_REQUIRED), so reading is empty rather than reused.",
     "Prices: US, Asian and European item values are carried from the 30 Oct close (Saturday edition); Monday 2 Nov overnight moves appear only in the summary, from AP, Saxo and Bloomberg wraps.",
     "Climate: entries carried unchanged from the 31 Oct edition; no new climate sources fetched.",
     "Headlines: EU gas storage story has one outlet (TASS citing GIE); Korea exports are press reports of the ministry release, not the release itself.",
     "Cameco October month-end uranium spot: not checked; page not fetched this run.",
-    "EU gas storage (GIE) 1 Nov figure: no value found; 26 Oct (74.93%) is the latest."
+    "EU gas storage (GIE) 1 Nov figure: no value found; 26 Oct (74.93%) is the latest.",
+    "SemiWiki: feed fetch failed (client_error at the site, nothing retrieved)",
+    "Fertilizer Daily: feed fetch failed (robots_disallowed by the site)",
+    "The Loadstar: feed fetch failed (client_error)",
+    "Splash247: feed fetch failed (fetch permission not granted, PROVENANCE_REQUIRED)",
+    "Hellenic Shipping News: feed fetch failed (fetch permission not granted, PROVENANCE_REQUIRED)",
+    "Carbon Brief: feed fetch failed (fetch permission not granted, PROVENANCE_REQUIRED)",
+    "Reading: Splash247, Hellenic Shipping News and Carbon Brief fetches were refused for permission (PROVENANCE_REQUIRED), not by the feeds."
   ],
   "indicators": [
     {
@@ -4362,6 +4824,12 @@
           "kind": "headline",
           "title": "Global stocks steady after Friday's tech selloff",
           "url": "https://www.ksat.com/business/2026/11/02/asian-shares-are-mixed-and-us-futures-advance-while-oil-prices-retreat/",
+          "strength": "direct"
+        },
+        {
+          "kind": "reading",
+          "title": "Intel Q3 2026: Dead Inside",
+          "url": "https://irrationalanalysis.substack.com/p/intel-q3-2026-dead-inside",
           "strength": "direct"
         }
       ],
