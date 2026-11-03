@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-02T13:42:07Z",
-  "data_date": "2026-10-30",
+  "generated_at": "2026-11-03T16:41:06Z",
+  "data_date": "2026-11-02",
   "edition": "weekday",
-  "summary": "Asia mostly steadied on Monday 2 November after Friday's US tech and AI selloff (S&P 500 -1.8%, Nasdaq -2.9%, Intel -28.6%): the Kospi rose 2.2%, the Shanghai Composite 1.1%, the Hang Seng 0.5% and the Sensex 1.3%, while the Nikkei fell 0.3%, the ASX 200 0.6% and the Taiex 0.7%, and US futures were higher. Brent fell about 2.8% to $110.24 and US crude 3.1% to $100.85 on reports of US-Iran talks in Qatar over reopening the Strait of Hormuz, after Brent's Friday close near $113. South Korea's October exports hit a record $115.3 billion (+93.7%), with semiconductors at $56.4 billion (+259%), while China's October factory activity returned to contraction. EU gas storage was 74.93% full on 26 October, the lowest for the date since 2011; Apple and Palantir report after the US close, with US midterms and the RBA on Tuesday.",
+  "summary": "US stocks ended mixed on Monday 2 Nov: the S&P 500 fell 0.51% and the Nasdaq 1.07%, while the Dow rose 0.41%; the VIX rose to 21.15 and the 10-year yield eased to 4.894%. Oil had its biggest one-day fall since July, with Brent 7.63% lower at $104.77 and WTI 7.36% lower, after reports of Iran signalling openness to talks; Dutch TTF gas fell 10.1% and Equinor, Shell and Chevron dropped. In chips, Marvell agreed to buy Lumentum in an all-stock deal valued near $115 billion, and AI-spending worries after Oracle's financing filing weighed on AMD (-7.52%), while SK Hynix rose 3.81% and Samsung 1.78% in Seoul. Elsewhere, Reliance Industries jumped 11.6% in Mumbai, uranium miners and Brazil's EWZ stayed under pressure, and the Reserve Bank of Australia raised its cash rate to 4.85% on 3 Nov, after this data date.",
   "groups": [
     {
       "id": "macros",
@@ -14,63 +14,61 @@
           "name": "S&P 500",
           "src": "S&P Dow Jones Indices",
           "tier": "aggregator",
-          "last": 7580.07,
-          "chg_1d": -1.82,
-          "chg_1w": -0.57,
-          "chg_1m": -0.93
+          "last": 7541.4,
+          "chg_1d": -0.51,
+          "chg_1w": -1.76,
+          "chg_1m": -2.35
         },
         {
           "symbol": "^IXIC",
           "name": "Nasdaq Composite",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 25437.0,
-          "chg_1d": -2.86,
-          "chg_1w": -2.0,
-          "chg_1m": -5.3
+          "last": 25164.31,
+          "chg_1d": -1.07,
+          "chg_1w": -3.84,
+          "chg_1m": null
         },
         {
           "symbol": "^DJI",
           "name": "Dow Jones",
           "src": "S&P Dow Jones Indices",
           "tier": "aggregator",
-          "last": 51770.31,
-          "chg_1d": -1.09,
-          "chg_1w": -0.85,
-          "chg_1m": 1.7
+          "last": 51983.98,
+          "chg_1d": 0.41,
+          "chg_1w": -0.72,
+          "chg_1m": null
         },
         {
           "symbol": "^RUT",
           "name": "Russell 2000",
           "src": "FTSE Russell",
           "tier": "aggregator",
-          "last": 2811.77,
-          "chg_1d": -1.66,
-          "chg_1w": 1.29,
-          "chg_1m": null,
-          "note": "1m base (30 Sep) not in source table; 1m not computed."
+          "last": 2805.88,
+          "chg_1d": -0.21,
+          "chg_1w": 0.7,
+          "chg_1m": null
         },
         {
           "symbol": "^VIX",
           "name": "CBOE Volatility Index",
           "src": "Cboe",
           "tier": "aggregator",
-          "last": 19.42,
-          "chg_1d": 12.91,
-          "chg_1w": -0.15,
-          "chg_1m": null,
-          "note": "Close 30 Oct. 1m base (30 Sep) not in source table; 1m not computed."
+          "last": 21.15,
+          "chg_1d": 8.91,
+          "chg_1w": 15.01,
+          "chg_1m": null
         },
         {
           "symbol": "^TNX",
           "name": "10-year Treasury yield",
-          "src": "US Treasury (yield quoted via Investing.com)",
+          "src": "US Treasury (via Investing.com)",
           "tier": "aggregator",
-          "last": 4.929,
-          "chg_1d": -0.06,
-          "chg_1w": -0.059,
+          "last": 4.894,
+          "chg_1d": -0.035,
+          "chg_1w": -0.092,
           "chg_1m": null,
-          "note": "Yield in percent; changes in percentage points vs 29 Oct and 23 Oct. 1m base (30 Sep) not in table."
+          "note": "Yield in percent; changes in percentage points."
         }
       ]
     },
@@ -84,19 +82,19 @@
           "name": "Schwab Total Stock Market",
           "src": "Charles Schwab Asset Management",
           "tier": "aggregator",
-          "last": 18.3,
-          "chg_1d": -1.82,
-          "chg_1w": -0.44,
-          "chg_1m": -0.81
+          "last": 18.22,
+          "chg_1d": -0.44,
+          "chg_1w": -1.57,
+          "chg_1m": -2.25
         },
         {
           "symbol": "SWISX",
           "name": "Schwab International Index",
           "src": "Charles Schwab Asset Management",
           "tier": "aggregator",
-          "last": 31.44,
-          "chg_1d": -0.88,
-          "chg_1w": 0.64,
+          "last": 31.49,
+          "chg_1d": 0.16,
+          "chg_1w": 0.38,
           "chg_1m": -0.51
         },
         {
@@ -104,30 +102,30 @@
           "name": "Vanguard S&P 500",
           "src": "NYSE Arca",
           "tier": "aggregator",
-          "last": 694.81,
-          "chg_1d": -1.77,
-          "chg_1w": -0.54,
-          "chg_1m": -0.86
+          "last": 691.32,
+          "chg_1d": -0.5,
+          "chg_1w": -1.72,
+          "chg_1m": -2.29
         },
         {
           "symbol": "VTI",
           "name": "Vanguard Total Stock Market",
           "src": "NYSE Arca",
           "tier": "aggregator",
-          "last": 371.57,
-          "chg_1d": -1.76,
-          "chg_1w": -0.39,
-          "chg_1m": -0.71
+          "last": 370.0,
+          "chg_1d": -0.42,
+          "chg_1w": -1.49,
+          "chg_1m": -2.11
         },
         {
           "symbol": "VXUS",
           "name": "Vanguard Total International",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 82.37,
-          "chg_1d": -1.53,
-          "chg_1w": -0.19,
-          "chg_1m": -3.05
+          "last": 82.59,
+          "chg_1d": 0.27,
+          "chg_1w": -0.05,
+          "chg_1m": -3.32
         }
       ]
     },
@@ -141,78 +139,76 @@
           "name": "TSMC",
           "src": "NYSE",
           "tier": "aggregator",
-          "last": 406.13,
-          "chg_1d": -5.95,
-          "chg_1w": -2.96,
-          "chg_1m": -10.97,
           "next_earnings": null,
-          "note": "Down 6.0% on the day."
+          "last": 398.63,
+          "chg_1d": -1.85,
+          "chg_1w": -6.07,
+          "chg_1m": -15.68
         },
         {
           "symbol": "NVDA",
           "name": "NVIDIA",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 204.64,
-          "chg_1d": -4.22,
-          "chg_1w": -3.0,
-          "chg_1m": -10.39,
-          "next_earnings": "2026-11-17"
+          "next_earnings": "2026-11-17",
+          "last": 202.06,
+          "chg_1d": -1.26,
+          "chg_1w": -6.45,
+          "chg_1m": -13.63
         },
         {
           "symbol": "AVGO",
           "name": "Broadcom",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 326.08,
-          "chg_1d": -5.48,
-          "chg_1w": 1.37,
-          "chg_1m": -7.15,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 322.23,
+          "chg_1d": -1.18,
+          "chg_1w": -2.11,
+          "chg_1m": -9.27
         },
         {
           "symbol": "AMD",
           "name": "AMD",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 504.8,
-          "chg_1d": -10.88,
-          "chg_1w": -2.32,
-          "chg_1m": -17.48,
           "next_earnings": "2026-11-03",
-          "note": "Down 10.9% on the day."
+          "last": 466.84,
+          "chg_1d": -7.52,
+          "chg_1w": -12.13,
+          "chg_1m": -26.36,
+          "note": "Down 7.5% on the day; down 26.4% over the month."
         },
         {
           "symbol": "QCOM",
           "name": "Qualcomm",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 164.79,
-          "chg_1d": -11.12,
-          "chg_1w": -6.32,
-          "chg_1m": -10.46,
           "next_earnings": "2026-11-04",
-          "note": "Down 11.1% on the day.",
           "xcheck": {
             "src": "Trading Economics (Nasdaq quote)",
             "tier": "aggregator",
             "last": 164.78,
             "chg_1w": null,
             "as_of": "2026-10-30",
-            "status": "agree",
-            "detail": "last differs by 0.01% (limit 0.6%)"
-          }
+            "status": "date",
+            "detail": "second source is dated 2026-10-30"
+          },
+          "last": 162.08,
+          "chg_1d": -1.64,
+          "chg_1w": -9.76,
+          "chg_1m": -12.33
         },
         {
           "symbol": "ASML",
           "name": "ASML",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 1565.9,
-          "chg_1d": -6.55,
-          "chg_1w": -0.38,
-          "chg_1m": -13.57,
           "next_earnings": "2027-01-27",
+          "last": 1526.14,
+          "chg_1d": -2.54,
+          "chg_1w": -4.07,
+          "chg_1m": -18.27,
           "note": "Nasdaq-listed line quoted in USD."
         },
         {
@@ -220,10 +216,6 @@
           "name": "KLA",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 157.91,
-          "chg_1d": -5.69,
-          "chg_1w": 8.45,
-          "chg_1m": -18.99,
           "next_earnings": null,
           "xcheck": {
             "src": "Trading Economics (Nasdaq quote)",
@@ -231,64 +223,71 @@
             "last": 157.91,
             "chg_1w": null,
             "as_of": "2026-10-30",
-            "status": "agree",
-            "detail": "last differs by 0.00% (limit 0.6%)"
-          }
+            "status": "date",
+            "detail": "second source is dated 2026-10-30"
+          },
+          "last": 153.11,
+          "chg_1d": -3.04,
+          "chg_1w": 2.61,
+          "chg_1m": -25.99,
+          "note": "Down 26.0% over the month."
         },
         {
           "symbol": "AMAT",
           "name": "Applied Materials",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 390.09,
-          "chg_1d": -7.49,
-          "chg_1w": 3.41,
-          "chg_1m": -23.72,
-          "next_earnings": "2026-11-12"
+          "next_earnings": "2026-11-12",
+          "last": 374.53,
+          "chg_1d": -3.99,
+          "chg_1w": -3.37,
+          "chg_1m": -30.65,
+          "note": "Down 30.6% over the month."
         },
         {
           "symbol": "LRCX",
           "name": "Lam Research",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 239.11,
-          "chg_1d": -6.01,
-          "chg_1w": 3.92,
-          "chg_1m": -27.21,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 227.56,
+          "chg_1d": -4.83,
+          "chg_1w": -4.19,
+          "chg_1m": -34.51,
+          "note": "Down 34.5% over the month."
         },
         {
           "symbol": "ONTO",
           "name": "Onto Innovation",
           "src": "NYSE",
           "tier": "aggregator",
-          "last": 201.57,
-          "chg_1d": -9.16,
-          "chg_1w": 1.45,
-          "chg_1m": -34.52,
           "next_earnings": null,
-          "note": "Down 9.2% on the day."
+          "last": 191.4,
+          "chg_1d": -5.05,
+          "chg_1w": -5.96,
+          "chg_1m": -41.61,
+          "note": "Down 5.0% on the day; down 41.6% over the month."
         },
         {
           "symbol": "INTC",
           "name": "Intel",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 65.76,
-          "chg_1d": -28.58,
-          "chg_1w": -24.38,
-          "chg_1m": -45.3,
           "next_earnings": null,
-          "note": "Down 28.6% on the day; down 45.3% over the month.",
           "xcheck": {
             "src": "Trading Economics (Nasdaq quote, intraday range 64.20-64.83)",
             "tier": "aggregator",
             "last": 64.83,
             "chg_1w": null,
             "as_of": "2026-10-30",
-            "status": "differ",
-            "detail": "last differs by 1.41% (limit 0.6%)"
-          }
+            "status": "date",
+            "detail": "second source is dated 2026-10-30"
+          },
+          "last": 59.97,
+          "chg_1d": -8.8,
+          "chg_1w": -33.71,
+          "chg_1m": -49.74,
+          "note": "Down 8.8% on the day; down 49.7% over the month."
         },
         {
           "symbol": "005930.KS",
@@ -296,11 +295,11 @@
           "src": "Korea Exchange",
           "tier": "aggregator",
           "region": "East Asia",
-          "last": 225000,
-          "chg_1d": -3.02,
-          "chg_1w": 4.41,
-          "chg_1m": -16.2,
           "next_earnings": null,
+          "last": 229000.0,
+          "chg_1d": 1.78,
+          "chg_1w": 7.51,
+          "chg_1m": -17.03,
           "note": "KRW."
         },
         {
@@ -309,12 +308,12 @@
           "src": "Korea Exchange",
           "tier": "aggregator",
           "region": "East Asia",
-          "last": 1418000,
-          "chg_1d": -7.08,
-          "chg_1w": 11.04,
-          "chg_1m": -20.16,
           "next_earnings": null,
-          "note": "KRW. Down 7.1% on the day."
+          "last": 1472000.0,
+          "chg_1d": 3.81,
+          "chg_1w": 15.45,
+          "chg_1m": -20.04,
+          "note": "Down 20.0% over the month."
         },
         {
           "symbol": "8035.T",
@@ -322,12 +321,12 @@
           "src": "Tokyo Stock Exchange",
           "tier": "aggregator",
           "region": "East Asia",
-          "last": 9514,
-          "chg_1d": -5.19,
-          "chg_1w": 0.59,
-          "chg_1m": -19.48,
           "next_earnings": null,
-          "note": "JPY."
+          "last": 10005.0,
+          "chg_1d": 5.16,
+          "chg_1w": 9.82,
+          "chg_1m": -17.31,
+          "note": "JPY. Up 5.2% on the day."
         },
         {
           "symbol": "ASM.AS",
@@ -335,12 +334,12 @@
           "src": "Euronext Amsterdam",
           "tier": "aggregator",
           "region": "Europe",
-          "last": 729.8,
-          "chg_1d": -7.57,
-          "chg_1w": 4.29,
-          "chg_1m": -17.82,
           "next_earnings": null,
-          "note": "EUR. Down 7.6% on the day."
+          "last": 718.2,
+          "chg_1d": -1.59,
+          "chg_1w": 1.47,
+          "chg_1m": -23.98,
+          "note": "Down 24.0% over the month."
         },
         {
           "symbol": "2454.TW",
@@ -348,12 +347,12 @@
           "src": "Taiwan Stock Exchange",
           "tier": "aggregator",
           "region": "East Asia",
-          "last": 3915,
-          "chg_1d": -3.21,
-          "chg_1w": -2.37,
-          "chg_1m": -20.43,
           "next_earnings": null,
-          "note": "TWD. 1w base 22 Oct (market closed 23 Oct); 1d base 29 Oct."
+          "last": 3970.0,
+          "chg_1d": 1.4,
+          "chg_1w": -1.0,
+          "chg_1m": -19.8,
+          "note": "TWD. 1w base 22 Oct (no 26 Oct row in the table)."
         },
         {
           "symbol": "0981.HK",
@@ -361,67 +360,68 @@
           "src": "Hong Kong Exchanges",
           "tier": "aggregator",
           "region": "East Asia",
-          "last": 42.98,
-          "chg_1d": -4.4,
-          "chg_1w": -8.67,
-          "chg_1m": -29.13,
           "next_earnings": null,
-          "note": "HKD. Down 4.4% on the day."
+          "last": 43.62,
+          "chg_1d": 1.49,
+          "chg_1w": -5.01,
+          "chg_1m": -27.6,
+          "note": "Down 27.6% over the month."
         },
         {
           "symbol": "MU",
           "name": "Micron",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 884.74,
-          "chg_1d": -5.3,
-          "chg_1w": 0.82,
-          "chg_1m": -16.93,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 833.59,
+          "chg_1d": -5.78,
+          "chg_1w": -7.76,
+          "chg_1m": -22.45,
+          "note": "Down 5.8% on the day; down 22.4% over the month."
         },
         {
           "symbol": "TXN",
           "name": "Texas Instruments",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 300.84,
-          "chg_1d": -3.87,
-          "chg_1w": 5.67,
-          "chg_1m": 7.41,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 302.02,
+          "chg_1d": 0.39,
+          "chg_1w": 1.31,
+          "chg_1m": 2.8
         },
         {
           "symbol": "MCHP",
           "name": "Microchip Technology",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 77.34,
-          "chg_1d": -4.66,
-          "chg_1w": 4.44,
-          "chg_1m": -0.55,
-          "next_earnings": "2026-11-05"
+          "next_earnings": "2026-11-05",
+          "last": 76.11,
+          "chg_1d": -1.59,
+          "chg_1w": 0.28,
+          "chg_1m": -6.41
         },
         {
           "symbol": "GFS",
           "name": "GlobalFoundries",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 41.9,
-          "chg_1d": -8.62,
-          "chg_1w": -5.61,
-          "chg_1m": -12.56,
-          "next_earnings": "2026-11-04"
+          "next_earnings": "2026-11-04",
+          "last": 41.82,
+          "chg_1d": -0.19,
+          "chg_1w": -7.07,
+          "chg_1m": -16.64
         },
         {
           "symbol": "ENTG",
           "name": "Entegris",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 154.39,
-          "chg_1d": -3.51,
-          "chg_1w": 14.77,
-          "chg_1m": 0.21,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 151.56,
+          "chg_1d": -1.83,
+          "chg_1w": 8.09,
+          "chg_1m": -8.96
         }
       ]
     },
@@ -435,56 +435,55 @@
           "name": "Apple",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 344.63,
-          "chg_1d": -1.23,
-          "chg_1w": -0.89,
-          "chg_1m": 3.49,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 338.32,
+          "chg_1d": -1.83,
+          "chg_1w": -1.63,
+          "chg_1m": 1.39
         },
         {
           "symbol": "MSFT",
           "name": "Microsoft",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 521.91,
-          "chg_1d": -1.55,
-          "chg_1w": -0.5,
-          "chg_1m": 1.76,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 507.12,
+          "chg_1d": -2.83,
+          "chg_1w": -4.78,
+          "chg_1m": -2.01
         },
         {
           "symbol": "GOOGL",
           "name": "Alphabet",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 279.84,
-          "chg_1d": -1.4,
-          "chg_1w": -12.61,
-          "chg_1m": -18.67,
           "next_earnings": null,
-          "note": "Down 12.6% on 29 Oct (close 283.82 vs 324.89); down 12.6% over the week."
+          "last": 278.99,
+          "chg_1d": -0.3,
+          "chg_1w": -11.93,
+          "chg_1m": -18.78
         },
         {
           "symbol": "AMZN",
           "name": "Amazon",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 240.35,
-          "chg_1d": -1.41,
-          "chg_1w": -3.08,
-          "chg_1m": -3.53,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 245.63,
+          "chg_1d": 2.2,
+          "chg_1w": -1.39,
+          "chg_1m": -2.34
         },
         {
           "symbol": "META",
           "name": "Meta",
           "src": "Nasdaq",
           "tier": "aggregator",
-          "last": 614.99,
-          "chg_1d": -1.53,
-          "chg_1w": -4.3,
-          "chg_1m": -15.19,
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 606.73,
+          "chg_1d": -1.34,
+          "chg_1w": -3.78,
+          "chg_1m": -16.67
         }
       ]
     },
@@ -496,144 +495,139 @@
         {
           "symbol": "BZ=F",
           "name": "Brent crude",
-          "last": 113.43,
-          "chg_1d": 2.37,
-          "chg_1w": 1.55,
-          "chg_1m": 15.71,
           "src": "ICE Futures Europe",
           "tier": "aggregator",
           "unit": "USD/bbl",
-          "note": "Investing.com table (front contract); 1m base 30 Sep from an earlier copy of the same table."
+          "last": 104.77,
+          "chg_1d": -7.63,
+          "chg_1w": -9.53,
+          "chg_1m": null,
+          "note": "Brent fell on Iran peace-talk signals (reported by Le Private Banker, Cappnotes). 1d vs 30 Oct brief close."
         },
         {
           "symbol": "CL=F",
           "name": "WTI crude",
-          "last": 104.12,
-          "chg_1d": 2.08,
-          "chg_1w": 0.82,
-          "chg_1m": 15.15,
-          "src": "NYMEX (CME Group)",
+          "src": "CME Group (NYMEX)",
           "tier": "aggregator",
           "unit": "USD/bbl",
-          "note": "Investing.com table (front contract); 1m base 30 Sep from an earlier copy of the same table."
+          "last": 96.46,
+          "chg_1d": -7.36,
+          "chg_1w": -5.21,
+          "chg_1m": null
         },
         {
           "symbol": "NG=F",
           "name": "Henry Hub gas",
-          "last": 2.898,
-          "chg_1d": -1.83,
-          "chg_1w": 9.77,
-          "chg_1m": null,
-          "src": "NYMEX (CME Group)",
+          "src": "CME Group (NYMEX)",
           "tier": "aggregator",
           "unit": "USD/MMBtu",
-          "note": "Investing.com table (front contract, now Dec); 1m null: table starts 1 Oct and 30 Sep base is the prior contract."
+          "last": 2.856,
+          "chg_1d": -1.45,
+          "chg_1w": 9.76,
+          "chg_1m": null
         },
         {
           "symbol": "TTF=F",
           "name": "TTF gas (Europe)",
-          "last": 103.944,
-          "chg_1d": 5.43,
-          "chg_1w": 10.75,
-          "chg_1m": null,
           "src": "ICE Endex",
           "tier": "aggregator",
           "unit": "EUR/MWh",
-          "note": "Investing.com table (front month), EUR/MWh; 1m null: table starts 1 Oct, 30 Sep base absent."
+          "last": 93.45,
+          "chg_1d": -10.1,
+          "chg_1w": -3.34,
+          "chg_1m": null,
+          "note": "EUR/MWh; front-month roll may affect the one-day fall."
         },
         {
           "symbol": "JKM",
           "name": "JKM LNG (Asia)",
+          "unit": "USD/MMBtu",
           "last": null,
           "chg_1d": null,
           "chg_1w": null,
           "chg_1m": null,
-          "unit": "USD/MMBtu",
-          "note": "No free price found."
+          "src": "S&P Global Platts (JKM)",
+          "tier": "aggregator"
         },
         {
           "symbol": "MTF=F",
           "name": "Newcastle coal",
-          "last": 152.45,
-          "chg_1d": 1.4,
-          "chg_1w": null,
-          "chg_1m": 2.11,
-          "src": "ICE Futures Europe / Newcastle index",
+          "src": "ICE Futures Europe (Newcastle coal), via Trading Economics",
           "tier": "aggregator",
           "unit": "USD/t",
-          "note": "Trading Economics, dated 30 Oct; 1d and 1m as reported by TE; 1w not published."
+          "last": 149.5,
+          "chg_1d": -1.94,
+          "chg_1w": -0.17,
+          "chg_1m": -0.33,
+          "note": "Page date 2 Nov. 1m is the page's own monthly change. 1w is versus the value in the 2026-10-26 brief."
         },
         {
           "symbol": "XOM",
           "name": "Exxon Mobil",
-          "last": 187.25,
-          "chg_1d": 2.16,
-          "chg_1w": 2.21,
-          "chg_1m": 15.05,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 179.67,
+          "chg_1d": -4.05,
+          "chg_1w": -2.64,
+          "chg_1m": 9.55
         },
         {
           "symbol": "SHEL",
           "name": "Shell",
-          "last": 108.69,
-          "chg_1d": 0.95,
-          "chg_1w": 0.47,
-          "chg_1m": 14.35,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 104.94,
+          "chg_1d": -3.45,
+          "chg_1w": -1.84,
+          "chg_1m": 9.05
         },
         {
           "symbol": "TTE",
           "name": "TotalEnergies",
-          "last": 95.33,
-          "chg_1d": 1.38,
-          "chg_1w": 2.75,
-          "chg_1m": 11.5,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 92.78,
+          "chg_1d": -2.67,
+          "chg_1w": -1.05,
+          "chg_1m": 9.93
         },
         {
           "symbol": "CVX",
           "name": "Chevron",
-          "last": 235.52,
-          "chg_1d": 1.75,
-          "chg_1w": 0.99,
-          "chg_1m": 15.33,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 227.77,
+          "chg_1d": -3.29,
+          "chg_1w": -1.83,
+          "chg_1m": 10.2
         },
         {
           "symbol": "EQNR",
           "name": "Equinor",
-          "last": 48.75,
-          "chg_1d": 2.46,
-          "chg_1w": -0.14,
-          "chg_1m": 17.19,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 45.4,
+          "chg_1d": -6.87,
+          "chg_1w": -5.61,
+          "chg_1m": 6.67,
+          "note": "Down 6.9% on the day."
         },
         {
           "symbol": "BP.L",
           "name": "BP",
-          "last": 627.4,
-          "chg_1d": 0.5,
-          "chg_1w": -1.74,
-          "chg_1m": 14.2,
           "src": "London Stock Exchange",
           "tier": "aggregator",
+          "last": 600.0,
+          "chg_1d": -4.37,
+          "chg_1w": -4.88,
+          "chg_1m": 7.57,
           "note": "Quoted in pence."
         },
         {
           "symbol": "PBR",
           "name": "Petrobras",
-          "last": 22.05,
-          "chg_1d": 0.68,
-          "chg_1w": -15.71,
-          "chg_1m": 5.65,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Down about 16% over the week after the 26 Oct drop (26.16 to 22.50); cause not verified.",
           "xcheck": {
             "src": "Trading Economics (NYSE quote)",
             "tier": "aggregator",
@@ -642,80 +636,84 @@
             "as_of": "2026-10-29",
             "status": "date",
             "detail": "second source is dated 2026-10-29"
-          }
+          },
+          "last": 21.16,
+          "chg_1d": -4.04,
+          "chg_1w": -5.96,
+          "chg_1m": -2.26
         },
         {
           "symbol": "COP",
           "name": "ConocoPhillips",
-          "last": 154.03,
-          "chg_1d": 2.67,
-          "chg_1w": 2.14,
-          "chg_1m": 23.08,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 146.84,
+          "chg_1d": -4.67,
+          "chg_1w": -2.99,
+          "chg_1m": 15.85
         },
         {
           "symbol": "OXY",
           "name": "Occidental Petroleum",
-          "last": 64.0,
-          "chg_1d": 1.57,
-          "chg_1w": -0.26,
-          "chg_1m": 15.69,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 60.72,
+          "chg_1d": -5.13,
+          "chg_1w": -5.23,
+          "chg_1m": 4.55,
+          "note": "Down 5.1% on the day."
         },
         {
           "symbol": "SLB",
           "name": "SLB (Schlumberger)",
-          "last": 53.74,
-          "chg_1d": -0.13,
-          "chg_1w": 1.28,
-          "chg_1m": 10.3,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 52.31,
+          "chg_1d": -2.66,
+          "chg_1w": -1.45,
+          "chg_1m": 7.32
         },
         {
           "symbol": "2222.SR",
           "name": "Saudi Aramco",
-          "last": 25.92,
-          "chg_1d": -0.31,
-          "chg_1w": 2.05,
-          "chg_1m": 2.78,
           "src": "Saudi Exchange (Tadawul)",
           "tier": "aggregator",
-          "as_of": "2026-10-29",
-          "note": "SAR. Last trading day Thu 29 Oct (no Friday session); 1w base is Thu 22 Oct."
+          "last": 26.1,
+          "chg_1d": 0.69,
+          "chg_1w": 1.95,
+          "chg_1m": 3.24,
+          "note": "SAR. No Friday session: 1d and 1m use Thu 29 Oct and Thu 1 Oct closes."
         },
         {
           "symbol": "RELIANCE.NS",
           "name": "Reliance Industries",
-          "last": 1164.9,
-          "chg_1d": -0.21,
-          "chg_1w": -2.11,
-          "chg_1m": -1.86,
           "src": "National Stock Exchange of India",
           "tier": "aggregator",
-          "note": "INR."
+          "last": 1300.0,
+          "chg_1d": 11.6,
+          "chg_1w": 8.17,
+          "chg_1m": 11.33,
+          "note": "INR. Up 11.6% on the day."
         },
         {
           "symbol": "LNG",
           "name": "Cheniere Energy",
-          "last": 330.32,
-          "chg_1d": 3.57,
-          "chg_1w": 10.6,
-          "chg_1m": 22.78,
           "src": "NYSE American",
           "tier": "aggregator",
-          "note": "Up 10.6% on the week; cause not verified.",
           "xcheck": {
             "src": "Trading Economics (NYSE American quote)",
             "tier": "aggregator",
             "last": 330.32,
             "chg_1w": null,
             "as_of": "2026-10-30",
-            "status": "agree",
-            "detail": "last differs by 0.00% (limit 0.6%)"
-          }
+            "status": "date",
+            "detail": "second source is dated 2026-10-30"
+          },
+          "last": 311.67,
+          "chg_1d": -5.65,
+          "chg_1w": 3.69,
+          "chg_1m": 15.45,
+          "note": "Down 5.7% on the day."
         }
       ]
     },
@@ -727,120 +725,119 @@
         {
           "symbol": "U3O8",
           "name": "Uranium spot",
-          "last": 92.25,
-          "chg_1d": 0.82,
-          "chg_1w": null,
-          "chg_1m": 3.13,
-          "src": "Trading Economics (uranium spot benchmark)",
+          "src": "Trading Economics (uranium spot)",
           "tier": "aggregator",
           "unit": "USD/lb",
-          "as_of": "2026-10-29",
-          "note": "Trading Economics summary dated 29 Oct (page header shows 92.55 for 30 Oct, not used); 1d and 1m as reported by TE."
+          "last": 92.55,
+          "chg_1d": 0.33,
+          "chg_1w": null,
+          "chg_1m": 3.47,
+          "as_of": "2026-10-30",
+          "note": "Page summary dated 30 Oct; page header showed 92.15 (-0.43%), conflicting. Cameco month-end spot 91.55."
         },
         {
           "symbol": "CCJ",
           "name": "Cameco",
-          "last": 76.91,
-          "chg_1d": -7.88,
-          "chg_1w": -2.15,
-          "chg_1m": -11.26,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Down 7.9% on the day; cause not verified."
+          "last": 73.38,
+          "chg_1d": -4.59,
+          "chg_1w": -7.2,
+          "chg_1m": -13.85
         },
         {
           "symbol": "URA",
           "name": "Global X Uranium ETF",
-          "last": 33.73,
-          "chg_1d": -5.57,
-          "chg_1w": -1.11,
-          "chg_1m": -15.36,
           "src": "NYSE Arca",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 32.93,
+          "chg_1d": -2.37,
+          "chg_1w": -4.16,
+          "chg_1m": -17.24
         },
         {
           "symbol": "NXE",
           "name": "NexGen Energy",
-          "last": 8.27,
-          "chg_1d": -4.39,
-          "chg_1w": 1.47,
-          "chg_1m": -9.32,
-          "src": "NYSE",
+          "src": "Toronto Stock Exchange",
           "tier": "aggregator",
-          "note": "USD (NYSE line)."
+          "last": 11.03,
+          "chg_1d": -4.42,
+          "chg_1w": -5.4,
+          "chg_1m": -13.96,
+          "note": "CAD (Toronto line; the NYSE page was rate-limited)."
         },
         {
           "symbol": "UEC",
           "name": "Uranium Energy",
-          "last": 7.71,
-          "chg_1d": -5.4,
-          "chg_1w": 4.9,
-          "chg_1m": -18.41,
           "src": "NYSE American",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 7.51,
+          "chg_1d": -2.59,
+          "chg_1w": 0.94,
+          "chg_1m": -19.25
         },
         {
           "symbol": "KAP.L",
           "name": "Kazatomprom",
-          "last": 61.2,
-          "chg_1d": -4.52,
-          "chg_1w": 2.86,
-          "chg_1m": -4.08,
           "src": "London Stock Exchange",
           "tier": "aggregator",
+          "last": 61.9,
+          "chg_1d": 1.14,
+          "chg_1w": 1.98,
+          "chg_1m": -4.18,
           "note": "USD GDR."
         },
         {
           "symbol": "PDN.AX",
           "name": "Paladin Energy",
-          "last": 7.47,
-          "chg_1d": -5.44,
-          "chg_1w": 8.58,
-          "chg_1m": -21.29,
           "src": "Australian Securities Exchange",
           "tier": "aggregator",
+          "last": 7.58,
+          "chg_1d": 1.47,
+          "chg_1w": 7.82,
+          "chg_1m": -16.43,
           "note": "AUD."
         },
         {
           "symbol": "LEU",
           "name": "Centrus Energy",
-          "last": 103.29,
-          "chg_1d": -6.57,
-          "chg_1w": 0.82,
-          "chg_1m": -25.95,
           "src": "NYSE American",
           "tier": "aggregator",
-          "note": "Down 6.6% on the day; cause not verified."
+          "last": 94.9,
+          "chg_1d": -8.12,
+          "chg_1w": -3.6,
+          "chg_1m": -31.86,
+          "note": "Down 8.1% on the day; down 31.9% over the month."
         },
         {
           "symbol": "BWXT",
           "name": "BWX Technologies",
-          "last": 130.7,
-          "chg_1d": -5.24,
-          "chg_1w": 2.76,
-          "chg_1m": -4.6,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 130.47,
+          "chg_1d": -0.18,
+          "chg_1w": -0.56,
+          "chg_1m": -3.26
         },
         {
           "symbol": "CEG",
           "name": "Constellation Energy",
-          "last": 262.38,
-          "chg_1d": -0.83,
-          "chg_1w": 3.52,
-          "chg_1m": 3.29,
           "src": "Nasdaq",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 257.25,
+          "chg_1d": -1.96,
+          "chg_1w": 1.89,
+          "chg_1m": -0.09
         },
         {
           "symbol": "VST",
           "name": "Vistra",
-          "last": 138.37,
-          "chg_1d": -1.83,
-          "chg_1w": -1.28,
-          "chg_1m": 0.01,
           "src": "NYSE",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 134.61,
+          "chg_1d": -2.72,
+          "chg_1w": -5.02,
+          "chg_1m": -3.86
         }
       ]
     },
@@ -852,24 +849,24 @@
         {
           "symbol": "EUA",
           "name": "EU carbon allowance",
-          "last": 89.19,
-          "chg_1d": -0.01,
-          "chg_1w": 3.4,
-          "chg_1m": null,
           "src": "ICE Endex",
           "tier": "aggregator",
           "unit": "EUR/t",
-          "note": "Dec-26 contract via Investing.com; 1m null: table starts 1 Oct, 30 Sep base absent."
+          "last": 90.52,
+          "chg_1d": 1.49,
+          "chg_1w": 2.64,
+          "chg_1m": null,
+          "note": "EUR/t."
         },
         {
           "symbol": "KRBN",
           "name": "KraneShares Global Carbon Strategy ETF",
-          "last": 35.0,
-          "chg_1d": 0.11,
-          "chg_1w": 2.58,
-          "chg_1m": 3.86,
           "src": "NYSE Arca",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 35.3,
+          "chg_1d": 0.86,
+          "chg_1w": 1.79,
+          "chg_1m": 5.63
         }
       ]
     },
@@ -881,46 +878,46 @@
         {
           "symbol": "XE",
           "name": "X-energy",
-          "last": 10.93,
-          "chg_1d": -6.58,
-          "chg_1w": 3.11,
-          "chg_1m": -22.92,
           "src": "Nasdaq",
           "tier": "aggregator",
-          "note": "Down 6.6% on the day; down 22.9% over the month."
+          "last": 10.37,
+          "chg_1d": -5.12,
+          "chg_1w": -2.99,
+          "chg_1m": -27.89,
+          "note": "Down 5.1% on the day; down 27.9% over the month."
         },
         {
           "symbol": "OKLO",
           "name": "Oklo",
-          "last": 25.25,
-          "chg_1d": -5.82,
-          "chg_1w": -4.17,
-          "chg_1m": -31.79,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Down 31.8% over the month."
+          "last": 23.52,
+          "chg_1d": -6.85,
+          "chg_1w": -9.33,
+          "chg_1m": -34.43,
+          "note": "Down 6.8% on the day; down 34.4% over the month."
         },
         {
           "symbol": "SMR",
           "name": "NuScale Power",
-          "last": 5.62,
-          "chg_1d": -5.07,
-          "chg_1w": 4.46,
-          "chg_1m": -28.86,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Down 28.9% over the month."
+          "last": 5.35,
+          "chg_1d": -4.8,
+          "chg_1w": 1.52,
+          "chg_1m": -30.97,
+          "note": "Down 31.0% over the month."
         },
         {
           "symbol": "NNE",
           "name": "NANO Nuclear Energy",
-          "last": 11.65,
-          "chg_1d": -4.59,
-          "chg_1w": -4.19,
-          "chg_1m": -26.5,
           "src": "Nasdaq",
           "tier": "aggregator",
-          "note": "Down 26.5% over the month."
+          "last": 10.96,
+          "chg_1d": -5.92,
+          "chg_1w": -7.59,
+          "chg_1m": -29.83,
+          "note": "Down 5.9% on the day; down 29.8% over the month."
         }
       ]
     },
@@ -933,275 +930,267 @@
           "symbol": "HG=F",
           "name": "Copper",
           "unit": "USD/lb",
-          "last": 6.45,
-          "chg_1d": -2.03,
-          "chg_1w": null,
-          "chg_1m": -0.53,
-          "src": "COMEX (CME Group), via Trading Economics",
+          "src": "CME Group (COMEX)",
           "tier": "aggregator",
-          "note": "Trading Economics dated 30 Oct; 1m is its own window; 1w null (no same-source base).",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 6.5675,
+          "chg_1d": 1.32,
+          "chg_1w": 0.39,
+          "chg_1m": null
         },
         {
           "symbol": "ALI=F",
           "name": "Aluminum",
           "unit": "USD/t",
-          "last": 3059.7,
-          "chg_1d": -0.38,
-          "chg_1w": null,
-          "chg_1m": -1.94,
-          "src": "London Metal Exchange, via Trading Economics (CFD)",
+          "src": "London Metal Exchange",
           "tier": "aggregator",
-          "note": "Trading Economics dated 30 Oct; 1m is its own window; 1w null (no same-source base).",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 3094.5,
+          "chg_1d": 1.14,
+          "chg_1w": null,
+          "chg_1m": -0.99,
+          "note": "USD/t; Trading Economics quote dated 2 Nov."
         },
         {
           "symbol": "NICKEL",
           "name": "Nickel",
           "unit": "USD/t",
           "hint": "LME price",
-          "last": 15220.0,
-          "chg_1d": -1.9,
-          "chg_1w": null,
-          "chg_1m": -2.5,
           "src": "London Metal Exchange, via Trading Economics",
           "tier": "aggregator",
-          "note": "Trading Economics dated 30 Oct; 1m is its own window; 1w null (no same-source base). Previous value 15,515 per TE.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 15500,
+          "chg_1d": 1.84,
+          "chg_1w": -0.16,
+          "chg_1m": -0.93,
+          "note": "Page date 2 Nov. 1w is versus the value in the 2026-10-26 brief."
         },
         {
           "symbol": "IRONORE",
           "name": "Iron ore",
           "unit": "USD/t",
           "hint": "62% Fe benchmark",
-          "last": 90.71,
-          "chg_1d": 0.0,
-          "chg_1w": null,
-          "chg_1m": -1.51,
           "src": "Trading Economics (iron ore CFD)",
           "tier": "aggregator",
-          "note": "Trading Economics dated 30 Oct; 1m is its own window; 1w null (no same-source base). Flat on the day.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 91.25,
+          "chg_1d": 0.6,
+          "chg_1w": 0.52,
+          "chg_1m": -0.22,
+          "note": "Page date 2 Nov. 1w is versus the value in the 2026-10-26 brief."
         },
         {
           "symbol": "LITHIUM",
           "name": "Lithium carbonate",
           "unit": "CNY/t",
           "hint": "China spot",
-          "last": 93600,
-          "chg_1d": -2.6,
-          "chg_1w": null,
-          "chg_1m": -25.09,
           "src": "Trading Economics (market quote)",
           "tier": "aggregator",
-          "note": "Down 25% over the month (Trading Economics window); 1w null.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 93800,
+          "chg_1d": 0.32,
+          "chg_1w": null,
+          "chg_1m": -24.93,
+          "as_of": "2026-11-03",
+          "note": "Page date 3 Nov, not 2 Nov; CNY/t."
         },
         {
           "symbol": "COBALT",
           "name": "Cobalt",
           "unit": "USD/t",
           "hint": "LME or Fastmarkets",
-          "last": 33510,
-          "chg_1d": -3.21,
-          "chg_1w": null,
-          "chg_1m": -14.38,
           "src": "Trading Economics (market quote)",
           "tier": "aggregator",
-          "note": "Trading Economics dated 29 Oct; 1m is its own window; 1w null.",
-          "as_of": "2026-10-29",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 33510,
+          "chg_1d": 0.0,
+          "chg_1w": null,
+          "chg_1m": -14.38,
+          "as_of": "2026-10-30",
+          "note": "Page summary dated 30 Oct; flat."
         },
         {
           "symbol": "NDPR",
           "name": "NdPr oxide",
           "unit": "CNY/t",
           "hint": "rare earth benchmark",
+          "next_earnings": null,
           "last": null,
           "chg_1d": null,
           "chg_1w": null,
           "chg_1m": null,
-          "next_earnings": null
+          "src": "Trading Economics",
+          "tier": "aggregator"
         },
         {
           "symbol": "GC=F",
           "name": "Gold",
           "unit": "USD/oz",
-          "last": 3875.84,
-          "chg_1d": -3.62,
-          "chg_1w": null,
-          "chg_1m": -7.23,
-          "src": "COMEX (CME Group), via Trading Economics",
+          "src": "CME Group (COMEX)",
           "tier": "aggregator",
-          "note": "Down 3.6% on the day, 7.2% over the month (TE window). 1w null.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 3969.6,
+          "chg_1d": 1.81,
+          "chg_1w": -1.7,
+          "chg_1m": null
         },
         {
           "symbol": "SI=F",
           "name": "Silver",
           "unit": "USD/oz",
-          "last": 48.9,
-          "chg_1d": -6.22,
-          "chg_1w": null,
-          "chg_1m": -19.17,
-          "src": "COMEX (CME Group), via Trading Economics",
+          "src": "CME Group (COMEX)",
           "tier": "aggregator",
-          "note": "Down 6.2% on the day, 19% over the month (TE window). 1w null.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 50.888,
+          "chg_1d": 3.27,
+          "chg_1w": -6.35,
+          "chg_1m": null
         },
         {
           "symbol": "FCX",
           "name": "Freeport-McMoRan",
           "hint": "NYSE",
-          "last": 62.47,
-          "chg_1d": -5.55,
-          "chg_1w": -4.16,
-          "chg_1m": -10.76,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Fell 5.6% on the day, the largest one-day drop in the group; copper -2.0%.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 62.97,
+          "chg_1d": 0.8,
+          "chg_1w": -3.36,
+          "chg_1m": -12.59
         },
         {
           "symbol": "BHP",
           "name": "BHP Group",
           "hint": "NYSE ADR",
-          "last": 79.16,
-          "chg_1d": -3.25,
-          "chg_1w": 1.68,
-          "chg_1m": -6.69,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 80.07,
+          "chg_1d": 1.15,
+          "chg_1w": 1.19,
+          "chg_1m": -6.97
         },
         {
           "symbol": "RIO",
           "name": "Rio Tinto",
           "hint": "NYSE ADR",
-          "last": 81.89,
-          "chg_1d": -1.63,
-          "chg_1w": -1.83,
-          "chg_1m": -13.04,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Down 13% over the month as iron ore and copper softened.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 82.73,
+          "chg_1d": 1.03,
+          "chg_1w": -1.18,
+          "chg_1m": -12.19
         },
         {
           "symbol": "VALE",
           "name": "Vale",
           "hint": "NYSE ADR",
-          "last": 11.39,
-          "chg_1d": 1.88,
-          "chg_1w": -8.15,
-          "chg_1m": -15.06,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 11.34,
+          "chg_1d": -0.44,
+          "chg_1w": -5.5,
+          "chg_1m": -17.59
         },
         {
           "symbol": "GLEN.L",
           "name": "Glencore",
           "hint": "London Stock Exchange",
-          "last": 519.5,
-          "chg_1d": -2.68,
-          "chg_1w": -3.35,
-          "chg_1m": -6.43,
           "src": "London Stock Exchange",
           "tier": "aggregator",
           "unit": "GBX (pence)",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 519.0,
+          "chg_1d": -0.1,
+          "chg_1w": -3.55,
+          "chg_1m": -7.55
         },
         {
           "symbol": "SCCO",
           "name": "Southern Copper",
           "hint": "NYSE",
-          "last": 191.75,
-          "chg_1d": -1.11,
-          "chg_1w": 3.64,
-          "chg_1m": -5.37,
           "src": "NYSE",
           "tier": "aggregator",
-          "as_of": "2026-10-29",
-          "note": "Oct 30 close not found; shown as of 29 Oct.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 177.48,
+          "chg_1d": 1.03,
+          "chg_1w": -3.57,
+          "chg_1m": -12.73
         },
         {
           "symbol": "AA",
           "name": "Alcoa",
           "hint": "NYSE",
-          "last": 39.19,
-          "chg_1d": -1.75,
-          "chg_1w": 3.38,
-          "chg_1m": -6.69,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 39.9,
+          "chg_1d": 1.81,
+          "chg_1w": 3.1,
+          "chg_1m": -4.89
         },
         {
           "symbol": "ALB",
           "name": "Albemarle",
           "hint": "NYSE",
-          "last": 91.0,
-          "chg_1d": -2.43,
-          "chg_1w": -2.85,
-          "chg_1m": -13.97,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Down 14% over the month alongside lithium carbonate (-25% per Trading Economics).",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 90.56,
+          "chg_1d": -0.48,
+          "chg_1w": -3.06,
+          "chg_1m": -13.41
         },
         {
           "symbol": "MP",
           "name": "MP Materials",
           "hint": "NYSE",
-          "last": 39.55,
-          "chg_1d": -5.02,
-          "chg_1w": 3.26,
-          "chg_1m": -16.37,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Fell 5.0% on the day; down 16% over the month.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 38.35,
+          "chg_1d": -3.08,
+          "chg_1w": 2.35,
+          "chg_1m": -18.35
         },
         {
           "symbol": "AI.PA",
           "name": "Air Liquide",
           "hint": "Euronext Paris",
-          "last": 180.9,
-          "chg_1d": 1.98,
-          "chg_1w": 3.56,
-          "chg_1m": 5.86,
           "src": "Euronext Paris",
           "tier": "aggregator",
           "unit": "EUR",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 182.04,
+          "chg_1d": 0.63,
+          "chg_1w": 3.81,
+          "chg_1m": 6.98
         },
         {
           "symbol": "LIN",
           "name": "Linde",
           "hint": "Nasdaq",
-          "last": 503.15,
-          "chg_1d": -0.99,
-          "chg_1w": -1.12,
-          "chg_1m": 6.0,
           "src": "Nasdaq",
           "tier": "aggregator",
-          "as_of": "2026-10-29",
-          "note": "Oct 30 close not found; shown as of 29 Oct.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 519.72,
+          "chg_1d": 1.07,
+          "chg_1w": 2.4,
+          "chg_1m": 8.39
         },
         {
           "symbol": "APD",
           "name": "Air Products",
           "hint": "NYSE",
-          "last": 316.43,
-          "chg_1d": 1.5,
-          "chg_1w": 3.02,
-          "chg_1m": null,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 316.03,
+          "chg_1d": -0.13,
+          "chg_1w": 3.37,
+          "chg_1m": 13.86
         }
       ]
     },
@@ -1214,68 +1203,66 @@
           "symbol": "DOW",
           "name": "Dow",
           "hint": "NYSE",
-          "last": 34.7,
-          "chg_1d": 3.21,
-          "chg_1w": 6.41,
-          "chg_1m": 26.0,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Up 26% over the month.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 34.18,
+          "chg_1d": -1.5,
+          "chg_1w": 0.56,
+          "chg_1m": 22.2,
+          "note": "Up 22.2% over the month."
         },
         {
           "symbol": "LYB",
           "name": "LyondellBasell",
           "hint": "NYSE",
-          "last": 68.64,
-          "chg_1d": 5.0,
-          "chg_1w": 3.3,
-          "chg_1m": 19.44,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Up 19% over the month.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 66.88,
+          "chg_1d": -2.56,
+          "chg_1w": -0.7,
+          "chg_1m": 14.17
         },
         {
           "symbol": "DD",
           "name": "DuPont",
           "hint": "NYSE",
-          "last": 140.05,
-          "chg_1d": -0.38,
-          "chg_1w": 2.56,
-          "chg_1m": 7.82,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 141.3,
+          "chg_1d": 0.89,
+          "chg_1w": 3.71,
+          "chg_1m": 8.71
         },
         {
           "symbol": "BAS.DE",
           "name": "BASF",
           "hint": "Xetra (Frankfurt), quoted in EUR",
-          "last": 53.46,
-          "chg_1d": 0.24,
-          "chg_1w": 1.93,
-          "chg_1m": 6.54,
           "src": "Xetra (Deutsche Boerse)",
           "tier": "aggregator",
           "unit": "EUR",
-          "note": "EUR; Xetra venue.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 53.28,
+          "chg_1d": 0.11,
+          "chg_1w": 2.6,
+          "chg_1m": 6.11,
+          "note": "EUR; Frankfurt listing (FRA), not Xetra."
         },
         {
           "symbol": "2010.SR",
           "name": "SABIC",
           "hint": "Tadawul, quoted in SAR",
-          "last": 47.08,
-          "chg_1d": -0.38,
-          "chg_1w": 7.69,
-          "chg_1m": 1.47,
           "src": "Saudi Exchange (Tadawul)",
           "tier": "aggregator",
-          "as_of": "2026-10-29",
           "unit": "SAR",
-          "note": "SAR; Tadawul closed Friday. Carried from the 29 Oct brief; fresh history page stale.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 47.0,
+          "chg_1d": -0.17,
+          "chg_1w": 1.95,
+          "chg_1m": 2.58,
+          "note": "SAR. No Friday session: 1d and 1m use Thu 29 Oct and Thu 1 Oct closes."
         }
       ]
     },
@@ -1288,158 +1275,156 @@
           "symbol": "ZW=F",
           "name": "Wheat",
           "unit": "USc/bu",
-          "last": 603.25,
-          "chg_1d": -0.08,
-          "chg_1w": null,
-          "chg_1m": -11.64,
           "src": "CBOT (CME Group), via Trading Economics",
           "tier": "aggregator",
-          "note": "Trading Economics dated 30 Oct; 1m is its own window; 1w null (no same-source base).",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 606.38,
+          "chg_1d": 0.48,
+          "chg_1w": -1.68,
+          "chg_1m": -12.4,
+          "note": "Page date 2 Nov; USc/bu. 1w is versus the value in the 2026-10-26 brief."
         },
         {
           "symbol": "RICE",
           "name": "Rice",
           "unit": "USD/cwt",
           "hint": "rough rice futures or Thai 5% benchmark",
-          "last": 17.41,
-          "chg_1d": null,
-          "chg_1w": null,
-          "chg_1m": 5.39,
           "src": "CBOT (CME Group), via Trading Economics",
           "tier": "aggregator",
-          "note": "TE page internally inconsistent (header 17.435, +0.14%); summary value used; 1d, 1w null.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 17.53,
+          "chg_1d": 0.54,
+          "chg_1w": null,
+          "chg_1m": 7.98,
+          "as_of": "2026-11-03",
+          "note": "Page date 3 Nov, not 2 Nov."
         },
         {
           "symbol": "PALM",
           "name": "Palm oil",
           "unit": "MYR/t",
           "hint": "Bursa Malaysia",
-          "last": 4681,
-          "chg_1d": 1.17,
-          "chg_1w": null,
-          "chg_1m": 2.79,
-          "src": "Bursa Malaysia (via Trading Economics)",
+          "src": "Bursa Malaysia, via Trading Economics",
           "tier": "aggregator",
-          "note": "Trading Economics dated 30 Oct; 1m is its own window; 1w null (no same-source base).",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 4551,
+          "chg_1d": -2.11,
+          "chg_1w": null,
+          "chg_1m": -0.59,
+          "as_of": "2026-11-03",
+          "note": "Page date 3 Nov, not 2 Nov; MYR/t."
         },
         {
           "symbol": "UREA",
           "name": "Urea",
           "unit": "USD/t",
           "hint": "granular, Middle East or Egypt",
+          "src": "Trading Economics (market quote)",
+          "tier": "aggregator",
+          "next_earnings": null,
           "last": 449.5,
           "chg_1d": 0.67,
           "chg_1w": null,
           "chg_1m": 3.93,
-          "src": "Trading Economics (market quote)",
-          "tier": "aggregator",
-          "note": "Trading Economics dated 30 Oct, CFD-based; 1m is its own window; 1w null.",
-          "next_earnings": null
+          "as_of": "2026-10-30",
+          "note": "Summary dated 30 Oct; page header showed 446.00 on 3 Nov."
         },
         {
           "symbol": "DE",
           "name": "Deere",
           "hint": "NYSE",
-          "last": 675.48,
-          "chg_1d": 2.35,
-          "chg_1w": 4.54,
-          "chg_1m": 0.59,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 667.6,
+          "chg_1d": -1.17,
+          "chg_1w": 4.11,
+          "chg_1m": -2.82
         },
         {
           "symbol": "NTR",
           "name": "Nutrien",
           "hint": "NYSE",
-          "last": 69.42,
-          "chg_1d": 1.37,
-          "chg_1w": -0.46,
-          "chg_1m": -1.18,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 70.2,
+          "chg_1d": 1.12,
+          "chg_1w": 2.9,
+          "chg_1m": 0.2
         },
         {
           "symbol": "MOS",
           "name": "Mosaic",
           "hint": "NYSE",
-          "last": 18.39,
-          "chg_1d": 0.88,
-          "chg_1w": 3.08,
-          "chg_1m": -15.06,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Down 15% over the month.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 19.03,
+          "chg_1d": 3.48,
+          "chg_1w": 7.45,
+          "chg_1m": -9.68
         },
         {
           "symbol": "ADM",
           "name": "Archer-Daniels-Midland",
           "hint": "NYSE",
-          "last": 76.91,
-          "chg_1d": 0.93,
-          "chg_1w": -4.03,
-          "chg_1m": -3.11,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 75.77,
+          "chg_1d": -1.48,
+          "chg_1w": -4.1,
+          "chg_1m": -5.82
         },
         {
           "symbol": "BG",
           "name": "Bunge",
           "hint": "NYSE",
-          "last": 96.64,
-          "chg_1d": 0.65,
-          "chg_1w": -6.37,
-          "chg_1m": -9.64,
           "src": "NYSE",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 94.22,
+          "chg_1d": -2.5,
+          "chg_1w": -7.83,
+          "chg_1m": -11.71
         },
         {
           "symbol": "CTVA",
           "name": "Corteva",
           "hint": "NYSE",
-          "last": 11.64,
-          "chg_1d": 1.48,
-          "chg_1w": -6.51,
-          "chg_1m": null,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "1m null: no dated base; table does not reach 30 Sep on the page used.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 11.92,
+          "chg_1d": 2.41,
+          "chg_1w": -0.25,
+          "chg_1m": 0.0
         },
         {
           "symbol": "CF",
           "name": "CF Industries",
           "hint": "NYSE",
-          "last": 123.3,
-          "chg_1d": 4.41,
-          "chg_1w": 2.17,
-          "chg_1m": 7.03,
           "src": "NYSE",
           "tier": "aggregator",
-          "note": "Up 4.4% on the day.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 120.33,
+          "chg_1d": -2.41,
+          "chg_1w": -0.42,
+          "chg_1m": 4.63
         },
         {
           "symbol": "YAR.OL",
           "name": "Yara",
           "hint": "Oslo Bors",
-          "last": 392.7,
-          "chg_1d": -0.46,
-          "chg_1w": -1.68,
-          "chg_1m": -7.6,
           "src": "Oslo Bors",
           "tier": "aggregator",
-          "as_of": "2026-10-29",
           "unit": "NOK",
-          "note": "NOK; 30 Oct close not found, carried from the 29 Oct brief.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 395.1,
+          "chg_1d": 0.3,
+          "chg_1w": -2.68,
+          "chg_1m": -4.86
         }
       ]
     },
@@ -1451,147 +1436,144 @@
         {
           "symbol": "BDI",
           "name": "Baltic Dry Index",
-          "last": 2714,
-          "chg_1d": 0.07,
-          "chg_1w": 2.03,
-          "chg_1m": -12.82,
-          "src": "Baltic Exchange (via Trading Economics, Investing.com)",
+          "src": "Baltic Exchange, via Trading Economics",
           "tier": "aggregator",
           "unit": "index points",
-          "note": "30 Oct from Trading Economics (2,714). 1w and 1m bases (23 Oct, 30 Sep) from Investing.com table."
+          "last": 2590,
+          "chg_1d": -2.19,
+          "chg_1w": null,
+          "chg_1m": -15.64,
+          "as_of": "2026-11-03",
+          "note": "Page date 3 Nov, not 2 Nov."
         },
         {
           "symbol": "SCFI",
           "name": "Shanghai Containerized Freight Index",
+          "src": "Shanghai Shipping Exchange, via cnfin.com",
+          "tier": "reported",
+          "unit": "index points",
           "last": 3687.35,
           "chg_1d": null,
           "chg_1w": 0.16,
-          "chg_1m": 0.68,
-          "src": "Shanghai Shipping Exchange (via stock-marketdata.com)",
-          "tier": "aggregator",
-          "unit": "index points",
-          "note": "Weekly index; 30 Oct print. Changes vs 23 Oct and 30 Sep prints."
+          "chg_1m": null,
+          "as_of": "2026-10-30",
+          "note": "Weekly index; +6.01 points on the week to 30 Oct; next release 6 Nov."
         },
         {
           "symbol": "DCI",
           "name": "Drewry World Container Index",
+          "unit": "USD/40ft",
+          "src": "Drewry",
+          "tier": "aggregator",
           "last": 4429,
           "chg_1d": null,
           "chg_1w": -3.4,
           "chg_1m": null,
-          "unit": "USD/40ft",
-          "src": "Drewry",
-          "tier": "official",
           "as_of": "2026-10-29",
-          "note": "Weekly composite for 29 Oct (next print 5 Nov); Drewry states down 3% on the week; -3.4% computed from 4,585."
+          "note": "Weekly index dated 29 Oct, carried from the 30 Oct brief; not re-read this run. 1w from the prior brief's 4,585."
         },
         {
           "symbol": "TANKER",
           "name": "Crude tanker rates",
-          "last": 1318.75,
+          "unit": "Worldscale points",
+          "src": "Baltic Exchange (TD3C)",
+          "tier": "aggregator",
+          "last": null,
           "chg_1d": null,
           "chg_1w": null,
-          "chg_1m": null,
-          "unit": "Worldscale points",
-          "src": "Baltic Exchange (TD3C, via Cyprus Shipping News)",
-          "tier": "reported",
-          "note": "Carried over from the earlier print (TD3C Middle East Gulf to China); no newer TD3C figure found."
+          "chg_1m": null
         },
         {
           "symbol": "BDRY",
           "name": "Dry bulk freight futures ETF",
-          "last": 12.19,
-          "chg_1d": -2.25,
-          "chg_1w": -3.33,
-          "chg_1m": -16.22,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Down 16.2% on the month with the Baltic Dry Index."
+          "last": 12.36,
+          "chg_1d": 1.39,
+          "chg_1w": 0.32,
+          "chg_1m": -12.96
         },
         {
           "symbol": "IYT",
           "name": "Transportation ETF",
-          "last": 81.61,
-          "chg_1d": 0.0,
-          "chg_1w": 1.78,
-          "chg_1m": 3.94,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "30 Oct close equals 29 Oct close on the source table (81.61); 1d shown as 0."
+          "last": 83.08,
+          "chg_1d": 1.8,
+          "chg_1w": 2.95,
+          "chg_1m": 3.59
         },
         {
           "symbol": "MAERSK-B.CO",
           "name": "A.P. Moller-Maersk",
-          "last": 23070,
-          "chg_1d": -0.94,
-          "chg_1w": 0.87,
-          "chg_1m": -2.45,
           "src": "Nasdaq Copenhagen (via stockanalysis.com)",
           "tier": "aggregator",
           "unit": "DKK",
-          "note": "DKK per share.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 23070,
+          "chg_1d": null,
+          "chg_1w": null,
+          "chg_1m": null,
+          "as_of": "2026-10-30",
+          "note": "Not refreshed this run; carried from the 2 Nov brief."
         },
         {
           "symbol": "ZIM",
           "name": "ZIM Integrated Shipping",
-          "last": 28.38,
-          "chg_1d": -2.94,
-          "chg_1w": -3.3,
-          "chg_1m": -3.21,
           "src": "NYSE (via stockanalysis.com)",
           "tier": "aggregator",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 28.35,
+          "chg_1d": -0.11,
+          "chg_1w": -4.03,
+          "chg_1m": -4.32
         },
         {
           "symbol": "HLAG.DE",
           "name": "Hapag-Lloyd",
-          "last": 132.4,
-          "chg_1d": 0.23,
-          "chg_1w": 1.69,
-          "chg_1m": -6.36,
           "src": "Frankfurt Stock Exchange (via stockanalysis.com)",
           "tier": "aggregator",
           "unit": "EUR",
-          "note": "EUR, Xetra/Frankfurt quote.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 131.1,
+          "chg_1d": -0.98,
+          "chg_1w": -0.38,
+          "chg_1m": -6.82,
+          "note": "EUR, Xetra/Frankfurt quote."
         },
         {
           "symbol": "1919.HK",
           "name": "COSCO Shipping Holdings",
-          "last": 17.9,
-          "chg_1d": 7.7,
-          "chg_1w": 11.18,
-          "chg_1m": 8.16,
           "src": "Hong Kong Exchanges (via stockanalysis.com)",
           "tier": "aggregator",
           "unit": "HKD",
-          "note": "Up 7.7% on the day, 11.2% on the week; HKD.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 18.07,
+          "chg_1d": 0.95,
+          "chg_1w": 9.45,
+          "chg_1m": 8.07
         },
         {
           "symbol": "FDX",
           "name": "FedEx",
-          "last": 313.28,
-          "chg_1d": 1.77,
-          "chg_1w": 4.87,
-          "chg_1m": 9.89,
           "src": "NYSE (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Up 9.9% on the month.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 318.25,
+          "chg_1d": 1.59,
+          "chg_1w": 5.88,
+          "chg_1m": 9.61
         },
         {
           "symbol": "UPS",
           "name": "UPS",
-          "last": 108.25,
-          "chg_1d": 0.86,
-          "chg_1w": 7.11,
-          "chg_1m": 15.85,
           "src": "NYSE (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Up 15.9% on the month.",
-          "next_earnings": null
+          "next_earnings": null,
+          "last": 109.71,
+          "chg_1d": 1.35,
+          "chg_1w": 9.36,
+          "chg_1m": 17.94
         }
       ]
     },
@@ -1604,249 +1586,244 @@
           "symbol": "EWZ",
           "name": "Brazil",
           "region": "Americas",
-          "last": 32.46,
-          "chg_1d": -2.05,
-          "chg_1w": -23.78,
-          "chg_1m": -12.86,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Down 23.8% on the week; gap lower on 26 Oct after Brazil election, no recovery since."
+          "last": 32.16,
+          "chg_1d": -0.92,
+          "chg_1w": -5.83,
+          "chg_1m": -15.79
         },
         {
           "symbol": "EWW",
           "name": "Mexico",
           "region": "Americas",
-          "last": 74.47,
-          "chg_1d": 0.0,
-          "chg_1w": -1.05,
-          "chg_1m": 4.75,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 75.88,
+          "chg_1d": 1.89,
+          "chg_1w": 0.77,
+          "chg_1m": 6.74
         },
         {
           "symbol": "ECH",
           "name": "Chile",
           "region": "Americas",
-          "last": 34.73,
-          "chg_1d": -2.2,
-          "chg_1w": -3.53,
-          "chg_1m": -8.15,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 35.46,
+          "chg_1d": 2.1,
+          "chg_1w": -0.28,
+          "chg_1m": -4.42
         },
         {
           "symbol": "ARGT",
           "name": "Argentina",
           "region": "Americas",
-          "last": 79.18,
-          "chg_1d": -2.82,
-          "chg_1w": -9.07,
-          "chg_1m": -8.12,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Down 9.1% on the week."
+          "last": 78.17,
+          "chg_1d": -1.28,
+          "chg_1w": -5.56,
+          "chg_1m": -7.51
         },
         {
           "symbol": "VGK",
           "name": "Europe",
           "region": "Europe",
-          "last": 87.54,
-          "chg_1d": -0.68,
-          "chg_1w": 1.5,
-          "chg_1m": 0.85,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 88.06,
+          "chg_1d": 0.59,
+          "chg_1w": 1.74,
+          "chg_1m": 1.94
         },
         {
           "symbol": "EPOL",
           "name": "Poland",
           "region": "Europe",
-          "last": 43.4,
-          "chg_1d": -2.95,
-          "chg_1w": -0.23,
-          "chg_1m": -2.08,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 42.69,
+          "chg_1d": -1.64,
+          "chg_1w": -2.06,
+          "chg_1m": -0.79
         },
         {
           "symbol": "TUR",
           "name": "Turkey",
           "region": "Europe",
-          "last": 29.53,
-          "chg_1d": -3.97,
-          "chg_1w": -3.87,
-          "chg_1m": -12.63,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Down 12.6% on the month."
+          "last": 30.08,
+          "chg_1d": 1.86,
+          "chg_1w": -2.4,
+          "chg_1m": -12.25
         },
         {
           "symbol": "KSA",
           "name": "Saudi Arabia",
           "region": "Middle East and Africa",
-          "last": 34.22,
-          "chg_1d": -0.67,
-          "chg_1w": 1.57,
-          "chg_1m": -5.78,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 34.29,
+          "chg_1d": 0.2,
+          "chg_1w": 0.85,
+          "chg_1m": -5.33
         },
         {
           "symbol": "UAE",
           "name": "United Arab Emirates",
           "region": "Middle East and Africa",
-          "last": 19.0,
-          "chg_1d": -1.2,
-          "chg_1w": -0.26,
-          "chg_1m": -5.33,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 19.22,
+          "chg_1d": 1.16,
+          "chg_1w": 0.26,
+          "chg_1m": -1.69
         },
         {
           "symbol": "EZA",
           "name": "South Africa",
           "region": "Middle East and Africa",
-          "last": 61.78,
-          "chg_1d": -3.6,
-          "chg_1w": -2.15,
-          "chg_1m": -3.44,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 62.93,
+          "chg_1d": 1.86,
+          "chg_1w": -0.88,
+          "chg_1m": -0.41
         },
         {
           "symbol": "AFK",
           "name": "Africa",
           "region": "Middle East and Africa",
-          "last": 25.3,
-          "chg_1d": -2.8,
-          "chg_1w": -1.48,
-          "chg_1m": -8.1,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 25.46,
+          "chg_1d": 0.63,
+          "chg_1w": -1.28,
+          "chg_1m": -6.6
         },
         {
           "symbol": "INDA",
           "name": "India",
           "region": "South Asia",
-          "last": 47.72,
-          "chg_1d": 0.65,
-          "chg_1w": 2.71,
-          "chg_1m": 2.23,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 48.45,
+          "chg_1d": 1.53,
+          "chg_1w": 3.99,
+          "chg_1m": 4.15
         },
         {
           "symbol": "EWJ",
           "name": "Japan",
           "region": "East Asia",
-          "last": 92.91,
-          "chg_1d": -2.14,
-          "chg_1w": -1.26,
-          "chg_1m": -4.67,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 92.84,
+          "chg_1d": -0.08,
+          "chg_1w": -1.53,
+          "chg_1m": -6.15
         },
         {
           "symbol": "EWY",
           "name": "South Korea",
           "region": "East Asia",
-          "last": 152.89,
-          "chg_1d": -5.52,
-          "chg_1w": 1.08,
-          "chg_1m": -16.35,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Fell 5.5% on 30 Oct; down 16.4% on the month."
+          "last": 151.62,
+          "chg_1d": -0.83,
+          "chg_1w": -0.72,
+          "chg_1m": -20.98,
+          "note": "Down 21.0% over the month."
         },
         {
           "symbol": "EWT",
           "name": "Taiwan",
           "region": "East Asia",
-          "last": 101.11,
-          "chg_1d": -4.6,
-          "chg_1w": -3.61,
-          "chg_1m": -10.44,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Fell 4.6% on 30 Oct; down 10.4% on the month."
+          "last": 100.66,
+          "chg_1d": -0.45,
+          "chg_1w": -4.69,
+          "chg_1m": -13.47
         },
         {
           "symbol": "MCHI",
           "name": "China",
           "region": "East Asia",
-          "last": 49.07,
-          "chg_1d": 0.22,
-          "chg_1w": 0.14,
-          "chg_1m": -5.98,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 49.59,
+          "chg_1d": 1.06,
+          "chg_1w": 0.96,
+          "chg_1m": -3.22
         },
         {
           "symbol": "EIDO",
           "name": "Indonesia",
           "region": "Southeast Asia",
-          "last": 9.96,
-          "chg_1d": -1.19,
-          "chg_1w": -6.04,
-          "chg_1m": -15.09,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "note": "Down 15.1% on the month; sharp gap lower on 15-16 Oct, no recovery since."
+          "last": 10.03,
+          "chg_1d": 0.7,
+          "chg_1w": -4.66,
+          "chg_1m": -14.13
         },
         {
           "symbol": "VNM",
           "name": "Vietnam",
           "region": "Southeast Asia",
-          "last": 16.65,
-          "chg_1d": -1.71,
-          "chg_1w": -2.92,
-          "chg_1m": -1.77,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 16.4,
+          "chg_1d": -1.5,
+          "chg_1w": -3.47,
+          "chg_1m": -1.91
         },
         {
           "symbol": "THD",
           "name": "Thailand",
           "region": "Southeast Asia",
-          "last": 68.46,
-          "chg_1d": -2.12,
-          "chg_1w": -3.4,
-          "chg_1m": -2.91,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 68.2,
+          "chg_1d": -0.38,
+          "chg_1w": -4.89,
+          "chg_1m": -4.78
         },
         {
           "symbol": "EPHE",
           "name": "Philippines",
           "region": "Southeast Asia",
-          "last": 22.33,
-          "chg_1d": -0.53,
-          "chg_1w": -1.06,
-          "chg_1m": -1.8,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 22.41,
+          "chg_1d": 0.36,
+          "chg_1w": 0.49,
+          "chg_1m": -1.02
         },
         {
           "symbol": "EWA",
           "name": "Australia",
           "region": "Oceania",
-          "last": 29.54,
-          "chg_1d": -0.3,
-          "chg_1w": 1.44,
-          "chg_1m": 4.34,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 29.43,
+          "chg_1d": -0.37,
+          "chg_1w": 0.89,
+          "chg_1m": 3.92
         },
         {
           "symbol": "VWO",
           "name": "Emerging markets, broad",
           "region": "Broad emerging",
-          "last": 55.51,
-          "chg_1d": -1.93,
-          "chg_1w": -2.34,
-          "chg_1m": -6.41,
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
-          "tier": "aggregator"
+          "tier": "aggregator",
+          "last": 55.7,
+          "chg_1d": 0.34,
+          "chg_1w": -1.42,
+          "chg_1m": -6.48
         }
       ]
     },
@@ -1858,187 +1835,188 @@
         {
           "symbol": "FED",
           "name": "US Federal Reserve",
-          "last": 4.0,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "Americas",
-          "src": "US Federal Reserve",
-          "tier": "official",
-          "note": "Held 3.75-4.00 (upper bound shown) on 28 Oct; two dissents for a hike. Last move: 25 bp hike 16 Sep. Next FOMC 8-9 Dec.",
-          "as_of": "2026-10-28"
+          "src": "Federal Reserve (carried from 30 Oct brief)",
+          "tier": "reported",
+          "last": 4.0,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "as_of": "2026-10-28",
+          "note": "Held 3.75-4.00 (upper bound) on 28 Oct. Last move: 25 bp hike 16 Sep. Next FOMC 8-9 Dec."
         },
         {
           "symbol": "SELIC",
           "name": "Brazil central bank (Selic)",
-          "last": 13.75,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "Americas",
-          "src": "Central Bank of Brazil",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Cut 25 bp from 14.00 on 16 Sep per Trading Economics; unchanged since. Next decision 4 Nov. Changes in percentage points."
+          "last": 13.75,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "note": "Cut 25 bp to 13.75 on 16 Sep; unchanged. Next decision 4 Nov (after data date)."
         },
         {
           "symbol": "BANXICO",
           "name": "Banco de Mexico",
-          "last": 6.5,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "Americas",
-          "src": "Bank of Mexico",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Held at 6.50 in September per Trading Economics. Next decision 5 Nov."
+          "last": 6.5,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "note": "Held at 6.50. Next decision 5 Nov (after data date)."
         },
         {
           "symbol": "ECB",
           "name": "European Central Bank",
-          "last": 2.65,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "Europe",
-          "src": "European Central Bank",
-          "tier": "aggregator",
-          "note": "Main refinancing rate held at 2.65 on 29 Oct (deposit rate 2.50); raised from 2.40 on 10 Sep. Next rate decision date not found.",
-          "as_of": "2026-10-29"
+          "src": "European Central Bank (carried from 30 Oct brief)",
+          "tier": "reported",
+          "last": 2.65,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "as_of": "2026-10-29",
+          "note": "Main refinancing rate held on 29 Oct (deposit 2.50); last move hike 10 Sep."
         },
         {
           "symbol": "CBRT",
           "name": "Central Bank of Turkey",
-          "last": 36.0,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": -1.0,
           "unit": "%",
           "region": "Europe",
-          "src": "Central Bank of Turkey",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Cut 100 bp from 37.00 on 22 Oct per Trading Economics; official page not read. Next decision 10 Dec."
+          "last": 36.0,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": -1.0,
+          "note": "Cut 100 bp from 37.00 on 22 Oct. Next decision 10 Dec."
         },
         {
           "symbol": "SARB",
           "name": "South African Reserve Bank",
-          "last": 7.25,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "Middle East and Africa",
-          "src": "South African Reserve Bank",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Raised 25 bp from 7.00 on 23 Sep per Trading Economics. Next meeting 19 Nov."
+          "last": 7.25,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "note": "Raised 25 bp on 23 Sep. Next meeting 19 Nov."
         },
         {
           "symbol": "RBI",
           "name": "Reserve Bank of India",
-          "last": 5.5,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0.25,
           "unit": "%",
           "region": "South Asia",
-          "src": "Reserve Bank of India",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Raised 25 bp from 5.25 on 7 Oct (first hike since Feb 2023). Next meeting 4 Dec."
+          "last": 5.5,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.25,
+          "note": "Raised 25 bp from 5.25 on 7 Oct. Next meeting 4 Dec."
         },
         {
           "symbol": "BOJ",
           "name": "Bank of Japan",
-          "last": 1.25,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "East Asia",
-          "src": "Bank of Japan",
-          "tier": "official",
-          "note": "Held at 1.25 on 30 Oct, 8-1 vote; Takata dissented, proposing 1.50. Next decision 18 Dec per Trading Economics."
+          "src": "Bank of Japan (carried from 30 Oct brief)",
+          "tier": "reported",
+          "last": 1.25,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "as_of": "2026-10-30",
+          "note": "Held at 1.25 on 30 Oct, 8-1 vote. Next decision 18 Dec."
         },
         {
           "symbol": "BOK",
           "name": "Bank of Korea",
-          "last": 3.0,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "East Asia",
-          "src": "Bank of Korea",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Held at 3.00 on 22 Oct. Last move: 27 Aug hike of 25 bp. Next 26 Nov."
+          "last": 3.0,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "note": "Held at 3.00 on 22 Oct; last move 27 Aug hike. Next 26 Nov."
         },
         {
           "symbol": "LPR",
           "name": "People's Bank of China",
-          "last": 3.0,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "East Asia",
-          "src": "People's Bank of China",
+          "src": "Trading Economics",
           "tier": "aggregator",
+          "last": 3.0,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
           "note": "Unchanged at 3.00 on 20 Oct. Next fixing 20 Nov."
         },
         {
           "symbol": "BI",
           "name": "Bank Indonesia",
-          "last": 5.75,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "Southeast Asia",
-          "src": "Bank Indonesia",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Unchanged at 5.75 on 21 Oct; deposit facility rate raised 25 bp to 5.00 per Trading Economics. Next meeting 18 Nov."
+          "last": 5.75,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "note": "Unchanged at 5.75 on 21 Oct; deposit facility rate raised 25 bp to 5.00. Next meeting 18 Nov."
         },
         {
           "symbol": "BSP",
           "name": "Bangko Sentral ng Pilipinas",
-          "last": 5.5,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0.5,
           "unit": "%",
           "region": "Southeast Asia",
-          "src": "Bangko Sentral ng Pilipinas",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Raised 50 bp from 5.00 on 22 Oct, fourth straight hike, per Trading Economics. Next meeting 17 Dec."
+          "last": 5.5,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.5,
+          "note": "Raised 50 bp from 5.00 on 22 Oct, fourth straight hike. Next meeting 17 Dec."
         },
         {
           "symbol": "BOT",
           "name": "Bank of Thailand",
-          "last": 1.0,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "Southeast Asia",
-          "src": "Bank of Thailand",
+          "src": "Bank of Thailand (carried from 30 Oct brief)",
           "tier": "official",
-          "note": "Held at 1.00 on 28 Oct (Decision 5/2026), unanimous; fourth straight hold. Next meeting date not stated on the release.",
-          "as_of": "2026-10-28"
+          "last": 1.0,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "as_of": "2026-10-28",
+          "note": "Held at 1.00 on 28 Oct, unanimous."
         },
         {
           "symbol": "RBA",
           "name": "Reserve Bank of Australia",
-          "last": 4.6,
-          "chg_1d": null,
-          "chg_1w": 0,
-          "chg_1m": 0,
           "unit": "%",
           "region": "Oceania",
-          "src": "Reserve Bank of Australia",
+          "src": "Trading Economics",
           "tier": "aggregator",
-          "note": "Raised 25 bp from 4.35 on 29 Sep per Trading Economics. Next meeting 3 Nov."
+          "last": 4.6,
+          "chg_1d": 0.0,
+          "chg_1w": 0.0,
+          "chg_1m": 0.0,
+          "note": "RBA raised 25 bp to 4.85 on 3 Nov, after the data date (Trading Economics page, 3 Nov); 4.60 stands as of 2 Nov."
         }
       ]
     },
@@ -2053,34 +2031,33 @@
           "unit": "BRL per USD",
           "region": "Americas",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 5.4325,
-          "chg_1d": 1.51,
-          "chg_1w": 7.65,
-          "chg_1m": 4.42,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates.",
+          "tier": "aggregator",
           "xcheck": {
             "src": "Trading Economics (market quote)",
             "tier": "aggregator",
             "last": 5.4363,
             "chg_1w": null,
             "as_of": "2026-10-30",
-            "status": "agree",
-            "detail": "last differs by 0.07% (limit 0.3%)"
-          }
+            "status": "date",
+            "detail": "second source is dated 2026-10-30"
+          },
+          "last": 5.4378,
+          "chg_1d": 0.1,
+          "chg_1w": -2.7,
+          "chg_1m": 4.14
         },
         {
           "symbol": "USDCLP",
           "name": "Chile peso",
           "unit": "CLP per USD",
           "region": "Americas",
-          "src": "Trading Economics",
+          "src": "Trading Economics (market quote)",
           "tier": "aggregator",
-          "last": 994.0,
-          "chg_1d": 0.55,
+          "last": 977.84,
+          "chg_1d": 0.03,
           "chg_1w": null,
-          "chg_1m": 1.22,
-          "note": "Trading Economics page dated 30 Oct (intraday, up 0.55%); 1m as stated by page; 1w not stated."
+          "chg_1m": -0.48,
+          "as_of": "2026-11-03"
         },
         {
           "symbol": "USDMXN",
@@ -2088,12 +2065,11 @@
           "unit": "MXN per USD",
           "region": "Americas",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 18.9077,
-          "chg_1d": 0.85,
-          "chg_1w": 0.67,
-          "chg_1m": 4.32,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 18.72,
+          "chg_1d": -0.99,
+          "chg_1w": 0.56,
+          "chg_1m": 2.1
         },
         {
           "symbol": "EURUSD",
@@ -2101,12 +2077,11 @@
           "unit": "USD per EUR",
           "region": "Europe",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 1.1172,
-          "chg_1d": 0.38,
-          "chg_1w": -0.19,
-          "chg_1m": -1.61,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD per unit computed from EUR rates."
+          "tier": "aggregator",
+          "last": 1.1216,
+          "chg_1d": 0.39,
+          "chg_1w": 0.25,
+          "chg_1m": -0.08
         },
         {
           "symbol": "USDTRY",
@@ -2114,12 +2089,11 @@
           "unit": "TRY per USD",
           "region": "Europe",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 49.9476,
-          "chg_1d": 0.22,
-          "chg_1w": 0.42,
-          "chg_1m": 1.9,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 49.9681,
+          "chg_1d": 0.04,
+          "chg_1w": 0.41,
+          "chg_1m": 1.68
         },
         {
           "symbol": "USDZAR",
@@ -2127,38 +2101,37 @@
           "unit": "ZAR per USD",
           "region": "Middle East and Africa",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 16.6895,
-          "chg_1d": 0.29,
-          "chg_1w": 0.55,
-          "chg_1m": 1.82,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 16.6386,
+          "chg_1d": -0.3,
+          "chg_1w": 0.06,
+          "chg_1m": -0.57
         },
         {
           "symbol": "USDNGN",
           "name": "Nigeria naira",
           "unit": "NGN per USD",
           "region": "Middle East and Africa",
-          "src": "Trading Economics",
+          "src": "Trading Economics (market quote)",
           "tier": "aggregator",
-          "last": 1346.455,
-          "chg_1d": -0.04,
+          "last": 1344.61,
+          "chg_1d": 0.27,
           "chg_1w": null,
-          "chg_1m": 1.34,
-          "note": "Trading Economics page dated 30 Oct; 1m change as stated by page (weaker naira); 1w not stated."
+          "chg_1m": 1.42,
+          "as_of": "2026-11-03"
         },
         {
           "symbol": "USDSAR",
           "name": "Saudi riyal",
           "unit": "SAR per USD",
           "region": "Middle East and Africa",
-          "src": "Trading Economics",
+          "src": "Trading Economics (market quote)",
           "tier": "aggregator",
-          "last": 3.7531,
-          "chg_1d": -0.01,
+          "last": 3.7534,
+          "chg_1d": -0.07,
           "chg_1w": null,
-          "chg_1m": -0.05,
-          "note": "Trading Economics page dated 30 Oct; riyal pegged near 3.75; 1m as stated by page; 1w not stated."
+          "chg_1m": 0.04,
+          "as_of": "2026-11-03"
         },
         {
           "symbol": "USDINR",
@@ -2166,12 +2139,11 @@
           "unit": "INR per USD",
           "region": "South Asia",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 94.9552,
-          "chg_1d": -0.33,
-          "chg_1w": 0.01,
-          "chg_1m": -0.92,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 94.9095,
+          "chg_1d": -0.05,
+          "chg_1w": -0.29,
+          "chg_1m": -1.47
         },
         {
           "symbol": "USDJPY",
@@ -2179,12 +2151,11 @@
           "unit": "JPY per USD",
           "region": "East Asia",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 157.2503,
-          "chg_1d": -0.51,
+          "tier": "aggregator",
+          "last": 157.8994,
+          "chg_1d": 0.41,
           "chg_1w": 0.29,
-          "chg_1m": 0.16,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "chg_1m": 0.14
         },
         {
           "symbol": "USDKRW",
@@ -2192,12 +2163,11 @@
           "unit": "KRW per USD",
           "region": "East Asia",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 1335.2667,
-          "chg_1d": -0.15,
-          "chg_1w": 0.82,
-          "chg_1m": -1.49,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 1342.903,
+          "chg_1d": 0.57,
+          "chg_1w": 1.33,
+          "chg_1m": -0.4
         },
         {
           "symbol": "USDCNY",
@@ -2205,12 +2175,11 @@
           "unit": "CNY per USD",
           "region": "East Asia",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 6.6529,
-          "chg_1d": -0.13,
-          "chg_1w": -0.26,
-          "chg_1m": -0.77,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 6.6483,
+          "chg_1d": -0.07,
+          "chg_1w": -0.3,
+          "chg_1m": -0.84
         },
         {
           "symbol": "USDIDR",
@@ -2218,12 +2187,11 @@
           "unit": "IDR per USD",
           "region": "Southeast Asia",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 18148.2009,
-          "chg_1d": 0.03,
-          "chg_1w": 0.22,
-          "chg_1m": 1.44,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 18136.1002,
+          "chg_1d": -0.07,
+          "chg_1w": -0.15,
+          "chg_1m": 1.03
         },
         {
           "symbol": "USDPHP",
@@ -2231,12 +2199,11 @@
           "unit": "PHP per USD",
           "region": "Southeast Asia",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 63.6797,
-          "chg_1d": -0.25,
-          "chg_1w": 0.06,
-          "chg_1m": 1.55,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 63.5467,
+          "chg_1d": -0.21,
+          "chg_1w": -0.62,
+          "chg_1m": 1.52
         },
         {
           "symbol": "USDTHB",
@@ -2244,12 +2211,11 @@
           "unit": "THB per USD",
           "region": "Southeast Asia",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 33.7299,
-          "chg_1d": -0.07,
-          "chg_1w": -0.05,
-          "chg_1m": 0.49,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD cross computed from EUR rates."
+          "tier": "aggregator",
+          "last": 33.7598,
+          "chg_1d": 0.09,
+          "chg_1w": -0.13,
+          "chg_1m": 0.49
         },
         {
           "symbol": "AUDUSD",
@@ -2257,12 +2223,11 @@
           "unit": "USD per AUD",
           "region": "Oceania",
           "src": "European Central Bank",
-          "tier": "official",
-          "last": 0.7025,
-          "chg_1d": -0.02,
-          "chg_1w": 0.03,
-          "chg_1m": 0.82,
-          "note": "ECB reference rate 30 Oct; bases 29 Oct (prior brief), 23 Oct, 30 Sep; USD per unit computed from EUR rates."
+          "tier": "aggregator",
+          "last": 0.70082,
+          "chg_1d": -0.23,
+          "chg_1w": -0.23,
+          "chg_1m": 0.99
         }
       ]
     },
@@ -2276,70 +2241,70 @@
           "name": "ESG US equity",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 165.22,
-          "chg_1d": -1.87,
-          "chg_1w": -0.69,
-          "chg_1m": -0.95
+          "last": 164.4,
+          "chg_1d": -0.5,
+          "chg_1w": -1.88,
+          "chg_1m": -2.41
         },
         {
           "symbol": "ESGD",
           "name": "ESG developed ex-US",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 102.72,
-          "chg_1d": -0.76,
-          "chg_1w": 0.74,
-          "chg_1m": -0.32
+          "last": 102.94,
+          "chg_1d": 0.21,
+          "chg_1w": 0.61,
+          "chg_1m": -0.2
         },
         {
           "symbol": "ESGE",
           "name": "ESG emerging markets",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 49.44,
-          "chg_1d": -2.79,
-          "chg_1w": -1.89,
-          "chg_1m": -8.71
+          "last": 49.48,
+          "chg_1d": 0.08,
+          "chg_1w": -1.24,
+          "chg_1m": -9.92
         },
         {
           "symbol": "CRBN",
           "name": "Low-carbon global equity",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 251.42,
-          "chg_1d": -1.78,
-          "chg_1w": -0.22,
-          "chg_1m": -1.84
+          "last": 251.24,
+          "chg_1d": -0.07,
+          "chg_1w": -0.8,
+          "chg_1m": -2.54
         },
         {
           "symbol": "DSI",
           "name": "Social index",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 142.93,
-          "chg_1d": -2.14,
-          "chg_1w": -1.45,
-          "chg_1m": -2.22
+          "last": 142.09,
+          "chg_1d": -0.59,
+          "chg_1w": -2.97,
+          "chg_1m": -4.05
         },
         {
           "symbol": "GRNB",
           "name": "Green bonds (USD)",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 23.46,
-          "chg_1d": 0.09,
-          "chg_1w": 0.21,
-          "chg_1m": 1.03
+          "last": 23.37,
+          "chg_1d": -0.38,
+          "chg_1w": -0.26,
+          "chg_1m": 0.91
         },
         {
           "symbol": "BGRN",
           "name": "Green bonds (global)",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 46.18,
-          "chg_1d": 0.09,
-          "chg_1w": 0.26,
-          "chg_1m": 1.23
+          "last": 46.08,
+          "chg_1d": -0.22,
+          "chg_1w": -0.04,
+          "chg_1m": 1.39
         }
       ]
     },
@@ -2353,153 +2318,153 @@
           "name": "Clean energy, global",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 15.31,
-          "chg_1d": -2.42,
-          "chg_1w": -4.43,
-          "chg_1m": -9.94
+          "last": 15.73,
+          "chg_1d": 2.74,
+          "chg_1w": 1.16,
+          "chg_1m": -8.49
         },
         {
           "symbol": "TAN",
           "name": "Solar",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 40.2,
-          "chg_1d": -2.38,
-          "chg_1w": -2.12,
-          "chg_1m": -8.57
+          "last": 42.07,
+          "chg_1d": 4.65,
+          "chg_1w": 3.21,
+          "chg_1m": -4.49
         },
         {
           "symbol": "FAN",
           "name": "Wind",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 21.79,
-          "chg_1d": -1.54,
-          "chg_1w": 0.97,
-          "chg_1m": -3.92
+          "last": 22.04,
+          "chg_1d": 1.15,
+          "chg_1w": 1.85,
+          "chg_1m": -3.38
         },
         {
           "symbol": "PBW",
           "name": "Clean energy, small cap",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 25.23,
-          "chg_1d": -3.11,
-          "chg_1w": 2.73,
-          "chg_1m": -13.21
+          "last": 25.37,
+          "chg_1d": 0.55,
+          "chg_1w": 3.68,
+          "chg_1m": -14.06
         },
         {
           "symbol": "PHO",
           "name": "Water, US",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 73.76,
-          "chg_1d": -0.23,
-          "chg_1w": 2.43,
-          "chg_1m": 8.74
+          "last": 76.26,
+          "chg_1d": 3.39,
+          "chg_1w": 5.49,
+          "chg_1m": 12.03
         },
         {
           "symbol": "CGW",
           "name": "Water, global",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 64.06,
-          "chg_1d": 0.28,
-          "chg_1w": -2.08,
-          "chg_1m": 2.76
+          "last": 65.28,
+          "chg_1d": 1.9,
+          "chg_1w": 2.14,
+          "chg_1m": 3.98
         },
         {
           "symbol": "LIT",
           "name": "Lithium and batteries",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 59.81,
-          "chg_1d": -1.85,
-          "chg_1w": -1.43,
-          "chg_1m": -12.58
+          "last": 60.05,
+          "chg_1d": 0.4,
+          "chg_1w": -1.99,
+          "chg_1m": -13.32
         },
         {
           "symbol": "REMX",
           "name": "Rare earths and strategic metals",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 49.99,
-          "chg_1d": -5.12,
-          "chg_1w": -2.86,
-          "chg_1m": -22.21,
-          "note": "Down 22.2% on the month."
+          "last": 50.26,
+          "chg_1d": 0.54,
+          "chg_1w": -2.79,
+          "chg_1m": -20.49,
+          "note": "Down 20.5% over the month."
         },
         {
           "symbol": "COPX",
           "name": "Copper miners",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 71.96,
-          "chg_1d": -5.19,
-          "chg_1w": -1.55,
-          "chg_1m": -15.04
+          "last": 72.84,
+          "chg_1d": 1.22,
+          "chg_1w": -1.31,
+          "chg_1m": -15.21
         },
         {
           "symbol": "PICK",
           "name": "Metals and mining, global",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 54.79,
-          "chg_1d": -2.65,
-          "chg_1w": -0.18,
-          "chg_1m": -8.62
+          "last": 55.46,
+          "chg_1d": 1.22,
+          "chg_1w": 0.51,
+          "chg_1m": -8.33
         },
         {
           "symbol": "IGF",
           "name": "Infrastructure, global",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 65.8,
-          "chg_1d": 0.26,
-          "chg_1w": 1.78,
-          "chg_1m": 6.89
+          "last": 65.83,
+          "chg_1d": 0.05,
+          "chg_1w": 1.75,
+          "chg_1m": 6.59
         },
         {
           "symbol": "PAVE",
           "name": "Infrastructure, US",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 53.52,
-          "chg_1d": -1.78,
-          "chg_1w": 3.72,
-          "chg_1m": 1.94
+          "last": 54.45,
+          "chg_1d": 1.74,
+          "chg_1w": 4.45,
+          "chg_1m": 1.06
         },
         {
           "symbol": "FSLR",
           "name": "First Solar",
           "src": "Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 174.4,
-          "chg_1d": -1.41,
-          "chg_1w": 1.4,
-          "chg_1m": -0.43
+          "last": 182.05,
+          "chg_1d": 4.39,
+          "chg_1w": 8.27,
+          "chg_1m": 4.26
         },
         {
           "symbol": "ENPH",
           "name": "Enphase Energy",
           "src": "Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 25.65,
-          "chg_1d": -0.81,
-          "chg_1w": -18.83,
-          "chg_1m": -22.25,
-          "note": "Down 18.8% on the week and 22.3% on the month; catalyst not verified from a source."
+          "last": 27.93,
+          "chg_1d": 8.89,
+          "chg_1w": -8.0,
+          "chg_1m": -16.55,
+          "note": "Up 8.9% on the day."
         },
         {
           "symbol": "BE",
           "name": "Bloom Energy",
           "src": "NYSE (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 203.17,
-          "chg_1d": -8.61,
-          "chg_1w": 5.11,
-          "chg_1m": -26.65,
-          "note": "Up 5.1% on the week but down 26.6% on the month; fell 8.6% on the day."
+          "last": 196.25,
+          "chg_1d": -3.41,
+          "chg_1w": -3.76,
+          "chg_1m": -32.13,
+          "note": "Down 32.1% over the month."
         }
       ]
     },
@@ -2514,10 +2479,10 @@
           "region": "Americas",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 83.71,
-          "chg_1d": 1.91,
-          "chg_1w": 1.96,
-          "chg_1m": 10.52
+          "last": 85.03,
+          "chg_1d": 1.58,
+          "chg_1w": 3.64,
+          "chg_1m": 10.67
         },
         {
           "symbol": "BEP",
@@ -2525,10 +2490,10 @@
           "region": "Americas",
           "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 28.65,
-          "chg_1d": -1.34,
-          "chg_1w": 0.39,
-          "chg_1m": 1.81
+          "last": 30.05,
+          "chg_1d": 4.89,
+          "chg_1w": 5.22,
+          "chg_1m": 6.0
         },
         {
           "symbol": "ORSTED.CO",
@@ -2536,10 +2501,10 @@
           "region": "Europe",
           "src": "Nasdaq Copenhagen (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 131.9,
-          "chg_1d": -1.68,
-          "chg_1w": 0.23,
-          "chg_1m": -2.55,
+          "last": 135.1,
+          "chg_1d": 2.43,
+          "chg_1w": 2.62,
+          "chg_1m": -3.12,
           "note": "Priced in DKK."
         },
         {
@@ -2548,10 +2513,10 @@
           "region": "Europe",
           "src": "Nasdaq Copenhagen (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 189.25,
-          "chg_1d": -1.59,
-          "chg_1w": 1.97,
-          "chg_1m": -3.52,
+          "last": 191.8,
+          "chg_1d": 1.35,
+          "chg_1w": 2.7,
+          "chg_1m": -4.2,
           "note": "Priced in DKK."
         },
         {
@@ -2560,11 +2525,11 @@
           "region": "Europe",
           "src": "Euronext Paris (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 237.5,
-          "chg_1d": -4.08,
-          "chg_1w": 2.64,
-          "chg_1m": -18.66,
-          "note": "Down 18.7% on the month, 4.1% lower on the day. Priced in EUR."
+          "last": 240.45,
+          "chg_1d": 1.24,
+          "chg_1w": 2.02,
+          "chg_1m": -20.64,
+          "note": "Down 20.6% over the month."
         },
         {
           "symbol": "VIE.PA",
@@ -2573,9 +2538,9 @@
           "src": "Euronext Paris (via stockanalysis.com)",
           "tier": "aggregator",
           "last": 33.01,
-          "chg_1d": 0.49,
-          "chg_1w": 2.87,
-          "chg_1m": 7.14,
+          "chg_1d": 0.0,
+          "chg_1w": 1.76,
+          "chg_1m": 7.42,
           "note": "Priced in EUR."
         },
         {
@@ -2584,658 +2549,839 @@
           "region": "Americas",
           "src": "NYSE (via stockanalysis.com)",
           "tier": "aggregator",
-          "last": 92.4,
-          "chg_1d": 1.81,
-          "chg_1w": -15.03,
-          "chg_1m": -8.76,
-          "note": "Down 15.0% on the week after the 27-28 Oct drop; up 1.8% on the day. Catalyst not verified from a source."
+          "last": 97.26,
+          "chg_1d": 5.26,
+          "chg_1w": -10.14,
+          "chg_1m": -4.45,
+          "note": "Up 5.3% on the day."
         }
       ]
     }
   ],
   "headlines": [
     {
-      "story": "South Korea's October exports hit a record on chips",
-      "date": "2026-11-01",
-      "summary": "Exports reached $115.3 billion, up 93.7% on a year earlier, with semiconductor exports of $56.4 billion up 259%.",
+      "story": "Marvell agrees $115 billion all-stock deal for Lumentum",
+      "date": "2026-11-02",
+      "summary": "Marvell said it will buy optical-networking maker Lumentum in an all-stock deal valued at about $115 billion including debt.",
       "coverage": [
         {
-          "outlet": "The Korea Times",
+          "outlet": "Lumentum (SEC Form 8-K)",
+          "region": "Americas",
+          "title": "Lumentum Holdings Inc. - Form 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001633978/000119312526442758/d163169d8k.htm",
+          "kind": "primary"
+        },
+        {
+          "outlet": "The Globe and Mail",
+          "region": "Americas",
+          "title": "Marvell to buy Lumentum in $115-billion deal in AI data-centre bet",
+          "url": "https://www.theglobeandmail.com/business/article-marvell-to-buy-lumentum-in-115-billion-deal-in-ai-data-centre-bet/",
+          "kind": "press"
+        },
+        {
+          "outlet": "The Elec",
           "region": "East Asia",
-          "title": "Korea's monthly exports hit $115.3 bil. in Oct. on strong chip sales",
-          "url": "https://www.koreatimes.co.kr/amp/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales",
+          "title": "Marvell to Acquire Lumentum for $115 Billion in All-Stock Deal",
+          "url": "https://www.thelec.net/news/articleView.html?idxno=15221",
+          "kind": "press"
+        },
+        {
+          "outlet": "MarketScreener",
+          "region": "Europe",
+          "title": "Marvell to Acquire Lumentum in $115 Billion All-Stock Deal",
+          "url": "https://www.marketscreener.com/news/marvell-to-acquire-lumentum-in-115-billion-all-stock-deal-ce785fd9d88bf625",
+          "kind": "press"
+        }
+      ],
+      "overlap": [
+        {
+          "symbol": "AVGO",
+          "strength": "loose",
+          "reason": "Deal positions Marvell against Broadcom in optical networking."
+        },
+        {
+          "symbol": "NVDA",
+          "strength": "loose",
+          "reason": "AI data-centre networking supply chain."
+        }
+      ]
+    },
+    {
+      "story": "Oil falls more than 7% on US-Iran peace-talk signals",
+      "date": "2026-11-02",
+      "summary": "Brent and WTI had their biggest daily drop since July as Iran signalled openness to talks with the US and Qatar-mediated contacts continued.",
+      "coverage": [
+        {
+          "outlet": "CNBC",
+          "region": "Americas",
+          "title": "Crude oil prices sell off more than 7% on Iran peace talk hopes ahead of U.S. midterms",
+          "url": "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
+          "kind": "press"
+        },
+        {
+          "outlet": "Le Private Banker",
+          "region": "Europe",
+          "title": "Oil Sinks More Than 7% and WTI Breaks Below $100 as Iran Signals Room for Peace Talks",
+          "url": "https://leprivatebanker.com/2026/11/02/oil-sinks-more-than-7-and-wti-breaks-below-100-as-iran-signals-room-for-peace-talks/",
           "kind": "press"
         },
         {
           "outlet": "Seoul Economic Daily",
           "region": "East Asia",
-          "title": "Korea's October Exports Surge 93.7% as $1 Trillion Year Nears",
-          "url": "https://en.sedaily.com/finance/2026/11/01/koreas-october-exports-surge-937-percent-as-1-trillion-year",
-          "kind": "press"
-        },
-        {
-          "outlet": "Times of Saudia",
-          "region": "Middle East and Africa",
-          "title": "South Korea's exports hit record $115.3 billion on chip boom",
-          "url": "https://timesofsaudia.com/south-korea-exports-record-115-3-billion-chips/",
+          "title": "Oil Plunges 7% as Trump Says Iran Deal \"Could Happen\"",
+          "url": "https://en.sedaily.com/international/2026/11/03/oil-prices-plunge-7-percent-on-us-iran-talks-hopes-wti-near",
           "kind": "press"
         }
       ],
-      "overlap": [
-        {
-          "symbol": "000660.KS",
-          "strength": "direct",
-          "reason": "Memory exports drive SK hynix revenue."
-        },
-        {
-          "symbol": "005930.KS",
-          "strength": "direct",
-          "reason": "Samsung is the other main chip exporter."
-        }
-      ]
-    },
-    {
-      "story": "Global stocks steady after Friday's tech selloff",
-      "date": "2026-11-02",
-      "summary": "Asian markets were mixed and US futures rose after Friday's worst US session since June, driven by AI-spending worries and a sharp Intel drop.",
-      "coverage": [
-        {
-          "outlet": "Associated Press (via KSAT)",
-          "region": "Americas",
-          "title": "Global shares are mixed and US futures advance, while oil prices fall nearly 4%",
-          "url": "https://www.ksat.com/business/2026/11/02/asian-shares-are-mixed-and-us-futures-advance-while-oil-prices-retreat/",
-          "kind": "press"
-        },
-        {
-          "outlet": "Saxo Bank",
-          "region": "Europe",
-          "title": "Market Quick Take - Markets find calm after Friday turmoil - 2 November 2026",
-          "url": "https://www.home.saxo/content/articles/macro/market-quick-take---markets-find-calm-after-friday-turmoil----2-november-2026-02112026",
-          "kind": "press"
-        },
-        {
-          "outlet": "SWI swissinfo.ch",
-          "region": "Europe",
-          "title": "Stock Selloff Eases in Asian Trade, Oil Declines: Markets Wrap",
-          "url": "https://swissinfo.ch/eng/stock-selloff-eases-in-asian-trade,-oil-declines:-markets-wrap/92310840",
-          "kind": "press"
-        }
-      ],
-      "overlap": [
-        {
-          "symbol": "INTC",
-          "strength": "direct",
-          "reason": "Intel fell on a weak outlook."
-        },
-        {
-          "symbol": "^IXIC",
-          "strength": "direct",
-          "reason": "Nasdaq led Friday's decline."
-        }
-      ]
-    },
-    {
-      "story": "Oil drops on reported US-Iran talks over Hormuz",
-      "date": "2026-11-02",
-      "summary": "Brent fell to about $110 after Iran's foreign minister said negotiators in Qatar were discussing a proposal that could reopen the Strait of Hormuz.",
-      "coverage": [
-        {
-          "outlet": "Associated Press (via KSAT)",
-          "region": "Americas",
-          "title": "Global shares are mixed and US futures advance, while oil prices fall nearly 4%",
-          "url": "https://www.ksat.com/business/2026/11/02/asian-shares-are-mixed-and-us-futures-advance-while-oil-prices-retreat/",
-          "kind": "press"
-        },
-        {
-          "outlet": "HDFC Sky",
-          "region": "South Asia",
-          "title": "Gift Nifty Signals Flat-Positive Open as Asia Mixed, Oil Slides",
-          "url": "https://hdfcsky.com/news/global-markets-today-november-2-2026-us-european-futures-rise-asia-mixed-oil-prices-ease-ahead-of-indian-market-opening",
-          "kind": "press"
-        }
-      ],
+      "framing": "Outlets lead with the price drop and Trump's deal comment; one adds that Iran's military was told to prepare a response, so the war premium could return.",
       "overlap": [
         {
           "symbol": "BZ=F",
           "strength": "direct",
-          "reason": "Brent is the benchmark that fell."
+          "reason": "Brent settled about 7.6% lower."
         },
         {
           "symbol": "CL=F",
           "strength": "direct",
-          "reason": "US crude fell alongside Brent."
+          "reason": "WTI fell back below $100."
+        },
+        {
+          "symbol": "XOM",
+          "strength": "loose",
+          "reason": "Energy sector fell on lower crude."
         }
       ]
     },
     {
-      "story": "EU gas storage at lowest level for the date since 2011",
-      "date": "2026-10-28",
-      "summary": "EU storage was 74.93% full on 26 October versus 82.9% a year earlier, as prices hit a four-year high.",
+      "story": "UN biodiversity summit COP17 ends in Armenia with a fragile deal",
+      "date": "2026-10-31",
+      "summary": "Countries ended COP17 after a two-week deadlock, inviting wealthy emerging economies to act as donors, while observers said money and detail were missing.",
       "coverage": [
         {
-          "outlet": "TASS",
+          "outlet": "Climate Home News",
           "region": "Europe",
-          "title": "Europe struggles to top up gas storage at four-year high prices ahead of winter",
-          "url": "https://tass.com/economy/2209235",
+          "title": "COP17 delivers fragile deal to boost conservation and funding for nature",
+          "url": "https://www.climatechangenews.com/2026/10/31/cop17-delivers-fragile-deal-scaling-up-biodiversity-conservation-armenia-cbd/",
+          "kind": "press"
+        },
+        {
+          "outlet": "Dialogue Earth",
+          "region": "Global",
+          "title": "COP17: Yerevan pathway for nature leaves out the money and the detail",
+          "url": "https://dialogue.earth/en/nature/cop17-yerevan-pathway-for-nature-leaves-out-the-money-and-the-detail/",
+          "kind": "press"
+        },
+        {
+          "outlet": "Mongabay",
+          "region": "Global",
+          "title": "Indigenous peoples and local communities solidify decision-making powers at COP17",
+          "url": "https://news.mongabay.com/short-article/2026/11/indigenous-peoples-and-local-communities-solidify-decision-making-powers-at-cop17/",
+          "kind": "press"
+        }
+      ],
+      "framing": "Headlines differ in emphasis: one leads with the funding deal, one with the missing money and detail, one with Indigenous decision-making powers.",
+      "overlap": []
+    },
+    {
+      "story": "NRC completes safety review of X-energy Xe-100 plant in Texas",
+      "date": "2026-11-02",
+      "summary": "The US NRC finished its safety review of X-energy's Xe-100 for the Long Mott site, with a construction permit decision expected soon.",
+      "coverage": [
+        {
+          "outlet": "World Nuclear News",
+          "region": "Global",
+          "title": "Texas SMR plant moves to final permitting stage",
+          "url": "https://www.world-nuclear-news.org/articles/texas-smr-plant-moves-to-final-permitting-stage",
+          "kind": "press"
+        },
+        {
+          "outlet": "Quiver Quantitative",
+          "region": "Americas",
+          "title": "X energy Completes NRC Safety Review for Xe-100 Reactor Construction Permit Application",
+          "url": "https://www.quiverquant.com/news/X-energy+Completes+NRC+Safety+Review+for+Xe-100+Reactor+Construction+Permit+Application",
           "kind": "press"
         }
       ],
       "overlap": [
         {
-          "symbol": "TTF=F",
-          "strength": "direct",
-          "reason": "European gas benchmark."
+          "symbol": "SMR",
+          "strength": "loose",
+          "reason": "Small-reactor licensing read-through."
+        },
+        {
+          "symbol": "OKLO",
+          "strength": "loose",
+          "reason": "Advanced-reactor licensing read-through."
+        },
+        {
+          "symbol": "DOW",
+          "strength": "loose",
+          "reason": "Dow hosts the Long Mott project."
         }
       ]
     }
   ],
   "reading": [
     {
-      "source": "SemiAnalysis",
-      "title": "GDPx: Measuring Frontier Model Capabilities Across the Most Valuable Domains",
-      "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
-      "published": "2026-11-02",
-      "source_url": "https://newsletter.semianalysis.com",
-      "topic": "Chips",
-      "access": "partial",
-      "summary": "Introduces a benchmark of frontier AI model capabilities across domains including hardware and chip design, cyber, finance, legal, quant trading and software engineering; the feed text ends in the sample-task section.",
-      "overlap": []
-    },
-    {
-      "source": "Irrational Analysis",
-      "title": "Intel Q3 2026: Dead Inside",
-      "url": "https://irrationalanalysis.substack.com/p/intel-q3-2026-dead-inside",
-      "published": "2026-10-30",
-      "source_url": "https://irrationalanalysis.substack.com",
-      "topic": "Chips",
-      "access": "full",
-      "summary": "Commentary on Intel's third-quarter results, arguing its explanation for shifting wafer starts from client to datacenter reflects a planning problem rather than substrate or packaging limits.",
-      "overlap": [
-        {
-          "symbol": "INTC",
-          "strength": "direct",
-          "reason": "Piece is about Intel's Q3 2026 results and wafer-start planning."
-        }
-      ]
-    },
-    {
       "source": "ChinaTalk",
-      "title": "Korea's Stock Market Crashed $1 Trillion. What Does That Mean for the Global AI Race?",
-      "url": "https://www.chinatalk.media/p/koreas-stock-market-crashed-1-trillion",
-      "published": "2026-11-01",
+      "title": "WarTalk: Kofman on Why Russia's Doing Badly",
+      "url": "https://www.chinatalk.media/p/wartalk-kofman-on-starlink-what-ukraine",
+      "published": "2026-11-02",
       "source_url": "https://www.chinatalk.media",
       "topic": "China and Asia",
       "access": "full",
-      "summary": "Examines how Korean market swings track Samsung and SK hynix memory dominance, the Korea discount, and the June-July 2026 crash with spillover into the US-China tech race.",
-      "overlap": [
-        {
-          "symbol": "EWY",
-          "strength": "direct",
-          "reason": "Covers the Korean equity market crash."
-        },
-        {
-          "symbol": "000660.KS",
-          "strength": "direct",
-          "reason": "SK hynix memory dominance is central to the analysis."
-        },
-        {
-          "symbol": "005930.KS",
-          "strength": "direct",
-          "reason": "Samsung memory dominance is central to the analysis."
-        }
-      ]
+      "summary": "Conversation on how Ukraine and Russia rebuilt their armies around drones, deception and long-range strike.",
+      "overlap": []
     },
     {
       "source": "Hello China Tech",
-      "title": "Two Chinese clouds, one IDC report, two first places",
-      "url": "https://hellochinatech.com/p/weekly-recap-2026-11-01",
-      "published": "2026-11-01",
+      "title": "China's AI Job Rules Guard the Exit",
+      "url": "https://hellochinatech.com/p/china-ai-layoff-rules",
+      "published": "2026-11-03",
       "source_url": "https://hellochinatech.com",
       "topic": "China and Asia",
-      "access": "full",
-      "summary": "Free weekly recap: two Chinese cloud providers each claim first place from the same IDC report, plus a download-count dataset question and state investors on most of 558 company investor lists.",
+      "access": "partial",
+      "summary": "Beijing's rules put a cost on dismissing workers that AI replaces, while hiring studies show weaker demand for junior staff.",
+      "overlap": []
+    },
+    {
+      "source": "Hello China Tech",
+      "title": "Tencent's WorkBuddy and the Second Contract",
+      "url": "https://hellochinatech.com/p/tencent-workbuddy-enterprise-sales",
+      "published": "2026-11-02",
+      "source_url": "https://hellochinatech.com",
+      "topic": "China and Asia",
+      "access": "partial",
+      "summary": "A procurement notice and a reported partner count show Tencent's push into enterprise sales.",
       "overlap": []
     },
     {
       "source": "Dialogue Earth",
-      "title": "The Philippines' 'solar surge' leaves many Filipinos behind",
-      "url": "https://dialogue.earth/en/energy/the-philippines-solar-surge-leaves-many-filipinos-behind/",
-      "published": "2026-11-01",
+      "title": "COP17: Yerevan pathway for nature leaves out the money and the detail",
+      "url": "https://dialogue.earth/en/nature/cop17-yerevan-pathway-for-nature-leaves-out-the-money-and-the-detail/",
+      "published": "2026-11-03",
       "source_url": "https://dialogue.earth/en/",
       "topic": "Climate and policy",
       "access": "full",
-      "summary": "Rising electricity prices push Filipinos toward solar, but upfront costs keep it out of reach for the households that would save the most.",
-      "overlap": [
-        {
-          "symbol": "EPHE",
-          "strength": "direct",
-          "reason": "Philippines energy and solar adoption is the subject."
-        },
-        {
-          "symbol": "TAN",
-          "strength": "loose",
-          "reason": "Solar demand read-through."
-        }
-      ]
+      "summary": "UN biodiversity summit in Armenia ended with few concrete steps on drivers of loss, as disagreements exposed a gap between targets and action.",
+      "overlap": []
     },
     {
-      "source": "Semiconductor Engineering",
-      "title": "Shift Left Is Becoming A System-Level Problem",
-      "url": "https://semiengineering.com/shift-left-is-becoming-a-system-level-problem/",
-      "published": "2026-11-02",
-      "source_url": "https://semiengineering.com",
-      "topic": "Chips",
+      "source": "Dialogue Earth",
+      "title": "Can China's clean power stations cope with a changed climate?",
+      "url": "https://dialogue.earth/en/energy/can-chinas-clean-power-stations-cope-with-a-changed-climate/",
+      "published": "2026-11-03",
+      "source_url": "https://dialogue.earth/en/",
+      "topic": "Climate and policy",
       "access": "full",
-      "summary": "Round table on validating hardware, software and physical constraints earlier in design as complexity rises, and how fragmented workflows make that difficult.",
+      "summary": "Experts urge tougher equipment, smarter siting and flexible grids as extreme weather and shifting wind and sun patterns hit clean power.",
       "overlap": []
     },
     {
       "source": "Semiconductor Engineering",
-      "title": "Putting AI To The Test",
-      "url": "https://semiengineering.com/putting-ai-to-the-test/",
+      "title": "Chip Industry Technical Paper Roundup: Nov. 3",
+      "url": "https://semiengineering.com/chip-industry-technical-paper-roundup-nov-3/",
+      "published": "2026-11-03",
+      "source_url": "https://semiengineering.com",
+      "topic": "Chips",
+      "access": "partial",
+      "summary": "Roundup of new papers on quantum interconnects, 2.5D/3D GPU embodied emissions, secure prefetching, analog placement and flip-chip defect detection.",
+      "overlap": []
+    },
+    {
+      "source": "Semiconductor Engineering",
+      "title": "AI Image Enhancement Improves Detection Of Flip-Chip Interconnect Defects (MCL, PVA TePla, ASE)",
+      "url": "https://semiengineering.com/ai-image-enhancement-improves-detection-of-flip-chip-interconnect-defects-mcl-pva-tepla-ase/",
       "published": "2026-11-02",
       "source_url": "https://semiengineering.com",
       "topic": "Chips",
+      "access": "partial",
+      "summary": "Researchers propose an AI image-enhancement workflow for acoustic microscopy to spot cracks in extreme low-k flip-chip layers.",
+      "overlap": []
+    },
+    {
+      "source": "Semiconductor Engineering",
+      "title": "3D Integration Reduces Embodied-Emissions Impact Of GPU Scaling (imec, VUB)",
+      "url": "https://semiengineering.com/3d-integration-reduces-embodied-emissions-impact-of-gpu-scaling-imec-vub/",
+      "published": "2026-11-02",
+      "source_url": "https://semiengineering.com",
+      "topic": "Chips",
+      "access": "partial",
+      "summary": "imec and VUB estimate doubling compute and HBM in a chipletized GPU raises embodied emissions 89% with 3D versus 141% with 2.5D.",
+      "overlap": [
+        {
+          "symbol": "TSM",
+          "strength": "loose",
+          "reason": "Advanced packaging and 3D integration read-through."
+        }
+      ]
+    },
+    {
+      "source": "EE Times",
+      "title": "Canada's Quantum Sector Sets Sights on Commercialization",
+      "url": "https://www.eetimes.com/canadas-quantum-sector-sets-sights-on-commercialization/",
+      "published": "2026-11-02",
+      "source_url": "https://www.eetimes.com",
+      "topic": "Chips",
+      "access": "partial",
+      "summary": "Defense procurement, patient capital and shared infrastructure are presented as ways to help Canadian quantum firms scale at home.",
+      "overlap": []
+    },
+    {
+      "source": "EE Times",
+      "title": "Andes Waits For Market Momentum For Cuzco CPU",
+      "url": "https://www.eetimes.com/andes-waits-for-market-momentum-for-cuzco-cpu/",
+      "published": "2026-11-02",
+      "source_url": "https://www.eetimes.com",
+      "topic": "Chips",
+      "access": "partial",
+      "summary": "Andes slowed work on its high-end Cuzco RISC-V CPU to move engineers to a fast-growing AI business, its CTO said.",
+      "overlap": []
+    },
+    {
+      "source": "EE Times",
+      "title": "Jevons' Paradox and the Silicon Roadmap",
+      "url": "https://www.eetimes.com/jevon-paradox-and-the-silicon-roadmap/",
+      "published": "2026-11-02",
+      "source_url": "https://www.eetimes.com",
+      "topic": "Chips",
+      "access": "partial",
+      "summary": "Suggests AI usage may grow as models and hardware get more efficient, with the silicon roadmap deciding which chips lose value.",
+      "overlap": []
+    },
+    {
+      "source": "Latitude Media",
+      "title": "Could AI swarms take down the grid?",
+      "url": "https://www.latitudemedia.com/news/open-circuit-could-ai-swarms-take-down-the-grid/",
+      "published": "2026-11-02",
+      "source_url": "https://www.latitudemedia.com",
+      "topic": "Energy",
       "access": "full",
-      "summary": "Opinion piece asking who verifies the verifier, on checking AI-assisted chip verification tools and their outputs.",
+      "summary": "Looks at how AI lowers the barrier to attacking critical infrastructure and how worried people should be.",
       "overlap": []
     },
     {
       "source": "Canary Media",
-      "title": "Boise plans to tap its geothermal network to heat 300 affordable homes",
-      "url": "https://www.canarymedia.com/articles/geothermal/boise-geothermal-network-affordable-homes",
-      "published": "2026-11-02",
+      "title": "Why batteries, not gas plants, should be data centers' first choice",
+      "url": "https://www.canarymedia.com/articles/batteries/batteries-not-gas-plants-for-data-centers",
+      "published": "2026-11-03",
       "source_url": "https://www.canarymedia.com",
       "topic": "Energy",
       "access": "partial",
-      "summary": "Boise already runs the largest US geothermal heating system, serving about 100 buildings, and plans to extend it to 300 affordable homes with a semiconductor company involved.",
+      "summary": "Argues batteries can power data centers more cheaply, cleanly and quickly than new gas plants, which could be wasted if demand falls short.",
+      "overlap": []
+    },
+    {
+      "source": "Canary Media",
+      "title": "Trump cuts have left tribes without millions of dollars for clean energy",
+      "url": "https://www.canarymedia.com/articles/climate-justice/trump-cuts-tribes-funds-clean-energy",
+      "published": "2026-11-03",
+      "source_url": "https://www.canarymedia.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Reported by Grist: federal funding cuts leave tribal communities without clean-energy money, starting with diesel-dependent Kotzebue, Alaska.",
       "overlap": []
     },
     {
       "source": "Utility Dive",
-      "title": "States must take a critical eye to gas plants proposed over clean energy",
-      "url": "https://www.utilitydive.com/news/utilities-want-fossil-plants-more-expensive-clean-energy-regulators/833301/",
-      "published": "2026-10-30",
+      "title": "Mitsubishi Electric seeks to expand North American grid foothold",
+      "url": "https://www.utilitydive.com/news/mitsubishi-electric-seeks-to-expand-north-american-grid-foothold/873463/",
+      "published": "2026-11-02",
       "source_url": "https://www.utilitydive.com",
       "topic": "Energy",
       "access": "partial",
-      "summary": "Experts from Environmental Defense Fund and Minnesota's CURE argue regulators should ask whether clean alternatives beat each proposed utility gas turbine, not only whether the gas plant is justified.",
+      "summary": "Mitsubishi Electric agreed in August to pay $1.4 billion for PCI Energy Solutions, whose platform handles roughly 60% of US generation.",
       "overlap": []
     },
     {
       "source": "Utility Dive",
-      "title": "BAAJA gives federal regulators 'bigger hammer' to break transmission blocks",
-      "url": "https://www.utilitydive.com/news/baaja-permitting-reform-interregional-transmission-harder/873041/",
-      "published": "2026-10-29",
+      "title": "Dominion sees $137M net income boost from rate increase",
+      "url": "https://www.utilitydive.com/news/dominion-sees-137m-net-income-boost-from-rate-increase/873458/",
+      "published": "2026-11-02",
       "source_url": "https://www.utilitydive.com",
       "topic": "Energy",
       "access": "partial",
-      "summary": "Rep. Josh Harder says the bill's cost-sharing elements are probably its most important part, meant to encourage collaboration on interregional transmission.",
+      "summary": "On its Q3 call Dominion credited strong sales, mild weather and execution for results.",
+      "overlap": []
+    },
+    {
+      "source": "Utility Dive",
+      "title": "Exelon eyes $8B in energy storage, partly to address PJM supply crunch",
+      "url": "https://www.utilitydive.com/news/exelon-energy-storage-new-jersey-earnings/873423/",
+      "published": "2026-11-02",
+      "source_url": "https://www.utilitydive.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Exelon argues PJM is not adding generation fast enough and plans storage and transmission investment to help close the gap.",
       "overlap": []
     },
     {
       "source": "Oilprice.com",
-      "title": "Oil Prices Plunge as Draft Proposal to End U.S.-Iran War is Circulated",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-as-Draft-Proposal-to-End-US-Iran-War-is-Circulated.html",
-      "published": "2026-11-02",
+      "title": "Brent Flash Crashes $6 Before Rebounding Towards $104",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Flash-Crashes-6-Before-Rebounding-Towards-104.html",
+      "published": "2026-11-03",
       "source_url": "https://oilprice.com",
       "topic": "Energy",
       "access": "partial",
-      "summary": "Oil fell about 3% in Asian trade on hopes for a US-Iran peace deal after Iranian negotiators left Qatar and a draft proposal began circulating.",
+      "summary": "Brent fell more than $6 on Tuesday morning before recovering to about $104 amid conflicting reports on US-Iran peace talks.",
       "overlap": [
         {
           "symbol": "BZ=F",
           "strength": "direct",
-          "reason": "Brent fell on peace-deal hopes."
-        },
+          "reason": "Covers the Brent move."
+        }
+      ]
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "Dubai Benchmark Slips Into Contango for the First Time Since July",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Dubai-Benchmark-Slips-Into-Contango-for-the-First-Time-Since-July.html",
+      "published": "2026-11-03",
+      "source_url": "https://oilprice.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Rising Middle East flows exceed demand for the first time since early July as Gulf producers speed ship-to-ship transfers.",
+      "overlap": [
+        {
+          "symbol": "BZ=F",
+          "strength": "loose",
+          "reason": "Crude benchmark structure."
+        }
+      ]
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "U.S. Launches Secret Strikes on Iran Ahead of Midterm Elections",
+      "url": "https://oilprice.com/Energy/Energy-General/US-Launches-Secret-Strikes-on-Iran-Ahead-of-Midterm-Elections.html",
+      "published": "2026-11-03",
+      "source_url": "https://oilprice.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "US officials confirmed strikes on Iran's Qeshm Island on 2 November, part of previously undisclosed operations before the midterms.",
+      "overlap": [
         {
           "symbol": "CL=F",
-          "strength": "direct",
-          "reason": "WTI crude moved with the same news."
+          "strength": "loose",
+          "reason": "Iran conflict drives crude prices."
         }
       ]
     },
     {
-      "source": "Oilprice.com",
-      "title": "ADNOC Chief Says World Has \"Eroded Its Supply Buffers\"",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Chief-Says-World-Has-Eroded-Its-Supply-Buffers.html",
+      "source": "farmdoc daily",
+      "title": "Seed, Fertilizer, and Pesticide Costs: Comparing U.S. and Brazilian Soybean Farms",
+      "url": "https://farmdocdaily.illinois.edu/2026/11/seed-fertilizer-and-pesticide-costs-comparing-u-s-and-brazilian-soybean-farms.html",
       "published": "2026-11-02",
-      "source_url": "https://oilprice.com",
-      "topic": "Energy",
+      "source_url": "https://farmdocdaily.illinois.edu",
+      "topic": "Food and farm",
       "access": "partial",
-      "summary": "ADNOC's CEO said about 1 billion barrels have been drawn from global inventories since Hormuz disruptions and called for more resilient storage and refining near consumers.",
+      "summary": "Opens with a Purdue-CME survey where 80% of producers worry about US soybean competitiveness versus Brazil, then compares input costs.",
       "overlap": [
         {
-          "symbol": "BZ=F",
+          "symbol": "CTVA",
           "strength": "loose",
-          "reason": "Inventory draws bear on crude prices."
-        },
-        {
-          "symbol": "UAE",
-          "strength": "loose",
-          "reason": "ADNOC is the UAE state oil company."
+          "reason": "Seed and crop-protection costs."
         }
       ]
     },
     {
-      "source": "Oilprice.com",
-      "title": "Blackstone-Led Investors Buy into LNG Canada for $3.1 Billion",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Blackstone-Led-Investors-Buy-into-LNG-Canada-for-31-Billion.html",
-      "published": "2026-11-02",
-      "source_url": "https://oilprice.com",
-      "topic": "Energy",
+      "source": "farmdoc daily",
+      "title": "Convergence of Financial Performance",
+      "url": "https://farmdocdaily.illinois.edu/2026/10/convergence-of-financial-performance.html",
+      "published": "2026-10-30",
+      "source_url": "https://farmdocdaily.illinois.edu",
+      "topic": "Food and farm",
       "access": "partial",
-      "summary": "Blackstone funds and Canadian pension investors agreed to buy a 49.9% stake in a Mitsubishi unit holding Mitsubishi's 15% stake in LNG Canada, for $3.1 billion in total.",
-      "overlap": [
-        {
-          "symbol": "LNG",
-          "strength": "loose",
-          "reason": "LNG export asset deal; read-through for LNG sector."
-        }
-      ]
+      "summary": "Examines operating profit margins, asset turnover and related measures across farm sizes.",
+      "overlap": []
     },
     {
-      "source": "MINING.COM",
-      "title": "Buried sediments prove Romans mined gold in Pyrenees",
-      "url": "https://www.mining.com/buried-sediments-prove-romans-mined-gold-in-pyrenees/",
-      "published": "2026-10-26",
-      "source_url": "https://www.mining.com",
-      "topic": "Metals and minerals",
-      "access": "full",
-      "summary": "Researchers dated a large hydraulic gold mining complex in Catalonia using buried sediments, showing how ancient Romans extracted precious metals in the Pyrenees.",
+      "source": "farmdoc daily",
+      "title": "Smaller Loans Drive Decline in Non-Real Estate Farm Lending at Commercial Banks in Q3 2026",
+      "url": "https://farmdocdaily.illinois.edu/2026/10/smaller-loans-drive-decline-in-non-real-estate-farm-lending-at-commercial-banks-in-q3-2026.html",
+      "published": "2026-10-29",
+      "source_url": "https://farmdocdaily.illinois.edu",
+      "topic": "Food and farm",
+      "access": "partial",
+      "summary": "Non-real-estate farm loan volume at commercial banks fell 25.0% year on year in Q3, mainly on smaller average loans.",
       "overlap": []
     },
     {
       "source": "AgFunder News",
-      "title": "Mark Golder: 'Cacao-based chocolate will become increasingly premium, and for everything else, there's Win-Win'",
-      "url": "https://agfundernews.com/mark-golder-cacao-based-chocolate-will-become-increasingly-premium-and-for-everything-else-theres-win-win",
-      "published": "2026-10-29",
+      "title": "Beware 'pilots to nowhere': Aleph Eins Capital on avoiding corporate agtech traps",
+      "url": "https://agfundernews.com/beware-pilots-to-nowhere-aleph-eins-capital-on-avoiding-corporate-agtech-traps",
+      "published": "2026-11-03",
       "source_url": "https://agfundernews.com",
       "topic": "Food and farm",
       "access": "full",
-      "summary": "Win-Win's chief executive says cocoa price volatility, more than the price level itself, is what makes planning hard for chocolate buyers.",
+      "summary": "An investor advises startups to refuse corporate exclusivity deals and tie pilots to concrete purchases.",
+      "overlap": []
+    },
+    {
+      "source": "AgFunder News",
+      "title": "Exedy Drones enters race to build American-made spray drones amid supply crunch",
+      "url": "https://agfundernews.com/exedy-drones-opens-reservations-amid-us-spray-drone-shakeup",
+      "published": "2026-11-02",
+      "source_url": "https://agfundernews.com",
+      "topic": "Food and farm",
+      "access": "full",
+      "summary": "Michigan-based Exedy targets spring 2027 for first deliveries of its Ayre CX spray drone, subject to readiness milestones.",
+      "overlap": []
+    },
+    {
+      "source": "AgFunder News",
+      "title": "Fooditive in advanced talks to commercialize low-cal rare sugar 5-KDF",
+      "url": "https://agfundernews.com/fooditive-in-advanced-talks-to-commercialize-low-cal-rare-sugar-5-kdf",
+      "published": "2026-11-02",
+      "source_url": "https://agfundernews.com",
+      "topic": "Food and farm",
+      "access": "full",
+      "summary": "Fooditive tested production at 75,000-litre scale and seeks licensing partners while awaiting an FDA decision.",
       "overlap": []
     },
     {
       "source": "gCaptain",
-      "title": "Pakistan LNG Cargo Attacked Near Hormuz Had Iranian Approval",
-      "url": "https://gcaptain.com/pakistan-lng-cargo-attacked-near-hormuz-had-iranian-approval/",
+      "title": "Alternative-Fuel Ship Orders Outpace Port Bunkering Infrastructure, Lloyd's Register Warns",
+      "url": "https://gcaptain.com/alternative-fuel-ship-orders-outpace-port-bunkering-infrastructure-lloyds-register-warns/",
       "published": "2026-11-02",
       "source_url": "https://gcaptain.com",
       "topic": "Shipping and logistics",
       "access": "partial",
-      "summary": "Pakistan reportedly negotiated safe passage with Iran for the LNG carrier Al Mayeda before it was attacked near the Strait of Hormuz.",
-      "overlap": [
-        {
-          "symbol": "JKM",
-          "strength": "loose",
-          "reason": "Attack on an LNG carrier near Hormuz bears on Asian LNG supply routes."
-        },
-        {
-          "symbol": "TTF=F",
-          "strength": "loose",
-          "reason": "Gulf LNG disruption feeds into European gas pricing."
-        }
-      ]
-    },
-    {
-      "source": "gCaptain",
-      "title": "EU Retreats From Arctic Oil Ban Language In Strategy Draft",
-      "url": "https://gcaptain.com/eu-retreats-from-arctic-oil-ban-language-in-strategy-draft/",
-      "published": "2026-11-01",
-      "source_url": "https://gcaptain.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "The EU appears to be easing its opposition to oil and gas production in polar areas, while still calling for some restrictions, according to a strategy draft.",
-      "overlap": [
-        {
-          "symbol": "EQNR",
-          "strength": "loose",
-          "reason": "Norwegian Barents Sea drilling is among the activity affected by Arctic policy."
-        }
-      ]
-    },
-    {
-      "source": "gCaptain",
-      "title": "Venture Global Begins Supplying Plaquemines Customers Under Long-Term LNG Contracts",
-      "url": "https://gcaptain.com/venture-global-begins-supplying-plaquemines-customers-under-long-term-lng-contracts/",
-      "published": "2026-11-01",
-      "source_url": "https://gcaptain.com",
-      "topic": "Shipping and logistics",
-      "access": "partial",
-      "summary": "Shell became the first buyer to receive LNG under a long-term contract from Venture Global's Plaquemines plant in Louisiana after Phase 1 commissioning.",
-      "overlap": [
-        {
-          "symbol": "SHEL",
-          "strength": "direct",
-          "reason": "Shell is named as the first long-term contract buyer."
-        },
-        {
-          "symbol": "LNG",
-          "strength": "loose",
-          "reason": "Read-through on US LNG export capacity."
-        }
-      ]
-    },
-    {
-      "source": "Container News",
-      "title": "ESL expands Far East-Africa network with FAX2 and FAX3 services",
-      "url": "https://container-news.com/esl-expands-far-east-africa-network-with-fax2-and-fax3-services/",
-      "published": "2026-11-02",
-      "source_url": "https://container-news.com",
-      "topic": "Shipping and logistics",
-      "access": "full",
-      "summary": "Emirates Shipping Line will launch two services linking Chinese ports with East and Southeast Africa: FAX2 to Mombasa via Port Klang and FAX3 from Shanghai to Maputo.",
-      "overlap": [
-        {
-          "symbol": "SCFI",
-          "strength": "loose",
-          "reason": "New China-origin capacity on container lanes."
-        }
-      ]
-    },
-    {
-      "source": "Container News",
-      "title": "Maersk revises terminal handling charges in Dili",
-      "url": "https://container-news.com/maersk-revises-terminal-handling-charges-in-dili/",
-      "published": "2026-11-02",
-      "source_url": "https://container-news.com",
-      "topic": "Shipping and logistics",
-      "access": "full",
-      "summary": "Maersk is changing origin and destination terminal handling charges for Dili cargo from 1 December 2026, with a rate table running from US$400 to US$920 per container.",
-      "overlap": [
-        {
-          "symbol": "MAERSK-B.CO",
-          "strength": "direct",
-          "reason": "Maersk surcharge change."
-        }
-      ]
-    },
-    {
-      "source": "Container News",
-      "title": "MSC Hannah III rescues 10 crew from sinking vessel off Cyprus",
-      "url": "https://container-news.com/msc-hannah-iii-rescues-10-crew-from-sinking-vessel-off-cyprus/",
-      "published": "2026-11-02",
-      "source_url": "https://container-news.com",
-      "topic": "Shipping and logistics",
-      "access": "full",
-      "summary": "MSC Hannah III rescued all 10 crew of the Tanzanian-flagged AS Dream after it began sinking about 90 nautical miles west of Cyprus; Cypriot services coordinated the response.",
+      "summary": "A Lloyd's Register report says owners order alternative-fuel ships faster than ports can build fuel supply.",
       "overlap": []
+    },
+    {
+      "source": "gCaptain",
+      "title": "Hanwha Philly Shipyard Names New President as U.S. Navy Expansion Accelerates",
+      "url": "https://gcaptain.com/hanwha-philly-shipyard-names-new-president-as-u-s-navy-expansion-accelerates/",
+      "published": "2026-11-02",
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Shipbuilding veteran Hyuk Kim becomes president of Hanwha Philly Shipyard as it pursues US Navy work.",
+      "overlap": []
+    },
+    {
+      "source": "Hellenic Shipping News",
+      "title": "Ardmore Shipping: Decarbonization through the details",
+      "url": "https://www.hellenicshippingnews.com/ardmore-shipping-decarbonization-through-the-details/",
+      "published": "2026-11-02",
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Excerpt notes tightening rules (EU ETS, FuelEU Maritime, IMO CII) with Net Zero Framework talks ongoing.",
+      "overlap": [
+        {
+          "symbol": "EUA",
+          "strength": "loose",
+          "reason": "EU ETS covers shipping emissions."
+        }
+      ]
+    },
+    {
+      "source": "Hellenic Shipping News",
+      "title": "Subsea Incidents: Why Preparedness, Technology and Coordination Are Critical to Effective Crisis Response",
+      "url": "https://www.hellenicshippingnews.com/subsea-incidents-why-preparedness-technology-and-coordination-are-critical-to-effective-crisis-response/",
+      "published": "2026-11-02",
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Interview with an OSRL executive arguing specialized technology and coordination are key to subsea incident response.",
+      "overlap": []
+    },
+    {
+      "source": "Hellenic Shipping News",
+      "title": "Alternative-fuel ships outpace port readiness, new LR report finds",
+      "url": "https://www.hellenicshippingnews.com/alternative-fuel-ships-outpace-port-readiness-new-lr-report-finds/",
+      "published": "2026-11-02",
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "LR's \"Fuel for Thought: Ports\" finds alternative-fuel orders (1,942 vessels in January 2026) outpacing port infrastructure.",
+      "overlap": []
+    },
+    {
+      "source": "Carbon Brief",
+      "title": "State of the climate: 2026 likely to tie with 2024 as the warmest year on record",
+      "url": "https://www.carbonbrief.org/state-of-the-climate-2026-likely-to-tie-with-2024-as-the-warmest-year-on-record",
+      "published": "2026-11-03",
+      "source_url": "https://www.carbonbrief.org",
+      "topic": "Climate and policy",
+      "access": "full",
+      "summary": "Quarterly update: 2026 very likely first or second warmest year, driven partly by a strengthening El Nino.",
+      "overlap": [
+        {
+          "symbol": "ZW=F",
+          "strength": "loose",
+          "reason": "El Nino affects crop weather."
+        }
+      ]
+    },
+    {
+      "source": "Carbon Brief",
+      "title": "Interactive: Who wants what at the COP31 climate change summit",
+      "url": "https://www.carbonbrief.org/interactive-who-wants-what-at-the-cop31-climate-change-summit",
+      "published": "2026-11-02",
+      "source_url": "https://www.carbonbrief.org",
+      "topic": "Climate and policy",
+      "access": "full",
+      "summary": "Interactive table of party positions on key issues ahead of UN climate talks in Antalya.",
+      "overlap": [
+        {
+          "symbol": "KRBN",
+          "strength": "loose",
+          "reason": "COP31 carbon-market rules."
+        }
+      ]
     },
     {
       "source": "World Nuclear News",
-      "title": "Tilted fuel assembly retrieved from Palisades plant",
-      "url": "https://www.world-nuclear-news.org/articles/tilted-fuel-assembly-retrieved-from-palisades-plant",
-      "published": "2026-10-26",
+      "title": "PEJ applies for early works permit for nuclear power plant",
+      "url": "https://www.world-nuclear-news.org/articles/pej-applies-for-early-works-permit-for-nuclear-power-plant",
+      "published": "2026-11-02",
       "source_url": "https://www.world-nuclear-news.org",
       "topic": "Energy",
       "access": "partial",
-      "summary": "Holtec recovered a fuel assembly that had tilted during loading at Palisades, using a custom device and canister approved by the NRC. Feed text is cut off.",
+      "summary": "Polskie Elektrownie Jadrowe asked for a permit for early site works at Poland's first nuclear plant, Lubiatowo-Kopalino.",
+      "overlap": [
+        {
+          "symbol": "URA",
+          "strength": "loose",
+          "reason": "New nuclear build supports uranium demand."
+        }
+      ]
+    },
+    {
+      "source": "World Nuclear News",
+      "title": "First concrete poured for unit 5 at Haiyang plant",
+      "url": "https://www.world-nuclear-news.org/articles/first-concrete-poured-unit-5-haiyang-plant",
+      "published": "2026-11-02",
+      "source_url": "https://www.world-nuclear-news.org",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "First safety-related concrete poured for unit 5 at China's Haiyang site, the fifth of six planned large PWRs.",
+      "overlap": [
+        {
+          "symbol": "URA",
+          "strength": "loose",
+          "reason": "New reactor construction supports uranium demand."
+        }
+      ]
+    },
+    {
+      "source": "World Nuclear News",
+      "title": "Texas SMR plant moves to final permitting stage",
+      "url": "https://www.world-nuclear-news.org/articles/texas-smr-plant-moves-to-final-permitting-stage",
+      "published": "2026-11-02",
+      "source_url": "https://www.world-nuclear-news.org",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "The NRC finished its safety review of X-energy's Xe-100 for the Long Mott site in Texas; a construction permit announcement is expected.",
+      "overlap": [
+        {
+          "symbol": "SMR",
+          "strength": "loose",
+          "reason": "Small-reactor licensing read-through."
+        },
+        {
+          "symbol": "DOW",
+          "strength": "loose",
+          "reason": "Dow is the Long Mott site host."
+        }
+      ]
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "Fram Wind secures $209m grant for Norwegian floating wind project",
+      "url": "https://www.energymonitor.ai/news/fram-wind-secures-grant-wind-project/",
+      "published": "2026-11-03",
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy",
+      "access": "teaser",
+      "summary": "Enova awarded Fram Wind Solutions about $209 million for a floating offshore wind project off Karmoy, Norway.",
+      "overlap": [
+        {
+          "symbol": "VWS.CO",
+          "strength": "loose",
+          "reason": "Offshore wind supply chain."
+        }
+      ]
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "Polenergia secures financing for 276MW wind portfolio in Poland",
+      "url": "https://www.energymonitor.ai/news/polenergia-secures-financing-wind-portfolio/",
+      "published": "2026-11-02",
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy",
+      "access": "teaser",
+      "summary": "Polenergia signed a roughly $342 million financing deal for five onshore wind farms totalling 276MW.",
       "overlap": []
     },
     {
       "source": "Energy Monitor",
-      "title": "Building the next generation of sustainable data centres in pharma",
-      "url": "https://www.energymonitor.ai/features/building-the-next-generation-of-sustainable-data-centres-in-pharma/",
-      "published": "2026-10-29",
+      "title": "UK government grants consent for 2GW Sea Link subsea project",
+      "url": "https://www.energymonitor.ai/news/uk-grants-consent-sea-link/",
+      "published": "2026-11-02",
       "source_url": "https://www.energymonitor.ai",
       "topic": "Energy",
       "access": "teaser",
-      "summary": "Feature on how pharmaceutical companies are building sustainability into their data centre plans as AI demand grows.",
-      "overlap": []
-    },
-    {
-      "source": "Energy Monitor",
-      "title": "Minesto, Morteza Capital sign MoU to develop tidal energy in Maldives",
-      "url": "https://www.energymonitor.ai/news/minesto-morteza-capital-sign-mou/",
-      "published": "2026-10-27",
-      "source_url": "https://www.energymonitor.ai",
-      "topic": "Energy",
-      "access": "teaser",
-      "summary": "Minesto and Morteza Capital agreed to explore commercial tidal power opportunities in the Maldives.",
+      "summary": "The UK approved a Development Consent Order for Sea Link, a 2GW subsea electricity connection.",
       "overlap": []
     },
     {
       "source": "Carbon Herald",
-      "title": "Canada Falling Further Behind On 2030 Climate Target, Auditor General Says",
-      "url": "https://carbonherald.com/canada-falling-further-behind-on-2030-climate-target-auditor-general-says/",
-      "published": "2026-10-30",
+      "title": "Aker BP Bets On Ship-Based CO2 Transport To Unlock 150 Million Tonnes Of Offshore Storage",
+      "url": "https://carbonherald.com/aker-bp-bets-on-ship-based-co2-transport-to-unlock-150-million-tonnes-of-offshore-storage/",
+      "published": "2026-11-02",
       "source_url": "https://carbonherald.com",
       "topic": "Climate and policy",
       "access": "partial",
-      "summary": "Canada's Auditor General says the country is drifting further from its 2030 climate commitment as the federal government weakens or rolls back policies.",
+      "summary": "Aker BP is partnering to expand Norway's offshore carbon storage through ship-based CO2 transport; excerpt is cut off.",
       "overlap": []
     },
     {
       "source": "Carbon Herald",
-      "title": "UK Cuts £200M From Acorn Carbon Capture Hub Funding",
-      "url": "https://carbonherald.com/uk-cuts-200m-from-acorn-carbon-capture-hub-funding/",
-      "published": "2026-10-30",
+      "title": "Havstjerne And EcoLog To Establish Cross-Border CO2 Transport And Storage Route",
+      "url": "https://carbonherald.com/havstjerne-and-ecolog-to-establish-cross-border-co2-transport-and-storage-route/",
+      "published": "2026-11-02",
       "source_url": "https://carbonherald.com",
       "topic": "Climate and policy",
       "access": "partial",
-      "summary": "The UK government has cut capital grant funding for carbon capture, utilisation and storage by £200 million, affecting the Acorn project.",
+      "summary": "The Havstjerne storage project and terminal operator EcoLog signed a collaboration to offer European CO2 transport and storage.",
       "overlap": []
     },
     {
       "source": "Carbon Herald",
-      "title": "Carbelim To Develop Innovative Microalgae DAC Tech With $1M Funding",
-      "url": "https://carbonherald.com/carbelim-to-develop-innovative-microalgae-dac-tech-with-1m-funding/",
-      "published": "2026-10-30",
+      "title": "Aquarry Launches Its First Mine Remediation Pilot Site In Wyoming",
+      "url": "https://carbonherald.com/aquarry-launches-its-first-mine-remediation-pilot-site-in-wyoming/",
+      "published": "2026-11-02",
       "source_url": "https://carbonherald.com",
       "topic": "Climate and policy",
       "access": "partial",
-      "summary": "Kerala-based Carbelim received about $1.05 million from IIT Madras-linked funding to develop microalgae-based direct air capture technology.",
+      "summary": "Colorado startup Aquarry announced operations at a new mine remediation pilot site in Wyoming; excerpt is cut off.",
       "overlap": []
     },
     {
       "source": "Climate Home News",
-      "title": "COP17 delivers fragile deal to boost conservation and funding for nature",
-      "url": "https://www.climatechangenews.com/2026/10/31/cop17-delivers-fragile-deal-scaling-up-biodiversity-conservation-armenia-cbd/",
-      "published": "2026-10-31",
+      "title": "Canada, EU agree deeper cooperation on energy and cleantech supply chains",
+      "url": "https://www.climatechangenews.com/2026/11/03/canada-eu-agree-deeper-cooperation-on-energy-and-cleantech-supply-chains/",
+      "published": "2026-11-03",
       "source_url": "https://www.climatechangenews.com",
       "topic": "Climate and policy",
       "access": "full",
-      "summary": "After a long impasse, negotiators at the Yerevan nature summit agreed to ask wealthy emerging economies such as China to take on donor roles for biodiversity funding; financing remains insufficient.",
+      "summary": "Both sides pledged stronger investment and trade cooperation to make clean-technology supply chains more resilient to shocks.",
+      "overlap": []
+    },
+    {
+      "source": "Climate Home News",
+      "title": "What's on the climate calendar for November 2026?",
+      "url": "https://www.climatechangenews.com/2026/11/02/whats-on-the-climate-calendar-for-november-2026/",
+      "published": "2026-11-02",
+      "source_url": "https://www.climatechangenews.com",
+      "topic": "Climate and policy",
+      "access": "full",
+      "summary": "After the US midterms and launch of the COP30 roadmaps, attention turns to Antalya for COP31.",
+      "overlap": [
+        {
+          "symbol": "KRBN",
+          "strength": "loose",
+          "reason": "COP31 and carbon-market talks."
+        }
+      ]
+    },
+    {
+      "source": "Mongabay",
+      "title": "Indigenous peoples and local communities solidify decision-making powers at COP17",
+      "url": "https://news.mongabay.com/short-article/2026/11/indigenous-peoples-and-local-communities-solidify-decision-making-powers-at-cop17/",
+      "published": "2026-11-02",
+      "source_url": "https://news.mongabay.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "At the UN biodiversity conference in Armenia, Indigenous peoples and local communities gained a fully operational subsidiary body.",
       "overlap": []
     },
     {
       "source": "Mongabay",
-      "title": "Environmental defenders testify about attacks in Latin America linked to Canadian mining companies",
-      "url": "https://news.mongabay.com/2026/10/environmental-defenders-testify-about-attacks-in-latin-america-linked-to-canadian-mining-companies/",
-      "published": "2026-10-31",
+      "title": "Diverse forests can better withstand extreme weather events, study finds. Here's why",
+      "url": "https://news.mongabay.com/2026/11/diverse-forests-can-better-withstand-extreme-weather-events-study-finds-heres-why/",
+      "published": "2026-11-02",
       "source_url": "https://news.mongabay.com",
       "topic": "Climate and policy",
       "access": "partial",
-      "summary": "Representatives from six countries told the Inter-American Commission on Human Rights about harm tied to Canadian mining firms, including four alleged attacks on defenders.",
+      "summary": "A Nature Communications study finds forests with more tree species cope better with compound extremes such as heat plus drought.",
       "overlap": []
     },
     {
       "source": "Mongabay",
-      "title": "Leaders grapple with finance and harmful subsidies at UN's COP17 biodiversity conference",
-      "url": "https://news.mongabay.com/2026/10/leaders-grapple-with-finance-and-harmful-subsidies-at-uns-cop17-biodiversity-conference/",
-      "published": "2026-10-31",
+      "title": "Extreme heat no longer confined to summer, extending health risks, study finds",
+      "url": "https://news.mongabay.com/2026/11/extreme-heat-no-longer-confined-to-summer-extending-health-risks-study-finds/",
+      "published": "2026-11-02",
       "source_url": "https://news.mongabay.com",
       "topic": "Climate and policy",
       "access": "partial",
-      "summary": "At COP17 in Yerevan, advocates cited a UNEP finding that nature protection gets far less funding than nature-harming spending; Target 18 seeks to cut $500 billion a year in harmful subsidies.",
+      "summary": "A study of four decades of weather records finds dangerous heat days increasingly occur in spring and fall.",
       "overlap": []
     },
     {
-      "source": "Mongabay",
-      "title": "World Lemur Day: How can we save these primates' forest homes?",
-      "url": "https://news.mongabay.com/short-article/2026/10/world-lemur-day-how-can-we-save-these-primates-forest-homes/",
-      "published": "2026-10-30",
-      "source_url": "https://news.mongabay.com",
-      "topic": "Climate and policy",
-      "access": "partial",
-      "summary": "Roundup of Mongabay stories on Madagascar's lemurs, covering a forest corridor restoration between two eastern parks and the threat invasive guava poses to reforestation.",
+      "source": "CTVC",
+      "title": "SPAC to the future #320",
+      "url": "https://www.ctvc.co/spac-to-the-future-320/",
+      "published": "2026-11-02",
+      "source_url": "https://www.ctvc.co",
+      "topic": "Startups and deals",
+      "access": "full",
+      "summary": "Covers 11 climate SPACs in 2026 and what the 2021 class tells us about them.",
       "overlap": []
     }
   ],
   "reading_quiet": [
-    "CTVC",
+    "The Chip Letter",
     "Caixin Global China Watch",
     "Carbon Removal Updates",
-    "Chipstrat",
-    "Culpium (Tim Culpan)",
-    "EE Times",
     "Fabricated Knowledge",
-    "Latitude Media",
     "Rigzone",
+    "MINING.COM",
     "TechCrunch Climate",
-    "The Chip Letter",
-    "farmdoc daily"
+    "SemiAnalysis",
+    "Chipstrat",
+    "Irrational Analysis",
+    "Culpium (Tim Culpan)"
   ],
   "climate": [
     {
       "region": "Americas",
-      "headline": "Panama Canal keeps Neopanamax draft at 49 ft and adds slots from 15 Oct",
-      "detail": "Canal authority cites Gatun Lake level and near-average rain but says a watershed water deficit continues; 33 daily slots from 15 October. FEWS NET flags a drier Central America Dry Corridor.",
-      "source": "Panama Canal Authority, 28 Sep 2026",
-      "source_url": "https://pancanal.com/en/panama-canal-announces-increase-in-draft-and-daily-transit/"
-    },
-    {
-      "region": "East Asia",
-      "headline": "Typhoon Champi leaves one dead and about 56,000 Taiwan homes without power",
-      "detail": "Storm passed Taiwan's northeast on 23 Oct with 259 flights cancelled on 24 Oct; Okinawa lost power to about 8,400 households and Shanghai evacuated tens of thousands.",
-      "source": "Al Jazeera, 23-24 Oct 2026",
-      "source_url": "https://aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350"
+      "headline": "Brazil unveils two COP30 roadmaps on 3 November",
+      "detail": "Roadmaps on transitioning away from fossil fuels and ending deforestation will map barriers and options but set no new global targets; Lula is expected at COP31.",
+      "source": "Climate Home News, 2 Nov 2026",
+      "source_url": "https://www.climatechangenews.com/2026/11/02/whats-on-the-climate-calendar-for-november-2026/"
     },
     {
       "region": "Europe",
-      "headline": "EU gas storage 74.93% full on 26 Oct, lowest for the date since 2011",
-      "detail": "About 82.1 bcm held, 14.65 points below the five-year average. Rhine at Kaub rose from 26 cm to 52 cm on 26 Oct, forecast near 77 cm around 29 Oct, likely temporary.",
-      "source": "GIE data via TASS, 28 Oct 2026; Rhine via Cruise Passenger, 26 Oct 2026",
-      "source_url": "https://tass.com/economy/2209235/amp"
+      "headline": "IMO shipping net-zero talks in London from 23 November",
+      "detail": "Governments will discuss the Net Zero Framework for shipping emissions, likely revised to win US and Saudi support; a decision may come by vote.",
+      "source": "Climate Home News, 2 Nov 2026",
+      "source_url": "https://www.climatechangenews.com/2026/11/02/whats-on-the-climate-calendar-for-november-2026/"
     },
     {
       "region": "Middle East and Africa",
-      "headline": "El Niño and positive Indian Ocean Dipole raise Horn of Africa flood and southern Africa drought risk",
-      "detail": "FEWS NET expects above-average Oct-Dec rain in bimodal East Africa, weak Sahel rains, and below-average Oct-Mar rain in southern Africa, with food insecurity peaking in 2027.",
-      "source": "FEWS NET, 6 Oct 2026",
-      "source_url": "https://fews.net/global/special-report/october-2026"
+      "headline": "COP31 opens 9 November in Antalya, Turkiye",
+      "detail": "Turkiye holds the presidency; Australia leads negotiations. Topics include a Just Transition Mechanism, tripling adaptation finance by 2035 and fossil-fuel transition steps. UNEP Adaptation Gap Report is due 4 November in Nairobi.",
+      "source": "Climate Home News, 2 Nov 2026",
+      "source_url": "https://www.climatechangenews.com/2026/11/02/whats-on-the-climate-calendar-for-november-2026/"
     },
     {
       "region": "Oceania",
-      "headline": "NOAA El Nino Advisory: Nino-3.4 at +2.1C, strong event more than 83% likely through Jan-Mar",
-      "detail": "Issued 8 Oct; chance of a record 3-month index of +2.5C or more is 83% for Oct-Dec. Next update 12 Nov. Australia's Bureau of Meteorology declared El Nino in June.",
-      "source": "NOAA Climate Prediction Center, 8 Oct 2026",
-      "source_url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml"
-    },
-    {
-      "region": "South Asia",
-      "headline": "India monsoon ended 12.6% below normal; northeast monsoon began 15 Oct",
-      "detail": "Season rainfall 759.4 mm versus a normal 868.6 mm, attributed mainly to El Nino; the northeast monsoon matters for rabi crops in the south.",
-      "source": "India Meteorological Department via Business Standard, 15 Oct 2026",
-      "source_url": "https://www.business-standard.com/india-news/southwest-monsoon-withdraws-from-india-northeast-monsoon-begins-imd-126101500890_1.html"
+      "headline": "Niño3.4 about 3.5C above average on 18 October, a daily record",
+      "detail": "Forecasts average about 4C at the December peak; global temperatures lag by about three months, so 2027 is given a 96% chance of being warmest. Index base differs from NOAA's weekly figure.",
+      "source": "Carbon Brief, 3 Nov 2026",
+      "source_url": "https://www.carbonbrief.org/state-of-the-climate-2026-likely-to-tie-with-2024-as-the-warmest-year-on-record"
     },
     {
       "region": "Southeast Asia",
-      "headline": "Indonesian palm oil areas under half of normal rain; 2027 output seen down about 9%",
-      "detail": "Sumatra and Kalimantan dry since late June; low Kapuas River blocked tanker movements. Industry group sees 2027 output at 53.69 Mt versus 58.8 Mt in 2026.",
-      "source": "DTN Ag Weather Forum citing Indonesia Palm Oil Association, 23 Oct 2026",
-      "source_url": "https://www.dtnpf.com/agriculture/web/ag/news/article/2026/10/23/el-nino-enhanced-dryness-brings-risk"
+      "headline": "Philippines' solar surge leaves many households behind",
+      "detail": "Rising energy prices push households to solar, but upfront costs keep it out of reach for those who most need savings.",
+      "source": "Dialogue Earth, 1 Nov 2026",
+      "source_url": "https://dialogue.earth/en/energy/the-philippines-solar-surge-leaves-many-filipinos-behind/"
     }
   ],
   "earnings_week": [
@@ -3311,167 +3457,58 @@
     }
   ],
   "sources": [
-    "Nasdaq",
-    "NYSE",
-    "NYSE Arca",
-    "Korea Exchange",
-    "Tokyo Stock Exchange",
-    "Euronext Amsterdam",
-    "Taiwan Stock Exchange",
-    "Hong Kong Exchanges",
-    "S&P Dow Jones Indices",
-    "FTSE Russell",
-    "Cboe",
-    "Charles Schwab Asset Management",
-    "Fidelity Investments",
-    "US Treasury",
-    {
-      "name": "Qualcomm investor relations (via investingnews.com)",
-      "url": "https://investingnews.com/qualcomm-schedules-fourth-quarter-and-fiscal-2026-earnings-release-and-conference-call/"
-    },
-    {
-      "name": "Applied Materials investor relations",
-      "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-report-fourth-quarter-and-fiscal-2026-results"
-    },
-    {
-      "name": "GlobalFoundries (via finviz)",
-      "url": "https://finviz.com/news/396893/globalfoundries-announces-conference-call-to-review-third-quarter-2026-financial-results"
-    },
-    "NYSE American",
-    "London Stock Exchange",
-    "Saudi Exchange (Tadawul)",
-    "National Stock Exchange of India",
-    "Australian Securities Exchange",
-    "ICE Futures Europe",
-    "ICE Endex",
-    "NYMEX (CME Group)",
-    {
-      "name": "Trading Economics",
-      "url": "https://tradingeconomics.com"
-    },
-    {
-      "name": "stockanalysis.com",
-      "url": "https://stockanalysis.com"
-    },
-    {
-      "name": "Investing.com",
-      "url": "https://www.investing.com"
-    },
-    "COMEX (CME Group)",
-    "London Metal Exchange",
-    "CBOT (CME Group)",
-    "Bursa Malaysia",
-    "Euronext Paris",
-    "Xetra (Deutsche Boerse)",
-    "Oslo Bors",
-    {
-      "name": "stoculator.com",
-      "url": "https://stoculator.com"
-    },
-    {
-      "name": "Twelve Data",
-      "url": "https://twelvedata.com"
-    },
-    "Baltic Exchange",
-    "Shanghai Shipping Exchange",
-    "Drewry",
-    "Nasdaq Copenhagen",
-    "Frankfurt Stock Exchange",
-    "European Central Bank",
-    {
-      "name": "ECB euro reference rates",
-      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
-    },
-    "US Federal Reserve",
-    "Bank of Japan",
-    "Bank of Thailand",
-    "Central Bank of Brazil",
-    "Bank of Mexico",
-    "Central Bank of Turkey",
-    "South African Reserve Bank",
-    "Reserve Bank of India",
-    "Bank of Korea",
-    "People's Bank of China",
-    "Bank Indonesia",
-    "Bangko Sentral ng Pilipinas",
-    "Reserve Bank of Australia",
-    {
-      "name": "stockanalysis.com history tables (NYSE Arca, Nasdaq, NYSE, Nasdaq Copenhagen, Euronext Paris closes)",
-      "url": "https://stockanalysis.com"
-    },
-    "Bank of Japan (via press reports)",
-    "European Central Bank (via press reports)",
-    {
-      "name": "NOAA Climate Prediction Center",
-      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml"
-    },
-    {
-      "name": "FEWS NET",
-      "url": "https://fews.net/global/special-report/october-2026"
-    },
-    {
-      "name": "Panama Canal Authority",
-      "url": "https://pancanal.com/en/panama-canal-announces-increase-in-draft-and-daily-transit/"
-    },
-    {
-      "name": "The White House",
-      "url": "https://whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-adjusts-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states"
-    },
-    "India Meteorological Department",
-    "Gas Infrastructure Europe (via TASS)",
-    "Indonesia Palm Oil Association (via DTN)",
-    {
-      "name": "SEAJ news page",
-      "url": "https://www.seaj.or.jp/english/news/"
-    }
+    "SEC EDGAR (Lumentum Form 8-K)",
+    "Carbon Brief",
+    "Climate Home News",
+    "Dialogue Earth",
+    "Mongabay",
+    "World Nuclear News",
+    "CNBC",
+    "The Globe and Mail",
+    "The Elec",
+    "MarketScreener",
+    "Le Private Banker",
+    "Seoul Economic Daily",
+    "TheStreet",
+    "Cappnotes"
   ],
   "gaps": [
-    "Next earnings date not confirmed (null): TSM, AVGO, KLAC, LRCX, ONTO, INTC, 005930.KS, 000660.KS, 8035.T, ASM.AS, 2454.TW, 0981.HK, MU, TXN, ENTG, AAPL, MSFT, GOOGL, AMZN, META.",
-    "^RUT, ^VIX, ^TNX: 1m change not computed; the 30 Sep base row is outside the Investing.com table window.",
-    "^GSPC, ^IXIC, ^DJI: 1m base (30 Sep) taken from an earlier cached copy of the same Investing.com table (matching overlapping rows); aggregator only, no second source checked.",
-    "2454.TW: Taiwan market closed 23 Oct, so 1w uses the 22 Oct close as base.",
-    "JKM: no free price found (S&P Global Platts assessment is paywalled).",
-    "MTF=F, U3O8: 1w change not published by Trading Economics; left null.",
-    "NG=F, TTF=F, EUA: 1m change null; Investing.com table starts 1 Oct and the 30 Sep base is absent or on a prior contract.",
-    "Stock and ETF closes are from stockanalysis.com (aggregator), not the exchanges directly; futures from Investing.com tables.",
-    "NDPR: no dated 30 Oct NdPr oxide price found (SMM/Fastmarkets pages undated or paywalled)",
-    "SCCO: 30 Oct close not found (stoculator ended 1 Oct, tipranks 29 Oct, investing.com 16 Oct); shown as of 29 Oct",
-    "LIN: 30 Oct close not found (twelvedata, stockanalysis, chartrow stopped 29 Oct or earlier); shown as of 29 Oct",
-    "YAR.OL: 30 Oct close not found (twelvedata empty, investing.com stale); carried from 29 Oct brief",
-    "2010.SR: Tadawul history and investing.com stale; values carried from 29 Oct brief",
-    "APD: 1m base (30 Sep) not found, chg_1m null",
-    "CTVA: 1m base (30 Sep) not found on investing.com page; chg_1m null",
-    "Commodities: investing.com tables stopped at 26-27 Oct, so 1w is null for all Trading Economics commodities; 1m is TE's own window; stockanalysis.com caches stopped 26 Oct so US 30 Oct closes came from stoculator.com, twelvedata.com and investing.com tables",
-    "COBALT: Trading Economics page dated 29 Oct (no 30 Oct update)",
-    "RICE: Trading Economics page internally inconsistent; 1d null",
-    "TANKER: no TD3C print newer than the carried value found (Allied week 43 report only as PDF); change fields null.",
-    "IYT: 30 Oct close identical to 29 Oct on the source table; not cross-checked.",
-    "USDCLP, USDNGN, USDSAR: Trading Economics pages only (not in ECB set); 1w change not stated on the pages, left null.",
-    "USDSAR: 1m change taken from Trading Economics page (-0.05%); a peg, so near zero.",
-    "Policy rates: ECB next rate decision date not listed by Trading Economics; Bank of Thailand next meeting date not stated on release; most rate items are Trading Economics (aggregator), central bank pages not read except BOT/Fed/BOJ carried from earlier runs.",
-    "Policy rates: BOJ 30 Oct decision confirmed via Trading Economics only this run.",
-    "Fed, BOJ and ECB official decision pages not linked: federalreserve.gov blocked by fetch permission; BOJ and ECB pages not returned by search.",
-    "BOJ October policy rate and vote not read: Japan Times and CNBC pages failed to load; 1.25% rate seen only in a preview article, so it is not stated.",
-    "Rhine Kaub reading is from Cruise Passenger (26 Oct), not the German WSV gauge page.",
-    "EU gas storage figure is from TASS citing GIE; the GIE AGSI page itself does not load.",
-    "EU gas storage (GIE) Sunday figures for 2026-10-11, 10-18, 10-25: no Sunday value found; press reports give only other dates (74.02% on 13 Oct, TASS 15 Oct; 75% on 21 Oct, ACER 27 Oct; 74.93% on 26 Oct, TASS 28 Oct). GIE AGSI+ page not reachable.",
-    "SEAJ semiconductor equipment billings September 2026: not listed on SEAJ news page (latest is the August report, 2026-09-18); September report not found.",
-    "ICSG refined copper balance Jan-Aug 2026: no press report found; latest remains Jan-Jul (released 2026-09-29).",
-    "Second source not found for: SI=F, 1919.HK, EWZ, ARGT, KRBN, KSA, LEU, LIN, LIT, LITHIUM.",
-    "INTC: second source (Trading Economics, 64.83, intraday-range quote) differs from the stockanalysis close of 65.76; not resolved, treat the 30 Oct close as unconfirmed.",
-    "SI=F, EWZ, USDBRL: cause of move per Trading Economics/investinglive (silver below $50 on energy costs and rate expectations; Brazil selloff after Lula's runoff win); no cause verified for INTC, QCOM, PBR, ARGT, 1919.HK.",
-    "Prices: US, Asian and European item values are carried from the 30 Oct close (Saturday edition); Monday 2 Nov overnight moves appear only in the summary, from AP, Saxo and Bloomberg wraps.",
-    "Climate: entries carried unchanged from the 31 Oct edition; no new climate sources fetched.",
-    "Headlines: EU gas storage story has one outlet (TASS citing GIE); Korea exports are press reports of the ministry release, not the release itself.",
-    "Cameco October month-end uranium spot: not checked; page not fetched this run.",
-    "EU gas storage (GIE) 1 Nov figure: no value found; 26 Oct (74.93%) is the latest.",
+    "MAERSK-B.CO: no current price found; value carried from the 30 Oct close, changes null.",
+    "1m change null (investing.com tables start 5 Oct, 2 Oct base missing): ^IXIC ^DJI ^RUT ^VIX ^TNX BZ=F CL=F NG=F TTF=F HG=F GC=F SI=F EUA; ^GSPC 1m uses 2 Oct close from an earlier cached copy of the same table",
+    "ALI=F: only Trading Economics (aggregator) had it; 1w null, 1m is the page's month figure",
+    "USDCLP USDNGN USDSAR: Trading Economics pages dated 3 Nov (intraday), not 2 Nov; 1w null; 1m is the page month change (sign: positive = USD stronger)",
+    "Currencies are ECB reference rates read via the Frankfurter mirror (tier aggregator), 2 Nov 2026 fixing",
+    "VIX 1d/1w are percent changes in index level",
+    "JKM LNG: no free price found (not on Trading Economics)",
+    "NDPR: no dated free price found",
+    "TANKER (TD3C): no new Worldscale figure found for the week; last 1,318.75 not refreshed",
+    "SEAJ semiconductor equipment billings Sept 2026: no release found by search or on seaj.or.jp news page; the PDF found was the FPD report, not used",
+    "EU gas storage (GIE) 18 Oct, 25 Oct, 1 Nov: searches returned only August/September figures; AGSI not reachable",
+    "ICSG refined copper balance Aug 2026: icsg.org lists a 23 Oct monthly press release but the contents were not readable; no press report found",
+    "Trading Economics commodity pages for lithium, rice, palm oil and Baltic Dry were dated 3 Nov, cobalt, uranium and urea 30 Oct, so as_of is set; 1w is null where no same-date base exists",
+    "Baker Hughes rig count 30 Oct already in series; EIA storage week ending 30 Oct not released until 5 Nov",
     "SemiWiki: feed fetch failed (client_error at the site, nothing retrieved)",
-    "Fertilizer Daily: feed fetch failed (robots_disallowed by the site)",
+    "Fertilizer Daily: feed fetch failed (robots_disallowed)",
     "The Loadstar: feed fetch failed (client_error)",
-    "Splash247: feed fetch failed (fetch permission not granted, PROVENANCE_REQUIRED)",
-    "Hellenic Shipping News: feed fetch failed (fetch permission not granted, PROVENANCE_REQUIRED)",
-    "Carbon Brief: feed fetch failed (fetch permission not granted, PROVENANCE_REQUIRED)",
-    "Reading: Splash247, Hellenic Shipping News and Carbon Brief fetches were refused for permission (PROVENANCE_REQUIRED), not by the feeds."
+    "Container News: feed fetch failed (client_error)",
+    "Splash247: feed fetch failed (client_error)",
+    "Reading: MINING.COM feed showed newest item 26 Oct (before the window) and its last 6,000 characters could not be read; listed as quiet.",
+    "Reading: EE Times webinar promotions, Canary Media sponsored piece, gCaptain sponsored piece and TechCrunch Founder Summit promotions skipped as sponsored; TechCrunch Climate listed quiet.",
+    "Reading: Hello China Tech items are paid or partly paid; summaries use only the feed text.",
+    "Reading: Dialogue Earth China and Philippines articles could not be fetched; summaries use feed text only.",
+    "Headlines: X-energy story has two outlets only; Oil story has no primary source (no agency release found); Stories 1-2 sources vary on size of share-price falls.",
+    "Catalysts: Detroit News/AP and CNBC live pages not fetched (robots_disallowed / client_error); closing figures from Cappnotes and TheStreet, which differ on intraday versus close for Oracle and Marvell.",
+    "Climate: Pacific Pre-COP article (Dialogue Earth) could not be fetched; EU gas storage and Rhine/Panama levels for November not found, so not included.",
+    "Headline URLs for COP17 and X-energy WNN come from feed fetches rather than WebSearch results; the other headline URLs came from WebSearch results.",
+    "Reading: SemiAnalysis, Chipstrat, Irrational Analysis and Culpium only had items already in reading_log, so are listed quiet; nine other in-window items skipped as already shown.",
+    "Stock and ETF closes are from stockanalysis.com (aggregator), not the exchanges directly; futures from Investing.com tables; no second source yet except where listed under quality.",
+    "MAERSK-B.CO: stockanalysis page does not load; no current DKK price found, value carried from 30 Oct with changes null.",
+    "NXE: NYSE page rate-limited; Toronto line (CAD) used, so the level differs from earlier USD briefs; changes are on the CAD series.",
+    "BZ=F: the agent-computed 1d (-10.9%) did not match the 30 Oct brief close; 1d recomputed vs that close (-7.63%), matching press reports of about -7.6%.",
+    "Climate: East Asia and South Asia have no entry (no usable current source found).",
+    "Headlines: four stories only; COP17 and X-energy coverage URLs came from feed fetches, not search results. Oil story has no primary source.",
+    "Next earnings dates: not re-checked on a weekday run; existing values kept.",
+    "Second source not found for flagged items INTC, BZ=F, CL=F, EQNR, OXY, RELIANCE.NS or audit items VIE.PA, VNM, VOO, VST, VTI, VWO, VWS.CO, VXUS (searches returned stale or inconsistent pages). RELIANCE.NS +11.6% on the day and INTC -33.7% on the week rest on one aggregator table each; treat as unconfirmed."
   ],
   "indicators": [
     {
@@ -4423,26 +4460,26 @@
       "source": "Cameco (month-end UxC/TradeTech prices)",
       "tier": "reported",
       "site": "https://www.cameco.com/invest/markets/uranium-price",
-      "period": "2026-09",
-      "value": 89.63,
+      "period": "2026-10",
+      "value": 91.55,
       "row_status": "final",
-      "released": "2026-10-01",
+      "released": "2026-11-01",
       "source_name": "Cameco",
       "source_url": "https://www.cameco.com/invest/markets/uranium-price",
-      "yoy": 8.5,
+      "yoy": 14.4,
       "yoy_source": "computed",
-      "yoy_prev": 19.4,
-      "yoy_change": -10.9,
-      "mom": -0.1,
+      "yoy_prev": 8.5,
+      "yoy_change": 6.0,
+      "mom": 2.1,
       "mom_source": "computed",
       "z": null,
-      "status": "building history (2 of 12 year-on-year readings)",
-      "history_n": 14,
+      "status": "building history (3 of 12 year-on-year readings)",
+      "history_n": 15,
       "revision": null,
       "checks": [],
       "gaps": [],
       "range5": null,
-      "next_expected": "2026-11-01",
+      "next_expected": "2026-12-01",
       "late": false,
       "touches": [
         "U3O8",
@@ -4510,6 +4547,10 @@
         {
           "p": "2026-09",
           "v": 89.63
+        },
+        {
+          "p": "2026-10",
+          "v": 91.55
         }
       ]
     }
@@ -4520,9 +4561,9 @@
       "name": "Brent minus WTI",
       "unit": "USD/bbl",
       "kind": "diff",
-      "value": 9.31,
-      "prev": 8.8,
-      "change": 0.51,
+      "value": 8.31,
+      "prev": 9.31,
+      "change": -1.0,
       "spark": [
         {
           "p": "2026-10-16",
@@ -4575,6 +4616,14 @@
         {
           "p": "2026-10-30",
           "v": 9.31
+        },
+        {
+          "p": "2026-10-30",
+          "v": 9.31
+        },
+        {
+          "p": "2026-11-02",
+          "v": 8.31
         }
       ],
       "touches": [
@@ -4588,16 +4637,16 @@
       ],
       "inputs": "BZ=F and CL=F",
       "note": "Gap between the two main crude benchmarks.",
-      "as_of": "2026-10-30"
+      "as_of": "2026-11-02"
     },
     {
       "id": "copper_aluminum",
       "name": "Copper to aluminum price ratio",
       "unit": "x",
       "kind": "ratio",
-      "value": 4.65,
-      "prev": 4.72,
-      "change": -0.08,
+      "value": 4.68,
+      "prev": 4.65,
+      "change": 0.03,
       "spark": [
         {
           "p": "2026-10-16",
@@ -4650,6 +4699,14 @@
         {
           "p": "2026-10-30",
           "v": 4.647
+        },
+        {
+          "p": "2026-10-30",
+          "v": 4.647
+        },
+        {
+          "p": "2026-11-02",
+          "v": 4.679
         }
       ],
       "touches": [
@@ -4662,16 +4719,16 @@
       ],
       "inputs": "HG=F and ALI=F",
       "note": "Copper in USD per tonne (pounds converted) divided by aluminum in USD per tonne.",
-      "as_of": "2026-10-30"
+      "as_of": "2026-11-02"
     },
     {
       "id": "copper_gold",
       "name": "Copper to gold ratio",
       "unit": "x 1000",
       "kind": "ratio",
-      "value": 1.66,
-      "prev": 1.64,
-      "change": 0.03,
+      "value": 1.65,
+      "prev": 1.66,
+      "change": -0.01,
       "spark": [
         {
           "p": "2026-10-16",
@@ -4724,6 +4781,14 @@
         {
           "p": "2026-10-30",
           "v": 1.664
+        },
+        {
+          "p": "2026-10-30",
+          "v": 1.664
+        },
+        {
+          "p": "2026-11-02",
+          "v": 1.654
         }
       ],
       "touches": [
@@ -4735,79 +4800,77 @@
       ],
       "inputs": "HG=F and GC=F",
       "note": "Copper USD per pound divided by gold USD per ounce, times 1000. A familiar growth-versus-safety gauge.",
-      "as_of": "2026-10-30"
+      "as_of": "2026-11-02"
     }
   ],
   "flags": [
     {
-      "symbol": "USDBRL",
-      "tier": "look_into",
-      "reason": "Up 7.7% this week, 7.3 times its usual weekly swing (about ±1.1%); 7.3 points above the emerging-market currencies median.",
-      "z_own": 7.25,
-      "z_peer": 5.87,
-      "verified": {
-        "status": "agree",
-        "text": "second source agrees (1 checked)"
-      }
-    },
-    {
-      "symbol": "EWZ",
-      "tier": "look_into",
-      "reason": "Down 23.8% this week, 7.0 times its usual weekly swing (about ±3.4%); 20.2 points below the Latin America median.",
-      "z_own": -6.98,
-      "z_peer": -6.36,
-      "verified": {
-        "status": "single",
-        "text": "one source so far"
-      }
-    },
-    {
-      "symbol": "PBR",
-      "tier": "look_into",
-      "reason": "Down 15.7% this week, 3.8 times its usual weekly swing (about ±4.1%); 17.0 points below the energy companies median.",
-      "z_own": -3.84,
-      "z_peer": -4.55,
-      "verified": {
-        "status": "single",
-        "text": "second source dated differently; not a match"
-      }
-    },
-    {
-      "symbol": "SI=F",
+      "symbol": "BZ=F",
       "tier": "keep_an_eye",
-      "reason": "Down 6.2% in one day, 3.8 times its usual daily swing (about ±1.7%).",
-      "verified": {
-        "status": "single",
-        "text": "one source so far"
-      }
-    },
-    {
-      "symbol": "QCOM",
-      "tier": "keep_an_eye",
-      "reason": "Down 11.1% in one day, 3.6 times its usual daily swing (about ±3.0%); 7.1 points below the chip design median; reports earnings 2026-11-04.",
-      "z_own": -0.93,
-      "z_peer": -1.48,
-      "context": [
+      "reason": "Down 7.6% in one day, 4.5 times its usual daily swing (about ±1.7%); 7.8 points below the fuels and gas median.",
+      "z_own": -2.5,
+      "z_peer": -2.72,
+      "news": [
         {
-          "id": "sia_sales",
-          "name": "Global semiconductor sales",
-          "period": "2026-08",
-          "yoy": 144.3,
-          "unit": "US$ billion",
-          "status": "building history (2 of 12 year-on-year readings)"
+          "kind": "headline",
+          "title": "Oil falls more than 7% on US-Iran peace-talk signals",
+          "url": "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
+          "strength": "direct"
+        },
+        {
+          "kind": "reading",
+          "title": "Brent Flash Crashes $6 Before Rebounding Towards $104",
+          "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Flash-Crashes-6-Before-Rebounding-Towards-104.html",
+          "strength": "direct"
         }
       ],
       "verified": {
-        "status": "agree",
-        "text": "second source agrees (1 checked)"
+        "status": "single",
+        "text": "one source so far"
       }
     },
     {
-      "symbol": "1919.HK",
+      "symbol": "CL=F",
       "tier": "keep_an_eye",
-      "reason": "Up 7.7% in one day, 3.6 times its usual daily swing (about ±2.1%); 10.3 points above the container shipping lines median.",
-      "z_own": 2.34,
-      "z_peer": 2.65,
+      "reason": "Down 7.4% in one day, 4.3 times its usual daily swing (about ±1.7%); 3.5 points below the fuels and gas median.",
+      "z_own": -1.38,
+      "z_peer": -1.26,
+      "news": [
+        {
+          "kind": "headline",
+          "title": "Oil falls more than 7% on US-Iran peace-talk signals",
+          "url": "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
+          "strength": "direct"
+        },
+        {
+          "kind": "reading",
+          "title": "U.S. Launches Secret Strikes on Iran Ahead of Midterm Elections",
+          "url": "https://oilprice.com/Energy/Energy-General/US-Launches-Secret-Strikes-on-Iran-Ahead-of-Midterm-Elections.html",
+          "strength": "loose"
+        }
+      ],
+      "verified": {
+        "status": "single",
+        "text": "one source so far"
+      }
+    },
+    {
+      "symbol": "EQNR",
+      "tier": "keep_an_eye",
+      "reason": "Down 6.9% in one day, 3.8 times its usual daily swing (about ±1.8%); 3.8 points below the energy companies median.",
+      "z_own": -1.4,
+      "z_peer": -1.34,
+      "verified": {
+        "status": "single",
+        "text": "one source so far"
+      }
+    },
+    {
+      "symbol": "OXY",
+      "tier": "keep_an_eye",
+      "reason": "Down 5.1% in one day, 3.7 times its usual daily swing (about ±1.4%); 3.4 points below the energy companies median.",
+      "z_own": -1.67,
+      "z_peer": -1.72,
       "verified": {
         "status": "single",
         "text": "one source so far"
@@ -4816,34 +4879,19 @@
     {
       "symbol": "INTC",
       "tier": "keep_an_eye",
-      "reason": "Down 24.4% this week, 2.9 times its usual weekly swing (about ±8.3%); 20.1 points below the foundry and manufacturing median.",
-      "z_own": -2.94,
-      "z_peer": -3.46,
-      "news": [
-        {
-          "kind": "headline",
-          "title": "Global stocks steady after Friday's tech selloff",
-          "url": "https://www.ksat.com/business/2026/11/02/asian-shares-are-mixed-and-us-futures-advance-while-oil-prices-retreat/",
-          "strength": "direct"
-        },
-        {
-          "kind": "reading",
-          "title": "Intel Q3 2026: Dead Inside",
-          "url": "https://irrationalanalysis.substack.com/p/intel-q3-2026-dead-inside",
-          "strength": "direct"
-        }
-      ],
+      "reason": "Down 33.7% this week, 2.9 times its usual weekly swing (about ±11.8%); 28.2 points below the foundry and manufacturing median.",
+      "z_own": -2.86,
+      "z_peer": -2.67,
       "verified": {
-        "status": "differ",
-        "text": "sources disagree; treat the move as unconfirmed"
+        "status": "single",
+        "text": "second source dated differently; not a match"
       }
     },
     {
-      "symbol": "ARGT",
+      "symbol": "RELIANCE.NS",
       "tier": "keep_an_eye",
-      "reason": "Down 9.1% this week, 2.9 times its usual weekly swing (about ±3.1%); 5.5 points below the Latin America median.",
-      "z_own": -2.92,
-      "z_peer": -2.09,
+      "reason": "Up 8.2% this week, 2.5 times its usual weekly swing (about ±3.2%).",
+      "z_own": 2.55,
       "verified": {
         "status": "single",
         "text": "one source so far"
@@ -4851,30 +4899,25 @@
     }
   ],
   "flag_basis": {
-    "sessions": 10,
+    "sessions": 11,
     "mode": "blending",
-    "note": "10 earlier sessions on record; normal ranges blend each item's own history with starting estimates.",
-    "below_the_bar": 1
+    "note": "11 earlier sessions on record; normal ranges blend each item's own history with starting estimates.",
+    "below_the_bar": 0
   },
   "quality": {
     "tiers": {
-      "official": 17,
-      "reported": 1,
-      "aggregator": 185
+      "official": 1,
+      "reported": 4,
+      "aggregator": 197
     },
     "cross_checked": 6,
-    "agreed": 4,
-    "differed": 1,
-    "flags_confirmed": 2,
-    "flags_total": 8,
-    "planned_flagged": 8,
+    "agreed": 0,
+    "differed": 0,
+    "flags_confirmed": 0,
+    "flags_total": 6,
+    "planned_flagged": 6,
     "planned_sample": 8,
     "untiered": [],
-    "differences": [
-      {
-        "symbol": "INTC",
-        "detail": "last differs by 1.41% (limit 0.6%)"
-      }
-    ]
+    "differences": []
   }
 }
