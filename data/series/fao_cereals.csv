@@ -1,2 +1,3 @@
 period,value,yoy_reported,mom_reported,ytd_reported,status,released,source,source_url,note
 2026-09,122.8,17.2,5.1,,final,2026-10-02,FAO,https://fao.org/worldfoodsituation/foodpricesindex,FAO release of 2 October 2026; next release 6 November 2026
+2026-10,116.8,,-4.5,,final,2026-11-06,FAO,https://www.fao.org/worldfoodsituation/foodpricesindex/,"FAO release 6 Nov 2026; page says 13.1 pts (12.6%) below Oct 2025. Earlier row recorded yoy +17.2 for September, so check the sign/series. yoy not recorded: page figure (-12.6%) conflicts with September +17.2 and the index level."
