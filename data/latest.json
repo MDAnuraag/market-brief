@@ -2843,7 +2843,12 @@
     }
   ],
   "reading": [],
-  "reading_quiet": [],
+  "reading_quiet": [
+    "Culpium (Tim Culpan)",
+    "Utility Dive",
+    "farmdoc daily",
+    "Chipstrat"
+  ],
   "climate": [
     {
       "region": "Americas",
@@ -3065,12 +3070,12 @@
     "Splash247 feed: fetch failed (client error)",
     "eu_gas_storage: no GIE/AGSI figure for 18 Oct, 25 Oct or 1 Nov found (pages failed or undated); not recorded.",
     "icsg_copper_balance: no ICSG August 2026 balance found (latest found is July, already in series); not recorded.",
-    "Reading: all feeds failed this run (fetch tool required a permission that was not granted while unattended); no Reading items, no new reading_log entries.",
     "Items remain at 6 Nov closes (last US session); Monday 9 Nov Asian index moves appear in summary only, from AP and Saxo.",
     "eu_gas_storage (periods to 8 Nov) and icsg_copper_balance (Aug 2026): no confirmed GIE or ICSG release found; nothing recorded.",
     "Climate section and earnings dates carried from the 7 Nov edition; no new climate sources checked.",
     "Second-source and headline links taken from search results; prices not re-fetched since the 6 Nov close.",
-    "Audit sample not second-sourced this run: TSM, TTE, TTF=F, TUR, TXN, U3O8, UAE, UEC."
+    "Audit sample not second-sourced this run: TSM, TTE, TTF=F, TUR, TXN, U3O8, UAE, UEC.",
+    "Reading: fetch permission was not granted for these feeds, so they were not read: SemiAnalysis, Dialogue Earth, EE Times, The Loadstar, Carbon Brief, Climate Home News, ChinaTalk, Carbon Removal Updates, Fabricated Knowledge, Oilprice.com, Fertilizer Daily, Container News, World Nuclear News, Mongabay, Irrational Analysis, Hello China Tech, Semiconductor Engineering, Latitude Media, Rigzone, AgFunder News, Splash247, Energy Monitor, CTVC, The Chip Letter, Caixin Global China Watch, SemiWiki, Canary Media, MINING.COM, gCaptain, Hellenic Shipping News, Carbon Herald, TechCrunch Climate. Quiet feeds (items already shown): Culpium (Tim Culpan), Utility Dive, farmdoc daily, Chipstrat."
   ],
   "indicators": [
     {
