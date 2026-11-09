@@ -2842,12 +2842,547 @@
       ]
     }
   ],
-  "reading": [],
+  "reading": [
+    {
+      "source": "ChinaTalk",
+      "title": "Why the Cyberpocalypse Might Hit China Harder",
+      "url": "https://chinatalk.media/p/china-in-the-cyberpocalypse",
+      "published": "2026-11-08",
+      "source_url": "https://www.chinatalk.media",
+      "topic": "China and Asia",
+      "access": "full",
+      "summary": "Opens with a security firm using an OpenAI model in August to find a bug in PHP, which runs a large share of websites.",
+      "overlap": []
+    },
+    {
+      "source": "ChinaTalk",
+      "title": "The New Senators on China",
+      "url": "https://chinatalk.media/p/the-new-senators-on-china",
+      "published": "2026-11-05",
+      "source_url": "https://www.chinatalk.media",
+      "topic": "China and Asia",
+      "access": "full",
+      "summary": "Notes Democrats flipped both chambers on affordability and corruption messages and promises a look at what the new legislators have said about China.",
+      "overlap": []
+    },
+    {
+      "source": "ChinaTalk",
+      "title": "WarTalk: Kofman on Why Russia's Doing Badly",
+      "url": "https://chinatalk.media/p/wartalk-kofman-on-starlink-what-ukraine",
+      "published": "2026-11-02",
+      "source_url": "https://www.chinatalk.media",
+      "topic": "China and Asia",
+      "access": "full",
+      "summary": "Michael Kofman discusses how Ukraine and Russia rebuilt their armies around drones, deception and long-range strike, and what the US military should learn.",
+      "overlap": []
+    },
+    {
+      "source": "Hello China Tech",
+      "title": "DeepSeek may train on Huawei. A Chinese robot tried OpenAI",
+      "url": "https://hellochinatech.com/p/weekly-recap-2026-11-08",
+      "published": "2026-11-08",
+      "source_url": "https://hellochinatech.com",
+      "topic": "China and Asia",
+      "access": "full",
+      "summary": "Weekly roundup: a report DeepSeek will train its next model on Huawei chips, a cheap AI office card livestream sale, and a robot startup testing OpenAI's model.",
+      "overlap": []
+    },
+    {
+      "source": "EE Times",
+      "title": "The Countdown to Q-Day Has Begun",
+      "url": "https://eetimes.com/the-countdown-to-q-day-has-begun/",
+      "published": "2026-11-06",
+      "source_url": "https://www.eetimes.com",
+      "topic": "Chips",
+      "access": "partial",
+      "summary": "Asks whether a quantum computer could break blockchain cryptography within about two years, citing an IonQ blueprint published in September.",
+      "overlap": []
+    },
+    {
+      "source": "EE Times",
+      "title": "IBM, AMD Mix Quantum and AI at U.S. National Lab",
+      "url": "https://eetimes.com/ibm-amd-mix-quantum-and-ai-at-u-s-national-lab/",
+      "published": "2026-11-06",
+      "source_url": "https://www.eetimes.com",
+      "topic": "Chips",
+      "access": "partial",
+      "summary": "IBM, AMD and Oak Ridge National Laboratory plan a hybrid quantum-classical system for error-correction research before 2028.",
+      "overlap": [
+        {
+          "symbol": "AMD",
+          "strength": "direct",
+          "reason": "AMD is a named partner."
+        }
+      ]
+    },
+    {
+      "source": "Latitude Media",
+      "title": "What will it take to open California's market to more VPPs?",
+      "url": "https://latitudemedia.com/news/what-will-it-take-to-open-californias-market-to-vpps/",
+      "published": "2026-11-06",
+      "source_url": "https://www.latitudemedia.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Says California's new DER law opened a market that regulators must now implement.",
+      "overlap": []
+    },
+    {
+      "source": "Latitude Media",
+      "title": "How distributed energy can capitalize on the blue wave",
+      "url": "https://latitudemedia.com/news/how-distributed-energy-can-capitalize-on-the-blue-wave/",
+      "published": "2026-11-05",
+      "source_url": "https://www.latitudemedia.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "FERC commissioner David Rosner says utilities and regulators should embrace distributed energy resources.",
+      "overlap": []
+    },
+    {
+      "source": "Latitude Media",
+      "title": "Democratic governors won on a ratepayer defense message. Now what?",
+      "url": "https://latitudemedia.com/news/democratic-governors-won-on-a-ratepayer-defense-message-now-what/",
+      "published": "2026-11-05",
+      "source_url": "https://www.latitudemedia.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "The clean energy industry works out how to use state-level Democratic wins built on a ratepayer protection message.",
+      "overlap": []
+    },
+    {
+      "source": "Canary Media",
+      "title": "Where's the beef? Under the solar panels.",
+      "url": "https://canarymedia.com/articles/food-and-farms/wheres-the-beef-solar-panels",
+      "published": "2026-11-09",
+      "source_url": "https://www.canarymedia.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Reports from a Middle Tennessee solar field where quiet electric mowers replaced diesel ones; the excerpt ends before the developer is discussed.",
+      "overlap": []
+    },
+    {
+      "source": "Canary Media",
+      "title": "After a gas furnace leak, this retiree went all-electric — for free",
+      "url": "https://canarymedia.com/articles/electrification/gas-furnace-leak-to-all-electric",
+      "published": "2026-11-09",
+      "source_url": "https://www.canarymedia.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Profiles a Baltimore retiree forced out of her home by a furnace gas leak; the excerpt stops before her switch to all-electric.",
+      "overlap": []
+    },
+    {
+      "source": "Canary Media",
+      "title": "Voters gave a big middle finger to data centers",
+      "url": "https://canarymedia.com/articles/data-centers/data-center-voters-election-day",
+      "published": "2026-11-06",
+      "source_url": "https://www.canarymedia.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Argues Election Day results showed public unhappiness with the data center boom, with voters choosing Democrats who campaigned against it.",
+      "overlap": []
+    },
+    {
+      "source": "Utility Dive",
+      "title": "Duke Energy to stay course on data center-fueled growth plan after 'historic' election",
+      "url": "https://utilitydive.com/news/historic-election-night-wont-change-growth-focus-at-duke-energy-executi/873965/",
+      "published": "2026-11-06",
+      "source_url": "https://www.utilitydive.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Duke's large-load pipeline is 15.4 GW, barely changed since Q1, and its $103 billion spending plan relies heavily on new gas generation.",
+      "overlap": []
+    },
+    {
+      "source": "Utility Dive",
+      "title": "Sempra expects 20% increase to Oncor's spending plan, driven by load growth",
+      "url": "https://utilitydive.com/news/sempra-expects-20-increase-oncors-capex-plan-load-growth/874010/",
+      "published": "2026-11-06",
+      "source_url": "https://www.utilitydive.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Oncor's CEO says it is too soon to tell how midterm results will affect the company; Sempra expects a 20% larger plan.",
+      "overlap": []
+    },
+    {
+      "source": "Utility Dive",
+      "title": "DTE expands investment plan 30%, will sell unregulated subsidiary to fund growth",
+      "url": "https://utilitydive.com/news/dte-expands-5-year-electric-investment-plan-sells-unregulated-vantage/873974/",
+      "published": "2026-11-06",
+      "source_url": "https://www.utilitydive.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "DTE plans a 30% larger investment plan funded partly by a $3 billion sale of DTE Vantage.",
+      "overlap": []
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "COP31 Opens in Antalya With a UN Push for Faster Climate Action",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/COP31-Opens-in-Antalya-With-a-UN-Push-for-Faster-Climate-Action.html",
+      "published": "2026-11-09",
+      "source_url": "https://oilprice.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "UN leaders urged faster mitigation as the two-week COP31 summit opened in Antalya, amid the Strait of Hormuz crisis.",
+      "overlap": []
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "Russia Targets Ukraine's Power Grid Ahead of Crucial Abu Dhabi Peace Talks",
+      "url": "https://oilprice.com/Geopolitics/Europe/Russia-Targets-Ukraines-Power-Grid-Ahead-of-Crucial-Abu-Dhabi-Peace-Talks.html",
+      "published": "2026-11-09",
+      "source_url": "https://oilprice.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Ukrainian crews restore power after Russian air strikes; Trump suggested Kyiv may have to cede some territory in a US-brokered deal.",
+      "overlap": []
+    },
+    {
+      "source": "Oilprice.com",
+      "title": "After Midterm Failure, Trump's Foreign Strategy May Be Even More Dangerous",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/After-Midterm-Failure-Trumps-Foreign-Strategy-May-Be-Even-More-Dangerous.html",
+      "published": "2026-11-09",
+      "source_url": "https://oilprice.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Notes Republicans lost both chambers in the midterms and argues Trump's foreign strategy remains a serious concern.",
+      "overlap": []
+    },
+    {
+      "source": "Rigzone",
+      "title": "North America Goes Back to Losing Rigs, BH Shows",
+      "url": "https://rigzone.com/news/north_america_goes_back_to_losing_rigs_bh_shows-09-nov-2026-185045-article/",
+      "published": "2026-11-09",
+      "source_url": "https://www.rigzone.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "North America lost two rigs week on week, according to Baker Hughes' latest rotary rig count.",
+      "overlap": []
+    },
+    {
+      "source": "Rigzone",
+      "title": "Strathcona, Greenfire Agree Oil Sands Merger",
+      "url": "https://rigzone.com/news/strathcona_greenfire_agree_oil_sands_merger-09-nov-2026-185042-article/",
+      "published": "2026-11-09",
+      "source_url": "https://www.rigzone.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Strathcona agreed to acquire Greenfire for up to about $2.06 billion, creating an oil sands major.",
+      "overlap": []
+    },
+    {
+      "source": "Rigzone",
+      "title": "Trump Says He Backs Energy Permitting Bill on Eve of Vote",
+      "url": "https://rigzone.com/news/wire/trump_says_he_backs_energy_permitting_bill_on_eve_of_vote-09-nov-2026-185043-article/",
+      "published": "2026-11-09",
+      "source_url": "https://www.rigzone.com",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Trump endorsed a bipartisan plan to speed federal approvals for major energy and infrastructure projects before a Senate vote.",
+      "overlap": []
+    },
+    {
+      "source": "MINING.COM",
+      "title": "$32 billion later, Codelco's future hinges on private partners",
+      "url": "https://mining.com/32-billion-later-codelcos-future-hinges-on-private-partners/",
+      "published": "2026-11-09",
+      "source_url": "https://www.mining.com",
+      "topic": "Metals and minerals",
+      "access": "partial",
+      "summary": "Codelco's chairman warns falling copper output, rising costs and management failures threaten the state miner.",
+      "overlap": [
+        {
+          "symbol": "HG=F",
+          "strength": "loose",
+          "reason": "Codelco is a major copper producer."
+        }
+      ]
+    },
+    {
+      "source": "MINING.COM",
+      "title": "Codelco, Pucobre clear key hurdle for $870 million copper mine",
+      "url": "https://mining.com/codelco-pucobre-clear-key-hurdle-for-870-million-copper-mine/",
+      "published": "2026-11-09",
+      "source_url": "https://www.mining.com",
+      "topic": "Metals and minerals",
+      "access": "partial",
+      "summary": "The Tovaku copper project in Chile has environmental approval, with construction planned for 2027 and a solar park and seawater supply.",
+      "overlap": [
+        {
+          "symbol": "HG=F",
+          "strength": "loose",
+          "reason": "Adds future copper supply."
+        }
+      ]
+    },
+    {
+      "source": "MINING.COM",
+      "title": "Vivox AI, beSirius partner on mining supply chain compliance",
+      "url": "https://mining.com/vivox-ai-besirius-partner-on-mining-supply-chain-compliance/",
+      "published": "2026-11-09",
+      "source_url": "https://www.mining.com",
+      "topic": "Metals and minerals",
+      "access": "partial",
+      "summary": "The partners combine supplier evidence reviews with financial crime screening to cut vetting time and cost.",
+      "overlap": []
+    },
+    {
+      "source": "Hellenic Shipping News",
+      "title": "Tankers: VLCC Market Cools Down",
+      "url": "https://hellenicshippingnews.com/tankers-vlcc-market-cools-down/",
+      "published": "2026-11-08",
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Shipbroker Affinity says VLCCs softened through the week on limited enquiry and competitive Suezmax alternatives.",
+      "overlap": []
+    },
+    {
+      "source": "Hellenic Shipping News",
+      "title": "Asia-US container rates largely stable; liquid tanker rates steady to higher",
+      "url": "https://hellenicshippingnews.com/asia-us-container-rates-largely-stable-liquid-tanker-rates-steady-to-higher/",
+      "published": "2026-11-08",
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "East Asia to US container rates were broadly unchanged; West Coast rates edged up to $7,540-8,340 per FEU.",
+      "overlap": []
+    },
+    {
+      "source": "Hellenic Shipping News",
+      "title": "Dry Bulk Market: Capesizes End The Week on Firmer Note",
+      "url": "https://hellenicshippingnews.com/dry-bulk-market-capesizes-end-the-week-on-firmer-note/",
+      "published": "2026-11-08",
+      "source_url": "https://www.hellenicshippingnews.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Capesize conditions were mixed but firmer by week's end; the Pacific C5 route fell from $13.80 to the low $13.00s.",
+      "overlap": []
+    },
+    {
+      "source": "Carbon Brief",
+      "title": "Q&A: What is the Belém-Antalya mechanism for a 'just transition'?",
+      "url": "https://carbonbrief.org/qa-what-is-the-belem-antalya-mechanism-for-a-just-transition",
+      "published": "2026-11-09",
+      "source_url": "https://www.carbonbrief.org",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Introduces the just transition mechanism expected as a key outcome of COP31 in Antalya.",
+      "overlap": []
+    },
+    {
+      "source": "Carbon Brief",
+      "title": "'Simply staggering': Rapidly developing 'super El Niño' on track to peak in December",
+      "url": "https://carbonbrief.org/simply-staggering-rapidly-developing-super-el-nino-on-track-to-peak-in-december",
+      "published": "2026-11-06",
+      "source_url": "https://www.carbonbrief.org",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Says the ongoing El Niño is likely to peak at the end of 2026 and push global temperatures to records in 2027.",
+      "overlap": []
+    },
+    {
+      "source": "Carbon Brief",
+      "title": "Analysis: China's quarterly CO2 falls 3% in largest drop since Covid",
+      "url": "https://carbonbrief.org/analysis-chinas-quarterly-co2-falls-3-in-largest-drop-since-covid",
+      "published": "2026-11-06",
+      "source_url": "https://www.carbonbrief.org",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Reports China's CO2 emissions fell 3.1% in Q3 2026 amid Hormuz-related oil demand disruption and lower coal use.",
+      "overlap": []
+    },
+    {
+      "source": "World Nuclear News",
+      "title": "Texas SMR plant moves to final permitting stage",
+      "url": "https://world-nuclear-news.org/articles/texas-smr-plant-moves-to-final-permitting-stage",
+      "published": "2026-11-02",
+      "source_url": "https://www.world-nuclear-news.org",
+      "topic": "Energy",
+      "access": "full",
+      "summary": "The NRC released its final safety evaluation for the Long Mott permit covering four Xe-100 reactors at Dow's Seadrift site.",
+      "overlap": []
+    },
+    {
+      "source": "World Nuclear News",
+      "title": "First concrete poured for unit 5 at Haiyang plant",
+      "url": "https://world-nuclear-news.org/articles/first-concrete-poured-unit-5-haiyang-plant",
+      "published": "2026-11-02",
+      "source_url": "https://www.world-nuclear-news.org",
+      "topic": "Energy",
+      "access": "full",
+      "summary": "First safety-related concrete was poured on 31 October for Haiyang unit 5 in Shandong, the fifth of six planned large PWRs.",
+      "overlap": []
+    },
+    {
+      "source": "World Nuclear News",
+      "title": "Uganda and Russia look to move ahead with nuclear project",
+      "url": "https://world-nuclear-news.org/articles/russia-and-uganda-look-to-move-head-with-nuclear-project",
+      "published": "2026-11-02",
+      "source_url": "https://www.world-nuclear-news.org",
+      "topic": "Energy",
+      "access": "full",
+      "summary": "Russia and Uganda signed a nuclear cooperation roadmap creating a working group and moving toward site-selection surveys for Nakasongola.",
+      "overlap": []
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "Scout's 183MW Nimbus Wind Farm begins operations in Arkansas",
+      "url": "https://energymonitor.ai/news/nimbus-wind-farm-begins-operations/",
+      "published": "2026-11-06",
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Scout Clean Energy's 183 MW Nimbus project is operating commercially in Carroll County, Arkansas.",
+      "overlap": []
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "DTE Energy to divest DTE Vantage in $3bn deal",
+      "url": "https://energymonitor.ai/news/dte-energy-divest-dte-vantage/",
+      "published": "2026-11-06",
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "DTE plans to sell its non-utility unit DTE Vantage to institutional investors for about $3 billion.",
+      "overlap": []
+    },
+    {
+      "source": "Energy Monitor",
+      "title": "Panamint Capital closes $1.8bn loan for Big Rooter Power project",
+      "url": "https://energymonitor.ai/news/panamint-capital-loan-big-rooter-power/",
+      "published": "2026-11-05",
+      "source_url": "https://www.energymonitor.ai",
+      "topic": "Energy",
+      "access": "partial",
+      "summary": "Panamint Capital reached financial close on the first phase of a $1.8 billion green loan for Big Rooter Power.",
+      "overlap": []
+    },
+    {
+      "source": "gCaptain",
+      "title": "Russia Says It Hit Three Cargo Ships In Black Sea",
+      "url": "https://gcaptain.com/russia-says-it-hit-three-cargo-ships-in-black-sea/",
+      "published": "2026-11-09",
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Russia says overnight strikes hit three cargo vessels carrying military goods for Ukraine and two electricity substations.",
+      "overlap": []
+    },
+    {
+      "source": "gCaptain",
+      "title": "Iraq Has Reached Understandings With US To Allow Oil Exports Through Hormuz",
+      "url": "https://gcaptain.com/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz/",
+      "published": "2026-11-08",
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Iraq's foreign minister says understandings with the US allow Iraqi oil exports via a shipping lane near Oman.",
+      "overlap": [
+        {
+          "symbol": "BZ=F",
+          "strength": "loose",
+          "reason": "Hormuz export flows bear on crude supply."
+        }
+      ]
+    },
+    {
+      "source": "gCaptain",
+      "title": "Iran Suggests Blasts Are Not US Attacks As Both Sides Report Ships Hit",
+      "url": "https://gcaptain.com/iran-suggests-blasts-are-not-us-attacks-as-both-sides-report-ships-hit/",
+      "published": "2026-11-08",
+      "source_url": "https://gcaptain.com",
+      "topic": "Shipping and logistics",
+      "access": "partial",
+      "summary": "Iranian media suggest Saturday explosions in southern Iran were Iranian military activity, while both sides report ships hit.",
+      "overlap": [
+        {
+          "symbol": "BZ=F",
+          "strength": "loose",
+          "reason": "Gulf shipping attacks bear on crude."
+        }
+      ]
+    },
+    {
+      "source": "Climate Home News",
+      "title": "'Blue COP31' set to spotlight need for ocean protections amid record heat",
+      "url": "https://climatechangenews.com/2026/11/06/blue-cop31-antalya-ocean-protections-record-heat-climate-finance/",
+      "published": "2026-11-06",
+      "source_url": "https://www.climatechangenews.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Over 100 countries push for an ocean plan at COP31 as an extreme El Niño breaks sea temperature records.",
+      "overlap": []
+    },
+    {
+      "source": "Climate Home News",
+      "title": "Nepal seeks stronger recognition of mountain issues in UN climate process",
+      "url": "https://climatechangenews.com/2026/11/06/nepal-seeks-stronger-recognition-of-mountain-issues-in-un-climate-process/",
+      "published": "2026-11-06",
+      "source_url": "https://www.climatechangenews.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Flood-hit Nepal wants COP31 to adopt a 'mountains and climate change' agenda item.",
+      "overlap": []
+    },
+    {
+      "source": "Climate Home News",
+      "title": "European nations signal support for fossil fuel roadmap, says COP30 president",
+      "url": "https://climatechangenews.com/2026/11/06/european-nations-uk-fossil-fuel-roadmaps-brazil-cop30-president/",
+      "published": "2026-11-06",
+      "source_url": "https://www.climatechangenews.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "COP30 president André Corrêa do Lago says it is up to other nations to decide how fossil fuel and deforestation roadmaps are used.",
+      "overlap": []
+    },
+    {
+      "source": "Mongabay",
+      "title": "Killing a dangerous coral",
+      "url": "https://news.mongabay.com/short-article/2026/11/killing-a-dangerous-coral/",
+      "published": "2026-11-08",
+      "source_url": "https://news.mongabay.com",
+      "topic": "Climate and policy",
+      "access": "partial",
+      "summary": "Volunteer divers led by a Brazilian biologist hand-remove invasive sun coral from an oil platform near Ipanema.",
+      "overlap": []
+    },
+    {
+      "source": "CTVC",
+      "title": "SPAC to the future #320",
+      "url": "https://ctvc.co/spac-to-the-future-320/",
+      "published": "2026-11-02",
+      "source_url": "https://www.ctvc.co",
+      "topic": "Startups and deals",
+      "access": "partial",
+      "summary": "Covers 11 climate SPACs in 2026 with nuclear leading, how the 2021 class fared, and deals in battery materials and biomethanol.",
+      "overlap": []
+    },
+    {
+      "source": "TechCrunch Climate",
+      "title": "Pentagon offers battery startup 6K $250M loan to build US factory",
+      "url": "https://techcrunch.com/2026/11/06/pentagon-offers-battery-startup-6k-250m-loan-to-build-u-s-factory/",
+      "published": "2026-11-06",
+      "source_url": "https://techcrunch.com/category/climate/",
+      "topic": "Startups and deals",
+      "access": "partial",
+      "summary": "The Pentagon conditionally approved a $250 million loan for 6K to expand its microwave-plasma battery materials process.",
+      "overlap": []
+    }
+  ],
   "reading_quiet": [
+    "SemiAnalysis",
+    "Chipstrat",
+    "Irrational Analysis",
+    "The Chip Letter",
     "Culpium (Tim Culpan)",
-    "Utility Dive",
+    "Caixin Global China Watch",
+    "Dialogue Earth",
+    "Carbon Removal Updates",
+    "Semiconductor Engineering",
+    "Fabricated Knowledge",
     "farmdoc daily",
-    "Chipstrat"
+    "AgFunder News",
+    "Carbon Herald"
   ],
   "climate": [
     {
@@ -3075,7 +3610,7 @@
     "Climate section and earnings dates carried from the 7 Nov edition; no new climate sources checked.",
     "Second-source and headline links taken from search results; prices not re-fetched since the 6 Nov close.",
     "Audit sample not second-sourced this run: TSM, TTE, TTF=F, TUR, TXN, U3O8, UAE, UEC.",
-    "Reading: fetch permission was not granted for these feeds, so they were not read: SemiAnalysis, Dialogue Earth, EE Times, The Loadstar, Carbon Brief, Climate Home News, ChinaTalk, Carbon Removal Updates, Fabricated Knowledge, Oilprice.com, Fertilizer Daily, Container News, World Nuclear News, Mongabay, Irrational Analysis, Hello China Tech, Semiconductor Engineering, Latitude Media, Rigzone, AgFunder News, Splash247, Energy Monitor, CTVC, The Chip Letter, Caixin Global China Watch, SemiWiki, Canary Media, MINING.COM, gCaptain, Hellenic Shipping News, Carbon Herald, TechCrunch Climate. Quiet feeds (items already shown): Culpium (Tim Culpan), Utility Dive, farmdoc daily, Chipstrat."
+    "Reading: SemiWiki, The Loadstar, Container News, Splash247 returned fetch errors; Fertilizer Daily blocks automated access. Feeds read from the feed text only; most excerpts are partial."
   ],
   "indicators": [
     {
