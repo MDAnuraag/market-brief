@@ -1,3 +1,4 @@
 period,value,yoy_reported,mom_reported,ytd_reported,status,released,source,source_url,note
-2026-09,717,,,,final,2026-09-11,USDA WASDE,https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt,September projection as shown in the prior-month column of the October report
-2026-10,740,,,,final,2026-10-09,USDA WASDE,https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt,October 2026 WASDE text; 2026/27 US ending stocks
+2026-09,717.0,,,,final,2026-09-11,USDA WASDE,https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt,September projection as shown in the prior-month column of the October report
+2026-10,740.0,,,,final,2026-10-09,USDA WASDE,https://esmis.nal.usda.gov/sites/default/release-files/796099/wasde1026.txt,October 2026 WASDE text; 2026/27 US ending stocks
+2026-11,743.0,,,,final,2026-11-10,USDA WASDE,https://www.usda.gov/oce/commodity/wasde/wasde1126.pdf,"November 2026 WASDE; 2026/27 US ending stocks, million bushels; October was 740."
