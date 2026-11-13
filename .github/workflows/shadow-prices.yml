@@ -1,0 +1,40 @@
+name: Shadow prices
+
+# Manual only for now. Fetches prices in plain Python and saves them under data/shadow/ so they can be
+# compared with the brief on main. It does not touch data/latest.json or the page.
+on:
+  workflow_dispatch:
+    inputs:
+      data_date:
+        description: "Optional YYYY-MM-DD to reproduce, e.g. the data date at the top of the brief on main"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shadow-prices
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pandas lxml
+      - name: Fetch prices (shadow)
+        env:
+          DD: ${{ inputs.data_date }}
+        run: python scripts/fetch_prices.py ${DD:+--data-date "$DD"}
+      - name: Save shadow output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/shadow
+          git diff --cached --quiet && exit 0
+          git commit -m "Shadow prices $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main
