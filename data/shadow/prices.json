@@ -1,0 +1,1843 @@
+{
+ "generated_at": "2026-11-13T05:31:34+00:00",
+ "data_date": "2026-11-11",
+ "edition": "weekday",
+ "requests": 158,
+ "results": {
+  "^GSPC": {
+   "status": "ok",
+   "url": "https://www.investing.com/indices/us-spx-500-historical-data",
+   "last": 7619.38,
+   "chg_1d": 1.31,
+   "chg_1w": -0.9,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "^IXIC": {
+   "status": "ok",
+   "url": "https://www.investing.com/indices/nasdaq-composite-historical-data",
+   "last": 25466.19,
+   "chg_1d": 1.6,
+   "chg_1w": -1.05,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "^DJI": {
+   "status": "ok",
+   "url": "https://www.investing.com/indices/us-30-historical-data",
+   "last": 52486.49,
+   "chg_1d": 0.49,
+   "chg_1w": -1.63,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "^RUT": {
+   "status": "ok",
+   "url": "https://www.investing.com/indices/smallcap-2000-historical-data",
+   "last": 2846.26,
+   "chg_1d": 0.88,
+   "chg_1w": -0.37,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "^VIX": {
+   "status": "ok",
+   "url": "https://www.investing.com/indices/volatility-s-p-500-historical-data",
+   "last": 17.49,
+   "chg_1d": -10.12,
+   "chg_1w": 5.3,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "^TNX": {
+   "status": "ok",
+   "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+   "last": 4.984,
+   "chg_1d": 0.001,
+   "chg_1w": 0.092,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "SWTSX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/mutf/swtsx/history/?fresh=2026-11-12",
+   "last": 18.42,
+   "chg_1d": 1.26,
+   "chg_1w": -0.75,
+   "chg_1m": -2.18,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "SWISX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/mutf/swisx/history/?fresh=2026-11-12",
+   "last": 31.84,
+   "chg_1d": 0.41,
+   "chg_1w": -0.66,
+   "chg_1m": 1.37,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VOO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/voo/history/?fresh=2026-11-12",
+   "last": 698.35,
+   "chg_1d": 1.28,
+   "chg_1w": -0.91,
+   "chg_1m": -2.41,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VTI": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/vti/history/?fresh=2026-11-12",
+   "last": 374.25,
+   "chg_1d": 1.27,
+   "chg_1w": -0.71,
+   "chg_1m": -2.01,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VXUS": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/vxus/history/?fresh=2026-11-12",
+   "last": 83.44,
+   "chg_1d": 0.94,
+   "chg_1w": -0.52,
+   "chg_1m": -1.63,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "TSM": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/tsm/history/?fresh=2026-11-12",
+   "last": 413.35,
+   "chg_1d": 4.25,
+   "chg_1w": 4.45,
+   "chg_1m": -8.82,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "NVDA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/nvda/history/?fresh=2026-11-12",
+   "last": 173.73,
+   "chg_1d": 2.87,
+   "chg_1w": -13.19,
+   "chg_1m": -24.23,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "AVGO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/avgo/history/?fresh=2026-11-12",
+   "last": 345.22,
+   "chg_1d": 3.99,
+   "chg_1w": 6.06,
+   "chg_1m": -4.51,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "AMD": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/amd/history/?fresh=2026-11-12",
+   "last": 552.9,
+   "chg_1d": 7.32,
+   "chg_1w": 13.12,
+   "chg_1m": -9.08,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "QCOM": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/qcom/history/?fresh=2026-11-12",
+   "last": 176.57,
+   "chg_1d": 1.75,
+   "chg_1w": 1.95,
+   "chg_1m": 0.61,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ASML": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/asml/history/?fresh=2026-11-12",
+   "last": 1534.42,
+   "chg_1d": 1.76,
+   "chg_1w": 2.55,
+   "chg_1m": -13.81,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "KLAC": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/klac/history/?fresh=2026-11-12",
+   "last": 161.01,
+   "chg_1d": 5.24,
+   "chg_1w": 7.49,
+   "chg_1m": -17.67,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "AMAT": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/amat/history/?fresh=2026-11-12",
+   "last": 395.08,
+   "chg_1d": 6.05,
+   "chg_1w": 6.95,
+   "chg_1m": -22.08,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "LRCX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/lrcx/history/?fresh=2026-11-12",
+   "last": 235.88,
+   "chg_1d": 6.07,
+   "chg_1w": 6.53,
+   "chg_1m": -26.02,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ONTO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/onto/history/?fresh=2026-11-12",
+   "last": 215.06,
+   "chg_1d": 8.89,
+   "chg_1w": 16.36,
+   "chg_1m": -26.98,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "INTC": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/intc/history/?fresh=2026-11-12",
+   "last": 62.5,
+   "chg_1d": 7.52,
+   "chg_1w": 7.26,
+   "chg_1m": -40.31,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "005930.KS": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/krx/005930/history/?fresh=2026-11-12",
+   "last": 206000.0,
+   "chg_1d": 3.57,
+   "chg_1w": -5.5,
+   "chg_1m": -21.37,
+   "as_of": "2026-11-11",
+   "rows": 48
+  },
+  "000660.KS": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/krx/000660/history/?fresh=2026-11-12",
+   "last": 1277000.0,
+   "chg_1d": 5.36,
+   "chg_1w": -8.52,
+   "chg_1m": -24.03,
+   "as_of": "2026-11-11",
+   "rows": 48
+  },
+  "8035.T": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/tyo/8035/history/?fresh=2026-11-12",
+   "last": 9272.0,
+   "chg_1d": 2.95,
+   "chg_1w": -4.05,
+   "chg_1m": -25.5,
+   "as_of": "2026-11-11",
+   "rows": 48
+  },
+  "ASM.AS": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/ams/ASM/history/?fresh=2026-11-12",
+   "last": 727.6,
+   "chg_1d": 6.97,
+   "chg_1w": 6.44,
+   "chg_1m": -17.66,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "2454.TW": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/tpe/2454/history/?fresh=2026-11-12",
+   "last": 3990.0,
+   "chg_1d": 4.18,
+   "chg_1w": 7.4,
+   "chg_1m": -14.93,
+   "as_of": "2026-11-11",
+   "rows": 48
+  },
+  "0981.HK": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/hkg/0981/history/?fresh=2026-11-12",
+   "last": 49.0,
+   "chg_1d": 3.73,
+   "chg_1w": 5.51,
+   "chg_1m": -15.0,
+   "as_of": "2026-11-11",
+   "rows": 48
+  },
+  "MU": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/mu/history/?fresh=2026-11-12",
+   "last": 811.3,
+   "chg_1d": 11.89,
+   "chg_1w": 2.02,
+   "chg_1m": -21.16,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "TXN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/txn/history/?fresh=2026-11-12",
+   "last": 309.81,
+   "chg_1d": 3.09,
+   "chg_1w": -0.54,
+   "chg_1m": 9.19,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "MCHP": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/mchp/history/?fresh=2026-11-12",
+   "last": 62.13,
+   "chg_1d": 2.98,
+   "chg_1w": -17.53,
+   "chg_1m": -17.76,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "GFS": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/gfs/history/?fresh=2026-11-12",
+   "last": 42.85,
+   "chg_1d": 5.49,
+   "chg_1w": 6.22,
+   "chg_1m": -11.17,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ENTG": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/entg/history/?fresh=2026-11-12",
+   "last": 154.22,
+   "chg_1d": 11.29,
+   "chg_1w": 7.94,
+   "chg_1m": -6.98,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "AAPL": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/aapl/history/?fresh=2026-11-12",
+   "last": 355.63,
+   "chg_1d": 2.04,
+   "chg_1w": 1.75,
+   "chg_1m": 5.64,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "MSFT": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/msft/history/?fresh=2026-11-12",
+   "last": 521.13,
+   "chg_1d": -2.26,
+   "chg_1w": -6.24,
+   "chg_1m": -2.61,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "GOOGL": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/googl/history/?fresh=2026-11-12",
+   "last": 293.45,
+   "chg_1d": 2.11,
+   "chg_1w": 1.56,
+   "chg_1m": -16.55,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "AMZN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/amzn/history/?fresh=2026-11-12",
+   "last": 266.17,
+   "chg_1d": -1.74,
+   "chg_1w": 0.05,
+   "chg_1m": 1.43,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "META": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/meta/history/?fresh=2026-11-12",
+   "last": 628.77,
+   "chg_1d": -1.97,
+   "chg_1w": -0.2,
+   "chg_1m": -12.51,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BZ=F": {
+   "status": "ok",
+   "url": "https://www.investing.com/commodities/brent-oil-historical-data",
+   "last": 92.76,
+   "chg_1d": 1.39,
+   "chg_1w": -1.97,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "CL=F": {
+   "status": "ok",
+   "url": "https://www.investing.com/commodities/crude-oil-historical-data",
+   "last": 86.53,
+   "chg_1d": 0.57,
+   "chg_1w": -1.8,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "NG=F": {
+   "status": "ok",
+   "url": "https://www.investing.com/commodities/natural-gas-historical-data",
+   "last": 3.215,
+   "chg_1d": -2.46,
+   "chg_1w": 8.65,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "TTF=F": {
+   "status": "ok",
+   "url": "https://www.investing.com/commodities/dutch-ttf-gas-c1-futures-historical-data",
+   "last": 87.22,
+   "chg_1d": 2.94,
+   "chg_1w": -0.98,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "JKM": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "MTF=F": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "XOM": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/xom/history/?fresh=2026-11-12",
+   "last": 166.71,
+   "chg_1d": 1.36,
+   "chg_1w": -1.51,
+   "chg_1m": -1.32,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "SHEL": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/shel/history/?fresh=2026-11-12",
+   "last": 97.86,
+   "chg_1d": 0.61,
+   "chg_1w": -3.93,
+   "chg_1m": -2.32,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "TTE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/tte/history/?fresh=2026-11-12",
+   "last": 87.96,
+   "chg_1d": 0.09,
+   "chg_1w": -2.76,
+   "chg_1m": 2.15,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "CVX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/cvx/history/?fresh=2026-11-12",
+   "last": 213.28,
+   "chg_1d": 0.98,
+   "chg_1w": -1.7,
+   "chg_1m": 0.61,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EQNR": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/eqnr/history/?fresh=2026-11-12",
+   "last": 41.33,
+   "chg_1d": 1.6,
+   "chg_1w": -3.43,
+   "chg_1m": -3.91,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BP.L": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/lon/BP/history/?fresh=2026-11-12",
+   "last": 567.0,
+   "chg_1d": 2.68,
+   "chg_1w": -0.8,
+   "chg_1m": -3.29,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "PBR": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/pbr/history/?fresh=2026-11-12",
+   "last": 17.82,
+   "chg_1d": -2.52,
+   "chg_1w": -9.13,
+   "chg_1m": -29.57,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "COP": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/cop/history/?fresh=2026-11-12",
+   "last": 137.86,
+   "chg_1d": 1.67,
+   "chg_1w": 0.67,
+   "chg_1m": 2.8,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "OXY": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/oxy/history/?fresh=2026-11-12",
+   "last": 57.24,
+   "chg_1d": 0.6,
+   "chg_1w": -0.16,
+   "chg_1m": -4.77,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "SLB": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/slb/history/?fresh=2026-11-12",
+   "last": 50.96,
+   "chg_1d": 2.12,
+   "chg_1w": -1.16,
+   "chg_1m": 4.11,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "2222.SR": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/tadawul/2222/history/?fresh=2026-11-12",
+   "last": 26.02,
+   "chg_1d": 1.64,
+   "chg_1w": -0.84,
+   "chg_1m": 1.25,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "RELIANCE.NS": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/nse/RELIANCE/history/?fresh=2026-11-12",
+   "last": 1335.4,
+   "chg_1d": 0.83,
+   "chg_1w": 1.86,
+   "chg_1m": 14.11,
+   "as_of": "2026-11-11",
+   "rows": 48
+  },
+  "LNG": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/lng/history/?fresh=2026-11-12",
+   "last": 304.51,
+   "chg_1d": 3.75,
+   "chg_1w": 4.28,
+   "chg_1m": 9.47,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "U3O8": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "CCJ": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/ccj/history/?fresh=2026-11-12",
+   "last": 74.32,
+   "chg_1d": 1.99,
+   "chg_1w": 3.68,
+   "chg_1m": -15.6,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "URA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ura/history/?fresh=2026-11-12",
+   "last": 33.64,
+   "chg_1d": 1.48,
+   "chg_1w": 2.87,
+   "chg_1m": -13.52,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "NXE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/nxe/history/?fresh=2026-11-12",
+   "last": 8.32,
+   "chg_1d": -0.12,
+   "chg_1w": 4.0,
+   "chg_1m": -4.91,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "UEC": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/uec/history/?fresh=2026-11-12",
+   "last": 7.23,
+   "chg_1d": 0.84,
+   "chg_1w": 0.56,
+   "chg_1m": -21.33,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "KAP.L": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/lon/KAP/history/?fresh=2026-11-12",
+   "last": 63.0,
+   "chg_1d": 1.45,
+   "chg_1w": 5.0,
+   "chg_1m": -1.41,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "PDN.AX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/asx/PDN/history/?fresh=2026-11-12",
+   "last": 8.7,
+   "chg_1d": 0.23,
+   "chg_1w": 21.68,
+   "chg_1m": 3.69,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "LEU": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/leu/history/?fresh=2026-11-12",
+   "last": 112.17,
+   "chg_1d": 2.09,
+   "chg_1w": 21.16,
+   "chg_1m": -21.25,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BWXT": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/bwxt/history/?fresh=2026-11-12",
+   "last": 125.68,
+   "chg_1d": -0.76,
+   "chg_1w": 3.44,
+   "chg_1m": -12.62,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "CEG": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/ceg/history/?fresh=2026-11-12",
+   "last": 274.73,
+   "chg_1d": 2.6,
+   "chg_1w": 11.81,
+   "chg_1m": -7.83,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VST": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/vst/history/?fresh=2026-11-12",
+   "last": 133.45,
+   "chg_1d": 1.73,
+   "chg_1w": 10.94,
+   "chg_1m": -17.36,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EUA": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "KRBN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/krbn/history/?fresh=2026-11-12",
+   "last": 35.37,
+   "chg_1d": 0.74,
+   "chg_1w": -0.48,
+   "chg_1m": 3.15,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "XE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/xe/history/?fresh=2026-11-12",
+   "last": 10.94,
+   "chg_1d": -0.27,
+   "chg_1w": 8.86,
+   "chg_1m": -20.2,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "OKLO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/oklo/history/?fresh=2026-11-12",
+   "last": 25.86,
+   "chg_1d": 3.07,
+   "chg_1w": 16.91,
+   "chg_1m": -25.48,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "SMR": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/smr/history/?fresh=2026-11-12",
+   "last": 5.23,
+   "chg_1d": 0.19,
+   "chg_1w": 1.95,
+   "chg_1m": -27.36,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "NNE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/nne/history/?fresh=2026-11-12",
+   "last": 11.59,
+   "chg_1d": 0.09,
+   "chg_1w": 5.84,
+   "chg_1m": -24.45,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "HG=F": {
+   "status": "ok",
+   "url": "https://www.investing.com/commodities/copper-historical-data",
+   "last": 6.29,
+   "chg_1d": 0.89,
+   "chg_1w": -2.16,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "ALI=F": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "NICKEL": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "IRONORE": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "LITHIUM": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "COBALT": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "NDPR": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "GC=F": {
+   "status": "ok",
+   "url": "https://www.investing.com/commodities/gold-historical-data",
+   "last": 4000.5,
+   "chg_1d": -0.74,
+   "chg_1w": -1.78,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "SI=F": {
+   "status": "ok",
+   "url": "https://www.investing.com/commodities/silver-historical-data",
+   "last": 52.002,
+   "chg_1d": 1.52,
+   "chg_1w": -0.54,
+   "chg_1m": null,
+   "as_of": "2026-11-11",
+   "rows": 22
+  },
+  "FCX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/fcx/history/?fresh=2026-11-12",
+   "last": 62.12,
+   "chg_1d": 3.0,
+   "chg_1w": -0.77,
+   "chg_1m": -15.7,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BHP": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/bhp/history/?fresh=2026-11-12",
+   "last": 82.06,
+   "chg_1d": 1.16,
+   "chg_1w": 2.4,
+   "chg_1m": -5.4,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "RIO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/rio/history/?fresh=2026-11-12",
+   "last": 84.97,
+   "chg_1d": 0.51,
+   "chg_1w": 0.48,
+   "chg_1m": -10.35,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VALE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/vale/history/?fresh=2026-11-12",
+   "last": 11.58,
+   "chg_1d": 0.0,
+   "chg_1w": 1.31,
+   "chg_1m": -14.98,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "GLEN.L": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/lon/GLEN/history/?fresh=2026-11-12",
+   "last": 515.7,
+   "chg_1d": 2.2,
+   "chg_1w": 2.95,
+   "chg_1m": -11.79,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "SCCO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/scco/history/?fresh=2026-11-12",
+   "last": 172.61,
+   "chg_1d": 1.32,
+   "chg_1w": -2.39,
+   "chg_1m": -16.62,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "AA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/aa/history/?fresh=2026-11-12",
+   "last": 41.04,
+   "chg_1d": 2.65,
+   "chg_1w": 1.13,
+   "chg_1m": -2.75,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ALB": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/alb/history/?fresh=2026-11-12",
+   "last": 95.97,
+   "chg_1d": 1.1,
+   "chg_1w": 1.05,
+   "chg_1m": -5.23,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "MP": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/mp/history/?fresh=2026-11-12",
+   "last": 36.73,
+   "chg_1d": 0.74,
+   "chg_1w": 2.28,
+   "chg_1m": -20.39,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "AI.PA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/epa/AI/history/?fresh=2026-11-12",
+   "last": 192.16,
+   "chg_1d": 0.96,
+   "chg_1w": 2.56,
+   "chg_1m": 13.25,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "LIN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/lin/history/?fresh=2026-11-12",
+   "last": 526.55,
+   "chg_1d": 0.91,
+   "chg_1w": 0.34,
+   "chg_1m": 8.85,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "APD": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/apd/history/?fresh=2026-11-12",
+   "last": 315.18,
+   "chg_1d": 0.94,
+   "chg_1w": -1.16,
+   "chg_1m": 12.06,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "DOW": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/dow/history/?fresh=2026-11-12",
+   "last": 32.54,
+   "chg_1d": 3.37,
+   "chg_1w": -0.49,
+   "chg_1m": 14.5,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "LYB": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/lyb/history/?fresh=2026-11-12",
+   "last": 62.58,
+   "chg_1d": 3.27,
+   "chg_1w": -0.6,
+   "chg_1m": 4.25,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "DD": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/dd/history/?fresh=2026-11-12",
+   "last": 155.61,
+   "chg_1d": -0.81,
+   "chg_1w": 3.24,
+   "chg_1m": 19.7,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BAS.DE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/fra/BAS/history/?fresh=2026-11-12",
+   "last": 54.5,
+   "chg_1d": -0.35,
+   "chg_1w": 0.59,
+   "chg_1m": 5.7,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "2010.SR": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/tadawul/2010/history/?fresh=2026-11-12",
+   "last": 48.5,
+   "chg_1d": 1.29,
+   "chg_1w": 1.85,
+   "chg_1m": 4.3,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ZW=F": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "RICE": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "PALM": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "UREA": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "DE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/de/history/?fresh=2026-11-12",
+   "last": 691.75,
+   "chg_1d": 0.6,
+   "chg_1w": 2.25,
+   "chg_1m": 11.41,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "NTR": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/ntr/history/?fresh=2026-11-12",
+   "last": 71.65,
+   "chg_1d": -0.72,
+   "chg_1w": -0.58,
+   "chg_1m": 6.18,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "MOS": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/mos/history/?fresh=2026-11-12",
+   "last": 22.8,
+   "chg_1d": -0.83,
+   "chg_1w": 5.46,
+   "chg_1m": 21.66,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ADM": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/adm/history/?fresh=2026-11-12",
+   "last": 70.92,
+   "chg_1d": 2.34,
+   "chg_1w": 0.11,
+   "chg_1m": -11.23,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BG": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/bg/history/?fresh=2026-11-12",
+   "last": 100.28,
+   "chg_1d": 0.87,
+   "chg_1w": 3.37,
+   "chg_1m": -2.38,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "CTVA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/ctva/history/?fresh=2026-11-12",
+   "last": 12.14,
+   "chg_1d": -0.25,
+   "chg_1w": -0.98,
+   "chg_1m": -8.31,
+   "as_of": "2026-11-11",
+   "rows": 29
+  },
+  "CF": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/cf/history/?fresh=2026-11-12",
+   "last": 123.24,
+   "chg_1d": 0.72,
+   "chg_1w": 10.35,
+   "chg_1m": 10.49,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "YAR.OL": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/osl/YAR/history/?fresh=2026-11-12",
+   "last": 408.8,
+   "chg_1d": 1.31,
+   "chg_1w": 4.5,
+   "chg_1m": -1.16,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BDI": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "SCFI": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "DCI": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "TANKER": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "BDRY": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/bdry/history/?fresh=2026-11-12",
+   "last": 13.62,
+   "chg_1d": 0.37,
+   "chg_1w": 8.01,
+   "chg_1m": -1.94,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "IYT": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/iyt/history/?fresh=2026-11-12",
+   "last": 84.49,
+   "chg_1d": 0.8,
+   "chg_1w": -0.62,
+   "chg_1m": 5.41,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "MAERSK-B.CO": {
+   "status": "error",
+   "reason": "HTTP 404",
+   "url": "https://stockanalysis.com/quote/cph/MAERSK-B/history/?fresh=2026-11-12"
+  },
+  "ZIM": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/zim/history/?fresh=2026-11-12",
+   "last": 29.01,
+   "chg_1d": 3.24,
+   "chg_1w": 2.11,
+   "chg_1m": -3.27,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "HLAG.DE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/fra/HLAG/history/?fresh=2026-11-12",
+   "last": 129.5,
+   "chg_1d": 4.86,
+   "chg_1w": -3.29,
+   "chg_1m": -2.41,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "1919.HK": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/hkg/1919/history/?fresh=2026-11-12",
+   "last": 17.13,
+   "chg_1d": 0.23,
+   "chg_1w": -6.5,
+   "chg_1m": -0.93,
+   "as_of": "2026-11-11",
+   "rows": 48
+  },
+  "FDX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/fdx/history/?fresh=2026-11-12",
+   "last": 322.63,
+   "chg_1d": 0.99,
+   "chg_1w": -2.06,
+   "chg_1m": 10.6,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "UPS": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/ups/history/?fresh=2026-11-12",
+   "last": 112.45,
+   "chg_1d": 1.26,
+   "chg_1w": -1.63,
+   "chg_1m": 18.91,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EWZ": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ewz/history/?fresh=2026-11-12",
+   "last": 32.44,
+   "chg_1d": 0.9,
+   "chg_1w": 0.59,
+   "chg_1m": -25.49,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EWW": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/eww/history/?fresh=2026-11-12",
+   "last": 77.71,
+   "chg_1d": 0.34,
+   "chg_1w": 1.78,
+   "chg_1m": 8.01,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ECH": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ech/history/?fresh=2026-11-12",
+   "last": 35.66,
+   "chg_1d": -0.56,
+   "chg_1w": -2.54,
+   "chg_1m": -5.49,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ARGT": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/argt/history/?fresh=2026-11-12",
+   "last": 73.87,
+   "chg_1d": 0.22,
+   "chg_1w": -5.84,
+   "chg_1m": -16.59,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VGK": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/vgk/history/?fresh=2026-11-12",
+   "last": 89.46,
+   "chg_1d": -0.21,
+   "chg_1w": -0.86,
+   "chg_1m": 3.99,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EPOL": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/epol/history/?fresh=2026-11-12",
+   "last": 43.62,
+   "chg_1d": -0.3,
+   "chg_1w": -0.95,
+   "chg_1m": -0.46,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "TUR": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/tur/history/?fresh=2026-11-12",
+   "last": 31.89,
+   "chg_1d": 0.41,
+   "chg_1w": 1.17,
+   "chg_1m": -6.56,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "KSA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ksa/history/?fresh=2026-11-12",
+   "last": 36.04,
+   "chg_1d": 1.29,
+   "chg_1w": 2.65,
+   "chg_1m": -0.06,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "UAE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/uae/history/?fresh=2026-11-12",
+   "last": 20.62,
+   "chg_1d": 1.18,
+   "chg_1w": 2.13,
+   "chg_1m": 6.73,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EZA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/eza/history/?fresh=2026-11-12",
+   "last": 66.86,
+   "chg_1d": -1.37,
+   "chg_1w": 1.98,
+   "chg_1m": 4.8,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "AFK": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/afk/history/?fresh=2026-11-12",
+   "last": 26.66,
+   "chg_1d": -1.11,
+   "chg_1w": 0.98,
+   "chg_1m": -0.82,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "INDA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/inda/history/?fresh=2026-11-12",
+   "last": 51.59,
+   "chg_1d": -0.25,
+   "chg_1w": 3.12,
+   "chg_1m": 12.08,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EWJ": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ewj/history/?fresh=2026-11-12",
+   "last": 92.12,
+   "chg_1d": 1.91,
+   "chg_1w": -1.85,
+   "chg_1m": -5.87,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EWY": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ewy/history/?fresh=2026-11-12",
+   "last": 147.81,
+   "chg_1d": 6.2,
+   "chg_1w": -2.83,
+   "chg_1m": -16.6,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EWT": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ewt/history/?fresh=2026-11-12",
+   "last": 100.19,
+   "chg_1d": 5.82,
+   "chg_1w": 3.2,
+   "chg_1m": -12.35,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "MCHI": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/mchi/history/?fresh=2026-11-12",
+   "last": 50.69,
+   "chg_1d": -0.8,
+   "chg_1w": -1.69,
+   "chg_1m": -3.54,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EIDO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/eido/history/?fresh=2026-11-12",
+   "last": 10.21,
+   "chg_1d": 0.1,
+   "chg_1w": 3.65,
+   "chg_1m": -14.13,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VNM": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/vnm/history/?fresh=2026-11-12",
+   "last": 17.19,
+   "chg_1d": 0.41,
+   "chg_1w": 0.29,
+   "chg_1m": 2.81,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "THD": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/thd/history/?fresh=2026-11-12",
+   "last": 68.11,
+   "chg_1d": 0.62,
+   "chg_1w": -0.63,
+   "chg_1m": -4.89,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EPHE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ephe/history/?fresh=2026-11-12",
+   "last": 22.5,
+   "chg_1d": -0.31,
+   "chg_1w": -1.14,
+   "chg_1m": -1.27,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "EWA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/ewa/history/?fresh=2026-11-12",
+   "last": 29.4,
+   "chg_1d": -0.03,
+   "chg_1w": -1.54,
+   "chg_1m": 2.73,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VWO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/vwo/history/?fresh=2026-11-12",
+   "last": 57.22,
+   "chg_1d": 1.29,
+   "chg_1w": 1.67,
+   "chg_1m": -4.25,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "FED": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "SELIC": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "BANXICO": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "ECB": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "CBRT": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "SARB": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "RBI": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "BOJ": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "BOK": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "LPR": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "BI": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "BSP": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "BOT": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "RBA": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "USDCLP": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "USDNGN": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "USDSAR": {
+   "status": "skipped",
+   "reason": "no scripted source yet"
+  },
+  "ESGU": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/esgu/history/?fresh=2026-11-12",
+   "last": 166.3,
+   "chg_1d": 1.33,
+   "chg_1w": -0.77,
+   "chg_1m": -2.47,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ESGD": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/esgd/history/?fresh=2026-11-12",
+   "last": 103.89,
+   "chg_1d": 0.23,
+   "chg_1w": -1.07,
+   "chg_1m": 1.4,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ESGE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/esge/history/?fresh=2026-11-12",
+   "last": 50.27,
+   "chg_1d": 2.47,
+   "chg_1w": 0.8,
+   "chg_1m": -7.22,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "CRBN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/crbn/history/?fresh=2026-11-12",
+   "last": 253.66,
+   "chg_1d": 1.18,
+   "chg_1w": -0.79,
+   "chg_1m": -1.94,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "DSI": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/dsi/history/?fresh=2026-11-12",
+   "last": 141.7,
+   "chg_1d": 1.36,
+   "chg_1w": -2.21,
+   "chg_1m": -5.06,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "GRNB": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/grnb/history/?fresh=2026-11-12",
+   "last": 23.36,
+   "chg_1d": -0.04,
+   "chg_1w": -0.38,
+   "chg_1m": 0.39,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BGRN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/bgrn/history/?fresh=2026-11-12",
+   "last": 46.11,
+   "chg_1d": 0.02,
+   "chg_1w": -0.26,
+   "chg_1m": 1.03,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ICLN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/icln/history/?fresh=2026-11-12",
+   "last": 16.28,
+   "chg_1d": 0.87,
+   "chg_1w": -1.93,
+   "chg_1m": -5.79,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "TAN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/tan/history/?fresh=2026-11-12",
+   "last": 43.95,
+   "chg_1d": 1.01,
+   "chg_1w": -4.02,
+   "chg_1m": 0.46,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "FAN": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/fan/history/?fresh=2026-11-12",
+   "last": 22.92,
+   "chg_1d": 0.26,
+   "chg_1w": -0.48,
+   "chg_1m": 3.1,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "PBW": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/pbw/history/?fresh=2026-11-12",
+   "last": 26.87,
+   "chg_1d": 2.05,
+   "chg_1w": 1.4,
+   "chg_1m": -5.15,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "PHO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/pho/history/?fresh=2026-11-12",
+   "last": 77.12,
+   "chg_1d": 0.01,
+   "chg_1w": -0.48,
+   "chg_1m": 12.44,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "CGW": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/cgw/history/?fresh=2026-11-12",
+   "last": 65.46,
+   "chg_1d": -0.15,
+   "chg_1w": -1.46,
+   "chg_1m": 2.3,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "LIT": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/lit/history/?fresh=2026-11-12",
+   "last": 61.07,
+   "chg_1d": 1.82,
+   "chg_1w": -1.31,
+   "chg_1m": -12.42,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "REMX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/remx/history/?fresh=2026-11-12",
+   "last": 53.13,
+   "chg_1d": 2.49,
+   "chg_1w": 2.71,
+   "chg_1m": -12.86,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "COPX": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/copx/history/?fresh=2026-11-12",
+   "last": 73.42,
+   "chg_1d": 0.75,
+   "chg_1w": -1.53,
+   "chg_1m": -14.38,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "PICK": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/pick/history/?fresh=2026-11-12",
+   "last": 55.83,
+   "chg_1d": 0.9,
+   "chg_1w": 0.13,
+   "chg_1m": -7.95,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "IGF": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/igf/history/?fresh=2026-11-12",
+   "last": 66.66,
+   "chg_1d": 0.08,
+   "chg_1w": 0.53,
+   "chg_1m": 6.23,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "PAVE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/etf/pave/history/?fresh=2026-11-12",
+   "last": 53.95,
+   "chg_1d": 1.26,
+   "chg_1w": 0.07,
+   "chg_1m": 0.94,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "FSLR": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/fslr/history/?fresh=2026-11-12",
+   "last": 178.11,
+   "chg_1d": -1.59,
+   "chg_1w": -8.43,
+   "chg_1m": 0.16,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ENPH": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/enph/history/?fresh=2026-11-12",
+   "last": 28.3,
+   "chg_1d": 2.39,
+   "chg_1w": -10.3,
+   "chg_1m": -13.75,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/be/history/?fresh=2026-11-12",
+   "last": 209.47,
+   "chg_1d": 12.97,
+   "chg_1w": 4.53,
+   "chg_1m": -25.32,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "NEE": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/nee/history/?fresh=2026-11-12",
+   "last": 85.99,
+   "chg_1d": -0.32,
+   "chg_1w": -2.78,
+   "chg_1m": 11.13,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "BEP": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/bep/history/?fresh=2026-11-12",
+   "last": 30.49,
+   "chg_1d": 1.36,
+   "chg_1w": -1.36,
+   "chg_1m": 3.25,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "ORSTED.CO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/cph/ORSTED/history/?fresh=2026-11-12",
+   "last": 143.7,
+   "chg_1d": -0.69,
+   "chg_1w": 1.2,
+   "chg_1m": 8.49,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VWS.CO": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/cph/VWS/history/?fresh=2026-11-12",
+   "last": 191.05,
+   "chg_1d": -3.8,
+   "chg_1w": -5.93,
+   "chg_1m": 0.71,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "SU.PA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/epa/SU/history/?fresh=2026-11-12",
+   "last": 242.5,
+   "chg_1d": 3.04,
+   "chg_1w": 4.73,
+   "chg_1m": -8.97,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "VIE.PA": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/quote/epa/VIE/history/?fresh=2026-11-12",
+   "last": 34.3,
+   "chg_1d": 0.03,
+   "chg_1w": 1.51,
+   "chg_1m": 10.32,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "XYL": {
+   "status": "ok",
+   "url": "https://stockanalysis.com/stocks/xyl/history/?fresh=2026-11-12",
+   "last": 95.11,
+   "chg_1d": -1.79,
+   "chg_1w": -5.88,
+   "chg_1m": -7.4,
+   "as_of": "2026-11-11",
+   "rows": 49
+  },
+  "USDBRL": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 5.5565,
+   "chg_1d": 0.09,
+   "chg_1w": 1.67,
+   "chg_1m": 11.02,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDMXN": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 18.6591,
+   "chg_1d": 0.57,
+   "chg_1w": 0.07,
+   "chg_1m": 2.52,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "EURUSD": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 1.1127059896963425,
+   "chg_1d": -0.78,
+   "chg_1w": -1.24,
+   "chg_1m": -0.7,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDTRY": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 50.229,
+   "chg_1d": 0.01,
+   "chg_1w": 0.41,
+   "chg_1m": 2.15,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDZAR": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 16.5639,
+   "chg_1d": 1.03,
+   "chg_1w": 0.66,
+   "chg_1m": 0.19,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDINR": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 93.69,
+   "chg_1d": -0.26,
+   "chg_1w": -1.0,
+   "chg_1m": -3.14,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDJPY": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 159.23,
+   "chg_1d": 0.66,
+   "chg_1w": 0.62,
+   "chg_1m": 0.62,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDKRW": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 1336.9,
+   "chg_1d": -0.16,
+   "chg_1w": -0.13,
+   "chg_1m": -0.34,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDCNY": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 6.6707,
+   "chg_1d": 0.01,
+   "chg_1w": -0.02,
+   "chg_1m": -0.32,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDIDR": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 18175,
+   "chg_1d": 0.63,
+   "chg_1w": 0.25,
+   "chg_1m": 1.64,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDPHP": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 63.251,
+   "chg_1d": 0.55,
+   "chg_1w": -0.44,
+   "chg_1m": 0.68,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "USDTHB": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 33.69,
+   "chg_1d": 0.69,
+   "chg_1w": 0.15,
+   "chg_1m": 0.48,
+   "as_of": "2026-11-11",
+   "rows": 54
+  },
+  "AUDUSD": {
+   "status": "ok",
+   "url": "https://api.frankfurter.dev/v1/",
+   "last": 0.6859181013786954,
+   "chg_1d": -0.64,
+   "chg_1w": -2.22,
+   "chg_1m": -1.75,
+   "as_of": "2026-11-11",
+   "rows": 54
+  }
+ }
+}
