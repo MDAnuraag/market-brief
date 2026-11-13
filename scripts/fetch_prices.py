@@ -50,8 +50,13 @@ ECB_USD = {"USDBRL": "BRL", "USDMXN": "MXN", "USDTRY": "TRY", "USDZAR": "ZAR", "
 ECB_INVERT = {"EURUSD": "EUR", "AUDUSD": "AUD"}  # shown as USD per unit, so 1 / (units per USD)
 
 
+PAGE_OVERRIDE = {"MAERSK-B.CO": "/quote/cph/MAERSK.B/history/"}  # the page code differs from the ticker
+
+
 def plan(sym, group):
     """Return ('sa', url path) / ('inv', ...) / ('fx', ...) or None when no scripted source yet."""
+    if sym in PAGE_OVERRIDE:
+        return ("sa", PAGE_OVERRIDE[sym])
     if sym in INVESTING:
         return ("inv",) + INVESTING[sym]
     if sym in ECB_USD or sym in ECB_INVERT:
@@ -184,6 +189,47 @@ def fx_series(fetch, symbols, start, end):
 
 
 # ---- main --------------------------------------------------------------------------
+def collect(items, fetch, data_date, fresh):
+    """Fetch every item that has a scripted source. Returns {symbol: result}; never raises for one bad page."""
+    results, fx_syms = {}, {}
+    for gid, it in items:
+        sym = it["symbol"]
+        p = plan(sym, gid)
+        url = ""
+        if p is None:
+            results[sym] = {"status": "skipped", "reason": "no scripted source yet"}
+        elif p[0] == "fx":
+            fx_syms[sym] = ECB_USD.get(sym) or ECB_INVERT[sym]
+        else:
+            try:
+                url = f"{SA}{p[1]}{fresh}" if p[0] == "sa" else f"https://www.investing.com/{p[1]}/{p[2]}-historical-data"
+                kind = "pct" if p[0] == "sa" else p[3]
+                m = metrics(parse_rows(fetch.get(url).text), data_date, kind)
+                if m is None:
+                    results[sym] = {"status": "error", "reason": "no rows on or before the data date", "url": url}
+                else:
+                    results[sym] = {"status": "ok", "url": url, **m}
+            except Exception as e:  # one bad page never stops the run
+                results[sym] = {"status": "error", "reason": str(e)[:120], "url": url}
+        print(f"{sym:14} {results.get(sym, {}).get('status', 'fx')}", flush=True)
+
+    if fx_syms:
+        try:
+            start = (data_date - dt.timedelta(days=75)).isoformat()
+            ser = fx_series(fetch, set(fx_syms.values()), start, data_date.isoformat())
+            for sym, cur in fx_syms.items():
+                rows = ser.get(cur, [])
+                if sym in ECB_INVERT:
+                    rows = [(d, 1 / v) for d, v in rows]
+                m = metrics(rows, data_date)
+                results[sym] = ({"status": "ok", "url": "https://api.frankfurter.dev/v1/", **m}
+                                if m else {"status": "error", "reason": "no ECB rows"})
+        except Exception as e:
+            for sym in fx_syms:
+                results[sym] = {"status": "error", "reason": f"Frankfurter: {str(e)[:100]}"}
+    return results
+
+
 def load_items(everything, edition):
     wl = json.load(open("data/watchlist.json"))
     out = []
@@ -223,42 +269,7 @@ def main():
     if a.limit:
         items = items[: a.limit]
 
-    results, fx_syms = {}, {}
-    for gid, it in items:
-        sym = it["symbol"]
-        p = plan(sym, gid)
-        url = ""
-        if p is None:
-            results[sym] = {"status": "skipped", "reason": "no scripted source yet"}
-        elif p[0] == "fx":
-            fx_syms[sym] = ECB_USD.get(sym) or ECB_INVERT[sym]
-        else:
-            try:
-                url = f"{SA}{p[1]}{fresh}" if p[0] == "sa" else f"https://www.investing.com/{p[1]}/{p[2]}-historical-data"
-                kind = "pct" if p[0] == "sa" else p[3]
-                m = metrics(parse_rows(fetch.get(url).text), data_date, kind)
-                if m is None:
-                    results[sym] = {"status": "error", "reason": "no rows on or before the data date", "url": url}
-                else:
-                    results[sym] = {"status": "ok", "url": url, **m}
-            except Exception as e:  # one bad page never stops the run
-                results[sym] = {"status": "error", "reason": str(e)[:120], "url": url}
-        print(f"{sym:14} {results.get(sym, {}).get('status', 'fx')}", flush=True)
-
-    if fx_syms:
-        try:
-            start = (data_date - dt.timedelta(days=75)).isoformat()
-            ser = fx_series(fetch, set(fx_syms.values()), start, data_date.isoformat())
-            for sym, cur in fx_syms.items():
-                rows = ser.get(cur, [])
-                if sym in ECB_INVERT:
-                    rows = [(d, 1 / v) for d, v in rows]
-                m = metrics(rows, data_date)
-                results[sym] = ({"status": "ok", "url": "https://api.frankfurter.dev/v1/", **m}
-                                if m else {"status": "error", "reason": "no ECB rows"})
-        except Exception as e:
-            for sym in fx_syms:
-                results[sym] = {"status": "error", "reason": f"Frankfurter: {str(e)[:100]}"}
+    results = collect(items, fetch, data_date, fresh)
 
     os.makedirs(a.out, exist_ok=True)
     json.dump({"generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),

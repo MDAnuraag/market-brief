@@ -1,0 +1,84 @@
+name: Brief
+
+# Scripted market brief, no LLM and no approvals.
+#   - Scheduled: 6:54 a.m. Central Monday to Friday and 8:46 a.m. Central Saturday.
+#   - GitHub cron is UTC, so each run has two entries (daylight and standard time); scripts/gate.py lets only the
+#     one that lands in the right Central-time window continue.
+#   - Until the repository variable BRIEF_LIVE is set to "true", scheduled runs are dry runs: they save the result
+#     under data/shadow/brief/ and change nothing live. A manual run can publish by ticking "publish".
+on:
+  schedule:
+    - cron: "54 11 * * 1-5"
+    - cron: "54 12 * * 1-5"
+    - cron: "46 13 * * 6"
+    - cron: "46 14 * * 6"
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish to the live page (leave off for a dry run)"
+        type: boolean
+        default: false
+      data_date:
+        description: "Optional YYYY-MM-DD to reproduce"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brief
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.g.outputs.run }}
+      live: ${{ steps.g.outputs.live }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/gate.py
+      - id: g
+        env:
+          EVENT: ${{ github.event_name }}
+          LIVE_VAR: ${{ vars.BRIEF_LIVE }}
+          LIVE_INPUT: ${{ inputs.publish }}
+        run: python3 scripts/gate.py "$EVENT" "$LIVE_VAR" "$LIVE_INPUT" | tee -a "$GITHUB_OUTPUT"
+
+  brief:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pandas lxml feedparser
+      - name: Build the brief
+        env:
+          LIVE: ${{ needs.gate.outputs.live }}
+          DD: ${{ inputs.data_date }}
+        run: |
+          python scripts/build_brief.py ${DD:+--data-date "$DD"} $([ "$LIVE" = "true" ] && echo --live || true)
+      - name: Save and push
+        env:
+          LIVE: ${{ needs.gate.outputs.live }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "$LIVE" = "true" ]; then
+            git add data/latest.json data/history.jsonl data/reading_log.jsonl data/series/*.csv
+            MSG="Brief $(python -c "import json;d=json.load(open('data/latest.json'));print(d['data_date'],'('+d['edition']+')')")"
+          else
+            git add data/shadow
+            MSG="Dry run $(date -u +%F)"
+          fi
+          git diff --cached --quiet && exit 0
+          git commit -m "$MSG"
+          for i in 1 2; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1

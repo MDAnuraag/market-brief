@@ -74,3 +74,21 @@ Nuclear and fuel cycle, Carbon markets, Energy startups and new listings, Chemic
 - A row's detail lists related headlines, reading entries and indicators. Rows whose price is older than the data date say "as of" in the status column.
 - Boards no longer rotate by themselves; "play" turns that on and the choice is remembered on the device.
 - Reading marks items that are new since the last visit (at least six hours earlier) and has a filter for them.
+
+## Scripted run (no LLM, 2026-11-13)
+
+`.github/workflows/brief.yml` builds the brief on GitHub's servers with `scripts/build_brief.py`, using plain HTTP requests
+(stockanalysis.com history tables, Investing.com history tables, ECB rates through the Frankfurter API, FRED, and RSS feeds).
+It needs no API key and no tool approvals.
+
+- **Schedule:** 6:54 a.m. Central Monday to Friday, 8:46 a.m. Central Saturday. GitHub cron is UTC, so each run has two entries
+  and `scripts/gate.py` lets only the one inside the right Central-time window continue.
+- **Dry run first:** until the repository variable `BRIEF_LIVE` is `true`, scheduled runs only write `data/shadow/brief/`
+  (`latest.json` and `report.md`). Compare it with the live page, then set the variable and disable the two Claude scheduled tasks.
+- **Manual runs:** Actions > Brief > Run workflow. Tick "publish" to update the live page; leave it off for a dry run.
+- **Plain text sections:** Reading summaries are feed excerpts. Headlines are stories that two or more outlets cover, matched by
+  shared words in their titles. Climate entries are matched to regions by keywords. The summary is a template filled from the numbers.
+- **Not covered yet** (carried from the previous brief with an "as of" date): policy rates, the commodity and shipping spots with
+  no free page, USDCLP/NGN/SAR, indicators, earnings dates, and per-item commentary.
+- `scripts/probe_sources.py` and the "Probe sources" workflow test which sources answer; `scripts/fetch_prices.py` and
+  "Shadow prices" save just the price results.
