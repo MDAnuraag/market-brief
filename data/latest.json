@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-17T17:15:59Z",
- "data_date": "2026-11-17",
+ "generated_at": "2026-11-18T16:44:48Z",
+ "data_date": "2026-11-18",
  "edition": "weekday",
- "summary": "Among chip and equipment names, SMIC led (+6.8%) and TSMC lagged (-3.6%). Among country and regional funds, Mexico led (+1.7%) and Taiwan lagged (-2.4%). In rates and currencies, the dollar fell 0.2% against the yen. Flagged for a closer look: Corteva: Down 26.7% this week, 4.9 times its usual weekly swing (about ±5.5%); 24.5 points below the farm economy median; Brazil real: Up 4.2% this week, 3.0 times its usual weekly swing (about ±1.4%); 3.4 points above the emerging-market currencies median.",
+ "summary": "Among chip and equipment names, SK Hynix led (+4.2%) and Micron lagged (-2.8%). Among country and regional funds, United Arab Emirates led (+0.3%) and South Africa lagged (-6.0%). In rates and currencies, the dollar rose 0.1% against the yen. Flagged for a closer look: Corteva: Down 30.1% this week, 5.6 times its usual weekly swing (about ±5.4%); 23.3 points below the farm economy median; South Africa rand: Up 4.0% this week, 3.4 times its usual weekly swing (about ±1.2%); 3.6 points above the emerging-market currencies median.",
  "flags": [
   {
    "symbol": "CTVA",
    "tier": "look_into",
-   "reason": "Down 26.7% this week, 4.9 times its usual weekly swing (about ±5.5%); 24.5 points below the farm economy median.",
-   "z_own": -4.86,
-   "z_peer": -4.75,
+   "reason": "Down 30.1% this week, 5.6 times its usual weekly swing (about ±5.4%); 23.3 points below the farm economy median.",
+   "z_own": -5.61,
+   "z_peer": -4.68,
    "context": [
     {
      "id": "fao_ffpi",
@@ -26,33 +26,77 @@
    }
   },
   {
+   "symbol": "USDZAR",
+   "tier": "look_into",
+   "reason": "Up 4.0% this week, 3.4 times its usual weekly swing (about ±1.2%); 3.6 points above the emerging-market currencies median.",
+   "z_own": 3.41,
+   "z_peer": 3.47,
+   "verified": {
+    "status": "single",
+    "text": "one source so far"
+   }
+  },
+  {
    "symbol": "USDBRL",
    "tier": "look_into",
-   "reason": "Up 4.2% this week, 3.0 times its usual weekly swing (about ±1.4%); 3.4 points above the emerging-market currencies median.",
-   "z_own": 3.01,
-   "z_peer": 2.17,
+   "reason": "Up 4.7% this week, 3.2 times its usual weekly swing (about ±1.5%); 4.3 points above the emerging-market currencies median.",
+   "z_own": 3.22,
+   "z_peer": 2.52,
    "verified": {
     "status": "single",
     "text": "one source so far"
    }
   },
   {
-   "symbol": "USDZAR",
-   "tier": "keep_an_eye",
-   "reason": "Up 3.3% this week, 2.7 times its usual weekly swing (about ±1.2%); 2.5 points above the emerging-market currencies median.",
-   "z_own": 2.74,
-   "z_peer": 2.39,
+   "symbol": "EZA",
+   "tier": "look_into",
+   "reason": "Down 11.4% this week, 3.2 times its usual weekly swing (about ±3.6%); 9.3 points below the emerging Europe, Middle East and Africa median.",
+   "z_own": -3.15,
+   "z_peer": -3.39,
    "verified": {
     "status": "single",
     "text": "one source so far"
    }
   },
   {
-   "symbol": "AUDUSD",
+   "symbol": "COPX",
+   "tier": "look_into",
+   "reason": "Down 17.6% this week, 3.1 times its usual weekly swing (about ±5.7%); 11.7 points below the Resource and infrastructure themes median.",
+   "z_own": -3.07,
+   "z_peer": -2.76,
+   "verified": {
+    "status": "single",
+    "text": "one source so far"
+   }
+  },
+  {
+   "symbol": "PICK",
    "tier": "keep_an_eye",
-   "reason": "Down 2.4% this week, 2.5 times its usual weekly swing (about ±1.0%); 2.4 points below the major currencies median.",
-   "z_own": -2.53,
-   "z_peer": -2.49,
+   "reason": "Down 12.1% this week, 2.8 times its usual weekly swing (about ±4.3%); 6.1 points below the Resource and infrastructure themes median.",
+   "z_own": -2.82,
+   "z_peer": -2.3,
+   "verified": {
+    "status": "single",
+    "text": "one source so far"
+   }
+  },
+  {
+   "symbol": "AFK",
+   "tier": "keep_an_eye",
+   "reason": "Down 8.8% this week, 2.7 times its usual weekly swing (about ±3.3%); 6.7 points below the emerging Europe, Middle East and Africa median.",
+   "z_own": -2.71,
+   "z_peer": -2.91,
+   "verified": {
+    "status": "single",
+    "text": "one source so far"
+   }
+  },
+  {
+   "symbol": "REMX",
+   "tier": "keep_an_eye",
+   "reason": "Down 14.9% this week, 2.6 times its usual weekly swing (about ±5.6%); 5.5 points below the battery and rare-earth minerals median.",
+   "z_own": -2.63,
+   "z_peer": -1.62,
    "verified": {
     "status": "single",
     "text": "one source so far"
@@ -69,8 +113,8 @@
   "agreed": 0,
   "differed": 0,
   "flags_confirmed": 0,
-  "flags_total": 4,
-  "planned_flagged": 4,
+  "flags_total": 8,
+  "planned_flagged": 8,
   "planned_sample": 8,
   "untiered": [],
   "differences": []
@@ -1286,10 +1330,6 @@
      "v": 13.45
     },
     {
-     "p": "2026-10-23",
-     "v": 13.45
-    },
-    {
      "p": "2026-10-26",
      "v": 8.98
     },
@@ -1360,6 +1400,10 @@
     {
      "p": "2026-11-17",
      "v": 7.28
+    },
+    {
+     "p": "2026-11-18",
+     "v": 7.28
     }
    ],
    "touches": [
@@ -1373,7 +1417,7 @@
    ],
    "inputs": "BZ=F and CL=F",
    "note": "Gap between the two main crude benchmarks.",
-   "as_of": "2026-11-17"
+   "as_of": "2026-11-18"
   },
   {
    "id": "copper_aluminum",
@@ -1384,10 +1428,6 @@
    "prev": 4.46,
    "change": 0.0,
    "spark": [
-    {
-     "p": "2026-10-23",
-     "v": 4.708
-    },
     {
      "p": "2026-10-23",
      "v": 4.708
@@ -1463,6 +1503,10 @@
     {
      "p": "2026-11-17",
      "v": 4.462
+    },
+    {
+     "p": "2026-11-18",
+     "v": 4.462
     }
    ],
    "touches": [
@@ -1475,7 +1519,7 @@
    ],
    "inputs": "HG=F and ALI=F",
    "note": "Copper in USD per tonne (pounds converted) divided by aluminum in USD per tonne.",
-   "as_of": "2026-11-17"
+   "as_of": "2026-11-18"
   },
   {
    "id": "copper_gold",
@@ -1486,10 +1530,6 @@
    "prev": 1.57,
    "change": 0.0,
    "spark": [
-    {
-     "p": "2026-10-23",
-     "v": 1.623
-    },
     {
      "p": "2026-10-23",
      "v": 1.623
@@ -1565,6 +1605,10 @@
     {
      "p": "2026-11-17",
      "v": 1.567
+    },
+    {
+     "p": "2026-11-18",
+     "v": 1.567
     }
    ],
    "touches": [
@@ -1576,13 +1620,13 @@
    ],
    "inputs": "HG=F and GC=F",
    "note": "Copper USD per pound divided by gold USD per ounce, times 1000. A familiar growth-versus-safety gauge.",
-   "as_of": "2026-11-17"
+   "as_of": "2026-11-18"
   }
  ],
  "flag_basis": {
-  "sessions": 21,
+  "sessions": 22,
   "mode": "blending",
-  "note": "21 earlier sessions on record; normal ranges blend each item's own history with starting estimates.",
+  "note": "22 earlier sessions on record; normal ranges blend each item's own history with starting estimates.",
   "below_the_bar": 0
  },
  "groups": [
@@ -1673,52 +1717,52 @@
     {
      "symbol": "SWTSX",
      "name": "Schwab Total Stock Market",
-     "last": 17.91,
-     "chg_1d": -1.92,
-     "chg_1w": -1.92,
-     "chg_1m": -2.82,
+     "last": 17.72,
+     "chg_1d": -1.06,
+     "chg_1w": -2.58,
+     "chg_1m": -3.85,
      "src": "Charles Schwab Asset Management",
      "tier": "aggregator",
-     "as_of": "2026-11-16"
+     "as_of": "2026-11-17"
     },
     {
      "symbol": "SWISX",
      "name": "Schwab International Index",
-     "last": 31.2,
-     "chg_1d": -1.39,
-     "chg_1w": -2.19,
-     "chg_1m": -0.98,
+     "last": 30.81,
+     "chg_1d": -1.25,
+     "chg_1w": -2.84,
+     "chg_1m": -2.22,
      "src": "Charles Schwab Asset Management",
      "tier": "aggregator",
-     "as_of": "2026-11-16"
+     "as_of": "2026-11-17"
     },
     {
      "symbol": "VOO",
      "name": "Vanguard S&P 500",
-     "last": 673.54,
-     "chg_1d": -0.99,
-     "chg_1w": -2.31,
-     "chg_1m": -4.0,
+     "last": 670.42,
+     "chg_1d": -0.41,
+     "chg_1w": -4.0,
+     "chg_1m": -4.45,
      "src": "NYSE Arca",
      "tier": "aggregator"
     },
     {
      "symbol": "VTI",
      "name": "Vanguard Total Stock Market",
-     "last": 360.07,
-     "chg_1d": -1.16,
-     "chg_1w": -2.57,
-     "chg_1m": -3.74,
+     "last": 359.03,
+     "chg_1d": -0.32,
+     "chg_1w": -4.07,
+     "chg_1m": -4.02,
      "src": "NYSE Arca",
      "tier": "aggregator"
     },
     {
      "symbol": "VXUS",
      "name": "Vanguard Total International",
-     "last": 80.18,
-     "chg_1d": -1.0,
-     "chg_1w": -3.0,
-     "chg_1m": -3.9,
+     "last": 79.12,
+     "chg_1d": -1.24,
+     "chg_1w": -5.18,
+     "chg_1m": -5.17,
      "src": "Nasdaq",
      "tier": "aggregator"
     }
@@ -1732,10 +1776,10 @@
     {
      "symbol": "TSM",
      "name": "TSMC",
-     "last": 359.92,
-     "chg_1d": -3.62,
-     "chg_1w": -9.22,
-     "chg_1m": -12.77,
+     "last": 359.65,
+     "chg_1d": -0.01,
+     "chg_1w": -12.99,
+     "chg_1m": -12.84,
      "src": "NYSE",
      "tier": "aggregator",
      "next_earnings": null
@@ -1743,10 +1787,10 @@
     {
      "symbol": "NVDA",
      "name": "NVIDIA",
-     "last": 154.47,
-     "chg_1d": -1.07,
-     "chg_1w": -8.54,
-     "chg_1m": -27.86,
+     "last": 152.11,
+     "chg_1d": -2.15,
+     "chg_1w": -12.44,
+     "chg_1m": -28.96,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": "2026-11-17"
@@ -1754,10 +1798,10 @@
     {
      "symbol": "AVGO",
      "name": "Broadcom",
-     "last": 338.0,
-     "chg_1d": 1.38,
-     "chg_1w": 1.81,
-     "chg_1m": 2.81,
+     "last": 350.0,
+     "chg_1d": 2.46,
+     "chg_1w": 1.38,
+     "chg_1m": 6.46,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": "2026-12-09"
@@ -1765,10 +1809,10 @@
     {
      "symbol": "AMD",
      "name": "AMD",
-     "last": 492.58,
-     "chg_1d": -2.32,
-     "chg_1w": -4.39,
-     "chg_1m": -6.84,
+     "last": 507.02,
+     "chg_1d": 0.72,
+     "chg_1w": -8.3,
+     "chg_1m": -4.11,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1776,10 +1820,10 @@
     {
      "symbol": "QCOM",
      "name": "Qualcomm",
-     "last": 167.11,
-     "chg_1d": -0.84,
-     "chg_1w": -3.7,
-     "chg_1m": -2.91,
+     "last": 162.44,
+     "chg_1d": -2.54,
+     "chg_1w": -8.0,
+     "chg_1m": -5.62,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1787,10 +1831,10 @@
     {
      "symbol": "ASML",
      "name": "ASML",
-     "last": 1365.83,
-     "chg_1d": -2.91,
-     "chg_1w": -9.42,
-     "chg_1m": -16.79,
+     "last": 1382.57,
+     "chg_1d": -0.04,
+     "chg_1w": -9.9,
+     "chg_1m": -15.78,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1798,10 +1842,10 @@
     {
      "symbol": "KLAC",
      "name": "KLA",
-     "last": 143.4,
-     "chg_1d": -0.39,
-     "chg_1w": -6.27,
-     "chg_1m": -13.48,
+     "last": 143.56,
+     "chg_1d": -0.69,
+     "chg_1w": -10.84,
+     "chg_1m": -13.38,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1809,10 +1853,10 @@
     {
      "symbol": "AMAT",
      "name": "Applied Materials",
-     "last": 345.51,
-     "chg_1d": -1.35,
-     "chg_1w": -7.25,
-     "chg_1m": -15.58,
+     "last": 349.36,
+     "chg_1d": 0.04,
+     "chg_1w": -11.57,
+     "chg_1m": -14.64,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1820,10 +1864,10 @@
     {
      "symbol": "LRCX",
      "name": "Lam Research",
-     "last": 207.84,
-     "chg_1d": -1.42,
-     "chg_1w": -6.54,
-     "chg_1m": -21.25,
+     "last": 209.31,
+     "chg_1d": -0.65,
+     "chg_1w": -11.26,
+     "chg_1m": -20.7,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1831,10 +1875,10 @@
     {
      "symbol": "ONTO",
      "name": "Onto Innovation",
-     "last": 195.75,
-     "chg_1d": -0.52,
-     "chg_1w": -0.89,
-     "chg_1m": -11.3,
+     "last": 201.45,
+     "chg_1d": 0.94,
+     "chg_1w": -6.33,
+     "chg_1m": -8.72,
      "src": "NYSE",
      "tier": "aggregator",
      "next_earnings": null
@@ -1842,10 +1886,10 @@
     {
      "symbol": "INTC",
      "name": "Intel",
-     "last": 54.1,
-     "chg_1d": -2.47,
-     "chg_1w": -6.93,
-     "chg_1m": -39.79,
+     "last": 54.03,
+     "chg_1d": -2.07,
+     "chg_1w": -13.55,
+     "chg_1m": -39.87,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1853,10 +1897,10 @@
     {
      "symbol": "005930.KS",
      "name": "Samsung Electronics",
-     "last": 190300.0,
-     "chg_1d": -3.3,
-     "chg_1w": -4.32,
-     "chg_1m": -11.69,
+     "last": 194700.0,
+     "chg_1d": 2.31,
+     "chg_1w": -5.49,
+     "chg_1m": -9.65,
      "note": "Quoted in KRW.",
      "region": "East Asia",
      "src": "Korea Exchange",
@@ -1866,10 +1910,10 @@
     {
      "symbol": "000660.KS",
      "name": "SK Hynix",
-     "last": 1098000.0,
-     "chg_1d": -1.96,
-     "chg_1w": -9.41,
-     "chg_1m": -13.68,
+     "last": 1144000.0,
+     "chg_1d": 4.19,
+     "chg_1w": -10.42,
+     "chg_1m": -10.06,
      "note": "Quoted in KRW.",
      "region": "East Asia",
      "src": "Korea Exchange",
@@ -1879,10 +1923,10 @@
     {
      "symbol": "8035.T",
      "name": "Tokyo Electron",
-     "last": 8657.0,
-     "chg_1d": -1.56,
-     "chg_1w": -3.88,
-     "chg_1m": -18.56,
+     "last": 8699.0,
+     "chg_1d": 0.49,
+     "chg_1w": -6.18,
+     "chg_1m": -18.17,
      "note": "Quoted in JPY.",
      "region": "East Asia",
      "src": "Tokyo Stock Exchange",
@@ -1892,10 +1936,10 @@
     {
      "symbol": "ASM.AS",
      "name": "ASM International",
-     "last": 653.0,
-     "chg_1d": -2.51,
-     "chg_1w": -4.0,
-     "chg_1m": -13.28,
+     "last": 667.2,
+     "chg_1d": 2.17,
+     "chg_1w": -8.3,
+     "chg_1m": -11.39,
      "note": "Quoted in EUR.",
      "region": "Europe",
      "src": "Euronext Amsterdam",
@@ -1905,10 +1949,10 @@
     {
      "symbol": "2454.TW",
      "name": "MediaTek",
-     "last": 3840.0,
-     "chg_1d": 1.19,
-     "chg_1w": 0.26,
-     "chg_1m": -9.65,
+     "last": 3940.0,
+     "chg_1d": 2.6,
+     "chg_1w": -1.25,
+     "chg_1m": -7.29,
      "note": "Quoted in TWD.",
      "region": "East Asia",
      "src": "Taiwan Stock Exchange",
@@ -1919,8 +1963,8 @@
      "symbol": "0981.HK",
      "name": "SMIC",
      "last": 49.2,
-     "chg_1d": 6.77,
-     "chg_1w": 4.15,
+     "chg_1d": 0.0,
+     "chg_1w": 0.41,
      "chg_1m": -6.11,
      "note": "Quoted in HKD.",
      "region": "East Asia",
@@ -1931,10 +1975,10 @@
     {
      "symbol": "MU",
      "name": "Micron",
-     "last": 696.81,
-     "chg_1d": -3.09,
-     "chg_1w": -3.9,
-     "chg_1m": -20.71,
+     "last": 692.81,
+     "chg_1d": -2.75,
+     "chg_1w": -14.6,
+     "chg_1m": -21.17,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1942,10 +1986,10 @@
     {
      "symbol": "TXN",
      "name": "Texas Instruments",
-     "last": 294.95,
-     "chg_1d": 0.25,
-     "chg_1w": -1.85,
-     "chg_1m": 6.68,
+     "last": 290.99,
+     "chg_1d": -1.65,
+     "chg_1w": -6.07,
+     "chg_1m": 5.25,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1953,10 +1997,10 @@
     {
      "symbol": "MCHP",
      "name": "Microchip Technology",
-     "last": 60.1,
-     "chg_1d": 2.49,
-     "chg_1w": -0.38,
-     "chg_1m": -18.62,
+     "last": 59.31,
+     "chg_1d": -0.2,
+     "chg_1w": -4.54,
+     "chg_1m": -19.69,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1964,10 +2008,10 @@
     {
      "symbol": "GFS",
      "name": "GlobalFoundries",
-     "last": 39.14,
-     "chg_1d": -0.71,
-     "chg_1w": -3.64,
-     "chg_1m": -16.15,
+     "last": 39.67,
+     "chg_1d": 0.18,
+     "chg_1w": -7.42,
+     "chg_1m": -15.02,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1975,10 +2019,10 @@
     {
      "symbol": "ENTG",
      "name": "Entegris",
-     "last": 140.47,
-     "chg_1d": 0.32,
-     "chg_1w": 1.37,
-     "chg_1m": 1.25,
+     "last": 140.95,
+     "chg_1d": 0.12,
+     "chg_1w": -8.6,
+     "chg_1m": 1.59,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -1993,10 +2037,10 @@
     {
      "symbol": "AAPL",
      "name": "Apple",
-     "last": 351.68,
-     "chg_1d": -0.31,
-     "chg_1w": 0.91,
-     "chg_1m": 2.39,
+     "last": 352.93,
+     "chg_1d": 0.29,
+     "chg_1w": -0.76,
+     "chg_1m": 2.76,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -2004,10 +2048,10 @@
     {
      "symbol": "MSFT",
      "name": "Microsoft",
-     "last": 501.65,
-     "chg_1d": -3.15,
-     "chg_1w": -5.91,
-     "chg_1m": -5.18,
+     "last": 503.51,
+     "chg_1d": -0.54,
+     "chg_1w": -3.38,
+     "chg_1m": -4.83,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -2015,10 +2059,10 @@
     {
      "symbol": "GOOGL",
      "name": "Alphabet",
-     "last": 281.18,
-     "chg_1d": -0.9,
-     "chg_1w": -2.16,
-     "chg_1m": -17.44,
+     "last": 281.32,
+     "chg_1d": 0.4,
+     "chg_1w": -4.13,
+     "chg_1m": -17.4,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -2026,10 +2070,10 @@
     {
      "symbol": "AMZN",
      "name": "Amazon",
-     "last": 255.72,
-     "chg_1d": -0.79,
-     "chg_1w": -5.59,
-     "chg_1m": 2.29,
+     "last": 264.53,
+     "chg_1d": 2.57,
+     "chg_1w": -0.62,
+     "chg_1m": 5.81,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -2037,10 +2081,10 @@
     {
      "symbol": "META",
      "name": "Meta",
-     "last": 618.26,
-     "chg_1d": -1.3,
-     "chg_1w": -3.61,
-     "chg_1m": -12.84,
+     "last": 614.1,
+     "chg_1d": -0.77,
+     "chg_1w": -2.33,
+     "chg_1m": -13.43,
      "src": "Nasdaq",
      "tier": "aggregator",
      "next_earnings": null
@@ -2131,130 +2175,130 @@
     {
      "symbol": "XOM",
      "name": "Exxon Mobil",
-     "last": 167.55,
-     "chg_1d": 0.41,
-     "chg_1w": 1.87,
-     "chg_1m": -6.39,
+     "last": 162.19,
+     "chg_1d": -3.0,
+     "chg_1w": -2.71,
+     "chg_1m": -9.38,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "SHEL",
      "name": "Shell",
-     "last": 97.4,
-     "chg_1d": -0.32,
-     "chg_1w": 0.13,
-     "chg_1m": -8.68,
+     "last": 94.99,
+     "chg_1d": -2.31,
+     "chg_1w": -2.93,
+     "chg_1m": -10.94,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "TTE",
      "name": "TotalEnergies",
-     "last": 90.25,
-     "chg_1d": 0.34,
-     "chg_1w": 2.7,
-     "chg_1m": -1.19,
+     "last": 87.51,
+     "chg_1d": -3.2,
+     "chg_1w": -0.51,
+     "chg_1m": -4.19,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "CVX",
      "name": "Chevron",
-     "last": 216.53,
-     "chg_1d": -0.28,
-     "chg_1w": 2.51,
-     "chg_1m": -3.76,
+     "last": 207.29,
+     "chg_1d": -4.09,
+     "chg_1w": -2.81,
+     "chg_1m": -7.87,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "EQNR",
      "name": "Equinor",
-     "last": 41.49,
-     "chg_1d": 1.07,
-     "chg_1w": 1.99,
-     "chg_1m": -11.69,
+     "last": 40.41,
+     "chg_1d": -2.49,
+     "chg_1w": -2.23,
+     "chg_1m": -13.98,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "BP.L",
      "name": "BP",
-     "last": 568.0,
-     "chg_1d": -0.46,
-     "chg_1w": 2.86,
-     "chg_1m": -7.51,
+     "last": 550.7,
+     "chg_1d": -3.05,
+     "chg_1w": -2.87,
+     "chg_1m": -10.32,
      "src": "London Stock Exchange",
      "tier": "aggregator"
     },
     {
      "symbol": "PBR",
      "name": "Petrobras",
-     "last": 17.39,
-     "chg_1d": 0.52,
-     "chg_1w": -4.87,
-     "chg_1m": -33.12,
+     "last": 16.81,
+     "chg_1d": -3.45,
+     "chg_1w": -5.67,
+     "chg_1m": -35.35,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "COP",
      "name": "ConocoPhillips",
-     "last": 141.33,
-     "chg_1d": 0.58,
-     "chg_1w": 4.23,
-     "chg_1m": -3.54,
+     "last": 135.96,
+     "chg_1d": -2.52,
+     "chg_1w": -1.38,
+     "chg_1m": -7.2,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "OXY",
      "name": "Occidental Petroleum",
-     "last": 57.06,
-     "chg_1d": -0.52,
-     "chg_1w": 0.28,
-     "chg_1m": -8.53,
+     "last": 54.47,
+     "chg_1d": -3.63,
+     "chg_1w": -4.84,
+     "chg_1m": -12.68,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "SLB",
      "name": "SLB (Schlumberger)",
-     "last": 49.32,
-     "chg_1d": -1.52,
-     "chg_1w": -1.16,
-     "chg_1m": -0.36,
+     "last": 48.62,
+     "chg_1d": -0.67,
+     "chg_1w": -4.59,
+     "chg_1m": -1.78,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "2222.SR",
      "name": "Saudi Aramco",
-     "last": 26.38,
-     "chg_1d": -1.35,
-     "chg_1w": 3.05,
-     "chg_1m": 4.35,
+     "last": 26.44,
+     "chg_1d": 0.23,
+     "chg_1w": 1.61,
+     "chg_1m": 2.48,
      "src": "Saudi Exchange (Tadawul)",
      "tier": "aggregator"
     },
     {
      "symbol": "RELIANCE.NS",
      "name": "Reliance Industries",
-     "last": 1367.0,
-     "chg_1d": 1.65,
-     "chg_1w": 3.22,
-     "chg_1m": 12.86,
+     "last": 1363.0,
+     "chg_1d": -0.29,
+     "chg_1w": 2.07,
+     "chg_1m": 12.53,
      "src": "National Stock Exchange of India",
      "tier": "aggregator"
     },
     {
      "symbol": "LNG",
      "name": "Cheniere Energy",
-     "last": 303.68,
-     "chg_1d": -0.5,
-     "chg_1w": 3.47,
-     "chg_1m": 4.92,
+     "last": 297.82,
+     "chg_1d": -1.37,
+     "chg_1w": -2.2,
+     "chg_1m": 2.9,
      "src": "NYSE American",
      "tier": "aggregator"
     }
@@ -2281,50 +2325,50 @@
     {
      "symbol": "CCJ",
      "name": "Cameco",
-     "last": 65.43,
-     "chg_1d": -0.85,
-     "chg_1w": -10.21,
-     "chg_1m": -19.74,
+     "last": 63.16,
+     "chg_1d": -2.09,
+     "chg_1w": -15.02,
+     "chg_1m": -22.52,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "URA",
      "name": "Global X Uranium ETF",
-     "last": 30.26,
-     "chg_1d": -0.59,
-     "chg_1w": -8.72,
-     "chg_1m": -14.59,
+     "last": 29.56,
+     "chg_1d": -1.6,
+     "chg_1w": -12.13,
+     "chg_1m": -16.57,
      "src": "NYSE Arca",
      "tier": "aggregator"
     },
     {
      "symbol": "NXE",
      "name": "NexGen Energy",
-     "last": 7.46,
-     "chg_1d": 0.67,
-     "chg_1w": -10.44,
-     "chg_1m": -10.87,
+     "last": 7.36,
+     "chg_1d": 0.55,
+     "chg_1w": -11.54,
+     "chg_1m": -12.07,
      "src": "Toronto Stock Exchange",
      "tier": "aggregator"
     },
     {
      "symbol": "UEC",
      "name": "Uranium Energy",
-     "last": 6.05,
-     "chg_1d": -1.31,
-     "chg_1w": -15.62,
-     "chg_1m": -23.51,
+     "last": 6.01,
+     "chg_1d": -0.99,
+     "chg_1w": -16.87,
+     "chg_1m": -24.02,
      "src": "NYSE American",
      "tier": "aggregator"
     },
     {
      "symbol": "KAP.L",
      "name": "Kazatomprom",
-     "last": 59.8,
-     "chg_1d": -0.5,
-     "chg_1w": -3.7,
-     "chg_1m": -7.14,
+     "last": 59.0,
+     "chg_1d": -1.34,
+     "chg_1w": -6.35,
+     "chg_1m": -8.39,
      "src": "London Stock Exchange",
      "tier": "aggregator",
      "note": "USD GDR."
@@ -2332,50 +2376,50 @@
     {
      "symbol": "PDN.AX",
      "name": "Paladin Energy",
-     "last": 6.75,
-     "chg_1d": -3.71,
-     "chg_1w": -22.24,
-     "chg_1m": -7.79,
+     "last": 6.74,
+     "chg_1d": -0.15,
+     "chg_1w": -22.53,
+     "chg_1m": -7.92,
      "src": "Australian Securities Exchange",
      "tier": "aggregator"
     },
     {
      "symbol": "LEU",
      "name": "Centrus Energy",
-     "last": 93.77,
-     "chg_1d": -3.86,
-     "chg_1w": -14.65,
-     "chg_1m": -18.42,
+     "last": 93.67,
+     "chg_1d": -0.55,
+     "chg_1w": -16.49,
+     "chg_1m": -18.51,
      "src": "NYSE American",
      "tier": "aggregator"
     },
     {
      "symbol": "BWXT",
      "name": "BWX Technologies",
-     "last": 118.91,
-     "chg_1d": 1.55,
-     "chg_1w": -6.1,
-     "chg_1m": -13.21,
+     "last": 117.19,
+     "chg_1d": -1.37,
+     "chg_1w": -6.76,
+     "chg_1m": -14.47,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "CEG",
      "name": "Constellation Energy",
-     "last": 274.17,
-     "chg_1d": -1.31,
-     "chg_1w": 2.39,
-     "chg_1m": 1.03,
+     "last": 264.84,
+     "chg_1d": -1.2,
+     "chg_1w": -3.6,
+     "chg_1m": -2.41,
      "src": "Nasdaq",
      "tier": "aggregator"
     },
     {
      "symbol": "VST",
      "name": "Vistra",
-     "last": 128.7,
-     "chg_1d": -1.12,
-     "chg_1w": -1.89,
-     "chg_1m": -15.34,
+     "last": 126.61,
+     "chg_1d": -0.42,
+     "chg_1w": -5.13,
+     "chg_1m": -16.71,
      "src": "NYSE",
      "tier": "aggregator"
     }
@@ -2402,10 +2446,10 @@
     {
      "symbol": "KRBN",
      "name": "KraneShares Global Carbon Strategy ETF",
-     "last": 34.42,
-     "chg_1d": -0.2,
-     "chg_1w": -1.97,
-     "chg_1m": 2.44,
+     "last": 33.0,
+     "chg_1d": -3.99,
+     "chg_1w": -6.7,
+     "chg_1m": -1.79,
      "src": "NYSE Arca",
      "tier": "aggregator"
     }
@@ -2419,40 +2463,40 @@
     {
      "symbol": "XE",
      "name": "X-energy",
-     "last": 10.36,
-     "chg_1d": 0.39,
-     "chg_1w": -5.56,
-     "chg_1m": 0.0,
+     "last": 10.43,
+     "chg_1d": 3.06,
+     "chg_1w": -4.66,
+     "chg_1m": 0.68,
      "src": "Nasdaq",
      "tier": "aggregator"
     },
     {
      "symbol": "OKLO",
      "name": "Oklo",
-     "last": 22.6,
-     "chg_1d": -1.87,
-     "chg_1w": -9.92,
-     "chg_1m": -19.2,
+     "last": 22.15,
+     "chg_1d": -0.98,
+     "chg_1w": -14.35,
+     "chg_1m": -20.81,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "SMR",
      "name": "NuScale Power",
-     "last": 4.18,
-     "chg_1d": -2.11,
-     "chg_1w": -19.92,
-     "chg_1m": -28.3,
+     "last": 4.11,
+     "chg_1d": 0.49,
+     "chg_1w": -21.41,
+     "chg_1m": -29.5,
      "src": "NYSE",
      "tier": "aggregator"
     },
     {
      "symbol": "NNE",
      "name": "NANO Nuclear Energy",
-     "last": 10.43,
-     "chg_1d": -2.89,
-     "chg_1w": -9.93,
-     "chg_1m": -19.02,
+     "last": 10.48,
+     "chg_1d": -0.1,
+     "chg_1w": -9.58,
+     "chg_1m": -18.63,
      "src": "Nasdaq",
      "tier": "aggregator"
     }
@@ -2581,100 +2625,100 @@
     {
      "symbol": "FCX",
      "name": "Freeport-McMoRan",
-     "last": 55.51,
-     "chg_1d": 0.58,
-     "chg_1w": -7.96,
-     "chg_1m": -20.18,
+     "last": 51.06,
+     "chg_1d": -7.67,
+     "chg_1w": -17.8,
+     "chg_1m": -26.57,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "BHP",
      "name": "BHP Group",
-     "last": 74.35,
-     "chg_1d": -1.59,
-     "chg_1w": -8.35,
-     "chg_1m": -10.73,
+     "last": 70.46,
+     "chg_1d": -4.65,
+     "chg_1w": -14.14,
+     "chg_1m": -15.4,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "RIO",
      "name": "Rio Tinto",
-     "last": 80.03,
-     "chg_1d": -0.02,
-     "chg_1w": -5.33,
-     "chg_1m": -11.39,
+     "last": 75.72,
+     "chg_1d": -4.72,
+     "chg_1w": -10.89,
+     "chg_1m": -16.16,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "VALE",
      "name": "Vale",
-     "last": 10.5,
-     "chg_1d": 0.38,
-     "chg_1w": -9.33,
-     "chg_1m": -19.6,
+     "last": 10.11,
+     "chg_1d": -2.98,
+     "chg_1w": -12.69,
+     "chg_1m": -22.59,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "GLEN.L",
      "name": "Glencore",
-     "last": 491.45,
-     "chg_1d": -1.91,
-     "chg_1w": -2.61,
-     "chg_1m": -15.72,
+     "last": 458.8,
+     "chg_1d": -6.64,
+     "chg_1w": -11.03,
+     "chg_1m": -21.32,
      "src": "London Stock Exchange (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "SCCO",
      "name": "Southern Copper",
-     "last": 153.67,
-     "chg_1d": -0.13,
-     "chg_1w": -9.8,
-     "chg_1m": -22.55,
+     "last": 144.2,
+     "chg_1d": -7.22,
+     "chg_1w": -16.46,
+     "chg_1m": -27.32,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "AA",
      "name": "Alcoa",
-     "last": 37.48,
-     "chg_1d": -3.05,
-     "chg_1w": -6.25,
-     "chg_1m": -9.58,
+     "last": 35.86,
+     "chg_1d": -3.78,
+     "chg_1w": -12.62,
+     "chg_1m": -13.49,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "ALB",
      "name": "Albemarle",
-     "last": 89.34,
-     "chg_1d": 1.34,
-     "chg_1w": -5.89,
-     "chg_1m": -6.43,
+     "last": 86.65,
+     "chg_1d": -1.16,
+     "chg_1w": -9.71,
+     "chg_1m": -9.25,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "MP",
      "name": "MP Materials",
-     "last": 35.4,
-     "chg_1d": -1.91,
-     "chg_1w": -2.91,
-     "chg_1m": -11.87,
+     "last": 36.43,
+     "chg_1d": 4.5,
+     "chg_1w": -0.82,
+     "chg_1m": -9.31,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "AI.PA",
      "name": "Air Liquide",
-     "last": 190.94,
-     "chg_1d": -1.19,
-     "chg_1w": 0.32,
-     "chg_1m": 10.27,
+     "last": 190.16,
+     "chg_1d": -0.41,
+     "chg_1w": -1.04,
+     "chg_1m": 9.82,
      "note": "EUR.",
      "src": "Euronext Paris (via stockanalysis.com)",
      "tier": "aggregator"
@@ -2682,20 +2726,20 @@
     {
      "symbol": "LIN",
      "name": "Linde",
-     "last": 523.9,
-     "chg_1d": 0.08,
-     "chg_1w": 0.41,
-     "chg_1m": 5.11,
+     "last": 510.67,
+     "chg_1d": -0.86,
+     "chg_1w": -3.02,
+     "chg_1m": 2.46,
      "src": "Nasdaq (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "APD",
      "name": "Air Products",
-     "last": 313.53,
-     "chg_1d": -0.12,
-     "chg_1w": 0.41,
-     "chg_1m": 4.65,
+     "last": 305.35,
+     "chg_1d": -0.51,
+     "chg_1w": -3.12,
+     "chg_1m": 1.92,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     }
@@ -2709,50 +2753,50 @@
     {
      "symbol": "DOW",
      "name": "Dow",
-     "last": 31.91,
-     "chg_1d": -0.16,
-     "chg_1w": 1.37,
-     "chg_1m": 6.62,
+     "last": 30.54,
+     "chg_1d": -2.65,
+     "chg_1w": -6.15,
+     "chg_1m": 2.04,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "LYB",
      "name": "LyondellBasell",
-     "last": 61.38,
-     "chg_1d": -0.47,
-     "chg_1w": 1.29,
-     "chg_1m": -4.11,
+     "last": 58.77,
+     "chg_1d": -3.16,
+     "chg_1w": -6.09,
+     "chg_1m": -8.19,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "DD",
      "name": "DuPont",
-     "last": 150.93,
-     "chg_1d": 0.63,
-     "chg_1w": -3.79,
-     "chg_1m": 15.7,
+     "last": 149.89,
+     "chg_1d": -0.17,
+     "chg_1w": -3.68,
+     "chg_1m": 14.9,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "BAS.DE",
      "name": "BASF",
-     "last": 52.41,
-     "chg_1d": -2.94,
-     "chg_1w": -4.17,
-     "chg_1m": -1.17,
+     "last": 51.65,
+     "chg_1d": -1.15,
+     "chg_1w": -5.23,
+     "chg_1m": -2.6,
      "src": "Frankfurt Stock Exchange (FRA listing) (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "2010.SR",
      "name": "SABIC",
-     "last": 48.74,
-     "chg_1d": 0.7,
-     "chg_1w": 1.8,
-     "chg_1m": 9.38,
+     "last": 48.68,
+     "chg_1d": -0.12,
+     "chg_1w": 0.37,
+     "chg_1m": 6.47,
      "src": "Saudi Exchange (Tadawul) (via stockanalysis.com)",
      "tier": "aggregator"
     }
@@ -2817,80 +2861,80 @@
     {
      "symbol": "DE",
      "name": "Deere",
-     "last": 653.75,
-     "chg_1d": -0.04,
-     "chg_1w": -4.93,
-     "chg_1m": 1.85,
+     "last": 644.66,
+     "chg_1d": -0.7,
+     "chg_1w": -6.81,
+     "chg_1m": 0.44,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "NTR",
      "name": "Nutrien",
-     "last": 69.88,
-     "chg_1d": 1.36,
-     "chg_1w": -3.17,
-     "chg_1m": -1.94,
+     "last": 66.37,
+     "chg_1d": -4.12,
+     "chg_1w": -7.37,
+     "chg_1m": -6.86,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "MOS",
      "name": "Mosaic",
-     "last": 20.83,
-     "chg_1d": -1.88,
-     "chg_1w": -9.4,
-     "chg_1m": 10.68,
+     "last": 20.09,
+     "chg_1d": -3.13,
+     "chg_1w": -11.89,
+     "chg_1m": 6.75,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "ADM",
      "name": "Archer-Daniels-Midland",
-     "last": 69.77,
-     "chg_1d": -1.2,
-     "chg_1w": 0.68,
-     "chg_1m": -15.54,
+     "last": 67.74,
+     "chg_1d": -2.49,
+     "chg_1w": -4.48,
+     "chg_1m": -18.0,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "BG",
      "name": "Bunge",
-     "last": 97.26,
-     "chg_1d": -1.78,
-     "chg_1w": -2.17,
-     "chg_1m": -8.37,
+     "last": 92.69,
+     "chg_1d": -3.04,
+     "chg_1w": -7.57,
+     "chg_1m": -12.67,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "CTVA",
      "name": "Corteva",
-     "last": 8.92,
-     "chg_1d": -1.33,
-     "chg_1w": -26.71,
-     "chg_1m": -30.75,
+     "last": 8.48,
+     "chg_1d": -3.85,
+     "chg_1w": -30.15,
+     "chg_1m": -34.16,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "CF",
      "name": "CF Industries",
-     "last": 120.03,
-     "chg_1d": 0.15,
-     "chg_1w": -1.9,
-     "chg_1m": -0.68,
+     "last": 116.51,
+     "chg_1d": -2.37,
+     "chg_1w": -5.46,
+     "chg_1m": -3.59,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "YAR.OL",
      "name": "Yara",
-     "last": 396.1,
-     "chg_1d": -2.37,
-     "chg_1w": -1.83,
-     "chg_1m": -3.88,
+     "last": 385.8,
+     "chg_1d": -2.6,
+     "chg_1w": -5.63,
+     "chg_1m": -6.38,
      "note": "NOK.",
      "src": "Euronext Oslo (via stockanalysis.com)",
      "tier": "aggregator"
@@ -2953,61 +2997,61 @@
     {
      "symbol": "BDRY",
      "name": "Dry bulk freight futures ETF",
-     "last": 12.94,
-     "chg_1d": 2.7,
-     "chg_1w": -4.64,
-     "chg_1m": 3.11,
+     "last": 12.73,
+     "chg_1d": -1.01,
+     "chg_1w": -6.53,
+     "chg_1m": 1.43,
      "src": "NYSE Arca (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "IYT",
      "name": "Transportation ETF",
-     "last": 82.41,
-     "chg_1d": -1.87,
-     "chg_1w": -1.68,
-     "chg_1m": 2.97,
+     "last": 82.98,
+     "chg_1d": 0.78,
+     "chg_1w": -1.79,
+     "chg_1m": 3.69,
      "src": "NYSE Arca (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "MAERSK-B.CO",
      "name": "A.P. Moller-Maersk",
-     "last": 20360.0,
-     "chg_1d": 0.54,
-     "chg_1w": 5.17,
-     "chg_1m": -16.11,
+     "last": 20250.0,
+     "chg_1d": -0.54,
+     "chg_1w": 1.78,
+     "chg_1m": -16.56,
      "src": "Nasdaq Copenhagen (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "ZIM",
      "name": "ZIM Integrated Shipping",
-     "last": 29.65,
-     "chg_1d": 1.86,
-     "chg_1w": 5.52,
-     "chg_1m": 1.51,
+     "last": 30.11,
+     "chg_1d": 1.41,
+     "chg_1w": 3.79,
+     "chg_1m": 3.08,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "HLAG.DE",
      "name": "Hapag-Lloyd",
-     "last": 129.4,
-     "chg_1d": 0.7,
-     "chg_1w": 2.45,
-     "chg_1m": -2.93,
+     "last": 124.0,
+     "chg_1d": -4.17,
+     "chg_1w": 0.4,
+     "chg_1m": -6.98,
      "src": "Frankfurt Stock Exchange (via stockanalysis.com)",
      "tier": "aggregator",
-     "as_of": "2026-11-16"
+     "as_of": "2026-11-17"
     },
     {
      "symbol": "1919.HK",
      "name": "COSCO Shipping Holdings",
-     "last": 17.32,
-     "chg_1d": 0.17,
-     "chg_1w": 1.35,
-     "chg_1m": 0.76,
+     "last": 17.47,
+     "chg_1d": 0.87,
+     "chg_1w": 1.98,
+     "chg_1m": 1.63,
      "src": "HKEX (via stockanalysis.com)",
      "tier": "aggregator",
      "note": "HKD."
@@ -3015,20 +3059,20 @@
     {
      "symbol": "FDX",
      "name": "FedEx",
-     "last": 321.57,
-     "chg_1d": -1.86,
-     "chg_1w": 0.65,
-     "chg_1m": 9.55,
+     "last": 320.24,
+     "chg_1d": 0.09,
+     "chg_1w": -0.74,
+     "chg_1m": 9.09,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "UPS",
      "name": "UPS",
-     "last": 111.08,
-     "chg_1d": -0.66,
-     "chg_1w": 0.03,
-     "chg_1m": 13.95,
+     "last": 110.91,
+     "chg_1d": 0.54,
+     "chg_1w": -1.37,
+     "chg_1m": 13.78,
      "src": "NYSE (via stockanalysis.com)",
      "tier": "aggregator"
     }
@@ -3043,10 +3087,10 @@
      "symbol": "EWZ",
      "name": "Brazil",
      "region": "Americas",
-     "last": 31.09,
-     "chg_1d": 0.55,
-     "chg_1w": -3.3,
-     "chg_1m": -25.68,
+     "last": 30.36,
+     "chg_1d": -2.13,
+     "chg_1w": -6.41,
+     "chg_1m": -27.42,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3054,10 +3098,10 @@
      "symbol": "EWW",
      "name": "Mexico",
      "region": "Americas",
-     "last": 77.74,
-     "chg_1d": 1.71,
-     "chg_1w": 0.37,
-     "chg_1m": 3.74,
+     "last": 74.77,
+     "chg_1d": -2.69,
+     "chg_1w": -3.78,
+     "chg_1m": -0.23,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3065,10 +3109,10 @@
      "symbol": "ECH",
      "name": "Chile",
      "region": "Americas",
-     "last": 35.12,
-     "chg_1d": 0.17,
-     "chg_1w": -2.06,
-     "chg_1m": -5.29,
+     "last": 34.4,
+     "chg_1d": -2.27,
+     "chg_1w": -3.53,
+     "chg_1m": -7.23,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3076,10 +3120,10 @@
      "symbol": "ARGT",
      "name": "Argentina",
      "region": "Americas",
-     "last": 70.43,
-     "chg_1d": -0.17,
-     "chg_1w": -4.45,
-     "chg_1m": -19.97,
+     "last": 68.86,
+     "chg_1d": -2.7,
+     "chg_1w": -6.78,
+     "chg_1m": -21.75,
      "src": "Global X fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3087,10 +3131,10 @@
      "symbol": "VGK",
      "name": "Europe",
      "region": "Europe",
-     "last": 87.17,
-     "chg_1d": -0.99,
-     "chg_1w": -2.77,
-     "chg_1m": -0.14,
+     "last": 85.68,
+     "chg_1d": -1.48,
+     "chg_1w": -4.23,
+     "chg_1m": -1.84,
      "src": "Vanguard fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3098,10 +3142,10 @@
      "symbol": "EPOL",
      "name": "Poland",
      "region": "Europe",
-     "last": 43.25,
-     "chg_1d": -1.12,
-     "chg_1w": -1.14,
-     "chg_1m": -2.94,
+     "last": 42.69,
+     "chg_1d": -1.11,
+     "chg_1w": -2.13,
+     "chg_1m": -4.2,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3109,10 +3153,10 @@
      "symbol": "TUR",
      "name": "Turkey",
      "region": "Europe",
-     "last": 31.54,
+     "last": 31.1,
      "chg_1d": -1.74,
-     "chg_1w": -0.69,
-     "chg_1m": -2.86,
+     "chg_1w": -2.48,
+     "chg_1m": -4.22,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3120,10 +3164,10 @@
      "symbol": "KSA",
      "name": "Saudi Arabia",
      "region": "Middle East and Africa",
-     "last": 35.94,
-     "chg_1d": 0.31,
-     "chg_1w": 1.01,
-     "chg_1m": 2.39,
+     "last": 35.65,
+     "chg_1d": -0.75,
+     "chg_1w": -1.08,
+     "chg_1m": 1.57,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3131,10 +3175,10 @@
      "symbol": "UAE",
      "name": "United Arab Emirates",
      "region": "Middle East and Africa",
-     "last": 21.12,
-     "chg_1d": 1.15,
-     "chg_1w": 3.63,
-     "chg_1m": 8.2,
+     "last": 21.18,
+     "chg_1d": 0.28,
+     "chg_1w": 2.72,
+     "chg_1m": 8.5,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3142,10 +3186,10 @@
      "symbol": "EZA",
      "name": "South Africa",
      "region": "Middle East and Africa",
-     "last": 63.06,
-     "chg_1d": 0.06,
-     "chg_1w": -6.98,
-     "chg_1m": -3.4,
+     "last": 59.24,
+     "chg_1d": -5.97,
+     "chg_1w": -11.4,
+     "chg_1m": -9.25,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3153,10 +3197,10 @@
      "symbol": "AFK",
      "name": "Africa",
      "region": "Middle East and Africa",
-     "last": 25.42,
-     "chg_1d": 0.47,
-     "chg_1w": -5.71,
-     "chg_1m": -5.11,
+     "last": 24.31,
+     "chg_1d": -4.06,
+     "chg_1w": -8.81,
+     "chg_1m": -9.26,
      "src": "VanEck fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3164,10 +3208,10 @@
      "symbol": "INDA",
      "name": "India",
      "region": "South Asia",
-     "last": 51.78,
-     "chg_1d": 0.43,
-     "chg_1w": 0.12,
-     "chg_1m": 8.64,
+     "last": 51.45,
+     "chg_1d": -0.87,
+     "chg_1w": -0.27,
+     "chg_1m": 7.95,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3175,10 +3219,10 @@
      "symbol": "EWJ",
      "name": "Japan",
      "region": "East Asia",
-     "last": 88.67,
-     "chg_1d": -1.31,
-     "chg_1w": -1.9,
-     "chg_1m": -6.55,
+     "last": 87.78,
+     "chg_1d": -1.03,
+     "chg_1w": -4.71,
+     "chg_1m": -7.48,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3186,10 +3230,10 @@
      "symbol": "EWY",
      "name": "South Korea",
      "region": "East Asia",
-     "last": 134.48,
-     "chg_1d": -1.52,
-     "chg_1w": -3.38,
-     "chg_1m": -10.61,
+     "last": 135.39,
+     "chg_1d": 0.05,
+     "chg_1w": -8.4,
+     "chg_1m": -10.0,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3197,10 +3241,10 @@
      "symbol": "EWT",
      "name": "Taiwan",
      "region": "East Asia",
-     "last": 88.62,
-     "chg_1d": -2.4,
-     "chg_1w": -6.4,
-     "chg_1m": -16.6,
+     "last": 87.75,
+     "chg_1d": -1.06,
+     "chg_1w": -12.42,
+     "chg_1m": -17.42,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3208,10 +3252,10 @@
      "symbol": "MCHI",
      "name": "China",
      "region": "East Asia",
-     "last": 48.49,
-     "chg_1d": -1.14,
-     "chg_1w": -5.11,
-     "chg_1m": -5.29,
+     "last": 47.92,
+     "chg_1d": -1.01,
+     "chg_1w": -5.46,
+     "chg_1m": -6.41,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3219,10 +3263,10 @@
      "symbol": "EIDO",
      "name": "Indonesia",
      "region": "Southeast Asia",
-     "last": 10.54,
-     "chg_1d": 0.29,
-     "chg_1w": 3.33,
-     "chg_1m": 6.04,
+     "last": 10.48,
+     "chg_1d": -0.76,
+     "chg_1w": 2.64,
+     "chg_1m": 5.43,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3230,10 +3274,10 @@
      "symbol": "VNM",
      "name": "Vietnam",
      "region": "Southeast Asia",
-     "last": 16.7,
-     "chg_1d": -0.65,
-     "chg_1w": -2.45,
-     "chg_1m": 1.52,
+     "last": 16.63,
+     "chg_1d": -0.24,
+     "chg_1w": -3.26,
+     "chg_1m": 1.09,
      "src": "VanEck fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3241,10 +3285,10 @@
      "symbol": "THD",
      "name": "Thailand",
      "region": "Southeast Asia",
-     "last": 66.7,
-     "chg_1d": -1.14,
-     "chg_1w": -1.46,
-     "chg_1m": -7.17,
+     "last": 66.08,
+     "chg_1d": -0.88,
+     "chg_1w": -2.98,
+     "chg_1m": -8.03,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3252,10 +3296,10 @@
      "symbol": "EPHE",
      "name": "Philippines",
      "region": "Southeast Asia",
-     "last": 21.53,
-     "chg_1d": 0.65,
-     "chg_1w": -4.61,
-     "chg_1m": -5.98,
+     "last": 21.56,
+     "chg_1d": 0.09,
+     "chg_1w": -4.18,
+     "chg_1m": -5.85,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3263,10 +3307,10 @@
      "symbol": "EWA",
      "name": "Australia",
      "region": "Oceania",
-     "last": 28.22,
-     "chg_1d": -1.26,
-     "chg_1w": -4.05,
-     "chg_1m": -1.78,
+     "last": 27.77,
+     "chg_1d": -1.38,
+     "chg_1w": -5.54,
+     "chg_1m": -3.34,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3274,10 +3318,10 @@
      "symbol": "VWO",
      "name": "Emerging markets, broad",
      "region": "Broad emerging",
-     "last": 54.3,
-     "chg_1d": -1.02,
-     "chg_1w": -3.88,
-     "chg_1m": -6.43,
+     "last": 53.65,
+     "chg_1d": -1.2,
+     "chg_1w": -6.24,
+     "chg_1m": -7.55,
      "src": "Vanguard fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     }
@@ -3496,10 +3540,10 @@
      "name": "Brazil real",
      "unit": "BRL per USD",
      "region": "Americas",
-     "last": 5.7821,
-     "chg_1d": 1.35,
-     "chg_1w": 4.15,
-     "chg_1m": 13.76,
+     "last": 5.8186,
+     "chg_1d": 0.63,
+     "chg_1w": 4.72,
+     "chg_1m": 14.48,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3522,10 +3566,10 @@
      "name": "Mexico peso",
      "unit": "MXN per USD",
      "region": "Americas",
-     "last": 18.4639,
-     "chg_1d": -0.52,
-     "chg_1w": -0.48,
-     "chg_1m": 0.44,
+     "last": 18.5759,
+     "chg_1d": 0.61,
+     "chg_1w": -0.45,
+     "chg_1m": 1.05,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3534,10 +3578,10 @@
      "name": "Euro",
      "unit": "USD per EUR",
      "region": "Europe",
-     "last": 1.0989,
-     "chg_1d": -0.23,
-     "chg_1w": -2.01,
-     "chg_1m": -2.35,
+     "last": 1.0968,
+     "chg_1d": -0.19,
+     "chg_1w": -1.43,
+     "chg_1m": -2.53,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3546,10 +3590,10 @@
      "name": "Turkey lira",
      "unit": "TRY per USD",
      "region": "Europe",
-     "last": 50.413,
-     "chg_1d": 0.04,
-     "chg_1w": 0.38,
-     "chg_1m": 1.79,
+     "last": 50.438,
+     "chg_1d": 0.05,
+     "chg_1w": 0.42,
+     "chg_1m": 1.84,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3558,10 +3602,10 @@
      "name": "South Africa rand",
      "unit": "ZAR per USD",
      "region": "Middle East and Africa",
-     "last": 16.9327,
-     "chg_1d": -0.06,
-     "chg_1w": 3.28,
-     "chg_1m": 3.04,
+     "last": 17.2226,
+     "chg_1d": 1.71,
+     "chg_1w": 3.98,
+     "chg_1m": 4.8,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3598,10 +3642,10 @@
      "name": "India rupee",
      "unit": "INR per USD",
      "region": "South Asia",
-     "last": 93.48,
-     "chg_1d": -0.48,
-     "chg_1w": -0.48,
-     "chg_1m": -1.56,
+     "last": 93.44,
+     "chg_1d": -0.04,
+     "chg_1w": -0.27,
+     "chg_1m": -1.6,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3610,10 +3654,10 @@
      "name": "Japan yen",
      "unit": "JPY per USD",
      "region": "East Asia",
-     "last": 159.3,
-     "chg_1d": -0.19,
-     "chg_1w": 0.71,
-     "chg_1m": 0.81,
+     "last": 159.42,
+     "chg_1d": 0.08,
+     "chg_1w": 0.12,
+     "chg_1m": 0.89,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3622,10 +3666,10 @@
      "name": "Korea won",
      "unit": "KRW per USD",
      "region": "East Asia",
-     "last": 1336.21,
-     "chg_1d": 0.1,
-     "chg_1w": -0.21,
-     "chg_1m": 0.31,
+     "last": 1332.33,
+     "chg_1d": -0.29,
+     "chg_1w": -0.34,
+     "chg_1m": 0.02,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3634,10 +3678,10 @@
      "name": "China yuan",
      "unit": "CNY per USD",
      "region": "East Asia",
-     "last": 6.6661,
-     "chg_1d": -0.01,
-     "chg_1w": -0.06,
-     "chg_1m": -0.3,
+     "last": 6.6672,
+     "chg_1d": 0.02,
+     "chg_1w": -0.05,
+     "chg_1m": -0.28,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3646,10 +3690,10 @@
      "name": "Indonesia rupiah",
      "unit": "IDR per USD",
      "region": "Southeast Asia",
-     "last": 18271,
-     "chg_1d": 0.07,
-     "chg_1w": 1.16,
-     "chg_1m": 1.33,
+     "last": 18254,
+     "chg_1d": -0.09,
+     "chg_1w": 0.43,
+     "chg_1m": 1.24,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3658,10 +3702,10 @@
      "name": "Philippines peso",
      "unit": "PHP per USD",
      "region": "Southeast Asia",
-     "last": 63.676,
-     "chg_1d": -0.43,
-     "chg_1w": 1.23,
-     "chg_1m": 1.12,
+     "last": 63.669,
+     "chg_1d": -0.01,
+     "chg_1w": 0.66,
+     "chg_1m": 1.11,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3670,10 +3714,10 @@
      "name": "Thailand baht",
      "unit": "THB per USD",
      "region": "Southeast Asia",
-     "last": 33.84,
-     "chg_1d": -0.15,
-     "chg_1w": 1.14,
-     "chg_1m": 1.27,
+     "last": 33.975,
+     "chg_1d": 0.4,
+     "chg_1w": 0.85,
+     "chg_1m": 1.68,
      "src": "European Central Bank",
      "tier": "official"
     },
@@ -3682,10 +3726,10 @@
      "name": "Australia dollar",
      "unit": "USD per AUD",
      "region": "Oceania",
-     "last": 0.67349,
-     "chg_1d": -0.32,
-     "chg_1w": -2.44,
-     "chg_1m": -3.22,
+     "last": 0.67313,
+     "chg_1d": -0.05,
+     "chg_1w": -1.86,
+     "chg_1m": -3.27,
      "src": "European Central Bank",
      "tier": "official"
     }
@@ -3699,70 +3743,70 @@
     {
      "symbol": "ESGU",
      "name": "ESG US equity",
-     "last": 160.15,
-     "chg_1d": -1.13,
-     "chg_1w": -2.42,
-     "chg_1m": -4.02,
+     "last": 159.6,
+     "chg_1d": -0.36,
+     "chg_1w": -4.03,
+     "chg_1m": -4.35,
      "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "ESGD",
      "name": "ESG developed ex-US",
-     "last": 100.9,
-     "chg_1d": -1.08,
-     "chg_1w": -2.65,
-     "chg_1m": -1.79,
+     "last": 99.48,
+     "chg_1d": -1.27,
+     "chg_1w": -4.24,
+     "chg_1m": -3.17,
      "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "ESGE",
      "name": "ESG emerging markets",
-     "last": 47.24,
-     "chg_1d": -1.25,
-     "chg_1w": -3.71,
-     "chg_1m": -7.35,
+     "last": 46.82,
+     "chg_1d": -1.01,
+     "chg_1w": -6.86,
+     "chg_1m": -8.18,
      "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "CRBN",
      "name": "Low-carbon global equity",
-     "last": 243.3,
-     "chg_1d": -1.38,
-     "chg_1w": -2.96,
-     "chg_1m": -4.09,
+     "last": 241.73,
+     "chg_1d": -0.76,
+     "chg_1w": -4.7,
+     "chg_1m": -4.71,
      "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "DSI",
      "name": "Social index",
-     "last": 135.3,
-     "chg_1d": -1.49,
-     "chg_1w": -3.22,
-     "chg_1m": -7.0,
+     "last": 134.63,
+     "chg_1d": -0.61,
+     "chg_1w": -4.99,
+     "chg_1m": -7.46,
      "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "GRNB",
      "name": "Green bonds (USD)",
-     "last": 23.21,
-     "chg_1d": 0.09,
-     "chg_1w": -0.68,
-     "chg_1m": -0.73,
+     "last": 23.23,
+     "chg_1d": 0.13,
+     "chg_1w": -0.56,
+     "chg_1m": -0.64,
      "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
      "tier": "aggregator"
     },
     {
      "symbol": "BGRN",
      "name": "Green bonds (global)",
-     "last": 45.8,
-     "chg_1d": -0.07,
-     "chg_1w": -0.65,
-     "chg_1m": -0.26,
+     "last": 45.86,
+     "chg_1d": 0.11,
+     "chg_1w": -0.54,
+     "chg_1m": -0.13,
      "src": "NYSE Arca / Nasdaq (via stockanalysis.com)",
      "tier": "aggregator"
     }
@@ -3776,150 +3820,150 @@
     {
      "symbol": "ICLN",
      "name": "Clean energy, global",
-     "last": 15.02,
-     "chg_1d": -1.77,
-     "chg_1w": -6.94,
-     "chg_1m": -8.02,
+     "last": 14.75,
+     "chg_1d": -0.67,
+     "chg_1w": -9.4,
+     "chg_1m": -9.68,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "TAN",
      "name": "Solar",
-     "last": 38.99,
-     "chg_1d": -3.01,
-     "chg_1w": -10.39,
-     "chg_1m": -6.83,
+     "last": 37.86,
+     "chg_1d": -0.68,
+     "chg_1w": -13.86,
+     "chg_1m": -9.53,
      "src": "Invesco fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "FAN",
      "name": "Wind",
-     "last": 21.74,
-     "chg_1d": -1.23,
-     "chg_1w": -4.9,
-     "chg_1m": -1.54,
+     "last": 21.55,
+     "chg_1d": -0.55,
+     "chg_1w": -5.98,
+     "chg_1m": -2.4,
      "src": "First Trust fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "PBW",
      "name": "Clean energy, small cap",
-     "last": 23.38,
-     "chg_1d": -1.89,
-     "chg_1w": -11.2,
-     "chg_1m": -7.11,
+     "last": 23.08,
+     "chg_1d": 0.17,
+     "chg_1w": -14.1,
+     "chg_1m": -8.3,
      "src": "Invesco fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "PHO",
      "name": "Water, US",
-     "last": 76.01,
-     "chg_1d": -0.38,
-     "chg_1w": -1.43,
-     "chg_1m": 8.49,
+     "last": 75.98,
+     "chg_1d": 0.57,
+     "chg_1w": -1.48,
+     "chg_1m": 8.45,
      "src": "Invesco fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "CGW",
      "name": "Water, global",
-     "last": 64.46,
-     "chg_1d": -0.66,
-     "chg_1w": -1.68,
-     "chg_1m": 0.56,
+     "last": 64.07,
+     "chg_1d": -0.12,
+     "chg_1w": -2.12,
+     "chg_1m": -0.05,
      "src": "Invesco fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "LIT",
      "name": "Lithium and batteries",
-     "last": 56.4,
-     "chg_1d": -0.77,
-     "chg_1w": -5.97,
-     "chg_1m": -11.94,
+     "last": 55.37,
+     "chg_1d": -1.86,
+     "chg_1w": -9.33,
+     "chg_1m": -13.55,
      "src": "Global X fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "REMX",
      "name": "Rare earths and strategic metals",
-     "last": 46.2,
-     "chg_1d": -1.83,
-     "chg_1w": -10.88,
-     "chg_1m": -14.81,
+     "last": 45.23,
+     "chg_1d": -1.57,
+     "chg_1w": -14.87,
+     "chg_1m": -16.6,
      "src": "VanEck fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "COPX",
      "name": "Copper miners",
-     "last": 65.67,
-     "chg_1d": 0.24,
-     "chg_1w": -9.88,
-     "chg_1m": -17.89,
+     "last": 60.46,
+     "chg_1d": -7.43,
+     "chg_1w": -17.65,
+     "chg_1m": -24.41,
      "src": "Global X fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "PICK",
      "name": "Metals and mining, global",
-     "last": 51.46,
-     "chg_1d": -0.29,
-     "chg_1w": -6.99,
-     "chg_1m": -11.57,
+     "last": 49.08,
+     "chg_1d": -4.18,
+     "chg_1w": -12.09,
+     "chg_1m": -15.66,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "IGF",
      "name": "Infrastructure, global",
-     "last": 66.49,
-     "chg_1d": -0.28,
-     "chg_1w": -0.18,
-     "chg_1m": 4.15,
+     "last": 65.7,
+     "chg_1d": -0.65,
+     "chg_1w": -1.44,
+     "chg_1m": 2.91,
      "src": "iShares fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "PAVE",
      "name": "Infrastructure, US",
-     "last": 52.0,
-     "chg_1d": -0.23,
-     "chg_1w": -2.4,
-     "chg_1m": -1.48,
+     "last": 51.98,
+     "chg_1d": 0.6,
+     "chg_1w": -3.65,
+     "chg_1m": -1.52,
      "src": "Global X fund, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "FSLR",
      "name": "First Solar",
-     "last": 155.59,
-     "chg_1d": -4.22,
-     "chg_1w": -14.03,
-     "chg_1m": -9.88,
+     "last": 152.6,
+     "chg_1d": -0.24,
+     "chg_1w": -14.32,
+     "chg_1m": -11.61,
      "src": "Nasdaq, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "ENPH",
      "name": "Enphase Energy",
-     "last": 24.08,
-     "chg_1d": -3.49,
-     "chg_1w": -12.88,
-     "chg_1m": -21.36,
+     "last": 22.58,
+     "chg_1d": -2.08,
+     "chg_1w": -20.21,
+     "chg_1m": -26.26,
      "src": "Nasdaq, exchange close via stockanalysis.com",
      "tier": "aggregator"
     },
     {
      "symbol": "BE",
      "name": "Bloom Energy",
-     "last": 169.78,
-     "chg_1d": -4.23,
-     "chg_1w": -8.43,
-     "chg_1m": -23.28,
+     "last": 170.81,
+     "chg_1d": -1.53,
+     "chg_1w": -18.46,
+     "chg_1m": -22.82,
      "src": "NYSE, exchange close via stockanalysis.com",
      "tier": "aggregator"
     }
@@ -3934,10 +3978,10 @@
      "symbol": "NEE",
      "name": "NextEra Energy",
      "region": "Americas",
-     "last": 85.09,
-     "chg_1d": -0.29,
-     "chg_1w": -1.37,
-     "chg_1m": 6.63,
+     "last": 84.63,
+     "chg_1d": 0.25,
+     "chg_1w": -1.58,
+     "chg_1m": 6.05,
      "src": "NYSE, close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3945,10 +3989,10 @@
      "symbol": "BEP",
      "name": "Brookfield Renewable",
      "region": "Americas",
-     "last": 30.42,
-     "chg_1d": 1.54,
-     "chg_1w": 1.13,
-     "chg_1m": 7.11,
+     "last": 30.6,
+     "chg_1d": 1.63,
+     "chg_1w": 0.36,
+     "chg_1m": 7.75,
      "src": "NYSE, close via stockanalysis.com",
      "tier": "aggregator"
     },
@@ -3956,10 +4000,10 @@
      "symbol": "ORSTED.CO",
      "name": "Orsted",
      "region": "Europe",
-     "last": 141.25,
-     "chg_1d": -1.64,
-     "chg_1w": -2.38,
-     "chg_1m": 9.88,
+     "last": 139.5,
+     "chg_1d": -1.24,
+     "chg_1w": -2.92,
+     "chg_1m": 8.52,
      "src": "Nasdaq Copenhagen, close via stockanalysis.com",
      "tier": "aggregator",
      "note": "Quoted in DKK."
@@ -3968,10 +4012,10 @@
      "symbol": "VWS.CO",
      "name": "Vestas",
      "region": "Europe",
-     "last": 187.1,
-     "chg_1d": -3.83,
-     "chg_1w": -5.79,
-     "chg_1m": -1.5,
+     "last": 181.95,
+     "chg_1d": -2.75,
+     "chg_1w": -4.76,
+     "chg_1m": -4.21,
      "src": "Nasdaq Copenhagen, close via stockanalysis.com",
      "tier": "aggregator",
      "note": "Quoted in DKK."
@@ -3980,10 +4024,10 @@
      "symbol": "SU.PA",
      "name": "Schneider Electric",
      "region": "Europe",
-     "last": 236.6,
-     "chg_1d": -2.05,
-     "chg_1w": 0.53,
-     "chg_1m": -6.59,
+     "last": 237.9,
+     "chg_1d": 0.55,
+     "chg_1w": -1.9,
+     "chg_1m": -6.08,
      "src": "Euronext Paris, close via stockanalysis.com",
      "tier": "aggregator",
      "note": "Quoted in EUR."
@@ -3992,10 +4036,10 @@
      "symbol": "VIE.PA",
      "name": "Veolia",
      "region": "Europe",
-     "last": 34.36,
-     "chg_1d": -1.35,
-     "chg_1w": 0.2,
-     "chg_1m": 6.05,
+     "last": 34.13,
+     "chg_1d": -0.67,
+     "chg_1w": -0.5,
+     "chg_1m": 5.34,
      "src": "Euronext Paris, close via stockanalysis.com",
      "tier": "aggregator",
      "note": "Quoted in EUR."
@@ -4004,10 +4048,10 @@
      "symbol": "XYL",
      "name": "Xylem",
      "region": "Americas",
-     "last": 95.47,
-     "chg_1d": -0.48,
-     "chg_1w": -1.41,
-     "chg_1m": -8.25,
+     "last": 94.6,
+     "chg_1d": -0.05,
+     "chg_1w": -0.54,
+     "chg_1m": -9.08,
      "src": "NYSE, close via stockanalysis.com",
      "tier": "aggregator"
     }
@@ -4016,122 +4060,36 @@
  ],
  "headlines": [
   {
-   "story": "Trump warns Iran over reported ‘dirty bomb’ threat plans against Washington",
-   "date": "2026-11-17",
-   "summary": "President Donald Trump responded to a CNN report that Iran was working on plans to attack Washington, DC",
+   "story": "Jensen Huang says he'd be honoured to return to Nvidia as CEO",
+   "date": "2026-11-18",
+   "summary": "Jensen Huang makes his first public statement since resigning from Nvidia, saying he'd be honoured to return to his job amid support from the tech world. It comes ahead of a much anticipated earnings call...",
    "coverage": [
     {
-     "outlet": "Al Jazeera",
-     "region": "Middle East and Africa",
-     "title": "Trump warns Iran over reported ‘dirty bomb’ threat plans against Washington",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-warns-iran-over-reported-dirty-bomb-threat-plans-against-washington?traffic_source=rss",
-     "kind": "press"
-    },
-    {
-     "outlet": "Economic Times",
-     "region": "South Asia",
-     "title": "Iran's dirty bomb warning looms over Washington",
-     "url": "https://economictimes.indiatimes.com/news/defence/us-iran-war-dirty-bomb-warning-the-long-arm-of-iran-looms-over-washington/articleshow/135928765.cms",
-     "kind": "press"
-    },
-    {
-     "outlet": "CNBC",
-     "region": "Americas",
-     "title": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
-     "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
-     "kind": "press"
-    }
-   ],
-   "overlap": []
-  },
-  {
-   "story": "‘Unprecedented’ Ukraine attack on Crimean bridge",
-   "date": "2026-11-17",
-   "summary": "Ukraine has struck the Kerch Bridge linking Russia to Russian-annexed Crimea for a second day.",
-   "coverage": [
-    {
-     "outlet": "Al Jazeera",
-     "region": "Middle East and Africa",
-     "title": "‘Unprecedented’ Ukraine attack on Crimean bridge",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/unprecedented-ukraine-attack-on-crimean-bridge?traffic_source=rss",
-     "kind": "press"
-    },
-    {
-     "outlet": "South China Morning Post",
-     "region": "East Asia",
-     "title": "Ukraine damages Russia’s Crimean bridge in major strike",
-     "url": "https://www.scmp.com/news/world/russia-central-asia/article/3374785/ukraine-damages-russias-crimean-bridge-major-strike",
-     "kind": "press"
-    },
-    {
-     "outlet": "ABC News Australia",
-     "region": "Oceania",
-     "title": "Ukraine strikes major Crimean bridge as aerial attacks escalate",
-     "url": "https://www.abc.net.au/news/2026-11-18/ukraine-damages-crimean-bridge-in-major-strike/107396824",
-     "kind": "press"
-    }
-   ],
-   "overlap": []
-  },
-  {
-   "story": "Nvidia to reveal first earnings since spy scandal",
-   "date": "2026-11-17",
-   "summary": "Investors will closely scrutinize the results for indications the artificial intelligence boom can withstand the crisis",
-   "coverage": [
-    {
-     "outlet": "The Hindu",
-     "region": "South Asia",
-     "title": "Nvidia to reveal first earnings since spy scandal",
-     "url": "https://www.thehindu.com/business/nvidia-to-reveal-first-earnings-since-spy-scandal/article71711204.ece",
-     "kind": "press"
-    },
-    {
-     "outlet": "The Straits Times",
-     "region": "Southeast Asia",
-     "title": "Nvidia to reveal first earnings since spy scandal",
-     "url": "https://www.straitstimes.com/business/nvidia-to-reveal-first-earnings-since-spy-scandal",
-     "kind": "press"
-    },
-    {
-     "outlet": "CNBC",
-     "region": "Americas",
-     "title": "Former Nvidia CEO Jensen Huang says he’s open to returning in first statement since resignation",
-     "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
-     "kind": "press"
-    }
-   ],
-   "overlap": [
-    {
-     "symbol": "NVDA",
-     "strength": "direct",
-     "reason": "NVIDIA is named in the headline."
-    }
-   ]
-  },
-  {
-   "story": "Nvidia forms national security committee after Huang affair",
-   "date": "2026-11-17",
-   "summary": "Nvidia has created a board-level committee for national security and export control. This follows the resignation of CEO Jensen Huang over extramarital affairs, allegedly including one with a Chinese intelligence asset.",
-   "coverage": [
-    {
-     "outlet": "DW",
+     "outlet": "France 24",
      "region": "Europe",
-     "title": "Nvidia forms national security committee after Huang affair",
-     "url": "https://www.dw.com/en/nvidia-forms-national-security-committee-after-huang-affair/a-79970447?maca=en-rss-en-bus-2091-rdf",
+     "title": "Jensen Huang says he'd be honoured to return to Nvidia as CEO",
+     "url": "https://www.france24.com/en/tv-shows/business/20261117-jensen-huang-says-he-d-be-honoured-to-return-to-nvidia-as-ceo",
+     "kind": "press"
+    },
+    {
+     "outlet": "The Guardian",
+     "region": "Europe",
+     "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
+     "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
      "kind": "press"
     },
     {
      "outlet": "The Straits Times",
      "region": "Southeast Asia",
-     "title": "Nvidia forms board committee to oversee national security, export controls",
-     "url": "https://www.straitstimes.com/business/nvidia-forms-board-committee-to-oversee-national-security-export-controls",
+     "title": "Nvidia chairman says board does not intend to reinstate Jensen Huang as CEO",
+     "url": "https://www.straitstimes.com/business/nvidia-chairman-says-board-does-not-intend-to-reinstate-jensen-huang-as-ceo",
      "kind": "press"
     },
     {
      "outlet": "CNA",
      "region": "Southeast Asia",
-     "title": "Nvidia board forms committee for national security and export control oversight",
-     "url": "https://www.channelnewsasia.com/business/nvidia-board-forms-committee-national-security-and-export-control-oversight-6558711",
+     "title": "Nvidia board says it does not intend to reinstate Jensen Huang as CEO",
+     "url": "https://www.channelnewsasia.com/business/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-6560516",
      "kind": "press"
     }
    ],
@@ -4144,277 +4102,332 @@
    ]
   },
   {
-   "story": "Is Iran plotting a ‘dirty bomb’ attack in the US? What we know",
-   "date": "2026-11-17",
-   "summary": "A CNN report quoting unnamed US officials alleges Tehran is developing plans for an attack on officials in Washington.",
+   "story": "Hakeem Jeffries formally nominated as first Black US House speaker",
+   "date": "2026-11-18",
+   "summary": "The New York congressman was nominated after Democrats gained control of Congress in the midterm elections.",
    "coverage": [
     {
      "outlet": "Al Jazeera",
      "region": "Middle East and Africa",
-     "title": "Is Iran plotting a ‘dirty bomb’ attack in the US? What we know",
-     "url": "https://www.aljazeera.com/news/2026/11/17/is-iran-plotting-a-dirty-bomb-attack-in-the-us-what-we-know?traffic_source=rss",
+     "title": "Hakeem Jeffries formally nominated as first Black US House speaker",
+     "url": "https://www.aljazeera.com/news/2026/11/18/hakeem-jeffries-becomes-first-black-nominee-for-us-house-speaker?traffic_source=rss",
      "kind": "press"
     },
     {
-     "outlet": "Economic Times",
-     "region": "South Asia",
-     "title": "What's 'dirty bomb' that Iran likely planning to use",
-     "url": "https://economictimes.indiatimes.com/news/defence/what-is-dirty-bomb-that-iran-is-planning-to-use-against-us-and-how-is-it-different-from-nuclear-bomb/articleshow/135913384.cms",
+     "outlet": "South China Morning Post",
+     "region": "East Asia",
+     "title": "Democrats nominate Jeffries to be first black US House speaker",
+     "url": "https://www.scmp.com/news/world/united-states-canada/article/3374962/democrats-nominate-jeffries-be-first-black-us-house-speaker",
      "kind": "press"
     }
    ],
    "overlap": []
   },
   {
-   "story": "Nvidia earnings after Jensen exit: What to expect?",
-   "date": "2026-11-17",
-   "summary": "Reported by Economic Times, CNBC.",
+   "story": "Brief rally for S’pore tech stocks after Nvidia’s strong earnings exceed forecasts",
+   "date": "2026-11-18",
+   "summary": "Momentary boost came from Nvidia’s strong earnings for the third quarter ended Oct 25, which exceeded expectations.",
    "coverage": [
     {
-     "outlet": "Economic Times",
-     "region": "South Asia",
-     "title": "Nvidia earnings after Jensen exit: What to expect?",
-     "url": "https://economictimes.indiatimes.com/world/us/when-are-nvidia-earnings-today-nvda-q3-2027-results-date-and-release-schedule-what-investors-should-watch-in-first-earnings-report-after-jensen-huangs-exit/articleshow/135923991.cms",
+     "outlet": "The Straits Times",
+     "region": "Southeast Asia",
+     "title": "Brief rally for S’pore tech stocks after Nvidia’s strong earnings exceed forecasts",
+     "url": "https://www.straitstimes.com/business/companies-markets/brief-rally-for-spore-tech-stocks-after-nvidias-strong-earnings-exceed-forecasts",
+     "kind": "press"
+    },
+    {
+     "outlet": "Korea Herald",
+     "region": "East Asia",
+     "title": "Seoul stocks rebound 2% after Nvidia earnings",
+     "url": "https://www.koreaherald.com/article/10941612",
+     "kind": "press"
+    }
+   ],
+   "overlap": [
+    {
+     "symbol": "NVDA",
+     "strength": "direct",
+     "reason": "NVIDIA is named in the headline."
+    }
+   ]
+  },
+  {
+   "story": "A tarmac hug with Xi and a handshake with Putin, how Trump began his China visit",
+   "date": "2026-11-18",
+   "summary": "Handshakes, warm welcomes and carefully staged photo opportunities defined US President Donald Trump’s first day in Shenzhen on Wednesday, as China showcased its diplomatic priorities ahead of a planned three-way summit with Russia. Here are...",
+   "coverage": [
+    {
+     "outlet": "South China Morning Post",
+     "region": "East Asia",
+     "title": "A tarmac hug with Xi and a handshake with Putin, how Trump began his China visit",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3374951/tarmac-hug-xi-and-handshake-putin-how-trump-began-his-china-visit",
      "kind": "press"
     },
     {
      "outlet": "CNBC",
      "region": "Americas",
-     "title": "Jensen Huang breaks his silence ahead of Nvidia earnings — plus, 1 stock to buy on weakness",
-     "url": "https://www.cnbc.com/investingclub/2026/11/17/jensen-huang-breaks-his-silence-ahead-of-nvidia-earnings-plus-1-stock-to-buy.html",
+     "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+     "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
      "kind": "press"
     }
    ],
    "overlap": [
     {
-     "symbol": "NVDA",
+     "symbol": "MCHI",
      "strength": "direct",
-     "reason": "NVIDIA is named in the headline."
+     "reason": "China is named in the headline."
     }
    ]
+  },
+  {
+   "story": "Bombay High Court quashes ICICI Bank’s nod to prosecute ex-CEO Chanda Kochhar in ‘loan fraud’ case",
+   "date": "2026-11-18",
+   "summary": "The Bombay HC passed the order on a petition filed by former ICICI Bank CEO Chanda Kochhar, claiming that the bank had not followed proper procedure while granting sanction to prosecute her",
+   "coverage": [
+    {
+     "outlet": "The Hindu",
+     "region": "South Asia",
+     "title": "Bombay High Court quashes ICICI Bank’s nod to prosecute ex-CEO Chanda Kochhar in ‘loan fraud’ case",
+     "url": "https://www.thehindu.com/business/Industry/bombay-high-court-quashes-icici-banks-nod-to-prosecute-ex-ceo-chanda-kochhar-in-loan-fraud-case/article71715652.ece",
+     "kind": "press"
+    },
+    {
+     "outlet": "Economic Times",
+     "region": "South Asia",
+     "title": "Court relief for Chanda Kochhar in 'loan fraud' case",
+     "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/relief-for-chanda-kochhar-as-hc-quashes-icici-banks-nod-to-prosecute-ex-ceo-in-loan-fraud-case/articleshow/135956301.cms",
+     "kind": "press"
+    }
+   ],
+   "overlap": []
+  },
+  {
+   "story": "Dollar holds near 19-month high as data supports case for US rate hikes",
+   "date": "2026-11-18",
+   "summary": "The central bank had held rates steady during the meeting in October.",
+   "coverage": [
+    {
+     "outlet": "The Straits Times",
+     "region": "Southeast Asia",
+     "title": "Dollar holds near 19-month high as data supports case for US rate hikes",
+     "url": "https://www.straitstimes.com/business/dollar-holds-near-19-month-high-as-data-supports-case-for-us-rate-hikes",
+     "kind": "press"
+    },
+    {
+     "outlet": "CNA",
+     "region": "Southeast Asia",
+     "title": "Dollar at 19-month high as data, policymakers cement December rate hike bets",
+     "url": "https://www.channelnewsasia.com/business/dollar-19-month-high-data-policymakers-cement-december-rate-hike-bets-6560931",
+     "kind": "press"
+    }
+   ],
+   "overlap": []
   }
  ],
  "reading": [
   {
    "source": "EE Times",
-   "title": "LTCC Solutions for Next Generation UWB/BLE Devices",
-   "url": "https://www.eetimes.com/ltcc-solutions-for-next-generation-uwb-ble-devices/",
-   "published": "2026-11-17",
+   "title": "Beyond One Turn: How a Single-Chip Multiturn Position Sensor Is Reshaping Actuator Design",
+   "url": "https://www.eetimes.com/beyond-one-turn-how-a-single-chip-multiturn-position-sensor-is-reshaping-actuator-design/",
+   "published": "2026-11-18",
    "source_url": "https://www.eetimes.com",
    "topic": "Chips",
    "access": "teaser",
-   "summary": "Discover TAIYO YUDEN’s advanced LTCC (Low Temperature Co-fired Ceramic) solutions for UWB and Bluetooth Low Energy (BLE) applications. Featuring high-performance RF components, these solutions address key design challenges such as...",
+   "summary": "Discover how advanced multiturn position sensing can transform industrial motion control without the limitations of traditional mechanical solutions. Explore how magnetic sensing technology enables accurate, reliable tracking of rotational movement...",
    "overlap": []
   },
   {
    "source": "EE Times",
-   "title": "Minimizing Acoustic Noise in Space-Constrained Medical and Life Science Applications",
-   "url": "https://www.eetimes.com/minimising-acoustic-noise-in-space-constrained-medical-and-life-science-applications/",
-   "published": "2026-11-17",
+   "title": "Qnity at One: Randy King on Shrink, Stack and the Materials Behind AI",
+   "url": "https://www.eetimes.com/qnity-at-one-randy-king-on-shrink-stack-and-the-materials-behind-ai/",
+   "published": "2026-11-18",
    "source_url": "https://www.eetimes.com",
    "topic": "Chips",
    "access": "teaser",
-   "summary": "Design engineers and technical decision-makers working on medical and life science equipment must balance competing demands: high power density, thermal performance, compact dimensions, and low acoustic noise. This whitepaper provides...",
-   "overlap": []
+   "summary": "Qnity CTO Randy King on year one as an independent company, shrink-and-stack chips and the materials challenges of advanced packaging for AI.",
+   "overlap": [
+    {
+     "symbol": "DD",
+     "strength": "loose",
+     "reason": "DuPont is named in the feed excerpt."
+    }
+   ]
   },
   {
    "source": "EE Times",
-   "title": "Intesa Sanpaolo Finds Value Before Quantum Computers Are Ready",
-   "url": "https://www.eetimes.com/intesa-sanpaolo-finds-value-before-quantum-computers-are-ready/",
-   "published": "2026-11-17",
+   "title": "Koduri’s Oxmiq Offers IP, Tools for Indian Teams to Design AI Chips",
+   "url": "https://www.eetimes.com/koduri-oxmiq-offers-ip-tools-for-indian-teams-to-design-ai-chips/",
+   "published": "2026-11-18",
    "source_url": "https://www.eetimes.com",
    "topic": "Chips",
    "access": "teaser",
-   "summary": "The banking group reports double-digit cost savings from quantum-inspired optimization, but useful quantum hardware faces a tougher test than faster calculations.",
-   "overlap": []
-  },
-  {
-   "source": "SemiWiki",
-   "title": "CXO Interview with Vishal Moondhra of Perforce IPLM",
-   "url": "https://semiwiki.com/eda/perforce/375968-cxo-interview-with-vishal-moondhra-of-perforce-iplm/",
-   "published": "2026-11-16",
-   "source_url": "https://semiwiki.com",
-   "topic": "Chips",
-   "access": "partial",
-   "summary": "Vishal Moondhra is the VP of Solutions Engineering for Perforce IPLM. He has over 20 years of experience in Digital Design and Verification. Vishal has an impressive resume of engineering...",
+   "summary": "India's AI infrastructure needs could exceed 6 GW by 2030. Oxmiq Labs CEO Raja Koduri explains why domestic chip design and custom systems matter.",
    "overlap": [
     {
-     "symbol": "INTC",
+     "symbol": "INDA",
      "strength": "loose",
-     "reason": "Intel is named in the feed excerpt."
+     "reason": "India is named in the feed excerpt."
     }
    ]
   },
   {
    "source": "SemiWiki",
-   "title": "Why Agile Post-Quantum Cryptography Matters for Long-Lived Chip Designs",
-   "url": "https://semiwiki.com/eda/375719-why-agile-post-quantum-cryptography-matters-for-long-lived-chip-designs/",
+   "title": "CTO Interview with Paweł Banachowicz of Silicon Creations",
+   "url": "https://semiwiki.com/ip/silicon-creations/375932-cto-interview-with-pawel-banachowicz-of-silicon-creations/",
    "published": "2026-11-17",
    "source_url": "https://semiwiki.com",
    "topic": "Chips",
    "access": "partial",
-   "summary": "Quantum computing opens exciting possibilities for solving difficult problems, advancing research, and enabling new technologies. Preparing security for that future is an opportunity to strengthen the digital foundations supporting everyday...",
+   "summary": "Paweł Banachowicz is a Director of Analog & Mixed-Signal Design at Silicon Creations, where he has worked since 2012. He has designed or led the design of hundreds of PLL...",
    "overlap": []
   },
   {
    "source": "SemiWiki",
-   "title": "The Anatomy of a Convergence Delta: Closing the Correlation Gap Between P&R and Sign-Off",
-   "url": "https://semiwiki.com/eda/376206-the-anatomy-of-a-convergence-delta-closing-the-correlation-gap-between-pr-and-sign-off/",
-   "published": "2026-11-17",
+   "title": "Is AI Ready to Help Chip Teams Get the Architecture Right?",
+   "url": "https://semiwiki.com/eda/undo/376342-is-ai-ready-to-help-chip-teams-get-the-architecture-right/",
+   "published": "2026-11-18",
    "source_url": "https://semiwiki.com",
    "topic": "Chips",
    "access": "partial",
-   "summary": "By Vignesh Sunderrajan Every physical design engineer knows the moment. The implementation run finishes with reasonable Worst negative slack (WNS) and total negative slack (TNS) is insignificant. Then the sign-off...",
+   "summary": "By Michael Sanie Every silicon executive worries about schedule. A slipped tape-out is painful. A chip that works but loses to the previous generation is worse. The question that matters...",
+   "overlap": []
+  },
+  {
+   "source": "SemiWiki",
+   "title": "PDF Solutions: Has the Puck Finally Arrived?",
+   "url": "https://semiwiki.com/eda/pdf-solutions/376337-pdf-solutions-has-the-puck-finally-arrived/",
+   "published": "2026-11-18",
+   "source_url": "https://semiwiki.com",
+   "topic": "Chips",
+   "access": "partial",
+   "summary": "How a decade of seemingly niche investments may have created the infrastructure for an operating system for semiconductor autonomy For more than a decade, PDF Solutions has been skating to...",
    "overlap": []
   },
   {
    "source": "Semiconductor Engineering",
-   "title": "Physics Vs. Data",
-   "url": "https://semiengineering.com/physics-vs-data/",
+   "title": "Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)",
+   "url": "https://semiengineering.com/defect-aware-chiplet-matching-for-heterogeneous-integration-yield-asu-ampere/",
    "published": "2026-11-17",
    "source_url": "https://semiengineering.com",
    "topic": "Chips",
-   "access": "partial",
-   "summary": "Why both approaches are needed at angstrom-level dimensions.",
-   "overlap": [
-    {
-     "symbol": "LRCX",
-     "strength": "loose",
-     "reason": "Lam Research is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Semiconductor Engineering",
-   "title": "Chip Industry Technical Paper Roundup: Nov. 17",
-   "url": "https://semiengineering.com/chip-industry-technical-paper-roundup-nov-17/",
-   "published": "2026-11-17",
-   "source_url": "https://semiengineering.com",
-   "topic": "Chips",
-   "access": "partial",
-   "summary": "HBM4 controller partitioning; single-crystal high-κ dielectrics for low-power 2D CFETs; HW-based location checks for AI chip smuggling; embedded ECC for AI weight protection; optimized e-beam evaporation for metal-semiconductor contacts; sub-volt...",
-   "overlap": []
-  },
-  {
-   "source": "Semiconductor Engineering",
-   "title": "Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)",
-   "url": "https://semiengineering.com/self-supervised-virtual-metrology-for-cmp-mrr-prediction-sutd-astar-nus/",
-   "published": "2026-11-17",
-   "source_url": "https://semiengineering.com",
-   "topic": "Chips",
-   "access": "partial",
-   "summary": "Researchers at Singapore University of Technology and Design (SUTD), A*STAR, and National University of Singapore (NUS) published “Self-Supervised Attention-Based Virtual Metrology for CMP MRR Prediction.” Excerpt “In this paper, we...",
-   "overlap": []
-  },
-  {
-   "source": "Canary Media",
-   "title": "‘Electrify everything’ hits the global stage",
-   "url": "https://www.canarymedia.com/articles/electrification/electrify-everything-cop31-climate-conference",
-   "published": "2026-11-13",
-   "source_url": "https://www.canarymedia.com",
-   "topic": "Energy",
-   "access": "partial",
-   "summary": "This analysis and news roundup come from the Canary Media Weekly newsletter. Sign up to get it every Friday. World leaders — well, some of them — gathered in Turkey...",
-   "overlap": [
-    {
-     "symbol": "TUR",
-     "strength": "loose",
-     "reason": "Turkey is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Canary Media",
-   "title": "Permitting reform is a big, controversial bet for the energy transition",
-   "url": "https://www.canarymedia.com/articles/politics/permitting-reform-uncertain-bet",
-   "published": "2026-11-16",
-   "source_url": "https://www.canarymedia.com",
-   "topic": "Energy",
-   "access": "partial",
-   "summary": "The Senate bipartisan permitting bill is essentially an enormous three-part bet by the Democrats and clean energy advocates who support it. The first part of the bet is that streamlining...",
-   "overlap": []
-  },
-  {
-   "source": "Canary Media",
-   "title": "In the South, heat pumps are the secret to a more reliable grid",
-   "url": "https://www.canarymedia.com/articles/heat-pumps/south-heat-pumps-reliable-grid",
-   "published": "2026-11-17",
-   "source_url": "https://www.canarymedia.com",
-   "topic": "Energy",
-   "access": "partial",
-   "summary": "For many in North Carolina and Tennessee, 2022’s Winter Storm Elliott lives in infamy. Temperatures plunged well below freezing for days at a time, just as families were gathered at...",
-   "overlap": []
-  },
-  {
-   "source": "Energy Monitor",
-   "title": "UK, Canada and Norway agree $10bn climate finance partnership",
-   "url": "https://www.energymonitor.ai/?p=158954",
-   "published": "2026-11-16",
-   "source_url": "https://www.energymonitor.ai",
-   "topic": "Energy",
-   "access": "teaser",
-   "summary": "UK, Norway, and Canada launch climate finance initiative targeting $10bn by 2030 for projects in emerging markets.",
-   "overlap": []
-  },
-  {
-   "source": "Energy Monitor",
-   "title": "New international energy storage alliance launched at COP31",
-   "url": "https://www.energymonitor.ai/news/new-energy-storage-alliance-launched-cop31/",
-   "published": "2026-11-17",
-   "source_url": "https://www.energymonitor.ai",
-   "topic": "Energy",
-   "access": "teaser",
-   "summary": "A new international platform aimed at enhancing cooperation on energy storage was launched at the China Pavilion during COP31.",
-   "overlap": [
-    {
-     "symbol": "MCHI",
-     "strength": "loose",
-     "reason": "China is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Energy Monitor",
-   "title": "CIP awards offshore substation EPC contract for Fengmiao II in Taiwan",
-   "url": "https://www.energymonitor.ai/news/cip-offshore-substation-contract-fengmiao-ii/",
-   "published": "2026-11-17",
-   "source_url": "https://www.energymonitor.ai",
-   "topic": "Energy",
-   "access": "teaser",
-   "summary": "CIP has signed an EPC contract for the offshore substation (OSS) of the 600MW Fengmiao II Offshore Wind Farm (OWF) in Taiwan.",
-   "overlap": [
-    {
-     "symbol": "EWT",
-     "strength": "direct",
-     "reason": "Taiwan is named in the headline."
-    }
-   ]
-  },
-  {
-   "source": "Latitude Media",
-   "title": "Texas data centers are staring down a December limbo",
-   "url": "https://www.latitudemedia.com/news/texas-data-centers-are-staring-down-a-december-limbo/",
-   "published": "2026-11-16",
-   "source_url": "https://www.latitudemedia.com",
-   "topic": "Energy",
    "access": "full",
-   "summary": "The Batch Zero process just got a lot less clear.",
+   "summary": "Researchers at Arizona State University and Ampere Computing published “DT-MATCH: Defect- and Topology-Aware Chiplet Matching for Yield Optimization in Heterogeneous Integration.” Abstract “Heterogeneous integration (HI) and advanced packaging enable chiplet-based...",
+   "overlap": []
+  },
+  {
+   "source": "Semiconductor Engineering",
+   "title": "Can AI Agents Really Shift Chip Design Left?",
+   "url": "https://semiengineering.com/can-ai-agents-really-shift-chip-design-left/",
+   "published": "2026-11-18",
+   "source_url": "https://semiengineering.com",
+   "topic": "Chips",
+   "access": "full",
+   "summary": "Agentic AI promises to automate more of the chip flow, but integration with EDA tools and capturing decades of engineering expertise are non-trivial.",
+   "overlap": []
+  },
+  {
+   "source": "Semiconductor Engineering",
+   "title": "Blog Review: Nov. 18",
+   "url": "https://semiengineering.com/blog-review-nov-18-3/",
+   "published": "2026-11-18",
+   "source_url": "https://semiengineering.com",
+   "topic": "Chips",
+   "access": "full",
+   "summary": "PCIe and trust; rack-scale co-design; heterogeneous scaling; AI data center primer; on-device balancing; EU semi trends.",
+   "overlap": [
+    {
+     "symbol": "VGK",
+     "strength": "loose",
+     "reason": "Europe is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "Canary Media",
+   "title": "Power sector emissions set to fall in US amid lower coal use",
+   "url": "https://www.canarymedia.com/articles/fossil-fuels/us-power-sector-emissions-fall-coal",
+   "published": "2026-11-17",
+   "source_url": "https://www.canarymedia.com",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "The U.S. electricity sector is set to emit less planet-warming carbon dioxide this year despite record-high demand and the Trump administration’s efforts to prop up uncompetitive coal-fired power plants. Power...",
+   "overlap": []
+  },
+  {
+   "source": "Canary Media",
+   "title": "Google bets on superhot geothermal to power Oregon data centers",
+   "url": "https://www.canarymedia.com/articles/geothermal/google-superhot-geothermal-oregon-data-centers",
+   "published": "2026-11-17",
+   "source_url": "https://www.canarymedia.com",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "The geothermal startup Quaise Energy has landed a major first customer for its novel, superhot project in central Oregon. On Tuesday, the Houston-based firm announced that Google has agreed to...",
+   "overlap": []
+  },
+  {
+   "source": "Canary Media",
+   "title": "New net-zero community will become Michigan’s first virtual power plant",
+   "url": "https://www.canarymedia.com/articles/virtual-power-plants/new-net-zero-community-michigan-vpp",
+   "published": "2026-11-18",
+   "source_url": "https://www.canarymedia.com",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "Mitch Hall and his wife, Lori, live in one of the most sustainable communities in the U.S. Their town house is among a few dozen residences constructed so far at...",
+   "overlap": [
+    {
+     "symbol": "TAN",
+     "strength": "loose",
+     "reason": "Solar is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "Energy Monitor",
+   "title": "Closing the gap: Turning mine site data into faster, better decisions",
+   "url": "https://www.energymonitor.ai/partner-content/closing-the-gap-turning-mine-site-data-into-faster-better-decisions/",
+   "published": "2026-11-11",
+   "source_url": "https://www.energymonitor.ai",
+   "topic": "Energy",
+   "access": "teaser",
+   "summary": "The value of connected mining is not defined by the volume of data generated, but by the quality of decisions and actions that data enables.",
+   "overlap": []
+  },
+  {
+   "source": "Energy Monitor",
+   "title": "Google signs PPA to buy 50MW geothermal power from Quaise Energy",
+   "url": "https://www.energymonitor.ai/news/google-signs-ppa-50mw-quaise-energy/",
+   "published": "2026-11-18",
+   "source_url": "https://www.energymonitor.ai",
+   "topic": "Energy",
+   "access": "teaser",
+   "summary": "Google has entered into a PPA to acquire 50MW of geothermal energy from Quaise Energy’s Project Obsidian in Central Oregon, US.",
+   "overlap": []
+  },
+  {
+   "source": "Energy Monitor",
+   "title": "US DOE grants $2.8bn conditional loan for Wyoming grid project",
+   "url": "https://www.energymonitor.ai/news/us-grants-conditional-loan-wyoming-intertie/",
+   "published": "2026-11-18",
+   "source_url": "https://www.energymonitor.ai",
+   "topic": "Energy",
+   "access": "teaser",
+   "summary": "The US DOE Office of Energy Dominance Financing has announced up to $2.8bn conditional loan commitment for the Wyoming Intertie project.",
    "overlap": []
   },
   {
    "source": "Latitude Media",
-   "title": "Are distributed data centers the answer to AI’s power crunch?",
-   "url": "https://www.latitudemedia.com/news/open-circuit-are-distributed-data-centers-the-answer-to-ais-power-crunch/",
+   "title": "Michigan is a test bed for Democrats’ energy affordability promises",
+   "url": "https://www.latitudemedia.com/news/michigan-is-a-test-bed-for-democrats-energy-affordability-promises/",
    "published": "2026-11-17",
    "source_url": "https://www.latitudemedia.com",
    "topic": "Energy",
    "access": "full",
-   "summary": "The case for smaller data centers is getting stronger.",
+   "summary": "Gov.-elect Jocelyn Benson and Democratic lawmakers want to tie utility profits to reliability, and pause new data center builds.",
    "overlap": [
     {
-     "symbol": "NVDA",
+     "symbol": "MSFT",
      "strength": "loose",
-     "reason": "NVIDIA is named in the feed excerpt."
+     "reason": "Microsoft is named in the feed excerpt."
     },
     {
      "symbol": "TAN",
@@ -4425,223 +4438,185 @@
   },
   {
    "source": "Latitude Media",
-   "title": "Inside Moment Energy’s new battery system for C&I customers",
-   "url": "https://www.latitudemedia.com/news/inside-moment-energys-new-battery-system-for-ci-customers/",
-   "published": "2026-11-17",
+   "title": "Why utilities should design VPPs around households, not devices",
+   "url": "https://www.latitudemedia.com/news/why-utilities-should-design-vpps-around-households-not-devices/",
+   "published": "2026-11-18",
    "source_url": "https://www.latitudemedia.com",
    "topic": "Energy",
    "access": "full",
-   "summary": "Exclusive: The company is betting FEOC-compliance and safety are the answer to scaling second-life EV battery deployments.",
+   "summary": "Single-device programs treat household change as churn. A portfolio built around households turns it into durable grid capacity.",
+   "overlap": []
+  },
+  {
+   "source": "Latitude Media",
+   "title": "Solving the AI data center power bottleneck with superconductors",
+   "url": "https://www.latitudemedia.com/news/green-blueprint-solving-the-ai-data-center-power-bottleneck-with-superconductors/",
+   "published": "2026-11-18",
+   "source_url": "https://www.latitudemedia.com",
+   "topic": "Energy",
+   "access": "full",
+   "summary": "VEIR's Tim Heidel on pivoting from transmission to data centers, cooling cables with liquid nitrogen, and raising a Series C.",
    "overlap": [
     {
-     "symbol": "AMZN",
+     "symbol": "AAPL",
      "strength": "loose",
-     "reason": "Amazon is named in the feed excerpt."
+     "reason": "Apple is named in the feed excerpt."
     },
     {
-     "symbol": "MCHI",
+     "symbol": "HG=F",
      "strength": "loose",
-     "reason": "China is named in the feed excerpt."
+     "reason": "Copper is named in the feed excerpt."
     }
    ]
   },
   {
    "source": "Oilprice.com",
-   "title": "Democrats Target Trump’s $100 Billion Venezuela Oil Deal",
-   "url": "https://oilprice.com/Energy/Energy-General/Democrats-Target-Trumps-100-Billion-Venezuela-Oil-Deal.html",
-   "published": "2026-11-17",
+   "title": "Iran War Set to Hike 2027 UK Energy Bills to Four-Year High",
+   "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Hike-2027-UK-Energy-Bills-to-Four-Year-High.html",
+   "published": "2026-11-18",
    "source_url": "https://oilprice.com",
    "topic": "Energy",
    "access": "partial",
-   "summary": "Congressional Democrats are preparing multiple investigations into President Donald Trump's $100 billion Venezuela oil agreement, with plans to subpoena administration officials over a deal that handed a little-known private company...",
+   "summary": "The UK’s household energy bills are set to jump by another 26% from January 2027, to the highest since 2023, as the Iran war keeps pushing up wholesale gas and...",
    "overlap": []
   },
   {
    "source": "Oilprice.com",
-   "title": "Reliance Bets $1.6 Billion on India's Biogas Boom",
-   "url": "https://oilprice.com/Latest-Energy-News/World-News/Reliance-Bets-16-Billion-on-Indias-Biogas-Boom.html",
-   "published": "2026-11-17",
+   "title": "US Oil Inventories On the Rise",
+   "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html",
+   "published": "2026-11-18",
    "source_url": "https://oilprice.com",
    "topic": "Energy",
    "access": "partial",
-   "summary": "India’s biggest conglomerate and top private refiner, Reliance Industries, plans to invest $1.6 billion in 100 biogas plants in the country by the end of the decade, Vikas Rathi, CFO...",
+   "summary": "Crude oil inventories in the United States saw an increase of 3.4 million barrels during the week ending November 13, according to new data from the U.S. Energy Information Administration...",
+   "overlap": []
+  },
+  {
+   "source": "Oilprice.com",
+   "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
+   "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
+   "published": "2026-11-18",
+   "source_url": "https://oilprice.com",
+   "topic": "Energy",
+   "access": "partial",
+   "summary": "China Gas Holdings Limited, a major Chinese natural gas distributor and operator, has doubled the LNG volumes it will receive from U.S. exporter Venture Global under a recent 20-year deal....",
    "overlap": [
     {
-     "symbol": "INDA",
+     "symbol": "MCHI",
      "strength": "direct",
-     "reason": "India is named in the headline."
-    },
-    {
-     "symbol": "RELIANCE.NS",
-     "strength": "loose",
-     "reason": "Reliance Industries is named in the feed excerpt."
+     "reason": "China is named in the headline."
     }
    ]
   },
   {
-   "source": "Oilprice.com",
-   "title": "Brent Stuck Near $93 as Hormuz Tanker Attacks Offset Gulf Export Surge",
-   "url": "https://oilprice.com/Energy/Energy-General/Brent-Stuck-Near-93-as-Hormuz-Tanker-Attacks-Offset-Gulf-Export-Surge.html",
-   "published": "2026-11-17",
-   "source_url": "https://oilprice.com",
+   "source": "Rigzone",
+   "title": "MMA Announces Federal OCS Reef in Place Program",
+   "url": "https://www.rigzone.com/news/mma_announces_federal_ocs_reef_in_place_program-18-nov-2026-185117-article/?rss=true",
+   "published": "2026-11-18",
+   "source_url": "https://www.rigzone.com",
    "topic": "Energy",
-   "access": "partial",
-   "summary": "In this week’s newsletter, we will take a quick look at some of the critical figures and data in the energy markets this week. We will then look at some...",
+   "access": "teaser",
+   "summary": "'Eligible offshore structures can continue to serve our coastal communities as artificial reefs', Acting MMA Director Mike Olsen said.",
    "overlap": []
   },
   {
    "source": "Rigzone",
-   "title": "Canadian Natural to Acquire Advantage Energy for $1.8B",
-   "url": "https://www.rigzone.com/news/canadian_natural_to_acquire_advantage_energy_for_18b-17-nov-2026-185106-article/?rss=true",
-   "published": "2026-11-17",
+   "title": "EU Joins Call to Raise Global Electrification to 35 Percent by 2035",
+   "url": "https://www.rigzone.com/news/eu_joins_call_to_raise_global_electrification_to_35_percent_by_2035-18-nov-2026-185115-article/?rss=true",
+   "published": "2026-11-18",
    "source_url": "https://www.rigzone.com",
    "topic": "Energy",
    "access": "teaser",
-   "summary": "'The acquisition includes production of approximately 79,000 boe/d of high-quality Montney and Charlie Lake assets, representing a transaction value of approximately CAD 32,000 per flowing boe/d'.",
+   "summary": "The European Union confirmed endorsement of the '35-by-35 Global Electrification Pledge' at COP31 in Antalya, while major oil exporting countries push back.",
    "overlap": []
   },
   {
    "source": "Rigzone",
-   "title": "EIA Sees USA Oil Output Averaging 13.99MM Bpd in Q4",
-   "url": "https://www.rigzone.com/news/eia_sees_usa_oil_output_averaging_1399mm_bpd_in_q4-17-nov-2026-185105-article/?rss=true",
-   "published": "2026-11-17",
+   "title": "Trump Calls Venezuela an 'Acquisition'",
+   "url": "https://www.rigzone.com/news/wire/trump_calls_venezuela_an_acquisition-18-nov-2026-185114-article/?rss=true",
+   "published": "2026-11-18",
    "source_url": "https://www.rigzone.com",
    "topic": "Energy",
    "access": "teaser",
-   "summary": "The U.S. Energy Information Administration sees U.S. crude oil production averaging 13.99 million barrels per day in the fourth quarter of this year.",
-   "overlap": []
-  },
-  {
-   "source": "Rigzone",
-   "title": "Dems Plan Probes of Trump's $100B Venezuela Oil Deal",
-   "url": "https://www.rigzone.com/news/wire/dems_plan_probes_of_trumps_100b_venezuela_oil_deal-17-nov-2026-185103-article/?rss=true",
-   "published": "2026-11-17",
-   "source_url": "https://www.rigzone.com",
-   "topic": "Energy",
-   "access": "teaser",
-   "summary": "'We want to go in there and find out exactly what happened', California Representative Robert Garcia, who is poised to lead the House Oversight Committee next year, said in an...",
+   "summary": "President Donald Trump referred to Venezuela as an 'acquisition' while touting an increasing supply of U.S. energy he said will benefit American allies.",
    "overlap": []
   },
   {
    "source": "Utility Dive",
-   "title": "Batteries included: A practical checklist for storage owners, operators to boost reliability",
-   "url": "https://www.utilitydive.com/news/battery-storage-markets-ercot-xpansiv/873451/",
+   "title": "Data center slowdown would raise risks for utility investments",
+   "url": "https://www.utilitydive.com/news/data-center-slowdown-raises-risks-for-utility-investments/874924/",
    "published": "2026-11-17",
    "source_url": "https://www.utilitydive.com",
    "topic": "Energy",
    "access": "teaser",
-   "summary": "Sophisticated storage operators utilize defined escalation pathways, telemetry monitoring and situational awareness tools to coordinate when grid conditions require support, writes Xpansiv’s Brian Fellon.",
+   "summary": "An estimated 191 GW of planned data center capacity faces new risk after the midterm elections, with exposure concentrated in Texas, Ohio and Georgia, according to a report from energy...",
    "overlap": []
   },
   {
    "source": "Utility Dive",
-   "title": "New York eyes 2030 storage goal with second bulk procurement",
-   "url": "https://www.utilitydive.com/news/nyserda-bulk-energy-storage-solicitation/874888/",
-   "published": "2026-11-17",
+   "title": "The grid will fall short of AI’s power needs. These 6 resources can close the gap.",
+   "url": "https://www.utilitydive.com/news/the-grid-will-fall-short-of-ais-power-needs-6-resources-close-the-gap/874125/",
+   "published": "2026-11-18",
    "source_url": "https://www.utilitydive.com",
    "topic": "Energy",
    "access": "teaser",
-   "summary": "The solicitation seeks up to 1 GW of energy storage, with a preference for longer-duration resources able to alleviate grid congestion and displace peaker-plant emissions in downstate New York.",
+   "summary": "No single option is fast, firm and large enough on its own, writes Simon Irish, CEO of Terrestrial Energy. Some investments — flexibility, uprates and transmission — remain valuable across...",
    "overlap": []
   },
   {
    "source": "Utility Dive",
-   "title": "Grid operators file closely watched large load interconnection reforms at FERC",
-   "url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872/",
-   "published": "2026-11-17",
+   "title": "How National Grid, Eversource are using VPPs to solve local-level constraints",
+   "url": "https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039/",
+   "published": "2026-11-18",
    "source_url": "https://www.utilitydive.com",
    "topic": "Energy",
    "access": "teaser",
-   "summary": "The PJM Interconnection proposed revamping its interconnection process by studying large load and generation interconnection requests in a single, one-year review. Others focused on load flexibility, bring-your-own-capacity rules and cost...",
+   "summary": "The Northeast’s virtual power plant foundations are far stronger today than a decade ago, but utilities still need more visibility into distribution-system loads and energy resources, executives said.",
    "overlap": []
   },
   {
    "source": "World Nuclear News",
-   "title": "New York names contenders for next step of nuclear programme",
-   "url": "https://www.world-nuclear-news.org/articles/new-york-names-contenders-for-next-step-of-nuclear-programme",
-   "published": "2026-11-17",
+   "title": "Maritime nuclear project awarded Norwegian public funds",
+   "url": "https://www.world-nuclear-news.org/articles/maritime-nuclear-project-awarded-norwegian-public-funds",
+   "published": "2026-11-18",
    "source_url": "https://www.world-nuclear-news.org",
    "topic": "Energy",
    "access": "teaser",
-   "summary": "The New York Power Authority announced the names of the ten nuclear energy developers it has qualified to go forward in its process to select potential partners for its effort...",
+   "summary": "The Research Council of Norway has awarded NOK20 million (USD2 million) in initial funding to the Marine Nuclear Propulsion System project as it prepares to move maritime nuclear propulsion from...",
    "overlap": []
   },
   {
    "source": "World Nuclear News",
-   "title": "Bangladesh's Rooppur 1 supplies country's first nuclear energy",
-   "url": "https://www.world-nuclear-news.org/articles/bangladeshs-rooppur-1-nuclear-supplies-countrys-first-nuclear-energy",
-   "published": "2026-11-17",
+   "title": "Prototype aseismic bearing completed for Rolls-Royce SMR",
+   "url": "https://www.world-nuclear-news.org/articles/prototype-aseismic-bearing-completed-for-rolls-royce-smr",
+   "published": "2026-11-18",
    "source_url": "https://www.world-nuclear-news.org",
    "topic": "Energy",
    "access": "teaser",
-   "summary": "Rooppur 1, Bangladesh's first nuclear power plant unit, has been connected to the country's grid and supplied its first electricity.",
+   "summary": "Construction company Skanska has completed an aseismic bearing pedestal demonstrator for Rolls-Royce SMR. These structural isolation devices are a key part of the factory-built nuclear power plant's design.",
    "overlap": []
   },
   {
    "source": "World Nuclear News",
-   "title": "IAEA sees commitment to safety at Kansai's Mihama unit 3",
-   "url": "https://www.world-nuclear-news.org/articles/iaea-sees-commitment-to-safety-at-kansais-mihama-unit-3",
-   "published": "2026-11-17",
+   "title": "Russian regulator considers licence for Zaporizhzhia unit 3",
+   "url": "https://www.world-nuclear-news.org/articles/russian-regulator-considers-licence-for-zaporizhzhia-unit-3",
+   "published": "2026-11-18",
    "source_url": "https://www.world-nuclear-news.org",
    "topic": "Energy",
    "access": "teaser",
-   "summary": "An International Atomic Energy Agency team of experts has completed a review of long-term operational safety of unit 3 of Kansai Electric Power Company's Mihama nuclear power plant in Japan,...",
+   "summary": "A Rostekhnadzor commission has begun work at the Zaporizhzhia Nuclear Power Plant to review material submitted in support of an operating licence application for unit 3.",
+   "overlap": []
+  },
+  {
+   "source": "AgFunder News",
+   "title": "Carlsberg spinout Traitomic lands $22m to speed up trait discovery and development",
+   "url": "https://agfundernews.com/carlsberg-spinout-traitomic-lands-22m-to-speed-up-trait-discovery-and-development",
+   "published": "2026-11-17",
+   "source_url": "https://agfundernews.com",
+   "topic": "Food and farm",
+   "access": "full",
+   "summary": "“We can develop traits very, very fast, and we are not bound by specific organisms,” says Traitomic CEO Gustav Hambraeus.",
    "overlap": [
-    {
-     "symbol": "EWJ",
-     "strength": "loose",
-     "reason": "Japan is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "AgFunder News",
-   "title": "Amyris bets on sweet proteins with Oobli acquisition",
-   "url": "https://agfundernews.com/amyris-bets-on-sweet-proteins-with-oobli-acquisition",
-   "published": "2026-11-12",
-   "source_url": "https://agfundernews.com",
-   "topic": "Food and farm",
-   "access": "full",
-   "summary": "The deal will combine Oobli’s protein production platform and portfolio with Amyris’ strain engineering and biomanufacturing capabilities.",
-   "overlap": []
-  },
-  {
-   "source": "AgFunder News",
-   "title": "‘A massive step closer to commercialization…’ New Culture gets OK to make animal-free dairy cheese in California",
-   "url": "https://agfundernews.com/a-massive-step-closer-to-commercialization-new-culture-gets-ok-to-make-animal-free-dairy-cheese-in-california",
-   "published": "2026-11-17",
-   "source_url": "https://agfundernews.com",
-   "topic": "Food and farm",
-   "access": "full",
-   "summary": "\"At this point we have more than $15 million in early demand from pizzerias and foodservice operators of all sorts,\" says VP commercial Benjamin Friedman.",
-   "overlap": []
-  },
-  {
-   "source": "AgFunder News",
-   "title": "Cultivated meat’s comeback moment? UPSIDE Foods unveils dramatic scale-up, eyes fresh funding",
-   "url": "https://agfundernews.com/cultivated-meats-comeback-moment-upside-foods-unveils-dramatic-scale-up-eyes-fresh-funding",
-   "published": "2026-11-17",
-   "source_url": "https://agfundernews.com",
-   "topic": "Food and farm",
-   "access": "full",
-   "summary": "\"We know this is still the first chapter and that a lot more work needs to be done, but we want this to be that moment of ice-breaking hope,\" says...",
-   "overlap": []
-  },
-  {
-   "source": "Container News",
-   "title": "Maersk restores original Qilin service rotation",
-   "url": "https://container-news.com/maersk-restores-original-qilin-service-rotation/",
-   "published": "2026-11-17",
-   "source_url": "https://container-news.com",
-   "topic": "Shipping and logistics",
-   "access": "partial",
-   "summary": "Maersk will restore the original rotation of its Qilin service between China and Australia from December 2026, ending the temporary operating arrangement introduced in September. The change will take effect...",
-   "overlap": [
-    {
-     "symbol": "MCHI",
-     "strength": "loose",
-     "reason": "China is named in the feed excerpt."
-    },
     {
      "symbol": "EWA",
      "strength": "loose",
@@ -4650,437 +4625,174 @@
    ]
   },
   {
+   "source": "AgFunder News",
+   "title": "From farm to fork: McWin Capital Partners on where it’s placing its foodtech bets",
+   "url": "https://agfundernews.com/from-farm-to-fork-mcwin-capital-partners-on-where-its-placing-its-foodtech-bets",
+   "published": "2026-11-18",
+   "source_url": "https://agfundernews.com",
+   "topic": "Food and farm",
+   "access": "full",
+   "summary": "What does a restaurant operator with 2,300 locations know about foodtech investing that a conventional VC firm might not?",
+   "overlap": [
+    {
+     "symbol": "VGK",
+     "strength": "loose",
+     "reason": "Europe is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "AgFunder News",
+   "title": "REPLOID eyes $12m acquisition of US insect ag firm Chapul, plans US expansion",
+   "url": "https://agfundernews.com/reploid-eyes-12m-acquisition-of-us-insect-ag-firm-chapul-plans-us-expansion",
+   "published": "2026-11-18",
+   "source_url": "https://agfundernews.com",
+   "topic": "Food and farm",
+   "access": "full",
+   "summary": "REPLOID is interested in the Chapul brands, market penetration, a shovel-ready project, and a pipeline of projects, says Pat Crowley.",
+   "overlap": []
+  },
+  {
+   "source": "farmdoc daily",
+   "title": "Illinois Yields in 2026 Below Trend",
+   "url": "https://farmdocdaily.illinois.edu/2026/11/illinois-yields-in-2026-below-trend.html",
+   "published": "2026-11-18",
+   "source_url": "https://farmdocdaily.illinois.edu",
+   "topic": "Food and farm",
+   "access": "teaser",
+   "summary": "Many Illinois farmers report that 2026 yields fell short of expectations. The November yield forecasts from the National Agricultural Statistics Service (NASS), U.S. Department of Agriculture, also point to below-trend…",
+   "overlap": []
+  },
+  {
    "source": "Container News",
-   "title": "Port of Oakland and Everport celebrate arrival of eight electric top picks",
-   "url": "https://container-news.com/port-of-oakland-and-everport-celebrate-arrival-of-eight-electric-top-picks/",
-   "published": "2026-11-17",
+   "title": "Euroseas reports US$25.6 million profit in third quarter",
+   "url": "https://container-news.com/euroseas-reports-us25-6-million-profit-in-third-quarter/",
+   "published": "2026-11-18",
    "source_url": "https://container-news.com",
    "topic": "Shipping and logistics",
    "access": "full",
-   "summary": "The Port of Oakland and Everport Terminal Services, marked the arrival of new electric cargo-handling equipment at the Oakland Seaport. Everport has invested in eight battery-electric top picks, heavy-duty machines...",
+   "summary": "Euroseas reported net income attributable to controlling shareholders of US$25.6 million for the third quarter of 2026, compared with US$29.7 million during the same period last year. The containership owner...",
    "overlap": []
   },
   {
    "source": "Container News",
-   "title": "GXO sets 2030 growth targets as it expands AI-powered logistics",
-   "url": "https://container-news.com/gxo-sets-2030-growth-targets-as-it-expands-ai-powered-logistics/",
-   "published": "2026-11-17",
+   "title": "Port of Savannah container volumes surge 25% in October",
+   "url": "https://container-news.com/port-of-savannah-container-volumes-surge-25-in-october/",
+   "published": "2026-11-18",
    "source_url": "https://container-news.com",
    "topic": "Shipping and logistics",
    "access": "full",
-   "summary": "GXO Logistics has announced new financial targets for 2030, outlining plans to increase revenue and profitability through its logistics operations, automation and artificial intelligence. The company presented its long-term strategy...",
+   "summary": "The Port of Savannah handled 565,366 TEUs in October 2026, an increase of 25% compared with the same month last year, according to the Georgia Ports Authority (GPA). The result...",
+   "overlap": []
+  },
+  {
+   "source": "Container News",
+   "title": "MSC’s Marunda terminal strategy adds a new dimension to Jakarta’s port competition",
+   "url": "https://container-news.com/mscs-marunda-terminal-strategy-adds-a-new-dimension-to-jakartas-port-competition/",
+   "published": "2026-11-18",
+   "source_url": "https://container-news.com",
+   "topic": "Shipping and logistics",
+   "access": "partial",
+   "summary": "MSC’s participation in a proposed container terminal at Marunda Port places the shipping group’s terminal investment strategy within the wider development of Jakarta’s container gateway, where new capacity is being...",
    "overlap": []
   },
   {
    "source": "Hellenic Shipping News",
-   "title": "Baltic Dry Index falls to 2893 down 28 points",
-   "url": "https://www.hellenicshippingnews.com/baltic-dry-index-falls-to-2893-down-28-points/",
-   "published": "2026-11-17",
+   "title": "Euroseas Ltd. Reports Solid Third Quarter Results As Containership Market Continues Its Upward Climb",
+   "url": "https://www.hellenicshippingnews.com/euroseas-ltd-reports-solid-third-quarter-results-as-containership-market-continues-its-upward-climb/",
+   "published": "2026-11-18",
    "source_url": "https://www.hellenicshippingnews.com",
    "topic": "Shipping and logistics",
    "access": "partial",
-   "summary": "Today, Tuesday, November 17 2026, the Baltic Dry Index decreased by 28 points, reaching 2893 points. Baltic Dry Index is compiled by the London-based Baltic Exchange and covers prices for...",
+   "summary": "Euroseas Ltd., an owner and operator of container carrier vessels and provider of seaborne transportation for containerized cargoes, announced today its results for the three and nine-month periods ended September...",
+   "overlap": []
+  },
+  {
+   "source": "Hellenic Shipping News",
+   "title": "Shipping Decarbonisation: IMarEST Calls for Regulatory Certainty and Investment Clarity Ahead of MEPC 85",
+   "url": "https://www.hellenicshippingnews.com/shipping-decarbonisation-imarest-calls-for-regulatory-certainty-and-investment-clarity-ahead-of-mepc-85/",
+   "published": "2026-11-18",
+   "source_url": "https://www.hellenicshippingnews.com",
+   "topic": "Shipping and logistics",
+   "access": "partial",
+   "summary": "As the IMO prepares for critical discussions on maritime decarbonisation, IMarEST is highlighting the need for evidence-based policymaking, regulatory certainty and investment incentives. Alasdair Wishart, director of technical and policy...",
+   "overlap": []
+  },
+  {
+   "source": "Hellenic Shipping News",
+   "title": "NGOs Urge UN Shipping Body to Adopt Crucial Climate Agreement Before Year End",
+   "url": "https://www.hellenicshippingnews.com/ngos-urge-un-shipping-body-to-adopt-crucial-climate-agreement-before-year-end/",
+   "published": "2026-11-18",
+   "source_url": "https://www.hellenicshippingnews.com",
+   "topic": "Shipping and logistics",
+   "access": "partial",
+   "summary": "Ahead of an upcoming meeting of the International Maritime Organization’s (IMO) Marine Environment Protection Committee (MEPC 85, November 30-December 4), the Clean Shipping Coalition is calling on member states to...",
+   "overlap": []
+  },
+  {
+   "source": "Splash247",
+   "title": "Neo Next+ snaps up EnQuest’s North Sea business in $960m deal",
+   "url": "https://splash247.com/neo-next-snaps-up-enquests-north-sea-business-in-960m-deal/",
+   "published": "2026-11-18",
+   "source_url": "https://splash247.com",
+   "topic": "Shipping and logistics",
+   "access": "partial",
+   "summary": "UK offshore producer Neo Next+ Energy has agreed to acquire EnQuest’s entire UK upstream oil and gas business in a deal worth up to $960m, further consolidating its position as...",
+   "overlap": []
+  },
+  {
+   "source": "Splash247",
+   "title": "Eiffage secures offshore converter platform contract in Germany",
+   "url": "https://splash247.com/eiffage-secures-offshore-converter-platform-contract-in-germany/",
+   "published": "2026-11-18",
+   "source_url": "https://splash247.com",
+   "topic": "Shipping and logistics",
+   "access": "partial",
+   "summary": "French construction group Eiffage has secured a contract to fabricate the jacket foundation for the LanWin beta offshore converter platform in the German North Sea. Dragados Offshore awarded the contract...",
+   "overlap": []
+  },
+  {
+   "source": "Splash247",
+   "title": "Offen firms up four-ship boxship comeback in China",
+   "url": "https://splash247.com/offen-firms-up-four-ship-boxship-comeback-in-china/",
+   "published": "2026-11-18",
+   "source_url": "https://splash247.com",
+   "topic": "Shipping and logistics",
+   "access": "partial",
+   "summary": "German tonnage provider Claus-Peter Offen has reportedly firmed up all four of its planned 7,000 teu containership newbuildings, ending a nearly two-decade absence from the ordering market. Shipbuilding sources say...",
    "overlap": [
     {
-     "symbol": "BDI",
+     "symbol": "MCHI",
      "strength": "direct",
-     "reason": "Baltic Dry Index is named in the headline."
-    },
-    {
-     "symbol": "IRONORE",
-     "strength": "loose",
-     "reason": "Iron ore is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Hellenic Shipping News",
-   "title": "Melina Travlou: IMO Must Listen to the Shipping Industry and Pursue a Realistic, Globally Balanced Decarbonisation Framework",
-   "url": "https://www.hellenicshippingnews.com/melina-travlou-imo-must-listen-to-the-shipping-industry-and-pursue-a-realistic-globally-balanced-decarbonisation-framework/",
-   "published": "2026-11-17",
-   "source_url": "https://www.hellenicshippingnews.com",
-   "topic": "Shipping and logistics",
-   "access": "partial",
-   "summary": "Two months after the latest round of negotiations at the IMO on reducing greenhouse gas (GHG) emissions from international shipping ended without an outcome, and ahead of their critical resumption,...",
-   "overlap": [
-    {
-     "symbol": "VGK",
-     "strength": "loose",
-     "reason": "Europe is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Hellenic Shipping News",
-   "title": "IMO’s Marine Environment Protection Committee (MEPC 85) to discuss shipping emissions, pollution and other ocean issues",
-   "url": "https://www.hellenicshippingnews.com/imos-marine-environment-protection-committee-mepc-85-to-discuss-shipping-emissions-pollution-and-other-ocean-issues/",
-   "published": "2026-11-17",
-   "source_url": "https://www.hellenicshippingnews.com",
-   "topic": "Shipping and logistics",
-   "access": "partial",
-   "summary": "The Marine Environment Protection Committee (MEPC) of the International Maritime Organization (IMO) will meet for its 85th session at IMO Headquarters in London from 30 November to 3 December 2026....",
-   "overlap": []
-  },
-  {
-   "source": "Splash247",
-   "title": "StealthGas crew airlifted from stricken LPG carrier off Bulgaria",
-   "url": "https://splash247.com/stealthgas-crew-airlifted-from-stricken-lpg-carrier-off-bulgaria/",
-   "published": "2026-11-17",
-   "source_url": "https://splash247.com",
-   "topic": "Shipping and logistics",
-   "access": "partial",
-   "summary": "All 19 crewmembers of a StealthGas LPG carrier have been rescued after the vessel was caught up in a suspected drone attack off Bulgaria, the second serious merchant shipping incident...",
-   "overlap": []
-  },
-  {
-   "source": "Splash247",
-   "title": "Semco Maritime and PTSC bag Taiwan offshore wind deal",
-   "url": "https://splash247.com/semco-maritime-and-ptsc-bag-taiwan-offshore-wind-deal/",
-   "published": "2026-11-17",
-   "source_url": "https://splash247.com",
-   "topic": "Shipping and logistics",
-   "access": "partial",
-   "summary": "Denmark’s Semco Maritime and Vietnam’s PTSC Mechanical & Construction have secured an offshore substation contract for Copenhagen Infrastructure Partners’ (CIP) 600MW Fengmiao II offshore wind project in Taiwan. The agreement...",
-   "overlap": [
-    {
-     "symbol": "EWT",
-     "strength": "direct",
-     "reason": "Taiwan is named in the headline."
-    },
-    {
-     "symbol": "VNM",
-     "strength": "loose",
-     "reason": "Vietnam is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Splash247",
-   "title": "TechnipFMC extends charter of DOF CSV",
-   "url": "https://splash247.com/technipfmc-extends-charter-of-dof-csv/",
-   "published": "2026-11-17",
-   "source_url": "https://splash247.com",
-   "topic": "Shipping and logistics",
-   "access": "partial",
-   "summary": "Norwegian offshore vessel owner DOF has secured a new contract from TechnipFMC for its subsea construction vessel (CSV) Skandi Africa, extending a partnership that dates back more than a decade....",
-   "overlap": [
-    {
-     "symbol": "AFK",
-     "strength": "loose",
-     "reason": "Africa is named in the feed excerpt."
+     "reason": "China is named in the headline."
     }
    ]
   },
   {
    "source": "The Loadstar",
-   "title": "Gemini carriers target complete return to Suez transits by mid-January",
-   "url": "https://theloadstar.com/gemini-carriers-target-complete-return-to-suez-transits-by-mid-january/",
-   "published": "2026-11-17",
+   "title": "Expeditors: ‘Built to outperform through any cycle’ – Investor Day Live",
+   "url": "https://theloadstar.com/expeditors-built-to-outperform-through-any-cycle/",
+   "published": "2026-11-18",
    "source_url": "https://theloadstar.com",
    "topic": "Shipping and logistics",
    "access": "partial",
-   "summary": "Gemini Cooperation partners Maersk and Hapag-Lloyd will have made a full resumption of Suez transits on their Asia-Europe services by mid-January. Yesterday, the partners outlined the schedule for the last...",
-   "overlap": [
-    {
-     "symbol": "HLAG.DE",
-     "strength": "loose",
-     "reason": "Hapag-Lloyd is named in the feed excerpt."
-    },
-    {
-     "symbol": "VGK",
-     "strength": "loose",
-     "reason": "Europe is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "The Loadstar",
-   "title": "Korean Air maximises Americas capacity as AI cargo adds to peak pressure",
-   "url": "https://theloadstar.com/korean-air-maximises-americas-capacity-as-ai-cargo-adds-to-peak-pressure/",
-   "published": "2026-11-17",
-   "source_url": "https://theloadstar.com",
-   "topic": "Shipping and logistics",
-   "access": "partial",
-   "summary": "Korean Air is maximising its Asia-Americas cargo capacity, as year-round demand for AI infrastructure overlaps traditional peak-season shipments, keeping the pressure on transpacific space even as global weekly volumes soften....",
+   "summary": "Investor Day under way. Dan Wall’s opening remarks: the Expeditors CEO (pictured above) said the last time the company held an Investor Day was 11 years ago, asked who was...",
    "overlap": []
   },
   {
    "source": "The Loadstar",
-   "title": "The $5.8bn data moat CH Robinson is really buying",
-   "url": "https://theloadstar.com/the-5-8bn-data-moat-ch-robinson-is-really-buying/",
-   "published": "2026-11-17",
+   "title": "Transatlantic airfreight rates at highest level for four years",
+   "url": "https://theloadstar.com/transatlantic-airfreight-rates-at-highest-level-for-four-years/",
+   "published": "2026-11-18",
    "source_url": "https://theloadstar.com",
    "topic": "Shipping and logistics",
    "access": "partial",
-   "summary": "Take this: CH Robinson’s acquisition of RXO is not a synergy play. It is a data play. The $300m cost savings and regulatory path are distractions, let’s put it that...",
-   "overlap": []
-  },
-  {
-   "source": "gCaptain",
-   "title": "Norway Backs Nuclear-Powered Offshore Vessel Project",
-   "url": "https://gcaptain.com/norway-backs-nuclear-powered-offshore-vessel-project/",
-   "published": "2026-11-17",
-   "source_url": "https://gcaptain.com",
-   "topic": "Shipping and logistics",
-   "access": "teaser",
-   "summary": "Norway is moving a step closer to testing nuclear propulsion for commercial ships, with a consortium including shipbuilder VARD and offshore vessel operator Island Offshore securing NOK 20 million ($2...",
-   "overlap": []
-  },
-  {
-   "source": "gCaptain",
-   "title": "Hanwha Test-Fires Palletized Missile Launcher from Ship Off Mississippi Coast",
-   "url": "https://gcaptain.com/hanwha-test-fires-palletized-missile-launcher-from-ship-off-mississippi-coast/",
-   "published": "2026-11-17",
-   "source_url": "https://gcaptain.com",
-   "topic": "Shipping and logistics",
-   "access": "teaser",
-   "summary": "South Korea’s Hanwha Aerospace and its U.S. subsidiary have successfully test-fired a Chunmoo guided missile from a vessel off the Mississippi coast, marking another step toward deploying precision-strike weapons aboard...",
-   "overlap": [
-    {
-     "symbol": "EWY",
-     "strength": "loose",
-     "reason": "South Korea is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "gCaptain",
-   "title": "Second Strike on LPG Tanker in Strait of Hormuz Leaves One Missing, Two Injured",
-   "url": "https://gcaptain.com/second-strike-on-lpg-tanker-in-strait-of-hormuz-leaves-one-missing-two-injured/",
-   "published": "2026-11-17",
-   "source_url": "https://gcaptain.com",
-   "topic": "Shipping and logistics",
-   "access": "teaser",
-   "summary": "An Indian seafarer is missing and two others have been hospitalized after the Panama-flagged LPG tanker TARA GAS came under repeated attack in the Strait of Hormuz, forcing its 25-member...",
-   "overlap": []
-  },
-  {
-   "source": "Carbon Brief",
-   "title": "Revealed: Russia, Saudi Arabia and Australia are largest CO2 exporters of all time",
-   "url": "https://www.carbonbrief.org/revealed-russia-saudi-arabia-and-australia-are-largest-co2-exporters-of-all-time",
-   "published": "2026-11-17",
-   "source_url": "https://www.carbonbrief.org",
-   "topic": "Climate and policy",
-   "access": "full",
-   "summary": "Russia, Saudi Arabia and COP31 co-president Australia are the largest exporters of carbon dioxide (CO2) emissions in history, reveals Carbon…",
-   "overlap": [
-    {
-     "symbol": "KSA",
-     "strength": "direct",
-     "reason": "Saudi Arabia is named in the headline."
-    },
-    {
-     "symbol": "EWA",
-     "strength": "direct",
-     "reason": "Australia is named in the headline."
-    },
-    {
-     "symbol": "TUR",
-     "strength": "loose",
-     "reason": "Turkey is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Carbon Herald",
-   "title": "Scotland Approves 910 MW Peterhead Carbon Capture Power Station",
-   "url": "https://carbonherald.com/scotland-approves-910-mw-peterhead-carbon-capture-power-station/?utm_source=rss&utm_medium=rss&utm_campaign=scotland-approves-910-mw-peterhead-carbon-capture-power-station",
-   "published": "2026-11-17",
-   "source_url": "https://carbonherald.com",
-   "topic": "Climate and policy",
-   "access": "teaser",
-   "summary": "Scottish Ministers have granted Section 36 planning consent for the 910-megawatt (MW) Peterhead Carbon Capture Power Station, a…",
-   "overlap": []
-  },
-  {
-   "source": "Carbon Herald",
-   "title": "Forest Green Rovers Invests In Nature-Based Carbon Removal Credits",
-   "url": "https://carbonherald.com/forest-green-rovers-invests-in-nature-based-carbon-removal-credits/?utm_source=rss&utm_medium=rss&utm_campaign=forest-green-rovers-invests-in-nature-based-carbon-removal-credits",
-   "published": "2026-11-17",
-   "source_url": "https://carbonherald.com",
-   "topic": "Climate and policy",
-   "access": "teaser",
-   "summary": "UK football club Forest Green Rovers (FGR) has announced a purchase of 56 tonnes of nature-based carbon dioxide…",
-   "overlap": []
-  },
-  {
-   "source": "Carbon Herald",
-   "title": "COP31: Carbon Capture Emerges As A Strategic Tool For Exporters Facing EU Carbon Border Tariffs",
-   "url": "https://carbonherald.com/cop31-carbon-capture-emerges-as-a-strategic-tool-for-exporters-facing-eu-carbon-border-tariffs/?utm_source=rss&utm_medium=rss&utm_campaign=cop31-carbon-capture-emerges-as-a-strategic-tool-for-exporters-facing-eu-carbon-border-tariffs",
-   "published": "2026-11-17",
-   "source_url": "https://carbonherald.com",
-   "topic": "Climate and policy",
-   "access": "teaser",
-   "summary": "The European Union’s Carbon Border Adjustment Mechanism (CBAM) is creating new incentives for Carbon Capture and Storage (CCS),…",
-   "overlap": []
-  },
-  {
-   "source": "Climate Home News",
-   "title": "Rich countries must step up to replenish Green Climate Fund, Duarte says",
-   "url": "https://www.climatechangenews.com/2026/11/17/rich-countries-must-step-up-to-replenish-green-climate-fund-duarte-says/",
-   "published": "2026-11-17",
-   "source_url": "https://www.climatechangenews.com",
-   "topic": "Climate and policy",
-   "access": "full",
-   "summary": "GCF Executive Director Mafalda Duarte tells Climate Home News efforts to leverage the fund's balance sheet more effectively and find new contributors do not mean letting wealthy donor nations off...",
+   "summary": "Transatlantic airfreight rates have hit their highest level since December 2022, as peak-season demand and tightening capacity push prices up – although last week’s US aviation disruption appears to have...",
    "overlap": [
     {
      "symbol": "VGK",
      "strength": "loose",
      "reason": "Europe is named in the feed excerpt."
-    },
-    {
-     "symbol": "AFK",
-     "strength": "loose",
-     "reason": "Africa is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Climate Home News",
-   "title": "Building coastal resilience for local communities in Honduras",
-   "url": "https://www.climatechangenews.com/2026/11/17/building-coastal-resilience-for-local-communities-in-honduras/",
-   "published": "2026-11-17",
-   "source_url": "https://www.climatechangenews.com",
-   "topic": "Climate and policy",
-   "access": "full",
-   "summary": "Climate adaptation projects that focus on ocean and coastal management could provide useful case studies for negotiators at COP31",
-   "overlap": []
-  },
-  {
-   "source": "Climate Home News",
-   "title": "COP31 Bulletin Day 8: EU backs electrification goal, as more TAFF roadmaps promised",
-   "url": "https://www.climatechangenews.com/2026/11/17/cop31-bulletin-day-8-arab-group-russia-reject-cover-text-over-fossil-fuels-and-electrification-goal/",
-   "published": "2026-11-17",
-   "source_url": "https://www.climatechangenews.com",
-   "topic": "Climate and policy",
-   "access": "full",
-   "summary": "The EU endorses the 35x35 electrification goal, while the tally of countries preparing plans to exit fossil fuels grows",
-   "overlap": [
-    {
-     "symbol": "VGK",
-     "strength": "loose",
-     "reason": "Europe is named in the feed excerpt."
-    },
-    {
-     "symbol": "KSA",
-     "strength": "loose",
-     "reason": "Saudi Arabia is named in the feed excerpt."
-    },
-    {
-     "symbol": "INDA",
-     "strength": "loose",
-     "reason": "India is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Dialogue Earth",
-   "title": "How to break the cycle of Indonesian forest fires?",
-   "url": "https://dialogue.earth/en/forests/how-to-break-the-cycle-of-indonesian-forest-fires/",
-   "published": "2026-11-16",
-   "source_url": "https://dialogue.earth/en/",
-   "topic": "Climate and policy",
-   "access": "full",
-   "summary": "Stricter law enforcement, more frontline fire prevention, transboundary cooperation and slowing climate change can all play a part",
-   "overlap": [
-    {
-     "symbol": "EIDO",
-     "strength": "loose",
-     "reason": "Indonesia is named in the feed excerpt."
-    },
-    {
-     "symbol": "THD",
-     "strength": "loose",
-     "reason": "Thailand is named in the feed excerpt."
-    },
-    {
-     "symbol": "EPHE",
-     "strength": "loose",
-     "reason": "Philippines is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Mongabay",
-   "title": "The scimitar-horned oryx is back in Chad",
-   "url": "https://news.mongabay.com/short-article/2026/11/the-scimitar-horned-oryx-is-back-in-chad/",
-   "published": "2026-11-17",
-   "source_url": "https://news.mongabay.com",
-   "topic": "Climate and policy",
-   "access": "partial",
-   "summary": "The scimitar-horned oryx, an antelope with a majestic set of sword-like horns, had disappeared from Chad by the late 1980s and was declared extinct in the wild globally in 2000....",
-   "overlap": []
-  },
-  {
-   "source": "Mongabay",
-   "title": "In final stretch of climate summit, Indigenous leaders call for lasting action",
-   "url": "https://news.mongabay.com/2026/11/in-final-stretch-of-climate-summit-indigenous-leaders-call-for-lasting-action/",
-   "published": "2026-11-17",
-   "source_url": "https://news.mongabay.com",
-   "topic": "Climate and policy",
-   "access": "full",
-   "summary": "The annual U.N. Framework Convention on Climate Change gathering drew historic levels of Indigenous attendance in Belém, Brazil, last year, leading some to dub it “the Indigenous COP.” But the...",
-   "overlap": [
-    {
-     "symbol": "EWZ",
-     "strength": "loose",
-     "reason": "Brazil is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Mongabay",
-   "title": "Why conservation needs independent journalism (commentary)",
-   "url": "https://news.mongabay.com/2026/11/why-conservation-needs-independent-journalism/",
-   "published": "2026-11-17",
-   "source_url": "https://news.mongabay.com",
-   "topic": "Climate and policy",
-   "access": "full",
-   "summary": "In 2021, we received a tip from a source in Sabah, Malaysia, about a proposed carbon credit deal. We received this tip because we’d developed a relationship with the source...",
-   "overlap": []
-  },
-  {
-   "source": "ChinaTalk",
-   "title": "BIS Takes on Compute Leakage",
-   "url": "https://www.chinatalk.media/p/bis-finally-takes-a-stand",
-   "published": "2026-11-17",
-   "source_url": "https://www.chinatalk.media",
-   "topic": "China and Asia",
-   "access": "full",
-   "summary": "Is the era of compute leakage over?",
-   "overlap": [
-    {
-     "symbol": "NVDA",
-     "strength": "loose",
-     "reason": "NVIDIA is named in the feed excerpt."
-    },
-    {
-     "symbol": "EWZ",
-     "strength": "loose",
-     "reason": "Brazil is named in the feed excerpt."
-    },
-    {
-     "symbol": "EWT",
-     "strength": "loose",
-     "reason": "Taiwan is named in the feed excerpt."
-    }
-   ]
-  },
-  {
-   "source": "Hello China Tech",
-   "title": "Baidu and Google Made the Same Search Promise",
-   "url": "https://hellochinatech.com/p/baidu-ai-search-monetization",
-   "published": "2026-11-17",
-   "source_url": "https://hellochinatech.com",
-   "topic": "China and Asia",
-   "access": "full",
-   "summary": "Baidu and Google both put AI search experience before ads, but search usage, rising at Google and falling in China, separates their bets.",
-   "overlap": [
-    {
-     "symbol": "GOOGL",
-     "strength": "loose",
-     "reason": "Alphabet is named in the feed excerpt."
     },
     {
      "symbol": "MCHI",
@@ -5090,63 +4802,335 @@
    ]
   },
   {
-   "source": "CTVC",
-   "title": "🌎 BAAJA blast off #322",
-   "url": "https://www.ctvc.co/baaja-blast-off-322/",
-   "published": "2026-11-16",
-   "source_url": "https://www.ctvc.co",
-   "topic": "Startups and deals",
-   "access": "full",
-   "summary": "Inside the new grid rules, data center costs, and permits",
+   "source": "The Loadstar",
+   "title": "MSC plans to triple capacity at its Aysaport transhipment hub",
+   "url": "https://theloadstar.com/msc-plans-to-triple-capacity-at-its-aysaport-transhipment-hub/",
+   "published": "2026-11-18",
+   "source_url": "https://theloadstar.com",
+   "topic": "Shipping and logistics",
+   "access": "partial",
+   "summary": "MSC’s East Mediterranean transhipment hub, in the Turkish port of Tekirdag, is set to almost triple the handling capacity at its Asyaport facility. There are plans to expand the Asyaport...",
    "overlap": []
   },
   {
+   "source": "gCaptain",
+   "title": "USCG Icebreaker ‘Healy’ Suffered Catastrophic Engine Overspeed Failure, Procurement Records Reveal",
+   "url": "https://gcaptain.com/uscg-icebreaker-healy-suffered-catastrophic-engine-overspeed-failure-procurement-records-reveal/",
+   "published": "2026-11-18",
+   "source_url": "https://gcaptain.com",
+   "topic": "Shipping and logistics",
+   "access": "partial",
+   "summary": "The U.S. Coast Guard's largest icebreaker, USCGC Healy, suffered a catastrophic overspeed failure of one of its main propulsion diesel generators in July, triggering a fire in the generator room...",
+   "overlap": []
+  },
+  {
+   "source": "gCaptain",
+   "title": "Smaller Tankers Join Hormuz Shuttle Trade to Keep Oil Flowing",
+   "url": "https://gcaptain.com/smaller-tankers-join-hormuz-shuttle-trade-to-keep-oil-flowing/",
+   "published": "2026-11-18",
+   "source_url": "https://gcaptain.com",
+   "topic": "Shipping and logistics",
+   "access": "teaser",
+   "summary": "Oil is increasingly moving through the Strait of Hormuz on smaller vessels, helping sustain exports as attacks on supertankers squeeze availability of the ships that typically dominate the trade.",
+   "overlap": []
+  },
+  {
+   "source": "gCaptain",
+   "title": "UAE’s ADNOC L&S Says One Crew Member Missing After Attack on Its Vessel in Hormuz",
+   "url": "https://gcaptain.com/uaes-adnoc-ls-says-one-crew-member-missing-after-attack-on-its-vessel-in-hormuz/",
+   "published": "2026-11-18",
+   "source_url": "https://gcaptain.com",
+   "topic": "Shipping and logistics",
+   "access": "teaser",
+   "summary": "The United Arab Emirates' ADNOC L&S said on Wednesday that one crew member was missing and 11 injured after one of its vessels was attacked in the Strait of Hormuz...",
+   "overlap": [
+    {
+     "symbol": "UAE",
+     "strength": "loose",
+     "reason": "United Arab Emirates is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "Carbon Herald",
+   "title": "Canada Pledges Nearly US$400M In Support For The Tropical Forest Forever Facility",
+   "url": "https://carbonherald.com/canada-pledges-nearly-us400m-in-support-for-the-tropical-forest-forever-facility/?utm_source=rss&utm_medium=rss&utm_campaign=canada-pledges-nearly-us400m-in-support-for-the-tropical-forest-forever-facility",
+   "published": "2026-11-18",
+   "source_url": "https://carbonherald.com",
+   "topic": "Climate and policy",
+   "access": "teaser",
+   "summary": "Canada has pledged nearly US$400 million (CA$560 million) to be provided over a period of four years to…",
+   "overlap": []
+  },
+  {
+   "source": "Carbon Herald",
+   "title": "Eight Leading Developers Are Helping Shape An EU CRCF Methodology For ERW",
+   "url": "https://carbonherald.com/eight-leading-developers-are-helping-shape-an-eu-crcf-methodology-for-erw/?utm_source=rss&utm_medium=rss&utm_campaign=eight-leading-developers-are-helping-shape-an-eu-crcf-methodology-for-erw",
+   "published": "2026-11-18",
+   "source_url": "https://carbonherald.com",
+   "topic": "Climate and policy",
+   "access": "teaser",
+   "summary": "Eight leading enhanced rock weathering (ERW) companies are helping shape the design of a methodology for this pathway…",
+   "overlap": []
+  },
+  {
+   "source": "Carbon Herald",
+   "title": "Non-EU Share Of UK Cement Imports Surges To 29% Following EU CBAM Rollout",
+   "url": "https://carbonherald.com/non-eu-share-of-uk-cement-imports-surges-to-29-following-eu-cbam-rollout/?utm_source=rss&utm_medium=rss&utm_campaign=non-eu-share-of-uk-cement-imports-surges-to-29-following-eu-cbam-rollout",
+   "published": "2026-11-18",
+   "source_url": "https://carbonherald.com",
+   "topic": "Climate and policy",
+   "access": "teaser",
+   "summary": "Importers are increasingly rerouting non-European cement into the United Kingdom following the rollout of the European Union’s Carbon…",
+   "overlap": []
+  },
+  {
+   "source": "Climate Home News",
+   "title": "COP31 can’t deliver for islands without delivering for the ocean",
+   "url": "https://www.climatechangenews.com/2026/11/17/cop31-cant-deliver-for-islands-without-delivering-for-the-ocean/",
+   "published": "2026-11-17",
+   "source_url": "https://www.climatechangenews.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "Recognition of the ocean's importance must go beyond speeches and start shaping national climate commitments and the allocation of international finance",
+   "overlap": []
+  },
+  {
+   "source": "Climate Home News",
+   "title": "Ocean advocates warn COP31 agreement should not be read as geoengineering boost",
+   "url": "https://www.climatechangenews.com/2026/11/18/ocean-advocates-warn-cop31-agreement-geoengineering-cdr-removal-marine/",
+   "published": "2026-11-18",
+   "source_url": "https://www.climatechangenews.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "The COP31 cover decision draft text include a controversial goal to increase carbon dioxide removal, which ocean advocates say could impact ecosystems",
+   "overlap": []
+  },
+  {
+   "source": "Climate Home News",
+   "title": "COP31 Bulletin Day 9: Crunch ministerial talks planned for Wednesday evening",
+   "url": "https://www.climatechangenews.com/2026/11/18/cop31-bulletin-day-9-crunch-ministerial-talks-planned-for-wednesday-evening/",
+   "published": "2026-11-18",
+   "source_url": "https://www.climatechangenews.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "With a draft cover text still untrimmed, the presidency is holding a “Divan\" meeting to make progress towards a \"balanced package\"",
+   "overlap": [
+    {
+     "symbol": "EWA",
+     "strength": "loose",
+     "reason": "Australia is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "Dialogue Earth",
+   "title": "Q&A: How host countries can strike better deals with cleantech manufacturers",
+   "url": "https://dialogue.earth/en/climate/qa-how-host-countries-can-strike-better-deals-with-cleantech-manufacturers/",
+   "published": "2026-11-17",
+   "source_url": "https://dialogue.earth/en/",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "Tim Sahay is trying to create a race to the top for standards that host countries impose on foreign investors such as China",
+   "overlap": [
+    {
+     "symbol": "MCHI",
+     "strength": "loose",
+     "reason": "China is named in the feed excerpt."
+    },
+    {
+     "symbol": "TAN",
+     "strength": "loose",
+     "reason": "Solar is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "Dialogue Earth",
+   "title": "COP31: Is electrification goal a fossil trap for Latin America?",
+   "url": "https://dialogue.earth/en/energy/cop31-is-electrification-goal-a-fossil-trap-for-latin-america/",
+   "published": "2026-11-17",
+   "source_url": "https://dialogue.earth/en/",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "The region has one of the world’s cleanest power systems but electrification is far from dominant – experts say renewables alone will not be enough",
+   "overlap": [
+    {
+     "symbol": "EWZ",
+     "strength": "loose",
+     "reason": "Brazil is named in the feed excerpt."
+    },
+    {
+     "symbol": "TAN",
+     "strength": "loose",
+     "reason": "Solar is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "Dialogue Earth",
+   "title": "China accuses Chile and Belgium of ‘backroom deal’ as tensions rise over high seas treaty HQ",
+   "url": "https://dialogue.earth/en/ocean/china-accuses-chile-and-belgium-of-backroom-deal-as-tensions-rise-over-high-seas-treaty-hq/",
+   "published": "2026-11-18",
+   "source_url": "https://dialogue.earth/en/",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "A relatively obscure race to host the secretariat of a global ocean treaty has turned into a political row, and a headache for those hoping the treaty could advance conservation",
+   "overlap": [
+    {
+     "symbol": "ECH",
+     "strength": "direct",
+     "reason": "Chile is named in the headline."
+    },
+    {
+     "symbol": "MCHI",
+     "strength": "direct",
+     "reason": "China is named in the headline."
+    }
+   ]
+  },
+  {
+   "source": "Mongabay",
+   "title": "Indigenous communities in Panama fear a second dam as damage from first goes unrepaired",
+   "url": "https://news.mongabay.com/2026/11/indigenous-communities-in-panama-fear-a-second-dam-as-damage-from-first-goes-unrepaired/",
+   "published": "2026-11-18",
+   "source_url": "https://news.mongabay.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "Nearly two decades after construction began on the CHAN-75 hydroelectric dam project, Indigenous Ngäbe communities in western Panama continue to face severe environmental, cultural and spiritual impacts, according to a...",
+   "overlap": []
+  },
+  {
+   "source": "Mongabay",
+   "title": "Study maps jaguars across the Americas to help their populations rebound",
+   "url": "https://news.mongabay.com/2026/11/study-maps-jaguars-across-the-americas-to-help-their-populations-rebound/",
+   "published": "2026-11-18",
+   "source_url": "https://news.mongabay.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "When forests are carved into farms, America’s top cats find themselves trapped in isolation.",
+   "overlap": [
+    {
+     "symbol": "EWZ",
+     "strength": "loose",
+     "reason": "Brazil is named in the feed excerpt."
+    },
+    {
+     "symbol": "ARGT",
+     "strength": "loose",
+     "reason": "Argentina is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "Mongabay",
+   "title": "Better data can help restore Himalayan ecosystems & prepare for climate risks (commentary)",
+   "url": "https://news.mongabay.com/2026/11/better-data-can-help-restore-himalayan-ecosystems-prepare-for-climate-risks-commentary/",
+   "published": "2026-11-18",
+   "source_url": "https://news.mongabay.com",
+   "topic": "Climate and policy",
+   "access": "full",
+   "summary": "In less than seven weeks, two major flood events impacted Nepal’s Himalaya, where ecologically rich mountain landscapes are closely connected to the rivers, forests and floodplains. On the morning of...",
+   "overlap": []
+  },
+  {
+   "source": "Culpium (Tim Culpan)",
+   "title": "Nvidia’s Head is in the Neoclouds",
+   "url": "https://www.culpium.com/p/nvidias-head-is-in-the-neoclouds",
+   "published": "2026-11-18",
+   "source_url": "https://www.culpium.com",
+   "topic": "China and Asia",
+   "access": "partial",
+   "summary": "[Opinion] China is a costly distraction that was never worth the risk or political capital. But there’s a bigger risk ahead.",
+   "overlap": [
+    {
+     "symbol": "NVDA",
+     "strength": "direct",
+     "reason": "NVIDIA is named in the headline."
+    },
+    {
+     "symbol": "EWT",
+     "strength": "loose",
+     "reason": "Taiwan is named in the feed excerpt."
+    },
+    {
+     "symbol": "MCHI",
+     "strength": "loose",
+     "reason": "China is named in the feed excerpt."
+    }
+   ]
+  },
+  {
+   "source": "Hello China Tech",
+   "title": "XPeng and the Tax Clock on China's EV Exports",
+   "url": "https://hellochinatech.com/p/xpeng-export-tax-rebate",
+   "published": "2026-11-18",
+   "source_url": "https://hellochinatech.com",
+   "topic": "China and Asia",
+   "access": "full",
+   "summary": "XPeng earns more than double its domestic gross margin abroad, and China's April export tax rebate cut pushes EV makers toward local assembly.",
+   "overlap": [
+    {
+     "symbol": "MCHI",
+     "strength": "direct",
+     "reason": "China is named in the headline."
+    }
+   ]
+  },
+  {
    "source": "TechCrunch Climate",
-   "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
-   "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
-   "published": "2026-11-13",
+   "title": "China dominates battery graphite, but this startup could break the monopoly",
+   "url": "https://techcrunch.com/2026/11/18/china-dominates-battery-graphite-but-this-startup-could-break-the-monopoly/",
+   "published": "2026-11-18",
    "source_url": "https://techcrunch.com/category/climate/",
    "topic": "Startups and deals",
    "access": "teaser",
-   "summary": "Drogue is harvesting heat from the ocean to power data centers on floating vessels. The first prototype should be bobbing around the ocean, crunching bits, in less than two years.",
-   "overlap": []
+   "summary": "Chinese companies maintain near total dominance of the graphite industry, but Molten Industries says its new factory in Oakland could spell the end of the monopoly.",
+   "overlap": [
+    {
+     "symbol": "MCHI",
+     "strength": "direct",
+     "reason": "China is named in the headline."
+    }
+   ]
   }
  ],
  "reading_quiet": [
   "SemiAnalysis",
   "Chipstrat",
-  "Culpium (Tim Culpan)",
+  "ChinaTalk",
   "Fabricated Knowledge",
-  "farmdoc daily"
+  "Carbon Brief",
+  "CTVC"
  ],
  "climate": [
   {
    "region": "Americas",
-   "headline": "In final stretch of climate summit, Indigenous leaders call for lasting action",
-   "detail": "The annual U.N. Framework Convention on Climate Change gathering drew historic levels of Indigenous attendance in Belém, Brazil, last year, leading some to dub it “the Indigenous COP.” But the event was marked by frustration and protest, with many Indigenous...",
-   "source": "Mongabay, 17 Nov",
-   "source_url": "https://news.mongabay.com/2026/11/in-final-stretch-of-climate-summit-indigenous-leaders-call-for-lasting-action/"
+   "headline": "China accuses Chile and Belgium of ‘backroom deal’ as tensions rise over high seas treaty HQ",
+   "detail": "A relatively obscure race to host the secretariat of a global ocean treaty has turned into a political row, and a headache for those hoping the treaty could advance conservation",
+   "source": "Dialogue Earth, 18 Nov",
+   "source_url": "https://dialogue.earth/en/ocean/china-accuses-chile-and-belgium-of-backroom-deal-as-tensions-rise-over-high-seas-treaty-hq/"
   },
   {
    "region": "East Asia",
-   "headline": "South Korea And GGGI Tap Integrity Council For Global Carbon Market Initiative",
-   "detail": "The Integrity Council for the Voluntary Carbon Market (Integrity Council, also known as ICVCM) has agreed to work…",
-   "source": "Carbon Herald, 16 Nov",
-   "source_url": "https://carbonherald.com/south-korea-and-gggi-tap-integrity-council-for-global-carbon-market-initiative/?utm_source=rss&utm_medium=rss&utm_campaign=south-korea-and-gggi-tap-integrity-council-for-global-carbon-market-initiative"
+   "headline": "Q&A: How host countries can strike better deals with cleantech manufacturers",
+   "detail": "Tim Sahay is trying to create a race to the top for standards that host countries impose on foreign investors such as China",
+   "source": "Dialogue Earth, 17 Nov",
+   "source_url": "https://dialogue.earth/en/climate/qa-how-host-countries-can-strike-better-deals-with-cleantech-manufacturers/"
   },
   {
    "region": "Europe",
-   "headline": "Forest Green Rovers Invests In Nature-Based Carbon Removal Credits",
-   "detail": "UK football club Forest Green Rovers (FGR) has announced a purchase of 56 tonnes of nature-based carbon dioxide…",
-   "source": "Carbon Herald, 17 Nov",
-   "source_url": "https://carbonherald.com/forest-green-rovers-invests-in-nature-based-carbon-removal-credits/?utm_source=rss&utm_medium=rss&utm_campaign=forest-green-rovers-invests-in-nature-based-carbon-removal-credits"
+   "headline": "Eight Leading Developers Are Helping Shape An EU CRCF Methodology For ERW",
+   "detail": "Eight leading enhanced rock weathering (ERW) companies are helping shape the design of a methodology for this pathway…",
+   "source": "Carbon Herald, 18 Nov",
+   "source_url": "https://carbonherald.com/eight-leading-developers-are-helping-shape-an-eu-crcf-methodology-for-erw/?utm_source=rss&utm_medium=rss&utm_campaign=eight-leading-developers-are-helping-shape-an-eu-crcf-methodology-for-erw"
   },
   {
    "region": "Middle East and Africa",
-   "headline": "Revealed: Russia, Saudi Arabia and Australia are largest CO2 exporters of all time",
-   "detail": "Russia, Saudi Arabia and COP31 co-president Australia are the largest exporters of carbon dioxide (CO2) emissions in history, reveals Carbon…",
-   "source": "Carbon Brief, 17 Nov",
-   "source_url": "https://www.carbonbrief.org/revealed-russia-saudi-arabia-and-australia-are-largest-co2-exporters-of-all-time"
+   "headline": "Wildlife trafficking persists in West, Central Africa despite crackdowns: Report",
+   "detail": "At his storefront in Lagos’s sprawling Lekki Craft Market, alongside handwoven raffia baskets and Ankara fabrics, an illegal wildlife trader, identified only as Mr. X, sells an array of carved ivory products. It’s from this shop that he established links...",
+   "source": "Mongabay, 18 Nov",
+   "source_url": "https://news.mongabay.com/2026/11/wildlife-trafficking-persists-in-west-central-africa-despite-crackdowns-report/"
   },
   {
    "region": "Oceania",
@@ -5157,10 +5141,10 @@
   },
   {
    "region": "South Asia",
-   "headline": "Another Sri Lankan leopard caught in a snare. These big cats need protecting, experts say",
-   "detail": "COLOMBO — The stillness of a cold November night at Athad Tea Estate in Norwood in Sri Lanka’s Central Highlands was suddenly shattered by agonizing growls. Awakened by the cries echoing through the darkness, estate workers rushed to check, only...",
-   "source": "Mongabay, 17 Nov",
-   "source_url": "https://news.mongabay.com/2026/11/another-sri-lankan-leopard-caught-in-a-snare-these-big-cats-need-protecting-experts-say/"
+   "headline": "Better data can help restore Himalayan ecosystems & prepare for climate risks (commentary)",
+   "detail": "In less than seven weeks, two major flood events impacted Nepal’s Himalaya, where ecologically rich mountain landscapes are closely connected to the rivers, forests and floodplains. On the morning of Aug. 26, 2026, a catastrophic flood began with a rock...",
+   "source": "Mongabay, 18 Nov",
+   "source_url": "https://news.mongabay.com/2026/11/better-data-can-help-restore-himalayan-ecosystems-prepare-for-climate-risks-commentary/"
   },
   {
    "region": "Southeast Asia",
