@@ -92,3 +92,7 @@ It needs no API key and no tool approvals.
   no free page, USDCLP/NGN/SAR, indicators, earnings dates, and per-item commentary.
 - `scripts/probe_sources.py` and the "Probe sources" workflow test which sources answer; `scripts/fetch_prices.py` and
   "Shadow prices" save just the price results.
+
+## Price move colours (2026-11-22)
+
+In every board, the 1-day, 1-week and 1-month cells are green when the number is up and red when it is down (flat is dim). The arrow stays as a second cue for colour-blind readers. Colour shows direction only, not good or bad. A tinted tile with bold digits marks a large move for its horizon: 5% in a day, 10% in a week, 20% in a month (0.1, 0.25 and 0.5 points for the 10-year yield). Indicator year-on-year arrows are not coloured, because up is not good or bad there.

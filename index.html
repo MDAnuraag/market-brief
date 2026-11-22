@@ -14,6 +14,7 @@
 :root {
   --bg: #443a4f; --panel: #1a1620; --cell: #272030; --edge: #2d2536; --white: #dcd3e3; --dim: #9d91aa;
   --accent: #f2b8d2; --accent-dim: #9a6a82; --ok: #5fd6a0; --ok-edge: #1f5a3a;
+  --up: #5fd6a0; --dn: #ff7b7b; --up-bg: rgba(95,214,160,.17); --dn-bg: rgba(255,123,123,.19);
   --paper: #ddd5e2; --ink: #261f2d; --ink-dim: #5b4f68; --rule: #bdb1c8; --on-accent: #2a0f1c;
   --mono: "Red Hat Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -111,6 +112,16 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 84px; color: var(--white
 .c.sp { background: transparent; }
 .c.sp::after { display: none; }
 .c.amb { color: var(--accent); }
+/* price moves: colour follows the direction of the number; the arrow stays as a second cue. Large moves get a tinted tile and bold type. */
+.c.up { color: var(--up); }
+.c.dn { color: var(--dn); }
+.c.flat { color: var(--dim); }
+.c.up::after, .c.dn::after, .c.flat::after { background: rgba(0,0,0,.22); } /* keep the flap seam from reading as a strike-through on coloured digits */
+.c.up.big { background-image: linear-gradient(var(--up-bg), var(--up-bg)); font-weight: 700; }
+.c.dn.big { background-image: linear-gradient(var(--dn-bg), var(--dn-bg)); font-weight: 700; }
+.legend { margin: 6px 0 0; color: var(--g-dim); font-size: 11.5px; letter-spacing: .02em; }
+.legend .up { color: var(--up); font-weight: 700; }
+.legend .dn { color: var(--dn); font-weight: 700; }
 .c.flip { animation: flap .34s ease-out both; animation-delay: var(--d, 0ms); transform-origin: 50% 50%; }
 @keyframes flap { 0% { transform: rotateX(90deg); opacity: .2; } 55% { transform: rotateX(-12deg); opacity: 1; } 100% { transform: rotateX(0); } }
 
@@ -266,6 +277,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 84px; color: var(--white
 <header class="top"><div class="wrap">
   <h1>market<span>/</span>brief <span id="ed"></span></h1>
   <p class="stamp" id="stamp">loading</p>
+  <p class="legend"><span class="up">▲ green</span> up, <span class="dn">▼ red</span> down: the direction of the number, not good or bad. A tinted tile marks a large move (5%+ in a day, 10%+ in a week, 20%+ in a month).</p>
 </div></header>
 <div class="ticker" id="ticker" aria-label="Flagged moves" hidden><div class="track" id="track"></div></div>
 <nav class="tabs" id="tabs" aria-label="Boards"><div class="wrap" id="tabrow"></div><div class="wrap sub" id="tabsub"></div></nav>
@@ -306,6 +318,13 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 84px; color: var(--white
     if (v < 0) return "▼" + s;
     return "·" + s;
   }
+  /* "up" / "dn" / "flat" for a move, plus "big" when it is large for its horizon (yields are in points, so smaller) */
+  var BIG = { chg_1d: 5, chg_1w: 10, chg_1m: 20 }, BIG_PP = { chg_1d: 0.1, chg_1w: 0.25, chg_1m: 0.5 };
+  function moveClass(v, key, sym) {
+    if (!num(v)) return "";
+    var t = (sym === "^TNX" ? BIG_PP : BIG)[key];
+    return (v > 0 ? "up" : v < 0 ? "dn" : "flat") + (t && Math.abs(v) >= t ? " big" : "");
+  }
   function shortDate(s) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(s || "")) return s || "";
     return s.slice(5).replace("-", "/");
@@ -323,7 +342,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 84px; color: var(--white
     var padTo = text.length;
     for (var i = 0; i < text.length; i++) {
       var ch = text.charAt(i);
-      var c = el("span", "c" + (ch === " " ? " sp" : "") + (amber ? " amb" : ""), ch === " " ? " " : ch);
+      var c = el("span", "c" + (ch === " " ? " sp" : "") + (typeof amber === "string" ? " " + amber : amber ? " amb" : ""), ch === " " ? " " : ch);
       var changed = prev != null && prev.charAt(i) !== ch;
       if (!reduce && (changed || (firstVisit && flapCount < 120 && ch !== " "))) {
         c.className += " flip";
@@ -417,8 +436,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 84px; color: var(--white
     row.appendChild(numCell("n-last", item.symbol + ":l", fmtLast(item.last, item.symbol), false));
     var moves = el("div", "moves");
     ["chg_1d", "chg_1w", "chg_1m"].forEach(function (k) {
-      var big = num(item[k]) && Math.abs(item[k]) >= 5;
-      moves.appendChild(numCell("r", item.symbol + ":" + k, fmtChg(item[k], item.symbol), big));
+      moves.appendChild(numCell("r", item.symbol + ":" + k, fmtChg(item[k], item.symbol), moveClass(item[k], k, item.symbol)));
     });
     /* on wide screens the three move columns are direct grid children */
     row.appendChild(moves);
@@ -736,7 +754,7 @@ section.board { padding: 26px 0 6px; scroll-margin-top: 84px; color: var(--white
       b.appendChild(el("span", "dot"));
       b.appendChild(el("span", "nm", st[1]));
       var mv = el("span", "mv"), med = median(moves[k] || []);
-      if (med != null) { var inner = el("span"); flap(inner, "route:" + k, fmtChg(med), false); mv.appendChild(inner); mv.setAttribute("aria-label", "median one-day move " + med.toFixed(2) + " percent"); }
+      if (med != null) { var inner = el("span"); flap(inner, "route:" + k, fmtChg(med), moveClass(med, "chg_1d")); mv.appendChild(inner); mv.setAttribute("aria-label", "median one-day move " + med.toFixed(2) + " percent"); }
       else mv.appendChild(el("span", "none", k === "Global" ? "off the line" : "—"));
       b.appendChild(mv);
       var fl = el("span", "fl", flagged[k] ? flagged[k] + " flagged" : ""); if (flagged[k]) fl.title = "flagged instruments tagged to this region, across all boards";
